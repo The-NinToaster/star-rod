@@ -1,0 +1,57 @@
+% automatically dumped from map obk_09
+
+#new:Npc $obk_09_80241C78_1F0
+00000001 $NpcSettings_80241830_obk_09 00000000 00000000 00000000 
+00000801 $Script_Init_80241A94_obk_09 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00BF0001 00BF0002 00BF0003 00BF0003 00BF0001 00BF0001 00BF0000 00BF0000 
+00BF0005 00BF0006 00BF0007 00BF0008 00BF0005 00BF0006 00BF0007 00BF0008 
+00000000 00000000 00000000 001A00A4 % He's a Boo called Bootler. He's the manager of the ...
+
+#new:NpcSettings $NpcSettings_80241830_obk_09
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802418F0_obk_09
+    0:  Call     GetCurrentPartner 	( *Var[0] )
+   10:  If  *Var[0]  ==  00000009 
+   20:  	Call     SayMessage3 	( 00000001 00BF0004 00BF0004 00000000 FFFFFFFC 000E0057 ) % Lady Bow, please come back to us as soon as possib ...
+   44:  	Call     DisablePartnerAI 	( 00000000 )
+   54:  	Call     SayMessage3 	( .Npc:Partner 00050004 00050001 00000000 00000001 000E0058 ) % Hush up, Bootler! You be quiet and take care of th ...
+   78:  	Call     EnablePartnerAI 	( )
+   84:  	Call     SayMessage0 	( 00000001 00BF0007 00BF0008 00000000 000E0059 ) % Sigh...sigh......
+   A4:  Else
+   AC:  	Switch  *StoryProgress 
+   B8:  		Case  <  FFFFFFF0 
+   C4:  			Call     SayMessage0 	( 00000001 00BF0007 00BF0008 00000000 000E0055 ) % Good... Good luck. Please take care of our lady...
+   E4:  		Case  <  00000027 
+   F0:  			Call     SayMessage0 	( 00000001 00BF0007 00BF0008 00000000 000E0056 ) % Good sir, please take care of our lady.
+  110:  		Case  >=  00000027 
+  11C:  			Call     SayMessage0 	( 00000001 00BF0007 00BF0008 00000000 000E005A ) % Dear sir... Lady Bow is very, very, very important ...
+  13C:  			Wait     00000014 
+  148:  			Call     SetPlayerAnimation 	( .PlayerAnim:NodYes )
+  158:  			Wait     00000014 
+  164:  			Call     SayMessage0 	( 00000001 00BF000B 00BF000B 00000000 000E005B ) % If harm befalls our lady, the Boo ancestors will b ...
+  184:  	EndSwitch
+  18C:  EndIf
+  194:  Return
+  19C:  End
+
+#new:Script $Script_Init_80241A94_obk_09
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802418F0_obk_09 )
+   14:  Switch  *StoryProgress 
+   20:  	Case  <  FFFFFFDC 
+   2C:  	Case  >=  FFFFFFDC 
+   38:  		Call     SetNpcPos   	( 00000001 0000001E 00000046 FFFFFFB5 )
+   54:  		Call     SetNpcYaw   	( 00000001 0000010E )
+   68:  	Default
+   70:  EndSwitch
+   78:  Return
+   80:  End
+

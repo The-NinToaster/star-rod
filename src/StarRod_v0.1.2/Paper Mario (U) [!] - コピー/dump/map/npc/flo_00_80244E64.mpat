@@ -1,0 +1,98 @@
+% automatically dumped from map flo_00
+
+#new:Npc $flo_00_80244E64
+00000000 $NpcSettings_80242840_flo_00 00000000 00000000 00000000 
+00000A01 $Script_Init_80243474_flo_00 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00990002 0099000E 0099000E 00990002 00990002 00990002 00990002 00990002 
+00990002 00990002 00990002 00990002 00990002 00990002 00990002 00990002 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80242840_flo_00
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80242AF0_flo_00
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     UseSettingsFrom 	( .Default 00000000 00000000 FFFFFF56 )
+   2C:  Call     SetPanTarget 	( .Default 00000000 00000000 FFFFFF56 )
+   48:  Call     SetCamDistance ( .Default 0000012C )
+   5C:  Call     SetCamAngles 	( .Default *Fixed[17.0] *Fixed[-8.0] )
+   74:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+   88:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   A0:  Wait     0000004B 
+   AC:  Call     ShowMessage 	( 00110000 000000A0 00000028 ) % What ho...? Now who might that be?
+   C4:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   DC:  Call     SetPlayerJumpscale 	( *Fixed[1.5] )
+   EC:  Call     802D1904 ( *Var[0] *Var[1] *Var[2] 0000000C )
+  108:  Wait     0000000A 
+  114:  Call     DisablePartnerAI 	( 00000000 )
+  124:  Call     InterpPlayerYaw 	( 0000010E 00000000 )
+  138:  Call     InterpNpcYaw 	( .Npc:Partner 0000010E 00000000 )
+  150:  Wait     0000000F 
+  15C:  Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  170:  Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000000 )
+  188:  Wait     0000000F 
+  194:  Call     SetCamDistance ( .Default 00000320 )
+  1A8:  Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-5.7998047] )
+  1C0:  Call     SetCamPosA  	( .Default FFFFFFFE 00000000 )
+  1D8:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  1F0:  Wait     0000000F 
+  1FC:  Call     SayMessage0 	( 00000000 FFFFFFFF FFFFFFFF 00000005 00110001 ) % Ho ho ho ho! Up here, son! They call me Wise Wiste ...
+  21C:  Call     SetPlayerAnimation 	( 00010002 )
+  22C:  Call     InterpPlayerYaw 	( 0000015E 00000000 )
+  240:  Wait     0000000F 
+  24C:  Call     SayMessage2 	( 00000000 FFFFFFFF FFFFFFFF 00000005 00110002 ) % And you must be Mario. I've heard a lot about you, ...
+  26C:  Wait     0000000A 
+  278:  Call     SetCamDistance ( .Default 0000014D )
+  28C:  Call     SetCamAngles 	( .Default *Fixed[9.0] *Fixed[-22.0] )
+  2A4:  Call     SetCamPosA  	( .Default FFFFFFFE 00000000 )
+  2BC:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  2D4:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  2E8:  Call     EnablePartnerAI 	( )
+  2F4:  Call     802D2C14 ( 00000001 )
+  304:  Wait     0000000A 
+  310:  Call     802D095C ( 00110003 00000000 00000046 FFFFFF38 )
+  32C:  Call     SetCamAngles 	( .Default *Fixed[16.5] *Fixed[-11.799805] )
+  344:  Call     SetCamDistance ( .Default 0000020D )
+  358:  Call     SetCamPosA  	( .Default FFFFFFF2 00000000 )
+  370:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  388:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  39C:  Wait     0000000A 
+  3A8:  Call     SetPlayerAnimation 	( 00080007 )
+  3B8:  Wait     00000014 
+  3C4:  Call     SetPlayerAnimation 	( 00010002 )
+  3D4:  Call     802D095C ( 00110004 00000000 00000032 FFFFFF38 )
+  3F0:  Call     SetCamAngles 	( .Default *Fixed[9.0] *Fixed[-22.0] )
+  408:  Call     SetCamDistance ( .Default 0000014D )
+  41C:  Call     SetCamPosA  	( .Default FFFFFFFE 00000000 )
+  434:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  44C:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  460:  Wait     0000000A 
+  46C:  Call     802D095C ( 00110005 00000000 00000046 FFFFFF38 )
+  488:  Call     ResetCam    	( .Default *Fixed[90.0] )
+  49C:  Set  *StoryProgress  0000002B 
+  4AC:  Call     802D2C14 ( 00000000 )
+  4BC:  Call     DisablePlayerInput 	( .False )
+  4CC:  Return
+  4D4:  End
+
+#new:Script $Script_Init_80243474_flo_00
+    0:  Call     EnableGroup 	( {Model:ha} .False )
+   14:  Call     EnableGroup 	( {Model:tuta} .False )
+   28:  Call     EnableGroup 	( {Model:g54} .False )
+   3C:  Call     SetNpcPos   	( .Npc:Self 00000032 00000046 FFFFFF1A )
+   58:  Call     SetNpcFlagBits ( .Npc:Self 00000002 .True )
+   70:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   84:  If  *StoryProgress  <  0000002B 
+   94:  	Exec     $Script_80242AF0_flo_00 
+   A0:  EndIf
+   A8:  Return
+   B0:  End
+

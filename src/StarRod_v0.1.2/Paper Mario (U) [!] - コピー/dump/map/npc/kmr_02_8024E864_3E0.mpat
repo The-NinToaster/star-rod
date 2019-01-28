@@ -1,0 +1,155 @@
+% automatically dumped from map kmr_02
+
+#new:Npc $kmr_02_8024E864_3E0
+00000002 $NpcSettings_80247CE4_kmr_02 00000000 00000000 00000000 
+00002809 $Script_Init_80248C48_kmr_02 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000046 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 00000064 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00010001 00010002 00010003 00010003 00010001 00010001 00010000 00010000 
+00010003 00010003 00010003 00010003 00010003 00010003 00010003 00010003 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80242394_kmr_02
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 18 (SP)
+   10:  SW        S0, 10 (SP)
+   14:  LW        S0, C (S1)
+   18:  LW        A1, 0 (S0)
+   1C:  JAL       {Func:GetVariable}
+   20:  ADDIU     S0, S0, 4
+   24:  DADDU     A0, S1, R0
+   28:  LW        A1, 0 (S0)
+   2C:  JAL       {Func:GetVariable}
+   30:  DADDU     S0, V0, R0
+   34:  DADDU     A0, S0, R0
+   38:  SLL       V0, V0, 2
+   3C:  LTW       S0, V0 ($IntTable_802480AC_kmr_02)
+   44:  JAL       8003ECE8
+   48:  RESERVED
+   4C:  DADDU     A2, V0, R0
+   50:  DADDU     A1, R0, R0
+        .o54
+   54:  LW        A0, 0 (S0)
+   58:  SLL       V0, A1, 2
+   5C:  LW        V1, D0 (A2)
+   60:  ADDIU     A1, A1, 1
+   64:  ADDU      V0, V0, V1
+   68:  SW        A0, 0 (V0)
+   6C:  SLTI      V0, A1, E
+   70:  BNE       V0, R0, .o54
+   74:  ADDIU     S0, S0, 4
+   78:  LW        RA, 18 (SP)
+   7C:  LW        S1, 14 (SP)
+   80:  LW        S0, 10 (SP)
+   84:  ADDIU     V0, R0, 2
+   88:  JR        RA
+   8C:  ADDIU     SP, SP, 20
+
+#new:AISettings $AISettings_80247C94_kmr_02
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80247CC4_kmr_02
+    0:  Call     DoBasicAI   	( $AISettings_80247C94_kmr_02 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80247CE4_kmr_02
+00000000 00160018 00000000 00000000 $Script_NpcAI_80247CC4_kmr_02 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:IntTable $IntTable_802480AC_kmr_02
+$???_80247FCC_kmr_02 $???_80248004_kmr_02 $???_8024803C_kmr_02 $???_80248074_kmr_02 
+
+#new:AISettings $AISettings_802480BC_kmr_02
+    2.0 % move speed
+    15` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_802480EC_kmr_02
+    0:  Call     DoBasicAI   	( $AISettings_802480BC_kmr_02 )
+   10:  Return
+   18:  End
+
+#new:Script $Script_80248A44_kmr_02
+    0:  Call     800445D4 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000064 
+   28:  		ExecWait $Script_NpcAI_80247CC4_kmr_02 
+   34:  	CaseOR  ==  00000065 
+   40:  	CaseOR  ==  00000066 
+   4C:  	CaseOR  ==  00000003 
+   58:  	CaseOR  ==  00000067 
+   64:  		ExecWait $Script_NpcAI_80247CC4_kmr_02 
+   70:  	EndCaseGroup
+   78:  EndSwitch
+   80:  Return
+   88:  End
+
+#new:Script $Script_80248AD4_kmr_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF85 
+   18:  		If  *Flag_KMR_06  ==  00000000 
+   28:  			Set  *Flag_KMR_06  00000001 
+   38:  			Call     UseSettings 	( .Default *Fixed[5.0] 00000000 *Fixed[-275.0] *Fixed[15.200195] *Fixed[-7.5] )
+   5C:  			Call     SayMessage0 	( 00000002 00010008 00010001 00000005 000B004D ) % Hey Mario! I'm Goombario. I'm your biggest fan! Yo ...
+   7C:  			Thread
+   84:  				Call     ResetCam    	( .Default *Fixed[4.0] )
+   98:  			EndThread
+   A0:  		Else
+   A8:  			If  *Flag_KMR_07  ==  00000000 
+   B8:  				Call     SayMessage0 	( 00000002 00010008 00010001 00000005 000B004E ) % Mario, I know all about your adventures around the ...
+   D8:  				Set  *Flag_KMR_07  00000001 
+   E8:  			Else
+   F0:  				Call     SayMessage0 	( 00000002 00010008 00010001 00000005 000B004F ) % Mario, I know all about your adventures around the ...
+  110:  				Set  *Flag_KMR_07  00000000 
+  120:  			EndIf
+  128:  		EndIf
+  130:  	Case  ==  FFFFFF85 
+  13C:  		Call     SayMessage0 	( 00000002 00010008 00010001 00000000 000B0051 ) % Hey...I know that ol' Koopa! That was Kammy Koopa! ...
+  15C:  EndSwitch
+  164:  Return
+  16C:  End
+
+#new:Script $Script_Init_80248C48_kmr_02
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_80248A44_kmr_02 )
+   14:  Call     BindNpcInteract 	( .Npc:Self $Script_80248AD4_kmr_02 )
+   28:  Switch  *StoryProgress 
+   34:  	Case  <  FFFFFF85 
+   40:  	Case  <  FFFFFF86 
+   4C:  		Call     $Function_80242394_kmr_02 ( 00000002 00000002 )
+   60:  		Call     BindNpcIdle 	( .Npc:Self $Script_802480EC_kmr_02 )
+   74:  	Case  <  FFFFFF8D 
+   80:  		Call     SetNpcPos   	( .Npc:Self 00000042 00000000 FFFFFF82 )
+   9C:  	Case  >=  FFFFFF8D 
+   A8:  		Call     RemoveNpc   	( .Npc:Self )
+   B8:  EndSwitch
+   C0:  Return
+   C8:  End
+

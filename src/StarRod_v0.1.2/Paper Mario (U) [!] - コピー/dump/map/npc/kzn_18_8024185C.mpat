@@ -1,0 +1,85 @@
+% automatically dumped from map kzn_18
+
+#new:Npc $kzn_18_8024185C
+00000001 $NpcSettings_80240DEC_kzn_18 00000000 00000000 00000000 
+00200004 $Script_Init_80241618_kzn_18 00000000 00000000 0000010E 
+{Items:5:FireFlower:A}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:3:40} {FP:30:40:3:40} {FP:50:40:3:40} {FP:80:40:3:40} {FP:100:30:3:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:2}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00360001 00360002 00360003 00360003 00360001 00360001 0036000E 0036000E 
+00360018 00360017 00360005 00360006 00360007 00360001 00360001 00360001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240350_kzn_18
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ORI       V0, V0, 1000
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:Function $Function_8024036C_kzn_18
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ANDI      V0, V0, EFFF
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:NpcSettings $NpcSettings_80240DEC_kzn_18
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802413B4_kzn_18
+    0:  Label    00000000 
+    C:  Wait     00000001 
+   18:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   30:  If  *Var[1]  >  00000064 
+   40:  	Goto     00000000 
+   4C:  EndIf
+   54:  If  *Var[0]  <  00000064 
+   64:  	Goto     00000000 
+   70:  EndIf
+   78:  Call     DisablePlayerInput 	( .True )
+   88:  Call     $Function_80240350_kzn_18 ( )
+   94:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   B0:  Call     SetPanTarget 	( .Default 0000011D 00000019 00000023 )
+   CC:  Call     SetCamDistance ( .Default 00000190 )
+   E0:  Call     SetCamSpeed 	( .Default *Fixed[2.5] )
+   F4:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  10C:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  120:  Wait     0000000A 
+  12C:  Call     SetNpcPos   	( .Npc:Self 0000011D 00000019 00000023 )
+  148:  Call     PlaySoundAtNpc ( .Npc:Self 00000321 00000000 )
+  160:  Call     SetNpcAnimation 	( .Npc:Self 00360017 )
+  174:  Wait     0000001E 
+  180:  Call     SetNpcAnimation 	( .Npc:Self 00360001 )
+  194:  Call     SayMessage0 	( .Npc:Self 00360004 00360001 00000000 001000FF ) % MARIO STILL APPROACHING! IDENTIFIED AS SEARCHING F ...
+  1B4:  Wait     0000000A 
+  1C0:  Call     PlaySoundAtNpc ( .Npc:Self 00000322 00000000 )
+  1D8:  Call     SetNpcAnimation 	( .Npc:Self 00360018 )
+  1EC:  Wait     00000019 
+  1F8:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  214:  Call     $Function_8024036C_kzn_18 ( )
+  220:  Call     ResetCam    	( .Default *Fixed[3.0] )
+  234:  Set  *Flag_KZN_02  00000001 
+  244:  Call     DisablePlayerInput 	( .False )
+  254:  Return
+  25C:  End
+
+#new:Script $Script_Init_80241618_kzn_18
+    0:  If  *Flag_KZN_02  ==  00000000 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_802413B4_kzn_18 )
+   24:  Else
+   2C:  	Call     RemoveNpc   	( .Npc:Self )
+   3C:  EndIf
+   44:  Return
+   4C:  End
+

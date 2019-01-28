@@ -1,0 +1,536 @@
+% automatically dumped from map dro_02
+
+#new:Npc $dro_02_8024D7B4_3E0
+00000002 $NpcSettings_80247558_dro_02 00000000 00000000 00000000 
+00002D01 $Script_Init_8024D04C_dro_02 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00BC0001 00BC0001 00BC0001 00BC0001 00BC0001 00BC0001 00BC0001 00BC0001 
+00BC0001 00BC0001 00BC0001 00BC0001 00BC0001 00BC0001 00BC0001 00BC0001 
+00000000 00000000 00000000 001A0098 % This is Sheek. You'd think the guy could shake the ...
+
+#new:Function $Function_802430F0_dro_02
+    0:  ADDIU     SP, SP, FFB0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 24 (SP)
+   10:  SW        S4, 20 (SP)
+   14:  SW        S3, 1C (SP)
+   18:  SW        S2, 18 (SP)
+   1C:  SW        S0, 10 (SP)
+   20:  SDC1      F28, 48 (SP)
+   24:  SDC1      F26, 40 (SP)
+   28:  SDC1      F24, 38 (SP)
+   2C:  SDC1      F22, 30 (SP)
+   30:  SDC1      F20, 28 (SP)
+   34:  LW        S0, C (S1)
+   38:  LW        S3, 0 (S0)
+   3C:  ADDIU     S0, S0, 4
+   40:  JAL       {Func:GetVariable}
+   44:  DADDU     A1, S3, R0
+   48:  MTC1      V0, F28
+   4C:  NOP
+   50:  CVT.S.W   F28, F28
+   54:  LW        S4, 0 (S0)
+   58:  ADDIU     S0, S0, 4
+   5C:  DADDU     A0, S1, R0
+   60:  JAL       {Func:GetVariable}
+   64:  DADDU     A1, S4, R0
+   68:  MTC1      V0, F26
+   6C:  NOP
+   70:  CVT.S.W   F26, F26
+   74:  LW        S0, 0 (S0)
+   78:  DADDU     A0, S1, R0
+   7C:  JAL       {Func:GetVariable}
+   80:  DADDU     A1, S0, R0
+   84:  MTC1      V0, F24
+   88:  NOP
+   8C:  CVT.S.W   F24, F24
+   90:  LIA       S2, 8010EFC8
+   98:  LAW       V1, 80077410
+   A0:  LWC1      F2, A8 (S2)
+   A4:  MTC1      R0, F0
+   A8:  SLL       V0, V1, 2
+   AC:  ADDU      V0, V0, V1
+   B0:  SLL       V0, V0, 2
+   B4:  SUBU      V0, V0, V1
+   B8:  SLL       V1, V0, 3
+   BC:  ADDU      V0, V0, V1
+   C0:  SLL       V0, V0, 3
+   C4:  C.EQ.S    F2, F0
+   C8:  LTF       F22, V0 (800B1DEC)
+   D4:  BC1F      .oEC
+   D8:  NOP
+   DC:  LIF       F0, 100.0
+   E4:  BEQ       R0, R0, .oFC
+   E8:  SUB.S     F22, F22, F0
+        .oEC
+   EC:  LIF       F0, 100.0
+   F4:  NOP
+   F8:  ADD.S     F22, F22, F0
+        .oFC
+   FC:  JAL       80029B24
+  100:  MOV.S     F12, F22
+  104:  MOV.S     F22, F0
+  108:  LIF       F20, 15.0
+  110:  JAL       {Func:SinDeg}
+  114:  MOV.S     F12, F22
+  118:  MUL.S     F0, F0, F20
+  11C:  NOP
+  120:  LH        V0, B0 (S2)
+  124:  LIF       F4, 0.5
+  12C:  MTC1      V0, F2
+  130:  NOP
+  134:  CVT.S.W   F2, F2
+  138:  MUL.S     F2, F2, F4
+  13C:  NOP
+  140:  ADD.S     F28, F28, F0
+  144:  ADD.S     F26, F26, F2
+  148:  JAL       {Func:CosDeg}
+  14C:  MOV.S     F12, F22
+  150:  MUL.S     F0, F0, F20
+  154:  NOP
+  158:  DADDU     A0, S1, R0
+  15C:  DADDU     A1, S3, R0
+  160:  TRUNC.W.S F6, F28
+  164:  MFC1      A2, F6
+  168:  JAL       {Func:SetVariable}
+  16C:  SUB.S     F24, F24, F0
+  170:  DADDU     A0, S1, R0
+  174:  TRUNC.W.S F6, F26
+  178:  MFC1      A2, F6
+  17C:  JAL       {Func:SetVariable}
+  180:  DADDU     A1, S4, R0
+  184:  DADDU     A0, S1, R0
+  188:  TRUNC.W.S F6, F24
+  18C:  MFC1      A2, F6
+  190:  JAL       {Func:SetVariable}
+  194:  DADDU     A1, S0, R0
+  198:  LW        RA, 24 (SP)
+  19C:  LW        S4, 20 (SP)
+  1A0:  LW        S3, 1C (SP)
+  1A4:  LW        S2, 18 (SP)
+  1A8:  LW        S1, 14 (SP)
+  1AC:  LW        S0, 10 (SP)
+  1B0:  LDC1      F28, 48 (SP)
+  1B4:  LDC1      F26, 40 (SP)
+  1B8:  LDC1      F24, 38 (SP)
+  1BC:  LDC1      F22, 30 (SP)
+  1C0:  LDC1      F20, 28 (SP)
+  1C4:  ADDIU     V0, R0, 2
+  1C8:  JR        RA
+  1CC:  ADDIU     SP, SP, 50
+
+#new:Function $Function_802432C0_dro_02
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  BEQ       A1, R0, .o18
+    C:  LW        A2, C (A0)
+   10:  SAW       R0, $???_80248780_dro_02
+        .o18
+   18:  LIA       V1, $???_80248780_dro_02
+   20:  LW        V0, 0 (V1)
+   24:  BNEL      V0, R0, .o34
+   28:  SW        R0, 0 (V1)
+   2C:  BEQ       R0, R0, .o48
+   30:  DADDU     V0, R0, R0
+        .o34
+   34:  LW        A1, 0 (A2)
+   38:  LAW       A2, $???_80248784_dro_02
+   3C:  JAL       {Func:SetVariable}
+   40:  RESERVED
+   44:  ADDIU     V0, R0, 2
+        .o48
+   48:  LW        RA, 10 (SP)
+   4C:  JR        RA
+   50:  ADDIU     SP, SP, 18
+
+#new:Function $Function_80243314_dro_02
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  JAL       {Func:GetVariable}
+   10:  LW        A1, 0 (V0)
+   14:  SAW       V0, $???_80248784_dro_02
+   1C:  ADDIU     V0, R0, 2
+   20:  LW        RA, 10 (SP)
+   24:  ADDIU     V1, R0, 1
+   28:  SAW       V1, $???_80248780_dro_02
+   30:  JR        RA
+   34:  ADDIU     SP, SP, 18
+
+#new:Function $Function_802433E8_dro_02
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  JAL       {Func:GetVariable}
+   10:  LW        A1, 0 (V0)
+   14:  DADDU     V1, V0, R0
+   18:  BEQ       V1, R0, .o64
+   1C:  DADDU     A0, R0, R0
+   20:  LW        V0, 0 (V1)
+   24:  BEQL      V0, R0, .o50
+   28:  SLL       V0, A0, 2
+   2C:  LIA       A1, $End[2C8]
+        .o34
+   34:  ADDIU     V1, V1, 4
+   38:  ADDIU     A0, A0, 1
+   3C:  SW        V0, 0 (A1)
+   40:  LW        V0, 0 (V1)
+   44:  BNE       V0, R0, .o34
+   48:  ADDIU     A1, A1, 4
+   4C:  SLL       V0, A0, 2
+        .o50
+   50:  STW       R0, V0 ($End[2C8])
+   5C:  BEQ       R0, R0, .o8C
+   60:  NOP
+        .o64
+   64:  LIA       V1, $End[2C8]
+   6C:  DADDU     A1, V1, R0
+        .o70
+   70:  ADDIU     V0, A0, 80
+   74:  SW        V0, 0 (V1)
+   78:  ADDIU     V1, V1, 4
+   7C:  ADDIU     A0, A0, 1
+   80:  SLTI      V0, A0, 5B
+   84:  BNE       V0, R0, .o70
+   88:  SW        R0, 16C (A1)
+        .o8C
+   8C:  LW        RA, 10 (SP)
+   90:  ADDIU     V0, R0, 2
+   94:  JR        RA
+   98:  ADDIU     SP, SP, 18
+
+#new:Script $Script_80243AF0_dro_02
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	CaseOR  ==  00000002 
+   28:  	CaseOR  ==  00000003 
+   34:  	EndCaseGroup
+   3C:  	Default
+   44:  		Call     SetMusicTrack 	( 00000000 .Song:DryDryOutpost 00000000 00000008 )
+   60:  	EndCaseGroup
+   68:  EndSwitch
+   70:  Return
+   78:  End
+
+#new:Script $Script_80243B9C_dro_02
+    0:  Call     SetMusicTrack 	( 00000000 .Song:MoustafaTheme 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:Script $Script_80244DE4_dro_02
+    0:  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+   18:  Return
+   20:  Return
+   28:  End
+
+#new:NpcSettings $NpcSettings_80247558_dro_02
+00000000 00160019 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Unknown $???_80248780_dro_02
+00000000 
+
+#new:Unknown $???_80248784_dro_02
+00000000 
+
+#new:Script $Script_8024891C_dro_02
+    0:  Set  *Var[9]  *Var[1] 
+   10:  Call     802D663C ( )
+   1C:  Set  *Var[A]  *Var[0] 
+   2C:  Switch  *Var[0] 
+   38:  	Case  ==  00000000 
+   44:  	Case  ==  FFFFFFFF 
+   50:  	Default
+   58:  		Call     RemoveItemAt 	( *Var[1] )
+   68:  		Call     GetPlayerPos 	( *Var[3] *Var[4] *Var[5] )
+   80:  		Call     $Function_802430F0_dro_02 ( *Var[3] *Var[4] *Var[5] )
+   98:  		Call     MakeItemEntity ( *Var[0] *Var[3] *Var[4] *Var[5] 00000001 00000000 )
+   BC:  		Call     SetPlayerAnimation 	( 00060005 )
+   CC:  		Wait     0000001E 
+   D8:  		Call     SetPlayerAnimation 	( 00010002 )
+   E8:  		Call     RemoveItemEntity 	( *Var[0] )
+   F8:  EndSwitch
+  100:  Call     $Function_80243314_dro_02 ( *Var[A] )
+  110:  Call     802D6954 ( )
+  11C:  Unbind
+  124:  Return
+  12C:  End
+
+#new:Script $Script_80248A50_dro_02
+    0:  Call     $Function_802433E8_dro_02 ( *Var[0] )
+   10:  BindLock $Script_8024891C_dro_02 00000010 00000000 $End[2C8] 00000000 00000001 
+   30:  Call     $Function_802432C0_dro_02 ( *Var[0] )
+   40:  Return
+   48:  End
+
+#new:Script $Script_8024C05C_dro_02
+    0:  Loop     
+    C:  	Call     PlayerFaceNpc 	( 00000005 00000000 )
+   20:  	Call     NpcFaceNpc  	( .Npc:Partner 00000005 00000000 )
+   38:  	Wait     00000001 
+   44:  EndLoop
+   4C:  Return
+   54:  End
+
+#new:Script $Script_8024C0B8_dro_02
+    0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   18:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   34:  Call     SetCamDistance ( .Default 00000113 )
+   48:  Call     GetNpcPos   	( 00000002 *Var[3] *Var[4] *Var[5] )
+   64:  Add  *Var[0]  *Var[3] 
+   74:  Add  *Var[1]  *Var[4] 
+   84:  Add  *Var[2]  *Var[5] 
+   94:  Div  *Var[0]  00000002 
+   A4:  Div  *Var[1]  00000002 
+   B4:  Div  *Var[2]  00000002 
+   C4:  Add  *Var[1]  0000000F 
+   D4:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   F0:  Call     SetCamSpeed 	( .Default *Fixed[8.0] )
+  104:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  11C:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  130:  Return
+  138:  End
+
+#new:Script $Script_8024C1F8_dro_02
+    0:  Call     PanToTarget 	( .Default 00000000 00000000 )
+   18:  Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+   2C:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+   40:  Return
+   48:  End
+
+#new:Script $Script_8024C248_dro_02
+    0:  Call     SetNpcYaw   	( 00000005 0000010E )
+   14:  Call     SetNpcFlagBits ( 00000002 00000100 .True )
+   2C:  Call     SetNpcFlagBits ( 00000005 00000100 .True )
+   44:  Call     SetNpcAnimation 	( 00000002 00BC0005 )
+   58:  Wait     0000001E 
+   64:  Call     SetNpcAnimation 	( 00000002 00BC0006 )
+   78:  Call     SetNpcAnimation 	( 00000005 00BD0007 )
+   8C:  Call     SetNpcPos   	( 00000005 FFFFFEB1 000000A3 FFFFFEFC )
+   A8:  Exec     $Script_80243B9C_dro_02 
+   B4:  Call     MakeLerp    	( 00000000 00000050 0000001E 00000005 )
+   D0:  Label    0000000A 
+   DC:  Call     UpdateLerp  	( )
+   E8:  Set  *Var[2]  FFFFFEB1 
+   F8:  Set  *Var[3]  000000A3 
+  108:  Sub  *Var[2]  *Var[0] 
+  118:  Add  *Var[3]  *Var[0] 
+  128:  Call     SetNpcPos   	( 00000002 *Var[2] *Var[3] FFFFFEFC )
+  144:  Wait     00000001 
+  150:  If  *Var[1]  ==  00000001 
+  160:  	Goto     0000000A 
+  16C:  EndIf
+  174:  Call     SetNpcFlagBits ( 00000002 00000100 .False )
+  18C:  Call     SetNpcPos   	( 00000002 00000000 FFFFFC18 FFFFFF06 )
+  1A8:  Call     SetNpcAnimation 	( 00000005 00BD0001 )
+  1BC:  Call     SetNpcFlagBits ( 00000002 00000100 .False )
+  1D4:  Call     SetNpcFlagBits ( 00000005 00000100 .False )
+  1EC:  Wait     0000001E 
+  1F8:  Return
+  200:  End
+
+#new:Script $Script_8024C450_dro_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFC0 
+   18:  	Case  <  FFFFFFC1 
+   24:  		Call     SetNpcPos   	( .Npc:Self FFFFFEB1 000000A3 FFFFFEFC )
+   40:  	Case  >=  FFFFFFC1 
+   4C:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 FFFFFF06 )
+   68:  		Call     SetNpcPos   	( 00000005 FFFFFEB1 000000A3 FFFFFEFC )
+   84:  EndSwitch
+   8C:  Return
+   94:  End
+
+#new:Script $Script_8024C4EC_dro_02
+    0:  If  *Flag_DRO_04  ==  00000001 
+   10:  	Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00CF ) % Please return to Dry Dry Outpost when you have tim ...
+   30:  	Return
+   38:  EndIf
+   40:  Switch  *StoryProgress 
+   4C:  	Case  <  FFFFFFC0 
+   58:  		Set  *Var[B]  00000000 
+   68:  		Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00B4 ) % Someone who gives things is nice, yes, very nice.  ...
+   88:  		Label    00000000 
+   94:  		Call     ShowChoice  	( 001E0019 ) % Give something Don't give anything 
+   A4:  		If  *Var[0]  ==  00000001 
+   B4:  			Call     SayMessage2 	( 00000002 00BC0004 00BC0001 00000000 000D00B6 ) % Well, good-bye.
+   D4:  			Exec     $Script_8024C1F8_dro_02 
+   E0:  			Return
+   E8:  		Else
+   F0:  			Call     SayMessage1 	( 00000002 00BC0004 00BC0001 00000000 )
+  10C:  		EndIf
+  114:  		Label    00000001 
+  120:  		Set  *Var[0]  00000000 
+  130:  		Set  *Var[1]  00000002 
+  140:  		ExecWait $Script_80248A50_dro_02 
+  14C:  		Switch  *Var[0] 
+  158:  			Case  ==  00000000 
+  164:  				Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00B8 ) % You have nothing to give. Then I have nothing to s ...
+  184:  				Exec     $Script_8024C1F8_dro_02 
+  190:  				Return
+  198:  			Case  ==  FFFFFFFF 
+  1A4:  				Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00B7 ) % Someone who hesitates when giving things is not tr ...
+  1C4:  				Exec     $Script_8024C1F8_dro_02 
+  1D0:  				Return
+  1D8:  		EndSwitch
+  1E0:  		Set  *Var[A]  *Var[0] 
+  1F0:  		If  *Byte_DRO_01  ==  00000000 
+  200:  			If  *Var[A]  ==  0000009C 
+  210:  				Set  *Byte_DRO_01  00000001 
+  220:  				Set  *Byte_DRO_00  0000000A 
+  230:  				Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00BB ) % Oh, heavenly! A Lemon!! The nicest of nice things! ...
+  250:  				Call     ShowChoice  	( 001E001C ) % Not necessary About Dry Dry Desert How to get to r ...
+  260:  			Else
+  268:  				Add  *Byte_DRO_00  00000001 
+  278:  				If  *Byte_DRO_00  <=  00000002 
+  288:  					Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00B5 ) % Ah! You give me something! You might be nice. If y ...
+  2A8:  					Goto     00000000 
+  2B4:  				EndIf
+  2BC:  				If  *Byte_DRO_00  ==  00000003 
+  2CC:  					Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00B9 ) % You give me many things. Very nice guy, yes, very  ...
+  2EC:  					Call     ShowChoice  	( 001E001B ) % Not necessary About Dry Dry Desert How to get to r ...
+  2FC:  				Else
+  304:  					Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00BA ) % I thank you for giving things. To show I am truly  ...
+  324:  					Call     ShowChoice  	( 001E001B ) % Not necessary About Dry Dry Desert How to get to r ...
+  334:  					Set  *Byte_DRO_00  0000000A 
+  344:  				EndIf
+  34C:  			EndIf
+  354:  		Else
+  35C:  			Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00BA ) % I thank you for giving things. To show I am truly  ...
+  37C:  			Call     ShowChoice  	( 001E001C ) % Not necessary About Dry Dry Desert How to get to r ...
+  38C:  		EndIf
+  394:  		Switch  *Var[0] 
+  3A0:  			Case  ==  00000000 
+  3AC:  				Call     SayMessage2 	( 00000002 00BC0004 00BC0001 00000000 000D00BC ) % You are obviously the nicest of nice guys... ...bu ...
+  3CC:  			Case  ==  00000001 
+  3D8:  				ExecWait $Script_8024C0B8_dro_02 
+  3E4:  				Call     SayMessage2 	( 00000002 00BC0004 00BC0001 00000000 000D00BD ) % Dry Dry Desert is a vast and everlasting sea of sa ...
+  404:  				Set  *Flag_DRO_01  00000001 
+  414:  			Case  ==  00000002 
+  420:  				ExecWait $Script_8024C0B8_dro_02 
+  42C:  				Call     SayMessage2 	( 00000002 00BC0004 00BC0001 00000000 000D00BE ) % You must see Mr. Moustafa to find the resting plac ...
+  44C:  				Set  *Flag_DRO_02  00000001 
+  45C:  			Case  ==  00000003 
+  468:  				ExecWait $Script_8024C0B8_dro_02 
+  474:  				Call     SayMessage2 	( 00000002 00BC0004 00BC0001 00000000 000D00BF ) % My favorite food starts with an L and ends with an ...
+  494:  			Case  ==  00000004 
+  4A0:  				ExecWait $Script_8024C0B8_dro_02 
+  4AC:  				Call     SayMessage2 	( 00000002 00BC0004 00BC0001 00000000 000D00C1 ) % To find Mr. Moustafa, go to the shop in this town. ...
+  4CC:  				Set  *Flag_DRO_03  00000001 
+  4DC:  				Set  *Var[B]  00000001 
+  4EC:  		EndSwitch
+  4F4:  		Set  *Flag_DRO_00  00000001 
+  504:  		Call     SayMessage2 	( 00000002 00BC0004 00BC0001 00000000 000D00C0 ) % If you still seek knowledge, you must give me some ...
+  524:  		Call     ShowChoice  	( 001E001A ) % Ask more Enough 
+  534:  		If  *Var[0]  ==  00000000 
+  544:  			Call     SayMessage1 	( 00000002 00BC0004 00BC0001 00000000 )
+  560:  			Goto     00000001 
+  56C:  		Else
+  574:  			Call     SayMessage2 	( 00000002 00BC0004 00BC0001 00000000 000D00B6 ) % Well, good-bye.
+  594:  		EndIf
+  59C:  		If  *Var[B]  ==  00000001 
+  5AC:  			If  *MapFlag[00]  ==  00000000 
+  5BC:  				Set  *MapFlag[00]  00000001 
+  5CC:  				Thread
+  5D4:  					Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  5F0:  					Call     AwaitPlayerLeave 	( *Var[0] *Var[2] 00000032 )
+  608:  					Call     DisablePlayerInput 	( .True )
+  618:  					Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00C2 ) % I wish you luck in finding Mr. Moustafa, nice guy.
+  638:  					Call     DisablePlayerInput 	( .False )
+  648:  					Set  *MapFlag[00]  00000000 
+  658:  				EndThread
+  660:  			EndIf
+  668:  		EndIf
+  670:  		Exec     $Script_8024C1F8_dro_02 
+  67C:  	Case  <  FFFFFFC1 
+  688:  		Thread
+  690:  			Wait     0000000A 
+  69C:  			Call     802D2C14 ( 00000001 )
+  6AC:  		EndThread
+  6B4:  		Call     SetNpcFlagBits ( 00000002 00000100 .True )
+  6CC:  		Call     SetPlayerSpeed ( *Fixed[3.0] )
+  6DC:  		Call     MovePlayerTo 	( FFFFFE79 FFFFFEFC 00000000 )
+  6F4:  		Call     InterpPlayerYaw 	( 0000005A 00000003 )
+  708:  		Call     SetNpcFlagBits ( 00000002 00000100 .False )
+  720:  		Exec     $Script_8024C05C_dro_02 *Var[A] 
+  730:  		Call     SetNpcFlagBits ( 00000005 00000100 .True )
+  748:  		Call     FadeOutMusic 	( 00000000 000001F4 )
+  75C:  		If  *Flag_DRO_03  ==  00000001 
+  76C:  			Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00C3 ) % Hey, nice guy. We meet again. I'm glad you found m ...
+  78C:  			ExecWait $Script_8024C248_dro_02 
+  798:  			Call     802D2C14 ( 00000000 )
+  7A8:  			Call     SetNpcJumpscale 	( 00000005 *Fixed[1.0] )
+  7BC:  			Call     NpcJump0    	( 00000005 FFFFFE57 0000008C FFFFFF32 00000014 )
+  7DC:  			Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00C4 ) % I'm Moustafa. I'm the one you've been seeking all  ...
+  7FC:  		Else
+  804:  			Call     SayMessage0 	( 00000002 00BC0004 00BC0001 00000000 000D00C5 ) % How did you get here? Who told you how to find thi ...
+  824:  			ExecWait $Script_8024C248_dro_02 
+  830:  			Call     802D2C14 ( 00000000 )
+  840:  			Call     SetNpcJumpscale 	( 00000005 *Fixed[1.0] )
+  854:  			Call     NpcJump0    	( 00000005 FFFFFE57 0000008C FFFFFF32 00000014 )
+  874:  			Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00C6 ) % ...Yes, Moustafa is my name. When I'm out and abou ...
+  894:  		EndIf
+  89C:  		Call     SetNpcJumpscale 	( 00000005 *Fixed[1.0] )
+  8B0:  		Call     NpcJump0    	( 00000005 FFFFFEAF 0000008C FFFFFF38 00000014 )
+  8D0:  		Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00C7 ) % Your name is Mario, yes? I heard that you want to  ...
+  8F0:  		Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00C8 ) % Dry Dry Ruins is a very important place. My ancest ...
+  910:  		Call     SetNpcJumpscale 	( 00000005 *Fixed[1.0] )
+  924:  		Call     NpcJump0    	( 00000005 FFFFFEB1 000000A3 FFFFFEFC 00000014 )
+  944:  		Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00C9 ) % I'll give you this.
+  964:  		Set  *Var[0]  00000012 
+  974:  		Set  *Var[1]  00000001 
+  984:  		ExecWait $Script_80244DE4_dro_02 
+  990:  		Call     AddKeyItem  	( .Item:PulseStone )
+  9A0:  		Set  *StoryProgress  FFFFFFC1 
+  9B0:  		Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00CA ) % This Pulse Stone is the key to finding Dry Dry Rui ...
+  9D0:  		Kill     *Var[A] 
+  9DC:  		Exec     $Script_80243AF0_dro_02 
+  9E8:  	Case  >=  FFFFFFC1 
+  9F4:  		Switch  *StoryProgress 
+  A00:  			Case  <  FFFFFFC2 
+  A0C:  				Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00CB ) % The closer you get to the ruins, the faster the Pu ...
+  A2C:  			Case  >=  FFFFFFC2 
+  A38:  				If  *StoryProgress  >=  FFFFFFC8 
+  A48:  					If  *Flag_DRO_05  ==  00000000 
+  A58:  						Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00CD ) % How were Dry Dry Ruins?
+  A78:  						Call     SetPlayerAnimation 	( 00010002 )
+  A88:  						Wait     0000000F 
+  A94:  						Call     SetPlayerAnimation 	( 00080007 )
+  AA4:  						Wait     0000001E 
+  AB0:  						Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00CE ) % What!? It cannot be! Followers of that evil Bowser ...
+  AD0:  						Set  *Flag_DRO_05  00000001 
+  AE0:  					Else
+  AE8:  						Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00D0 ) % Welcome, Mario. Do you need anything of me? It's o ...
+  B08:  					EndIf
+  B10:  				Else
+  B18:  					Call     SayMessage0 	( 00000005 00BD0005 00BD0001 00000000 000D00CC ) % Did you find Dry Dry Ruins?
+  B38:  				EndIf
+  B40:  		EndSwitch
+  B48:  EndSwitch
+  B50:  Return
+  B58:  End
+
+#new:Script $Script_Init_8024D04C_dro_02
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	CaseOR  ==  00000002 
+   28:  	CaseOR  ==  00000003 
+   34:  		Call     SetNpcPos   	( .Npc:Self 000000C8 00000000 FFFFFFF1 )
+   50:  		Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+   68:  		Call     SetNpcFlagBits ( .Npc:Self 00200000 .True )
+   80:  		Call     SetNpcAnimation 	( .Npc:Self 00BC0005 )
+   94:  	EndCaseGroup
+   9C:  	Default
+   A4:  		Call     BindNpcIdle 	( .Npc:Self $Script_8024C450_dro_02 )
+   B8:  		Call     BindNpcInteract 	( .Npc:Self $Script_8024C4EC_dro_02 )
+   CC:  EndSwitch
+   D4:  Return
+   DC:  End
+

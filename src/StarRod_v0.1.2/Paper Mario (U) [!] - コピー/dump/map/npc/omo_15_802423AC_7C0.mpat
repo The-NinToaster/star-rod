@@ -1,0 +1,214 @@
+% automatically dumped from map omo_15
+
+#new:Npc $omo_15_802423AC_7C0
+00000004 $NpcSettings_80240F00_omo_15 00000000 00000000 00000000 
+00041705 $Script_Init_8024226C_omo_15 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+003B0001 003B0002 003B0003 003B0003 003B0001 003B0001 003B000C 003B000C 
+003B0015 003B0012 003B0011 003B0010 003B0005 003B0001 003B0001 003B0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80240F00_omo_15
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:IntTable $IntTable_80241890_omo_15
+$???_8024157C_omo_15 $???_802415F8_omo_15 $???_80241650_omo_15 $???_802416C4_omo_15 $???_80241738_omo_15 $???_802415F8_omo_15 $???_8024157C_omo_15 $???_802416C4_omo_15 
+$???_802417A0_omo_15 
+
+#new:IntTable $IntTable_802418B4_omo_15
+$???_802417FC_omo_15 
+
+#new:IntTable $IntTable_802418B8_omo_15
+FFFFFF12 FFFFFFC9 00000000 FFFFFF26 FFFFFFC4 00000000 FFFFFF3A FFFFFFC4 
+00000000 FFFFFF4E FFFFFFCE 00000000 FFFFFF4E 00000023 00000000 FFFFFF40 
+00000032 00000000 FFFFFF2E 0000003C 00000000 FFFFFF1C 00000037 00000000 
+FFFFFF5B FFFFFFF6 00000000 
+
+#new:IntTable $IntTable_80241924_omo_15
+FFFFFF4A 00000000 00000000 
+
+#new:Script $Script_80241930_omo_15
+    0:  Label    00000000 
+    C:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   20:  Switch  *Var[0] 
+   2C:  	Case  ==  0000000A 
+   38:  		Thread
+   40:  			Call     GetOwnerNpcID 	( *Var[0] )
+   50:  			Sub  *Var[0]  00000000 
+   60:  			UseIntBuffer $IntTable_802418B8_omo_15 
+   6C:  			Loop     *Var[0] 
+   78:  				Get3Int  *Var[1] *Var[2] *Var[3] 
+   8C:  			EndLoop
+   94:  			Call     SetNpcAnimation 	( .Npc:Self 003B0003 )
+   A8:  			Call     SetNpcSpeed 	( .Npc:Self *Fixed[3.0] )
+   BC:  			Call     MoveNpcTo   	( .Npc:Self *Var[1] *Var[2] *Var[3] )
+   D8:  		EndThread
+   E0:  		Wait     0000003C 
+   EC:  		Call     GetOwnerNpcID 	( *Var[0] )
+   FC:  		Call     SetOwnerVar 	( 00000000 00000000 )
+  110:  		If  *Var[0]  ==  00000009 
+  120:  			Thread
+  128:  				Wait     00000014 
+  134:  				Call     802D62B8 ( 8000004D )
+  144:  			EndThread
+  14C:  			Call     StartBossBattle 	( .Song:GeneralGuyBattle )
+  15C:  		EndIf
+  164:  EndSwitch
+  16C:  Wait     00000001 
+  178:  Goto     00000000 
+  184:  Return
+  18C:  End
+
+#new:Script $Script_80241AC4_omo_15
+    0:  Call     GetOwnerNpcID 	( *Var[9] )
+   10:  If  *Var[9]  ==  00000000 
+   20:  	Call     PlaySound   	( 8000004D )
+   30:  	UseIntBuffer $IntTable_802418B4_omo_15 
+   3C:  	Get1Int  *Var[1] 
+   48:  	UseIntBuffer *Var[1] 
+   54:  	Call     SetNpcAnimation 	( *Var[9] 0076000E )
+   68:  	Loop     
+   74:  		Get1Int  *Var[2] 
+   80:  		Switch  *Var[2] 
+   8C:  			Case  ==  00000000 
+   98:  				Get2Int  *Var[3] *Var[4] 
+   A8:  				Call     SetNpcSpeed 	( 00000000 *Fixed[8.0] )
+   BC:  				Call     MoveNpcTo   	( 00000000 *Var[3] *Var[4] 00000000 )
+   D8:  			Case  ==  00000001 
+   E4:  				Get3Int  *Var[3] *Var[4] *Var[5] 
+   F8:  				Call     SetNpcJumpscale 	( 00000000 *Fixed[1.0] )
+  10C:  				Call     NpcJump0    	( 00000000 *Var[3] *Var[4] *Var[5] 0000000A )
+  12C:  		EndSwitch
+  134:  		If  *Var[2]  ==  FFFFFFFF 
+  144:  			BreakLoop
+  14C:  		EndIf
+  154:  	EndLoop
+  15C:  	Call     PlaySound   	( 0000076D )
+  16C:  	Call     802D62E4 ( 0000036D )
+  17C:  Else
+  184:  	Set  *Var[0]  *Var[9] 
+  194:  	Sub  *Var[0]  00000000 
+  1A4:  	UseIntBuffer $IntTable_80241890_omo_15 
+  1B0:  	Loop     *Var[0] 
+  1BC:  		Get1Int  *Var[1] 
+  1C8:  	EndLoop
+  1D0:  	UseIntBuffer *Var[1] 
+  1DC:  	Loop     
+  1E8:  		Get1Int  *Var[2] 
+  1F4:  		Switch  *Var[2] 
+  200:  			Case  ==  00000000 
+  20C:  				Get2Int  *Var[3] *Var[4] 
+  21C:  				Call     SetNpcAnimation 	( *Var[9] 003B0004 )
+  230:  				Call     SetNpcSpeed 	( *Var[9] *Fixed[8.0] )
+  244:  				Call     MoveNpcTo   	( *Var[9] *Var[3] *Var[4] 00000000 )
+  260:  			Case  ==  00000001 
+  26C:  				Get3Int  *Var[3] *Var[4] *Var[5] 
+  280:  				Call     SetNpcJumpscale 	( *Var[9] *Fixed[1.0] )
+  294:  				Call     NpcJump0    	( *Var[9] *Var[3] *Var[4] *Var[5] 0000000A )
+  2B4:  			Case  ==  00000002 
+  2C0:  				Call     802CDE68 ( *Var[9] 0000000A )
+  2D4:  				Thread
+  2DC:  					Set  *Var[3]  00000000 
+  2EC:  					Loop     0000000A 
+  2F8:  						Add  *Var[3]  00000009 
+  308:  						Call     SetNpcRotation ( *Var[9] 00000000 00000000 *Var[3] )
+  324:  						Wait     00000001 
+  330:  					EndLoop
+  338:  				EndThread
+  340:  				Call     NpcJump0    	( *Var[9] FFFFFF4C 00000000 0000003F 00000004 )
+  360:  				Thread
+  368:  					Wait     0000000A 
+  374:  					Call     SetNpcRotation ( *Var[9] 00000000 00000000 00000000 )
+  390:  					Call     SetNpcAnimation 	( *Var[9] 003B0010 )
+  3A4:  					Call     PlayerFaceNpc 	( *Var[9] 00000003 )
+  3B8:  					Call     NpcFaceNpc  	( .Npc:Partner *Var[9] 00000003 )
+  3D0:  				EndThread
+  3D8:  				Call     NpcJump0    	( *Var[9] FFFFFF24 00000000 0000003F 0000000A )
+  3F8:  				Call     PlaySoundAtNpc ( *Var[9] 000003E3 00000000 )
+  410:  				Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[1.0] )
+  42C:  				Wait     00000032 
+  438:  				Loop     00000002 
+  444:  					Call     PlaySoundAtNpc ( *Var[9] 000003E4 00000000 )
+  45C:  					Wait     00000007 
+  468:  				EndLoop
+  470:  				Wait     00000006 
+  47C:  				Call     802CDE68 ( *Var[9] 00000000 )
+  490:  				Call     SetNpcAnimation 	( *Var[9] 003B0001 )
+  4A4:  				Call     NpcJump0    	( *Var[9] FFFFFF1A 00000000 0000003F 0000000A )
+  4C4:  				Call     InterpNpcYaw 	( *Var[9] 0000005A 00000000 )
+  4DC:  				Wait     00000014 
+  4E8:  				Thread
+  4F0:  					Call     PlaySoundAtNpc ( *Var[9] 000003A2 00000000 )
+  508:  					Wait     0000002D 
+  514:  					Call     802D62B8 ( 000003A2 )
+  524:  					Call     SetNpcVar   	( 00000009 00000000 00000028 )
+  53C:  				EndThread
+  544:  		EndSwitch
+  54C:  		If  *Var[2]  ==  FFFFFFFF 
+  55C:  			BreakLoop
+  564:  		EndIf
+  56C:  	EndLoop
+  574:  EndIf
+  57C:  Call     SetNpcFlagBits ( *Var[9] 00000200 .False )
+  594:  Call     SetNpcPos   	( *Var[9] 00000000 FFFFFC18 00000000 )
+  5B0:  Return
+  5B8:  End
+
+#new:Script $Script_80242084_omo_15
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     SetMusicTrack 	( 00000000 .Song:ShyGuyToybox 00000000 00000008 )
+   44:  		Call     GetOwnerNpcID 	( *Var[0] )
+   54:  		If  *Var[0]  ==  00000000 
+   64:  			Call     80044180 ( 00000002 00000001 )
+   78:  			UseIntBuffer $IntTable_802418B8_omo_15 
+   84:  			Set  *Var[0]  00000001 
+   94:  			Loop     00000009 
+   A0:  				Get3Int  *Var[1] *Var[2] *Var[3] 
+   B4:  				Call     SetNpcPos   	( *Var[0] *Var[1] 00000000 *Var[2] )
+   D0:  				Call     NpcFacePlayer 	( *Var[0] 00000000 )
+   E4:  				Add  *Var[0]  00000001 
+   F4:  			EndLoop
+   FC:  			UseIntBuffer $IntTable_80241924_omo_15 
+  108:  			Get3Int  *Var[1] *Var[2] *Var[3] 
+  11C:  			Call     SetNpcPos   	( 00000000 *Var[1] *Var[2] *Var[3] )
+  138:  		EndIf
+  140:  		Exec     $Script_80241AC4_omo_15 
+  14C:  	Case  ==  00000001 
+  158:  	Case  ==  00000002 
+  164:  EndSwitch
+  16C:  Return
+  174:  End
+
+#new:IntTable $IntTable_80242200_omo_15
+0000008C 00000013 00000005 00000093 00000013 00000020 0000009A 00000013 
+0000003B 000000A1 00000013 00000056 00000064 00000000 0000001E 0000006A 
+00000000 00000037 00000070 00000000 00000050 00000076 00000000 00000069 
+0000007C 00000000 00000082 
+
+#new:Script $Script_Init_8024226C_omo_15
+    0:  If  *StoryProgress  <  00000004 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_80241930_omo_15 )
+   24:  	Call     BindNpcDefeat 	( .Npc:Self $Script_80242084_omo_15 )
+   38:  	Call     GetOwnerNpcID 	( *Var[0] )
+   48:  	Sub  *Var[0]  00000000 
+   58:  	UseIntBuffer $IntTable_80242200_omo_15 
+   64:  	Loop     *Var[0] 
+   70:  		Get3Int  *Var[1] *Var[2] *Var[3] 
+   84:  	EndLoop
+   8C:  	Call     SetNpcPos   	( .Npc:Self *Var[1] *Var[2] *Var[3] )
+   A8:  Else
+   B0:  	Call     RemoveNpc   	( .Npc:Self )
+   C0:  	Return
+   C8:  EndIf
+   D0:  Return
+   D8:  End
+

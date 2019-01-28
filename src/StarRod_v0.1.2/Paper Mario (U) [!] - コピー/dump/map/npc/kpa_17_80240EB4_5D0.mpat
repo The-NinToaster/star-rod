@@ -1,0 +1,47 @@
+% automatically dumped from map kpa_17
+
+#new:Npc $kpa_17_80240EB4_5D0
+00000003 $NpcSettings_80240470_kpa_17 00000000 00000000 00000000 
+00000D01 $Script_Init_80240E5C_kpa_17 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00890001 00890001 00890001 00890001 00890001 00890001 00890001 00890001 
+00890001 00890001 00890001 00890001 00890001 00890001 00890001 00890001 
+00000000 00000000 00000000 001A0116 % This is the Toad Minister. Uh... Pleasure to meet  ...
+
+#new:NpcSettings $NpcSettings_80240470_kpa_17
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80240C30_kpa_17
+    0:  Switch  *Flag_KPA_0D 
+    C:  	Case  ==  00000000 
+   18:  		Switch  *AreaByte[4] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 00890004 00890001 00000000 00130012 ) % Oh, Mario! You came at long last! As you can see,  ...
+   50:  				Set  *AreaByte[4]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 00890004 00890001 00000000 00130013 ) % Oh, Mario! You came at long last! As you can see,  ...
+   8C:  				Set  *AreaByte[4]  00000002 
+   9C:  			Case  ==  00000002 
+   A8:  				Call     SayMessage0 	( .Npc:Self 00890004 00890001 00000000 00130014 ) % Oh, Mario! You came at long last! As you can see,  ...
+   C8:  				Set  *AreaByte[4]  00000001 
+   D8:  		EndSwitch
+   E0:  	Case  ==  00000001 
+   EC:  		Call     SayMessage0 	( .Npc:Self 00890004 00890001 00000000 00130015 ) % Mario... Please save Princess Peach! We're all rel ...
+  10C:  EndSwitch
+  114:  Return
+  11C:  End
+
+#new:Script $Script_Init_80240E5C_kpa_17
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80240C30_kpa_17 )
+   14:  Call     SetNpcPos   	( .Npc:Self 0000044C 0000001E FFFFFE3E )
+   30:  Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+   48:  Return
+   50:  End
+

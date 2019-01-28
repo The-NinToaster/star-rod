@@ -1,0 +1,253 @@
+% automatically dumped from map kpa_130
+
+#new:Npc $kpa_130_80241808
+00000004 $NpcSettings_80240FA8_kpa_130 00000000 00000000 00000000 
+00002D00 $Script_Init_80241000_kpa_130 00000000 00000000 0000010E 
+{NoItems}
+{HP:20:70:4:50} {HP:30:60:4:50} {HP:50:50:4:40} {HP:80:40:4:40} {HP:100:30:4:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:1:3}
+FFFFFFE2 FFFFFE20 0000007A 00000000 00000000 FFFF8001 00000000 FFFFFFE2 
+FFFFFE20 0000007A 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+002E0101 002E0101 002E0101 002E0101 002E0101 002E0101 002E0103 002E0103 
+002E0102 002E0101 002E0101 002E0101 002E0101 002E0101 002E0101 002E0101 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240000_kpa_130
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        S0, 10 (SP)
+    8:  ADDIU     S0, R0, 32
+    C:  SW        RA, 14 (SP)
+        .o10
+   10:  JAL       8003ECE8
+   14:  DADDU     A0, S0, R0
+   18:  LW        V0, 6C (V0)
+   1C:  BNEL      V0, R0, .o2C
+   20:  ADDIU     S0, S0, 1
+   24:  BEQ       R0, R0, .o38
+   28:  DADDU     V0, S0, R0
+        .o2C
+   2C:  SLTI      V0, S0, 3C
+   30:  BNE       V0, R0, .o10
+   34:  ADDIU     V0, R0, FFFF
+        .o38
+   38:  LW        RA, 14 (SP)
+   3C:  LW        S0, 10 (SP)
+   40:  JR        RA
+   44:  ADDIU     SP, SP, 18
+
+#new:Function $Function_802404AC_kpa_130
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S4, 20 (SP)
+    8:  DADDU     S4, A0, R0
+    C:  SW        RA, 24 (SP)
+   10:  SW        S3, 1C (SP)
+   14:  SW        S2, 18 (SP)
+   18:  SW        S1, 14 (SP)
+   1C:  SW        S0, 10 (SP)
+   20:  LW        S2, 148 (S4)
+   24:  LH        A0, 8 (S2)
+   28:  LW        S0, C (S4)
+   2C:  JAL       8003AAEC
+   30:  DADDU     S1, A1, R0
+   34:  DADDU     A0, S4, R0
+   38:  LW        A1, 0 (S0)
+   3C:  JAL       {Func:GetVariable}
+   40:  DADDU     S3, V0, R0
+   44:  BEQ       S1, R0, .o78
+   48:  ADDIU     V0, R0, 1E
+   4C:  SW        R0, 70 (S4)
+   50:  SH        V0, 8E (S3)
+   54:  LW        V0, CC (S2)
+   58:  LW        V0, 0 (V0)
+   5C:  DADDU     A0, S3, R0
+   60:  SW        V0, 28 (S3)
+   64:  LW        V0, 0 (S2)
+   68:  LUI       V1, 20
+   6C:  OR        V0, V0, V1
+   70:  JAL       8003ABFC
+   74:  SW        V0, 0 (S2)
+        .o78
+   78:  LAW       V0, 800F7B30
+   80:  LWC1      F0, 3C (S3)
+   84:  LWC1      F2, 2C (V0)
+   88:  SUB.S     F0, F0, F2
+   8C:  LAD       F2, $ConstDouble_80244758_kpa_130
+   94:  CVT.D.S   F4, F0
+   98:  C.LT.D    F2, F4
+   9C:  NOP
+   A0:  BC1T      .o268
+   A4:  DADDU     V0, R0, R0
+   A8:  LIF       F1, -3.3125
+   B0:  MTC1      R0, F0
+   B4:  NOP
+   B8:  C.LT.D    F4, F0
+   BC:  NOP
+   C0:  BC1T      .o268
+   C4:  NOP
+   C8:  LW        V0, B0 (S2)
+   CC:  ANDI      V0, V0, 4
+   D0:  BEQ       V0, R0, .o100
+   D4:  NOP
+   D8:  LW        V0, CC (S2)
+   DC:  LW        V0, 0 (V0)
+   E0:  SW        V0, 28 (S3)
+   E4:  LB        V0, B4 (S2)
+   E8:  BNE       V0, R0, .o268
+   EC:  DADDU     V0, R0, R0
+   F0:  LW        V0, B0 (S2)
+   F4:  ADDIU     V1, R0, FFFB
+   F8:  AND       V0, V0, V1
+   FC:  SW        V0, B0 (S2)
+        .o100
+  100:  LW        S0, 70 (S4)
+  104:  BEQ       S0, R0, .o140
+  108:  NOP
+  10C:  BLTZ      S0, .o264
+  110:  ADDIU     V0, R0, A
+  114:  BEQ       S0, V0, .o164
+  118:  SLT       V0, S0, V0
+  11C:  BNE       V0, R0, .o268
+  120:  DADDU     V0, R0, R0
+  124:  ADDIU     V0, R0, B
+  128:  BEQ       S0, V0, .o1B4
+  12C:  ADDIU     V0, R0, C
+  130:  BEQ       S0, V0, .o208
+  134:  DADDU     V0, R0, R0
+  138:  BEQ       R0, R0, .o268
+  13C:  NOP
+        .o140
+  140:  LHU       V0, 8E (S3)
+  144:  ADDIU     V0, V0, FFFF
+  148:  SH        V0, 8E (S3)
+  14C:  SLL       V0, V0, 10
+  150:  BGTZ      V0, .o268
+  154:  DADDU     V0, R0, R0
+  158:  ADDIU     V0, R0, A
+  15C:  BEQ       R0, R0, .o264
+  160:  SW        V0, 70 (S4)
+        .o164
+  164:  JAL       $Function_80240000_kpa_130
+  168:  NOP
+  16C:  BLEZ      V0, .o220
+  170:  SW        V0, 6C (S2)
+  174:  JAL       8003ECE8
+  178:  DADDU     A0, V0, R0
+  17C:  DADDU     V1, V0, R0
+  180:  ADDIU     V0, R0, 1
+  184:  SW        V0, 6C (V1)
+  188:  LH        V0, 8 (S2)
+  18C:  SW        V0, 70 (V1)
+  190:  LW        V0, 70 (S2)
+  194:  SW        V0, 74 (V1)
+  198:  LW        V0, CC (S2)
+  19C:  LW        V0, 20 (V0)
+  1A0:  SH        S0, 8E (S3)
+  1A4:  SW        V0, 28 (S3)
+  1A8:  ADDIU     V0, R0, B
+  1AC:  BEQ       R0, R0, .o264
+  1B0:  SW        V0, 70 (S4)
+        .o1B4
+  1B4:  LHU       V0, 8E (S3)
+  1B8:  ADDIU     V0, V0, FFFF
+  1BC:  SH        V0, 8E (S3)
+  1C0:  SLL       V0, V0, 10
+  1C4:  BGTZ      V0, .o268
+  1C8:  DADDU     V0, R0, R0
+  1CC:  LW        V0, CC (S2)
+  1D0:  LW        V0, 0 (V0)
+  1D4:  SW        V0, 28 (S3)
+  1D8:  JAL       8003ECE8
+  1DC:  LW        A0, 6C (S2)
+  1E0:  DADDU     A0, S3, R0
+  1E4:  ADDIU     A1, R0, 328
+  1E8:  ADDIU     V1, R0, 2
+  1EC:  LUI       A2, 20
+  1F0:  JAL       800494C0
+  1F4:  SW        V1, 6C (V0)
+  1F8:  ADDIU     V0, R0, 5
+  1FC:  SH        V0, 8E (S3)
+  200:  ADDIU     V0, R0, C
+  204:  SW        V0, 70 (S4)
+        .o208
+  208:  LHU       V0, 8E (S3)
+  20C:  ADDIU     V0, V0, FFFF
+  210:  SH        V0, 8E (S3)
+  214:  SLL       V0, V0, 10
+  218:  BGTZ      V0, .o268
+  21C:  DADDU     V0, R0, R0
+        .o220
+  220:  JAL       {Func:GetRandom}
+  224:  ADDIU     A0, R0, 3E8
+  228:  LIO       V1, 88888889
+  230:  MULT      V0, V1
+  234:  SRA       V1, V0, 1F
+  238:  MFHI      A3
+  23C:  ADDU      A0, A3, V0
+  240:  SRA       A0, A0, 5
+  244:  SUBU      A0, A0, V1
+  248:  SLL       V1, A0, 4
+  24C:  SUBU      V1, V1, A0
+  250:  SLL       V1, V1, 2
+  254:  SUBU      V0, V0, V1
+  258:  ADDIU     V0, V0, 28
+  25C:  SH        V0, 8E (S3)
+  260:  SW        R0, 70 (S4)
+        .o264
+  264:  DADDU     V0, R0, R0
+        .o268
+  268:  LW        RA, 24 (SP)
+  26C:  LW        S4, 20 (SP)
+  270:  LW        S3, 1C (SP)
+  274:  LW        S2, 18 (SP)
+  278:  LW        S1, 14 (SP)
+  27C:  LW        S0, 10 (SP)
+  280:  JR        RA
+  284:  ADDIU     SP, SP, 28
+
+#new:AISettings $AISettings_80240C24_kpa_130
+    0.0 % alert radius
+    0.0
+    10`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    0`
+
+#new:Script $Script_NpcAI_80240C48_kpa_130
+    0:  Call     $Function_802404AC_kpa_130 ( $AISettings_80240C24_kpa_130 )
+   10:  Return
+   18:  End
+
+#new:Script $Script_80240CF8_kpa_130
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     DoNpcDefeat 	( )
+   34:  	Case  ==  00000002 
+   40:  		Call     80045900 ( 00000000 )
+   50:  	Case  ==  00000003 
+   5C:  		Call     SetNpcFlagBits2 	( .Npc:Self 00000010 00000001 )
+   74:  		Call     RemoveNpc   	( .Npc:Self )
+   84:  EndSwitch
+   8C:  Return
+   94:  End
+
+#new:NpcSettings $NpcSettings_80240FA8_kpa_130
+00000000 001A0020 00000000 00000000 $Script_NpcAI_80240C48_kpa_130 80077F70 00000000 $Script_80240CF8_kpa_130 
+00000000 00000000 001B0000 
+
+#new:Script $Script_Init_80241000_kpa_130
+    0:  Call     SetOwnerVar 	( 00000001 FFFFFC1D )
+   14:  Return
+   1C:  End
+
+#new:ConstDouble $ConstDouble_80244758_kpa_130
+190.000000d
+

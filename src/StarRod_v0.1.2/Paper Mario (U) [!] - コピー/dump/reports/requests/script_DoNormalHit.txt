@@ -1,0 +1,142 @@
+Script: DoNormalHit (001C7924)
+
+    0:  Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[1] )
+   18:  Call     80269E80 ( *Var[2] )
+   28:  Switch  *Var[2] 
+   34:  	Case  ==  00000007 
+   40:  		Call     GetActorType 	( FFFFFF81 *Var[5] )
+   54:  		Switch  *Var[5] 
+   60:  			CaseOR  ==  00000012 
+   6C:  			CaseOR  ==  00000030 
+   78:  			EndCaseGroup
+   80:  			Default
+   88:  				Call     GetActorPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+   A4:  				Call     SetActorJumpscale 	( FFFFFF81 *Fixed[0.0107421875] )
+   B8:  				Add  *Var[1]  00000037 
+   C8:  				Call     SetGoalToPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+   E4:  				Call     JumpToGoal  	( FFFFFF81 0000000A 00000000 00000000 00000000 )
+  104:  		EndSwitch
+  10C:  		Set  *Var[5]  00000000 
+  11C:  		Loop     0000001E 
+  128:  			Add  *Var[5]  00000030 
+  138:  			Call     SetActorAngle 	( FFFFFF81 *Var[5] )
+  14C:  			Wait     00000001 
+  158:  		EndLoop
+  160:  		Call     GetActorType 	( FFFFFF81 *Var[7] )
+  174:  		Switch  *Var[7] 
+  180:  			CaseOR  ==  00000012 
+  18C:  			CaseOR  ==  00000030 
+  198:  				Wait     0000001E 
+  1A4:  			EndCaseGroup
+  1AC:  			Default
+  1B4:  				Sub  *Var[1]  00000037 
+  1C4:  				Call     SetActorJumpscale 	( FFFFFF81 *Fixed[0.80078125] )
+  1D8:  				If  *Var[1]  ==  00000000 
+  1E8:  					Call     SetGoalToPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  204:  					Call     JumpToGoal  	( FFFFFF81 0000000F 00000000 00000001 00000000 )
+  224:  					Call     SetGoalToPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  240:  					Call     JumpToGoal  	( FFFFFF81 0000000A 00000000 00000001 00000000 )
+  260:  					Call     SetGoalToPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  27C:  					Call     JumpToGoal  	( FFFFFF81 00000005 00000000 00000001 00000000 )
+  29C:  				Else
+  2A4:  					Call     SetGoalToPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  2C0:  					Call     JumpToGoal  	( FFFFFF81 0000000F 00000000 00000000 00000000 )
+  2E0:  					Call     SetGoalToPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  2FC:  					Call     JumpToGoal  	( FFFFFF81 0000000A 00000000 00000000 00000000 )
+  31C:  					Call     SetGoalToPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  338:  					Call     JumpToGoal  	( FFFFFF81 00000005 00000000 00000000 00000000 )
+  358:  				EndIf
+  360:  		EndSwitch
+  368:  	CaseOR  ==  0000000A 
+  374:  	CaseOR  ==  0000000E 
+  380:  		If  *Var[2]  ==  0000000E 
+  390:  			Exec     80298E20 
+  39C:  		EndIf
+  3A4:  		ChildThread
+  3AC:  			Set  *Var[0]  00000000 
+  3BC:  			Loop     0000000A 
+  3C8:  				Add  *Var[0]  00000024 
+  3D8:  				Call     SetActorAngle 	( FFFFFF81 *Var[0] )
+  3EC:  				Wait     00000001 
+  3F8:  			EndLoop
+  400:  		EndChildThread
+  408:  		Call     80280840 ( )
+  414:  		ExecWait 80299828 
+  420:  	EndCaseGroup
+  428:  	CaseOR  ==  0000000C 
+  434:  	CaseOR  ==  00000010 
+  440:  		If  *Var[2]  ==  00000010 
+  450:  			Exec     80298E20 
+  45C:  		EndIf
+  464:  		ChildThread
+  46C:  			Call     MakeLerp    	( 00000000 00000870 0000003C 0000000A )
+  488:  			Label    00000000 
+  494:  			Call     UpdateLerp  	( )
+  4A0:  			Call     SetActorAngle 	( FFFFFF81 *Var[0] )
+  4B4:  			Wait     00000001 
+  4C0:  			If  *Var[1]  ==  00000001 
+  4D0:  				Goto     00000000 
+  4DC:  			EndIf
+  4E4:  		EndChildThread
+  4EC:  		Call     80280840 ( )
+  4F8:  		ExecWait 80299828 
+  504:  		Wait     0000003C 
+  510:  	EndCaseGroup
+  518:  	CaseOR  ==  0000000B 
+  524:  	CaseOR  ==  0000000F 
+  530:  		If  *Var[2]  ==  0000000F 
+  540:  			Exec     80298E20 
+  54C:  		EndIf
+  554:  		ChildThread
+  55C:  			Set  *Var[0]  00000168 
+  56C:  			Loop     0000000A 
+  578:  				Sub  *Var[0]  00000024 
+  588:  				Call     SetActorAngle 	( FFFFFF81 *Var[0] )
+  59C:  				Wait     00000001 
+  5A8:  			EndLoop
+  5B0:  		EndChildThread
+  5B8:  		Call     80280840 ( )
+  5C4:  		ExecWait 80299828 
+  5D0:  	EndCaseGroup
+  5D8:  	CaseOR  ==  0000000D 
+  5E4:  	CaseOR  ==  00000011 
+  5F0:  		If  *Var[2]  ==  00000011 
+  600:  			Exec     80298E20 
+  60C:  		EndIf
+  614:  		ChildThread
+  61C:  			Call     MakeLerp    	( 00000870 00000000 0000003C 0000000A )
+  638:  			Label    00000001 
+  644:  			Call     UpdateLerp  	( )
+  650:  			Call     SetActorAngle 	( FFFFFF81 *Var[0] )
+  664:  			Wait     00000001 
+  670:  			If  *Var[1]  ==  00000001 
+  680:  				Goto     00000001 
+  68C:  			EndIf
+  694:  		EndChildThread
+  69C:  		Call     80280840 ( )
+  6A8:  		ExecWait 80299828 
+  6B4:  		Wait     0000003C 
+  6C0:  	EndCaseGroup
+  6C8:  	Case  ==  00000012 
+  6D4:  		Set  *Var[0]  00000003 
+  6E4:  		ExecWait 80299828 
+  6F0:  	Case  ==  00000002 
+  6FC:  		Exec     8029B818 *Var[E] 
+  70C:  		Call     80280840 ( )
+  718:  		ExecWait 80299828 
+  724:  		Label    00000002 
+  730:  		Call     GetActorRotation 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  74C:  		Mod  *Var[1]  00000168 
+  75C:  		If  *Var[1]  !=  00000000 
+  76C:  			Wait     00000001 
+  778:  			Goto     00000002 
+  784:  		EndIf
+  78C:  		Kill     *Var[E] 
+  798:  		Call     SetActorAngle 	( FFFFFF81 00000000 )
+  7AC:  	Default
+  7B4:  		Call     80280840 ( )
+  7C0:  		ExecWait 80299828 
+  7CC:  EndSwitch
+  7D4:  Return
+  7DC:  End
+

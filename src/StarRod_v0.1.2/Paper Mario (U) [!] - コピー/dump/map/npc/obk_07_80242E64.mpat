@@ -1,0 +1,88 @@
+% automatically dumped from map obk_07
+
+#new:Npc $obk_07_80242E64
+00000002 $NpcSettings_80242900_obk_07 00000000 00000000 00000000 
+00400D01 $Script_Init_80242E08_obk_07 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00950001 00950002 00950003 00950003 00950001 00950001 00950000 00950000 
+00950003 00950003 00950003 00950003 00950003 00950003 00950003 00950003 
+00000000 00000000 00000000 001A00A8 % This Boo is guarding a treasure chest. Bow told hi ...
+
+#new:Function $Function_80241B50_obk_07
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  JAL       8003AAEC
+    C:  LW        A0, 14C (A0)
+   10:  DADDU     V1, V0, R0
+   14:  ADDIU     A0, R0, B4
+   18:  SB        A0, AC (V1)
+   1C:  ADDIU     A0, R0, 16
+   20:  SB        A0, AA (V1)
+   24:  LW        RA, 10 (SP)
+   28:  ADDIU     V0, R0, 2
+   2C:  JR        RA
+   30:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80242900_obk_07
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_Init_80242E08_obk_07
+    0:  If  *StoryProgress  >=  FFFFFFD6 
+   10:  	Set  *MapVar[2]  00000001 
+   20:  	Call     RemoveNpc   	( .Npc:Self )
+   30:  Else
+   38:  	ExecWait $Script_80244B60_obk_07 
+   44:  EndIf
+   4C:  Return
+   54:  End
+
+#new:Script $Script_80243E94_obk_07
+    0:  Call     SetNpcAnimation 	( 00000002 00950001 )
+   14:  Label    00000000 
+   20:  Call     RandInt     	( 0000001E *Var[0] )
+   34:  Add  *Var[0]  0000001E 
+   44:  Wait     *Var[0] 
+   50:  Call     InterpNpcYaw 	( 00000002 0000005A 00000005 )
+   68:  Call     RandInt     	( 0000001E *Var[0] )
+   7C:  Add  *Var[0]  0000001E 
+   8C:  Wait     *Var[0] 
+   98:  Call     InterpNpcYaw 	( 00000002 0000010E 00000005 )
+   B0:  Goto     00000000 
+   BC:  Return
+   C4:  End
+
+#new:Script $Script_80244840_obk_07
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFD5 
+   18:  		If  *Flag_OBK_17  ==  00000001 
+   28:  			Call     SayMessage0 	( 00000002 00950004 00950001 00000000 000E0036 ) % I am so bored!! Boo-ored! I know the Lady Bow orde ...
+   48:  		Else
+   50:  			Call     SayMessage0 	( 00000002 00950004 00950001 00000000 000E0035 ) % I am so bored!! Boo-ored! I know the Lady Bow orde ...
+   70:  		EndIf
+   78:  	Case  ==  FFFFFFD5 
+   84:  		If  *MapVar[1]  ==  00000001 
+   94:  			Call     SayMessage0 	( 00000002 00950004 00950001 00000000 000E0037 ) % Oh yeah, such rhythm! What a groove! Par-tay!
+   B4:  		Else
+   BC:  			Call     SayMessage0 	( 00000002 00950004 00950001 00000000 000E0038 ) % Oh Boo! Is that...the end? I was just starting to  ...
+   DC:  		EndIf
+   E4:  EndSwitch
+   EC:  Return
+   F4:  End
+
+#new:Script $Script_80244B60_obk_07
+    0:  Call     SetNpcScale 	( 00000002 *Fixed[1.0] *Fixed[1.0] *Fixed[1.0] )
+   1C:  Call     802CDF8C ( 00000002 00000028 00000028 )
+   34:  Call     $Function_80241B50_obk_07 ( )
+   40:  Call     BindNpcInteract 	( .Npc:Self $Script_80244840_obk_07 )
+   54:  Call     BindNpcIdle 	( .Npc:Self $Script_80243E94_obk_07 )
+   68:  Call     SetNpcPos   	( 00000002 000000A8 00000000 FFFFFF78 )
+   84:  Return
+   8C:  End
+

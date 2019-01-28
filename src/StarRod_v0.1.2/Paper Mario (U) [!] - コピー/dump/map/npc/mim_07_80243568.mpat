@@ -1,0 +1,183 @@
+% automatically dumped from map mim_07
+
+#new:Npc $mim_07_80243568
+00000002 $NpcSettings_80242918_mim_07 00000000 00000000 00000000 
+00A40D04 $Script_Init_802430B8_mim_07 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00210003 00210007 00210007 00210007 00210003 00210003 00210003 00210003 
+00210003 00210003 00210003 00210003 00210003 00210003 00210003 00210003 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_80241110_mim_07
+    0:  Call     SetMusicTrack 	( 00000000 .Song:ForeverForest 00000000 00000008 )
+   1C:  Call     802D611C ( 00000000 )
+   2C:  Return
+   34:  End
+
+#new:Script $Script_8024114C_mim_07
+    0:  Call     SetMusicTrack 	( 00000000 .Song:JrTroopaTheme 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:NpcSettings $NpcSettings_80242918_mim_07
+00000000 00200018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:IntTable $IntTable_80242944_mim_07
+00000000 FFFFFEA2 
+
+#new:IntTable $IntTable_8024294C_mim_07
+00000000 0000015E 
+
+#new:IntTable $IntTable_80242954_mim_07
+0000015E 00000000 
+
+#new:IntTable $IntTable_8024295C_mim_07
+FFFFFEF2 FFFFFF0B FFFFFF6A FFFFFECA 
+
+#new:IntTable $IntTable_8024296C_mim_07
+0000010E FFFFFF0B 00000096 FFFFFECA 
+
+#new:IntTable $IntTable_8024297C_mim_07
+FFFFFEF2 000000F5 FFFFFF6A 00000136 
+
+#new:IntTable $IntTable_8024298C_mim_07
+0000010E 000000F5 00000096 00000136 
+
+#new:IntTable $IntTable_8024299C_mim_07
+000000F5 FFFFFEF2 00000136 FFFFFF6A 
+
+#new:IntTable $IntTable_802429AC_mim_07
+000000F5 0000010E 00000136 00000096 
+
+#new:Script $Script_802429BC_mim_07
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		UseIntBuffer $IntTable_80242944_mim_07 
+   34:  	Case  ==  00000001 
+   40:  		UseIntBuffer $IntTable_80242944_mim_07 
+   4C:  	Case  ==  00000002 
+   58:  		UseIntBuffer $IntTable_8024294C_mim_07 
+   64:  	Case  ==  00000003 
+   70:  		UseIntBuffer $IntTable_80242954_mim_07 
+   7C:  EndSwitch
+   84:  Get2Int  *Var[1] *Var[2] 
+   94:  Call     AwaitPlayerApproach 	( *Var[1] *Var[2] 00000050 )
+   AC:  Label    0000000A 
+   B8:  Wait     00000001 
+   C4:  Call     AwaitPlayerLeave 	( *Var[1] *Var[2] 00000064 )
+   DC:  Call     IsPlayerWithin ( 00000000 00000000 0000019A *Var[0] )
+   F8:  If  *Var[0]  ==  00000000 
+  108:  	Goto     0000000A 
+  114:  EndIf
+  11C:  Call     DisablePlayerInput 	( .True )
+  12C:  Call     802D2B0C ( *Var[0] )
+  13C:  If  *Var[0]  !=  00000000 
+  14C:  	Call     802D2B6C ( )
+  158:  	Wait     00000014 
+  164:  EndIf
+  16C:  ExecWait $Script_8024114C_mim_07 
+  178:  Call     GetPlayerPos 	( *Var[1] *Var[2] *Var[3] )
+  190:  Call     GetEntryID  	( *Var[0] )
+  1A0:  Switch  *Var[0] 
+  1AC:  	Case  ==  00000000 
+  1B8:  		If  *Var[1]  <  00000000 
+  1C8:  			UseIntBuffer $IntTable_8024295C_mim_07 
+  1D4:  		Else
+  1DC:  			UseIntBuffer $IntTable_8024296C_mim_07 
+  1E8:  		EndIf
+  1F0:  	Case  ==  00000002 
+  1FC:  		If  *Var[1]  <  00000000 
+  20C:  			UseIntBuffer $IntTable_8024297C_mim_07 
+  218:  		Else
+  220:  			UseIntBuffer $IntTable_8024298C_mim_07 
+  22C:  		EndIf
+  234:  	Case  ==  00000003 
+  240:  		If  *Var[3]  <  00000000 
+  250:  			UseIntBuffer $IntTable_8024299C_mim_07 
+  25C:  		Else
+  264:  			UseIntBuffer $IntTable_802429AC_mim_07 
+  270:  		EndIf
+  278:  EndSwitch
+  280:  Get4Int  *Var[2] *Var[3] *Var[4] *Var[5] 
+  298:  Call     SetOwnerVar 	( 00000000 *Var[2] )
+  2AC:  Call     SetOwnerVar 	( 00000001 *Var[3] )
+  2C0:  Call     SetNpcPos   	( .Npc:Self *Var[2] 00000000 *Var[3] )
+  2DC:  Call     SayMessage0 	( .Npc:Self 00210016 00210003 00000000 000E0018 ) % Eeeek!
+  2FC:  Thread
+  304:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  31C:  	Add  *Var[0]  *Var[4] 
+  32C:  	Add  *Var[2]  *Var[5] 
+  33C:  	Div  *Var[0]  00000002 
+  34C:  	Div  *Var[2]  00000002 
+  35C:  	Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  378:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  394:  	Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  3A8:  	Call     SetCamDistance ( .Default *Fixed[300.0] )
+  3BC:  	Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-6.0] )
+  3D4:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  3EC:  EndThread
+  3F4:  Call     SetNpcAnimation 	( .Npc:Self 00210009 )
+  408:  Call     MoveNpcTo   	( .Npc:Self *Var[4] *Var[5] 0000001E )
+  424:  Call     SetNpcAnimation 	( .Npc:Self 00210003 )
+  438:  Call     SayMessage0 	( .Npc:Self 00210016 00210003 00000000 000E0019 ) % Oh, Mario! Oh, thank... ...I mean, ah HA! Boy, are ...
+  458:  Call     DisablePartnerAI 	( 00000000 )
+  468:  Call     GetCurrentPartner 	( *Var[0] )
+  478:  Switch  *Var[0] 
+  484:  	Case  ==  00000001 
+  490:  		Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000005 000E001A ) % Why, it's Jr. Troopa! Have you been crying? Did yo ...
+  4B0:  	Case  ==  00000002 
+  4BC:  		Call     SayMessage0 	( .Npc:Partner 0002000D 00020003 00000005 000E001B ) % Hey, Mario. It looks like this kid is lost.
+  4DC:  	Case  ==  00000003 
+  4E8:  		Call     SayMessage0 	( .Npc:Partner 0003000E 00030003 00000005 000E001C ) % This little boy is filthy! What happened to him? I ...
+  508:  	Case  ==  00000004 
+  514:  		Call     SayMessage0 	( .Npc:Partner 00040006 00040001 00000005 000E001D ) % Oh dear. This poor child looks very upset. Was he  ...
+  534:  	Case  ==  00000009 
+  540:  		Call     SayMessage0 	( .Npc:Partner 00050004 00050001 00000005 000E001E ) % Who is this kid? What a dirty little urchin... He  ...
+  560:  EndSwitch
+  568:  Call     EnablePartnerAI 	( )
+  574:  Call     SayMessage0 	( .Npc:Self 00210016 00210003 00000000 000E001F ) % Hey! Shut up! Shut uuuuup! I'm not a lost child! I ...
+  594:  Call     SetNpcAnimation 	( .Npc:Self 0021000B )
+  5A8:  Call     DisablePlayerInput 	( .False )
+  5B8:  Call     StartBossBattle 	( .Song:JrTroopaBattle )
+  5C8:  Return
+  5D0:  End
+
+#new:Script $Script_80242F94_mim_07
+    0:  Call     SayMessage0 	( .Npc:Self 00210016 00210003 00000000 000E0022 ) % Nooooo! Darn it! Darn it!! Darn iiiiiit!!!
+   20:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   34:  Call     GetOwnerVar 	( 00000001 *Var[1] )
+   48:  If  *Var[1]  >=  00000000 
+   58:  	Call     InterpNpcYaw 	( .Npc:Self 000000C8 00000000 )
+   70:  Else
+   78:  	Call     InterpNpcYaw 	( .Npc:Self 0000014A 00000000 )
+   90:  EndIf
+   98:  Call     SetNpcAnimation 	( .Npc:Self 0021000B )
+   AC:  Wait     0000000A 
+   B8:  Call     MoveNpcTo   	( .Npc:Self *Var[0] *Var[1] 0000000F )
+   D4:  Set  *Flag_MIM_03  00000001 
+   E4:  ExecWait $Script_80241110_mim_07 
+   F0:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  104:  Call     RemoveNpc   	( .Npc:Self )
+  114:  Return
+  11C:  End
+
+#new:Script $Script_Init_802430B8_mim_07
+    0:  If  *StoryProgress  >=  FFFFFFD8 
+   10:  	If  *Flag_MIM_03  ==  00000000 
+   20:  		Call     BindNpcIdle 	( .Npc:Self $Script_802429BC_mim_07 )
+   34:  		Call     BindNpcDefeat 	( .Npc:Self $Script_80242F94_mim_07 )
+   48:  		Return
+   50:  	EndIf
+   58:  EndIf
+   60:  Call     RemoveNpc   	( .Npc:Self )
+   70:  Return
+   78:  End
+

@@ -1,0 +1,106 @@
+% automatically dumped from map omo_12
+
+#new:Npc $omo_12_80242D44
+00000002 $NpcSettings_8024087C_omo_12 00000000 00000000 00000000 
+00400D09 $Script_Init_8024272C_omo_12 00000001 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+006D0001 006D0001 006D0001 006D0001 006D0001 006D0001 006D0009 006D0009 
+006D0001 006D0001 006D0001 006D0001 006D0001 006D0001 006D0001 006D0001 
+00000000 00000000 $ExtraAnimationList_8024293C_omo_12 001A00B9 % Say... This is the lantern that belongs to the Big ...
+
+#new:NpcSettings $NpcSettings_8024087C_omo_12
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:Script $Script_802422EC_omo_12
+    0:  Thread
+    8:  	Wait     0000000F 
+   14:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 0000000A )
+   30:  	Wait     00000006 
+   3C:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 FFFFFFF7 )
+   58:  	Wait     00000006 
+   64:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000008 )
+   80:  	Wait     00000005 
+   8C:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 FFFFFFF9 )
+   A8:  	Wait     00000005 
+   B4:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000006 )
+   D0:  	Wait     00000004 
+   DC:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 FFFFFFFB )
+   F8:  	Wait     00000004 
+  104:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000004 )
+  120:  	Wait     00000003 
+  12C:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 FFFFFFFD )
+  148:  	Wait     00000003 
+  154:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000002 )
+  170:  	Wait     00000002 
+  17C:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000000 )
+  198:  EndThread
+  1A0:  Call     SayMessage0 	( .Npc:Self 006D0002 006D0002 00000005 000F0055 ) % Hi, mister! I'm Watt. Can I, um, get out of here?
+  1C0:  Return
+  1C8:  End
+
+#new:Script $Script_802424BC_omo_12
+    0:  Label    00000000 
+    C:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   20:  Switch  *Var[0] 
+   2C:  	Case  ==  00000000 
+   38:  	Case  ==  00000001 
+   44:  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   60:  		Call     AwaitPlayerLeave 	( *Var[0] *Var[2] 00000064 )
+   78:  		Call     802CFCA0 ( *Var[0] )
+   88:  		If  *Var[0]  !=  00000001 
+   98:  			Call     DisablePlayerInput 	( .True )
+   A8:  			Thread
+   B0:  				Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+   C4:  				Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   E0:  				Call     NpcJump0    	( .Npc:Self *Var[0] *Var[1] *Var[2] 00000010 )
+  100:  				Call     NpcJump0    	( .Npc:Self *Var[0] *Var[1] *Var[2] 00000008 )
+  120:  				Call     NpcJump0    	( .Npc:Self *Var[0] *Var[1] *Var[2] 00000004 )
+  140:  			EndThread
+  148:  			Call     SayMessage0 	( .Npc:Self 006D0002 006D0002 00000000 000F0056 ) % Wait, wait! Don't leave me, please! Let me out, mi ...
+  168:  			Call     DisablePlayerInput 	( .False )
+  178:  		EndIf
+  180:  		Call     GetOwnerVar 	( 00000000 *Var[0] )
+  194:  		If  *Var[0]  ==  00000001 
+  1A4:  			Call     SetOwnerVar 	( 00000000 00000002 )
+  1B8:  		EndIf
+  1C0:  	Case  ==  00000002 
+  1CC:  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  1E8:  		Call     AwaitPlayerApproach 	( *Var[0] *Var[2] 0000003C )
+  200:  		Call     GetOwnerVar 	( 00000000 *Var[0] )
+  214:  		If  *Var[0]  ==  00000002 
+  224:  			Call     SetOwnerVar 	( 00000000 00000001 )
+  238:  		EndIf
+  240:  EndSwitch
+  248:  Wait     00000001 
+  254:  Goto     00000000 
+  260:  Return
+  268:  End
+
+#new:Script $Script_Init_8024272C_omo_12
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000001 
+   18:  		Call     SetNpcAnimation 	( .Npc:Self 006D0002 )
+   2C:  	Case  <  00000002 
+   38:  		Call     SetNpcAnimation 	( .Npc:Self 006D0002 )
+   4C:  		Call     SetNpcPos   	( .Npc:Self 00000000 00000000 00000014 )
+   68:  		Call     SetOwnerVar 	( 00000000 00000002 )
+   7C:  	Case  >=  00000002 
+   88:  		Call     RemoveNpc   	( .Npc:Self )
+   98:  		Return
+   A0:  EndSwitch
+   A8:  Call     BindNpcIdle 	( .Npc:Self $Script_802424BC_omo_12 )
+   BC:  Call     BindNpcInteract 	( .Npc:Self $Script_802422EC_omo_12 )
+   D0:  Return
+   D8:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8024293C_omo_12
+006D0001 006D0006 006D0007 006D0008 006D000F 006D0005 006D0002 006D0003 
+006D0004 FFFFFFFF 
+

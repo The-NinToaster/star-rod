@@ -1,0 +1,111 @@
+% automatically dumped from map kmr_20
+
+#new:Npc $kmr_20_8024DCEC
+00000002 $NpcSettings_8024A8DC_kmr_20 00000000 00000000 00000000 
+11700F08 $Script_Init_8024DC00_kmr_20 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+003B0001 003B0002 003B0003 003B0003 003B0001 003B0001 003B000C 003B000C 
+003B0015 003B0012 003B0011 003B0010 003B0005 003B0001 003B0001 003B0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_8024A8DC_kmr_20
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:Script $Script_8024D6B4_kmr_20
+    0:  Call     SetNpcPos   	( .Npc:Self 000001F4 00000000 FFFFFF3D )
+   1C:  Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000001 )
+   34:  Call     SetNpcAnimation 	( .Npc:Self 003B0003 )
+   48:  Loop     
+   54:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+   6C:  	Call     NpcJump0    	( .Npc:Self 000001E2 00000000 FFFFFEE2 0000000F )
+   8C:  	Wait     00000005 
+   98:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+   B0:  	Call     NpcJump0    	( .Npc:Self 000002D6 00000000 FFFFFF67 0000000F )
+   D0:  	Wait     00000005 
+   DC:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+   F4:  	Call     NpcJump0    	( .Npc:Self 0000025B 00000000 00000000 0000000F )
+  114:  	Wait     00000005 
+  120:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  138:  	Call     NpcJump0    	( .Npc:Self 0000022D 00000000 00000082 0000000F )
+  158:  	Wait     00000005 
+  164:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  17C:  	Call     NpcJump0    	( .Npc:Self 00000165 00000000 00000057 0000000F )
+  19C:  	Wait     00000005 
+  1A8:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  1C0:  	Call     NpcJump0    	( .Npc:Self 00000158 0000001E FFFFFFF8 0000000F )
+  1E0:  	Wait     00000005 
+  1EC:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  204:  	Call     NpcJump0    	( .Npc:Self 00000114 0000008A 00000016 0000000F )
+  224:  	Wait     00000005 
+  230:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  248:  	Call     NpcJump0    	( .Npc:Self 00000168 0000003D FFFFFF8B 0000000F )
+  268:  	Wait     00000005 
+  274:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  28C:  	Call     NpcJump0    	( .Npc:Self 000001AB 00000037 FFFFFF4A 0000000F )
+  2AC:  	Wait     00000005 
+  2B8:  EndLoop
+  2C0:  Return
+  2C8:  End
+
+#new:Script $Script_8024D984_kmr_20
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     SetNpcAnimation 	( .Npc:Self 003B000C )
+   24:  Wait     0000000A 
+   30:  Call     SetNpcAnimation 	( .Npc:Self 003B0003 )
+   44:  Call     PlaySoundAtNpc ( .Npc:Self 0000203F 00000000 )
+   5C:  Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+   74:  Call     NpcJump0    	( .Npc:Self 000001EF 00000000 FFFFFF94 0000000F )
+   94:  Wait     00000003 
+   A0:  Call     MoveNpcTo   	( .Npc:Self 00000226 FFFFFF56 0000000F )
+   BC:  Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+   D4:  Call     NpcJump0    	( .Npc:Self 00000252 0000001E FFFFFF24 0000000F )
+   F4:  Call     PlaySoundAtNpc ( .Npc:Self 00000163 00000000 )
+  10C:  Call     802CFE2C ( FFFFFFFF 00000800 )
+  120:  Call     802CFD30 ( FFFFFFFF 00000005 00000002 00000001 00000001 00000000 )
+  144:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  160:  Sub  *Var[1]  0000000A 
+  170:  Loop     0000001E 
+  17C:  	Sub  *Var[1]  00000001 
+  18C:  	Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  1A8:  	Wait     00000001 
+  1B4:  EndLoop
+  1BC:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  1D8:  Call     DisablePlayerInput 	( .False )
+  1E8:  Return
+  1F0:  End
+
+#new:Script $Script_8024DB7C_kmr_20
+    0:  Call     PlaySoundAtNpc ( .Npc:Self 0000203E 00000000 )
+   18:  Set  *Flag_KMR_4F  00000001 
+   28:  Call     SetNpcVar   	( 00000001 00000000 00000001 )
+   40:  Wait     00000002 
+   4C:  Call     SetOwnerFlagBits 	( 1F000000 .True )
+   60:  Call     BindNpcAI   	( .Npc:Self $Script_8024D984_kmr_20 )
+   74:  Return
+   7C:  End
+
+#new:Script $Script_Init_8024DC00_kmr_20
+    0:  If  *StoryProgress  <  FFFFFFF3 
+   10:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   2C:  	Return
+   34:  EndIf
+   3C:  If  *StoryProgress  >=  00000004 
+   4C:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   68:  	Return
+   70:  EndIf
+   78:  If  *Flag_KMR_4F  !=  00000000 
+   88:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   A4:  	Return
+   AC:  EndIf
+   B4:  Call     BindNpcIdle 	( .Npc:Self $Script_8024D6B4_kmr_20 )
+   C8:  Call     BindNpcHit  	( .Npc:Self $Script_8024DB7C_kmr_20 )
+   DC:  Return
+   E4:  End
+

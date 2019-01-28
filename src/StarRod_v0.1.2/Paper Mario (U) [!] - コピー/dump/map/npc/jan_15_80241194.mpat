@@ -1,0 +1,190 @@
+% automatically dumped from map jan_15
+
+#new:Npc $jan_15_80241194
+00000000 $NpcSettings_802405C0_jan_15 00000000 00000000 00000000 
+00040800 $Script_Init_802410E8_jan_15 00000000 00000000 0000010E 
+{Items:5:FireFlower:A}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:3:40} {FP:30:40:3:40} {FP:50:40:3:40} {FP:80:40:3:40} {FP:100:30:3:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:2}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00360001 00360002 00360003 00360003 00360001 00360001 0036000E 0036000E 
+00360018 00360017 00360005 00360006 00360007 00360001 00360001 00360001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_802405C0_jan_15
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802407CC_jan_15
+    0:  ChildThread
+    8:  	Loop     
+   14:  		Call     RandInt     	( 00000005 *Var[0] )
+   28:  		If  *Var[0]  !=  00000000 
+   38:  			Call     SetNpcAnimation 	( .Npc:Self 00360001 )
+   4C:  			Wait     0000000F 
+   58:  		Else
+   60:  			Call     SetNpcAnimation 	( .Npc:Self 00360005 )
+   74:  			Wait     0000000A 
+   80:  			Call     SetNpcAnimation 	( .Npc:Self 00360006 )
+   94:  			Wait     00000005 
+   A0:  		EndIf
+   A8:  	EndLoop
+   B0:  EndChildThread
+   B8:  ChildThread
+   C0:  	Loop     
+   CC:  		Call     RandInt     	( 00000005 *Var[0] )
+   E0:  		If  *Var[0]  !=  00000000 
+   F0:  			Call     SetNpcAnimation 	( 00000001 00360001 )
+  104:  			Wait     0000000F 
+  110:  		Else
+  118:  			Call     SetNpcAnimation 	( 00000001 00360005 )
+  12C:  			Wait     0000000A 
+  138:  			Call     SetNpcAnimation 	( 00000001 00360006 )
+  14C:  			Wait     00000005 
+  158:  		EndIf
+  160:  	EndLoop
+  168:  EndChildThread
+  170:  Loop     
+  17C:  	Call     RandInt     	( 00000005 *Var[0] )
+  190:  	If  *Var[0]  !=  00000000 
+  1A0:  		Call     SetNpcAnimation 	( 00000002 00360001 )
+  1B4:  		Wait     0000000F 
+  1C0:  	Else
+  1C8:  		Call     SetNpcAnimation 	( 00000002 00360005 )
+  1DC:  		Wait     0000000A 
+  1E8:  		Call     SetNpcAnimation 	( 00000002 00360006 )
+  1FC:  		Wait     00000005 
+  208:  	EndIf
+  210:  EndLoop
+  218:  Return
+  220:  End
+
+#new:Script $Script_802409F4_jan_15
+    0:  If  *Flag_JAN_3A  ==  00000000 
+   10:  	Label    00000000 
+   1C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   34:  	If  *Var[0]  <  00000022 
+   44:  		Wait     00000001 
+   50:  		Goto     00000000 
+   5C:  	EndIf
+   64:  	Call     DisablePlayerInput 	( .True )
+   74:  	Call     ShowMessage 	( 001000BB 00000140 0000003C ) % Grraahahahoho! 
+   8C:  	Set  *Flag_JAN_3A  00000001 
+   9C:  	Call     DisablePlayerInput 	( .False )
+   AC:  EndIf
+   B4:  Exec     $Script_802407CC_jan_15 *Var[9] 
+   C4:  Call     AwaitPlayerApproach 	( 00000190 FFFFFFF6 00000087 )
+   DC:  Call     DisablePlayerInput 	( .True )
+   EC:  Kill     *Var[9] 
+   F8:  Wait     0000000F 
+  104:  Call     SetNpcAnimation 	( 00000000 00360001 )
+  118:  Call     SetNpcAnimation 	( 00000001 00360001 )
+  12C:  Call     SetNpcAnimation 	( 00000002 00360001 )
+  140:  Thread
+  148:  	Wait     0000000A 
+  154:  	Call     SetNpcAnimation 	( 00000002 00360004 )
+  168:  	Set  *Var[0]  00000000 
+  178:  	Loop     0000000F 
+  184:  		Add  *Var[0]  00000018 
+  194:  		Call     SetNpcRotation ( 00000002 00000000 *Var[0] 00000000 )
+  1B0:  		Wait     00000001 
+  1BC:  	EndLoop
+  1C4:  	Call     PlaySoundAtNpc ( 00000002 000003B1 00000000 )
+  1DC:  	Call     SetNpcAnimation 	( 00000002 00360001 )
+  1F0:  EndThread
+  1F8:  Call     SetNpcAnimation 	( 00000000 00360004 )
+  20C:  Set  *Var[0]  00000000 
+  21C:  Loop     0000000F 
+  228:  	Add  *Var[0]  00000018 
+  238:  	Call     SetNpcRotation ( 00000000 00000000 *Var[0] 00000000 )
+  254:  	Wait     00000001 
+  260:  EndLoop
+  268:  Call     PlaySoundAtNpc ( 00000000 000020B1 00000000 )
+  280:  Call     SetNpcAnimation 	( 00000000 00360001 )
+  294:  Wait     00000005 
+  2A0:  Call     SetNpcAnimation 	( 00000001 00360004 )
+  2B4:  Set  *Var[0]  00000000 
+  2C4:  Loop     0000000F 
+  2D0:  	Add  *Var[0]  00000018 
+  2E0:  	Call     SetNpcRotation ( 00000001 00000000 *Var[0] 00000000 )
+  2FC:  	Wait     00000001 
+  308:  EndLoop
+  310:  Call     PlaySoundAtNpc ( 00000001 000020B1 00000000 )
+  328:  Call     SetNpcAnimation 	( 00000001 00360001 )
+  33C:  Wait     00000005 
+  348:  Call     SetNpcAnimation 	( 00000000 00360004 )
+  35C:  Call     SetNpcAnimation 	( 00000001 00360004 )
+  370:  Call     SetNpcAnimation 	( 00000002 00360004 )
+  384:  Set  *Var[0]  00000000 
+  394:  Loop     0000000C 
+  3A0:  	Add  *Var[0]  0000001E 
+  3B0:  	Call     SetNpcRotation ( 00000000 00000000 *Var[0] 00000000 )
+  3CC:  	Call     SetNpcRotation ( 00000001 00000000 *Var[0] 00000000 )
+  3E8:  	Call     SetNpcRotation ( 00000002 00000000 *Var[0] 00000000 )
+  404:  	Wait     00000001 
+  410:  EndLoop
+  418:  Call     PlaySoundAtNpc ( 00000000 000020B2 00000000 )
+  430:  Set  *Var[0]  00000000 
+  440:  Loop     0000000C 
+  44C:  	Add  *Var[0]  0000001E 
+  45C:  	Call     SetNpcRotation ( 00000000 00000000 *Var[0] 00000000 )
+  478:  	Call     SetNpcRotation ( 00000001 00000000 *Var[0] 00000000 )
+  494:  	Call     SetNpcRotation ( 00000002 00000000 *Var[0] 00000000 )
+  4B0:  	Wait     00000001 
+  4BC:  EndLoop
+  4C4:  Call     PlaySoundAtNpc ( 00000000 000020B2 00000000 )
+  4DC:  Set  *Var[0]  00000000 
+  4EC:  Loop     0000000C 
+  4F8:  	Add  *Var[0]  0000001E 
+  508:  	Call     SetNpcRotation ( 00000000 00000000 *Var[0] 00000000 )
+  524:  	Call     SetNpcRotation ( 00000001 00000000 *Var[0] 00000000 )
+  540:  	Call     SetNpcRotation ( 00000002 00000000 *Var[0] 00000000 )
+  55C:  	Wait     00000001 
+  568:  EndLoop
+  570:  Call     PlaySoundAtNpc ( 00000000 000020B2 00000000 )
+  588:  Loop     00000003 
+  594:  	Wait     00000005 
+  5A0:  	Call     PlaySoundAtNpc ( 00000000 000020B3 00000000 )
+  5B8:  EndLoop
+  5C0:  Call     SetNpcAnimation 	( 00000000 00360005 )
+  5D4:  Call     SetNpcAnimation 	( 00000001 00360005 )
+  5E8:  Call     SetNpcAnimation 	( 00000002 00360005 )
+  5FC:  Wait     00000014 
+  608:  Call     SetNpcAnimation 	( 00000000 00360006 )
+  61C:  Call     SetNpcAnimation 	( 00000001 00360006 )
+  630:  Call     SetNpcAnimation 	( 00000002 00360006 )
+  644:  Call     PlaySoundAtNpc ( 00000000 000003B2 00000000 )
+  65C:  Call     DisablePlayerInput 	( .False )
+  66C:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  67C:  Return
+  684:  End
+
+#new:Script $Script_80241080_jan_15
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Set  *StoryProgress  00000013 
+   38:  	Case  ==  00000001 
+   44:  	Case  ==  00000002 
+   50:  EndSwitch
+   58:  Return
+   60:  End
+
+#new:Script $Script_Init_802410E8_jan_15
+    0:  If  *StoryProgress  <  00000013 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_802409F4_jan_15 )
+   24:  	Call     BindNpcHit  	( .Npc:Self $Script_80241080_jan_15 )
+   38:  Else
+   40:  	Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+   5C:  	Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+   78:  	Call     SetNpcPos   	( 00000002 00000000 FFFFFC18 00000000 )
+   94:  EndIf
+   9C:  Return
+   A4:  End
+

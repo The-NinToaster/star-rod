@@ -1,0 +1,120 @@
+% automatically dumped from map mac_03
+
+#new:Npc $mac_03_8024C57C
+0000000B $NpcSettings_802465EC_mac_03 00000000 00000000 00000000 
+01700F08 $Script_Init_8024ADBC_mac_03 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+003B0001 003B0002 003B0003 003B0003 003B0001 003B0001 003B000C 003B000C 
+003B0015 003B0012 003B0011 003B0010 003B0005 003B0001 003B0001 003B0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_802465EC_mac_03
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:Script $Script_8024A7F4_mac_03
+    0:  Loop     
+    C:  	Call     PlaySoundAtNpc ( .Npc:Self B0000021 00000000 )
+   24:  	Wait     00000002 
+   30:  EndLoop
+   38:  Return
+   40:  End
+
+#new:Script $Script_8024A83C_mac_03
+    0:  Call     SetNpcPos   	( .Npc:Self FFFFFF9C 00000000 FFFFFFE7 )
+   1C:  Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000001 )
+   34:  Call     SetNpcAnimation 	( .Npc:Self 003B0003 )
+   48:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+   5C:  Loop     
+   68:  	Call     MoveNpcTo   	( .Npc:Self FFFFFF06 FFFFFFE7 0000001E )
+   84:  	Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000001 )
+   9C:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+   B4:  	Call     NpcJump0    	( .Npc:Self FFFFFF06 00000000 0000001E 0000000F )
+   D4:  	Call     MoveNpcTo   	( .Npc:Self FFFFFF9C 0000001E 0000001E )
+   F0:  	Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000001 )
+  108:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  120:  	Call     NpcJump0    	( .Npc:Self FFFFFF9C 00000000 FFFFFFE7 0000000F )
+  140:  EndLoop
+  148:  Return
+  150:  End
+
+#new:Script $Script_8024A994_mac_03
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     SetNpcAnimation 	( .Npc:Self 003B000C )
+   24:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   40:  Call     NpcJump0    	( .Npc:Self *Var[0] 00000000 *Var[2] 0000000A )
+   60:  Call     SetNpcSpeed 	( .Npc:Self *Fixed[8.0] )
+   74:  Call     SetNpcAnimation 	( .Npc:Self 003B0003 )
+   88:  Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000001 )
+   A0:  Exec     $Script_8024A7F4_mac_03 *Var[A] 
+   B0:  Call     MoveNpcTo   	( .Npc:Self FFFFFF9C 00000000 00000000 )
+   CC:  Kill     *Var[A] 
+   D8:  Call     802D7E08 ( FFFFFFFF 00000001 0000002D 00000001 00000000 00000000 00000000 00000000 00000014 )
+  108:  Call     DisablePlayerInput 	( .False )
+  118:  Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  130:  Call     NpcJump0    	( .Npc:Self FFFFFFE2 00000000 00000000 00000014 )
+  150:  Call     802D7E08 ( FFFFFFFF 00000001 0000002D 00000001 00000000 00000000 00000000 00000000 00000014 )
+  180:  Call     PlaySoundAtNpc ( .Npc:Self 0000203F 00000000 )
+  198:  Exec     $Script_8024A7F4_mac_03 *Var[A] 
+  1A8:  Call     SetNpcSpeed 	( .Npc:Self *Fixed[8.0] )
+  1BC:  Call     MoveNpcTo   	( .Npc:Self 0000001E FFFFFF38 00000000 )
+  1D8:  Call     802D7E08 ( FFFFFFFF 00000001 FFFFFFD3 00000001 00000000 00000000 00000000 00000000 00000014 )
+  208:  Call     MoveNpcTo   	( .Npc:Self FFFFFFE2 FFFFFE70 00000000 )
+  224:  Call     802D7E08 ( FFFFFFFF 00000001 0000002D 00000001 00000000 00000000 00000000 00000000 00000014 )
+  254:  Call     MoveNpcTo   	( .Npc:Self 0000001E FFFFFDA8 00000000 )
+  270:  Call     802D7E08 ( FFFFFFFF 00000001 FFFFFFD3 00000001 00000000 00000000 00000000 00000000 00000014 )
+  2A0:  Call     MoveNpcTo   	( .Npc:Self 00000000 FFFFFD76 00000000 )
+  2BC:  Kill     *Var[A] 
+  2C8:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  2E4:  Wait     000000C8 
+  2F0:  Return
+  2F8:  End
+
+#new:Script $Script_8024AC94_mac_03
+    0:  Call     80044600 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000004 
+   28:  		Set  *Var[1]  00000001 
+   38:  	Case  ==  00000002 
+   44:  		Set  *Var[1]  00000001 
+   54:  	Case  ==  00000006 
+   60:  		Set  *Var[1]  00000001 
+   70:  	Default
+   78:  		Set  *Var[1]  00000000 
+   88:  EndSwitch
+   90:  If  *Var[1]  ==  00000000 
+   A0:  	Return
+   A8:  EndIf
+   B0:  Call     PlaySoundAtNpc ( .Npc:Self 000000E1 00000000 )
+   C8:  Call     PlaySoundAtNpc ( .Npc:Self 0000203E 00000000 )
+   E0:  Set  *Flag_MAC_9D  00000001 
+   F0:  Call     BindNpcAI   	( .Npc:Self $Script_8024A994_mac_03 )
+  104:  Call     SetOwnerFlagBits 	( 1F000000 .True )
+  118:  Return
+  120:  End
+
+#new:Script $Script_Init_8024ADBC_mac_03
+    0:  Switch  *StoryProgress 
+    C:  	Case  FFFFFFF3  to  00000005 
+   1C:  		Call     GetEntryID  	( *Var[0] )
+   2C:  		If  *Var[0]  ==  00000001 
+   3C:  			Set  *Flag_MAC_9C  00000001 
+   4C:  			Set  *Flag_MAC_9D  00000001 
+   5C:  		EndIf
+   64:  		If  *Flag_MAC_9D  ==  00000000 
+   74:  			Set  *Flag_MAC_9C  00000001 
+   84:  			Call     BindNpcIdle 	( .Npc:Self $Script_8024A83C_mac_03 )
+   98:  			Call     BindNpcHit  	( .Npc:Self $Script_8024AC94_mac_03 )
+   AC:  			Return
+   B4:  		EndIf
+   BC:  EndSwitch
+   C4:  Call     RemoveNpc   	( .Npc:Self )
+   D4:  Return
+   DC:  End
+

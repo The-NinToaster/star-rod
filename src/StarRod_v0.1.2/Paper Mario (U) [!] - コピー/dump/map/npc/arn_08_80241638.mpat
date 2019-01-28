@@ -1,0 +1,45 @@
+% automatically dumped from map arn_08
+
+#new:Npc $arn_08_80241638
+00000001 $NpcSettings_8024124C_arn_08 00000000 00000000 00000000 
+00000801 $Script_Init_802413E8_arn_08 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00C00001 00C00001 00C00001 00C00001 00C00001 00C00001 00C00001 00C00001 
+00C00001 00C00001 00C00001 00C00001 00C00001 00C00001 00C00001 00C00001 
+00000000 00000000 00000000 001A00B4 % This is Yakkey, a magical key. It was lucky for us ...
+
+#new:NpcSettings $NpcSettings_8024124C_arn_08
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 000D0000 
+
+#new:Script $Script_802412E8_arn_08
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000008 
+   18:  		Call     SayMessage0 	( .Npc:Self 00C00002 00C00001 00000000 000E00BA ) % Hi! You again! Once Tubba Blubba's secret got out, ...
+   38:  	Case  <  0000002A 
+   44:  		Call     SayMessage0 	( .Npc:Self 00C00002 00C00001 00000000 000E00BB ) % Chilly out, isn't it? Cold...and empty... Brrr!
+   64:  	Case  <  0000003D 
+   70:  		Call     SayMessage0 	( .Npc:Self 00C00002 00C00001 00000000 000E00BC ) % You know what I need? A new secret to guard. Excep ...
+   90:  	Case  <  0000005A 
+   9C:  		Call     SayMessage0 	( .Npc:Self 00C00002 00C00001 00000000 000E00BD ) % You know what I need? A new secret to guard. Excep ...
+   BC:  	Case  >=  0000005A 
+   C8:  		Call     SayMessage0 	( .Npc:Self 00C00002 00C00001 00000000 000E00BE ) % You know what I need? A new secret to guard. Excep ...
+   E8:  EndSwitch
+   F0:  Return
+   F8:  End
+
+#new:Script $Script_Init_802413E8_arn_08
+    0:  If  *StoryProgress  <  FFFFFFF4 
+   10:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   2C:  Else
+   34:  	Call     BindNpcInteract 	( .Npc:Self $Script_802412E8_arn_08 )
+   48:  EndIf
+   50:  Return
+   58:  End
+

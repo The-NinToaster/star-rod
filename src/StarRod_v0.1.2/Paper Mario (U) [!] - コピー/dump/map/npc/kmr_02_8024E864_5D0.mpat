@@ -1,0 +1,108 @@
+% automatically dumped from map kmr_02
+
+#new:Npc $kmr_02_8024E864_5D0
+00000005 $NpcSettings_80247CE4_kmr_02 00000000 00000000 00000000 
+00002809 $Script_Init_8024D134_kmr_02 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 0000001E 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 0000001E 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009F0001 009F0002 009F0003 009F0003 009F0001 009F0001 009F0000 009F0000 
+009F0003 009F0003 009F0003 009F0003 009F0003 009F0003 009F0003 009F0003 
+00000000 00000000 00000000 001A0064 % She's my grandma, Gooma. I hope she lives forever! ...
+
+#new:AISettings $AISettings_80247C94_kmr_02
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80247CC4_kmr_02
+    0:  Call     DoBasicAI   	( $AISettings_80247C94_kmr_02 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80247CE4_kmr_02
+00000000 00160018 00000000 00000000 $Script_NpcAI_80247CC4_kmr_02 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024CDAC_kmr_02
+    0:  Call     800445D4 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000064 
+   28:  		Label    00000000 
+   34:  		Switch  *StoryProgress 
+   40:  			Case  ==  FFFFFF8D 
+   4C:  				ExecWait $Script_NpcAI_80247CC4_kmr_02 
+   58:  		EndSwitch
+   60:  		Wait     00000001 
+   6C:  		Goto     00000000 
+   78:  	CaseOR  ==  00000065 
+   84:  	CaseOR  ==  00000066 
+   90:  	CaseOR  ==  00000003 
+   9C:  	CaseOR  ==  00000067 
+   A8:  		ExecWait $Script_NpcAI_80247CC4_kmr_02 
+   B4:  	EndCaseGroup
+   BC:  EndSwitch
+   C4:  Return
+   CC:  End
+
+#new:Script $Script_8024CE80_kmr_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF85 
+   18:  		If  *Flag_KMR_08  ==  00000000 
+   28:  			Set  *Flag_KMR_08  00000001 
+   38:  			Call     UseSettings 	( .Default *Fixed[5.0] 00000000 *Fixed[-275.5] *Fixed[15.5] *Fixed[-10.0] )
+   5C:  			Call     SayMessage0 	( 00000005 009F0004 009F0001 00000005 000B009C ) % Oh, Mario. Hello, dearie. You may call me Gooma. I ...
+   7C:  			Thread
+   84:  				Call     ResetCam    	( .Default *Fixed[4.0] )
+   98:  			EndThread
+   A0:  		Else
+   A8:  			Call     SayMessage0 	( 00000005 009F0004 009F0001 00000005 000B009D ) % You're quite a looker, aren't you? Why, if I were  ...
+   C8:  		EndIf
+   D0:  	Case  <  FFFFFF86 
+   DC:  		Call     SayMessage0 	( 00000005 009F0004 009F0001 00000000 000B009E ) % Are you looking for Goompa? He was just on the ver ...
+   FC:  	Case  <  FFFFFF90 
+  108:  		If  *Flag_KMR_09  ==  00000000 
+  118:  			Call     SayMessage0 	( 00000005 009F0004 009F0001 00000000 000B009F ) % Good health is all that matters! Stay healthy no m ...
+  138:  			Set  *Flag_KMR_09  00000001 
+  148:  		Else
+  150:  			Call     SayMessage0 	( 00000005 009F0004 009F0001 00000000 000B00A0 ) % Take care, Goombario. You're already one fine Goom ...
+  170:  		EndIf
+  178:  	Case  <  FFFFFFF1 
+  184:  		Call     SayMessage0 	( 00000005 009F0004 009F0001 00000000 000B00A1 ) % I have a bad feeling in my bones these days. Evil  ...
+  1A4:  	Case  <  00000059 
+  1B0:  		Call     GetCurrentPartner 	( *Var[0] )
+  1C0:  		If  *Var[0]  !=  00000001 
+  1D0:  			Call     SayMessage0 	( 00000005 009F0004 009F0001 00000000 000B00A2 ) % What lovely weather today! The laundry's already d ...
+  1F0:  		Else
+  1F8:  			Call     SayMessage0 	( 00000005 009F0004 009F0001 00000000 000B00A3 ) % Is Goombario leaving again? I miss you when you're ...
+  218:  		EndIf
+  220:  	Case  >=  00000059 
+  22C:  		Call     GetCurrentPartner 	( *Var[0] )
+  23C:  		If  *Var[0]  !=  00000001 
+  24C:  			Call     SayMessage0 	( 00000005 009F0004 009F0001 00000000 000B00A4 ) % I'm sure our little Goombario is trying his best a ...
+  26C:  		Else
+  274:  			Call     SayMessage0 	( 00000005 009F0004 009F0001 00000000 000B00A5 ) % I'm sure our little Goombario is trying his best a ...
+  294:  		EndIf
+  29C:  EndSwitch
+  2A4:  Return
+  2AC:  End
+
+#new:Script $Script_Init_8024D134_kmr_02
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_8024CDAC_kmr_02 )
+   14:  Call     BindNpcInteract 	( .Npc:Self $Script_8024CE80_kmr_02 )
+   28:  Return
+   30:  End
+

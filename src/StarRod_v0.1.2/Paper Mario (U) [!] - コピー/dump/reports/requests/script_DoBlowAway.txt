@@ -1,0 +1,64 @@
+Script: DoBlowAway (001CAD88)
+
+    0:  Call     GetStatusFlags ( FFFFFF81 *Var[5] )
+   14:  If  *Var[5]  !&  0035D000 
+   24:  	Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[1] )
+   3C:  Else
+   44:  	Set  *Flag[00]  00000000 
+   54:  	If  *Var[2]  &  00001000 
+   64:  		If  *Var[5]  &  00001000 
+   74:  			Set  *Flag[00]  00000001 
+   84:  		EndIf
+   8C:  	EndIf
+   94:  	If  *Var[2]  &  00002000 
+   A4:  		If  *Var[5]  &  00002000 
+   B4:  			Set  *Flag[00]  00000001 
+   C4:  		EndIf
+   CC:  	EndIf
+   D4:  	If  *Var[2]  &  00004000 
+   E4:  		If  *Var[5]  &  00004000 
+   F4:  			Set  *Flag[00]  00000001 
+  104:  		EndIf
+  10C:  	EndIf
+  114:  	If  *Var[2]  &  00008000 
+  124:  		If  *Var[5]  &  00008000 
+  134:  			Set  *Flag[00]  00000001 
+  144:  		EndIf
+  14C:  	EndIf
+  154:  	If  *Var[2]  &  00010000 
+  164:  		If  *Var[5]  &  00010000 
+  174:  			Set  *Flag[00]  00000001 
+  184:  		EndIf
+  18C:  	EndIf
+  194:  	If  *Var[2]  &  00020000 
+  1A4:  		If  *Var[5]  &  00020000 
+  1B4:  			Set  *Flag[00]  00000001 
+  1C4:  		EndIf
+  1CC:  	EndIf
+  1D4:  	If  *Var[2]  &  00040000 
+  1E4:  		If  *Var[5]  &  00040000 
+  1F4:  			Set  *Flag[00]  00000001 
+  204:  		EndIf
+  20C:  	EndIf
+  214:  	If  *Var[5]  &  00080000 
+  224:  		Set  *Flag[00]  00000001 
+  234:  	EndIf
+  23C:  	If  *Var[2]  &  00100000 
+  24C:  		If  *Var[5]  &  00100000 
+  25C:  			Set  *Flag[00]  00000001 
+  26C:  		EndIf
+  274:  	EndIf
+  27C:  	If  *Var[2]  &  01000000 
+  28C:  		If  *Var[5]  &  01000000 
+  29C:  			Set  *Flag[00]  00000001 
+  2AC:  		EndIf
+  2B4:  	EndIf
+  2BC:  	If  *Flag[00]  ==  00000001 
+  2CC:  		Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[1] )
+  2E4:  	EndIf
+  2EC:  EndIf
+  2F4:  ExecWait 80298BF0 
+  300:  Wait     000003E8 
+  30C:  Return
+  314:  End
+

@@ -1,0 +1,114 @@
+% automatically dumped from map mac_02
+
+#new:Npc $mac_02_8024CB48_5D0
+00000003 $NpcSettings_80245F90_mac_02 00000000 00000000 00000000 
+00002D09 $Script_Init_8024BE48_mac_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+FFFFFFA6 00000000 0000003C 00000064 00000000 FFFF8001 00000000 FFFFFFD8 
+00000000 0000003C 0000000A 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830201 00830202 00830203 00830203 00830201 00830201 00830206 00830206 
+00830203 00830203 00830203 00830203 00830203 00830203 00830203 00830203 
+00000000 00000000 00000000 001A0035 % This Toad is diligent and very hard working. He ha ...
+
+#new:AISettings $AISettings_80245F40_mac_02
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80245F70_mac_02
+    0:  Call     DoBasicAI   	( $AISettings_80245F40_mac_02 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80245F90_mac_02
+00000000 001E0018 00000000 00000000 $Script_NpcAI_80245F70_mac_02 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024BA9C_mac_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF96 
+   18:  		Set  *Var[0]  0004003A 
+   28:  	Case  <  FFFFFF9C 
+   34:  		Set  *Var[0]  0004003B 
+   44:  	Case  <  FFFFFFB5 
+   50:  		Set  *Var[0]  0004003C 
+   60:  	Case  <  FFFFFFCB 
+   6C:  		If  *Flag_MAC_9A  ==  00000000 
+   7C:  			Set  *Var[0]  0004003D 
+   8C:  		Else
+   94:  			Set  *Var[0]  0004003E 
+   A4:  		EndIf
+   AC:  	Case  <  FFFFFFF1 
+   B8:  		Set  *Var[0]  0004003F 
+   C8:  	Case  <  00000007 
+   D4:  		If  *Flag_MAC_8B  ==  00000000 
+   E4:  			Set  *Var[0]  00040040 
+   F4:  		Else
+   FC:  			If  *Flag_MAC_88  ==  00000000 
+  10C:  				Set  *Var[0]  00040041 
+  11C:  			Else
+  124:  				Set  *Var[0]  00040042 
+  134:  			EndIf
+  13C:  		EndIf
+  144:  	Case  <  0000000A 
+  150:  		Set  *Var[0]  00040043 
+  160:  	Case  <  00000027 
+  16C:  		Set  *Var[0]  00040044 
+  17C:  	Case  <  0000002B 
+  188:  		Set  *Var[0]  00040045 
+  198:  	Case  <  00000039 
+  1A4:  		Set  *Var[0]  00040046 
+  1B4:  	Case  <  0000003D 
+  1C0:  		Set  *Var[0]  00040047 
+  1D0:  	Case  <  00000059 
+  1DC:  		Set  *Var[0]  00040048 
+  1EC:  	Case  <  00000060 
+  1F8:  		Set  *Var[0]  00040049 
+  208:  EndSwitch
+  210:  Call     SayMessage0 	( 00000003 00830204 00830201 00000000 *Var[0] ) % variable string ID
+  230:  Return
+  238:  End
+
+#new:Script $Script_8024BCDC_mac_02
+    0:  Call     SetNpcPos   	( .Npc:Self 00000014 00000000 FFFFFDDA )
+   1C:  Call     SetNpcSpeed 	( .Npc:Self *Fixed[2.0] )
+   30:  Loop     
+   3C:  	Call     SetNpcAnimation 	( .Npc:Self 00830202 )
+   50:  	Call     MoveNpcTo   	( .Npc:Self FFFFFFEC FFFFFDDA 00000000 )
+   6C:  	Call     SetNpcAnimation 	( .Npc:Self 00830201 )
+   80:  	Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000007 )
+   98:  	Wait     0000000A 
+   A4:  	Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000007 )
+   BC:  	Wait     0000001E 
+   C8:  	Call     SetNpcAnimation 	( .Npc:Self 00830202 )
+   DC:  	Call     MoveNpcTo   	( .Npc:Self 00000014 FFFFFDDA 00000000 )
+   F8:  	Call     SetNpcAnimation 	( .Npc:Self 00830201 )
+  10C:  	Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000007 )
+  124:  	Wait     0000000A 
+  130:  	Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000007 )
+  148:  	Wait     0000001E 
+  154:  EndLoop
+  15C:  Return
+  164:  End
+
+#new:Script $Script_Init_8024BE48_mac_02
+    0:  If  *StoryProgress  <  FFFFFFB4 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_8024BCDC_mac_02 )
+   24:  EndIf
+   2C:  Call     BindNpcInteract 	( .Npc:Self $Script_8024BA9C_mac_02 )
+   40:  Return
+   48:  End
+

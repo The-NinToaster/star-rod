@@ -1,0 +1,342 @@
+% automatically dumped from map omo_15
+
+#new:Npc $omo_15_802423AC
+00000000 $NpcSettings_80240F00_omo_15 00000000 00000000 00000000 
+00041705 $Script_Init_8024234C_omo_15 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00760002 00760002 00760002 00760002 00760002 00760002 00760002 00760002 
+00760002 00760002 00760002 00760002 00760002 00760002 00760002 00760002 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_802408E0_omo_15
+    0:  Switch  *StoryProgress 
+    C:  	Case  ==  00000003 
+   18:  		Set  *Var[0]  00000000 
+   28:  		Set  *StoryProgress  00000004 
+   38:  	Case  ==  00000004 
+   44:  		Set  *Var[0]  00000001 
+   54:  	Default
+   5C:  		Return
+   64:  EndSwitch
+   6C:  If  *Var[0]  ==  00000000 
+   7C:  	Call     DisablePlayerInput 	( .True )
+   8C:  	Call     UseSettingsFrom 	( .Default FFFFFF9C 00000055 00000000 )
+   A8:  	Call     SetCamSpeed 	( .Default *Fixed[0.5] )
+   BC:  	Call     SetPanTarget 	( .Default FFFFFF9C 0000001E 00000000 )
+   D8:  	Call     GetCamDistance ( .Default *Var[1] )
+   EC:  	Sub  *Var[1]  00000064 
+   FC:  	Call     SetCamDistance ( .Default *Var[1] )
+  110:  	If  00002710  !=  00002710 
+  120:  		Call     GetCamAngles 	( .Default *Var[2] *Var[3] )
+  138:  		Call     SetCamAngles 	( .Default *Var[2] 00002710 )
+  150:  	EndIf
+  158:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  170:  	Call     $Function_8024004C_omo_15 ( 00000003 000000B4 000000D7 0000003C 00000000 FFFFFF9C 00000055 00000000 0000001E 00000000 )
+  1A4:  	Thread
+  1AC:  		Call     $Function_802401AC_omo_15 ( )
+  1B8:  	EndThread
+  1C0:  	Thread
+  1C8:  		Wait     00000001 
+  1D4:  		Call     PlaySound   	( 80000067 )
+  1E4:  		Call     $Function_80240000_omo_15 ( )
+  1F0:  		Call     802D62B8 ( 80000067 )
+  200:  		Call     PlaySoundAt 	( 000000B2 00000000 FFFFFF9C 00000055 00000000 )
+  220:  	EndThread
+  228:  	Thread
+  230:  		Wait     0000002D 
+  23C:  		Call     SetPlayerAnimation 	( 0001002A )
+  24C:  	EndThread
+  254:  	Thread
+  25C:  		Wait     000000B4 
+  268:  		Wait     00000073 
+  274:  		Call     PlaySoundAt 	( 00000137 00000000 FFFFFF9C 00000055 00000000 )
+  294:  	EndThread
+  29C:  	Call     $Function_802405BC_omo_15 ( 00000001 )
+  2AC:  	Thread
+  2B4:  		Wait     00000050 
+  2C0:  		Call     SetPlayerAnimation 	( 00010002 )
+  2D0:  	EndThread
+  2D8:  	Add  *Var[1]  00000064 
+  2E8:  	Call     SetCamDistance ( .Default *Var[1] )
+  2FC:  	Call     SetPanTarget 	( .Default FFFFFF9C 00000000 00000000 )
+  318:  	Call     $Function_802405BC_omo_15 ( 00000002 )
+  328:  	Call     GetPlayerPos 	( *Var[2] *Var[3] *Var[4] )
+  340:  	Call     UseSettingsFrom 	( .Default *Var[2] *Var[3] *Var[4] )
+  35C:  	Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  370:  	Call     SetPanTarget 	( .Default *Var[2] *Var[3] *Var[4] )
+  38C:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  3A0:  	Call     PanToTarget 	( .Default 00000000 00000000 )
+  3B8:  	Call     DisablePlayerInput 	( .False )
+  3C8:  Else
+  3D0:  	Call     $Function_802405FC_omo_15 ( 00000003 FFFFFF9C 0000001E 00000000 00000000 )
+  3F0:  	Thread
+  3F8:  		Call     $Function_80240708_omo_15 ( )
+  404:  	EndThread
+  40C:  	Wait     00000001 
+  418:  EndIf
+  420:  Call     $Function_802405BC_omo_15 ( 00000003 )
+  430:  Call     PlaySoundAtPlayer 	( 00000138 00000000 )
+  444:  Call     DisablePlayerInput 	( .True )
+  454:  Set  *StoryProgress  00000005 
+  464:  Call     GotoMapSpecial ( $ASCII_80243744_omo_15 00000003 0000000E )
+  47C:  Wait     00000064 
+  488:  Return
+  490:  End
+
+#new:NpcSettings $NpcSettings_80240F00_omo_15
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:IntTable $IntTable_80240F2C_omo_15
+00000008 FFFFFFDD FFFFFF10 00000007 FFFFFFFB FFFFFF4C 00000006 0000000A 
+FFFFFF88 00000006 00000019 FFFFFFC4 00000006 00000019 0000003C 00000006 
+0000000A 00000078 00000007 FFFFFFFB 000000B4 00000008 FFFFFFDD 000000F0 
+00000006 0000001E 00000000 
+
+#new:Script $Script_80240F98_omo_15
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Wait     0000001E 
+   1C:  Thread
+   24:  	Wait     0000000A 
+   30:  	Call     802D2B0C ( *Var[0] )
+   40:  	If  *Var[0]  !=  00000000 
+   50:  		Call     802D2B6C ( )
+   5C:  		Wait     0000001E 
+   68:  		Call     802D2C14 ( 00000001 )
+   78:  		Call     SetNpcFlagBits ( .Npc:Partner 00000100 .True )
+   90:  		Wait     0000002D 
+   9C:  		Call     802D2C14 ( 00000000 )
+   AC:  	EndIf
+   B4:  EndThread
+   BC:  Call     SayMessage0 	( 00000000 0076000A 00760002 00000000 000F005F ) % So, you came, did you?
+   DC:  Wait     0000000A 
+   E8:  Call     UseSettingsFrom 	( .Default 000000FA FFFFFFCE 0000000A )
+  104:  Call     SetPanTarget 	( .Default 000000FA FFFFFFCE 0000000A )
+  120:  Call     SetCamPosB  	( .Default *Fixed[205.0] *Fixed[11.0] )
+  138:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  14C:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  164:  Wait     00000014 
+  170:  Call     SayMessage0 	( 00000000 0076000A 00760002 00000000 000F0060 ) % I'm General Guy. We're following the orders of Kin ...
+  190:  Wait     00000014 
+  19C:  Call     SayMessage0 	( 00000000 0076000A 00760002 00000000 000F0061 ) % I don't care for you, sir. You are rude, and furth ...
+  1BC:  Wait     00000014 
+  1C8:  Call     SayMessage0 	( 00000000 0076000A 00760002 00000000 000F0062 ) % Prepare to fight me, sir!
+  1E8:  Call     SetPlayerSpeed ( *Fixed[3.0] )
+  1F8:  Call     MovePlayerTo 	( FFFFFF38 00000000 00000000 )
+  210:  Set  *Var[0]  00000001 
+  220:  Loop     00000009 
+  22C:  	Call     SetNpcAnimation 	( *Var[0] 003B0002 )
+  240:  	Add  *Var[0]  00000001 
+  250:  EndLoop
+  258:  Call     SetNpcAnimation 	( 00000000 0076000C )
+  26C:  Call     ShowMessage 	( 000F0063 000000A0 00000028 ) % Taste defeat!
+  284:  Call     SetNpcAnimation 	( 00000000 00760002 )
+  298:  Wait     00000014 
+  2A4:  Set  *Var[0]  00000001 
+  2B4:  Loop     00000009 
+  2C0:  	Call     SetNpcAnimation 	( *Var[0] 003B0001 )
+  2D4:  	Add  *Var[0]  00000001 
+  2E4:  EndLoop
+  2EC:  Call     SayMessage0 	( 00000000 00760002 0076000A 00000000 000F0064 ) % Charge!!
+  30C:  Thread
+  314:  	Wait     0000000A 
+  320:  	Call     PlaySound   	( 8000004D )
+  330:  	Set  *Var[0]  00000001 
+  340:  	Loop     00000009 
+  34C:  		Call     SetNpcVar   	( *Var[0] 00000000 0000000A )
+  364:  		Add  *Var[0]  00000001 
+  374:  	EndLoop
+  37C:  EndThread
+  384:  Loop     0000001E 
+  390:  	Call     SetCamDistance ( .Default *Fixed[330.0] )
+  3A4:  	Wait     00000001 
+  3B0:  	Call     SetCamDistance ( .Default *Fixed[320.0] )
+  3C4:  	Wait     00000001 
+  3D0:  EndLoop
+  3D8:  Set  *Var[0]  00000001 
+  3E8:  UseIntBuffer $IntTable_80240F2C_omo_15 
+  3F4:  Loop     00000009 
+  400:  	Get3Int  *Var[1] *Var[2] *Var[3] 
+  414:  	Call     SetNpcSpeed 	( *Var[0] *Var[1] )
+  428:  	Call     SetNpcPos   	( *Var[0] *Var[2] 00000000 *Var[3] )
+  444:  	Add  *Var[0]  00000001 
+  454:  EndLoop
+  45C:  Call     ResetCam    	( .Default *Fixed[90.0] )
+  470:  Wait     00000014 
+  47C:  Label    00000005 
+  488:  Call     GetNpcVar   	( 00000009 00000000 *Var[0] )
+  4A0:  If  *Var[0]  !=  00000028 
+  4B0:  	Wait     00000001 
+  4BC:  	Goto     00000005 
+  4C8:  EndIf
+  4D0:  Call     GetCurrentPartner 	( *Var[0] )
+  4E0:  If  *Var[0]  ==  00000006 
+  4F0:  	Call     DisablePartnerAI 	( 00000000 )
+  500:  	Call     SayMessage0 	( .Npc:Partner 00000108 00000106 00000000 000F0075 ) % Yay! Yippeeee!! We beat the Shy Guys! Hm hm hee he ...
+  520:  	Call     EnablePartnerAI 	( )
+  52C:  EndIf
+  534:  Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  548:  Call     SetPanTarget 	( .Default 00000096 00000000 00000000 )
+  564:  Call     SetCamSpeed 	( .Default *Fixed[2.5] )
+  578:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  590:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  5A4:  Call     FadeOutMusic 	( 00000000 00000BB8 )
+  5B8:  Exec     $Script_802408E0_omo_15 
+  5C4:  Call     DisablePlayerInput 	( .False )
+  5D4:  Return
+  5DC:  End
+
+#new:IntTable $IntTable_80241890_omo_15
+$???_8024157C_omo_15 $???_802415F8_omo_15 $???_80241650_omo_15 $???_802416C4_omo_15 $???_80241738_omo_15 $???_802415F8_omo_15 $???_8024157C_omo_15 $???_802416C4_omo_15 
+$???_802417A0_omo_15 
+
+#new:IntTable $IntTable_802418B4_omo_15
+$???_802417FC_omo_15 
+
+#new:IntTable $IntTable_802418B8_omo_15
+FFFFFF12 FFFFFFC9 00000000 FFFFFF26 FFFFFFC4 00000000 FFFFFF3A FFFFFFC4 
+00000000 FFFFFF4E FFFFFFCE 00000000 FFFFFF4E 00000023 00000000 FFFFFF40 
+00000032 00000000 FFFFFF2E 0000003C 00000000 FFFFFF1C 00000037 00000000 
+FFFFFF5B FFFFFFF6 00000000 
+
+#new:IntTable $IntTable_80241924_omo_15
+FFFFFF4A 00000000 00000000 
+
+#new:Script $Script_80241AC4_omo_15
+    0:  Call     GetOwnerNpcID 	( *Var[9] )
+   10:  If  *Var[9]  ==  00000000 
+   20:  	Call     PlaySound   	( 8000004D )
+   30:  	UseIntBuffer $IntTable_802418B4_omo_15 
+   3C:  	Get1Int  *Var[1] 
+   48:  	UseIntBuffer *Var[1] 
+   54:  	Call     SetNpcAnimation 	( *Var[9] 0076000E )
+   68:  	Loop     
+   74:  		Get1Int  *Var[2] 
+   80:  		Switch  *Var[2] 
+   8C:  			Case  ==  00000000 
+   98:  				Get2Int  *Var[3] *Var[4] 
+   A8:  				Call     SetNpcSpeed 	( 00000000 *Fixed[8.0] )
+   BC:  				Call     MoveNpcTo   	( 00000000 *Var[3] *Var[4] 00000000 )
+   D8:  			Case  ==  00000001 
+   E4:  				Get3Int  *Var[3] *Var[4] *Var[5] 
+   F8:  				Call     SetNpcJumpscale 	( 00000000 *Fixed[1.0] )
+  10C:  				Call     NpcJump0    	( 00000000 *Var[3] *Var[4] *Var[5] 0000000A )
+  12C:  		EndSwitch
+  134:  		If  *Var[2]  ==  FFFFFFFF 
+  144:  			BreakLoop
+  14C:  		EndIf
+  154:  	EndLoop
+  15C:  	Call     PlaySound   	( 0000076D )
+  16C:  	Call     802D62E4 ( 0000036D )
+  17C:  Else
+  184:  	Set  *Var[0]  *Var[9] 
+  194:  	Sub  *Var[0]  00000000 
+  1A4:  	UseIntBuffer $IntTable_80241890_omo_15 
+  1B0:  	Loop     *Var[0] 
+  1BC:  		Get1Int  *Var[1] 
+  1C8:  	EndLoop
+  1D0:  	UseIntBuffer *Var[1] 
+  1DC:  	Loop     
+  1E8:  		Get1Int  *Var[2] 
+  1F4:  		Switch  *Var[2] 
+  200:  			Case  ==  00000000 
+  20C:  				Get2Int  *Var[3] *Var[4] 
+  21C:  				Call     SetNpcAnimation 	( *Var[9] 003B0004 )
+  230:  				Call     SetNpcSpeed 	( *Var[9] *Fixed[8.0] )
+  244:  				Call     MoveNpcTo   	( *Var[9] *Var[3] *Var[4] 00000000 )
+  260:  			Case  ==  00000001 
+  26C:  				Get3Int  *Var[3] *Var[4] *Var[5] 
+  280:  				Call     SetNpcJumpscale 	( *Var[9] *Fixed[1.0] )
+  294:  				Call     NpcJump0    	( *Var[9] *Var[3] *Var[4] *Var[5] 0000000A )
+  2B4:  			Case  ==  00000002 
+  2C0:  				Call     802CDE68 ( *Var[9] 0000000A )
+  2D4:  				Thread
+  2DC:  					Set  *Var[3]  00000000 
+  2EC:  					Loop     0000000A 
+  2F8:  						Add  *Var[3]  00000009 
+  308:  						Call     SetNpcRotation ( *Var[9] 00000000 00000000 *Var[3] )
+  324:  						Wait     00000001 
+  330:  					EndLoop
+  338:  				EndThread
+  340:  				Call     NpcJump0    	( *Var[9] FFFFFF4C 00000000 0000003F 00000004 )
+  360:  				Thread
+  368:  					Wait     0000000A 
+  374:  					Call     SetNpcRotation ( *Var[9] 00000000 00000000 00000000 )
+  390:  					Call     SetNpcAnimation 	( *Var[9] 003B0010 )
+  3A4:  					Call     PlayerFaceNpc 	( *Var[9] 00000003 )
+  3B8:  					Call     NpcFaceNpc  	( .Npc:Partner *Var[9] 00000003 )
+  3D0:  				EndThread
+  3D8:  				Call     NpcJump0    	( *Var[9] FFFFFF24 00000000 0000003F 0000000A )
+  3F8:  				Call     PlaySoundAtNpc ( *Var[9] 000003E3 00000000 )
+  410:  				Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[1.0] )
+  42C:  				Wait     00000032 
+  438:  				Loop     00000002 
+  444:  					Call     PlaySoundAtNpc ( *Var[9] 000003E4 00000000 )
+  45C:  					Wait     00000007 
+  468:  				EndLoop
+  470:  				Wait     00000006 
+  47C:  				Call     802CDE68 ( *Var[9] 00000000 )
+  490:  				Call     SetNpcAnimation 	( *Var[9] 003B0001 )
+  4A4:  				Call     NpcJump0    	( *Var[9] FFFFFF1A 00000000 0000003F 0000000A )
+  4C4:  				Call     InterpNpcYaw 	( *Var[9] 0000005A 00000000 )
+  4DC:  				Wait     00000014 
+  4E8:  				Thread
+  4F0:  					Call     PlaySoundAtNpc ( *Var[9] 000003A2 00000000 )
+  508:  					Wait     0000002D 
+  514:  					Call     802D62B8 ( 000003A2 )
+  524:  					Call     SetNpcVar   	( 00000009 00000000 00000028 )
+  53C:  				EndThread
+  544:  		EndSwitch
+  54C:  		If  *Var[2]  ==  FFFFFFFF 
+  55C:  			BreakLoop
+  564:  		EndIf
+  56C:  	EndLoop
+  574:  EndIf
+  57C:  Call     SetNpcFlagBits ( *Var[9] 00000200 .False )
+  594:  Call     SetNpcPos   	( *Var[9] 00000000 FFFFFC18 00000000 )
+  5B0:  Return
+  5B8:  End
+
+#new:Script $Script_80242084_omo_15
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     SetMusicTrack 	( 00000000 .Song:ShyGuyToybox 00000000 00000008 )
+   44:  		Call     GetOwnerNpcID 	( *Var[0] )
+   54:  		If  *Var[0]  ==  00000000 
+   64:  			Call     80044180 ( 00000002 00000001 )
+   78:  			UseIntBuffer $IntTable_802418B8_omo_15 
+   84:  			Set  *Var[0]  00000001 
+   94:  			Loop     00000009 
+   A0:  				Get3Int  *Var[1] *Var[2] *Var[3] 
+   B4:  				Call     SetNpcPos   	( *Var[0] *Var[1] 00000000 *Var[2] )
+   D0:  				Call     NpcFacePlayer 	( *Var[0] 00000000 )
+   E4:  				Add  *Var[0]  00000001 
+   F4:  			EndLoop
+   FC:  			UseIntBuffer $IntTable_80241924_omo_15 
+  108:  			Get3Int  *Var[1] *Var[2] *Var[3] 
+  11C:  			Call     SetNpcPos   	( 00000000 *Var[1] *Var[2] *Var[3] )
+  138:  		EndIf
+  140:  		Exec     $Script_80241AC4_omo_15 
+  14C:  	Case  ==  00000001 
+  158:  	Case  ==  00000002 
+  164:  EndSwitch
+  16C:  Return
+  174:  End
+
+#new:Script $Script_Init_8024234C_omo_15
+    0:  If  *StoryProgress  <  00000004 
+   10:  	Exec     $Script_80240F98_omo_15 
+   1C:  	Call     BindNpcDefeat 	( .Npc:Self $Script_80242084_omo_15 )
+   30:  Else
+   38:  	Call     RemoveNpc   	( .Npc:Self )
+   48:  EndIf
+   50:  Return
+   58:  End
+

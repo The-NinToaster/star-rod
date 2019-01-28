@@ -1,0 +1,58 @@
+% automatically dumped from map sam_11
+
+#new:Npc $sam_11_8024A150_3E0
+0000000A $NpcSettings_80244EC8_sam_11 00000000 00000000 00000000 
+00402D09 $Script_Init_80248D9C_sam_11 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00840101 00840102 00840103 00840103 00840101 00840101 00840106 00840106 
+00840103 00840103 00840103 00840103 00840103 00840103 00840103 00840103 
+00000000 00000000 00000000 001A0005 % This Toad is one of the castle maids. She's always ...
+
+#new:NpcSettings $NpcSettings_80244EC8_sam_11
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802487DC_sam_11
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000040 
+   18:  		Call     SayMessage0 	( 00000008 00840104 00840101 00000005 001200BE ) % When you hear about Shiver City, ice skating is th ...
+   38:  		Wait     0000000A 
+   44:  		Call     SayMessage0 	( 00000009 00840104 00840101 00000005 001200BF ) % Well, skiing's nice, too, but not when a monster's ...
+   64:  		Wait     0000000A 
+   70:  		Call     SayMessage0 	( 0000000A 00840104 00840101 00000005 001200C0 ) % It's scary out in the snow, so city-skating we wil ...
+   90:  	Case  <  00000046 
+   9C:  		Call     SayMessage0 	( 00000008 00840104 00840101 00000005 001200C1 ) % Ahhhhhhhhhhhhh!! The ice on the lake broke!!
+   BC:  		Wait     0000000A 
+   C8:  		Call     SayMessage0 	( 00000009 00840104 00840101 00000005 001200C2 ) % We were just about to go ice skating!!
+   E8:  		Wait     0000000A 
+   F4:  		Call     SayMessage0 	( 0000000A 00840104 00840101 00000005 001200C3 ) % Nooo! This is totally unfair! I was so looking for ...
+  114:  	Case  <  00000059 
+  120:  		Call     SayMessage0 	( 00000008 00840104 00840101 00000005 001200C4 ) % Cold... It's cold here! It's too cooooold! Brrrrr! ...
+  140:  		Wait     0000000A 
+  14C:  		Call     SayMessage0 	( 00000009 00840104 00840101 00000005 001200C5 ) % Hey, didn't you hear? That monster's gone now! Let ...
+  16C:  		Wait     0000000A 
+  178:  		Call     SayMessage0 	( 0000000A 00840104 00840101 00000005 001200C6 ) % That'll be great! Skiing in a world of snow, ice,  ...
+  198:  EndSwitch
+  1A0:  Return
+  1A8:  End
+
+#new:Script $Script_8024898C_sam_11
+    0:  ExecWait $Script_802487DC_sam_11 
+    C:  Return
+   14:  End
+
+#new:Script $Script_Init_80248D9C_sam_11
+    0:  If  *StoryProgress  <  00000059 
+   10:  	Call     BindNpcInteract 	( .Npc:Self $Script_8024898C_sam_11 )
+   24:  Else
+   2C:  	Call     RemoveNpc   	( .Npc:Self )
+   3C:  EndIf
+   44:  Return
+   4C:  End
+

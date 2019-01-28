@@ -1,0 +1,64 @@
+% automatically dumped from map nok_01
+
+#new:Npc $nok_01_8024E748_1F0
+00000003 $NpcSettings_802436CC_nok_01 00000000 00000000 00000000 
+00002909 $Script_Init_8024D0DC_nok_01 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+FFFFFFFE 00000000 FFFFFFFB 00000032 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 000001F4 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008F0002 008F0005 008F0006 008F0006 008F0002 008F0002 008F0000 008F0000 
+008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 
+00000000 00000000 00000000 001A006D % Is it only my imagination or did Koopa Troopas use ...
+
+#new:AISettings $AISettings_8024367C_nok_01
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_802436AC_nok_01
+    0:  Call     DoBasicAI   	( $AISettings_8024367C_nok_01 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_802436CC_nok_01
+00000000 00230018 00000000 00000000 $Script_NpcAI_802436AC_nok_01 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024C404_nok_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFB5 
+   18:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0014 ) % Is it true that Kooper is joining your adventure,  ...
+   38:  	Case  <  FFFFFFCB 
+   44:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0015 ) % By the way, I heard a rumor that Princess Peach wa ...
+   64:  	Case  <  00000027 
+   70:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0016 ) % Please do your best, Mario. I'm trying to do mine.
+   90:  	Case  <  00000059 
+   9C:  		If  *Flag_NOK_2C  ==  00000000 
+   AC:  			Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0017 ) % You don't say? A giant Koopa named Kent C. Koopa i ...
+   CC:  		Else
+   D4:  			Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0018 ) % I wonder what Princess Peach is doing right now. I ...
+   F4:  		EndIf
+   FC:  	Case  >=  00000059 
+  108:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0018 ) % I wonder what Princess Peach is doing right now. I ...
+  128:  EndSwitch
+  130:  Return
+  138:  End
+
+#new:Script $Script_Init_8024D0DC_nok_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024C404_nok_01 )
+   14:  Return
+   1C:  End
+

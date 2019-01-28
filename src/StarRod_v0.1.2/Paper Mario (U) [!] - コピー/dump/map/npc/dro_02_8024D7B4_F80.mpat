@@ -1,0 +1,55 @@
+% automatically dumped from map dro_02
+
+#new:Npc $dro_02_8024D7B4_F80
+00000007 $NpcSettings_80247558_dro_02 00000000 00000000 00000000 
+00002D01 $Script_Init_8024BF10_dro_02 00000000 00000000 000000B4 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00940001 00940004 00940004 00940004 00940001 00940001 00940001 00940001 
+00940001 00940001 00940001 00940001 00940001 00940001 00940001 00940001 
+00000000 00000000 00000000 001A009E % He's a Nomadimouse who never strays from the back  ...
+
+#new:NpcSettings $NpcSettings_80247558_dro_02
+00000000 00160019 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024BD4C_dro_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFCB 
+   18:  		If  *AreaFlag[004]  ==  00000000 
+   28:  			Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00A5 ) % Keep this quiet... If this woman casts a spell on  ...
+   48:  			Set  *AreaFlag[004]  00000001 
+   58:  		Else
+   60:  			Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00A6 ) % Keep this quiet... If this woman casts a spell on  ...
+   80:  			Set  *AreaFlag[004]  00000000 
+   90:  		EndIf
+   98:  	Case  <  00000027 
+   A4:  		If  *AreaFlag[004]  ==  00000000 
+   B4:  			Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00A7 ) % Keep this quiet... If this woman casts a spell on  ...
+   D4:  			Set  *AreaFlag[004]  00000001 
+   E4:  		Else
+   EC:  			Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00A8 ) % Keep this quiet... If this woman casts a spell on  ...
+  10C:  			Set  *AreaFlag[004]  00000000 
+  11C:  		EndIf
+  124:  	Default
+  12C:  		If  *AreaFlag[004]  ==  00000000 
+  13C:  			Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00A9 ) % Keep this quiet... If this woman casts a spell on  ...
+  15C:  			Set  *AreaFlag[004]  00000001 
+  16C:  		Else
+  174:  			Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00AA ) % Keep this quiet... If this woman casts a spell on  ...
+  194:  			Set  *AreaFlag[004]  00000000 
+  1A4:  		EndIf
+  1AC:  EndSwitch
+  1B4:  Return
+  1BC:  End
+
+#new:Script $Script_Init_8024BF10_dro_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024BD4C_dro_02 )
+   14:  Return
+   1C:  End
+

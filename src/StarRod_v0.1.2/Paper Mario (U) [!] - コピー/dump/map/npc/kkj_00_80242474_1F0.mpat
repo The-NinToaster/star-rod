@@ -1,0 +1,69 @@
+% automatically dumped from map kkj_00
+
+#new:Npc $kkj_00_80242474_1F0
+00000001 $NpcSettings_802418F4_kkj_00 00000000 00000000 00000000 
+00400D0D $Script_Init_80242264_kkj_00 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830001 00830002 00830003 00830003 00830001 00830001 00830006 00830006 
+00830003 00830003 00830003 00830003 00830003 00830003 00830003 00830003 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_802418F4_kkj_00
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241B80_kkj_00
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  If  *Var[0]  ==  00000005 
+   20:  	Call     802D2508 ( )
+   2C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   44:  	Call     AwaitPlayerLeave 	( *Var[0] *Var[2] 00000064 )
+   5C:  	Wait     00000032 
+   68:  	Call     SetNpcSpeed 	( 00000001 *Fixed[2.0] )
+   7C:  	Call     SetNpcAnimation 	( 00000001 00830002 )
+   90:  	Call     MoveNpcTo   	( 00000001 0000003C 00000140 00000000 )
+   AC:  	Call     SetNpcAnimation 	( 00000001 00830001 )
+   C0:  EndIf
+   C8:  Loop     
+   D4:  	Call     GetOwnerVar 	( 00000001 *Var[0] )
+   E8:  	If  *Var[0]  ==  00000000 
+   F8:  		Call     SetNpcAnimation 	( 00000001 00830004 )
+  10C:  		Call     SetOwnerVar 	( 00000001 00000001 )
+  120:  	Else
+  128:  		Call     SetNpcAnimation 	( 00000000 00820014 )
+  13C:  		Call     SetOwnerVar 	( 00000001 00000000 )
+  150:  	EndIf
+  158:  	Call     RandInt     	( 0000003C *Var[0] )
+  16C:  	Add  *Var[0]  0000001E 
+  17C:  	Wait     *Var[0] 
+  188:  	Call     SetNpcAnimation 	( 00000000 00820004 )
+  19C:  	Call     SetNpcAnimation 	( 00000001 00830001 )
+  1B0:  	Wait     0000000A 
+  1BC:  EndLoop
+  1C4:  End
+
+#new:Script $Script_80241E64_kkj_00
+    0:  Call     SetNpcAnimation 	( 00000001 00830001 )
+   14:  Call     SetNpcAnimation 	( 00000000 00820004 )
+   28:  Wait     0000000A 
+   34:  Call     SayMessage0 	( .Npc:Self 00830004 00830001 00000010 00000029 ) % Mario, you're looking well! Please enjoy the party ...
+   54:  Return
+   5C:  End
+
+#new:Script $Script_Init_80242264_kkj_00
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  If  *Var[0]  !=  00000005 
+   20:  	Call     SetNpcPos   	( .Npc:Self 0000003C 00000000 00000140 )
+   3C:  	Call     SetNpcYaw   	( .Npc:Self 0000010E )
+   50:  EndIf
+   58:  Call     BindNpcIdle 	( .Npc:Self $Script_80241B80_kkj_00 )
+   6C:  Call     BindNpcInteract 	( .Npc:Self $Script_80241E64_kkj_00 )
+   80:  Return
+   88:  End
+

@@ -1,0 +1,82 @@
+% automatically dumped from map kkj_25
+
+#new:Npc $kkj_25_8024313C
+00000005 $NpcSettings_80242890_kkj_25 00000000 00000000 00000000 
+00840F05 $Script_Init_80242C74_kkj_25 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00800002 00800002 00800002 00800002 00800002 00800002 00800002 00800002 
+00800002 00800002 00800002 00800002 00800002 00800002 00800002 00800002 
+00000000 00000000 $ExtraAnimationList_802430A4_kkj_25 00000000 % no tattle string
+
+#new:Function $Function_80240050_kkj_25
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  JAL       800E9B54
+    C:  NOP
+   10:  LUI       A1, 437F
+   14:  JAL       80137DA4
+   18:  DADDU     A0, R0, R0
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80242890_kkj_25
+00000000 004B0048 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80242998_kkj_25
+    0:  Label    00000000 
+    C:  Call     SetOwnerVar 	( 00000000 00000000 )
+   20:  Loop     
+   2C:  	Call     GetOwnerVar 	( 00000000 *Var[0] )
+   40:  	If  *Var[0]  !=  00000000 
+   50:  		BreakLoop
+   58:  	EndIf
+   60:  	Wait     00000001 
+   6C:  EndLoop
+   74:  Thread
+   7C:  	Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+   98:  	Add  *Var[0]  FFFFFFB5 
+   A8:  	Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   C4:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   E0:  	Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+   F4:  	Call     SetCamAngles 	( .Default *Fixed[17.0] *Fixed[-7.0] )
+  10C:  	Call     SetCamDistance ( .Default 000003E8 )
+  120:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  138:  EndThread
+  140:  Call     StartBossBattle 	( .Song:FinalBowserBattle )
+  150:  Goto     00000000 
+  15C:  Return
+  164:  End
+
+#new:Script $Script_80242B04_kkj_25
+    0:  Call     80044180 ( 00000002 00000001 )
+   14:  Call     $Function_80240050_kkj_25 ( )
+   20:  Set  *Flag_KKJ_1E  00000001 
+   30:  Call     GotoMap     	( $ASCII_8024C710_kkj_25 00000002 )
+   44:  Wait     00000064 
+   50:  Return
+   58:  End
+
+#new:Script $Script_Init_80242C74_kkj_25
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_80242998_kkj_25 )
+   14:  Call     BindNpcDefeat 	( .Npc:Self $Script_80242B04_kkj_25 )
+   28:  Call     SetNpcScale 	( 00000005 *Fixed[1.5] *Fixed[1.5] *Fixed[1.5] )
+   44:  Call     SetNpcPos   	( 00000005 000000C8 00000000 00000000 )
+   60:  Call     SetNpcAnimation 	( 00000005 00800002 )
+   74:  Return
+   7C:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_802430A4_kkj_25
+00800002 00800004 00800006 0080000D 0080000E FFFFFFFF 
+
+#new:ASCII $ASCII_8024C710_kkj_25
+kkj_25
+

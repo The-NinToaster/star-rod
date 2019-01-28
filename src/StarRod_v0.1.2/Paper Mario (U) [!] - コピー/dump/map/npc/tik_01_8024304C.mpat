@@ -1,0 +1,202 @@
+% automatically dumped from map tik_01
+
+#new:Npc $tik_01_8024304C
+00000000 $NpcSettings_80242B50_tik_01 00000000 00000000 00000000 
+00840D0D $Script_Init_80242F20_tik_01 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 
+0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240960_tik_01
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 20 (SP)
+   10:  SW        S3, 1C (SP)
+   14:  SW        S2, 18 (SP)
+   18:  SW        S0, 10 (SP)
+   1C:  LW        S0, C (S1)
+   20:  LW        A1, 0 (S0)
+   24:  JAL       {Func:GetVariable}
+   28:  ADDIU     S0, S0, 4
+   2C:  LW        A1, 0 (S0)
+   30:  ADDIU     S0, S0, 4
+   34:  DADDU     A0, S1, R0
+   38:  JAL       {Func:GetVariable}
+   3C:  DADDU     S3, V0, R0
+   40:  LW        A1, 0 (S0)
+   44:  ADDIU     S0, S0, 4
+   48:  DADDU     A0, S1, R0
+   4C:  JAL       {Func:GetVariable}
+   50:  DADDU     S2, V0, R0
+   54:  DADDU     A0, S1, R0
+   58:  LW        A1, 0 (S0)
+   5C:  JAL       {Func:GetVariable}
+   60:  DADDU     S1, V0, R0
+   64:  DADDU     A0, S3, R0
+   68:  JAL       801105E8
+   6C:  DADDU     S0, V0, R0
+   70:  DADDU     V1, V0, R0
+   74:  MTC1      S2, F0
+   78:  NOP
+   7C:  CVT.S.W   F0, F0
+   80:  SWC1      F0, 48 (V1)
+   84:  MTC1      S1, F0
+   88:  NOP
+   8C:  CVT.S.W   F0, F0
+   90:  SWC1      F0, 4C (V1)
+   94:  MTC1      S0, F0
+   98:  NOP
+   9C:  CVT.S.W   F0, F0
+   A0:  SWC1      F0, 50 (V1)
+   A4:  LW        RA, 20 (SP)
+   A8:  LW        S3, 1C (SP)
+   AC:  LW        S2, 18 (SP)
+   B0:  LW        S1, 14 (SP)
+   B4:  LW        S0, 10 (SP)
+   B8:  ADDIU     V0, R0, 2
+   BC:  JR        RA
+   C0:  ADDIU     SP, SP, 28
+
+#new:Function $Function_80240A30_tik_01
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 14 (SP)
+    8:  SW        S0, 10 (SP)
+    C:  LW        V0, C (A0)
+   10:  LW        A1, 0 (V0)
+   14:  JAL       {Func:GetVariable}
+   18:  LW        S0, 148 (A0)
+   1C:  LB        V1, 4 (S0)
+   20:  SLL       V0, V0, 2
+   24:  SLL       V1, V1, 2
+   28:  LTW       A0, V1 (800B0F38)
+   34:  LTHU      V1, V0 ($ShortTable_80242B7C_tik_01[2])
+   40:  SH        V1, 44 (A0)
+   44:  LW        RA, 14 (SP)
+   48:  LW        S0, 10 (SP)
+   4C:  ADDIU     V0, R0, 2
+   50:  JR        RA
+   54:  ADDIU     SP, SP, 18
+
+#new:Script $Script_80240B20_tik_01
+    0:  Call     SetMusicTrack 	( 00000000 .Song:ToadTownTunnels 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:Script $Script_80240B4C_tik_01
+    0:  Call     SetMusicTrack 	( 00000000 .Song:BlooperTheme 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:Script $Script_80242750_tik_01
+    0:  Call     GetPlayerPos 	( *Var[2] *Var[3] *Var[4] )
+   18:  Add  *Var[2]  FFFFFFB5 
+   28:  Call     PlaySoundAt 	( 00000301 00000000 *Var[2] 000000C8 00000019 )
+   48:  Call     MakeLerp    	( 000000C8 FFFFFFF6 00000019 00000001 )
+   64:  Loop     
+   70:  	Call     UpdateLerp  	( )
+   7C:  	Call     $Function_80240960_tik_01 ( *MapVar[1] *Var[2] *Var[0] 00000019 )
+   98:  	If  *Var[1]  ==  00000000 
+   A8:  		BreakLoop
+   B0:  	EndIf
+   B8:  	Wait     00000001 
+   C4:  EndLoop
+   CC:  Call     PlaySoundAt 	( 00000048 00000000 *Var[2] *Var[0] 00000019 )
+   EC:  Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[1.0] )
+  108:  Wait     0000000A 
+  114:  Return
+  11C:  End
+
+#new:NpcSettings $NpcSettings_80242B50_tik_01
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80242B88_tik_01
+    0:  Loop     
+    C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  	If  *Var[0]  <  000000C8 
+   34:  		BreakLoop
+   3C:  	EndIf
+   44:  	Wait     00000001 
+   50:  EndLoop
+   58:  Call     DisablePlayerInput 	( .True )
+   68:  Exec     $Script_80240B4C_tik_01 
+   74:  Call     ShowMessage 	( 00080000 000000A0 00000028 ) % BLOOPER!
+   8C:  Wait     00000014 
+   98:  Call     SetNpcAnimation 	( .Npc:Self 00500001 )
+   AC:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   C4:  Add  *Var[0]  FFFFFFB5 
+   D4:  Call     SetNpcPos   	( .Npc:Self *Var[0] 00000096 00000000 )
+   F0:  Call     PlaySoundAtNpc ( .Npc:Self 000003DC 00000000 )
+  108:  Call     PlaySoundAtNpc ( .Npc:Self 000003E7 00000000 )
+  120:  Call     NpcJumpX    	( .Npc:Self *Var[0] 00000000 00000000 0000000A 00000000 00000001 )
+  148:  Call     SetNpcAnimation 	( .Npc:Self 0050000C )
+  15C:  Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[1.0] )
+  178:  Wait     0000000F 
+  184:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  194:  Return
+  19C:  End
+
+#new:Script $Script_80242D2C_tik_01
+    0:  Wait     00000005 
+    C:  Thread
+   14:  	Call     SetNpcAnimation 	( .Npc:Self 00500004 )
+   28:  	Call     MakeLerp    	( 00000000 00000870 00000028 00000000 )
+   44:  	Loop     
+   50:  		Call     UpdateLerp  	( )
+   5C:  		Call     SetNpcRotation ( .Npc:Self 00000000 *Var[0] 00000000 )
+   78:  		Wait     00000001 
+   84:  		If  *Var[1]  ==  00000000 
+   94:  			BreakLoop
+   9C:  		EndIf
+   A4:  	EndLoop
+   AC:  EndThread
+   B4:  Call     PlaySoundAtNpc ( .Npc:Self 000003DD 00000000 )
+   CC:  Call     PlaySoundAtNpc ( .Npc:Self 000003E7 00000000 )
+   E4:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  100:  Call     NpcJumpX    	( .Npc:Self *Var[0] 00000096 00000000 0000000F 00000000 00000001 )
+  128:  Wait     00000005 
+  134:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  150:  Wait     0000000F 
+  15C:  ExecWait $Script_80242750_tik_01 
+  168:  If  *Flag_TIK_27  ==  00000000 
+  178:  	Set  *Flag_TIK_27  00000001 
+  188:  Else
+  190:  	Set  *Flag_TIK_28  00000001 
+  1A0:  EndIf
+  1A8:  Set  *Flag_TIK_29  00000001 
+  1B8:  Exec     $Script_80240B20_tik_01 
+  1C4:  Call     DisablePlayerInput 	( .False )
+  1D4:  Call     RemoveNpc   	( .Npc:Self )
+  1E4:  Return
+  1EC:  End
+
+#new:Script $Script_Init_80242F20_tik_01
+    0:  If  *Flag_TIK_29  ==  00000000 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_80242B88_tik_01 )
+   24:  	Call     BindNpcDefeat 	( .Npc:Self $Script_80242D2C_tik_01 )
+   38:  	If  *Flag_TIK_27  ==  00000000 
+   48:  		Call     SetNpcScale 	( .Npc:Self *Fixed[0.75] *Fixed[0.75] *Fixed[0.75] )
+   64:  		Call     $Function_80240A30_tik_01 ( 00000000 )
+   74:  	Else
+   7C:  		If  *Flag_TIK_28  ==  00000000 
+   8C:  			Call     SetNpcScale 	( .Npc:Self *Fixed[1.25] *Fixed[1.25] *Fixed[1.25] )
+   A8:  			Call     $Function_80240A30_tik_01 ( 00000001 )
+   B8:  		Else
+   C0:  			Call     SetNpcScale 	( .Npc:Self *Fixed[2.0] *Fixed[2.0] *Fixed[2.0] )
+   DC:  			Call     $Function_80240A30_tik_01 ( 00000002 )
+   EC:  		EndIf
+   F4:  	EndIf
+   FC:  Else
+  104:  	Call     RemoveNpc   	( .Npc:Self )
+  114:  EndIf
+  11C:  Return
+  124:  End
+

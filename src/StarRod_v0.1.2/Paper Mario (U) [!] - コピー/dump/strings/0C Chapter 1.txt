@@ -1,0 +1,2537 @@
+0C-000
+[STYLE:RIGHT]Can it be...? Are you Mario?[BR]
+[PAUSE:0A]Welcome to Koopa Village![BR]
+[PAUSE:0A]I wish we could really welcome[BR]
+you, but we're in big trouble.[BR]
+[WAIT][NEXT]
+Can't you see what kind of[BR]
+madness is going on?[BR]
+[WAIT][NEXT]
+This village is in an uproar[BR]
+because of the Fuzzies.[BR]
+[WAIT][NEXT]
+You...do know what Fuzzies are[BR]
+like, don't you, Mario?[BR]
+[BR]
+[BR]
+[WAIT][NEXT]
+{StartAnim}{SetPrintPos:00:0A}{Down:08}{Func_1A:00:00:02}{Sprite:00:2B:00}{Func_1A:00:01:02}{Sprite:00:2B:01}{Func_1A:00:02:02}{Sprite:00:2B:02}{Func_1B:00:00}{Func_1C:00}[PAUSE:03]{SetPrintPos:00:46}{Down:08}[LEFT] They look like this {EndAnim}[BR]
+[BR]
+[BR]
+[BR]
+[PAUSE:28]{Func_04}[WAIT]{Func_04}{Scroll:04}Mean guys.[BR]
+[PAUSE:0A]They're really naughty.[BR]
+[PAUSE:1E]{Func_04}[WAIT][END]
+
+0C-001
+[STYLE:RIGHT]{StartFX:Wavy}Oh, no! Stupid Fuzzy![BR]
+Get back here with my shell![WAIT][END]
+
+0C-002
+[STYLE:RIGHT]Oh, thank you, Mario![BR]
+[PAUSE:0A]I owe you one.[BR]
+[WAIT][NEXT]
+I just can't walk around without[BR]
+my shell on. Talk about[BR]
+embarrassing![BR]
+[WAIT][NEXT]
+Mario, be sure to keep your shell[BR]
+safe from Fuzzies, all right?[BR]
+[WAIT][NEXT]
+...Oops. You don't have one.[BR]
+[PAUSE:0A]Well, watch your overalls.[WAIT][END]
+
+0C-003
+[STYLE:RIGHT]...Say again?[BR]
+[PAUSE:0A]You're looking for a Koopa with a[BR]
+blue shell?[BR]
+[PAUSE:0F]I bet you mean Kooper.[BR]
+[WAIT][NEXT]
+I think he's at home now.[BR]
+[PAUSE:0A]Look for a house with a green[BR]
+roof, OK?[WAIT][END]
+
+0C-004
+[STYLE:RIGHT]Hey, did you already go see the[BR]
+elder of the village? His name's[BR]
+Koopa Koot, and he was looking[BR]
+for you.[BR]
+[WAIT][NEXT]
+He said something about needing[BR]
+something from you.[BR]
+[WAIT][NEXT]
+His house is at the far end of[BR]
+the village. You really should go[BR]
+visit him.[WAIT][END]
+
+0C-005
+[STYLE:RIGHT]Hey there, Mario.[BR]
+[PAUSE:0A]Good to see you in Koopa Village[BR]
+again.[BR]
+[WAIT][NEXT]
+How's the adventure going?[WAIT][END]
+
+0C-006
+[STYLE:RIGHT]How're things, Mario?[BR]
+Going swimmingly, I hope.[WAIT][END]
+
+0C-007
+[STYLE:RIGHT]That Kent C. Koopa came back,[BR]
+and he's greedier than ever.[BR]
+We can't even go to Toad Town[BR]
+without paying a huge toll![BR]
+[WAIT][NEXT]
+If I could just flip him over, I'd[BR]
+bite his tail...[BR]
+That's his weak point![WAIT][END]
+
+0C-008
+[STYLE:RIGHT]It's been a while since I've been[BR]
+shopping in Toad Town.[BR]
+[WAIT][NEXT]
+I bet I could read all about your[BR]
+adventures in the newspaper[BR]
+there![WAIT][END]
+
+0C-009
+[STYLE:RIGHT]You're Koover, correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry. [BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+0C-00A
+[STYLE:RIGHT]Oh...no!! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+0C-00B
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+0C-00C
+[STYLE:RIGHT]Hey, thanks![BR]
+[PAUSE:05]You came at a good time.[BR]
+[PAUSE:05]I was just about to send a[BR]
+letter myself. [BR]
+[WAIT][NEXT]
+Oh, would you look at this![BR]
+[PAUSE:05]It's a letter from Muss T.![BR]
+[PAUSE:0A]The two of us are always[BR]
+thinking along the same lines.[BR]
+[WAIT][NEXT]
+He's one of my fishing pals.[BR]
+I'll tell you, if you don't fish,[BR]
+you should! What a hobby![BR]
+[WAIT][NEXT]
+And to think, I was just about[BR]
+to send letters to all my fishing[BR]
+buddies about a trip![BR]
+[WAIT][NEXT]
+Once we have a good place set[BR]
+up, I'll write a letter back to [BR]
+Muss T.[BR]
+[WAIT][NEXT]
+So...[BR]
+[PAUSE:05]...could you send this along for[BR]
+me?[BR]
+[PAUSE:0A]Thanks so much.[BR]
+[WAIT][NEXT]
+It's to a friend of mine who's[BR]
+always fishing at the Toad Town[BR]
+port. He's easy to find.[BR]
+[WAIT][NEXT]
+Thanks again![WAIT][END]
+
+0C-00D
+[STYLE:RIGHT]Mr. Koover. Parakarry here.[BR]
+[WAIT][NEXT]
+I have a letter for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+0C-00E
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it.[BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+0C-00F
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+0C-010
+[STYLE:RIGHT]Oh, thanks![BR]
+[PAUSE:05]Cool! [PAUSE:05]It's from my pal![BR]
+[PAUSE:0A]This must be the answer to my[BR]
+last letter.[BR]
+[WAIT][NEXT]
+Thanks for the speedy delivery.[BR]
+[PAUSE:0A]Now I can send letters to the[BR]
+whole gang.[BR]
+[WAIT][NEXT]
+It'll be great meeting up with[BR]
+all the guys and fishing up a[BR]
+storm.[BR]
+[WAIT][NEXT]
+I've already written one.[BR]
+Here, can you take it?[BR]
+[PAUSE:0A]It's to Mr. E, who lives in the[BR]
+desert.[BR]
+[WAIT][NEXT]
+He'll most likely be hanging out[BR]
+in front of the Toad House. He[BR]
+wears a blue turban. [BR]
+[WAIT][NEXT]
+You'll probably notice him right[BR]
+off the bat.[BR]
+[PAUSE:0A]Thanks for everything![WAIT][END]
+
+0C-011
+[STYLE:RIGHT]Oh, woe! My shell's up there![BR]
+[PAUSE:0A]What'll I do...?[BR]
+[PAUSE:0A]I can't reach that high![WAIT][END]
+
+0C-012
+[STYLE:RIGHT]Oh, you're the best![BR]
+[PAUSE:05]Thank you very much![WAIT][END]
+
+0C-013
+[STYLE:RIGHT]Oh, yes I'm much more comfy[BR]
+inside my shell.[BR]
+[PAUSE:0A]Without it, I feel every little[BR]
+breeze![WAIT][END]
+
+0C-014
+[STYLE:RIGHT]Is it true that Kooper is joining[BR]
+your adventure, Mario?[BR]
+[WAIT][NEXT]
+That's terrific![BR]
+[PAUSE:0A]Come back as a hero, Kooper![WAIT][END]
+
+0C-015
+[STYLE:RIGHT]By the way, I heard a rumor[BR]
+that Princess Peach was[BR]
+kidnapped recently.[BR]
+[PAUSE:0A]I hope she's OK...[BR]
+[WAIT][NEXT]
+[PAUSE:0A]How many times has she been[BR]
+kidnapped in her life, anyway?[BR]
+Seems like a lot.[WAIT][END]
+
+0C-016
+[STYLE:RIGHT]Please do your best, Mario.[BR]
+[PAUSE:0A]I'm trying to do mine.[WAIT][END]
+
+0C-017
+[STYLE:RIGHT]You don't say? A giant Koopa[BR]
+named Kent C. Koopa is blocking[BR]
+Pleasant Path?[BR]
+[WAIT][NEXT]
+...I remember him! Ever since he[BR]
+was little, he's been able to fall[BR]
+asleep anytime, anywhere.[BR]
+[WAIT][NEXT]
+It used to be impossible to wake[BR]
+him up.[WAIT][END]
+
+0C-018
+[STYLE:RIGHT]I wonder what Princess Peach is[BR]
+doing right now.[BR]
+[WAIT][NEXT]
+I'm wishing to the Stars that she[BR]
+returns home safely.[WAIT][END]
+
+0C-019
+[STYLE:RIGHT]Curse those stupid Fuzzies![BR]
+They put my shell in the tree![BR]
+[WAIT][NEXT]
+How can they be so mean for no[BR]
+reason?[BR]
+[PAUSE:0A]That was my best shell![WAIT][END]
+
+0C-01A
+[STYLE:RIGHT]Thanks, Mario![BR]
+[WAIT][NEXT]
+This shell [PAUSE:05]was made to order.[BR]
+[PAUSE:0A]That's why [PAUSE:05]it fits me so well. [BR]
+[PAUSE:0A]I mean, how cool do I look?[WAIT][END]
+
+0C-01B
+[STYLE:RIGHT]Thanks, Mario![BR]
+[WAIT][NEXT]
+This shell [PAUSE:05]was made to order.[BR]
+[PAUSE:0A]That's why [PAUSE:05]it fits me so well. [BR]
+[PAUSE:0A]I mean, how cool do I look?[WAIT][END]
+
+0C-01C
+[STYLE:RIGHT]The Koopa Bros. of the fortress[BR]
+used to live in this village. [BR]
+[WAIT][NEXT]
+They left, though, because they[BR]
+said it just wasn't exciting[BR]
+enough around here.[WAIT][END]
+
+0C-01D
+[STYLE:RIGHT]I remember Kooper used to[BR]
+always talk about traveling the[BR]
+world as an explorer.[BR]
+[WAIT][NEXT]
+Going with Mario is a great[BR]
+chance to travel, isn't it?[BR]
+[PAUSE:14]Make us proud, Kooper![WAIT][END]
+
+0C-01E
+[STYLE:RIGHT]I finally bought a new shell.[BR]
+[WAIT][NEXT]
+What do you think?[BR]
+[PAUSE:0A]Don't you think the glossy finish[BR]
+really brings out the trim?[WAIT][END]
+
+0C-01F
+[STYLE:RIGHT]Kent C. Koopa used to live in[BR]
+this village.[BR]
+[WAIT][NEXT]
+But he always insisted that we[BR]
+pay him money for no reason.[BR]
+[WAIT][NEXT]
+What an extortionist! If you[BR]
+want to hear stories about him,[BR]
+ask anybody in this village.[WAIT][END]
+
+0C-020
+[STYLE:RIGHT].[PAUSE:05].[PAUSE:05].[BR]
+[PAUSE:05]Oh, did you say something?[WAIT][END]
+
+0C-021
+[STYLE:RIGHT]Supposedly, these Bob-ombs[BR]
+recently ran away from the[BR]
+Koopa Bros. Fortress.[BR]
+[WAIT][NEXT]
+Of course, things aren't much[BR]
+better here in the village.[BR]
+The Fuzzies are running wild![BR]
+[PAUSE:0A]Poor little Bob-ombs...[BR]
+[WAIT][NEXT]
+Huh? Me?[BR]
+[PAUSE:14]I don't leave my house because I[BR]
+couldn't bear it if the Fuzzies[BR]
+made a fool of me. [BR]
+[WAIT][NEXT]
+They'd probably take my shell[BR]
+and play with it. I know I don't[BR]
+look cool without my shell. Nope.[BR]
+[WAIT][NEXT]
+No, thank you. I'd rather just[BR]
+stay here and listen to music.[WAIT][END]
+
+0C-022
+[STYLE:RIGHT]Huh? Me?[BR]
+[PAUSE:14]I don't leave my house because I[BR]
+couldn't bear it if the Fuzzies[BR]
+made a fool of me. [BR]
+[WAIT][NEXT]
+They'd probably take my shell[BR]
+and play with it. I know I don't[BR]
+look cool without my shell. Nope.[BR]
+[WAIT][NEXT]
+No, thank you. I'd rather just[BR]
+stay here and listen to music.[WAIT][END]
+
+0C-023
+[STYLE:RIGHT]Hey! We can go outside again[BR]
+because the Fuzzies are gone![BR]
+Stupendous! Spectacular![BR]
+[PAUSE:14]It's time to bask in the sun![BR]
+[WAIT][NEXT]
+A little music on the radio,[BR]
+a little sunshine on my shell...[BR]
+[PAUSE:0A]Does it get any better?[WAIT][END]
+
+0C-024
+[STYLE:RIGHT]Aw, I love this song![BR]
+[WAIT][NEXT]
+Doesn't it remind you of a[BR]
+tropical island?[BR]
+[PAUSE:05]Get down! Yow![WAIT][END]
+
+0C-025
+[STYLE:RIGHT]Aw, I love this song![BR]
+[WAIT][NEXT]
+Golden oldies remind me of the[BR]
+good old days. [BR]
+[PAUSE:05]Sing it![WAIT][END]
+
+0C-026
+[STYLE:RIGHT]Oh, this song always brings[BR]
+tears to my eyes...[BR]
+[WAIT][NEXT]
+So moving...[WAIT][END]
+
+0C-027
+[STYLE:RIGHT]Hey, hey! Hands off the dial![BR]
+[PAUSE:0F]That's my jam, right there![BR]
+Don't turn off the funk![BR]
+[PAUSE:0A]I was getting my groove on![WAIT][END]
+
+0C-028
+[NEXT]
+News Flash![BR]
+[WAIT][NEXT]
+Fuzzies are running rampant in[BR]
+Koopa Village.[BR]
+[WAIT][NEXT]
+Officials advise extra caution[BR]
+when traveling in and around the[BR]
+village.[WAIT][END]
+
+0C-029
+[NEXT]
+News Flash![BR]
+[WAIT][NEXT]
+The Koopa Village Fuzzy madness[BR]
+has calmed down. [WAIT][END]
+
+0C-02A
+[NEXT]
+...but moving on, folks.[BR]
+[WAIT][NEXT]
+Ta-da-da-dum![BR]
+[PAUSE:0A]Attention, listeners, 'cause[BR]
+here's your big chance to win![BR]
+[WAIT][NEXT]
+Anyone who takes a Koopa Leaf[BR]
+to the front of the main gate in[BR]
+Toad Town will receive a surprise[BR]
+gift![BR]
+[WAIT][NEXT]
+Right in front of that main gate,[BR]
+there'll be a Toad who looks a bit[BR]
+eccentric. Hand the Koopa Leaf[BR]
+to him![BR]
+[WAIT][NEXT]
+That's right, folks![BR]
+[PAUSE:05]You heard me right!![BR]
+[PAUSE:0A]The big gate on the west side of[BR]
+Toad Town. That's the one![BR]
+[WAIT][NEXT]
+You've got only five minutes![BR]
+[PAUSE:0A]Hurry up, everyone![BR]
+[PAUSE:0A]Let the game begin![WAIT][END]
+
+0C-02B
+[NEXT]
+...but seriously, folks...[BR]
+[WAIT][NEXT]
+Ta-da-da-dum![BR]
+[PAUSE:0A]Attention, listeners, 'cause[BR]
+here's your big chance to win![BR]
+[WAIT][NEXT]
+Anyone who takes a Nutty Cake[BR]
+to the front of Dry Dry Ruins[BR]
+will be in the running for a[BR]
+valuable prize![BR]
+[WAIT][NEXT]
+Look for an eccentric-looking[BR]
+Toad hanging out in front of[BR]
+Dry Dry Ruins. Give the Nutty[BR]
+Cake to him![BR]
+[WAIT][NEXT]
+Time is tight and the clock is[BR]
+ticking![BR]
+[PAUSE:0A]Hurry up, everyone![BR]
+[PAUSE:0A]Let the game begin![WAIT][END]
+
+0C-02C
+[NEXT]
+...but moving on...[BR]
+[WAIT][NEXT]
+Ta-da-da-dum![BR]
+[PAUSE:0A]Attention, listeners, 'cause[BR]
+here's your big chance to win![BR]
+[WAIT][NEXT]
+Anyone who takes a Coconut to[BR]
+the restaurant by the port in[BR]
+Toad Town will be eligible for a[BR]
+fantastic prize![BR]
+[WAIT][NEXT]
+Look inside the restaurant for a[BR]
+Toad who looks just a bit[BR]
+eccentric. Give the Coconut to[BR]
+him![BR]
+[WAIT][NEXT]
+Time is tight and the clock is[BR]
+ticking![BR]
+[PAUSE:0A]Hurry up, everyone![BR]
+[PAUSE:0A]Let the game begin![WAIT][END]
+
+0C-02D
+[NEXT]
+...in other news...[BR]
+[WAIT][NEXT]
+The Trading Event is over![BR]
+[PAUSE:0A]Congratulations to the person[BR]
+who got the prize! [WAIT][END]
+
+0C-02E
+[NEXT]
+...in other news...[BR]
+[WAIT][NEXT]
+We're planning a big-time[BR]
+Trading Event![BR]
+Don't forget to join us![WAIT][END]
+
+0C-02F
+[STYLE:INSPECT]Island Sounds Station[WAIT][END]
+
+0C-030
+[STYLE:INSPECT]Golden Oldies Station[WAIT][END]
+
+0C-031
+[STYLE:INSPECT]Hot Hits Music Station[WAIT][END]
+
+0C-032
+[STYLE:INSPECT]Information Station[BR]
+[WAIT]{Func_04}[END]
+
+0C-033
+[STYLE:RIGHT]Welcome to our Toad House![BR]
+Our slogan is, "Refresh Your[BR]
+Body and Soul!"[BR]
+[WAIT][NEXT]
+Would you like to take a nap?[BR]
+{Func_04}[END]
+
+0C-034
+[STYLE:RIGHT]...Really?[BR]
+[PAUSE:0A]You look fine to me, Mario.[BR]
+[PAUSE:0A]Are you sure you want a nap?[BR]
+{Func_04}[END]
+
+0C-035
+[STYLE:RIGHT]Where are your manners, Mario?[BR]
+You shouldn't climb on the table.[WAIT][END]
+
+0C-036
+[NEXT]
+Please come again.[WAIT][END]
+
+0C-037
+[NEXT]
+Have pleasant dreams.[WAIT][END]
+
+0C-038
+[STYLE:RIGHT]Did you sleep well?[BR]
+[WAIT][NEXT]
+Great! Have a good adventure![WAIT][END]
+
+0C-039
+[STYLE:RIGHT]You're Mort T., correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+0C-03A
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+0C-03B
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+0C-03C
+[STYLE:RIGHT]A letter? For me?[BR]
+[PAUSE:0A]Oh, it's from my wife![BR]
+How sweet! I love her so...[BR]
+[WAIT][NEXT]
+.[PAUSE:05].[PAUSE:05].[PAUSE:04].[PAUSE:04].[PAUSE:03].[PAUSE:03].[PAUSE:03].[PAUSE:02].[PAUSE:02]. [PAUSE:02]Phew...[BR]
+[PAUSE:14]Oh, pardon me. I got really[BR]
+wrapped up there.[BR]
+[WAIT][NEXT]
+That wife of mine![BR]
+[PAUSE:0A]She's so cute! She makes me[BR]
+crazy![BR]
+[WAIT][NEXT]
+Thanks for bringing me joy![BR]
+Here, take this, OK?[WAIT][END]
+
+0C-03D
+[STYLE:RIGHT]You must listen![BR]
+[WAIT][NEXT]
+The Koopa Bros. in the fortress[BR]
+worked us too hard.[BR]
+[WAIT][NEXT]
+As far as they're concerned,[BR]
+laborers have no rights.[BR]
+[WAIT][NEXT]
+I will never, ever go back to[BR]
+work in such a terrible place.[WAIT][END]
+
+0C-03E
+[STYLE:RIGHT]You must listen![BR]
+[WAIT][NEXT]
+The Koopa Bros. in the fortress[BR]
+worked us too hard.[BR]
+[WAIT][NEXT]
+As far as they're concerned,[BR]
+laborers have no rights.[BR]
+[WAIT][NEXT]
+I will never, ever go back to[BR]
+work in such a terrible place.[BR]
+[WAIT][END]
+
+0C-03F
+[STYLE:RIGHT]You must listen![BR]
+[WAIT][NEXT]
+The Koopa Bros. in the fortress[BR]
+worked us too hard.[BR]
+[WAIT][NEXT]
+It was a long road, but I'm still[BR]
+glad I ran away.[BR]
+[WAIT][NEXT]
+I'd rest easier if I knew those[BR]
+Koopa Bros. had been punished.[BR]
+[WAIT][END]
+
+0C-040
+[STYLE:RIGHT]You must listen![BR]
+[WAIT][NEXT]
+The Koopa Bros. in the fortress[BR]
+worked us too hard.[BR]
+[WAIT][NEXT]
+It was a long road, but I'm still[BR]
+glad I ran away.[BR]
+[WAIT][NEXT]
+I'd rest easier if I knew those[BR]
+Koopa Bros. had been punished.[BR]
+[WAIT][END]
+
+0C-041
+[STYLE:RIGHT]I decided to stay here with my[BR]
+friends for a while.[BR]
+[PAUSE:0A]It's a nice place.[WAIT][END]
+
+0C-042
+[STYLE:RIGHT]Bombette will be victorious![BR]
+[PAUSE:05]You can bet your bombs on it...[WAIT][END]
+
+0C-043
+[STYLE:RIGHT]I'm a Bob-omb.[BR]
+I love to bomb-bomb![WAIT][END]
+
+0C-044
+[STYLE:RIGHT]We're Bob-ombs. We just ran[BR]
+away from the Koopa Bros.[BR]
+Fortress.[BR]
+[WAIT][NEXT]
+We thought we'd at least find[BR]
+some peace here in the village.[BR]
+[PAUSE:14]Boy, were we wrong. The Fuzzies[BR]
+are running wild around here.[BR]
+[WAIT][NEXT]
+All we want is a little peace...[WAIT][END]
+
+0C-045
+[STYLE:RIGHT]Of course we're happy that we[BR]
+made it out of the fortress...[BR]
+but we still worry constantly[BR]
+about our imprisoned friends.[BR]
+[WAIT][NEXT]
+They didn't make it out with us.[BR]
+Oh, what a tragedy![BR]
+[WAIT][NEXT]
+I wish there were some way that[BR]
+we could rescue them. [BR]
+[PAUSE:14]Sigh...[WAIT][END]
+
+0C-046
+[STYLE:RIGHT]Finally... Without those Fuzzies[BR]
+it's so peaceful here.[BR]
+[WAIT][NEXT]
+But what good is peace for us if[BR]
+our friends are still stuck in[BR]
+jail inside the fortress?[WAIT][END]
+
+0C-047
+[STYLE:RIGHT]Finally... Without those Fuzzies[BR]
+it's so peaceful here.[BR]
+[WAIT][NEXT]
+But what good is peace for us if[BR]
+our friends are still stuck in[BR]
+jail inside the fortress?[WAIT][END]
+
+0C-048
+[STYLE:RIGHT]Bombette! You're safe!?[BR]
+[PAUSE:05]Oh, joy!![BR]
+[PAUSE:05]I was so worried about you! [WAIT][END]
+
+0C-049
+[STYLE:RIGHT]Mario rescued me.[BR]
+[WAIT][NEXT]
+So I figured the least I could[BR]
+do was help him even the score[BR]
+with Bowser, King of the Koopas![WAIT][END]
+
+0C-04A
+[STYLE:RIGHT]Good luck, Bombette![BR]
+[PAUSE:0A]We Bob-ombs will all be wishing[BR]
+you luck! Bombs away![WAIT][END]
+
+0C-04B
+[STYLE:RIGHT]Here's a little something I put[BR]
+together to wish Mario and[BR]
+Bombette luck! Bomb-bomb![WAIT][END]
+
+0C-04C
+[STYLE:RIGHT]Explosion is a fine art![BR]
+Bomb-bomb![WAIT][END]
+
+0C-04D
+[STYLE:RIGHT]Bombs away, Mario![BR]
+[PAUSE:05]We wish you the best of luck![BR]
+Bomb-bomb, ker-BOMB![WAIT][END]
+
+0C-04E
+[STYLE:RIGHT]Thank you, thank you, thank you![BR]
+Way to beat the Koopa Bros.![BR]
+[WAIT][NEXT]
+Now we can all live in this village[BR]
+in peace and harmony.[BR]
+[PAUSE:14]Freedom is glorious![WAIT][END]
+
+0C-04F
+[STYLE:RIGHT]I feel...so very happy...[BR]
+[PAUSE:0A]...surrounded by friends...[WAIT][END]
+
+0C-050
+[STYLE:RIGHT]We salute you! Buh-bomb![WAIT][END]
+
+0C-051
+[STYLE:RIGHT]Some of our other friends who[BR]
+were also in the fortress are[BR]
+living in that vacant house over [BR]
+there now.[BR]
+[WAIT][NEXT]
+I guess I should go over and[BR]
+visit one of these days.[BR]
+[PAUSE:14]...Because, you know, nothing is[BR]
+more precious than friendship.[WAIT][END]
+
+0C-052
+[STYLE:RIGHT]Oh, yeah... the air out here is[BR]
+so wonderfully clear.[BR]
+[PAUSE:0A]The oxygen content really helps[BR]
+me make huge explosions![BR]
+[WAIT][NEXT]
+My ambition is to make an[BR]
+explosion so loud that all of[BR]
+Mushroom Kingdom will hear it[BR]
+and be amazed.[BR]
+[WAIT][NEXT]
+Tee hee hee...[BR]
+[PAUSE:0A]I'm burning up with the very[BR]
+idea of such a blast![WAIT][END]
+
+0C-053
+[STYLE:RIGHT]It's not fair that bad guys'[BR]
+wishes always come true, and[BR]
+good guys' wishes don't![BR]
+[WAIT][NEXT]
+By the way, we get really angry[BR]
+just before we explode.[WAIT][END]
+
+0C-054
+[STYLE:RIGHT]That Fuzzy took my shell![BR]
+[WAIT][NEXT]
+I ran after it, but it just[BR]
+laughed and taunted me![WAIT][END]
+
+0C-055
+[STYLE:RIGHT]No matter how fast I run, I[BR]
+can't catch that guy! I can't[BR]
+believe this...[WAIT][END]
+
+0C-056
+[STYLE:RIGHT]{StartFX:Shrinking}Thank you!!!!!!!!!!!!!!!![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Typical Mario style![BR]
+[PAUSE:0A]You're just as cool as I heard[BR]
+you were![WAIT][END]
+
+0C-057
+[STYLE:RIGHT]I can't help but think that[BR]
+Fuzzies'll steal my shell again.[BR]
+[WAIT][NEXT]
+I can't relax. Just being outside[BR]
+makes me nervous.[WAIT][END]
+
+0C-058
+[STYLE:RIGHT]The Fuzzies are gone now. Phew![BR]
+[WAIT][NEXT]
+To tell the truth, though, it's[BR]
+a bit boring here now.[WAIT][END]
+
+0C-059
+[STYLE:RIGHT]What'll we do if those Fuzzies[BR]
+come back sometime![BR]
+[WAIT][NEXT]
+They might take our shells again![BR]
+Those rascals![BR]
+[PAUSE:0A]How strangely thrilling...[BR]
+[PAUSE:0A]Oh... my heart...[WAIT][END]
+
+0C-05A
+[STYLE:RIGHT]What's up, Mario?[BR]
+[PAUSE:0A]I've been hearing about all the[BR]
+adventures you've been on.[BR]
+[WAIT][NEXT]
+Since Kooper's traveling with[BR]
+you, there's always news coming[BR]
+to the village.[BR]
+[WAIT][NEXT]
+Good luck, all of you![BR]
+[PAUSE:0A]I'll be rooting for you![WAIT][END]
+
+0C-05B
+[STYLE:RIGHT]The stars are beginning to[BR]
+appear more clearly.[BR]
+[WAIT][NEXT]
+Maybe now our wishes will come[BR]
+true again, and everything will[BR]
+turn out just fine.[BR]
+[WAIT][NEXT]
+I can only hope that we won't[BR]
+see such bad times again.[BR]
+[PAUSE:0A]A quiet village...a little peace.[BR]
+That's all I need to be happy.[WAIT][END]
+
+0C-05C
+[STYLE:RIGHT]Wahhhhhhhhh! What a world![BR]
+[PAUSE:0A]My favorite shell! I just washed[BR]
+it![BR]
+[WAIT][NEXT]
+A Fuzzy put it up there![BR]
+[WAIT][NEXT]
+How will I ever get it?[BR]
+[PAUSE:0A]Please tell me! Help, somebody![WAIT][END]
+
+0C-05D
+[STYLE:RIGHT]A Fuzzy put my favorite shell up[BR]
+there![BR]
+[WAIT][NEXT]
+How will I ever get it?[BR]
+[PAUSE:0A]Please tell me! Help, somebody![WAIT][END]
+
+0C-05E
+[STYLE:RIGHT]I might have known![BR]
+[PAUSE:0A]You're so clever, Mario![WAIT][END]
+
+0C-05F
+[STYLE:RIGHT]I'll be careful not to let anyone[BR]
+near my shell ever again![WAIT][END]
+
+0C-060
+[STYLE:RIGHT]Those Fuzzies were a real pain[BR]
+in the shell, but it seems too[BR]
+quiet without them.[BR]
+[WAIT][NEXT]
+To be honest, I wouldn't mind if[BR]
+they came by once in a while...[BR]
+[WAIT][NEXT]
+Don't tell anyone I said that.[WAIT][END]
+
+0C-061
+[STYLE:RIGHT]Do you know Mr. Kolorado?[BR]
+[WAIT][NEXT]
+He's one of the bright lights of[BR]
+Koopa Village.[BR]
+[PAUSE:0A]He's a professor of archaeology,[BR]
+don't you know.[BR]
+[WAIT][NEXT]
+We haven't seen him back here[BR]
+since he went to Dry Dry Desert[BR]
+to study some ruins.[WAIT][END]
+
+0C-062
+[STYLE:RIGHT]You must be tired from your[BR]
+adventuring.[BR]
+[WAIT][NEXT]
+You can rest all you like here in[BR]
+Koopa Village![WAIT][END]
+
+0C-063
+[STYLE:RIGHT]To me, pure happiness is a life[BR]
+of peace.[BR]
+[PAUSE:0F]Once in a while, though, I like a[BR]
+little excitement.[WAIT][END]
+
+0C-064
+[STYLE:RIGHT]You Fuzzies won't beat me![BR]
+Behold my power![BR]
+[WAIT][NEXT]
+{StartFX:SizeJitter}Goahhhhhhhhhhhhhhh!!!!!![BR]
+{EndFX:SizeJitter}{Func_04}[END]
+
+0C-065
+[NEXT]
+Wheeze... How was that?[BR]
+[PAUSE:05]Super power, wasn't it?[WAIT][END]
+
+0C-066
+[STYLE:RIGHT]Mr. Kolorado is a famous[BR]
+archaeologist from here. [BR]
+[WAIT][NEXT]
+He hasn't been back here to his[BR]
+house since he went to Dry Dry[BR]
+Desert.[BR]
+[WAIT][NEXT]
+Mr. Kolorado's wife is always[BR]
+worrying about him.[BR]
+[WAIT][NEXT]
+They live in that house over[BR]
+there with the yellow roof.[WAIT][END]
+
+0C-067
+[STYLE:RIGHT]Mr. Kolorado is a famous[BR]
+archaeologist from here.[BR]
+[WAIT][NEXT]
+That house with the yellow roof[BR]
+is his.[WAIT][END]
+
+0C-068
+[STYLE:RIGHT]If I use my strength, don't you[BR]
+think I can save this village? [BR]
+Then you won't have to.[BR]
+[WAIT][NEXT]
+OK, then![BR]
+[PAUSE:0A]{StartFX:Shrinking}I'll try my best![WAIT][END]
+
+0C-069
+[STYLE:RIGHT]You can trust me to keep the[BR]
+peace in this village![BR]
+[WAIT][NEXT]
+But others need your help![BR]
+[PAUSE:0F]Good luck, Mario![WAIT][END]
+
+0C-06A
+[STYLE:RIGHT]I put a high-tech lock on my shell[BR]
+so that the Fuzzies can't take[BR]
+it. [BR]
+[WAIT][NEXT]
+They'll never manage to pry it[BR]
+off me now! Ha ha![BR]
+[PAUSE:0A]I'm not sure if I can even get it[BR]
+off, to be honest.[WAIT][END]
+
+0C-06B
+[STYLE:RIGHT]The Fuzzies are gone.[BR]
+[WAIT][NEXT]
+You know, I didn't hate them,[BR]
+even though they were naughty.[WAIT][END]
+
+0C-06C
+[STYLE:RIGHT]Mario, everybody's saying that[BR]
+their wishes aren't coming true[BR]
+these days. [BR]
+[WAIT][NEXT]
+Aren't our wishes getting[BR]
+through to the Stars anymore?[WAIT][END]
+
+0C-06D
+[STYLE:RIGHT]Basking out in the sun feels[BR]
+really, really good.[BR]
+.[PAUSE:05].[PAUSE:05].[PAUSE:05]So sleepy...[WAIT][END]
+
+0C-06E
+[STYLE:RIGHT].[PAUSE:05].[PAUSE:05].[BR]
+[PAUSE:05][NEXT]
+Oh, hi there! Feel free to[BR]
+relax, OK? [WAIT][END]
+
+0C-06F
+[STYLE:RIGHT]Bombette...you're...you're[BR]
+joining Mario's adventure?[BR]
+[WAIT][NEXT]
+It's really lonely without you.[BR]
+My heart will break if you go.[BR]
+[WAIT][NEXT]
+Please! I beg you! Take me with[BR]
+you wherever you go![WAIT][END]
+
+0C-070
+[STYLE:RIGHT]One Bob-omb is enough.[BR]
+[WAIT][NEXT]
+You should stay here instead.[BR]
+Take care of the village![WAIT][END]
+
+0C-071
+[STYLE:RIGHT]Oh, you're so cruel, Bombette...[WAIT][END]
+
+0C-072
+[STYLE:RIGHT]Sigh... Bombette...[BR]
+I worry about you constantly.[BR]
+[PAUSE:14]Double sigh...[WAIT][END]
+
+0C-073
+[STYLE:RIGHT]"Bombette!" "Bombette!"[BR]
+It's all he ever says![BR]
+It's so annoying![WAIT][END]
+
+0C-074
+[STYLE:RIGHT]{StartFX:Jitter}Oh, Bombette!!![BR]
+[PAUSE:05][WAIT][END]
+
+0C-075
+[STYLE:RIGHT]{StartFX:Shrinking}Shut up![BR]
+{EndFX:Shrinking}She probably dumped you 'cause[BR]
+you never stopped talking![WAIT][END]
+
+0C-076
+[STYLE:RIGHT]No, you shut up![BR]
+[WAIT][NEXT]
+My love for Bombette is deep[BR]
+like the southern sea! Bomb![BR]
+Even being dumped constantly[BR]
+won't discourage me! Ba-bomb![WAIT][END]
+
+0C-077
+[STYLE:RIGHT]Did you hear this guy, Bombette?[BR]
+[WAIT][NEXT]
+He never, ever stops talking[BR]
+about you! Bud-a-bomb![WAIT][END]
+
+0C-078
+[STYLE:RIGHT]{StartFX:Jitter}Oh, Bombette!!!!!![BR]
+[PAUSE:05][WAIT][END]
+
+0C-079
+[STYLE:RIGHT]{StartFX:Shrinking}Shut up! Please! Right now![BR]
+[PAUSE:0A]Think about something else for[BR]
+two seconds, will ya?[BR]
+[WAIT][NEXT]
+You're really starting to get on[BR]
+my nerves![WAIT][END]
+
+0C-07A
+[STYLE:RIGHT]Bombette, I'm putting my whole[BR]
+heart into this next explosion! [BR]
+[WAIT][NEXT]
+Watch it and see my true love![BR]
+Bomb, bomb! Bip-bomb![WAIT][END]
+
+0C-07B
+[STYLE:RIGHT]{StartFX:Jitter}Oh, Bombette!!!!![BR]
+[PAUSE:05][WAIT][END]
+
+0C-07C
+[STYLE:RIGHT]{StartFX:Shrinking}Shut up! Shut up! Shut up![BR]
+{EndFX:Shrinking}The neighbors are starting to[BR]
+complain about your noise![BR]
+[PAUSE:0A]Quit your bellyaching![WAIT][END]
+
+0C-07D
+[STYLE:RIGHT]{StartFX:Jitter}Oh, Bombette!!!!!!![BR]
+[PAUSE:05][WAIT][END]
+
+0C-07E
+[STYLE:RIGHT]{StartFX:Shrinking}You be quiet now![BR]
+{EndFX:Shrinking}It's no use yelling my name![BR]
+[WAIT][NEXT]
+I'm off on an adventure, doing[BR]
+very important things.[BR]
+[WAIT][NEXT]
+I have enough to think about[BR]
+without your puppy love! And[BR]
+besides, you're not my type![BR]
+[WAIT][NEXT]
+I told you that before! So calm[BR]
+down before you blow a fuse.[WAIT][END]
+
+0C-07F
+[STYLE:RIGHT]{StartFX:Growing}Bombette... Oh don't...[WAIT][END]
+
+0C-080
+[STYLE:RIGHT]Ooh, you made her angry...[BR]
+[PAUSE:0A]I feel bad for you, but man...[BR]
+You talk way too much. [BR]
+[WAIT][NEXT]
+You need to play it cool, or[BR]
+she'll never like you at all.[BR]
+[PAUSE:05]I'm sure she'll come around one[BR]
+of these days if you can just...[WAIT][END]
+
+0C-081
+[STYLE:RIGHT]{StartFX:Jitter}Oh, Bombette!!!!![BR]
+{EndFX:Jitter}[PAUSE:05]Please don't say that! Please![BR]
+[WAIT][NEXT]
+{StartFX:Jitter}{StartFX:Shrinking}Don't you care how I feel?! [WAIT][END]
+
+0C-082
+[STYLE:RIGHT]{StartFX:Shrinking}Oh, shut up!! Enough already![BR]
+{EndFX:Shrinking}Stop brooding over her![WAIT][END]
+
+0C-083
+[STYLE:RIGHT]He's in love with Bombette.[BR]
+[WAIT][NEXT]
+But she doesn't like him because[BR]
+he's so persistent.[BR]
+[WAIT][NEXT]
+Love is complicated...[WAIT][END]
+
+0C-084
+[STYLE:RIGHT]Please hurry up and beat[BR]
+Bowser, will you?[BR]
+[WAIT][NEXT]
+Then maybe Bombette will come [BR]
+back, and he'll be quiet![WAIT][END]
+
+0C-085
+[STYLE:RIGHT]I don't see why we can't live in[BR]
+this vacant house.[BR]
+[WAIT][NEXT]
+It'd be awesome![BR]
+[PAUSE:0A]We've wanted our own house for[BR]
+the longest time![BR]
+[WAIT][NEXT]
+But [PAUSE:05]I guess we might have a[BR]
+problem if the owner of the[BR]
+house comes back, huh? [BR]
+[WAIT][NEXT]
+We could always go back to the[BR]
+fortress, I suppose.[WAIT][END]
+
+0C-086
+[STYLE:RIGHT]They're arguing in the house.[BR]
+[PAUSE:0A]I'm not going in there...[WAIT][END]
+
+0C-087
+[STYLE:RIGHT]Please hurry up and beat [BR]
+Bowser, OK, Mario?[BR]
+[WAIT][NEXT]
+Say, [PAUSE:05]you don't know when the[BR]
+owner of this house is coming[BR]
+back, do you?[BR]
+[WAIT][NEXT]
+We could always go back to the[BR]
+fortress, I suppose.[WAIT][END]
+
+0C-088
+[STYLE:RIGHT]These Fuzzies! Will their mischief[BR]
+never end?[BR]
+[WAIT][NEXT]
+My husband is never here when[BR]
+there's trouble.[BR]
+[WAIT][NEXT]
+[PAUSE:0A]My husband?[BR]
+[WAIT][NEXT]
+Oh, his name is Kolorado.[BR]
+[PAUSE:0A]You've heard of him. He claims to[BR]
+be a famous explorer.[BR]
+[WAIT][NEXT]
+Who knows if it's true or not...[BR]
+He runs his mouth a lot.[WAIT][END]
+
+0C-089
+[STYLE:RIGHT]My husband hasn't come back[BR]
+since he left to find some ruins.[BR]
+[WAIT][NEXT]
+If you see him somewhere out[BR]
+there in your travels, tell him[BR]
+to come home once in a while![WAIT][END]
+
+0C-08A
+[STYLE:RIGHT]Oh, little Kooper is going to go on[BR]
+Mario's adventure?[BR]
+[PAUSE:0A]How cute... Take care![WAIT][END]
+
+0C-08B
+[STYLE:RIGHT]I think my husband went to Dry[BR]
+Dry Desert, but who knows?[BR]
+[PAUSE:0A]I wonder what he's doing now.[BR]
+[WAIT][NEXT]
+I swear! I send him letters, but[BR]
+[PAUSE:05]has he written back even once?[BR]
+Of course not![WAIT][END]
+
+0C-08C
+[STYLE:RIGHT]Oh, Mario, you won't believe it![BR]
+[PAUSE:14]My husband...![BR]
+[WAIT][NEXT]
+He came home out of the blue[BR]
+the other day...[BR]
+[PAUSE:0A]and he's already left again! Off[BR]
+on some other fool's errand![BR]
+[WAIT][NEXT]
+That infuriating Koopa...[BR]
+I just can't believe him![WAIT][END]
+
+0C-08D
+[STYLE:RIGHT]My husband?[BR]
+[PAUSE:14]Oh, I think he went to some[BR]
+southern island this time.[BR]
+[WAIT][NEXT]
+He heard something about lots[BR]
+of treasure stashed in a[BR]
+volcano on the island[BR]
+[PAUSE:05]and left shortly thereafter.[BR]
+[WAIT][NEXT]
+Pffff... He's obsessed![BR]
+[PAUSE:14]He's like a spoiled little kid.[BR]
+He always does what he wants.[BR]
+[WAIT][NEXT]
+Well... I suppose...[BR]
+[PAUSE:05]that's why I fell in love with him.[WAIT][END]
+
+0C-08E
+[STYLE:RIGHT]My husband... Where is he now?[BR]
+What's he thinking about...?[BR]
+[WAIT][NEXT]
+I just hope he's doing OK.[BR]
+That's my only wish.[WAIT][END]
+
+0C-08F
+[STYLE:RIGHT]Oh, Mario,[BR]
+[PAUSE:0A]my husband came home![BR]
+[WAIT][NEXT]
+He sits around the house and[BR]
+reads books about all the[BR]
+treasures out there waiting...[BR]
+[WAIT][NEXT]
+It's so nice to have him home,[BR]
+I can't even tell you.[BR]
+[WAIT][NEXT]
+Phew[PAUSE:03].[PAUSE:03].[PAUSE:03].[PAUSE:03] My husband...[BR]
+What a difficult man...[BR]
+[PAUSE:14]But I still love him![WAIT][END]
+
+0C-090
+[STYLE:RIGHT]Oh, do you need something?[BR]
+[PAUSE:1E]You're doing an errand for the[BR]
+elder, are you?[BR]
+[WAIT][NEXT]
+Mmmm...right, "Koopa Legends."[BR]
+Yes, my husband owns that one.[BR]
+Of course you can borrow it![BR]
+[WAIT][NEXT]
+Don't let that old Koot work you[BR]
+too hard, OK, Mario?[BR]
+[PAUSE:0F]He's known to do that. He's also[BR]
+a bit short-tempered.[BR]
+[WAIT][NEXT]
+[PAUSE:05]Well, anyway.[BR]
+[PAUSE:0A]Wait here for just a moment.[BR]
+[PAUSE:0A]I'll go poke around my husband's[BR]
+bookshelf.[WAIT][END]
+
+0C-091
+[STYLE:RIGHT]Found it![BR]
+[PAUSE:05]You're talking about this book,[BR]
+right?[BR]
+[PAUSE:0A]It's all yours.[BR]
+[WAIT][NEXT]
+It was behind the bookshelf.[WAIT][END]
+
+0C-092
+[STYLE:RIGHT]It's strange... That book...[BR]
+[PAUSE:0A]it has all these pictures of[BR]
+shells [PAUSE:03].[PAUSE:03].[PAUSE:03].[PAUSE:03]and exercises...[BR]
+[PAUSE:05]"Firmer shells in 30 days"?[WAIT][END]
+
+0C-093
+[STYLE:RIGHT]Well, I'm back in the village.[BR]
+[PAUSE:14]It's rather nice, eh, old boy?[BR]
+[WAIT][NEXT]
+Adventure is all well and good,[BR]
+but one's home is really tops![WAIT][END]
+
+0C-094
+[STYLE:RIGHT]So stay here for a change![BR]
+[WAIT][NEXT]
+I've had just about enough of[BR]
+sitting around worrying and[BR]
+waiting for your return![WAIT][END]
+
+0C-095
+[STYLE:RIGHT]Hmmm...?[BR]
+[WAIT][NEXT]
+Ah... Yes...[PAUSE:0A]Of course, well...[BR]
+[WAIT][NEXT]
+............ahem![WAIT][END]
+
+0C-096
+[STYLE:RIGHT]{StartFX:Jitter}Psssst...[BR]
+{EndFX:Jitter}[PAUSE:0A]To tell the truth, old bean,[BR]
+[WAIT][NEXT]
+I'm itching to search for the[BR]
+lost palace in the north.[BR]
+[WAIT][NEXT]
+But tut-tut! Mum's the word as[BR]
+far as the wife's concerned![WAIT][END]
+
+0C-097
+[STYLE:RIGHT]You're Mr. Kolorado, correct?[BR]
+[WAIT][NEXT]
+I think I have a letter for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+0C-098
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+0C-099
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+0C-09A
+[STYLE:RIGHT]Oh! Good heavens![BR]
+[PAUSE:0F]A letter from the wife![BR]
+[WAIT][NEXT]
+I say...[BR]
+[PAUSE:0A]...when did she write this?[BR]
+[WAIT][NEXT]
+Well, [PAUSE:0A]in any event,[BR]
+[PAUSE:0A]cheers to you for bringing it with[BR]
+such speed, eh?[BR]
+[PAUSE:0A]You simply must take this.[BR]
+[WAIT][NEXT]
+Go on, then! I found it on scenic[BR]
+Lavalava Island.[WAIT][END]
+
+0C-09B
+[STYLE:RIGHT]The Dry Dry Ruins dig grew[BR]
+tiresome for me. I left it in the[BR]
+hands of my assistants.[BR]
+[WAIT][NEXT]
+[PAUSE:0A]I say...?[BR]
+[WAIT][NEXT]
+Mario,[BR]
+[PAUSE:0A]that artifact you have[PAUSE:03].[PAUSE:03].[PAUSE:03].[BR]
+[PAUSE:05][WAIT][NEXT]
+That looks like... The subtle[BR]
+craftsmanship... Indeed![BR]
+It's a clue to Dry Dry Ruins![BR]
+[WAIT][NEXT]
+A careful study of this by my[BR]
+learned eyes could well solve the[BR]
+mystery of the ruins![BR]
+[WAIT][NEXT]
+Mario![PAUSE:0A] Old boy![PAUSE:0A] Be a chum![BR]
+[PAUSE:0F]Could you part with it?[WAIT][END]
+
+0C-09C
+[STYLE:RIGHT]Mario...old chum...[BR]
+[WAIT][NEXT]
+If you could see to it to have[BR]
+a change of heart, might I have[BR]
+that artifact?[BR]
+[WAIT][NEXT]
+I can't stop thinking of it![WAIT][END]
+
+0C-09D
+[STYLE:RIGHT][NEXT]
+Hmmmmmmmmmm.........[BR]
+[PAUSE:14]Is there no way I can change[BR]
+your mind, dear boy?[WAIT][END]
+
+0C-09E
+[STYLE:RIGHT][NEXT]
+I see... How very tragic.[BR]
+[PAUSE:0A]Nothing to be done, I suppose.[BR]
+[PAUSE:0A]I'm doomed to suffer...[WAIT][END]
+
+0C-09F
+[STYLE:RIGHT][NEXT]
+Cheers, Mario![BR]
+[PAUSE:0A]Smashing, really, old boy![BR]
+You're too kind![BR]
+[WAIT][NEXT]
+No regrets now, eh?[BR]
+[WAIT][NEXT]
+Soon now, the mysterious Dry Dry[BR]
+Ruins will rise in glory from the[BR]
+sands that conceal them![BR]
+[WAIT][NEXT]
+As a brilliant archaeologist,[BR]
+I say it must be so![BR]
+[WAIT][NEXT]
+I suppose a thank-you gift is[BR]
+in order, eh, old boy?[BR]
+[PAUSE:0A]Here you go then![WAIT][END]
+
+0C-0A0
+[STYLE:RIGHT]I think I'd best stay home for a[BR]
+time to examine this.[BR]
+[WAIT][NEXT]
+Oh, thank you indeed, Mario![WAIT][END]
+
+0C-0A1
+[STYLE:INSPECT]This is the bookshelf in[BR]
+Kolorado's room.[BR]
+[PAUSE:0A]Most of the books seem to be[BR]
+about archaeology.[BR]
+[WAIT][NEXT]
+There are also a few that seem[BR]
+somewhat less intellectual.[WAIT][END]
+
+0C-0A2
+[STYLE:RIGHT]{StartFX:Jitter}What's the world coming to when[BR]
+a Koopa can't even step outside[BR]
+for fear of Fuzzies?[BR]
+[WAIT][NEXT]
+I've lived many, many years, and[BR]
+this is the first time I've seen[BR]
+anything like this![WAIT][END]
+
+0C-0A3
+[STYLE:RIGHT]{StartFX:Jitter}Oh, welcome, young fella![BR]
+[PAUSE:0A]I'm the elder of Koopa Village.[BR]
+[PAUSE:0A]Folks call me Koopa Koot.[BR]
+[WAIT][NEXT]
+Say...might you do me a favor?[BR]
+{Func_04}[WAIT][END]
+
+0C-0A4
+[STYLE:RIGHT]{StartFX:Jitter}Oh, what luck! You came at the[BR]
+perfect time, young man![BR]
+[PAUSE:0A]Could you see your way to doing[BR]
+me another favor?[BR]
+{Func_04}[WAIT][END]
+
+0C-0A5
+[STYLE:RIGHT]{StartFX:Jitter}Oh, it's Mario, is it?[BR]
+[PAUSE:05]Nice weather we're having, hm?[BR]
+[WAIT][NEXT]
+I can't think of any favors I[BR]
+need at the moment...[BR]
+[PAUSE:0A]I bet I'll need one later, though.[WAIT][END]
+
+0C-0A6
+[STYLE:RIGHT]{StartFX:Jitter}You're a good soul for helping[BR]
+this old Koopa so many times.[BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}Now Mario! [BR]
+[PAUSE:0A]I have one last favor to ask! [BR]
+[WAIT][NEXT]
+That cad, Bowser...[BR]
+[PAUSE:0A]You must defeat that evil King[BR]
+Bowser once and for all![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+The dear children of this village[BR]
+will never sleep in peace as long[BR]
+as Bowser rules.[BR]
+[WAIT][NEXT]
+I wish for nothing more than[BR]
+peace and a reason for my[BR]
+fellow Koopas to hope again.[BR]
+[WAIT][NEXT]
+Please help us, Mario![WAIT][END]
+
+0C-0A7
+[STYLE:RIGHT]{StartFX:Jitter}Oh, Mario, is that you?[BR]
+[PAUSE:0A]Have you decided to do this old[BR]
+Koopa a favor?[BR]
+{Func_04}[WAIT][END]
+
+0C-0A8
+[NEXT]
+{StartFX:Jitter}Oh!!! Such rudeness![BR]
+[PAUSE:0F]The younger generation is so cold[BR]
+and heartless![BR]
+[WAIT][NEXT]
+{Func_04}You're all good for nothing![BR]
+[PAUSE:0F]Get out! [PAUSE:05]Get out! Get out![WAIT][END]
+
+0C-0A9
+[NEXT]
+{StartFX:Jitter}Oh!!! How very kind of you![BR]
+[PAUSE:0A]I guess the younger generation[BR]
+isn't so bad after all.[BR]
+[WAIT]{Func_04}[END]
+
+0C-0AA
+[STYLE:RIGHT]{StartFX:Jitter}Come again, sonny?[BR]
+[PAUSE:0A]Are you saying you forgot the[BR]
+favor I asked of you?[BR]
+{Func_04}[END]
+
+0C-0AB
+[STYLE:RIGHT]{StartFX:Jitter}Eh?[BR]
+[PAUSE:0A]You still haven't found time to[BR]
+do my errand, young fella?[BR]
+[PAUSE:0F]Well, run along then![BR]
+[WAIT][NEXT]
+Or maybe... Did you perchance[BR]
+forget what the favor I asked[BR]
+of you was?[BR]
+{Func_04}[END]
+
+0C-0AC
+[NEXT]
+{StartFX:Jitter}Oh, you remember it! Then...[BR]
+what do you say you hurry up[BR]
+and do it?[WAIT][END]
+
+0C-0AD
+[STYLE:RIGHT]{StartFX:Jitter}Have you done my errand?[BR]
+[PAUSE:0A]If it's impossible, I suppose you[BR]
+can give up.[BR]
+[WAIT][NEXT]
+You're still going to try?[BR]
+[PAUSE:0F]Or maybe... Did you perchance[BR]
+forget what the favor I asked[BR]
+of you was?[BR]
+{Func_04}[END]
+
+0C-0AE
+[NEXT]
+{StartFX:Jitter}Really? Well, I appreciate it.[BR]
+[PAUSE:05]Get a move on, now.[WAIT][END]
+
+0C-0AF
+[NEXT]
+{StartFX:Jitter}Hmmmmph.[BR]
+[PAUSE:0A]All right, nothing to be done...[BR]
+[WAIT][NEXT]
+Although... Maybe you could still[BR]
+be useful to me. Would you do me[BR]
+another favor?[BR]
+{Func_04}[END]
+
+0C-0B0
+[NEXT]
+{StartFX:Jitter}Hmmmmmph.[BR]
+[PAUSE:0A]All right, nothing to be done...[BR]
+[PAUSE:0A]I can't say I'm pleased...[BR]
+[WAIT][NEXT]
+You young whippersnappers...[BR]
+[PAUSE:0A]Go ahead, go home![WAIT][END]
+
+0C-0B1
+[NEXT]
+{StartFX:Jitter}Oh,[BR]
+[PAUSE:05]you don't have to be so polite,[BR]
+young fella.[BR]
+[PAUSE:0A]Take this.[WAIT][END]
+
+0C-0B2
+[STYLE:RIGHT]{StartFX:Jitter}Oh, of course! Take this, too![BR]
+[WAIT][NEXT]
+Did you know that there's a[BR]
+Playroom in Toad Town?[BR]
+[PAUSE:0A]If I remember right, it used to[BR]
+be around the station.[BR]
+[WAIT][NEXT]
+It's strictly for members only,[BR]
+so the entrance to it is well[BR]
+hidden.[BR]
+[PAUSE:0A]I bet you could find it, though.[BR]
+[WAIT][NEXT]
+This here's a Silver Credit. It'll[BR]
+let you play once you're inside[BR]
+the Playroom.[BR]
+[WAIT][NEXT]
+Back in my heyday I used to go[BR]
+there and make a lot of money.[BR]
+But I got tired of the hoopla.[BR]
+[PAUSE:0A]So the Silver Credit's yours.[BR]
+[WAIT][NEXT]
+Good luck! Make some money![BR]
+[PAUSE:05]Hee hee hee.....[WAIT][END]
+
+0C-0B3
+[STYLE:RIGHT]{StartFX:Jitter}Hey, by the way, have you been[BR]
+going to the Playroom?[BR]
+[WAIT][NEXT]
+I found this old thing since the[BR]
+last time I saw you.[BR]
+[WAIT][NEXT]
+Have a look: a Gold Credit.[BR]
+[WAIT][NEXT]
+They gave this to me at the[BR]
+Playroom since I was such a[BR]
+frequent visitor. [BR]
+[PAUSE:0A]You can have it now.[BR]
+[WAIT][NEXT]
+Good luck! Make money![BR]
+[PAUSE:05]Hee hee hee.....[BR]
+[WAIT][END]
+
+0C-0B4
+[STYLE:RIGHT]Who's there?[BR]
+[PAUSE:0A]I'm kind of busy right now![WAIT][END]
+
+0C-0B5
+[STYLE:RIGHT]What!? [PAUSE:05]Wait... Could it be...?![BR]
+[PAUSE:0A]Aren't you Mario!?[BR]
+[PAUSE:0F]{Func_04}[WAIT][NEXT]
+You are! My name's Kooper![BR]
+[PAUSE:0A]Oh, I'm so psyched to meet you![BR]
+{Func_04}[WAIT][NEXT]
+Us meeting here has gotta be[BR]
+fate or something.[BR]
+[PAUSE:05]I need a huge favor... I hope[BR]
+you'll help me out.[WAIT][END]
+
+0C-0B6
+[STYLE:RIGHT]This wild Fuzzy took my shell,[BR]
+which, next to my life, is the[BR]
+most important thing I have.[BR]
+[WAIT][NEXT]
+I can't go out without my shell,[BR]
+period. Way too embarrassing.[BR]
+[WAIT][NEXT]
+The problem is, the Fuzzies are[BR]
+too fast for me to catch alone.[BR]
+[WAIT][NEXT]
+So if you don't mind, can you[BR]
+help me get my shell back?[BR]
+[PAUSE:0A]I'm begging you![BR]
+{Func_04}[WAIT][END]
+
+0C-0B7
+[STYLE:RIGHT]Hey, Mario.[BR]
+[PAUSE:0A]It looks like he's in a bad way.[BR]
+We ought to help him out.[WAIT][END]
+
+0C-0B8
+[STYLE:RIGHT]The Fuzzy that took my shell is[BR]
+just inside my house.[BR]
+[WAIT][NEXT]
+I'll guard the door [PAUSE:05]while you[BR]
+grab him like: [PAUSE:03]{StartFX:Shrinking}Whump![BR]
+{EndFX:Shrinking}[WAIT][END]
+
+0C-0B9
+[STYLE:RIGHT]{StartFX:Wavy}Meeeooooooork![WAIT][END]
+
+0C-0BA
+[STYLE:RIGHT]I've got outside covered![BR]
+[PAUSE:0A]Catch that Fuzzy![WAIT][END]
+
+0C-0BB
+[STYLE:RIGHT]You get him yet, Mario?[BR]
+[PAUSE:14]No? You gotta, Mario! I really[BR]
+need that shell![WAIT][END]
+
+0C-0BC
+[STYLE:RIGHT]{StartFX:Wavy}Meeeooork! Meork![BR]
+{EndFX:Wavy}[WAIT][NEXT]
+Come get it if you can![BR]
+{StartFX:Shrinking}Nyeah, nyeah![WAIT][END]
+
+0C-0BD
+[STYLE:RIGHT]{StartFX:Wavy}Meeeooork![BR]
+{EndFX:Wavy}[WAIT][NEXT]
+Yeah, run away, you coward![WAIT][END]
+
+0C-0BE
+[STYLE:RIGHT]{StartFX:Wavy}Meeeeeoooooork![BR]
+{EndFX:Wavy}Guess where I'm hiding?[WAIT][END]
+
+0C-0BF
+[STYLE:RIGHT]Meee-ooh?[BR]
+[PAUSE:0A]Not bad, chump![BR]
+[WAIT][NEXT]
+But that was just a warm-up![WAIT][END]
+
+0C-0C0
+[STYLE:RIGHT]York!? Meeoork?[BR]
+[PAUSE:0A]You got me twice!?[BR]
+[WAIT][NEXT]
+Must've been luck![BR]
+[PAUSE:0A]Now I'm serious![WAIT][END]
+
+0C-0C1
+[STYLE:RIGHT]{StartFX:Shrinking}Meeeeooooooh, noooo!!![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+I give! Uncle![BR]
+[WAIT][NEXT]
+Here, take the stupid shell![WAIT][END]
+
+0C-0C2
+[STYLE:RIGHT]You're too tough for me. I won't[BR]
+be bad anymore, I promise.[BR]
+[WAIT][NEXT]
+[PAUSE:14]...Maybe.[WAIT][END]
+
+0C-0C3
+[STYLE:RIGHT]Mario! There you are![BR]
+[PAUSE:0A]I realized I have to take a[BR]
+stand against these Fuzzies![BR]
+[WAIT][NEXT]
+If I can't get my own shell,[BR]
+I'll lose my reputation![BR]
+[WAIT][NEXT]
+I don't even care that I have[BR]
+no shell on! I'm gonna show those[BR]
+Fuzzies what's what![WAIT][END]
+
+0C-0C4
+[STYLE:RIGHT]We already got the shell back.[WAIT][END]
+
+0C-0C5
+[STYLE:RIGHT]What? [PAUSE:0A]You have my shell, but you[BR]
+won't give it back?[BR]
+[PAUSE:05]What's the matter with you?[WAIT][END]
+
+0C-0C6
+[STYLE:RIGHT]That's just plain cruel. Please[BR]
+give it back to me![BR]
+[PAUSE:0A]A Koopa without a shell is like...[BR]
+a really unhappy Koopa![WAIT][END]
+
+0C-0C7
+[STYLE:RIGHT]{StartFX:Shrinking}Oh, yes! Yes![BR]
+{EndFX:Shrinking}[PAUSE:14]This is my shell, all right![BR]
+{Func_04}[WAIT][NEXT]
+Oh, yeah! Oh, yeah![BR]
+[PAUSE:05]Got my shell back! Uh-huh![BR]
+[WAIT][NEXT]
+You're the greatest, Mario![BR]
+[PAUSE:0F]I owe you big time![WAIT][END]
+
+0C-0C8
+[STYLE:RIGHT]Good to hear you're happy.[WAIT][END]
+
+0C-0C9
+[STYLE:RIGHT]Say, Mario...[BR]
+[WAIT][NEXT]
+I have an idea...[BR]
+[WAIT][NEXT]
+Do you happen to know Professor[BR]
+Kolorado?[WAIT][END]
+
+0C-0CA
+[STYLE:RIGHT]Naturally he's a Koopa who's a[BR]
+professor of archaeology.[BR]
+[PAUSE:0A]He's also known as an explorer.[WAIT][END]
+
+0C-0CB
+[STYLE:RIGHT]Right! Well, I live next to him.[BR]
+[WAIT][NEXT]
+I've been admiring Professor[BR]
+Kolorado ever since I was in[BR]
+my egg![BR]
+[WAIT][NEXT]
+Nothing would make me happier[BR]
+than traveling the world, solving[BR]
+mysteries like he does![BR]
+[WAIT][NEXT]
+So... Do you think.. Could I...[BR]
+[PAUSE:0A]Please take me with you, Mario![BR]
+I'll help! C'mon, lemme go![WAIT][END]
+
+0C-0CC
+[STYLE:RIGHT]What do you think, Mario?[BR]
+{Func_04}[END]
+
+0C-0CD
+[STYLE:RIGHT]Oh, c'mon! You gotta![BR]
+[WAIT][NEXT]
+I have lots of skills! I work well[BR]
+with others! Really, please take[BR]
+me along![BR]
+{Func_04}[END]
+
+0C-0CE
+[STYLE:RIGHT]{StartFX:Shrinking}Oh, yes!! Yes!![BR]
+[PAUSE:05]I'm on my way![BR]
+{EndFX:Shrinking}{Func_04}[WAIT][NEXT]
+I swear, I, Kooper,[BR]
+[PAUSE:0A]will follow you anywhere, even[BR]
+to the ends of the earth![WAIT][END]
+
+0C-0CF
+[STYLE:RIGHT]Meeooreeeeork![WAIT][END]
+
+0C-0D0
+[STYLE:RIGHT]I changed my mind, sucker![BR]
+[PAUSE:0A]How about a fight?![WAIT][END]
+
+0C-0D1
+[STYLE:RIGHT]Meeoooorkoooonooo![BR]
+[PAUSE:14]We'll be good! We'll be good![WAIT][END]
+
+0C-0D2
+[STYLE:RIGHT]{StartFX:Shrinking}Whoa! {EndFX:Shrinking}[PAUSE:05]Mario!! What the...![BR]
+[WAIT][NEXT]
+Oh, we're in a world of hurt![BR]
+[PAUSE:05]Mario's here already![BR]
+[PAUSE:0A]I gotta tell the leader![BR]
+Red Kooooooopaaaa!!![WAIT][END]
+
+0C-0D3
+[STYLE:RIGHT]Ha! Let's see the great Mario[BR]
+get any farther now![WAIT][END]
+
+0C-0D4
+[STYLE:RIGHT]Yeeek! Mario![BR]
+[WAIT][NEXT]
+You, uh... Don't try any...[BR]
+[PAUSE:0A]You'll still never find your way[BR]
+through this fortress! [BR]
+[WAIT][NEXT]
+Umm... It looks like there might[BR]
+be some fighting here.[BR]
+[PAUSE:0A]How exciting! See ya![WAIT][END]
+
+0C-0D5
+[STYLE:RIGHT]OK! This is perfect[PAUSE:05]...I think.[WAIT][END]
+
+0C-0D6
+[STYLE:RIGHT]Whoa![BR]
+[PAUSE:05]Looks like Mario's here![WAIT][END]
+
+0C-0D7
+[STYLE:RIGHT]Bah ha ha ha ha! Loser! Serves[BR]
+you right![BR]
+[PAUSE:0A]You fell for it![WAIT][END]
+
+0C-0D8
+[STYLE:RIGHT]Oh, what was that?[BR]
+[PAUSE:05]Where did that fall from?[WAIT][END]
+
+0C-0D9
+[STYLE:RIGHT]Oh...[BR]
+[PAUSE:0A]I wondered what just fell,[BR]
+[PAUSE:14]but...aren't you...Mario?[BR]
+[WAIT][NEXT]
+I never in a million years thought[BR]
+I'd meet such a famous guy in a[BR]
+place like this.[BR]
+{Func_04}[WAIT][NEXT]
+[PAUSE:14]...Who, me?[BR]
+[WAIT][NEXT]
+My name's Bombette. In case you[BR]
+hadn't noticed, I'm a Bob-omb.[BR]
+[PAUSE:0A]Pleased to meet you![WAIT][END]
+
+0C-0DA
+[STYLE:RIGHT]What's that...?[BR]
+[PAUSE:0A]Why am I locked up here?[BR]
+Because I'm a menace![BR]
+{Func_04}[WAIT][NEXT]
+At least to these guys...[BR]
+[PAUSE:0A]Those uncouth Koopa Bros.![BR]
+[WAIT][NEXT]
+I was just one of many Bob-ombs[BR]
+working here.[BR]
+[WAIT][NEXT]
+But those Koopa Bros....[BR]
+[PAUSE:05]Once Bowser took over, they[BR]
+started working us into the[BR]
+ground![BR]
+[WAIT][NEXT]
+I couldn't take it anymore, so I[BR]
+exploded next to them.[BR]
+[WAIT][NEXT]
+Yeah, that was a mistake.[BR]
+[PAUSE:05]The Koopa Bros. didn't like it.[BR]
+[PAUSE:0A]So they locked me in here.[BR]
+[WAIT][NEXT]
+And then they locked up the rest[BR]
+of the Bob-ombs because they[BR]
+thought they might rise up.[BR]
+[WAIT][NEXT]
+You know, a Bob-omb rebellion![BR]
+[PAUSE:05]What do you think about that?[BR]
+[WAIT][NEXT]
+[PAUSE:0A].[PAUSE:03].[PAUSE:03].[PAUSE:03]Oh, sorry...[BR]
+[PAUSE:0A]It's a long story, I know.[BR]
+[WAIT][NEXT]
+Anyway, Mario,[BR]
+[PAUSE:05]we want to get out of here.[BR]
+[WAIT][NEXT]
+Do you think you could help spring[BR]
+us from this place or what?[BR]
+Pretty please?[BR]
+[WAIT][NEXT]
+If you help us...[BR]
+[PAUSE:05]I promise I'll return the favor.[BR]
+{Func_04}[END]
+
+0C-0DB
+[NEXT]
+Oh, you...won't...[BR]
+[PAUSE:14]We're really hurting here, Mario.[BR]
+And you won't help us?[BR]
+[PAUSE:0A]I guess I was wrong about you.[WAIT][END]
+
+0C-0DC
+[STYLE:RIGHT]You changed your mind, Mario?[BR]
+{Func_04}[END]
+
+0C-0DD
+[NEXT]
+Oh...how depressing...[WAIT][END]
+
+0C-0DE
+[NEXT]
+Oh, how nice![HEART][BR]
+[PAUSE:14]We'll be good friends from now[BR]
+on, I can feel it![BR]
+[WAIT][NEXT]
+We'll make a super team,[BR]
+[PAUSE:05]Mario![WAIT][END]
+
+0C-0DF
+[STYLE:RIGHT]Now. Let's think of a way to get[BR]
+out of here.[WAIT][END]
+
+0C-0E0
+[STYLE:RIGHT]Oh, gee, I almost forgot![BR]
+[WAIT][NEXT]
+I haven't even told you about[BR]
+what I can do. Silly me![BR]
+[WAIT][NEXT]
+My specialty is exploding.[BR]
+[PAUSE:0F]Check this out.[WAIT][END]
+
+0C-0E1
+[STYLE:RIGHT]See, if there are any cracks in[BR]
+a wall, I can probably break it.[BR]
+[WAIT][NEXT]
+Let me try this one.[BR]
+[PAUSE:05]Puff, puff, puff... Take cover![WAIT][END]
+
+0C-0E2
+[STYLE:RIGHT]See that?[BR]
+[PAUSE:0A]You see what I bring to the[BR]
+party, Mario?[BR]
+[WAIT][NEXT]
+...?[BR]
+[PAUSE:0F][WAIT][NEXT]
+{StartFX:Shrinking}Oh! An escape route![BR]
+[PAUSE:0A]{EndFX:Shrinking}[WAIT][NEXT]
+Well, I...[BR]
+[PAUSE:0A]I guess I never thought about[BR]
+doing that before...[BR]
+[WAIT][NEXT]
+I was so mad, I just blew up[BR]
+over and over in one place![BR]
+[WAIT][NEXT]
+{StartFX:Wavy}Tee hee![BR]
+[PAUSE:0A]OK, that was a little silly![BR]
+{EndFX:Wavy}[WAIT][END]
+
+0C-0E3
+[STYLE:RIGHT]Well, anyway,[BR]
+[PAUSE:0A]we can get out now, right?[BR]
+[WAIT][NEXT]
+And so can everyone else![BR]
+[PAUSE:05]Thank you, Mario![BR]
+[WAIT][NEXT]
+From now on I'll tag along and[BR]
+help out wherever I can![BR]
+[PAUSE:0A]You just ask, and I'll be there[BR]
+for you![HEART][BR]
+[WAIT][NEXT]
+Now enough chitchat![BR]
+[PAUSE:0A]I have a little score to settle[BR]
+with those Koopa Bros.![WAIT][END]
+
+0C-0E4
+[STYLE:RIGHT]All of us Bob-ombs got locked[BR]
+in here by the Koopa Bros.[BR]
+[PAUSE:0A]Nothing we could do about it.[BR]
+[WAIT][NEXT]
+The Koopa Bros. used to be cool,[BR]
+but they got conceited because[BR]
+Kammy Koopa likes them.[BR]
+[WAIT][NEXT]
+Before, they were just typical[BR]
+young guys from Koopa Village.[BR]
+They were nice enough.[BR]
+[WAIT][NEXT]
+I think maybe the desire for[BR]
+adventure corrupted them.[WAIT][END]
+
+0C-0E5
+[STYLE:RIGHT]All of us Bob-ombs got locked[BR]
+in here by the Koopa Bros.[BR]
+[PAUSE:0A]Nothing we could do about it.[BR]
+[WAIT][NEXT]
+The Koopa Bros. used to be cool,[BR]
+but they got conceited because[BR]
+Kammy Koopa likes them.[BR]
+[WAIT][NEXT]
+Before, they were just typical[BR]
+young guys from Koopa Village.[BR]
+They were nice enough.[BR]
+[WAIT][NEXT]
+I think maybe the desire for[BR]
+adventure corrupted them.[WAIT][END]
+
+0C-0E6
+[STYLE:RIGHT]Don't worry about us, Mario![BR]
+[PAUSE:0A]We'll find a way out![WAIT][END]
+
+0C-0E7
+[STYLE:RIGHT]I'm sorry, I simply will not obey[BR]
+tyrants anymore![BR]
+[WAIT][NEXT]
+Those Koopa Bros. can't squash[BR]
+the pride of a Bob-omb![BR]
+[WAIT][NEXT]
+So...[BR]
+[PAUSE:0A]I'm using all my energy thinking[BR]
+of a way to break out of here.[BR]
+[WAIT][NEXT]
+Hmmmm...[BR]
+[PAUSE:0A]The angles...vectors...[BR]
+[WAIT][NEXT]
+ooooooog...[BR]
+[PAUSE:0A]It's so complicated... My head's[BR]
+going to explode![WAIT][END]
+
+0C-0E8
+[STYLE:RIGHT]I'm sorry, I simply will not obey[BR]
+tyrants anymore![BR]
+[WAIT][NEXT]
+Those Koopa Bros. can't squash[BR]
+the pride of a Bob-omb![BR]
+[WAIT][NEXT]
+So...[BR]
+[PAUSE:0A]I'm using all my energy thinking[BR]
+of a way to break out of here.[BR]
+[WAIT][NEXT]
+Hmmmm...[BR]
+[PAUSE:0A]The angles...vectors...[BR]
+[WAIT][NEXT]
+ooooooog...[BR]
+[PAUSE:0A]It's so complicated... My head's[BR]
+going to explode![WAIT][END]
+
+0C-0E9
+[STYLE:RIGHT]All that thinking, and I never[BR]
+thought of blasting the wall.[BR]
+[WAIT][NEXT]
+You're pretty darned smart![WAIT][END]
+
+0C-0EA
+[STYLE:RIGHT]Oh, how long do we have to be[BR]
+locked up here...?[BR]
+[PAUSE:0A]I'm losing hope...[BR]
+[WAIT][NEXT]
+And I'm so hungry...[BR]
+[PAUSE:0A]So sad...and mad...angry...[BR]
+...I'm filling with rage! [BR]
+[WAIT][NEXT]
+I'm really angry now![BR]
+[PAUSE:0A]I want out! OUT! Right now, you[BR]
+hear me, Koopas![WAIT][END]
+
+0C-0EB
+[STYLE:RIGHT]Oh, how long do we have to be[BR]
+locked up here...?[BR]
+[PAUSE:0A]I'm losing hope...[BR]
+[WAIT][NEXT]
+And I'm so hungry...[BR]
+[PAUSE:0A]So sad...and mad...angry...[BR]
+...I'm filling with rage! [BR]
+[WAIT][NEXT]
+I'm really angry now![BR]
+[PAUSE:0A]I want out! OUT! Right now, you[BR]
+hear me, Koopas![WAIT][END]
+
+0C-0EC
+[STYLE:RIGHT]I was sad, mad... But now, glad![BR]
+[PAUSE:05]Freedom! Yahoo![WAIT][END]
+
+0C-0ED
+[STYLE:RIGHT]Those stinking Koopa Bros.[BR]
+worked us way too hard. [BR]
+[PAUSE:0A]They were making us work for 25[BR]
+hours a day! Unreal![BR]
+[WAIT][NEXT]
+Nobody's life should be all work,[BR]
+right?[BR]
+[WAIT][NEXT]
+I need free time to make my[BR]
+mark in the world. BOOM![WAIT][END]
+
+0C-0EE
+[STYLE:RIGHT]Those stinking Koopa Bros.[BR]
+worked us way too hard. [BR]
+[PAUSE:0A]They were making us work for 25[BR]
+hours a day! Unreal![BR]
+[WAIT][NEXT]
+Nobody's life should be all work,[BR]
+right?[BR]
+[WAIT][NEXT]
+I need free time to make my[BR]
+mark in the world. BOOM![WAIT][END]
+
+0C-0EF
+[STYLE:RIGHT]Let's get out of here![WAIT][END]
+
+0C-0F0
+[STYLE:RIGHT]What's all this noise?![BR]
+[WAIT][NEXT]
+In case you Bob-ombs forgot,[BR]
+exploding is prohibited inside[BR]
+the fortress except in the case[BR]
+of emergencies![WAIT][END]
+
+0C-0F1
+[STYLE:RIGHT]{StartFX:Shrinking}What in the...Mario!?[BR]
+{EndFX:Shrinking}[PAUSE:0A]What're you doing here? [BR]
+[WAIT][NEXT]
+Nothing good, I bet![BR]
+[PAUSE:05]Everybody, get him![WAIT][END]
+
+0C-0F2
+[STYLE:RIGHT]Well, well, well! Mario![BR]
+[PAUSE:05]I wouldn't have bet you'd make[BR]
+it this far.[BR]
+[WAIT][NEXT]
+Pfffft...[BR]
+[PAUSE:05]Don't get smug, pal![BR]
+[WAIT][NEXT]
+You just caught us off guard![BR]
+[WAIT][NEXT]
+Trust me, we'll mop the floor[BR]
+with you if we get serious![BR]
+We're as cool as they come! [WAIT][END]
+
+0C-0F3
+[STYLE:RIGHT]Yeah, boys!![BR]
+[PAUSE:0A]Open fire![WAIT][END]
+
+0C-0F4
+[STYLE:RIGHT]You guys ready?![WAIT][END]
+
+0C-0F5
+[STYLE:RIGHT]Hey, Black! What are you doing?![BR]
+Hurry, man! Shake a leg![WAIT][END]
+
+0C-0F6
+[STYLE:RIGHT]Ow! My shell! Get off![WAIT][END]
+
+0C-0F7
+[STYLE:RIGHT]Wait... [PAUSE:14]Wait a minute...[WAIT][END]
+
+0C-0F8
+[STYLE:RIGHT]{Down:0A}{StartFX:Shrinking}{Size:20:20}Whoa!!![WAIT][END]
+
+0C-0F9
+[STYLE:RIGHT]Oh, for the love of...[BR]
+[PAUSE:14]What are you doing, Yellow?![BR]
+[PAUSE:0A]That doesn't look cool at all![WAIT][END]
+
+0C-0FA
+[STYLE:RIGHT]OK, hang on...[BR]
+[PAUSE:0A]OK! I'm ready, Red![WAIT][END]
+
+0C-0FB
+[STYLE:RIGHT]Finally![BR]
+[PAUSE:14]Let's do this![BR]
+[PAUSE:05]Remember to look cool, guys!![WAIT][END]
+
+0C-0FC
+[STYLE:RIGHT]{Down:0A}{StartFX:Shrinking}{Size:20:20}Yaaaaaaaa!!![WAIT][END]
+
+0C-0FD
+[STYLE:RIGHT]{StartFX:Shrinking}Gah ha ha ha!!!![BR]
+[PAUSE:14]{EndFX:Shrinking}I've been waiting for you, Mario![BR]
+Bwa ha ha ha har![BR]
+[WAIT][NEXT]
+The strongest! And the coolest![BR]
+Behold the glory that is the[BR]
+great Evil King Bowser!![BR]
+[WAIT][NEXT]
+It's time for me to beat these[BR]
+foolish ideas out of you! Saving[BR]
+Peach? Please!![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}Watch this and weep!![WAIT][END]
+
+0C-0FE
+[STYLE:RIGHT]{StartFX:Shrinking}Gah ha ha ha!![BR]
+[PAUSE:14]{EndFX:Shrinking}I am invincible![BR]
+[WAIT][NEXT]
+You are powerless before me![WAIT][END]
+
+0C-0FF
+[STYLE:RIGHT]What's the matter with you?![BR]
+This isn't even funny![BR]
+[PAUSE:0A]You can't even touch me!?[WAIT][END]
+
+0C-100
+[STYLE:RIGHT]{StartFX:Shrinking}Gah ha ha ha!!![BR]
+[PAUSE:14]{EndFX:Shrinking}Oh...ha ha...you're so weak...[BR]
+ho ho...I can't stop laughing...[WAIT][END]
+
+0C-101
+[STYLE:RIGHT]{StartFX:Faded:D9}(Heh heh heh... Mario really[BR]
+thinks that we're King Bowser!)[WAIT][END]
+
+0C-102
+[STYLE:RIGHT]{StartFX:Faded:D9}(Shhhh!!! Mario'll hear us!)[WAIT][END]
+
+0C-103
+[STYLE:RIGHT]Ugh, you're pathetic![BR]
+[PAUSE:0A]Are you always this weak?[BR]
+[PAUSE:14]The sequel should be called[BR]
+"Paper Bowser"![WAIT][END]
+
+0C-104
+[STYLE:RIGHT]{StartFX:Faded:D9}(Um... Red! [BR]
+[PAUSE:0A]We've got rips in a lot of[BR]
+different places here!)[WAIT][END]
+
+0C-105
+[STYLE:RIGHT]{StartFX:Faded:D9}(Forget about it! Mario's[BR]
+shaking in his boots! Let's get[BR]
+him!)[WAIT][END]
+
+0C-106
+[STYLE:RIGHT]Oh, [PAUSE:05]no!![BR]
+[PAUSE:0A]That costume was perfect!![BR]
+Bowser loved it!![WAIT][END]
+
+0C-107
+[STYLE:RIGHT]{StartFX:Shrinking}Here come the [PAUSE:14]Koopa Bros.![WAIT][END]
+
+0C-108
+[STYLE:RIGHT]{StartFX:Shrinking}The Koopa Bros. special:[BR]
+super spinning attack![WAIT][END]
+
+0C-109
+[STYLE:RIGHT]{StartFX:Jitter}Whooooaa... [PAUSE:14]We're going over!![WAIT][END]
+
+0C-10A
+[STYLE:RIGHT]OK, Mario![BR]
+[PAUSE:14]Have a taste of this![WAIT][END]
+
+0C-10B
+[STYLE:RIGHT]{StartFX:Shrinking}{Down:0A}{Size:20:20}Whoa!!![BR]
+[PAUSE:28][END]
+
+0C-10C
+[STYLE:RIGHT]{StartFX:Wavy}Hey! Helloooooo?[BR]
+[PAUSE:0A]Somebody, let us outta here![WAIT][END]
+
+0C-10D
+[STYLE:RIGHT]{SpeechSound:02}Mario,[BR]
+[PAUSE:0A]I believe you'll save us all...[BR]
+[WAIT][NEXT]
+From the bottom of my heart,[BR]
+I appreciate all you've done.[BR]
+Thank you.[BR]
+[WAIT][NEXT]
+Since you have freed me from my[BR]
+prison, the seal on my power is[BR]
+broken, and I will recover it[BR]
+little by little.[BR]
+[WAIT][NEXT]
+As long as an ounce of power[BR]
+remains in me, I shall help you.[WAIT][END]
+
+0C-10E
+[STYLE:RIGHT]{SpeechSound:02}Using a Star Power requires[BR]
+Star Energy. [BR]
+[WAIT][NEXT]
+Would you like to listen while I[BR]
+tell you how to use Star Powers[BR]
+and Star Energy?[BR]
+{Func_04}[END]
+
+0C-10F
+{SpeechSound:02}[NEXT]
+I suggest that you listen. It's[BR]
+very important.[BR]
+[PAUSE:0A]Do you want to listen?[BR]
+{Func_04}[END]
+
+0C-110
+{SpeechSound:02}[NEXT]
+All right, if you say so.[WAIT][END]
+
+0C-111
+{SpeechSound:02}[NEXT]
+Allow me to explain.[WAIT][END]
+
+0C-112
+[STYLE:RIGHT]{SpeechSound:02}Mario...listen carefully.[BR]
+[PAUSE:0A]You must save the other Star[BR]
+Spirits quickly![BR]
+[WAIT][NEXT]
+If the seven of us come[BR]
+together, we'll be able to bestow[BR]
+upon you a Star Power called[BR]
+the Star Beam.[BR]
+[WAIT][NEXT]
+The Star Beam is the only thing[BR]
+that can counteract the Star[BR]
+Rod that Bowser wields.[WAIT][END]
+
+0C-113
+[STYLE:RIGHT]{SpeechSound:02}I have to go back now...[BR]
+back to Star Haven.[BR]
+[WAIT][NEXT]
+I must leave immediately.[BR]
+[PAUSE:0A]But I'll always be watching you![BR]
+[WAIT][NEXT]
+Save us all, Mario![WAIT][END]
+
+0C-114
+[STYLE:RIGHT]{SpeechSound:02}Now, Mario.[BR]
+[PAUSE:0A]This is your gauge for Star[BR]
+Energy.[WAIT][END]
+
+0C-115
+[STYLE:RIGHT]{SpeechSound:02}See? You can check to see how[BR]
+much Star Energy you have.[BR]
+[WAIT][NEXT]
+See how there's a star on the[BR]
+right side of the gauge? Each[BR]
+star marks one unit of Star[BR]
+Energy.[BR]
+[WAIT][NEXT]
+So, you have one unit now.[WAIT][END]
+
+0C-116
+[STYLE:RIGHT]{SpeechSound:02}Next, allow me to explain about[BR]
+Star Powers.[BR]
+[PAUSE:0A]First, let me tell you about[BR]
+Refresh, all right?[BR]
+[WAIT][NEXT]
+This Power enables you to[BR]
+restore five points of both HP[BR]
+and FP at once.[BR]
+[WAIT][NEXT]
+Why don't you try out Refresh[BR]
+right now?[WAIT][END]
+
+0C-117
+[STYLE:RIGHT]{SpeechSound:02}See? Both HP and FP have[BR]
+recovered 5 points each.[BR]
+[WAIT][NEXT]
+You used one unit of Star[BR]
+Energy, so you're empty now.[BR]
+[WAIT][NEXT]
+Watch your Star Energy gauge[BR]
+carefully during battle.[WAIT][END]
+
+0C-118
+[STYLE:RIGHT]{SpeechSound:02}Usually, your partner's turn[BR]
+would come next, and then[BR]
+it would be your enemy's turn.[BR]
+[WAIT][NEXT]
+But we're just practicing now, [BR]
+so let's assume it's Mario's[BR]
+turn again. [WAIT][END]
+
+0C-119
+[STYLE:RIGHT]{SpeechSound:02}OK. It's Mario's turn.[BR]
+[WAIT][NEXT]
+Now, pay attention to the Star[BR]
+Energy gauge![WAIT][END]
+
+0C-11A
+[STYLE:RIGHT]{SpeechSound:02}Did you notice that the amount[BR]
+of Star Energy increased a[BR]
+little bit?[BR]
+[WAIT][NEXT]
+Star Energy increases little by[BR]
+little every time it comes around[BR]
+to Mario's turn. [BR]
+[WAIT][NEXT]
+Remember this, because it'll[BR]
+become very important![WAIT][END]
+
+0C-11B
+[STYLE:RIGHT]{SpeechSound:02}Next, I'm going to teach you[BR]
+about another Star Power:[BR]
+Focus.[BR]
+[WAIT][NEXT]
+Focus is a Star Power that [BR]
+enables you to increase Star[BR]
+Energy a little more than usual[BR]
+during a turn.[BR]
+[WAIT][NEXT]
+Right now, your Star Energy is[BR]
+almost empty, even though you're[BR]
+slowly refilling it.[BR]
+[WAIT][NEXT]
+All right, try the Star Power[BR]
+Focus now. [WAIT][END]
+
+0C-11C
+[STYLE:RIGHT]{SpeechSound:02}Did you notice how much the[BR]
+Star Energy increased?[BR]
+[WAIT][NEXT]
+Focus helps you increase your[BR]
+Star Energy much more quickly.[WAIT][END]
+
+0C-11D
+[STYLE:RIGHT]{SpeechSound:02}You should also remember that[BR]
+you can replenish your Star[BR]
+Energy by taking a nap at a[BR]
+Toad House.[BR]
+[WAIT][NEXT]
+Well, that wraps up my[BR]
+explanation![BR]
+[WAIT][NEXT]
+I earnestly wish that you'll[BR]
+make good use of these Star[BR]
+Powers during battle.[WAIT][END]
+
+0C-11E
+[STYLE:RIGHT]Hold it right there, Mario![BR]
+[PAUSE:0A]I've been waiting for you!![WAIT][END]
+
+0C-11F
+[STYLE:RIGHT]{StartFX:Shrinking}I told you I'd be back! Now I'll[BR]
+get my revenge![BR]
+[WAIT][NEXT]
+Here it comes, baby![BR]
+Check this out![WAIT][END]
+
+0C-120
+[STYLE:RIGHT]{StartFX:Shrinking}Dwaaaahhhhhh![BR]
+[PAUSE:0F][END]
+
+0C-121
+[STYLE:RIGHT]Mario! I'm talking to you![BR]
+[PAUSE:0A]I promise you, this fight will be[BR]
+much different from before![WAIT][END]
+
+0C-122
+[STYLE:RIGHT]Hey...you're Jr. Troopa![BR]
+[PAUSE:0A]Are you following us?[BR]
+You need to mellow out![WAIT][END]
+
+0C-123
+[STYLE:RIGHT]Who is this crazed guy?[BR]
+[PAUSE:0A]What a nut... [WAIT][END]
+
+0C-124
+[STYLE:RIGHT]Who's this kid...?[BR]
+[PAUSE:0A]Let me get this straight...[BR]
+He wants to challenge you?[BR]
+[PAUSE:0A]He's got to be kidding![WAIT][END]
+
+0C-125
+[STYLE:RIGHT]{StartFX:Shrinking}Shut up!!!!![BR]
+[WAIT][NEXT]
+You! Mario!![BR]
+[PAUSE:0A]Of course you remember me!?[BR]
+{Func_04}[END]
+
+0C-126
+[NEXT]
+That's right! Darn tootin'![BR]
+[PAUSE:05]I'm Jr.Troopa![BR]
+[WAIT][NEXT]
+This time, you're really gonna[BR]
+see some fireworks![WAIT][END]
+
+0C-127
+[NEXT]
+Whaaaat! Darn it![BR]
+[PAUSE:0A]You don't remember me?![BR]
+[WAIT][NEXT]
+Listen, you...you big lug![BR]
+[PAUSE:05]My name is Jr. Troopa![BR]
+[PAUSE:0A]Remember it and tremble![BR]
+[WAIT][NEXT]
+After this beating, you'll[BR]
+definitely remember it![WAIT][END]
+
+0C-128
+[STYLE:RIGHT]Get ready to hurt, Mario![BR]
+[PAUSE:05]I'm gonna show you a new skill I[BR]
+just picked up![WAIT][END]
+
+0C-129
+[STYLE:RIGHT]Yeah! Check that out![BR]
+[PAUSE:05]You've never seen anything like[BR]
+it before, have you? [BR]
+[WAIT][NEXT]
+Your attacks are useless now!![WAIT][END]
+
+0C-12A
+[STYLE:RIGHT]Yeeowch!![BR]
+[PAUSE:05]Who knew that Mario had such[BR]
+battle skills?[BR]
+[WAIT][NEXT]
+{Func_04}Grrr...it's not over yet, though![BR]
+[PAUSE:0A]{StartFX:Shrinking}Yaaaaaaaahhh!!!!![WAIT][END]
+
+0C-12B
+[STYLE:RIGHT]{StartFX:Wavy}Aaaaaaaaaaaah![WAIT][END]
+
+0C-12C
+[STYLE:RIGHT]Hey, you in the hat! Wait![WAIT][END]
+
+0C-12D
+[STYLE:RIGHT]It's fine weather, isn't it?[BR]
+[PAUSE:05]My name is Kent C. Koopa.[BR]
+[PAUSE:05]Please remember it, OK?[BR]
+[PAUSE:14][WAIT][NEXT]
+If you want to use this road,[BR]
+you need to pay me 100 coins.[BR]
+[PAUSE:0A]So sorry, but that's how it is.[BR]
+You don't pay, you don't pass.[BR]
+[WAIT][NEXT]
+Coins make the world go round.[BR]
+It's all about the money![BR]
+{Func_04}[END]
+
+0C-12E
+[NEXT]
+You want to fight? You're nuts![BR]
+[PAUSE:0A]Look at me! I'll cream you![BR]
+[WAIT][NEXT]
+Because, to be frank, I'm very,[BR]
+very, very strong.[BR]
+[PAUSE:0A]Are you sure you want to fight?[BR]
+{Func_04}[END]
+
+0C-12F
+[NEXT]
+Oh, you don't have any coins?[BR]
+[PAUSE:0A]Then you can't go through.[WAIT][END]
+
+0C-130
+[STYLE:RIGHT]Bring some coins next time.[WAIT][END]
+
+0C-131
+[NEXT]
+Then you can't go through here.[BR]
+[PAUSE:0A]Tough luck. Take off.[WAIT][END]
+
+0C-132
+[STYLE:RIGHT]Oh, you changed your mind, and[BR]
+now you'll pay the coins?[BR]
+{Func_04}[END]
+
+0C-133
+[STYLE:RIGHT]Good doing business with you![BR]
+[PAUSE:14]Oh, the jingle of coins is so very[BR]
+beautiful.[WAIT][END]
+
+0C-134
+[STYLE:RIGHT]Here, go ahead.[BR]
+[PAUSE:0A]See you again sometime![WAIT][END]
+
+0C-135
+[NEXT]
+Well, I have no choice...[BR]
+I warned you, though.[BR]
+[PAUSE:0A]This may hurt a little bit...[WAIT][END]
+
+0C-136
+[STYLE:RIGHT]Wow. You must be really strong.[BR]
+I mean, beating a guy my size?[BR]
+[WAIT][NEXT]
+I guess I have to give up.[BR]
+[PAUSE:0A]See you later...[WAIT][END]
+

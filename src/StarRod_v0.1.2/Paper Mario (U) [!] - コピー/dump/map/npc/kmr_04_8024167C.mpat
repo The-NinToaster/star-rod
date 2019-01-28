@@ -1,0 +1,127 @@
+% automatically dumped from map kmr_04
+
+#new:Npc $kmr_04_8024167C
+00000000 $NpcSettings_80240860_kmr_04 00000000 00000000 00000000 
+00A40D00 $Script_Init_80241614_kmr_04 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00210003 00210007 00210007 00210007 00210003 00210003 00210003 00210003 
+00210003 00210003 00210003 00210003 00210003 00210003 00210003 00210003 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_80240560_kmr_04
+    0:  Call     SetMusicTrack 	( 00000000 .Song:PleasantPath 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:Script $Script_8024058C_kmr_04
+    0:  Call     SetMusicTrack 	( 00000000 .Song:JrTroopaTheme 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:NpcSettings $NpcSettings_80240860_kmr_04
+00000000 00200018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80240FE4_kmr_04
+    0:  Call     800445D4 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000064 
+   28:  		Label    00000000 
+   34:  		Switch  *AreaByte[0] 
+   40:  			Case  ==  00000001 
+   4C:  				Exec     $Script_8024058C_kmr_04 
+   58:  				Thread
+   60:  					Wait     00000014 
+   6C:  					Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   84:  					Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   A0:  					Call     SetPanTarget 	( .Default 000001AE *Var[1] *Var[2] )
+   BC:  					Call     SetCamDistance ( .Default *Fixed[275.0] )
+   D0:  					Call     SetCamAngles 	( .Default *Fixed[17.5] *Fixed[-7.5] )
+   E8:  					Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+   FC:  					Call     PanToTarget 	( .Default 00000000 00000001 )
+  114:  					Call     WaitForCam  	( .Default *Fixed[1.0] )
+  128:  				EndThread
+  130:  				Call     SetNpcPos   	( 00000000 00000276 00000000 00000000 )
+  14C:  				Call     EnableNpcShadow 	( .Npc:Self .True )
+  160:  				Wait     00000001 
+  16C:  				Call     PlayerFaceNpc 	( 00000000 00000003 )
+  180:  				Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+  194:  				Call     SetNpcAnimation 	( 00000000 00210009 )
+  1A8:  				Call     MoveNpcTo   	( 00000000 000001D1 00000000 00000000 )
+  1C4:  				Call     SetNpcAnimation 	( 00000000 00210006 )
+  1D8:  				Call     PlayerFaceNpc 	( 00000000 00000003 )
+  1EC:  				Call     SayMessage0 	( 00000000 0021001A 00210006 00000000 000B00AE ) % Who are you guys!? This is my playground, idiots!  ...
+  20C:  				Wait     0000000A 
+  218:  				Thread
+  220:  					Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  238:  					Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  254:  					Call     SetPanTarget 	( .Default 000001AE *Var[1] *Var[2] )
+  270:  					Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  284:  					Call     PanToTarget 	( .Default 00000000 00000001 )
+  29C:  					Call     WaitForCam  	( .Default *Fixed[1.0] )
+  2B0:  					Call     PanToTarget 	( .Default 00000000 00000000 )
+  2C8:  				EndThread
+  2D0:  				Call     StartBossBattle 	( .Song:JrTroopaBattle )
+  2E0:  		EndSwitch
+  2E8:  		Wait     00000001 
+  2F4:  		Goto     00000000 
+  300:  	CaseOR  ==  00000065 
+  30C:  	CaseOR  ==  00000066 
+  318:  	CaseOR  ==  00000003 
+  324:  	CaseOR  ==  00000067 
+  330:  	EndCaseGroup
+  338:  EndSwitch
+  340:  Return
+  348:  End
+
+#new:Script $Script_80241334_kmr_04
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   40:  		Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   5C:  		Call     SetPanTarget 	( .Default 00000190 *Var[1] *Var[2] )
+   78:  		Call     SetCamDistance ( .Default *Fixed[275.0] )
+   8C:  		Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-7.5] )
+   A4:  		Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+   B8:  		Call     PanToTarget 	( .Default 00000000 00000001 )
+   D0:  		Call     WaitForCam  	( .Default *Fixed[1.0] )
+   E4:  		Call     PlayerFaceNpc 	( .Npc:Self 00000000 )
+   F8:  		Call     SetNpcAnimation 	( .Npc:Self 00210011 )
+  10C:  		Call     SayMessage0 	( .Npc:Self 00210011 00210011 00000000 000B00B5 ) % Shoooooot!! I was winning, too!  I'll be back, Mar ...
+  12C:  		Call     SetNpcSpeed 	( .Npc:Self *Fixed[6.0] )
+  140:  		Call     SetNpcAnimation 	( .Npc:Self 00210009 )
+  154:  		Call     MoveNpcTo   	( .Npc:Self 00000234 0000000A 00000000 )
+  170:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  18C:  		Wait     0000003C 
+  198:  		Call     SetNpcPos   	( .Npc:Self 00000234 00000000 0000000A )
+  1B4:  		Call     MoveNpcTo   	( .Npc:Self 000001B3 0000000A 00000000 )
+  1D0:  		Call     SayMessage0 	( .Npc:Self 0021001A 00210006 00000000 000B00B6 ) % I mean it, I'll be back!!
+  1F0:  		Call     MoveNpcTo   	( .Npc:Self 00000234 0000000A 00000000 )
+  20C:  		Call     SetNpcAnimation 	( .Npc:Self 00210003 )
+  220:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  23C:  		Thread
+  244:  			Call     ResetCam    	( .Default 00000004 )
+  258:  		EndThread
+  260:  		Exec     $Script_80240560_kmr_04 
+  26C:  		Set  *AreaByte[0]  00000000 
+  27C:  		Set  *StoryProgress  FFFFFF8A 
+  28C:  		Call     DisablePlayerInput 	( .False )
+  29C:  EndSwitch
+  2A4:  Return
+  2AC:  End
+
+#new:Script $Script_Init_80241614_kmr_04
+    0:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   1C:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   30:  Call     BindNpcIdle 	( .Npc:Self $Script_80240FE4_kmr_04 )
+   44:  Call     BindNpcDefeat 	( .Npc:Self $Script_80241334_kmr_04 )
+   58:  Return
+   60:  End
+

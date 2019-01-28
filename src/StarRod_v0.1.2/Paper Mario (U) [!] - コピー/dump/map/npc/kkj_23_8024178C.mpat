@@ -1,0 +1,92 @@
+% automatically dumped from map kkj_23
+
+#new:Npc $kkj_23_8024178C
+00000001 $NpcSettings_80240E5C_kkj_23 00000000 00000000 00000000 
+00000F05 $Script_Init_80241418_kkj_23 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00800002 00800002 00800002 00800002 00800002 00800002 00800002 00800002 
+00800002 00800002 00800002 00800002 00800002 00800002 00800002 00800002 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240080_kkj_23
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S0, 18 (SP)
+    8:  DADDU     S0, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SDC1      F20, 20 (SP)
+   14:  JAL       8003AB48
+   18:  ADDIU     A0, R0, 1
+   1C:  ADDIU     A0, R0, 23D
+   20:  LWC1      F2, 38 (V0)
+   24:  LWC1      F20, 3C (V0)
+   28:  LWC1      F0, 40 (V0)
+   2C:  MFC1      A2, F2
+   30:  MFC1      A3, F20
+   34:  DADDU     A1, R0, R0
+   38:  JAL       801499EC
+   3C:  SWC1      F0, 10 (SP)
+   40:  TRUNC.W.S F4, F20
+   44:  SWC1      F4, 84 (S0)
+   48:  LW        RA, 1C (SP)
+   4C:  LW        S0, 18 (SP)
+   50:  LDC1      F20, 20 (SP)
+   54:  ADDIU     V0, R0, 2
+   58:  JR        RA
+   5C:  ADDIU     SP, SP, 28
+
+#new:NpcSettings $NpcSettings_80240E5C_kkj_23
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80240EB8_kkj_23
+    0:  Call     PlaySoundAtNpc ( 00000001 80000066 00000000 )
+   18:  Loop     
+   24:  	Call     $Function_80240080_kkj_23 ( )
+   30:  	If  *Var[0]  <  00000000 
+   40:  		BreakLoop
+   48:  	EndIf
+   50:  	Wait     00000001 
+   5C:  EndLoop
+   64:  Call     802D62B8 ( 80000066 )
+   74:  Return
+   7C:  End
+
+#new:IntTable $IntTable_8024113C_kkj_23
+00000001 00000002 00000003 00000002 00000001 FFFFFFFF FFFFFFFE FFFFFFFD 
+FFFFFFFE FFFFFFFF 
+
+#new:Script $Script_8024120C_kkj_23
+    0:  Label    00000000 
+    C:  UseIntBuffer $IntTable_8024113C_kkj_23 
+   18:  Loop     0000000A 
+   24:  	Get1Int  *Var[1] 
+   30:  	Call     GetNpcPos   	( 00000001 *Var[2] *Var[3] *Var[4] )
+   4C:  	Add  *Var[3]  *Var[1] 
+   5C:  	Call     SetNpcPos   	( 00000001 *Var[2] *Var[3] *Var[4] )
+   78:  	Wait     00000003 
+   84:  EndLoop
+   8C:  Goto     00000000 
+   98:  Return
+   A0:  End
+
+#new:Script $Script_Init_80241418_kkj_23
+    0:  Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+   1C:  If  *Flag_KKJ_1B  ==  00000001 
+   2C:  	If  *Flag_KKJ_1C  ==  00000001 
+   3C:  		Return
+   44:  	EndIf
+   4C:  EndIf
+   54:  Call     BindNpcIdle 	( .Npc:Self $Script_8024120C_kkj_23 )
+   68:  Call     SetNpcYaw   	( .Npc:Self 0000005A )
+   7C:  Call     SetNpcPos   	( .Npc:Self 000000FA 0000000A FFFFFF06 )
+   98:  Call     SetNpcAnimation 	( .Npc:Self 00800021 )
+   AC:  Exec     $Script_80240EB8_kkj_23 
+   B8:  Return
+   C0:  End
+

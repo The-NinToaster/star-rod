@@ -1,0 +1,71 @@
+% automatically dumped from map sam_02
+
+#new:Npc $sam_02_8024AF2C_1F0
+00000003 $NpcSettings_80246ADC_sam_02 00000000 00000000 00000000 
+00400C09 $Script_Init_8024A278_sam_02 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000032 00000000 FFFF8001 00000000 FFFFFF38 
+00000000 FFFFFFC4 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009A0001 009A0002 009A0003 009A0003 009A0001 009A0001 009A0001 009A0001 
+009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 
+00000000 00000000 00000000 001A00EE % He likes rumors. He doesn't look like the adventur ...
+
+#new:AISettings $AISettings_80246A8C_sam_02
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80246ABC_sam_02
+    0:  Call     DoBasicAI   	( $AISettings_80246A8C_sam_02 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80246ADC_sam_02
+00000000 00180018 00000000 00000000 $Script_NpcAI_80246ABC_sam_02 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80249840_sam_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000003F 
+   18:  		Switch  *MapVar[1] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120076 ) % ...Starborn Valley? Oh. Sure. Go east from this ci ...
+   50:  				Set  *MapVar[1]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120077 ) % ...Starborn Valley? Oh. Sure. Go east from this ci ...
+   8C:  				Set  *MapVar[1]  00000000 
+   9C:  		EndSwitch
+   A4:  	Case  <  00000043 
+   B0:  	Case  <  00000057 
+   BC:  		Switch  *MapVar[1] 
+   C8:  			Case  ==  00000000 
+   D4:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120078 ) % That backroom murder case was the greatest mystery ...
+   F4:  				Set  *MapVar[1]  00000001 
+  104:  			Case  ==  00000001 
+  110:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120079 ) % That backroom murder case was the greatest mystery ...
+  130:  				Set  *MapVar[1]  00000000 
+  140:  		EndSwitch
+  148:  	Case  >=  00000057 
+  154:  		Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012007A ) % Your adventures are already more thrilling than an ...
+  174:  EndSwitch
+  17C:  Return
+  184:  End
+
+#new:Script $Script_Init_8024A278_sam_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80249840_sam_02 )
+   14:  Return
+   1C:  End
+

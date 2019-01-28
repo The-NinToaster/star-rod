@@ -1,0 +1,3299 @@
+% Script File: nok_12.mscr
+% Decoded from: 0 to 5E10 (nok_12)
+
+#new:Function $Function_80240000
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 2C (SP)
+   10:  SW        S6, 28 (SP)
+   14:  SW        S5, 24 (SP)
+   18:  SW        S4, 20 (SP)
+   1C:  SW        S3, 1C (SP)
+   20:  SW        S2, 18 (SP)
+   24:  SW        S0, 10 (SP)
+   28:  LW        S0, C (S1)
+   2C:  LW        A1, 0 (S0)
+   30:  JAL       {Func:GetVariable}
+   34:  ADDIU     S0, S0, 4
+   38:  LW        A1, 0 (S0)
+   3C:  ADDIU     S0, S0, 4
+   40:  DADDU     A0, S1, R0
+   44:  JAL       {Func:GetVariable}
+   48:  DADDU     S2, V0, R0
+   4C:  LW        A1, 0 (S0)
+   50:  ADDIU     S0, S0, 4
+   54:  DADDU     A0, S1, R0
+   58:  JAL       {Func:GetVariable}
+   5C:  DADDU     S6, V0, R0
+   60:  LW        A1, 0 (S0)
+   64:  ADDIU     S0, S0, 4
+   68:  DADDU     A0, S1, R0
+   6C:  JAL       {Func:GetVariable}
+   70:  DADDU     S5, V0, R0
+   74:  LW        A1, 0 (S0)
+   78:  ADDIU     S0, S0, 4
+   7C:  DADDU     A0, S1, R0
+   80:  JAL       {Func:GetVariable}
+   84:  DADDU     S4, V0, R0
+   88:  DADDU     A0, S1, R0
+   8C:  LW        A1, 0 (S0)
+   90:  JAL       {Func:GetVariable}
+   94:  DADDU     S0, V0, R0
+   98:  LIA       S3, 8010EFC8
+   A0:  MTC1      S2, F0
+   A4:  NOP
+   A8:  CVT.S.W   F0, F0
+   AC:  LWC1      F2, 28 (S3)
+   B0:  LIA       S1, 800B0F10
+   B8:  C.LE.S    F0, F2
+   BC:  NOP
+   C0:  BC1F      .o120
+   C4:  NOP
+   C8:  MTC1      S6, F0
+   CC:  NOP
+   D0:  CVT.S.W   F0, F0
+   D4:  C.LE.S    F2, F0
+   D8:  NOP
+   DC:  BC1F      .o120
+   E0:  NOP
+   E4:  LWC1      F2, 30 (S3)
+   E8:  MTC1      S5, F0
+   EC:  NOP
+   F0:  CVT.S.W   F0, F0
+   F4:  C.LE.S    F0, F2
+   F8:  NOP
+   FC:  BC1F      .o120
+  100:  NOP
+  104:  MTC1      S4, F0
+  108:  NOP
+  10C:  CVT.S.W   F0, F0
+  110:  C.LE.S    F2, F0
+  114:  NOP
+  118:  BC1TL     .o120
+  11C:  DADDU     S0, V0, R0
+        .o120
+  120:  LB        V0, 1C (S1)
+  124:  BLEZ      V0, .o14C
+  128:  DADDU     V1, R0, R0
+  12C:  DADDU     A0, S1, R0
+        .o130
+  130:  LW        V0, 28 (A0)
+  134:  SH        S0, 46 (V0)
+  138:  LB        V0, 1C (S1)
+  13C:  ADDIU     V1, V1, 1
+  140:  SLT       V0, V1, V0
+  144:  BNE       V0, R0, .o130
+  148:  ADDIU     A0, A0, 4
+        .o14C
+  14C:  LW        RA, 2C (SP)
+  150:  LW        S6, 28 (SP)
+  154:  LW        S5, 24 (SP)
+  158:  LW        S4, 20 (SP)
+  15C:  LW        S3, 1C (SP)
+  160:  LW        S2, 18 (SP)
+  164:  LW        S1, 14 (SP)
+  168:  LW        S0, 10 (SP)
+  16C:  ADDIU     V0, R0, 2
+  170:  JR        RA
+  174:  ADDIU     SP, SP, 30
+
+PADDING: 80240178 to 80240180 (00000178 to 00000180)
+00000000 00000000 
+
+#new:Function $Function_80240180
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 20 (SP)
+   10:  SW        S3, 1C (SP)
+   14:  SW        S2, 18 (SP)
+   18:  SW        S0, 10 (SP)
+   1C:  LW        S0, C (S1)
+   20:  LW        S3, 148 (S1)
+   24:  LW        A1, 0 (S0)
+   28:  JAL       {Func:GetVariable}
+   2C:  ADDIU     S0, S0, 4
+   30:  DADDU     S2, V0, R0
+   34:  LW        A1, 0 (S0)
+   38:  ADDIU     S0, S0, 4
+   3C:  JAL       {Func:GetVariable}
+   40:  DADDU     A0, S1, R0
+   44:  DADDU     A0, S1, R0
+   48:  LW        A1, 0 (S0)
+   4C:  JAL       {Func:GetVariable}
+   50:  DADDU     S0, V0, R0
+   54:  DADDU     S1, V0, R0
+   58:  ADDIU     V0, R0, FFFF
+   5C:  BNE       S2, V0, .o68
+   60:  NOP
+   64:  LH        S2, 8 (S3)
+        .o68
+   68:  JAL       8003ED68
+   6C:  DADDU     A0, S2, R0
+   70:  DADDU     S3, V0, R0
+   74:  BEQ       S3, R0, .o84
+   78:  SLL       V0, S0, 2
+   7C:  ADDU      V0, S3, V0
+   80:  SW        S1, 6C (V0)
+        .o84
+   84:  LW        RA, 20 (SP)
+   88:  LW        S3, 1C (SP)
+   8C:  LW        S2, 18 (SP)
+   90:  LW        S1, 14 (SP)
+   94:  LW        S0, 10 (SP)
+   98:  ADDIU     V0, R0, 2
+   9C:  JR        RA
+   A0:  ADDIU     SP, SP, 28
+
+#new:Function $Function_80240224
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 20 (SP)
+   10:  SW        S3, 1C (SP)
+   14:  SW        S2, 18 (SP)
+   18:  SW        S0, 10 (SP)
+   1C:  LW        S0, C (S1)
+   20:  LW        A1, 0 (S0)
+   24:  JAL       {Func:GetVariable}
+   28:  ADDIU     S0, S0, 4
+   2C:  LW        A1, 0 (S0)
+   30:  ADDIU     S0, S0, 4
+   34:  DADDU     A0, S1, R0
+   38:  JAL       {Func:GetVariable}
+   3C:  DADDU     S3, V0, R0
+   40:  LW        A1, 0 (S0)
+   44:  ADDIU     S0, S0, 4
+   48:  DADDU     A0, S1, R0
+   4C:  JAL       {Func:GetVariable}
+   50:  DADDU     S2, V0, R0
+   54:  DADDU     A0, S1, R0
+   58:  LW        A1, 0 (S0)
+   5C:  JAL       {Func:GetVariable}
+   60:  DADDU     S1, V0, R0
+   64:  DADDU     A0, S3, R0
+   68:  JAL       801105E8
+   6C:  DADDU     S0, V0, R0
+   70:  DADDU     V1, V0, R0
+   74:  MTC1      S2, F0
+   78:  NOP
+   7C:  CVT.S.W   F0, F0
+   80:  SWC1      F0, 48 (V1)
+   84:  MTC1      S1, F0
+   88:  NOP
+   8C:  CVT.S.W   F0, F0
+   90:  SWC1      F0, 4C (V1)
+   94:  MTC1      S0, F0
+   98:  NOP
+   9C:  CVT.S.W   F0, F0
+   A0:  SWC1      F0, 50 (V1)
+   A4:  LW        RA, 20 (SP)
+   A8:  LW        S3, 1C (SP)
+   AC:  LW        S2, 18 (SP)
+   B0:  LW        S1, 14 (SP)
+   B4:  LW        S0, 10 (SP)
+   B8:  ADDIU     V0, R0, 2
+   BC:  JR        RA
+   C0:  ADDIU     SP, SP, 28
+
+PADDING: 802402E8 to 802402F0 (000002E8 to 000002F0)
+00000000 00000000 
+
+#new:Function $Function_802402F0
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ORI       V0, V0, 1000
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:Function $Function_8024030C
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ANDI      V0, V0, EFFF
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+PADDING: 80240328 to 80240330 (00000328 to 00000330)
+00000000 00000000 
+
+#new:Function $Function_80240330
+    0:  ADDIU     SP, SP, FFD0
+    4:  SDC1      F20, 18 (SP)
+    8:  MTC1      A1, F20
+    C:  SDC1      F22, 20 (SP)
+   10:  MTC1      A2, F22
+   14:  SW        S0, 10 (SP)
+   18:  SDC1      F24, 28 (SP)
+   1C:  MTC1      A3, F24
+   20:  SW        RA, 14 (SP)
+   24:  JAL       800674A0
+   28:  DADDU     S0, A0, R0
+   2C:  MUL.S     F22, F20, F22
+   30:  NOP
+   34:  MUL.S     F20, F20, F24
+   38:  NOP
+   3C:  LIF       F0, 1.0
+   44:  NOP
+   48:  SWC1      F0, 14 (S0)
+   4C:  SWC1      F22, 10 (S0)
+   50:  SWC1      F20, 18 (S0)
+   54:  LW        RA, 14 (SP)
+   58:  LW        S0, 10 (SP)
+   5C:  LDC1      F24, 28 (SP)
+   60:  LDC1      F22, 20 (SP)
+   64:  LDC1      F20, 18 (SP)
+   68:  JR        RA
+   6C:  ADDIU     SP, SP, 30
+
+#new:Function $Function_802403A0
+    0:  ADDIU     SP, SP, FF78
+    4:  SW        S1, 54 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 5C (SP)
+   10:  SW        S2, 58 (SP)
+   14:  SW        S0, 50 (SP)
+   18:  SDC1      F28, 80 (SP)
+   1C:  SDC1      F26, 78 (SP)
+   20:  SDC1      F24, 70 (SP)
+   24:  SDC1      F22, 68 (SP)
+   28:  SDC1      F20, 60 (SP)
+   2C:  LW        S0, C (S1)
+   30:  LW        A1, 0 (S0)
+   34:  JAL       {Func:GetVariable}
+   38:  ADDIU     S0, S0, 4
+   3C:  JAL       8011B010
+   40:  DADDU     A0, V0, R0
+   44:  LW        A1, 0 (S0)
+   48:  ADDIU     S0, S0, 4
+   4C:  DADDU     A0, S1, R0
+   50:  JAL       {Func:GetFloatVariable}
+   54:  DADDU     S2, V0, R0
+   58:  LW        A1, 0 (S0)
+   5C:  ADDIU     S0, S0, 4
+   60:  DADDU     A0, S1, R0
+   64:  JAL       {Func:GetFloatVariable}
+   68:  MOV.S     F28, F0
+   6C:  LW        A1, 0 (S0)
+   70:  ADDIU     S0, S0, 4
+   74:  DADDU     A0, S1, R0
+   78:  JAL       {Func:GetFloatVariable}
+   7C:  MOV.S     F26, F0
+   80:  DADDU     A0, S1, R0
+   84:  LW        A1, 0 (S0)
+   88:  JAL       {Func:GetFloatVariable}
+   8C:  MOV.S     F22, F0
+   90:  DADDU     A0, S2, R0
+   94:  JAL       8011AD30
+   98:  MOV.S     F24, F0
+   9C:  DADDU     S1, V0, R0
+   A0:  LHU       V0, 0 (S1)
+   A4:  ANDI      V0, V0, 400
+   A8:  BNE       V0, R0, .o124
+   AC:  ADDIU     S0, S1, 58
+   B0:  MTC1      R0, F20
+   B4:  MFC1      A2, F22
+   B8:  MFC1      A1, F20
+   BC:  MFC1      A3, F20
+   C0:  JAL       80067900
+   C4:  DADDU     A0, S0, R0
+   C8:  MFC1      A1, F28
+   CC:  MFC1      A2, F26
+   D0:  MFC1      A3, F24
+   D4:  JAL       $Function_80240330
+   D8:  ADDIU     A0, SP, 10
+   DC:  ADDIU     A0, SP, 10
+   E0:  DADDU     A1, S0, R0
+   E4:  JAL       80067600
+   E8:  DADDU     A2, S0, R0
+   EC:  ADDIU     A0, SP, 10
+   F0:  NEG.S     F22, F22
+   F4:  MFC1      A1, F20
+   F8:  MFC1      A2, F22
+   FC:  JAL       80067900
+  100:  DADDU     A3, A1, R0
+  104:  ADDIU     A0, SP, 10
+  108:  DADDU     A1, S0, R0
+  10C:  JAL       80067600
+  110:  DADDU     A2, A1, R0
+  114:  LHU       V0, 0 (S1)
+  118:  ORI       V0, V0, 1400
+  11C:  BEQ       R0, R0, .o19C
+  120:  SH        V0, 0 (S1)
+        .o124
+  124:  MTC1      R0, F20
+  128:  MFC1      A2, F22
+  12C:  MFC1      A1, F20
+  130:  MFC1      A3, F20
+  134:  JAL       80067900
+  138:  ADDIU     A0, SP, 10
+  13C:  ADDIU     A0, SP, 10
+  140:  ADDIU     S0, S1, 58
+  144:  DADDU     A1, S0, R0
+  148:  JAL       80067600
+  14C:  DADDU     A2, S0, R0
+  150:  MFC1      A1, F28
+  154:  MFC1      A2, F26
+  158:  MFC1      A3, F24
+  15C:  JAL       $Function_80240330
+  160:  ADDIU     A0, SP, 10
+  164:  ADDIU     A0, SP, 10
+  168:  DADDU     A1, S0, R0
+  16C:  JAL       80067600
+  170:  DADDU     A2, S0, R0
+  174:  ADDIU     A0, SP, 10
+  178:  NEG.S     F22, F22
+  17C:  MFC1      A1, F20
+  180:  MFC1      A2, F22
+  184:  JAL       80067900
+  188:  DADDU     A3, A1, R0
+  18C:  ADDIU     A0, SP, 10
+  190:  DADDU     A1, S0, R0
+  194:  JAL       80067600
+  198:  DADDU     A2, A1, R0
+        .o19C
+  19C:  LW        RA, 5C (SP)
+  1A0:  LW        S2, 58 (SP)
+  1A4:  LW        S1, 54 (SP)
+  1A8:  LW        S0, 50 (SP)
+  1AC:  LDC1      F28, 80 (SP)
+  1B0:  LDC1      F26, 78 (SP)
+  1B4:  LDC1      F24, 70 (SP)
+  1B8:  LDC1      F22, 68 (SP)
+  1BC:  LDC1      F20, 60 (SP)
+  1C0:  ADDIU     V0, R0, 2
+  1C4:  JR        RA
+  1C8:  ADDIU     SP, SP, 88
+
+PADDING: 8024056C to 80240570 (0000056C to 00000570)
+00000000 
+
+#new:Function $Function_80240570
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S2, 18 (SP)
+    8:  DADDU     S2, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S1, 14 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  LW        S1, 148 (S2)
+   1C:  JAL       8003AAEC
+   20:  LH        A0, 8 (S1)
+   24:  DADDU     S0, V0, R0
+   28:  LW        V1, CC (S1)
+   2C:  LWC1      F12, 38 (S0)
+   30:  LW        V1, 20 (V1)
+   34:  SW        V1, 28 (S0)
+   38:  LHU       V0, 76 (S1)
+   3C:  SH        V0, 8E (S0)
+   40:  LAW       V0, 800F7B30
+   48:  LWC1      F14, 40 (S0)
+   4C:  LW        A2, 28 (V0)
+   50:  JAL       80029C80
+   54:  LW        A3, 30 (V0)
+   58:  ADDIU     V0, R0, D
+   5C:  SWC1      F0, C (S0)
+   60:  SW        V0, 70 (S2)
+   64:  LW        RA, 1C (SP)
+   68:  LW        S2, 18 (SP)
+   6C:  LW        S1, 14 (SP)
+   70:  LW        S0, 10 (SP)
+   74:  JR        RA
+   78:  ADDIU     SP, SP, 20
+
+#new:Function $Function_802405EC
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S3, 1C (SP)
+    8:  DADDU     S3, A0, R0
+    C:  SW        RA, 20 (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S1, 14 (SP)
+   18:  SW        S0, 10 (SP)
+   1C:  LW        S1, 148 (S3)
+   20:  LH        A0, 8 (S1)
+   24:  JAL       8003AAEC
+   28:  DADDU     S2, A1, R0
+   2C:  DADDU     S0, V0, R0
+   30:  LH        V0, 8E (S0)
+   34:  LHU       V1, 8E (S0)
+   38:  BLEZ      V0, .o50
+   3C:  ADDIU     V0, V1, FFFF
+   40:  SH        V0, 8E (S0)
+   44:  SLL       V0, V0, 10
+   48:  BGTZ      V0, .o118
+   4C:  NOP
+        .o50
+   50:  LH        V0, 8C (S0)
+   54:  BNE       V0, R0, .o118
+   58:  NOP
+   5C:  LW        V0, CC (S1)
+   60:  LW        V0, 24 (V0)
+   64:  SW        V0, 28 (S0)
+   68:  LWC1      F0, 18 (S2)
+   6C:  SWC1      F0, 18 (S0)
+   70:  LW        V1, 88 (S1)
+   74:  ADDIU     V0, R0, 5
+   78:  BEQ       V1, V0, .o90
+   7C:  NOP
+   80:  BEQ       V1, R0, .o90
+   84:  ADDIU     V0, R0, 1
+   88:  BNE       V1, V0, .oA4
+   8C:  NOP
+        .o90
+   90:  LW        V0, 84 (S1)
+   94:  SRL       V1, V0, 1F
+   98:  ADDU      V0, V0, V1
+   9C:  SRA       V0, V0, 1
+   A0:  SH        V0, A8 (S0)
+        .oA4
+   A4:  LAW       V0, 800F7B30
+   AC:  LWC1      F12, 38 (S0)
+   B0:  LWC1      F14, 40 (S0)
+   B4:  LW        A2, 28 (V0)
+   B8:  JAL       {Func:Dist2D}
+   BC:  LW        A3, 30 (V0)
+   C0:  LWC1      F2, 18 (S0)
+   C4:  DIV.S     F0, F0, F2
+   C8:  LAD       F2, $ConstDouble_80245A70
+   D0:  CVT.D.S   F0, F0
+   D4:  ADD.D     F0, F0, F2
+   D8:  TRUNC.W.D F4, F0
+   DC:  MFC1      V0, F4
+   E0:  NOP
+   E4:  SH        V0, 8E (S0)
+   E8:  SLL       V0, V0, 10
+   EC:  LW        V1, 78 (S1)
+   F0:  SRA       V0, V0, 10
+   F4:  SLT       V0, V0, V1
+   F8:  BEQ       V0, R0, .o108
+   FC:  NOP
+  100:  LHU       V0, 7A (S1)
+  104:  SH        V0, 8E (S0)
+        .o108
+  108:  LH        V0, 8E (S0)
+  10C:  SW        V0, 7C (S1)
+  110:  ADDIU     V0, R0, E
+  114:  SW        V0, 70 (S3)
+        .o118
+  118:  LW        RA, 20 (SP)
+  11C:  LW        S3, 1C (SP)
+  120:  LW        S2, 18 (SP)
+  124:  LW        S1, 14 (SP)
+  128:  LW        S0, 10 (SP)
+  12C:  JR        RA
+  130:  ADDIU     SP, SP, 28
+
+#new:Function $Function_80240720
+    0:  ADDIU     SP, SP, FFB8
+    4:  SW        S3, 3C (SP)
+    8:  DADDU     S3, A0, R0
+    C:  SW        RA, 40 (SP)
+   10:  SW        S2, 38 (SP)
+   14:  SW        S1, 34 (SP)
+   18:  SW        S0, 30 (SP)
+   1C:  LW        S1, 148 (S3)
+   20:  JAL       8003AAEC
+   24:  LH        A0, 8 (S1)
+   28:  DADDU     S0, V0, R0
+   2C:  LW        V0, 7C (S1)
+   30:  LH        V1, 8E (S0)
+   34:  ADDIU     V0, V0, FFFF
+   38:  BNE       V1, V0, .o84
+   3C:  NOP
+   40:  LWC1      F0, 38 (S0)
+   44:  TRUNC.W.S F8, F0
+   48:  MFC1      V0, F8
+   4C:  NOP
+   50:  SH        V0, 10 (S1)
+   54:  LWC1      F0, 3C (S0)
+   58:  TRUNC.W.S F8, F0
+   5C:  MFC1      V0, F8
+   60:  NOP
+   64:  SH        V0, 12 (S1)
+   68:  LWC1      F0, 40 (S0)
+   6C:  ADDIU     V0, R0, 1
+   70:  SB        V0, 7 (S1)
+   74:  TRUNC.W.S F8, F0
+   78:  MFC1      V0, F8
+   7C:  NOP
+   80:  SH        V0, 14 (S1)
+        .o84
+   84:  LWC1      F0, 38 (S0)
+   88:  LWC1      F2, 3C (S0)
+   8C:  LWC1      F4, 40 (S0)
+   90:  LWC1      F6, 18 (S0)
+   94:  SWC1      F0, 20 (SP)
+   98:  SWC1      F2, 24 (SP)
+   9C:  SWC1      F4, 28 (SP)
+   A0:  SWC1      F6, 10 (SP)
+   A4:  LWC1      F0, C (S0)
+   A8:  SWC1      F0, 14 (SP)
+   AC:  LH        V0, A8 (S0)
+   B0:  ADDIU     A1, SP, 20
+   B4:  MTC1      V0, F0
+   B8:  NOP
+   BC:  CVT.S.W   F0, F0
+   C0:  SWC1      F0, 18 (SP)
+   C4:  LH        V0, A6 (S0)
+   C8:  ADDIU     A2, SP, 24
+   CC:  MTC1      V0, F0
+   D0:  NOP
+   D4:  CVT.S.W   F0, F0
+   D8:  SWC1      F0, 1C (SP)
+   DC:  LW        A0, 80 (S0)
+   E0:  JAL       800DDC44
+   E4:  ADDIU     A3, SP, 28
+   E8:  DADDU     S2, V0, R0
+   EC:  BNE       S2, R0, .o104
+   F0:  NOP
+   F4:  LW        A1, 18 (S0)
+   F8:  LW        A2, C (S0)
+   FC:  JAL       8003AA54
+  100:  DADDU     A0, S0, R0
+        .o104
+  104:  LH        V0, 8E (S0)
+  108:  LHU       V1, 8E (S0)
+  10C:  BLEZ      V0, .o12C
+  110:  ADDIU     V0, V1, FFFF
+  114:  SH        V0, 8E (S0)
+  118:  SLL       V0, V0, 10
+  11C:  BLEZ      V0, .o12C
+  120:  NOP
+  124:  BEQ       S2, R0, .o148
+  128:  NOP
+        .o12C
+  12C:  LW        V0, CC (S1)
+  130:  SB        R0, 7 (S1)
+  134:  LW        V0, 28 (V0)
+  138:  SH        R0, 8E (S0)
+  13C:  SW        V0, 28 (S0)
+  140:  ADDIU     V0, R0, F
+  144:  SW        V0, 70 (S3)
+        .o148
+  148:  LW        RA, 40 (SP)
+  14C:  LW        S3, 3C (SP)
+  150:  LW        S2, 38 (SP)
+  154:  LW        S1, 34 (SP)
+  158:  LW        S0, 30 (SP)
+  15C:  JR        RA
+  160:  ADDIU     SP, SP, 48
+
+#new:Function $Function_80240884
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 18 (SP)
+   10:  SW        S0, 10 (SP)
+   14:  LW        S0, 148 (S1)
+   18:  JAL       8003AAEC
+   1C:  LH        A0, 8 (S0)
+   20:  DADDU     A0, V0, R0
+   24:  LHU       V0, 8E (A0)
+   28:  ADDIU     V1, R0, 3
+   2C:  ADDIU     V0, V0, 1
+   30:  SH        V0, 8E (A0)
+   34:  SLL       V0, V0, 10
+   38:  SRA       V0, V0, 10
+   3C:  BNE       V0, V1, .o4C
+   40:  NOP
+   44:  LHU       V0, 86 (S0)
+   48:  SH        V0, A8 (A0)
+        .o4C
+   4C:  LH        V0, 8E (A0)
+   50:  LW        V1, 80 (S0)
+   54:  SLT       V0, V0, V1
+   58:  BNE       V0, R0, .o6C
+   5C:  NOP
+   60:  LHU       V0, 86 (S0)
+   64:  SH        V0, A8 (A0)
+   68:  SW        R0, 70 (S1)
+        .o6C
+   6C:  LW        RA, 18 (SP)
+   70:  LW        S1, 14 (SP)
+   74:  LW        S0, 10 (SP)
+   78:  JR        RA
+   7C:  ADDIU     SP, SP, 20
+
+#new:Function $Function_80240904
+    0:  ADDIU     SP, SP, FF90
+    4:  SW        S3, 5C (SP)
+    8:  DADDU     S3, A0, R0
+    C:  SW        RA, 68 (SP)
+   10:  SW        S5, 64 (SP)
+   14:  SW        S4, 60 (SP)
+   18:  SW        S2, 58 (SP)
+   1C:  SW        S1, 54 (SP)
+   20:  SW        S0, 50 (SP)
+   24:  LW        S1, 148 (S3)
+   28:  LH        A0, 8 (S1)
+   2C:  JAL       8003AAEC
+   30:  DADDU     S0, A1, R0
+   34:  LW        V1, C (S3)
+   38:  DADDU     A0, S3, R0
+   3C:  LW        A1, 0 (V1)
+   40:  JAL       {Func:GetVariable}
+   44:  DADDU     S2, V0, R0
+   48:  SW        R0, 28 (SP)
+   4C:  LW        V1, D0 (S1)
+   50:  LW        V1, 30 (V1)
+   54:  SW        V1, 2C (SP)
+   58:  LW        V1, D0 (S1)
+   5C:  LW        V1, 1C (V1)
+   60:  SW        V1, 30 (SP)
+   64:  LW        V1, D0 (S1)
+   68:  LW        V1, 24 (V1)
+   6C:  SW        V1, 34 (SP)
+   70:  LW        V1, D0 (S1)
+   74:  LW        V1, 28 (V1)
+   78:  ADDIU     S5, SP, 28
+   7C:  SW        V1, 38 (SP)
+   80:  LW        V1, D0 (S1)
+   84:  LIF       F0, 100.0
+   8C:  LW        V1, 2C (V1)
+   90:  DADDU     S4, V0, R0
+   94:  SWC1      F0, 40 (SP)
+   98:  SH        R0, 44 (SP)
+   9C:  BEQ       S0, R0, .oC4
+   A0:  SW        V1, 3C (SP)
+   A4:  LH        V1, A8 (S2)
+   A8:  LW        V0, B0 (S1)
+   AC:  SW        R0, 8C (S1)
+   B0:  SB        R0, B5 (S1)
+   B4:  ORI       V0, V0, 8
+   B8:  SW        V1, 84 (S1)
+   BC:  BEQ       R0, R0, .oD4
+   C0:  SW        V0, B0 (S1)
+        .oC4
+   C4:  LW        V0, B0 (S1)
+   C8:  ANDI      V0, V0, 4
+   CC:  BEQ       V0, R0, .o1EC
+   D0:  NOP
+        .oD4
+   D4:  SW        R0, 70 (S3)
+   D8:  SH        R0, 8E (S2)
+   DC:  LW        V1, CC (S1)
+   E0:  ADDIU     A0, R0, F7FF
+   E4:  SB        R0, 7 (S1)
+   E8:  LW        V0, 0 (S2)
+   EC:  LW        V1, 0 (V1)
+   F0:  AND       V0, V0, A0
+   F4:  SW        V0, 0 (S2)
+   F8:  SW        V1, 28 (S2)
+   FC:  LHU       V0, 86 (S1)
+  100:  SH        V0, A8 (S2)
+  104:  LW        V0, D0 (S1)
+  108:  SW        R0, 90 (S1)
+  10C:  LW        V0, 34 (V0)
+  110:  BNE       V0, R0, .o12C
+  114:  ADDIU     V1, R0, FDFF
+  118:  LW        V0, 0 (S2)
+  11C:  ADDIU     V1, R0, FFF7
+  120:  ORI       V0, V0, 200
+  124:  BEQ       R0, R0, .o138
+  128:  AND       V0, V0, V1
+        .o12C
+  12C:  LW        V0, 0 (S2)
+  130:  AND       V0, V0, V1
+  134:  ORI       V0, V0, 8
+        .o138
+  138:  SW        V0, 0 (S2)
+  13C:  LW        V0, B0 (S1)
+  140:  ANDI      V0, V0, 4
+  144:  BEQ       V0, R0, .o1C0
+  148:  ADDIU     A0, R0, 2
+  14C:  DADDU     A1, S2, R0
+  150:  DADDU     A2, R0, R0
+  154:  ADDIU     V0, R0, 63
+  158:  SW        V0, 70 (S3)
+  15C:  SW        R0, 74 (S3)
+  160:  LH        V1, A8 (S2)
+  164:  LIF       F0, 1.0
+  16C:  LIF       F2, 2.0
+  174:  LIF       F4, -20.0
+  17C:  ADDIU     V0, R0, 28
+  180:  SW        V0, 1C (SP)
+  184:  MTC1      V1, F6
+  188:  NOP
+  18C:  CVT.S.W   F6, F6
+  190:  MFC1      A3, F6
+  194:  ADDIU     V0, SP, 48
+  198:  SW        V0, 20 (SP)
+  19C:  SWC1      F0, 10 (SP)
+  1A0:  SWC1      F2, 14 (SP)
+  1A4:  JAL       8006FE90
+  1A8:  SWC1      F4, 18 (SP)
+  1AC:  LW        V0, B0 (S1)
+  1B0:  ADDIU     V1, R0, FFFB
+  1B4:  AND       V0, V0, V1
+  1B8:  BEQ       R0, R0, .o1EC
+  1BC:  SW        V0, B0 (S1)
+        .o1C0
+  1C0:  LW        V0, 0 (S1)
+  1C4:  LUI       V1, 4000
+  1C8:  AND       V0, V0, V1
+  1CC:  BEQ       V0, R0, .o1EC
+  1D0:  LUI       V1, BFFF
+  1D4:  ADDIU     V0, R0, C
+  1D8:  SW        V0, 70 (S3)
+  1DC:  LW        V0, 0 (S1)
+  1E0:  ORI       V1, V1, FFFF
+  1E4:  AND       V0, V0, V1
+  1E8:  SW        V0, 0 (S1)
+        .o1EC
+  1EC:  LW        V0, 90 (S1)
+  1F0:  BLEZ      V0, .o224
+  1F4:  ADDIU     V0, V0, FFFF
+  1F8:  BNE       V0, R0, .o418
+  1FC:  SW        V0, 90 (S1)
+  200:  LUI       V1, FFAA
+  204:  LW        V0, 28 (S2)
+  208:  ORI       V1, V1, FFD2
+  20C:  ADDU      V0, V0, V1
+  210:  SLTIU     V0, V0, 2
+  214:  BEQ       V0, R0, .o224
+  218:  LUI       V0, 55
+  21C:  ORI       V0, V0, C
+  220:  SW        V0, 28 (S2)
+        .o224
+  224:  LW        V1, 70 (S3)
+  228:  ADDIU     V0, R0, C
+  22C:  BEQ       V1, V0, .o350
+  230:  SLTI      V0, V1, D
+  234:  BEQ       V0, R0, .o274
+  238:  ADDIU     S0, R0, 1
+  23C:  BEQ       V1, S0, .o2B8
+  240:  SLTI      V0, V1, 2
+  244:  BEQ       V0, R0, .o25C
+  248:  ADDIU     V0, R0, 2
+  24C:  BEQ       V1, R0, .o2A4
+  250:  DADDU     A0, S3, R0
+  254:  BEQ       R0, R0, .o3AC
+  258:  NOP
+        .o25C
+  25C:  BEQ       V1, V0, .o2D0
+  260:  ADDIU     V0, R0, 3
+  264:  BEQ       V1, V0, .o33C
+  268:  DADDU     A0, S3, R0
+  26C:  BEQ       R0, R0, .o3AC
+  270:  NOP
+        .o274
+  274:  ADDIU     V0, R0, E
+  278:  BEQ       V1, V0, .o378
+  27C:  SLT       V0, V1, V0
+  280:  BNE       V0, R0, .o364
+  284:  DADDU     A0, S3, R0
+  288:  ADDIU     V0, R0, F
+  28C:  BEQ       V1, V0, .o390
+  290:  ADDIU     V0, R0, 63
+  294:  BEQ       V1, V0, .o3A4
+  298:  NOP
+  29C:  BEQ       R0, R0, .o3AC
+  2A0:  NOP
+        .o2A4
+  2A4:  DADDU     A1, S4, R0
+  2A8:  JAL       800495A0
+  2AC:  DADDU     A2, S5, R0
+  2B0:  LHU       V0, 86 (S1)
+  2B4:  SH        V0, A8 (S2)
+        .o2B8
+  2B8:  DADDU     A0, S3, R0
+  2BC:  DADDU     A1, S4, R0
+  2C0:  JAL       800496B8
+  2C4:  DADDU     A2, S5, R0
+  2C8:  BEQ       R0, R0, .o3AC
+  2CC:  NOP
+        .o2D0
+  2D0:  DADDU     A0, S3, R0
+  2D4:  DADDU     A1, S4, R0
+  2D8:  JAL       80049B44
+  2DC:  DADDU     A2, S5, R0
+  2E0:  LW        V1, 88 (S1)
+  2E4:  ADDIU     V0, R0, 6
+  2E8:  BNE       V1, V0, .o33C
+  2EC:  DADDU     A0, S3, R0
+  2F0:  JAL       {Func:GetRandom}
+  2F4:  ADDIU     A0, R0, 64
+  2F8:  SLTI      V0, V0, 21
+  2FC:  BEQL      V0, R0, .o33C
+  300:  DADDU     A0, S3, R0
+  304:  LW        V0, 8C (S1)
+  308:  BEQ       V0, R0, .o320
+  30C:  LUI       V0, 55
+  310:  ORI       V0, V0, 2F
+  314:  SW        R0, 8C (S1)
+  318:  BEQ       R0, R0, .o32C
+  31C:  SB        R0, B5 (S1)
+        .o320
+  320:  ORI       V0, V0, 2E
+  324:  SW        S0, 8C (S1)
+  328:  SB        S0, B5 (S1)
+        .o32C
+  32C:  SW        V0, 28 (S2)
+  330:  ADDIU     V0, R0, 7
+  334:  BEQ       R0, R0, .o418
+  338:  SW        V0, 90 (S1)
+        .o33C
+  33C:  DADDU     A1, S4, R0
+  340:  JAL       80049C04
+  344:  DADDU     A2, S5, R0
+  348:  BEQ       R0, R0, .o3AC
+  34C:  NOP
+        .o350
+  350:  DADDU     A0, S3, R0
+  354:  DADDU     A1, S4, R0
+  358:  JAL       $Function_80240570
+  35C:  DADDU     A2, S5, R0
+  360:  DADDU     A0, S3, R0
+        .o364
+  364:  DADDU     A1, S4, R0
+  368:  JAL       $Function_802405EC
+  36C:  DADDU     A2, S5, R0
+  370:  BEQ       R0, R0, .o3AC
+  374:  NOP
+        .o378
+  378:  DADDU     A0, S3, R0
+  37C:  DADDU     A1, S4, R0
+  380:  JAL       $Function_80240720
+  384:  DADDU     A2, S5, R0
+  388:  BEQ       R0, R0, .o3AC
+  38C:  NOP
+        .o390
+  390:  DADDU     A1, S4, R0
+  394:  JAL       $Function_80240884
+  398:  DADDU     A2, S5, R0
+  39C:  BEQ       R0, R0, .o3AC
+  3A0:  NOP
+        .o3A4
+  3A4:  JAL       8004A73C
+  3A8:  DADDU     A0, S3, R0
+        .o3AC
+  3AC:  LW        V1, 88 (S1)
+  3B0:  ADDIU     V0, R0, 6
+  3B4:  BNE       V1, V0, .o41C
+  3B8:  DADDU     V0, R0, R0
+  3BC:  LW        V0, 8C (S1)
+  3C0:  BEQ       V0, R0, .o3D0
+  3C4:  ADDIU     V0, R0, 1
+  3C8:  BEQ       R0, R0, .o3D4
+  3CC:  SB        V0, B5 (S1)
+        .o3D0
+  3D0:  SB        R0, B5 (S1)
+        .o3D4
+  3D4:  LW        V0, 8C (S1)
+  3D8:  BEQ       V0, R0, .o418
+  3DC:  LUI       V1, FFAA
+  3E0:  LW        V0, 28 (S2)
+  3E4:  ORI       V1, V1, FFFC
+  3E8:  ADDU      V1, V0, V1
+  3EC:  SLTIU     V0, V1, 15
+  3F0:  BEQ       V0, R0, .o418
+  3F4:  SLL       V0, V1, 2
+  3F8:  LTW       V0, V0 ($JumpTable_80245A78)
+  404:  JR        V0
+  408:  NOP
+% LBL: from $JumpTable_80245A78 , entry 20`
+  40C:  LW        V0, 28 (S2)
+  410:  ADDIU     V0, V0, 1
+  414:  SW        V0, 28 (S2)
+% LBL: from $JumpTable_80245A78 , entry 19`
+        .o418
+  418:  DADDU     V0, R0, R0
+        .o41C
+  41C:  LW        RA, 68 (SP)
+  420:  LW        S5, 64 (SP)
+  424:  LW        S4, 60 (SP)
+  428:  LW        S3, 5C (SP)
+  42C:  LW        S2, 58 (SP)
+  430:  LW        S1, 54 (SP)
+  434:  LW        S0, 50 (SP)
+  438:  JR        RA
+  43C:  ADDIU     SP, SP, 70
+
+#new:Function $Function_80240D44
+    0:  ADDIU     SP, SP, FFB8
+    4:  SW        S5, 24 (SP)
+    8:  DADDU     S5, A0, R0
+    C:  SW        RA, 2C (SP)
+   10:  SW        S6, 28 (SP)
+   14:  SW        S4, 20 (SP)
+   18:  SW        S3, 1C (SP)
+   1C:  SW        S2, 18 (SP)
+   20:  SW        S1, 14 (SP)
+   24:  SW        S0, 10 (SP)
+   28:  SDC1      F24, 40 (SP)
+   2C:  SDC1      F22, 38 (SP)
+   30:  SDC1      F20, 30 (SP)
+   34:  LW        S3, 148 (S5)
+   38:  LH        A0, 8 (S3)
+   3C:  JAL       8003AAEC
+   40:  DADDU     S6, A1, R0
+   44:  DADDU     S4, V0, R0
+   48:  SW        R0, 74 (S5)
+   4C:  LWC1      F24, 38 (S4)
+   50:  LWC1      F22, 40 (S4)
+   54:  DADDU     S2, R0, R0
+   58:  SW        R0, 78 (S5)
+   5C:  LW        V1, D0 (S3)
+   60:  LW        V0, 0 (V1)
+   64:  LIO       AT, 46FFFE00
+   6C:  MTC1      AT, F20
+   70:  BLEZ      V0, .oD4
+   74:  DADDU     S0, S2, R0
+   78:  DADDU     S1, S2, R0
+        .o7C
+   7C:  ADDU      V0, S1, V1
+   80:  MOV.S     F12, F24
+   84:  LWC1      F4, 4 (V0)
+   88:  CVT.S.W   F4, F4
+   8C:  MFC1      A2, F4
+   90:  LWC1      F4, C (V0)
+   94:  CVT.S.W   F4, F4
+   98:  MFC1      A3, F4
+   9C:  JAL       {Func:Dist2D}
+   A0:  MOV.S     F14, F22
+   A4:  C.LT.S    F0, F20
+   A8:  NOP
+   AC:  BC1F      .oBC
+   B0:  ADDIU     S1, S1, C
+   B4:  MOV.S     F20, F0
+   B8:  SW        S2, 78 (S5)
+        .oBC
+   BC:  LW        V1, D0 (S3)
+   C0:  ADDIU     S0, S0, 1
+   C4:  LW        V0, 0 (V1)
+   C8:  SLT       V0, S0, V0
+   CC:  BNE       V0, R0, .o7C
+   D0:  ADDIU     S2, S2, 1
+        .oD4
+   D4:  LW        V0, CC (S3)
+   D8:  LW        V0, 4 (V0)
+   DC:  SW        V0, 28 (S4)
+   E0:  LW        V0, D0 (S3)
+   E4:  LW        V0, 7C (V0)
+   E8:  BGEZ      V0, .oFC
+   EC:  NOP
+   F0:  LWC1      F0, 0 (S6)
+   F4:  BEQ       R0, R0, .o11C
+   F8:  SWC1      F0, 18 (S4)
+        .oFC
+   FC:  LAD       F2, $ConstDouble_80245AD0
+  104:  MTC1      V0, F0
+  108:  NOP
+  10C:  CVT.D.W   F0, F0
+  110:  DIV.D     F0, F0, F2
+  114:  CVT.S.D   F0, F0
+  118:  SWC1      F0, 18 (S4)
+        .o11C
+  11C:  ADDIU     V0, R0, 1
+  120:  SW        V0, 70 (S5)
+  124:  LW        RA, 2C (SP)
+  128:  LW        S6, 28 (SP)
+  12C:  LW        S5, 24 (SP)
+  130:  LW        S4, 20 (SP)
+  134:  LW        S3, 1C (SP)
+  138:  LW        S2, 18 (SP)
+  13C:  LW        S1, 14 (SP)
+  140:  LW        S0, 10 (SP)
+  144:  LDC1      F24, 40 (SP)
+  148:  LDC1      F22, 38 (SP)
+  14C:  LDC1      F20, 30 (SP)
+  150:  JR        RA
+  154:  ADDIU     SP, SP, 48
+
+#new:Function $Function_80240E9C
+    0:  ADDIU     SP, SP, FFA8
+    4:  SW        S2, 38 (SP)
+    8:  DADDU     S2, A0, R0
+    C:  SW        RA, 44 (SP)
+   10:  SW        S4, 40 (SP)
+   14:  SW        S3, 3C (SP)
+   18:  SW        S1, 34 (SP)
+   1C:  SW        S0, 30 (SP)
+   20:  SDC1      F22, 50 (SP)
+   24:  SDC1      F20, 48 (SP)
+   28:  LW        S1, 148 (S2)
+   2C:  DADDU     S3, A1, R0
+   30:  LH        A0, 8 (S1)
+   34:  JAL       8003AAEC
+   38:  DADDU     S4, A2, R0
+   3C:  LW        V1, 14 (S3)
+   40:  BLTZ      V1, .o104
+   44:  DADDU     S0, V0, R0
+   48:  LW        V0, 74 (S2)
+   4C:  BGTZ      V0, .o100
+   50:  ADDIU     V0, V0, FFFF
+   54:  DADDU     A0, S4, R0
+   58:  SW        V1, 74 (S2)
+   5C:  SW        R0, 10 (SP)
+   60:  LW        A2, C (S3)
+   64:  LW        A3, 10 (S3)
+   68:  JAL       800490B4
+   6C:  DADDU     A1, S1, R0
+   70:  BEQ       V0, R0, .oF8
+   74:  DADDU     A0, R0, R0
+   78:  DADDU     A1, S0, R0
+   7C:  DADDU     A2, R0, R0
+   80:  LH        V1, A8 (S0)
+   84:  LIF       F0, 1.0
+   8C:  LIF       F2, 2.0
+   94:  LIF       F4, -20.0
+   9C:  ADDIU     V0, R0, F
+   A0:  SW        V0, 1C (SP)
+   A4:  MTC1      V1, F6
+   A8:  NOP
+   AC:  CVT.S.W   F6, F6
+   B0:  MFC1      A3, F6
+   B4:  ADDIU     V0, SP, 28
+   B8:  SW        V0, 20 (SP)
+   BC:  SWC1      F0, 10 (SP)
+   C0:  SWC1      F2, 14 (SP)
+   C4:  JAL       8006FE90
+   C8:  SWC1      F4, 18 (SP)
+   CC:  DADDU     A0, S0, R0
+   D0:  ADDIU     A1, R0, 2F4
+   D4:  JAL       800494C0
+   D8:  LUI       A2, 20
+   DC:  LW        V0, 18 (S1)
+   E0:  LHU       V0, 2A (V0)
+   E4:  ANDI      V0, V0, 1
+   E8:  BNE       V0, R0, .o27C
+   EC:  ADDIU     V0, R0, A
+   F0:  BEQ       R0, R0, .o27C
+   F4:  ADDIU     V0, R0, C
+        .oF8
+   F8:  LW        V0, 74 (S2)
+   FC:  ADDIU     V0, V0, FFFF
+        .o100
+  100:  SW        V0, 74 (S2)
+        .o104
+  104:  LH        V0, 8C (S0)
+  108:  BNE       V0, R0, .o280
+  10C:  NOP
+  110:  LWC1      F0, 18 (S0)
+  114:  LIF       F3, 2.25
+  11C:  MTC1      R0, F2
+  120:  CVT.D.S   F0, F0
+  124:  C.LT.D    F0, F2
+  128:  NOP
+  12C:  BC1F      .o13C
+  130:  DADDU     A0, S0, R0
+  134:  BEQ       R0, R0, .o140
+  138:  DADDU     A1, R0, R0
+        .o13C
+  13C:  ADDIU     A1, R0, 1
+        .o140
+  140:  JAL       8003D660
+  144:  NOP
+  148:  LWC1      F12, 38 (S0)
+  14C:  LW        V1, 78 (S2)
+  150:  LWC1      F14, 40 (S0)
+  154:  SLL       V0, V1, 1
+  158:  ADDU      V0, V0, V1
+  15C:  LW        V1, D0 (S1)
+  160:  SLL       V0, V0, 2
+  164:  ADDU      V0, V0, V1
+  168:  LWC1      F22, 4 (V0)
+  16C:  CVT.S.W   F22, F22
+  170:  LWC1      F20, C (V0)
+  174:  CVT.S.W   F20, F20
+  178:  MFC1      A2, F22
+  17C:  MFC1      A3, F20
+  180:  JAL       80029C80
+  184:  NOP
+  188:  LW        A1, 18 (S0)
+  18C:  MFC1      A2, F0
+  190:  DADDU     A0, S0, R0
+  194:  JAL       8003AA54
+  198:  SW        A2, C (S0)
+  19C:  LWC1      F12, 38 (S0)
+  1A0:  LWC1      F14, 40 (S0)
+  1A4:  MFC1      A2, F22
+  1A8:  MFC1      A3, F20
+  1AC:  JAL       {Func:Dist2D}
+  1B0:  NOP
+  1B4:  LWC1      F2, 18 (S0)
+  1B8:  C.LE.S    F0, F2
+  1BC:  NOP
+  1C0:  BC1F      .o280
+  1C4:  ADDIU     A0, R0, 3E8
+  1C8:  ADDIU     V0, R0, 2
+  1CC:  JAL       {Func:GetRandom}
+  1D0:  SW        V0, 70 (S2)
+  1D4:  LIO       V1, 55555556
+  1DC:  MULT      V0, V1
+  1E0:  SRA       A0, V0, 1F
+  1E4:  MFHI      T0
+  1E8:  SUBU      A0, T0, A0
+  1EC:  SLL       V1, A0, 1
+  1F0:  ADDU      V1, V1, A0
+  1F4:  SUBU      V0, V0, V1
+  1F8:  ADDIU     V1, V0, 2
+  1FC:  SW        V1, 74 (S2)
+  200:  LW        V0, 2C (S3)
+  204:  BLEZ      V0, .o22C
+  208:  ADDIU     V0, R0, 4
+  20C:  LW        V0, 4 (S3)
+  210:  BLEZ      V0, .o22C
+  214:  ADDIU     V0, R0, 4
+  218:  LW        V0, 8 (S3)
+  21C:  BLEZ      V0, .o22C
+  220:  ADDIU     V0, R0, 4
+  224:  BNE       V1, R0, .o230
+  228:  NOP
+        .o22C
+  22C:  SW        V0, 70 (S2)
+        .o230
+  230:  JAL       {Func:GetRandom}
+  234:  ADDIU     A0, R0, 2710
+  238:  LIO       V1, 51EB851F
+  240:  MULT      V0, V1
+  244:  SRA       V1, V0, 1F
+  248:  MFHI      T0
+  24C:  SRA       A0, T0, 5
+  250:  SUBU      A0, A0, V1
+  254:  SLL       V1, A0, 1
+  258:  ADDU      V1, V1, A0
+  25C:  SLL       V1, V1, 3
+  260:  ADDU      V1, V1, A0
+  264:  SLL       V1, V1, 2
+  268:  LW        A0, 4 (S3)
+  26C:  SUBU      V0, V0, V1
+  270:  SLT       V0, V0, A0
+  274:  BEQ       V0, R0, .o280
+  278:  ADDIU     V0, R0, 4
+        .o27C
+  27C:  SW        V0, 70 (S2)
+        .o280
+  280:  LW        RA, 44 (SP)
+  284:  LW        S4, 40 (SP)
+  288:  LW        S3, 3C (SP)
+  28C:  LW        S2, 38 (SP)
+  290:  LW        S1, 34 (SP)
+  294:  LW        S0, 30 (SP)
+  298:  LDC1      F22, 50 (SP)
+  29C:  LDC1      F20, 48 (SP)
+  2A0:  JR        RA
+  2A4:  ADDIU     SP, SP, 58
+
+#new:Function $Function_80241144
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S3, 1C (SP)
+    8:  DADDU     S3, A0, R0
+    C:  SW        RA, 20 (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S1, 14 (SP)
+   18:  SW        S0, 10 (SP)
+   1C:  LW        S2, 148 (S3)
+   20:  LH        A0, 8 (S2)
+   24:  JAL       8003AAEC
+   28:  DADDU     S1, A1, R0
+   2C:  LW        A0, 8 (S1)
+   30:  DADDU     S0, V0, R0
+   34:  SRL       V1, A0, 1F
+   38:  ADDU      A0, A0, V1
+   3C:  SRA       A0, A0, 1
+   40:  JAL       {Func:GetRandom}
+   44:  ADDIU     A0, A0, 1
+   48:  LW        V1, 8 (S1)
+   4C:  ADDIU     A0, R0, B4
+   50:  SRL       A1, V1, 1F
+   54:  ADDU      V1, V1, A1
+   58:  SRA       V1, V1, 1
+   5C:  ADDU      V1, V1, V0
+   60:  JAL       {Func:GetRandom}
+   64:  SH        V1, 8E (S0)
+   68:  LWC1      F12, C (S0)
+   6C:  MTC1      V0, F0
+   70:  NOP
+   74:  CVT.S.W   F0, F0
+   78:  ADD.S     F12, F12, F0
+   7C:  LIF       F0, 90.0
+   84:  JAL       80029B24
+   88:  SUB.S     F12, F12, F0
+   8C:  SWC1      F0, C (S0)
+   90:  LW        V0, CC (S2)
+   94:  LW        V0, 0 (V0)
+   98:  SW        V0, 28 (S0)
+   9C:  ADDIU     V0, R0, 3
+   A0:  SW        V0, 70 (S3)
+   A4:  LW        RA, 20 (SP)
+   A8:  LW        S3, 1C (SP)
+   AC:  LW        S2, 18 (SP)
+   B0:  LW        S1, 14 (SP)
+   B4:  LW        S0, 10 (SP)
+   B8:  JR        RA
+   BC:  ADDIU     SP, SP, 28
+
+#new:Function $Function_80241204
+    0:  ADDIU     SP, SP, FFB8
+    4:  SW        S4, 40 (SP)
+    8:  DADDU     S4, A0, R0
+    C:  SW        RA, 44 (SP)
+   10:  SW        S3, 3C (SP)
+   14:  SW        S2, 38 (SP)
+   18:  SW        S1, 34 (SP)
+   1C:  SW        S0, 30 (SP)
+   20:  LW        S1, 148 (S4)
+   24:  DADDU     S2, A1, R0
+   28:  LH        A0, 8 (S1)
+   2C:  JAL       8003AAEC
+   30:  DADDU     S3, A2, R0
+   34:  LW        V1, 14 (S2)
+   38:  BLTZ      V1, .o100
+   3C:  DADDU     S0, V0, R0
+   40:  DADDU     A0, S3, R0
+   44:  SW        R0, 10 (SP)
+   48:  LW        A2, 24 (S2)
+   4C:  LW        A3, 28 (S2)
+   50:  JAL       800490B4
+   54:  DADDU     A1, S1, R0
+   58:  BEQ       V0, R0, .o100
+   5C:  DADDU     A0, R0, R0
+   60:  DADDU     A1, S0, R0
+   64:  DADDU     A2, R0, R0
+   68:  LH        V1, A8 (S0)
+   6C:  LIF       F0, 1.0
+   74:  LIF       F2, 2.0
+   7C:  LIF       F4, -20.0
+   84:  ADDIU     V0, R0, F
+   88:  SW        V0, 1C (SP)
+   8C:  MTC1      V1, F6
+   90:  NOP
+   94:  CVT.S.W   F6, F6
+   98:  MFC1      A3, F6
+   9C:  ADDIU     V0, SP, 28
+   A0:  SW        V0, 20 (SP)
+   A4:  SWC1      F0, 10 (SP)
+   A8:  SWC1      F2, 14 (SP)
+   AC:  JAL       8006FE90
+   B0:  SWC1      F4, 18 (SP)
+   B4:  LAW       V0, 800F7B30
+   BC:  LWC1      F12, 38 (S0)
+   C0:  LWC1      F14, 40 (S0)
+   C4:  LW        A2, 28 (V0)
+   C8:  JAL       80029C80
+   CC:  LW        A3, 30 (V0)
+   D0:  DADDU     A0, S0, R0
+   D4:  ADDIU     A1, R0, 2F4
+   D8:  LUI       A2, 20
+   DC:  JAL       800494C0
+   E0:  SWC1      F0, C (A0)
+   E4:  LW        V0, 18 (S1)
+   E8:  LHU       V0, 2A (V0)
+   EC:  ANDI      V0, V0, 1
+   F0:  BNE       V0, R0, .o198
+   F4:  ADDIU     V0, R0, A
+   F8:  BEQ       R0, R0, .o198
+   FC:  ADDIU     V0, R0, C
+        .o100
+  100:  LH        V0, 8C (S0)
+  104:  BNE       V0, R0, .o19C
+  108:  NOP
+  10C:  LHU       V0, 8E (S0)
+  110:  ADDIU     V0, V0, FFFF
+  114:  SH        V0, 8E (S0)
+  118:  SLL       V0, V0, 10
+  11C:  BNE       V0, R0, .o19C
+  120:  NOP
+  124:  LW        V0, 74 (S4)
+  128:  ADDIU     V0, V0, FFFF
+  12C:  BEQ       V0, R0, .o194
+  130:  SW        V0, 74 (S4)
+  134:  LW        V0, 18 (S1)
+  138:  LHU       V0, 2A (V0)
+  13C:  ANDI      V0, V0, 10
+  140:  BNE       V0, R0, .o160
+  144:  NOP
+  148:  LWC1      F0, C (S0)
+  14C:  LIF       F12, 180.0
+  154:  JAL       80029B24
+  158:  ADD.S     F12, F0, F12
+  15C:  SWC1      F0, C (S0)
+        .o160
+  160:  LW        A0, 8 (S2)
+  164:  SRL       V0, A0, 1F
+  168:  ADDU      A0, A0, V0
+  16C:  SRA       A0, A0, 1
+  170:  JAL       {Func:GetRandom}
+  174:  ADDIU     A0, A0, 1
+  178:  LW        V1, 8 (S2)
+  17C:  SRL       A0, V1, 1F
+  180:  ADDU      V1, V1, A0
+  184:  SRA       V1, V1, 1
+  188:  ADDU      V1, V1, V0
+  18C:  BEQ       R0, R0, .o19C
+  190:  SH        V1, 8E (S0)
+        .o194
+  194:  ADDIU     V0, R0, 4
+        .o198
+  198:  SW        V0, 70 (S4)
+        .o19C
+  19C:  LW        RA, 44 (SP)
+  1A0:  LW        S4, 40 (SP)
+  1A4:  LW        S3, 3C (SP)
+  1A8:  LW        S2, 38 (SP)
+  1AC:  LW        S1, 34 (SP)
+  1B0:  LW        S0, 30 (SP)
+  1B4:  JR        RA
+  1B8:  ADDIU     SP, SP, 48
+
+#new:Function $Function_802413C0
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  LW        S0, 148 (S1)
+   1C:  LH        A0, 8 (S0)
+   20:  JAL       8003AAEC
+   24:  DADDU     S2, A1, R0
+   28:  LW        V1, 78 (S1)
+   2C:  ADDIU     V1, V1, 1
+   30:  SW        V1, 78 (S1)
+   34:  LW        A0, D0 (S0)
+   38:  LW        A0, 0 (A0)
+   3C:  SLT       V1, V1, A0
+   40:  BNE       V1, R0, .o4C
+   44:  DADDU     A1, V0, R0
+   48:  SW        R0, 78 (S1)
+        .o4C
+   4C:  LW        V0, CC (S0)
+   50:  LW        V0, 4 (V0)
+   54:  SW        V0, 28 (A1)
+   58:  LW        V0, D0 (S0)
+   5C:  LW        V0, 7C (V0)
+   60:  BGEZ      V0, .o74
+   64:  NOP
+   68:  LWC1      F0, 0 (S2)
+   6C:  BEQ       R0, R0, .o94
+   70:  SWC1      F0, 18 (A1)
+        .o74
+   74:  LAD       F2, $ConstDouble_80245AD8
+   7C:  MTC1      V0, F0
+   80:  NOP
+   84:  CVT.D.W   F0, F0
+   88:  DIV.D     F0, F0, F2
+   8C:  CVT.S.D   F0, F0
+   90:  SWC1      F0, 18 (A1)
+        .o94
+   94:  ADDIU     V0, R0, 1
+   98:  SW        V0, 70 (S1)
+   9C:  LW        RA, 1C (SP)
+   A0:  LW        S2, 18 (SP)
+   A4:  LW        S1, 14 (SP)
+   A8:  LW        S0, 10 (SP)
+   AC:  JR        RA
+   B0:  ADDIU     SP, SP, 20
+
+% Origin: HEURISTIC
+#new:Function $Function_80241474
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 18 (SP)
+   10:  SW        S0, 10 (SP)
+   14:  LW        S0, 148 (S1)
+   18:  JAL       8003AAEC
+   1C:  LH        A0, 8 (S0)
+   20:  LW        V1, CC (S0)
+   24:  LIF       F4, 10.0
+   2C:  LIF       F0, 2.0
+   34:  LWC1      F2, 3C (V0)
+   38:  LW        A0, 10 (V1)
+   3C:  LW        V1, 0 (V0)
+   40:  SWC1      F4, 1C (V0)
+   44:  SWC1      F0, 14 (V0)
+   48:  SWC1      F2, 64 (V0)
+   4C:  ORI       V1, V1, 800
+   50:  SW        V1, 0 (V0)
+   54:  SW        A0, 28 (V0)
+   58:  ADDIU     V0, R0, B
+   5C:  SW        V0, 70 (S1)
+   60:  LW        RA, 18 (SP)
+   64:  LW        S1, 14 (SP)
+   68:  LW        S0, 10 (SP)
+   6C:  JR        RA
+   70:  ADDIU     SP, SP, 20
+
+% Origin: HEURISTIC
+#new:Function $Function_802414E8
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        S0, 10 (SP)
+    8:  DADDU     S0, A0, R0
+    C:  SW        RA, 14 (SP)
+   10:  LW        V0, 148 (S0)
+   14:  JAL       8003AAEC
+   18:  LH        A0, 8 (V0)
+   1C:  DADDU     A0, V0, R0
+   20:  LWC1      F2, 3C (A0)
+   24:  LWC1      F0, 1C (A0)
+   28:  ADD.S     F2, F2, F0
+   2C:  LWC1      F4, 14 (A0)
+   30:  SUB.S     F0, F0, F4
+   34:  LWC1      F4, 64 (A0)
+   38:  C.LT.S    F4, F2
+   3C:  SWC1      F2, 3C (A0)
+   40:  BC1T      .o68
+   44:  SWC1      F0, 1C (A0)
+   48:  LW        V0, 0 (A0)
+   4C:  ADDIU     V1, R0, F7FF
+   50:  SWC1      F4, 3C (A0)
+   54:  SW        R0, 1C (A0)
+   58:  AND       V0, V0, V1
+   5C:  SW        V0, 0 (A0)
+   60:  ADDIU     V0, R0, C
+   64:  SW        V0, 70 (S0)
+        .o68
+   68:  LW        RA, 14 (SP)
+   6C:  LW        S0, 10 (SP)
+   70:  JR        RA
+   74:  ADDIU     SP, SP, 18
+
+% Origin: HEURISTIC
+#new:Function $Function_80241560
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S3, 1C (SP)
+    8:  DADDU     S3, A0, R0
+    C:  SW        RA, 20 (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S1, 14 (SP)
+   18:  SW        S0, 10 (SP)
+   1C:  SDC1      F20, 28 (SP)
+   20:  LW        S1, 148 (S3)
+   24:  LH        A0, 8 (S1)
+   28:  JAL       8003AAEC
+   2C:  DADDU     S0, A1, R0
+   30:  LW        A0, 20 (S0)
+   34:  DADDU     S2, V0, R0
+   38:  SRL       V1, A0, 1F
+   3C:  ADDU      A0, A0, V1
+   40:  SRA       A0, A0, 1
+   44:  JAL       {Func:GetRandom}
+   48:  ADDIU     A0, A0, 1
+   4C:  LW        V1, 20 (S0)
+   50:  LWC1      F12, 38 (S2)
+   54:  SRL       A0, V1, 1F
+   58:  ADDU      V1, V1, A0
+   5C:  SRA       V1, V1, 1
+   60:  ADDU      V1, V1, V0
+   64:  SH        V1, 8E (S2)
+   68:  LW        V0, CC (S1)
+   6C:  LWC1      F14, 40 (S2)
+   70:  LW        V0, C (V0)
+   74:  SW        V0, 28 (S2)
+   78:  LWC1      F0, 18 (S0)
+   7C:  LAW       V0, 800F7B30
+   84:  SWC1      F0, 18 (S2)
+   88:  LW        A2, 28 (V0)
+   8C:  JAL       80029C80
+   90:  LW        A3, 30 (V0)
+   94:  MOV.S     F20, F0
+   98:  LWC1      F12, C (S2)
+   9C:  JAL       80029C28
+   A0:  MOV.S     F14, F20
+   A4:  MOV.S     F2, F0
+   A8:  LW        V0, 1C (S0)
+   AC:  ABS.S     F0, F2
+   B0:  MTC1      V0, F4
+   B4:  NOP
+   B8:  CVT.S.W   F4, F4
+   BC:  C.LT.S    F4, F0
+   C0:  NOP
+   C4:  BC1F      .oFC
+   C8:  NOP
+   CC:  MTC1      R0, F0
+   D0:  LWC1      F20, C (S2)
+   D4:  C.LT.S    F2, F0
+   D8:  NOP
+   DC:  BC1F      .oF8
+   E0:  SUBU      V0, R0, V0
+   E4:  MTC1      V0, F0
+   E8:  NOP
+   EC:  CVT.S.W   F0, F0
+   F0:  BEQ       R0, R0, .oFC
+   F4:  ADD.S     F20, F20, F0
+        .oF8
+   F8:  ADD.S     F20, F20, F4
+        .oFC
+   FC:  JAL       80029B24
+  100:  MOV.S     F12, F20
+  104:  ADDIU     V0, R0, D
+  108:  SWC1      F0, C (S2)
+  10C:  SW        V0, 70 (S3)
+  110:  LW        RA, 20 (SP)
+  114:  LW        S3, 1C (SP)
+  118:  LW        S2, 18 (SP)
+  11C:  LW        S1, 14 (SP)
+  120:  LW        S0, 10 (SP)
+  124:  LDC1      F20, 28 (SP)
+  128:  JR        RA
+  12C:  ADDIU     SP, SP, 30
+
+% Origin: HEURISTIC
+#new:Function $Function_80241690
+    0:  ADDIU     SP, SP, FFB8
+    4:  SW        S3, 3C (SP)
+    8:  DADDU     S3, A0, R0
+    C:  SW        RA, 40 (SP)
+   10:  SW        S2, 38 (SP)
+   14:  SW        S1, 34 (SP)
+   18:  SW        S0, 30 (SP)
+   1C:  LW        S2, 148 (S3)
+   20:  DADDU     S1, A1, R0
+   24:  LH        A0, 8 (S2)
+   28:  JAL       8003AAEC
+   2C:  DADDU     S0, A2, R0
+   30:  DADDU     A0, S0, R0
+   34:  DADDU     A1, S2, R0
+   38:  ADDIU     V1, R0, 1
+   3C:  SW        V1, 10 (SP)
+   40:  LW        A2, 24 (S1)
+   44:  LW        A3, 28 (S1)
+   48:  JAL       800490B4
+   4C:  DADDU     S0, V0, R0
+   50:  BNE       V0, R0, .oCC
+   54:  DADDU     A0, S0, R0
+   58:  ADDIU     A0, R0, 2
+   5C:  DADDU     A1, S0, R0
+   60:  DADDU     A2, R0, R0
+   64:  LH        V1, A8 (S0)
+   68:  LIF       F0, 1.0
+   70:  LIF       F2, 2.0
+   78:  LIF       F4, -20.0
+   80:  ADDIU     V0, R0, F
+   84:  SW        V0, 1C (SP)
+   88:  MTC1      V1, F6
+   8C:  NOP
+   90:  CVT.S.W   F6, F6
+   94:  MFC1      A3, F6
+   98:  ADDIU     V0, SP, 28
+   9C:  SW        V0, 20 (SP)
+   A0:  SWC1      F0, 10 (SP)
+   A4:  SWC1      F2, 14 (SP)
+   A8:  JAL       8006FE90
+   AC:  SWC1      F4, 18 (SP)
+   B0:  LW        V0, CC (S2)
+   B4:  LW        V1, 0 (V0)
+   B8:  ADDIU     V0, R0, 19
+   BC:  SH        V0, 8E (S0)
+   C0:  ADDIU     V0, R0, E
+   C4:  BEQ       R0, R0, .o100
+   C8:  SW        V1, 28 (S0)
+        .oCC
+   CC:  JAL       8003D660
+   D0:  ADDIU     A1, R0, 1
+   D4:  LW        A1, 18 (S0)
+   D8:  LW        A2, C (S0)
+   DC:  JAL       8003AA54
+   E0:  DADDU     A0, S0, R0
+   E4:  LH        V0, 8E (S0)
+   E8:  LHU       V1, 8E (S0)
+   EC:  BLEZ      V0, .oFC
+   F0:  ADDIU     V0, V1, FFFF
+   F4:  BEQ       R0, R0, .o104
+   F8:  SH        V0, 8E (S0)
+        .oFC
+   FC:  ADDIU     V0, R0, C
+        .o100
+  100:  SW        V0, 70 (S3)
+        .o104
+  104:  LW        RA, 40 (SP)
+  108:  LW        S3, 3C (SP)
+  10C:  LW        S2, 38 (SP)
+  110:  LW        S1, 34 (SP)
+  114:  LW        S0, 30 (SP)
+  118:  JR        RA
+  11C:  ADDIU     SP, SP, 48
+
+% Origin: HEURISTIC
+#new:Function $Function_802417B0
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 18 (SP)
+   10:  SW        S0, 10 (SP)
+   14:  LW        S0, 148 (S1)
+   18:  JAL       8003AAEC
+   1C:  LH        A0, 8 (S0)
+   20:  LHU       V1, 8E (V0)
+   24:  ADDIU     V1, V1, FFFF
+   28:  SH        V1, 8E (V0)
+   2C:  SLL       V1, V1, 10
+   30:  BNE       V1, R0, .o54
+   34:  NOP
+   38:  LW        V0, B0 (S0)
+   3C:  ANDI      V0, V0, 80
+   40:  BEQ       V0, R0, .o50
+   44:  ADDIU     V0, R0, F
+   48:  BEQ       R0, R0, .o54
+   4C:  SW        V0, 70 (S1)
+        .o50
+   50:  SW        R0, 70 (S1)
+        .o54
+   54:  LW        RA, 18 (SP)
+   58:  LW        S1, 14 (SP)
+   5C:  LW        S0, 10 (SP)
+   60:  JR        RA
+   64:  ADDIU     SP, SP, 20
+
+% Origin: HEURISTIC
+#new:Function $Function_80241818
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  LW        S0, 148 (S1)
+   1C:  LH        A0, 8 (S0)
+   20:  JAL       8003AAEC
+   24:  DADDU     S2, A1, R0
+   28:  LW        V1, D0 (S0)
+   2C:  LW        A0, 78 (S1)
+   30:  LW        V1, 0 (V1)
+   34:  SLT       V1, A0, V1
+   38:  BEQ       V1, R0, .o88
+   3C:  DADDU     A2, V0, R0
+   40:  SLL       V0, A0, 1
+   44:  ADDU      V0, V0, A0
+   48:  SLL       A1, V0, 2
+        .o4C
+   4C:  LW        V1, D0 (S0)
+   50:  LWC1      F2, 3C (A2)
+   54:  ADDU      V0, A1, V1
+   58:  LWC1      F0, 8 (V0)
+   5C:  CVT.S.W   F0, F0
+   60:  C.LE.S    F0, F2
+   64:  NOP
+   68:  BC1FL     .o78
+   6C:  ADDIU     A0, A0, 1
+   70:  BEQ       R0, R0, .o88
+   74:  SW        A0, 78 (S1)
+        .o78
+   78:  LW        V0, 0 (V1)
+   7C:  SLT       V0, A0, V0
+   80:  BNE       V0, R0, .o4C
+   84:  ADDIU     A1, A1, C
+        .o88
+   88:  LWC1      F0, 0 (S2)
+   8C:  SWC1      F0, 18 (A2)
+   90:  LW        V0, CC (S0)
+   94:  LW        V0, 4 (V0)
+   98:  SW        V0, 28 (A2)
+   9C:  ADDIU     V0, R0, 1
+   A0:  SW        R0, 74 (S1)
+   A4:  SW        V0, 70 (S1)
+   A8:  LW        RA, 1C (SP)
+   AC:  LW        S2, 18 (SP)
+   B0:  LW        S1, 14 (SP)
+   B4:  LW        S0, 10 (SP)
+   B8:  JR        RA
+   BC:  ADDIU     SP, SP, 20
+
+% Origin: HEURISTIC
+#new:Function $Function_802418D8
+    0:  ADDIU     SP, SP, FF98
+    4:  SW        S4, 58 (SP)
+    8:  DADDU     S4, A0, R0
+    C:  SW        RA, 60 (SP)
+   10:  SW        S5, 5C (SP)
+   14:  SW        S3, 54 (SP)
+   18:  SW        S2, 50 (SP)
+   1C:  SW        S1, 4C (SP)
+   20:  SW        S0, 48 (SP)
+   24:  LW        S1, 148 (S4)
+   28:  LH        A0, 8 (S1)
+   2C:  JAL       8003AAEC
+   30:  DADDU     S0, A1, R0
+   34:  LW        V1, C (S4)
+   38:  DADDU     A0, S4, R0
+   3C:  LW        A1, 0 (V1)
+   40:  JAL       {Func:GetVariable}
+   44:  DADDU     S2, V0, R0
+   48:  SW        R0, 18 (SP)
+   4C:  LW        V1, D0 (S1)
+   50:  LW        V1, 94 (V1)
+   54:  SW        V1, 1C (SP)
+   58:  LW        V1, D0 (S1)
+   5C:  LW        V1, 80 (V1)
+   60:  SW        V1, 20 (SP)
+   64:  LW        V1, D0 (S1)
+   68:  LW        V1, 88 (V1)
+   6C:  SW        V1, 24 (SP)
+   70:  LW        V1, D0 (S1)
+   74:  LW        V1, 8C (V1)
+   78:  ADDIU     S5, SP, 18
+   7C:  SW        V1, 28 (SP)
+   80:  LW        V1, D0 (S1)
+   84:  LIF       F0, 65.0
+   8C:  LW        V1, 90 (V1)
+   90:  DADDU     S3, V0, R0
+   94:  SWC1      F0, 30 (SP)
+   98:  SH        R0, 34 (SP)
+   9C:  BNE       S0, R0, .oB4
+   A0:  SW        V1, 2C (SP)
+   A4:  LW        V0, B0 (S1)
+   A8:  ANDI      V0, V0, 4
+   AC:  BEQ       V0, R0, .o1C0
+   B0:  NOP
+        .oB4
+   B4:  ADDIU     A0, R0, F7FF
+   B8:  SW        R0, 70 (S4)
+   BC:  SH        R0, 8E (S2)
+   C0:  LW        V0, CC (S1)
+   C4:  LW        V1, 0 (S2)
+   C8:  LW        V0, 0 (V0)
+   CC:  AND       V1, V1, A0
+   D0:  SW        V1, 0 (S2)
+   D4:  SW        V0, 28 (S2)
+   D8:  LW        V0, D0 (S1)
+   DC:  LW        V0, 98 (V0)
+   E0:  BNEL      V0, R0, .oF8
+   E4:  ADDIU     V0, R0, FDFF
+   E8:  ORI       V0, V1, 200
+   EC:  ADDIU     V1, R0, FFF7
+   F0:  BEQ       R0, R0, .o100
+   F4:  AND       V0, V0, V1
+        .oF8
+   F8:  AND       V0, V1, V0
+   FC:  ORI       V0, V0, 8
+        .o100
+  100:  SW        V0, 0 (S2)
+  104:  LW        V0, B0 (S1)
+  108:  ANDI      V0, V0, 4
+  10C:  BEQ       V0, R0, .o130
+  110:  ADDIU     V0, R0, 63
+  114:  SW        V0, 70 (S4)
+  118:  SW        R0, 74 (S4)
+  11C:  LW        V0, B0 (S1)
+  120:  ADDIU     V1, R0, FFFB
+  124:  AND       V0, V0, V1
+  128:  BEQ       R0, R0, .o15C
+  12C:  SW        V0, B0 (S1)
+        .o130
+  130:  LW        V0, 0 (S1)
+  134:  LUI       V1, 4000
+  138:  AND       V0, V0, V1
+  13C:  BEQ       V0, R0, .o15C
+  140:  LUI       V1, BFFF
+  144:  ADDIU     V0, R0, C
+  148:  SW        V0, 70 (S4)
+  14C:  LW        V0, 0 (S1)
+  150:  ORI       V1, V1, FFFF
+  154:  AND       V0, V0, V1
+  158:  SW        V0, 0 (S1)
+        .o15C
+  15C:  ADDIU     A1, SP, 38
+  160:  ADDIU     A2, SP, 3C
+  164:  LWC1      F0, 38 (S2)
+  168:  LH        V0, A8 (S2)
+  16C:  LIF       F4, 100.0
+  174:  MTC1      V0, F6
+  178:  NOP
+  17C:  CVT.S.W   F6, F6
+  180:  ADDIU     V0, SP, 44
+  184:  SWC1      F0, 38 (SP)
+  188:  LWC1      F0, 3C (S2)
+  18C:  LWC1      F2, 40 (S2)
+  190:  ADD.S     F0, F0, F6
+  194:  SWC1      F4, 44 (SP)
+  198:  SWC1      F2, 40 (SP)
+  19C:  SWC1      F0, 3C (SP)
+  1A0:  SW        V0, 10 (SP)
+  1A4:  LW        A0, 80 (S2)
+  1A8:  JAL       800DCB7C
+  1AC:  ADDIU     A3, SP, 40
+  1B0:  BEQ       V0, R0, .o1C0
+  1B4:  NOP
+  1B8:  LWC1      F0, 3C (SP)
+  1BC:  SWC1      F0, 3C (S2)
+        .o1C0
+  1C0:  LW        V1, 70 (S4)
+  1C4:  SLTIU     V0, V1, 64
+  1C8:  BEQ       V0, R0, .o2D4
+  1CC:  SLL       V0, V1, 2
+  1D0:  LTW       V0, V0 ($JumpTable_80245AE0)
+  1DC:  JR        V0
+  1E0:  NOP
+% LBL: from $JumpTable_80245AE0 , entry 0`
+  1E4:  DADDU     A0, S4, R0
+  1E8:  DADDU     A1, S3, R0
+  1EC:  JAL       $Function_80240D44
+  1F0:  DADDU     A2, S5, R0
+% LBL: from $JumpTable_80245AE0 , entry 1`
+  1F4:  DADDU     A0, S4, R0
+  1F8:  DADDU     A1, S3, R0
+  1FC:  JAL       $Function_80240E9C
+  200:  DADDU     A2, S5, R0
+  204:  BEQ       R0, R0, .o2D4
+  208:  NOP
+% LBL: from $JumpTable_80245AE0 , entry 2`
+  20C:  DADDU     A0, S4, R0
+  210:  DADDU     A1, S3, R0
+  214:  JAL       $Function_80241144
+  218:  DADDU     A2, S5, R0
+% LBL: from $JumpTable_80245AE0 , entry 3`
+  21C:  DADDU     A0, S4, R0
+  220:  DADDU     A1, S3, R0
+  224:  JAL       $Function_80241204
+  228:  DADDU     A2, S5, R0
+  22C:  BEQ       R0, R0, .o2D4
+  230:  NOP
+% LBL: from $JumpTable_80245AE0 , entry 4`
+  234:  DADDU     A0, S4, R0
+  238:  DADDU     A1, S3, R0
+  23C:  JAL       $Function_802413C0
+  240:  DADDU     A2, S5, R0
+  244:  BEQ       R0, R0, .o2D4
+  248:  NOP
+% LBL: from $JumpTable_80245AE0 , entry 10`
+  24C:  DADDU     A0, S4, R0
+  250:  DADDU     A1, S3, R0
+  254:  JAL       $Function_80241474
+  258:  DADDU     A2, S5, R0
+% LBL: from $JumpTable_80245AE0 , entry 11`
+  25C:  DADDU     A0, S4, R0
+  260:  DADDU     A1, S3, R0
+  264:  JAL       $Function_802414E8
+  268:  DADDU     A2, S5, R0
+  26C:  BEQ       R0, R0, .o2D4
+  270:  NOP
+% LBL: from $JumpTable_80245AE0 , entry 12`
+  274:  DADDU     A0, S4, R0
+  278:  DADDU     A1, S3, R0
+  27C:  JAL       $Function_80241560
+  280:  DADDU     A2, S5, R0
+% LBL: from $JumpTable_80245AE0 , entry 13`
+  284:  DADDU     A0, S4, R0
+  288:  DADDU     A1, S3, R0
+  28C:  JAL       $Function_80241690
+  290:  DADDU     A2, S5, R0
+  294:  BEQ       R0, R0, .o2D4
+  298:  NOP
+% LBL: from $JumpTable_80245AE0 , entry 14`
+  29C:  DADDU     A0, S4, R0
+  2A0:  DADDU     A1, S3, R0
+  2A4:  JAL       $Function_802417B0
+  2A8:  DADDU     A2, S5, R0
+  2AC:  BEQ       R0, R0, .o2D4
+  2B0:  NOP
+% LBL: from $JumpTable_80245AE0 , entry 15`
+  2B4:  DADDU     A0, S4, R0
+  2B8:  DADDU     A1, S3, R0
+  2BC:  JAL       $Function_80241818
+  2C0:  DADDU     A2, S5, R0
+  2C4:  BEQ       R0, R0, .o2D4
+  2C8:  NOP
+% LBL: from $JumpTable_80245AE0 , entry 99`
+  2CC:  JAL       8004A73C
+  2D0:  DADDU     A0, S4, R0
+% LBL: from $JumpTable_80245AE0 , entry 98`
+        .o2D4
+  2D4:  LW        RA, 60 (SP)
+  2D8:  LW        S5, 5C (SP)
+  2DC:  LW        S4, 58 (SP)
+  2E0:  LW        S3, 54 (SP)
+  2E4:  LW        S2, 50 (SP)
+  2E8:  LW        S1, 4C (SP)
+  2EC:  LW        S0, 48 (SP)
+  2F0:  DADDU     V0, R0, R0
+  2F4:  JR        RA
+  2F8:  ADDIU     SP, SP, 68
+
+#new:Function $Function_80241BD4
+    0:  ADDIU     SP, SP, FF90
+    4:  SW        S3, 5C (SP)
+    8:  DADDU     S3, A0, R0
+    C:  SW        RA, 68 (SP)
+   10:  SW        S5, 64 (SP)
+   14:  SW        S4, 60 (SP)
+   18:  SW        S2, 58 (SP)
+   1C:  SW        S1, 54 (SP)
+   20:  SW        S0, 50 (SP)
+   24:  LW        S1, 148 (S3)
+   28:  LH        A0, 8 (S1)
+   2C:  JAL       8003AAEC
+   30:  DADDU     S0, A1, R0
+   34:  LW        V1, C (S3)
+   38:  DADDU     A0, S3, R0
+   3C:  LW        A1, 0 (V1)
+   40:  JAL       {Func:GetVariable}
+   44:  DADDU     S2, V0, R0
+   48:  SW        R0, 28 (SP)
+   4C:  LW        V1, D0 (S1)
+   50:  LW        V1, 94 (V1)
+   54:  SW        V1, 2C (SP)
+   58:  LW        V1, D0 (S1)
+   5C:  LW        V1, 80 (V1)
+   60:  SW        V1, 30 (SP)
+   64:  LW        V1, D0 (S1)
+   68:  LW        V1, 88 (V1)
+   6C:  SW        V1, 34 (SP)
+   70:  LW        V1, D0 (S1)
+   74:  LW        V1, 8C (V1)
+   78:  ADDIU     S5, SP, 28
+   7C:  SW        V1, 38 (SP)
+   80:  LW        V1, D0 (S1)
+   84:  LIF       F0, 100.0
+   8C:  LW        V1, 90 (V1)
+   90:  DADDU     S4, V0, R0
+   94:  SWC1      F0, 40 (SP)
+   98:  SH        R0, 44 (SP)
+   9C:  BEQ       S0, R0, .oBC
+   A0:  SW        V1, 3C (SP)
+   A4:  LW        V0, B0 (S1)
+   A8:  LH        V1, A8 (S2)
+   AC:  ORI       V0, V0, 8
+   B0:  SW        V1, 84 (S1)
+   B4:  BEQ       R0, R0, .oCC
+   B8:  SW        V0, B0 (S1)
+        .oBC
+   BC:  LW        V0, B0 (S1)
+   C0:  ANDI      V0, V0, 4
+   C4:  BEQ       V0, R0, .o1E8
+   C8:  NOP
+        .oCC
+   CC:  SH        R0, 8E (S2)
+   D0:  SW        R0, 70 (S3)
+   D4:  LW        V1, CC (S1)
+   D8:  ADDIU     A0, R0, F7FF
+   DC:  SB        R0, 7 (S1)
+   E0:  LW        V0, 0 (S2)
+   E4:  LW        V1, 0 (V1)
+   E8:  AND       V0, V0, A0
+   EC:  SW        V0, 0 (S2)
+   F0:  SW        V1, 28 (S2)
+   F4:  LHU       V0, 86 (S1)
+   F8:  SH        V0, A8 (S2)
+   FC:  LW        V0, D0 (S1)
+  100:  SB        R0, B5 (S1)
+  104:  SW        R0, 8C (S1)
+  108:  LW        V0, 98 (V0)
+  10C:  BNE       V0, R0, .o128
+  110:  ADDIU     V1, R0, FDFF
+  114:  LW        V0, 0 (S2)
+  118:  ADDIU     V1, R0, FFF7
+  11C:  ORI       V0, V0, 200
+  120:  BEQ       R0, R0, .o134
+  124:  AND       V0, V0, V1
+        .o128
+  128:  LW        V0, 0 (S2)
+  12C:  AND       V0, V0, V1
+  130:  ORI       V0, V0, 8
+        .o134
+  134:  SW        V0, 0 (S2)
+  138:  LW        V0, B0 (S1)
+  13C:  ANDI      V0, V0, 4
+  140:  BEQ       V0, R0, .o1BC
+  144:  ADDIU     A0, R0, 2
+  148:  DADDU     A1, S2, R0
+  14C:  DADDU     A2, R0, R0
+  150:  ADDIU     V0, R0, 63
+  154:  SW        V0, 70 (S3)
+  158:  SW        R0, 74 (S3)
+  15C:  LH        V1, A8 (S2)
+  160:  LIF       F0, 1.0
+  168:  LIF       F2, 2.0
+  170:  LIF       F4, -20.0
+  178:  ADDIU     V0, R0, 28
+  17C:  SW        V0, 1C (SP)
+  180:  MTC1      V1, F6
+  184:  NOP
+  188:  CVT.S.W   F6, F6
+  18C:  MFC1      A3, F6
+  190:  ADDIU     V0, SP, 48
+  194:  SW        V0, 20 (SP)
+  198:  SWC1      F0, 10 (SP)
+  19C:  SWC1      F2, 14 (SP)
+  1A0:  JAL       8006FE90
+  1A4:  SWC1      F4, 18 (SP)
+  1A8:  LW        V0, B0 (S1)
+  1AC:  ADDIU     V1, R0, FFFB
+  1B0:  AND       V0, V0, V1
+  1B4:  BEQ       R0, R0, .o1E8
+  1B8:  SW        V0, B0 (S1)
+        .o1BC
+  1BC:  LW        V0, 0 (S1)
+  1C0:  LUI       V1, 4000
+  1C4:  AND       V0, V0, V1
+  1C8:  BEQ       V0, R0, .o1E8
+  1CC:  LUI       V1, BFFF
+  1D0:  ADDIU     V0, R0, C
+  1D4:  SW        V0, 70 (S3)
+  1D8:  LW        V0, 0 (S1)
+  1DC:  ORI       V1, V1, FFFF
+  1E0:  AND       V0, V0, V1
+  1E4:  SW        V0, 0 (S1)
+        .o1E8
+  1E8:  LW        V1, 70 (S3)
+  1EC:  SLTIU     V0, V1, 64
+  1F0:  BEQ       V0, R0, .o2DC
+  1F4:  SLL       V0, V1, 2
+  1F8:  LTW       V0, V0 ($JumpTable_80245C70)
+  204:  JR        V0
+  208:  NOP
+% LBL: from $JumpTable_80245C70 , entry 0`
+  20C:  DADDU     A0, S3, R0
+  210:  DADDU     A1, S4, R0
+  214:  JAL       $Function_80240D44
+  218:  DADDU     A2, S5, R0
+  21C:  LHU       V0, 86 (S1)
+  220:  SH        V0, A8 (S2)
+% LBL: from $JumpTable_80245C70 , entry 1`
+  224:  DADDU     A0, S3, R0
+  228:  DADDU     A1, S4, R0
+  22C:  JAL       $Function_80240E9C
+  230:  DADDU     A2, S5, R0
+  234:  BEQ       R0, R0, .o2DC
+  238:  NOP
+% LBL: from $JumpTable_80245C70 , entry 2`
+  23C:  DADDU     A0, S3, R0
+  240:  DADDU     A1, S4, R0
+  244:  JAL       $Function_80241144
+  248:  DADDU     A2, S5, R0
+% LBL: from $JumpTable_80245C70 , entry 3`
+  24C:  DADDU     A0, S3, R0
+  250:  DADDU     A1, S4, R0
+  254:  JAL       $Function_80241204
+  258:  DADDU     A2, S5, R0
+  25C:  BEQ       R0, R0, .o2DC
+  260:  NOP
+% LBL: from $JumpTable_80245C70 , entry 4`
+  264:  DADDU     A0, S3, R0
+  268:  DADDU     A1, S4, R0
+  26C:  JAL       $Function_802413C0
+  270:  DADDU     A2, S5, R0
+  274:  BEQ       R0, R0, .o2DC
+  278:  NOP
+% LBL: from $JumpTable_80245C70 , entry 12`
+  27C:  DADDU     A0, S3, R0
+  280:  DADDU     A1, S4, R0
+  284:  JAL       $Function_80240570
+  288:  DADDU     A2, S5, R0
+% LBL: from $JumpTable_80245C70 , entry 13`
+  28C:  DADDU     A0, S3, R0
+  290:  DADDU     A1, S4, R0
+  294:  JAL       $Function_802405EC
+  298:  DADDU     A2, S5, R0
+  29C:  BEQ       R0, R0, .o2DC
+  2A0:  NOP
+% LBL: from $JumpTable_80245C70 , entry 14`
+  2A4:  DADDU     A0, S3, R0
+  2A8:  DADDU     A1, S4, R0
+  2AC:  JAL       $Function_80240720
+  2B0:  DADDU     A2, S5, R0
+  2B4:  BEQ       R0, R0, .o2DC
+  2B8:  NOP
+% LBL: from $JumpTable_80245C70 , entry 15`
+  2BC:  DADDU     A0, S3, R0
+  2C0:  DADDU     A1, S4, R0
+  2C4:  JAL       $Function_80240884
+  2C8:  DADDU     A2, S5, R0
+  2CC:  BEQ       R0, R0, .o2DC
+  2D0:  NOP
+% LBL: from $JumpTable_80245C70 , entry 99`
+  2D4:  JAL       8004A73C
+  2D8:  DADDU     A0, S3, R0
+% LBL: from $JumpTable_80245C70 , entry 98`
+        .o2DC
+  2DC:  LW        RA, 68 (SP)
+  2E0:  LW        S5, 64 (SP)
+  2E4:  LW        S4, 60 (SP)
+  2E8:  LW        S3, 5C (SP)
+  2EC:  LW        S2, 58 (SP)
+  2F0:  LW        S1, 54 (SP)
+  2F4:  LW        S0, 50 (SP)
+  2F8:  DADDU     V0, R0, R0
+  2FC:  JR        RA
+  300:  ADDIU     SP, SP, 70
+
+PADDING: 80241ED8 to 80241EE0 (00001ED8 to 00001EE0)
+00000000 00000000 
+
+#new:Function $Function_80241EE0
+    0:  ADDIU     SP, SP, FFD8
+    4:  LIA       A0, $???_802459CC
+    C:  SW        RA, 18 (SP)
+   10:  SW        S1, 14 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  SDC1      F20, 20 (SP)
+   1C:  LW        V1, 0 (A0)
+   20:  LIA       S1, 8010EFC8
+   28:  SLTI      V0, V1, 3
+   2C:  BEQL      V0, R0, .o4C
+   30:  ADDIU     V0, R0, 3
+   34:  BGTZ      V1, .o68
+   38:  ADDIU     V0, V1, 1
+   3C:  BEQ       V1, R0, .o5C
+   40:  DADDU     V0, R0, R0
+   44:  BEQ       R0, R0, .oD8
+   48:  NOP
+        .o4C
+   4C:  BEQ       V1, V0, .o70
+   50:  DADDU     V0, R0, R0
+   54:  BEQ       R0, R0, .oD8
+   58:  NOP
+        .o5C
+   5C:  ADDIU     V0, R0, 1
+   60:  BEQ       R0, R0, .oD4
+   64:  SW        V0, 0 (A0)
+        .o68
+   68:  BEQ       R0, R0, .oD4
+   6C:  SW        V0, 0 (A0)
+        .o70
+   70:  LIA       S0, 8010C930
+   78:  JAL       800EF45C
+   7C:  LW        A0, 0 (S0)
+   80:  LWC1      F0, 28 (S1)
+   84:  LWC1      F2, 30 (S1)
+   88:  TRUNC.W.S F4, F0
+   8C:  MFC1      A0, F4
+   90:  TRUNC.W.S F4, F2
+   94:  MFC1      A1, F4
+   98:  JAL       800EF3C0
+   9C:  NOP
+   A0:  JAL       800EF3D4
+   A4:  DADDU     A0, R0, R0
+   A8:  LIF       F20, 90.0
+   B0:  LW        A0, 0 (S0)
+   B4:  MFC1      A1, F20
+   B8:  JAL       8003B340
+   BC:  NOP
+   C0:  ADDIU     V0, R0, 2
+   C4:  SWC1      F20, 80 (S1)
+   C8:  SWC1      F20, 84 (S1)
+   CC:  BEQ       R0, R0, .oD8
+   D0:  SW        R0, A8 (S1)
+        .oD4
+   D4:  DADDU     V0, R0, R0
+        .oD8
+   D8:  LW        RA, 18 (SP)
+   DC:  LW        S1, 14 (SP)
+   E0:  LW        S0, 10 (SP)
+   E4:  LDC1      F20, 20 (SP)
+   E8:  JR        RA
+   EC:  ADDIU     SP, SP, 28
+
+#new:Function $Function_80241FD0
+    0:  ADDIU     SP, SP, FFD8
+    4:  LIA       A0, $???_80245A14
+    C:  SW        RA, 18 (SP)
+   10:  SW        S1, 14 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  SDC1      F20, 20 (SP)
+   1C:  LW        V1, 0 (A0)
+   20:  LIA       S1, 8010EFC8
+   28:  SLTI      V0, V1, 3
+   2C:  BEQL      V0, R0, .o4C
+   30:  ADDIU     V0, R0, 3
+   34:  BGTZ      V1, .o68
+   38:  ADDIU     V0, V1, 1
+   3C:  BEQ       V1, R0, .o5C
+   40:  DADDU     V0, R0, R0
+   44:  BEQ       R0, R0, .oD8
+   48:  NOP
+        .o4C
+   4C:  BEQ       V1, V0, .o70
+   50:  DADDU     V0, R0, R0
+   54:  BEQ       R0, R0, .oD8
+   58:  NOP
+        .o5C
+   5C:  ADDIU     V0, R0, 1
+   60:  BEQ       R0, R0, .oD4
+   64:  SW        V0, 0 (A0)
+        .o68
+   68:  BEQ       R0, R0, .oD4
+   6C:  SW        V0, 0 (A0)
+        .o70
+   70:  LIA       S0, 8010C930
+   78:  JAL       800EF45C
+   7C:  LW        A0, 0 (S0)
+   80:  LWC1      F0, 28 (S1)
+   84:  LWC1      F2, 30 (S1)
+   88:  TRUNC.W.S F4, F0
+   8C:  MFC1      A0, F4
+   90:  TRUNC.W.S F4, F2
+   94:  MFC1      A1, F4
+   98:  JAL       800EF3C0
+   9C:  NOP
+   A0:  JAL       800EF3D4
+   A4:  DADDU     A0, R0, R0
+   A8:  LIF       F20, 90.0
+   B0:  LW        A0, 0 (S0)
+   B4:  MFC1      A1, F20
+   B8:  JAL       8003B340
+   BC:  NOP
+   C0:  ADDIU     V0, R0, 2
+   C4:  SWC1      F20, 80 (S1)
+   C8:  SWC1      F20, 84 (S1)
+   CC:  BEQ       R0, R0, .oD8
+   D0:  SW        R0, A8 (S1)
+        .oD4
+   D4:  DADDU     V0, R0, R0
+        .oD8
+   D8:  LW        RA, 18 (SP)
+   DC:  LW        S1, 14 (SP)
+   E0:  LW        S0, 10 (SP)
+   E4:  LDC1      F20, 20 (SP)
+   E8:  JR        RA
+   EC:  ADDIU     SP, SP, 28
+
+#new:EntryList $EntryList
+{Vec4f:Entry0} % -786.0    0.0  -49.0   90.0
+{Vec4f:Entry1} %  886.0   75.0  -49.0  270.0
+{Vec4f:Entry2} %  180.0    0.0  -50.0   90.0
+{Vec4f:Entry3} % -500.0    0.0 -145.0   90.0
+
+#new:Header $Header
+00000000 00000000 00000000 00000000 
+$Script_Main $EntryList 00000004 00000000 
+00000000 00000000 00000000 00000000 
+00000000 00000000 80200000 00190046 
+
+#new:Script $Script_80242140
+    0:  Call     SetMusicTrack 	( 00000000 .Song:PleasantPath 00000000 00000008 )
+   1C:  Call     PlaySound   	( 8000005B )
+   2C:  Return
+   34:  End
+
+PADDING: 8024217C to 80242180 (0000217C to 00002180)
+00000000 
+
+#new:Script $Script_80242180
+    0:  Call     UseExitHeading ( 0000003C 00000000 )
+   14:  Exec     ExitWalk 
+   20:  Call     GotoMap     	( $ASCII_80245A60 00000001 )
+   34:  Wait     00000064 
+   40:  Return
+   48:  End
+
+#new:Script $Script_802421D0
+    0:  Call     UseExitHeading ( 0000003C 00000001 )
+   14:  Exec     ExitWalk 
+   20:  Call     GotoMap     	( $ASCII_80245A68 00000000 )
+   34:  Wait     00000064 
+   40:  Return
+   48:  End
+
+#new:Script $Script_80242220
+    0:  Label    00000000 
+    C:  If  *StoryProgress  >=  FFFFFF9E 
+   1C:  	Call     $Function_80240000 ( FFFFFE84 FFFFFF56 FFFFFF9C 000003E7 00000000 00000002 )
+   40:  EndIf
+   48:  Wait     00000001 
+   54:  Goto     00000000 
+   60:  Return
+   68:  End
+
+#new:Script $Script_80242290
+    0:  SetGroup 00000000 
+    C:  Call     SetTexPanner 	( {Model:hana1} 00000000 )
+   20:  Call     SetTexPanner 	( {Model:hana2} 00000000 )
+   34:  Call     SetTexPanner 	( {Model:hana3} 00000000 )
+   48:  Call     SetTexPanner 	( {Model:hana4} 00000000 )
+   5C:  Call     SetTexPanner 	( {Model:hana5} 00000000 )
+   70:  Call     SetTexPanner 	( {Model:hana6} 00000000 )
+   84:  Call     SetTexPanner 	( {Model:hana7} 00000000 )
+   98:  Call     SetTexPanner 	( {Model:hanahna} 00000000 )
+   AC:  Label    0000000A 
+   B8:  Loop     0000000C 
+   C4:  	Call     802C9364 ( 00000000 00000000 00000000 00000000 )
+   E0:  	Wait     00000001 
+   EC:  EndLoop
+   F4:  Loop     0000000C 
+  100:  	Call     802C9364 ( 00000000 00000000 00004000 00000000 )
+  11C:  	Wait     00000001 
+  128:  EndLoop
+  130:  Goto     0000000A 
+  13C:  Return
+  144:  End
+
+#new:Script $Script_802423DC
+    0:  SetGroup 00000000 
+    C:  Thread
+   14:  	Call     SetTexPanner 	( {Model:suimen1} 00000001 )
+   28:  	Set  *Var[0]  00000000 
+   38:  	Set  *Var[1]  00000000 
+   48:  	Set  *Var[2]  00000000 
+   58:  	Label    0000000A 
+   64:  	Call     802C9364 ( 00000001 00000000 *Var[0] 00000000 )
+   80:  	Call     802C9364 ( 00000001 00000001 *Var[1] *Var[2] )
+   9C:  	Sub  *Var[0]  00000064 
+   AC:  	Sub  *Var[1]  00000190 
+   BC:  	Add  *Var[1]  000003E8 
+   CC:  	Wait     00000001 
+   D8:  	Goto     0000000A 
+   E4:  EndThread
+   EC:  Call     SetTexPanner 	( {Model:kabemizu1} 00000002 )
+  100:  Call     SetTexPanner 	( {Model:kabemizu2} 00000002 )
+  114:  Call     SetTexPanner 	( {Model:kabemizu3} 00000002 )
+  128:  Call     SetTexPanner 	( {Model:kabemizu4} 00000002 )
+  13C:  Call     SetTexPanner 	( {Model:kabemizu5} 00000002 )
+  150:  Set  *Var[0]  00000000 
+  160:  Set  *Var[1]  00000000 
+  170:  Set  *Var[2]  00000000 
+  180:  Label    00000014 
+  18C:  Call     802C9364 ( 00000002 00000000 *Var[0] 00000000 )
+  1A8:  Call     802C9364 ( 00000002 00000001 *Var[1] *Var[2] )
+  1C4:  Sub  *Var[0]  00000064 
+  1D4:  Add  *Var[1]  00000320 
+  1E4:  Sub  *Var[1]  00000190 
+  1F4:  Wait     00000001 
+  200:  Goto     00000014 
+  20C:  Return
+  214:  End
+
+#new:Script $Script_802425F8
+    0:  Bind     $Script_80242180 .Trigger:FloorAbove {Collider:deili1} 00000001 00000000 
+   1C:  Bind     $Script_802421D0 .Trigger:FloorAbove {Collider:deili2} 00000001 00000000 
+   38:  Return
+   40:  End
+
+#new:Script $Script_80242640
+    0:  Set  *Var[0]  $Script_802425F8 
+   10:  Exec     EnterWalk 
+   1C:  Return
+   24:  End
+
+#new:Script_Main $Script_Main
+    0:  Set  *WorldMapLocation  00000020 
+   10:  Call     SetSpriteShading 	( FFFFFFFF )
+   20:  Set  *AreaFlag[001]  00000000 
+   30:  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+   50:  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+   6C:  Call     SetCamFlag2 	( .Default .True )
+   80:  Call     GetDemoState 	( *Var[0] )
+   90:  If  *Var[0]  ==  00000000 
+   A0:  	Call     MakeNpcs    	( 00000000 $NpcGroupList_80245300 )
+   B4:  Else
+   BC:  	Call     GetEntryID  	( *Var[0] )
+   CC:  	If  *Var[0]  ==  00000002 
+   DC:  		Call     MakeNpcs    	( 00000000 $NpcGroupList_8024533C )
+   F0:  	EndIf
+   F8:  EndIf
+  100:  ExecWait $Script_80242A00 
+  10C:  ExecWait $Script_802441A8 
+  118:  Exec     $Script_80242290 
+  124:  Exec     $Script_802423DC 
+  130:  Exec     $Script_80243468 
+  13C:  Call     GetDemoState 	( *Var[0] )
+  14C:  If  *Var[0]  !=  00000000 
+  15C:  	Call     GetEntryID  	( *Var[0] )
+  16C:  	If  *Var[0]  ==  00000002 
+  17C:  		ExecWait $Script_802459D0 
+  188:  	Else
+  190:  		ExecWait $Script_80245A18 
+  19C:  	EndIf
+  1A4:  	Return
+  1AC:  EndIf
+  1B4:  Exec     $Script_80242220 
+  1C0:  Exec     $Script_80242140 
+  1CC:  Exec     $Script_80242640 
+  1D8:  Wait     00000001 
+  1E4:  Set  *Flag_Rowf_Badges_Chosen  00000000 
+  1F4:  Return
+  1FC:  End
+
+#new:Script $Script_80242870
+    0:  Call     $Function_80240180 ( 00000003 00000000 00000001 )
+   18:  Return
+   20:  End
+
+#new:Script $Script_80242898
+    0:  If  *StoryProgress  <  FFFFFF9D 
+   10:  	Set  *StoryProgress  FFFFFF9D 
+   20:  	Wait     0000000F 
+   2C:  	SetGroup 00000000 
+   38:  	Call     802D5830 ( 00000001 )
+   48:  	Call     DisablePlayerInput 	( .True )
+   58:  	Call     MakeLerp    	( 0000005F 00000000 0000000C 00000001 )
+   74:  	Label    00000000 
+   80:  	Call     UpdateLerp  	( )
+   8C:  	Call     $Function_80240224 ( *MapVar[0] FFFFFE2A *Var[0] FFFFFF6A )
+   A8:  	Wait     00000001 
+   B4:  	If  *Var[1]  ==  00000001 
+   C4:  		Goto     00000000 
+   D0:  	EndIf
+   D8:  	Call     PlaySoundAt 	( 00000048 00000000 FFFFFE2A *Var[0] FFFFFF6A )
+   F8:  	Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[1.0] )
+  114:  	Thread
+  11C:  		Wait     00000005 
+  128:  		Call     802D5830 ( 00000000 )
+  138:  	EndThread
+  140:  	Call     DisablePlayerInput 	( .False )
+  150:  EndIf
+  158:  Return
+  160:  End
+
+#new:Script $Script_80242A00
+    0:  If  *StoryProgress  <=  FFFFFF9D 
+   10:  	If  *StoryProgress  ==  FFFFFF9D 
+   20:  		Call     MakeEntity  	( .Entity:BlueSwitch {Vec4d:Entity80242A20} 80000000 )
+   44:  		Call     AssignAreaFlag ( 00000001 )
+   54:  	Else
+   5C:  		Call     MakeEntity  	( .Entity:BlueSwitch {Vec4d:Entity80242A5C} 80000000 )
+   80:  		Call     AssignAreaFlag ( 00000001 )
+   90:  		Set  *MapVar[0]  *Var[0] 
+   A0:  	EndIf
+   A8:  EndIf
+   B0:  Call     MakeEntity  	( .Entity:YellowBlock {Vec4d:Entity80242AB0} .Item:POWBlock 80000000 )
+   D8:  Call     AssignBlockFlag 	( *Flag_NOK_1F )
+   E8:  Call     MakeEntity  	( .Entity:BrickBlock {Vec4d:Entity80242AE8} 80000000 )
+  10C:  Call     AssignScript 	( $Script_80242870 )
+  11C:  Call     MakeEntity  	( .Entity:BrickBlock {Vec4d:Entity80242B1C} 80000000 )
+  140:  Call     MakeEntity  	( .Entity:BrickBlock {Vec4d:Entity80242B40} 80000000 )
+  164:  Call     MakeEntity  	( .Entity:BrickBlock {Vec4d:Entity80242B64} 80000000 )
+  188:  Call     MakeEntity  	( .Entity:MultiCoinBrick {Vec4d:Entity80242B88} 80000000 )
+  1AC:  Call     AssignBlockFlag 	( *Flag_NOK_22 )
+  1BC:  Call     MakeItemEntity ( .Item:StarPiece {Vec3d:Item80242BBC} 00000011 *Flag_NOK_0E )
+  1E0:  Call     MakeItemEntity ( .Item:SleepySheep {Vec3d:Item80242BE0} 00000011 *Flag_NOK_31 )
+  204:  Return
+  20C:  End
+
+PADDING: 80242C14 to 80242C20 (00002C14 to 00002C20)
+00000000 00000000 00000000 
+
+#new:Script $Script_80242C20
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Wait     00000014 
+   1C:  Call     DisablePlayerPhysics 	( .True )
+   2C:  SetGroup 00000000 
+   38:  Call     802D5830 ( 00000001 )
+   48:  Call     $Function_802402F0 ( )
+   54:  Call     802CB008 ( 00000000 00000001 FFFFFEF0 00000000 FFFFFFC8 00000014 )
+   78:  Wait     0000000F 
+   84:  Call     PlaySoundAt 	( 00000071 00000000 FFFFFEED 00000000 FFFFFFD9 )
+   A4:  Call     MakeLerp    	( FFFFFEC0 00000000 0000000F 00000001 )
+   C0:  Label    0000000A 
+   CC:  Call     UpdateLerp  	( )
+   D8:  Call     TranslateGroup ( {Model:hashi} 00000000 *Var[0] 00000000 )
+   F4:  Wait     00000001 
+  100:  If  *Var[1]  !=  00000000 
+  110:  	Goto     0000000A 
+  11C:  EndIf
+  124:  Loop     00000006 
+  130:  	Call     TranslateGroup ( {Model:hashi} 00000000 00000003 00000000 )
+  14C:  	Wait     00000001 
+  158:  	Call     TranslateGroup ( {Model:hashi} 00000000 00000000 00000000 )
+  174:  	Wait     00000001 
+  180:  EndLoop
+  188:  Wait     0000000F 
+  194:  Call     PlaySoundAt 	( 00000072 00000000 FFFFFEED 00000000 FFFFFFD9 )
+  1B4:  Call     MakeLerp    	( 00000000 0000005A 0000000A 00000001 )
+  1D0:  Label    00000014 
+  1DC:  Call     UpdateLerp  	( )
+  1E8:  Call     RotateModel 	( {Model:o97} *Var[0] FFFFFFFF 00000000 00000000 )
+  208:  Call     RotateModel 	( {Model:o95} *Var[0] FFFFFFFF 00000000 00000000 )
+  228:  Call     RotateModel 	( {Model:o94} *Var[0] FFFFFFFF 00000000 00000000 )
+  248:  Call     RotateModel 	( {Model:o96} *Var[0] FFFFFFFF 00000000 00000000 )
+  268:  Call     RotateModel 	( {Model:o93} *Var[0] FFFFFFFF 00000000 00000000 )
+  288:  Call     TranslateModel ( {Model:o91} 00000000 FFFFFFB0 00000000 )
+  2A4:  Call     TranslateModel ( {Model:o101} 00000000 FFFFFFB0 00000000 )
+  2C0:  Call     TranslateModel ( {Model:o92} 00000000 FFFFFFB0 00000000 )
+  2DC:  Call     TranslateModel ( {Model:o99} 00000000 FFFFFFB0 00000000 )
+  2F8:  Call     TranslateModel ( {Model:o100} 00000000 FFFFFFB0 00000000 )
+  314:  Call     RotateModel 	( {Model:o91} *Var[0] FFFFFFFF 00000000 00000000 )
+  334:  Call     RotateModel 	( {Model:o101} *Var[0] FFFFFFFF 00000000 00000000 )
+  354:  Call     RotateModel 	( {Model:o92} *Var[0] FFFFFFFF 00000000 00000000 )
+  374:  Call     RotateModel 	( {Model:o99} *Var[0] FFFFFFFF 00000000 00000000 )
+  394:  Call     RotateModel 	( {Model:o100} *Var[0] FFFFFFFF 00000000 00000000 )
+  3B4:  Call     TranslateModel ( {Model:o91} 00000000 00000050 00000000 )
+  3D0:  Call     TranslateModel ( {Model:o101} 00000000 00000050 00000000 )
+  3EC:  Call     TranslateModel ( {Model:o92} 00000000 00000050 00000000 )
+  408:  Call     TranslateModel ( {Model:o99} 00000000 00000050 00000000 )
+  424:  Call     TranslateModel ( {Model:o100} 00000000 00000050 00000000 )
+  440:  Wait     00000001 
+  44C:  If  *Var[1]  !=  00000000 
+  45C:  	Goto     00000014 
+  468:  EndIf
+  470:  Wait     0000000A 
+  47C:  Call     PlaySoundAt 	( 00000073 00000000 FFFFFEED 00000000 FFFFFFD9 )
+  49C:  Call     MakeLerp    	( 00000000 0000005A 0000000A 00000001 )
+  4B8:  Label    0000001E 
+  4C4:  Call     UpdateLerp  	( )
+  4D0:  Call     TranslateModel ( {Model:o91} 00000000 FFFFFFB0 00000000 )
+  4EC:  Call     TranslateModel ( {Model:o101} 00000000 FFFFFFB0 00000000 )
+  508:  Call     TranslateModel ( {Model:o92} 00000000 FFFFFFB0 00000000 )
+  524:  Call     TranslateModel ( {Model:o99} 00000000 FFFFFFB0 00000000 )
+  540:  Call     TranslateModel ( {Model:o100} 00000000 FFFFFFB0 00000000 )
+  55C:  Call     RotateModel 	( {Model:o91} 0000005A FFFFFFFF 00000000 00000000 )
+  57C:  Call     RotateModel 	( {Model:o101} 0000005A FFFFFFFF 00000000 00000000 )
+  59C:  Call     RotateModel 	( {Model:o92} 0000005A FFFFFFFF 00000000 00000000 )
+  5BC:  Call     RotateModel 	( {Model:o99} 0000005A FFFFFFFF 00000000 00000000 )
+  5DC:  Call     RotateModel 	( {Model:o100} 0000005A FFFFFFFF 00000000 00000000 )
+  5FC:  Call     TranslateModel ( {Model:o91} 00000000 00000050 00000000 )
+  618:  Call     TranslateModel ( {Model:o101} 00000000 00000050 00000000 )
+  634:  Call     TranslateModel ( {Model:o92} 00000000 00000050 00000000 )
+  650:  Call     TranslateModel ( {Model:o99} 00000000 00000050 00000000 )
+  66C:  Call     TranslateModel ( {Model:o100} 00000000 00000050 00000000 )
+  688:  Call     RotateModel 	( {Model:o91} *Var[0] FFFFFFFF 00000000 00000000 )
+  6A8:  Call     RotateModel 	( {Model:o101} *Var[0] FFFFFFFF 00000000 00000000 )
+  6C8:  Call     RotateModel 	( {Model:o92} *Var[0] FFFFFFFF 00000000 00000000 )
+  6E8:  Call     RotateModel 	( {Model:o99} *Var[0] FFFFFFFF 00000000 00000000 )
+  708:  Call     RotateModel 	( {Model:o100} *Var[0] FFFFFFFF 00000000 00000000 )
+  728:  Wait     00000001 
+  734:  If  *Var[1]  !=  00000000 
+  744:  	Goto     0000001E 
+  750:  EndIf
+  758:  Call     ModifyColliderFlags 	( 00000001 {Collider:o204} 7FFFFE00 )
+  770:  Call     ModifyColliderFlags 	( 00000000 {Collider:tt1} 7FFFFE00 )
+  788:  Wait     0000000A 
+  794:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  7AC:  Call     802CB008 ( 00000000 00000001 *Var[0] *Var[1] *Var[2] 0000000A )
+  7D0:  Call     $Function_8024030C ( )
+  7DC:  Call     802D5830 ( 00000000 )
+  7EC:  Call     DisablePlayerPhysics 	( .False )
+  7FC:  Call     DisablePlayerInput 	( .False )
+  80C:  Set  *StoryProgress  FFFFFF9E 
+  81C:  Call     802C9308 ( 000000CE 00000000 )
+  830:  Unbind
+  838:  Return
+  840:  End
+
+#new:Script $Script_80243468
+    0:  If  *StoryProgress  <  FFFFFF9E 
+   10:  	Bind     $Script_80242C20 .Trigger:AreaFlagSet *AreaFlag[001] 00000001 00000000 
+   2C:  	Call     TranslateGroup ( {Model:hashi} 00000000 FFFFFEC0 00000000 )
+   48:  	Call     ModifyColliderFlags 	( 00000000 {Collider:o204} 7FFFFE00 )
+   60:  	Return
+   68:  EndIf
+   70:  Call     802C9308 ( 000000CE 00000000 )
+   84:  Call     RotateModel 	( {Model:o97} 0000005A FFFFFFFF 00000000 00000000 )
+   A4:  Call     RotateModel 	( {Model:o95} 0000005A FFFFFFFF 00000000 00000000 )
+   C4:  Call     RotateModel 	( {Model:o94} 0000005A FFFFFFFF 00000000 00000000 )
+   E4:  Call     RotateModel 	( {Model:o96} 0000005A FFFFFFFF 00000000 00000000 )
+  104:  Call     RotateModel 	( {Model:o93} 0000005A FFFFFFFF 00000000 00000000 )
+  124:  Call     TranslateModel ( {Model:o91} 00000000 FFFFFFB0 00000000 )
+  140:  Call     TranslateModel ( {Model:o101} 00000000 FFFFFFB0 00000000 )
+  15C:  Call     TranslateModel ( {Model:o92} 00000000 FFFFFFB0 00000000 )
+  178:  Call     TranslateModel ( {Model:o99} 00000000 FFFFFFB0 00000000 )
+  194:  Call     TranslateModel ( {Model:o100} 00000000 FFFFFFB0 00000000 )
+  1B0:  Call     RotateModel 	( {Model:o91} 0000005A FFFFFFFF 00000000 00000000 )
+  1D0:  Call     RotateModel 	( {Model:o101} 0000005A FFFFFFFF 00000000 00000000 )
+  1F0:  Call     RotateModel 	( {Model:o92} 0000005A FFFFFFFF 00000000 00000000 )
+  210:  Call     RotateModel 	( {Model:o99} 0000005A FFFFFFFF 00000000 00000000 )
+  230:  Call     RotateModel 	( {Model:o100} 0000005A FFFFFFFF 00000000 00000000 )
+  250:  Call     TranslateModel ( {Model:o91} 00000000 00000050 00000000 )
+  26C:  Call     TranslateModel ( {Model:o101} 00000000 00000050 00000000 )
+  288:  Call     TranslateModel ( {Model:o92} 00000000 00000050 00000000 )
+  2A4:  Call     TranslateModel ( {Model:o99} 00000000 00000050 00000000 )
+  2C0:  Call     TranslateModel ( {Model:o100} 00000000 00000050 00000000 )
+  2DC:  Call     RotateModel 	( {Model:o91} 0000005A FFFFFFFF 00000000 00000000 )
+  2FC:  Call     RotateModel 	( {Model:o101} 0000005A FFFFFFFF 00000000 00000000 )
+  31C:  Call     RotateModel 	( {Model:o92} 0000005A FFFFFFFF 00000000 00000000 )
+  33C:  Call     RotateModel 	( {Model:o99} 0000005A FFFFFFFF 00000000 00000000 )
+  35C:  Call     RotateModel 	( {Model:o100} 0000005A FFFFFFFF 00000000 00000000 )
+  37C:  Call     ModifyColliderFlags 	( 00000000 {Collider:tt1} 7FFFFE00 )
+  394:  Return
+  39C:  End
+
+PADDING: 8024380C to 80243810 (0000380C to 00003810)
+00000000 
+
+% Origin: HEURISTIC
+#new:Script $Script_80243810
+    0:  UseIntBuffer *Var[0] 
+    C:  Get4Int  *Var[1] *Var[2] *Var[3] *Var[4] 
+   24:  Call     GetPlayerPos 	( *Var[5] *Var[F] *Var[7] )
+   3C:  Thread
+   44:  	Set  *Flag[00]  00000000 
+   54:  	If  *Var[1]  !=  00000000 
+   64:  		Loop     00000005 
+   70:  			UseIntBuffer *Var[1] 
+   7C:  			Get1Int  *Var[2] 
+   88:  			Loop     *Var[2] 
+   94:  				Get1Int  *Var[3] 
+   A0:  				Call     $Function_802403A0 ( *Var[3] *Fixed[0.10058594] 00000001 *Var[F] 00000000 )
+   C0:  				If  *Flag[00]  ==  00000000 
+   D0:  					Set  *Flag[00]  00000001 
+   E0:  					Call     PlaySoundAtModel 	( *Var[3] 00000153 00000000 )
+   F8:  				EndIf
+  100:  			EndLoop
+  108:  			Wait     00000001 
+  114:  			UseIntBuffer *Var[1] 
+  120:  			Get1Int  *Var[2] 
+  12C:  			Loop     *Var[2] 
+  138:  				Get1Int  *Var[3] 
+  144:  				Call     $Function_802403A0 ( *Var[3] *Fixed[0.10058594] FFFFFFFF *Var[F] 00000000 )
+  164:  			EndLoop
+  16C:  			Wait     00000001 
+  178:  		EndLoop
+  180:  		UseIntBuffer *Var[1] 
+  18C:  		Get1Int  *Var[2] 
+  198:  		Loop     *Var[2] 
+  1A4:  			Get1Int  *Var[3] 
+  1B0:  			Call     TranslateModel ( *Var[3] 00000000 00000000 00000000 )
+  1CC:  		EndLoop
+  1D4:  		Wait     00000001 
+  1E0:  	EndIf
+  1E8:  EndThread
+  1F0:  Thread
+  1F8:  	If  *Var[2]  !=  00000000 
+  208:  		UseIntBuffer *Var[2] 
+  214:  		Get1Int  *Var[3] 
+  220:  		Loop     *Var[3] 
+  22C:  			Get1Int  *Var[4] 
+  238:  			Get3Int  *Var[5] *Var[6] *Var[7] 
+  24C:  			Get3Int  *Var[8] *Var[9] *Var[A] 
+  260:  			If  *Var[A]  ==  00000000 
+  270:  				Call     DropItemEntity ( *Var[4] *Var[5] *Var[6] *Var[7] *Var[8] *Var[9] )
+  294:  			Else
+  29C:  				Call     GetValueByRef 	( *Var[A] *Var[B] )
+  2B0:  				If  *Var[B]  ==  00000000 
+  2C0:  					Call     SetValueByRef 	( *Var[A] 00000001 )
+  2D4:  					Call     DropItemEntity ( *Var[4] *Var[5] *Var[6] *Var[7] *Var[8] *Var[9] )
+  2F8:  				EndIf
+  300:  			EndIf
+  308:  		EndLoop
+  310:  	EndIf
+  318:  EndThread
+  320:  Wait     0000000F 
+  32C:  If  *Var[4]  !=  00000000 
+  33C:  	ExecWait *Var[4] 
+  348:  EndIf
+  350:  Return
+  358:  End
+
+#new:Script $Script_ShakeTree_80243B70
+    0:  SetTimescale *Fixed[2.0] 
+    C:  UseIntBuffer *Var[0] 
+   18:  Get4Int  *Var[1] *Var[2] *Var[3] *Var[4] 
+   30:  Get1Int  *Var[5] 
+   3C:  Call     GetPlayerPos 	( *Var[6] *Var[F] *Var[8] )
+   54:  Call     PlaySound   	( 00000165 )
+   64:  Call     PlaySound   	( 00000166 )
+   74:  Thread
+   7C:  	Set  *Flag[00]  00000000 
+   8C:  	If  *Var[1]  !=  00000000 
+   9C:  		Wait     00000001 
+   A8:  		Loop     00000005 
+   B4:  			UseIntBuffer *Var[1] 
+   C0:  			Get1Int  *Var[2] 
+   CC:  			Loop     *Var[2] 
+   D8:  				Get1Int  *Var[3] 
+   E4:  				Call     $Function_802403A0 ( *Var[3] *Fixed[0.10058594] *Fixed[0.20019531] *Var[F] 00000000 )
+  104:  				If  *Flag[00]  ==  00000000 
+  114:  					Set  *Flag[00]  00000001 
+  124:  					Call     PlaySoundAtModel 	( *Var[3] 00000166 00000000 )
+  13C:  				EndIf
+  144:  			EndLoop
+  14C:  			Wait     00000001 
+  158:  			UseIntBuffer *Var[1] 
+  164:  			Get1Int  *Var[2] 
+  170:  			Loop     *Var[2] 
+  17C:  				Get1Int  *Var[3] 
+  188:  				Call     $Function_802403A0 ( *Var[3] *Fixed[0.10058594] *Fixed[-0.19921875] *Var[F] 00000000 )
+  1A8:  			EndLoop
+  1B0:  			Wait     00000001 
+  1BC:  		EndLoop
+  1C4:  		UseIntBuffer *Var[1] 
+  1D0:  		Get1Int  *Var[2] 
+  1DC:  		Loop     *Var[2] 
+  1E8:  			Get1Int  *Var[3] 
+  1F4:  			Call     TranslateModel ( *Var[3] 00000000 00000000 00000000 )
+  210:  		EndLoop
+  218:  		Wait     00000001 
+  224:  	EndIf
+  22C:  EndThread
+  234:  Thread
+  23C:  	Set  *Flag[00]  00000000 
+  24C:  	If  *Var[2]  !=  00000000 
+  25C:  		Loop     00000005 
+  268:  			UseIntBuffer *Var[2] 
+  274:  			Get1Int  *Var[3] 
+  280:  			Loop     *Var[3] 
+  28C:  				Get1Int  *Var[4] 
+  298:  				Call     $Function_802403A0 ( *Var[4] *Fixed[0.10058594] *Fixed[0.20019531] *Var[F] 00000000 )
+  2B8:  				If  *Flag[00]  ==  00000000 
+  2C8:  					Set  *Flag[00]  00000001 
+  2D8:  					Call     PlaySoundAtModel 	( *Var[4] 00000165 00000000 )
+  2F0:  				EndIf
+  2F8:  			EndLoop
+  300:  			Wait     00000001 
+  30C:  			UseIntBuffer *Var[2] 
+  318:  			Get1Int  *Var[3] 
+  324:  			Loop     *Var[3] 
+  330:  				Get1Int  *Var[4] 
+  33C:  				Call     $Function_802403A0 ( *Var[4] *Fixed[0.10058594] *Fixed[-0.19921875] *Var[F] 00000000 )
+  35C:  			EndLoop
+  364:  			Wait     00000001 
+  370:  		EndLoop
+  378:  		UseIntBuffer *Var[2] 
+  384:  		Get1Int  *Var[3] 
+  390:  		Loop     *Var[3] 
+  39C:  			Get1Int  *Var[4] 
+  3A8:  			Call     TranslateModel ( *Var[4] 00000000 00000000 00000000 )
+  3C4:  		EndLoop
+  3CC:  		Wait     00000001 
+  3D8:  	EndIf
+  3E0:  EndThread
+  3E8:  Thread
+  3F0:  	If  *Var[3]  !=  00000000 
+  400:  		UseIntBuffer *Var[3] 
+  40C:  		Get1Int  *Var[4] 
+  418:  		Loop     *Var[4] 
+  424:  			Get1Int  *Var[5] 
+  430:  			Get3Int  *Var[6] *Var[7] *Var[8] 
+  444:  			Get3Int  *Var[9] *Var[A] *Var[B] 
+  458:  			If  *Var[B]  ==  00000000 
+  468:  				Call     DropItemEntity ( *Var[5] *Var[6] *Var[7] *Var[8] *Var[9] *Var[A] )
+  48C:  			Else
+  494:  				Call     GetValueByRef 	( *Var[B] *Var[C] )
+  4A8:  				If  *Var[C]  ==  00000000 
+  4B8:  					Call     SetValueByRef 	( *Var[B] 00000001 )
+  4CC:  					Call     DropItemEntity ( *Var[5] *Var[6] *Var[7] *Var[8] *Var[9] *Var[A] )
+  4F0:  				EndIf
+  4F8:  			EndIf
+  500:  		EndLoop
+  508:  	EndIf
+  510:  EndThread
+  518:  Thread
+  520:  	If  *Var[4]  !=  00000000 
+  530:  		UseIntBuffer *Var[4] 
+  53C:  		Get1Int  *Var[5] 
+  548:  		Loop     *Var[5] 
+  554:  			Get3Int  *Var[6] *Var[7] *Var[8] 
+  568:  			Call     PlayEffect  	( {FX:DropLeaves:Random} *Var[6] *Var[7] *Var[8] 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  5AC:  		EndLoop
+  5B4:  	EndIf
+  5BC:  EndThread
+  5C4:  If  *Var[5]  !=  00000000 
+  5D4:  	ExecWait *Var[5] 
+  5E0:  EndIf
+  5E8:  Wait     0000000F 
+  5F4:  Return
+  5FC:  End
+
+#new:TreeModelList $TreeModelList_Leaves_80244174
+00000001 {Model:o342} 
+
+#new:TreeModelList $TreeModelList_Trunk_8024417C
+00000001 {Model:o343} 
+
+#new:ShakeTreeEvent $ShakeTreeEvent_80244184
+$TreeModelList_Leaves_80244174 
+$TreeModelList_Trunk_8024417C 
+00000000 
+00000000 
+$Script_80242898 
+
+#new:TriggerCoord $TriggerCoord_80244198
+{BombPos:Bomb_80244198} % -422.000000 0.000000 -120.000000 0.000000
+
+#new:Script $Script_802441A8
+    0:  Set  *Var[0]  $ShakeTreeEvent_80244184 
+   10:  Bind     $Script_ShakeTree_80243B70 .Trigger:WallHammer {Collider:o397} 00000001 00000000 
+   2C:  Bind     $Script_ShakeTree_80243B70 .Trigger:PointBomb $TriggerCoord_80244198 00000001 00000000 
+   48:  Return
+   50:  End
+
+#new:AISettings $AISettings_80244200
+    1.5 % move speed
+    45` % move time
+    20` % wait time
+   70.0 % alert radius
+   50.0
+    10`
+    7.5 % chase speed
+    0`
+    0`
+   80.0 % chase radius
+   60.0
+    1`
+
+#new:Script $Script_NpcAI_80244230
+    0:  Call     SetOwnerVar 	( 00000002 00000008 )
+   14:  Call     SetOwnerVar 	( 00000003 0000000C )
+   28:  Call     SetOwnerVar 	( 00000005 0000000A )
+   3C:  Call     SetOwnerVar 	( 00000007 00000000 )
+   50:  Call     $Function_80240904 ( $AISettings_80244200 )
+   60:  Return
+   68:  End
+
+#new:NpcSettings $NpcSettings_802442A0
+00000000 00230018 00000000 00000000 $Script_NpcAI_80244230 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:AISettings $AISettings_802442CC
+    1.5 % move speed
+    25` % move time
+    20` % wait time
+   70.0 % alert radius
+   50.0
+    10`
+    7.0 % chase speed
+    0`
+    0`
+   80.0 % chase radius
+   60.0
+    1`
+
+#new:Script $Script_NpcAI_802442FC
+    0:  Call     SetOwnerVar 	( 00000002 00000008 )
+   14:  Call     SetOwnerVar 	( 00000003 0000000C )
+   28:  Call     SetOwnerVar 	( 00000005 0000000A )
+   3C:  Call     $Function_80241BD4 ( $AISettings_802442CC )
+   4C:  Return
+   54:  End
+
+#new:NpcSettings $NpcSettings_80244358
+00000000 00230018 00000000 00000000 $Script_NpcAI_802442FC 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:AISettings $AISettings_80244384
+    1.5 % move speed
+    30` % move time
+    30` % wait time
+  130.0 % alert radius
+    0.0
+    1`
+    2.5 % chase speed
+    180`
+    3`
+  150.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_802443B4
+    0:  Call     DoBasicAI   	( $AISettings_80244384 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_802443D4
+00000000 00140017 00000000 00000000 $Script_NpcAI_802443B4 80077F70 00000000 8007809C 
+00000000 00000000 00050000 
+
+#new:AISettings $AISettings_80244400
+    1.5 % move speed
+    30` % move time
+    30` % wait time
+  130.0 % alert radius
+    0.0
+    1`
+    2.5 % chase speed
+    180`
+    3`
+  150.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80244430
+    0:  Call     DoBasicAI   	( $AISettings_80244400 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80244450
+00000000 00170017 00000000 00000000 $Script_NpcAI_80244430 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+% Origin: HEURISTIC
+#new:Unknown $???_8024447C
+3FC00000 0000001E 0000001E 43020000 00000000 00000001 40200000 000000B4 
+00000003 43160000 00000000 00000001 
+
+% Origin: HEURISTIC
+#new:Script $Script_802444AC
+    0:  Call     $Function_802418D8 ( $???_8024447C )
+   10:  Return
+   18:  End
+
+MISSING: 802444CC to 802444F8 (000044CC to 000044F8)
+00000000 00170017 00000000 00000000 802444AC 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_802444F8
+    0:  Label    00000000 
+    C:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   20:  If  *Var[0]  ==  00000000 
+   30:  	Wait     00000001 
+   3C:  	Goto     00000000 
+   48:  EndIf
+   50:  Call     SetNpcAnimation 	( .Npc:Self 0027000A )
+   64:  Thread
+   6C:  	Call     PlaySoundAtNpc ( .Npc:Self 000003E1 00000000 )
+   84:  	Call     MakeLerp    	( FFFFFFA6 00000000 0000000A 00000000 )
+   A0:  	Label    00000001 
+   AC:  	Call     UpdateLerp  	( )
+   B8:  	Call     SetNpcRotation ( .Npc:Self *Var[0] 00000000 00000000 )
+   D4:  	Wait     00000001 
+   E0:  	If  *Var[1]  ==  00000001 
+   F0:  		Goto     00000001 
+   FC:  	EndIf
+  104:  	Call     GetNpcPos   	( .Npc:Self *Var[A] *Var[B] *Var[C] )
+  120:  	Call     MakeLerp    	( 00000000 00000168 0000000F 00000000 )
+  13C:  	Label    00000002 
+  148:  	Call     UpdateLerp  	( )
+  154:  	Call     SetNpcRotation ( .Npc:Self 00000000 *Var[0] 00000000 )
+  170:  	Wait     00000001 
+  17C:  	If  *Var[1]  ==  00000001 
+  18C:  		Goto     00000002 
+  198:  	EndIf
+  1A0:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000000 )
+  1BC:  EndThread
+  1C4:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[0.7001953] )
+  1D8:  Call     NpcJump0    	( .Npc:Self FFFFFFBF 00000000 FFFFFF88 00000019 )
+  1F8:  Call     SetNpcAnimation 	( .Npc:Self 00270006 )
+  20C:  Wait     00000014 
+  218:  Call     SetNpcAnimation 	( .Npc:Self 00270001 )
+  22C:  Call     BindNpcAI   	( .Npc:Self $Script_NpcAI_80244430 )
+  240:  Return
+  248:  End
+
+#new:Script $Script_Init_80244748
+    0:  Call     SetNpcPos   	( .Npc:Self FFFFFF5B 00000056 FFFFFF8A )
+   1C:  Call     SetNpcRotation ( .Npc:Self FFFFFFAB 00000000 00000000 )
+   38:  Call     BindNpcIdle 	( .Npc:Self $Script_802444F8 )
+   4C:  Return
+   54:  End
+
+#new:Script $Script_802447A4
+    0:  Return
+    8:  End
+
+#new:Script $Script_802447B4
+    0:  Wait     0000002D 
+    C:  Call     SetNpcAnimation 	( .Npc:Self 00290107 )
+   20:  Wait     00000008 
+   2C:  Call     SetNpcAnimation 	( .Npc:Self 00290106 )
+   40:  Wait     00000006 
+   4C:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   68:  Sub  *Var[0]  00000050 
+   78:  Add  *Var[2]  00000064 
+   88:  Call     MoveNpcTo   	( .Npc:Self *Var[0] *Var[2] 0000000C )
+   A4:  Call     SetNpcAnimation 	( .Npc:Self 00290108 )
+   B8:  Wait     00000008 
+   C4:  Call     SetNpcAnimation 	( .Npc:Self 00290101 )
+   D8:  Return
+   E0:  End
+
+#new:Script $Script_Init_8024489C
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  If  *Var[0]  >=  00000002 
+   20:  	Call     BindNpcIdle 	( .Npc:Self $Script_802447A4 )
+   34:  	Call     SetNpcPos   	( .Npc:Self 00000136 00000000 FFFFFF5B )
+   50:  EndIf
+   58:  Return
+   60:  End
+
+#new:Script $Script_Init_80244904
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  If  *Var[0]  >=  00000002 
+   20:  	Call     BindNpcIdle 	( .Npc:Self $Script_802447B4 )
+   34:  EndIf
+   3C:  Return
+   44:  End
+
+#new:NpcGroup $NpcGroup_80244950
+00000000 $NpcSettings_80244358 {Vec3f:NPC_80244950} % -370 0 -25
+00000C00 00000000 00000000 00000000 0000010E 
+{Items:5:Mushroom:3:KoopaLeaf:7}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:1:1}
+{Movement:NPC_80244950}
+00290101 00290103 00290104 00290104 00290101 00290101 0029010B 0029010B 
+00290107 00290106 00290108 00290104 00290104 00290104 00290104 00290104 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:NpcGroup $NpcGroup_80244B40
+00000001 $NpcSettings_802442A0 {Vec3f:NPC_80244B40} % 563 50 -43
+00000C00 $Script_Init_8024489C 00000000 00000000 0000010E 
+{Items:5:Mushroom:3:KoopaLeaf:7}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:1:1}
+{Movement:NPC_80244B40}
+00290101 00290103 00290104 00290104 00290101 00290101 0029010B 0029010B 
+00290107 00290106 00290108 00290104 00290104 00290104 00290104 00290104 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:NpcGroup $NpcGroup_80244D30
+00000001 $NpcSettings_802442A0 {Vec3f:NPC_80244D30} % 600 50 -75
+00000C00 $Script_Init_80244904 00000000 00000000 0000010E 
+{Items:5:Mushroom:3:KoopaLeaf:7}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:1:1}
+{Movement:NPC_80244D30}
+00290101 00290103 00290104 00290104 00290101 00290101 0029010B 0029010B 
+00290107 00290106 00290108 00290104 00290104 00290104 00290104 00290104 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:NpcGroup $NpcGroup_80244F20
+00000002 $NpcSettings_802443D4 {Vec3f:NPC_80244F20} % 50 0 -72
+00000C00 00000000 00000000 00000000 0000010E 
+{Items:5:Mushroom:A}
+{HP:20:80:2:60} {HP:30:70:2:50} {HP:50:60:2:50} {HP:80:50:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:70:2:50} {FP:30:60:2:50} {FP:50:50:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{NoCoinBonus}
+{Movement:NPC_80244F20}
+00260001 00260002 00260003 00260003 00260001 00260001 00260005 00260005 
+00260003 00260003 00260003 00260003 00260003 00260003 00260003 00260003 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:NpcGroup $NpcGroup_80245110
+00000003 $NpcSettings_80244450 {Vec3f:NPC_80245110} % -160 0 -120
+00000C00 $Script_Init_80244748 00000000 00000000 0000010E 
+{Items:5:Mushroom:A}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:1}
+{Movement:NPC_80245110}
+00270001 00270002 00270003 00270003 00270001 00270001 00270005 00270005 
+00270003 00270003 00270003 00270003 00270003 00270003 00270003 00270003 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:NpcGroupList $NpcGroupList_80245300
+00000001 $NpcGroup_80244950 05090001 
+00000001 $NpcGroup_80244B40 050F0001 
+00000001 $NpcGroup_80244F20 05010002 
+00000001 $NpcGroup_80245110 05040002 
+00000000 00000000 00000000 
+
+#new:NpcGroupList $NpcGroupList_8024533C
+00000001 $NpcGroup_80244950 05090001 
+00000001 $NpcGroup_80244D30 050F0001 
+00000001 $NpcGroup_80244F20 05010002 
+00000001 $NpcGroup_80245110 05040002 
+00000000 00000000 00000000 
+
+PADDING: 80245378 to 80245380 (00005378 to 00005380)
+00000000 00000000 
+
+#new:Script $Script_80245380
+    0:  Call     DemoUseJoystick 	( 0000004F FFFFFFF9 )
+   14:  Wait     0000001C 
+   20:  Call     DemoSetButtons ( 00008000 )
+   30:  Wait     00000012 
+   3C:  Call     DemoSetButtons ( 00000000 )
+   4C:  Wait     0000000B 
+   58:  Call     DemoSetButtons ( 00008000 )
+   68:  Wait     00000007 
+   74:  Call     DemoSetButtons ( 00000000 )
+   84:  Wait     0000000D 
+   90:  Call     DemoSetButtons ( 00008000 )
+   A0:  Wait     00000010 
+   AC:  Call     DemoSetButtons ( 00000000 )
+   BC:  Wait     0000000C 
+   C8:  Call     DemoSetButtons ( 00008000 )
+   D8:  Wait     0000000E 
+   E4:  Call     DemoSetButtons ( 00000000 )
+   F4:  Wait     0000000A 
+  100:  If  *Flag_EVT_09  ==  00000001 
+  110:  	Return
+  118:  EndIf
+  120:  Set  *Flag_EVT_09  00000001 
+  130:  Call     GotoMapSpecial ( $ASCII_80245E00 00000002 00000002 )
+  148:  Wait     00000064 
+  154:  Return
+  15C:  End
+
+#new:Script $Script_802454E4
+    0:  Wait     0000000A 
+    C:  Loop     
+   18:  	Call     GetDemoState 	( *Var[0] )
+   28:  	If  *Var[0]  ==  00000002 
+   38:  		BreakLoop
+   40:  	EndIf
+   48:  	Wait     00000001 
+   54:  EndLoop
+   5C:  If  *Flag_EVT_09  ==  00000001 
+   6C:  	Return
+   74:  EndIf
+   7C:  Set  *Flag_EVT_09  00000001 
+   8C:  Call     GotoMapSpecial ( $ASCII_80245E00 00000002 00000003 )
+   A4:  Wait     00000064 
+   B0:  Return
+   B8:  End
+
+#new:Script $Script_802455A4
+    0:  Wait     0000000D 
+    C:  Call     DemoSetButtons ( 00004000 )
+   1C:  Wait     00000003 
+   28:  Call     DemoSetButtons ( 00000000 )
+   38:  Wait     000000A0 
+   44:  Call     DemoUseJoystick 	( 00000000 00000000 )
+   58:  Wait     00000001 
+   64:  Call     DemoUseJoystick 	( 00000000 FFFFFFFA )
+   78:  Wait     00000001 
+   84:  Call     DemoUseJoystick 	( 00000001 FFFFFFF5 )
+   98:  Wait     00000001 
+   A4:  Call     DemoUseJoystick 	( 00000003 FFFFFFEE )
+   B8:  Wait     00000001 
+   C4:  Call     DemoUseJoystick 	( 00000007 FFFFFFE1 )
+   D8:  Wait     00000001 
+   E4:  Call     DemoUseJoystick 	( 0000000C FFFFFFD6 )
+   F8:  Wait     00000001 
+  104:  Call     DemoUseJoystick 	( 00000010 FFFFFFCF )
+  118:  Wait     00000001 
+  124:  Call     DemoUseJoystick 	( 00000019 FFFFFFC8 )
+  138:  Wait     00000001 
+  144:  Call     DemoUseJoystick 	( 00000024 FFFFFFC4 )
+  158:  Wait     00000001 
+  164:  Call     DemoUseJoystick 	( 0000002F FFFFFFC3 )
+  178:  Wait     00000001 
+  184:  Call     DemoUseJoystick 	( 00000034 FFFFFFC5 )
+  198:  Wait     00000001 
+  1A4:  Call     DemoUseJoystick 	( 00000037 FFFFFFCC )
+  1B8:  Wait     00000001 
+  1C4:  Call     DemoUseJoystick 	( 00000038 FFFFFFD0 )
+  1D8:  Wait     00000001 
+  1E4:  Call     DemoUseJoystick 	( 0000003A FFFFFFD4 )
+  1F8:  Wait     00000001 
+  204:  Call     DemoUseJoystick 	( 0000003D FFFFFFD7 )
+  218:  Wait     00000001 
+  224:  Call     DemoUseJoystick 	( 0000003E FFFFFFD8 )
+  238:  Wait     00000014 
+  244:  Call     DemoUseJoystick 	( 0000003F FFFFFFD7 )
+  258:  Wait     00000005 
+  264:  Call     DemoUseJoystick 	( 00000040 FFFFFFD7 )
+  278:  Wait     00000001 
+  284:  Call     DemoUseJoystick 	( 00000043 FFFFFFD9 )
+  298:  Wait     00000001 
+  2A4:  Call     DemoUseJoystick 	( 00000044 FFFFFFD9 )
+  2B8:  Wait     00000001 
+  2C4:  Call     DemoUseJoystick 	( 00000044 FFFFFFD9 )
+  2D8:  Wait     00000001 
+  2E4:  Call     DemoUseJoystick 	( 00000046 00000000 )
+  2F8:  Wait     00000014 
+  304:  If  *Flag_EVT_09  ==  00000001 
+  314:  	Return
+  31C:  EndIf
+  324:  Set  *Flag_EVT_09  00000001 
+  334:  Call     GotoMapSpecial ( $ASCII_80245E00 00000002 00000002 )
+  34C:  Wait     00000064 
+  358:  Return
+  360:  End
+
+#new:Script $Script_8024590C
+    0:  Wait     0000000A 
+    C:  Loop     
+   18:  	Call     GetDemoState 	( *Var[0] )
+   28:  	If  *Var[0]  ==  00000002 
+   38:  		BreakLoop
+   40:  	EndIf
+   48:  	Wait     00000001 
+   54:  EndLoop
+   5C:  If  *Flag_EVT_09  ==  00000001 
+   6C:  	Return
+   74:  EndIf
+   7C:  Set  *Flag_EVT_09  00000001 
+   8C:  Call     GotoMapSpecial ( $ASCII_80245E00 00000002 00000003 )
+   A4:  Wait     000000D8 
+   B0:  Return
+   B8:  End
+
+#new:Unknown $???_802459CC
+00000000 
+
+#new:Script $Script_802459D0
+    0:  Call     $Function_80241EE0 ( )
+    C:  Set  *Flag_EVT_09  00000000 
+   1C:  Exec     $Script_802454E4 
+   28:  Exec     $Script_80245380 
+   34:  Return
+   3C:  End
+
+#new:Unknown $???_80245A14
+00000000 
+
+#new:Script $Script_80245A18
+    0:  Call     $Function_80241FD0 ( )
+    C:  Set  *Flag_EVT_09  00000000 
+   1C:  Exec     $Script_8024590C 
+   28:  Exec     $Script_802455A4 
+   34:  Return
+   3C:  End
+
+PADDING: 80245A5C to 80245A60 (00005A5C to 00005A60)
+00000000 
+
+#new:ASCII $ASCII_80245A60
+nok_11
+
+#new:ASCII $ASCII_80245A68
+nok_13
+
+#new:ConstDouble $ConstDouble_80245A70
+0.800000d
+
+#new:JumpTable $JumpTable_80245A78
+$Function_80240904[40C] $Function_80240904[418] $Function_80240904[418] $Function_80240904[418] 
+$Function_80240904[418] $Function_80240904[418] $Function_80240904[418] $Function_80240904[418] 
+$Function_80240904[40C] $Function_80240904[418] $Function_80240904[40C] $Function_80240904[418] 
+$Function_80240904[40C] $Function_80240904[418] $Function_80240904[40C] $Function_80240904[418] 
+$Function_80240904[418] $Function_80240904[418] $Function_80240904[40C] $Function_80240904[418] 
+$Function_80240904[40C] 
+
+PADDING: 80245ACC to 80245AD0 (00005ACC to 00005AD0)
+00000000 
+
+#new:ConstDouble $ConstDouble_80245AD0
+32767.000000d
+
+#new:ConstDouble $ConstDouble_80245AD8
+32767.000000d
+
+% Origin: HEURISTIC
+#new:JumpTable $JumpTable_80245AE0
+$Function_802418D8[1E4] $Function_802418D8[1F4] $Function_802418D8[20C] $Function_802418D8[21C] 
+$Function_802418D8[234] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[24C] $Function_802418D8[25C] 
+$Function_802418D8[274] $Function_802418D8[284] $Function_802418D8[29C] $Function_802418D8[2B4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] 
+$Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2D4] $Function_802418D8[2CC] 
+
+#new:JumpTable $JumpTable_80245C70
+$Function_80241BD4[20C] $Function_80241BD4[224] $Function_80241BD4[23C] $Function_80241BD4[24C] 
+$Function_80241BD4[264] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[27C] $Function_80241BD4[28C] $Function_80241BD4[2A4] $Function_80241BD4[2BC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] 
+$Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2DC] $Function_80241BD4[2D4] 
+
+#new:ASCII $ASCII_80245E00
+nok_12
+
+PADDING: 80245E08 to 80245E10 (00005E08 to 00005E10)
+00000000 00000000 
+

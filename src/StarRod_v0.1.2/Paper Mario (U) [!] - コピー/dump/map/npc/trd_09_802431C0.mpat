@@ -1,0 +1,100 @@
+% automatically dumped from map trd_09
+
+#new:Npc $trd_09_802431C0
+00000019 $NpcSettings_8024217C_trd_09 00000000 00000000 00000000 
+00080D04 00000000 00000001 00000000 0000010E 
+{Items:3:Mushroom:A}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{NoCoinBonus}
+00000000 000003E8 00000000 00000000 00000000 FFFF8001 00000000 00000000 
+000003E8 00000000 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+002D0001 002D0002 002D0003 002D0003 002D0001 002D0004 002D0005 002D0005 
+002D0001 002D0001 002D0001 002D0001 002D0001 002D0001 002D0001 002D0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_80240C0C_trd_09
+    0:  Return
+    8:  End
+
+#new:Script $Script_NpcAI_80241B6C_trd_09
+    0:  Call     SetOwnerFlagBits 	( 00200000 .True )
+   14:  Label    00000001 
+   20:  Call     SetOwnerVar 	( 00000000 00000000 )
+   34:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   48:  Call     80045580 ( 00000000 )
+   58:  Call     SetNpcFlagBits ( .Npc:Self 00000002 .True )
+   70:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   8C:  Label    00000002 
+   98:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   AC:  If  *Var[0]  ==  00000000 
+   BC:  	Wait     00000001 
+   C8:  	Goto     00000002 
+   D4:  EndIf
+   DC:  Wait     0000000F 
+   E8:  Call     SetNpcAnimation 	( .Npc:Self 002D0004 )
+   FC:  Call     EnableNpcShadow 	( .Npc:Self .True )
+  110:  Call     SetNpcFlagBits ( .Npc:Self 00000002 .False )
+  128:  Call     80045580 ( 00000001 )
+  138:  Call     GetNpcPos   	( *Var[0] *Var[1] *Var[2] *Var[3] )
+  154:  Call     GetNpcYaw   	( *Var[0] *Var[4] )
+  168:  Call     AddVectorPolar ( *Var[1] *Var[3] *Fixed[14.0] *Var[4] )
+  184:  Add  *Var[2]  0000000B 
+  194:  Call     SetNpcPos   	( .Npc:Self *Var[1] *Var[2] *Var[3] )
+  1B0:  Call     InterpNpcYaw 	( .Npc:Self *Var[4] 00000000 )
+  1C8:  Call     80045838 ( FFFFFFFF 00000328 00200000 )
+  1E0:  Set  *Var[A]  *Var[1] 
+  1F0:  Sub  *Var[A]  0000000A 
+  200:  Set  *Var[B]  *Var[2] 
+  210:  Add  *Var[B]  00000005 
+  220:  Set  *Var[C]  *Var[3] 
+  230:  Add  *Var[C]  00000003 
+  240:  Call     PlayEffect  	( {FX:Steam:Ring} *Var[A] *Var[B] *Var[C] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  284:  Call     SetNpcSpeed 	( .Npc:Self *Fixed[6.0] )
+  298:  Switch  *Var[0] 
+  2A4:  	Case  ==  0000000A 
+  2B0:  		Call     MoveNpcTo   	( .Npc:Self FFFFFE4B *Var[3] 00000000 )
+  2CC:  	Case  ==  0000000B 
+  2D8:  		Call     MoveNpcTo   	( .Npc:Self FFFFFE34 *Var[3] 00000000 )
+  2F4:  	Case  ==  0000000C 
+  300:  		Call     MoveNpcTo   	( .Npc:Self FFFFFE3E *Var[3] 00000000 )
+  31C:  EndSwitch
+  324:  Call     80045838 ( FFFFFFFF B0000018 00000000 )
+  33C:  Call     SetNpcAnimation 	( .Npc:Self 002D0005 )
+  350:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  36C:  Add  *Var[1]  00000005 
+  37C:  Add  *Var[2]  00000001 
+  38C:  Call     PlayEffect  	( {FX:SmokeBurst:Black} *Var[0] *Var[1] *Var[2] *Fixed[0.05078125] 00000014 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  3D0:  Add  *Var[2]  00000001 
+  3E0:  Call     PlayEffect  	( {FX:RingBlast:Red} *Var[0] *Var[1] *Var[2] *Fixed[1.2001953] 00000019 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  424:  Wait     00000003 
+  430:  Goto     00000001 
+  43C:  Return
+  444:  End
+
+#new:Script $Script_80241FB8_trd_09
+    0:  Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000000 )
+   1C:  Call     GetBattleOutcome 	( *Var[0] )
+   2C:  Switch  *Var[0] 
+   38:  	Case  ==  00000000 
+   44:  		Thread
+   4C:  			Wait     00000014 
+   58:  			Call     SetNpcFlagBits ( .Npc:Self 00000002 .True )
+   70:  			Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   8C:  			Call     BindNpcAI   	( .Npc:Self $Script_NpcAI_80241B6C_trd_09 )
+   A0:  		EndThread
+   A8:  		Call     DoNpcDefeat 	( )
+   B4:  	Case  ==  00000002 
+   C0:  		Call     80045900 ( 00000000 )
+   D0:  EndSwitch
+   D8:  Return
+   E0:  End
+
+#new:NpcSettings $NpcSettings_8024217C_trd_09
+002D0001 000E001F $Script_80240C0C_trd_09 00000000 $Script_NpcAI_80241B6C_trd_09 80077F70 00000000 $Script_80241FB8_trd_09 
+00000000 00000000 00050000 
+

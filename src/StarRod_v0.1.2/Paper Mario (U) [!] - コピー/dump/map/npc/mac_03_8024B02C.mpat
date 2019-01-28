@@ -1,0 +1,234 @@
+% automatically dumped from map mac_03
+
+#new:Npc $mac_03_8024B02C
+00000000 $NpcSettings_802464C0_mac_03 00000000 00000000 00000000 
+00002D09 $Script_Init_8024992C_mac_03 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008C0501 008C0501 008C0501 008C0501 008C0501 008C0501 008C0501 008C0501 
+008C0501 008C0501 008C0501 008C0501 008C0501 008C0501 008C0501 008C0501 
+00000000 00000000 00000000 001A003D % He's the station master of Dry Dry Railroad in Toa ...
+
+#new:Script $Script_802452DC_mac_03
+    0:  Call     SetNpcFlagBits ( .Npc:Partner 00000200 .False )
+   18:  Label    00000000 
+   24:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   3C:  Set  *Var[0]  *MapVar[0] 
+   4C:  If  *MapFlag[05]  ==  00000000 
+   5C:  	Add  *Var[0]  FFFFFE57 
+   6C:  Else
+   74:  	Add  *Var[0]  FFFFFEB1 
+   84:  EndIf
+   8C:  Set  *Var[3]  *Var[0] 
+   9C:  Set  *Var[4]  *Var[1] 
+   AC:  Set  *Var[5]  *Var[2] 
+   BC:  If  *MapFlag[05]  ==  00000000 
+   CC:  	Add  *Var[3]  FFFFFFC7 
+   DC:  Else
+   E4:  	Add  *Var[3]  00000039 
+   F4:  EndIf
+   FC:  Add  *Var[4]  FFFFFFE1 
+  10C:  Add  *Var[5]  00000000 
+  11C:  Call     SetNpcPos   	( .Npc:Partner *Var[3] *Var[4] *Var[5] )
+  138:  If  *MapFlag[05]  ==  00000000 
+  148:  	Add  *Var[0]  00000000 
+  158:  Else
+  160:  	Add  *Var[0]  00000000 
+  170:  EndIf
+  178:  Add  *Var[1]  FFFFFFFA 
+  188:  Add  *Var[2]  FFFFFFD8 
+  198:  Call     SetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  1B4:  Wait     00000001 
+  1C0:  Goto     00000000 
+  1CC:  Return
+  1D4:  End
+
+#new:Script $Script_802454B8_mac_03
+    0:  Label    00000000 
+    C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  If  *MapFlag[05]  ==  00000000 
+   34:  	If  *Var[0]  >  0000015E 
+   44:  		Set  *Var[0]  0000015E 
+   54:  	EndIf
+   5C:  	Add  *Var[0]  00000028 
+   6C:  	Set  *Var[1]  0000001E 
+   7C:  	Add  *Var[2]  00000028 
+   8C:  Else
+   94:  	If  *Var[0]  >  0000015E 
+   A4:  		Set  *Var[0]  0000015E 
+   B4:  	EndIf
+   BC:  	Add  *Var[0]  FFFFFFD8 
+   CC:  	Set  *Var[1]  0000001E 
+   DC:  	Add  *Var[2]  00000028 
+   EC:  EndIf
+   F4:  Call     802CAF2C ( 00000000 *Var[0] *Var[1] *Var[2] )
+  110:  Wait     00000001 
+  11C:  Goto     00000000 
+  128:  Return
+  130:  End
+
+#new:Script $Script_80245C8C_mac_03
+    0:  If  *Flag_MAC_9A  ==  00000000 
+   10:  	Return
+   18:  EndIf
+   20:  Call     GetEntryID  	( *Var[0] )
+   30:  If  *Var[0]  ==  00000001 
+   40:  	Return
+   48:  EndIf
+   50:  Call     DisablePlayerInput 	( .True )
+   60:  Call     DisablePlayerPhysics 	( .True )
+   70:  Call     DisablePartnerAI 	( 00000000 )
+   80:  Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+   94:  Set  *MapVar[0]  00000000 
+   A4:  Set  *MapVar[1]  00000000 
+   B4:  Set  *MapFlag[05]  00000000 
+   C4:  Set  *MapFlag[00]  00000001 
+   D4:  Wait     00000014 
+   E0:  Call     ModifyColliderFlags 	( 00000000 {Collider:deilitk} 7FFFFE00 )
+   F8:  Call     ModifyColliderFlags 	( 00000000 {Collider:kisya1} 7FFFFE00 )
+  110:  Call     ModifyColliderFlags 	( 00000000 {Collider:kisya2} 7FFFFE00 )
+  128:  Call     ModifyColliderFlags 	( 00000000 {Collider:kisya3} 7FFFFE00 )
+  140:  Call     ModifyColliderFlags 	( 00000000 {Collider:humikiri} 7FFFFE00 )
+  158:  Call     ModifyColliderFlags 	( 00000000 {Collider:fumikiri} 7FFFFE00 )
+  170:  Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  188:  Call     SetPlayerSpeed ( *Fixed[3.0] )
+  198:  Call     MovePlayerTo 	( FFFFFE57 00000046 00000000 )
+  1B0:  Call     SetPlayerJumpscale 	( *Fixed[1.0] )
+  1C0:  Set  *Var[0]  FFFFFE57 
+  1D0:  Set  *Var[1]  0000002D 
+  1E0:  Set  *Var[2]  00000014 
+  1F0:  Call     802D10D8 ( 00000003 )
+  200:  Call     PlayerJump  	( *Var[0] *Var[1] *Var[2] 0000000F )
+  21C:  Call     802D10D8 ( 00000000 )
+  22C:  Call     SetNpcFlagBits ( .Npc:Partner 00000200 .False )
+  244:  Call     SetNpcSpeed 	( .Npc:Partner *Fixed[3.0] )
+  258:  Call     SetNpcAnimation 	( .Npc:Partner 00000102 )
+  26C:  Call     MoveNpcTo   	( .Npc:Partner FFFFFE57 00000046 00000000 )
+  288:  Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+  29C:  Call     SetNpcJumpscale 	( .Npc:Partner *Fixed[1.0] )
+  2B0:  Set  *Var[0]  FFFFFE57 
+  2C0:  Set  *Var[1]  0000002D 
+  2D0:  Set  *Var[2]  00000014 
+  2E0:  Call     NpcJump0    	( .Npc:Partner *Var[0] *Var[1] *Var[2] 0000000A )
+  300:  Set  *MapFlag[01]  00000001 
+  310:  Wait     00000014 
+  31C:  Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  338:  Add  *Var[2]  FFFFFFCE 
+  348:  Call     SetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  364:  Call     EnableNpcShadow 	( .Npc:Partner .False )
+  378:  Call     HidePlayerShadow 	( .True )
+  388:  Call     SetPlayerJumpscale 	( *Fixed[1.0] )
+  398:  Set  *Var[0]  FFFFFE57 
+  3A8:  Set  *Var[1]  0000004B 
+  3B8:  Set  *Var[2]  00000014 
+  3C8:  Call     802D10D8 ( 00000003 )
+  3D8:  Call     PlayerJump  	( *Var[0] *Var[1] *Var[2] 0000000F )
+  3F4:  Call     802D10D8 ( 00000000 )
+  404:  Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  418:  Set  *MapFlag[04]  00000001 
+  428:  Call     SetNpcSpeed 	( .Npc:Partner *Fixed[3.0] )
+  43C:  Call     SetNpcAnimation 	( .Npc:Partner 00000102 )
+  450:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  468:  Add  *Var[0]  FFFFFFC7 
+  478:  Add  *Var[1]  FFFFFFE1 
+  488:  Add  *Var[2]  00000000 
+  498:  Call     MoveNpcTo   	( .Npc:Partner *Var[0] *Var[2] 00000000 )
+  4B4:  Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+  4C8:  Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000000 )
+  4E0:  Exec     $Script_802452DC_mac_03 
+  4EC:  Call     UseSettingsFrom 	( .Default 00000000 00000000 00000000 )
+  508:  Call     SetCamDistance ( .Default *Fixed[240.0] )
+  51C:  Call     SetCamPosB  	( .Default *Fixed[-100.0] *Fixed[-50.0] )
+  534:  Call     SetCamAngles 	( .Default *Fixed[-2.5] *Fixed[-3.5] )
+  54C:  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  560:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  578:  Wait     00000001 
+  584:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  59C:  Add  *Var[0]  00000064 
+  5AC:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  5C8:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  5E0:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  5F4:  Call     SayMessage0 	( 00000001 008C0004 008C0000 00000005 00050009 ) %  Sit tight, folks. Now departing for Mt. Rugged.
+  614:  Call     PlaySound   	( 00000082 )
+  624:  Thread
+  62C:  	Loop     000003E8 
+  638:  		AddF  *MapVar[1]  *Fixed[0.03125] 
+  648:  		If  *MapVar[1]  >  0000000A 
+  658:  			SetF  *MapVar[1]  *Fixed[10.0] 
+  668:  		EndIf
+  670:  		Wait     00000001 
+  67C:  	EndLoop
+  684:  EndThread
+  68C:  Wait     00000028 
+  698:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  6B0:  Exec     $Script_802454B8_mac_03 *Var[9] 
+  6C0:  Wait     000000AA 
+  6CC:  Wait     00000064 
+  6D8:  Call     GotoMap     	( $ASCII_802513C0_mac_03 00000000 )
+  6EC:  Return
+  6F4:  End
+
+#new:Script $Script_802464B0_mac_03
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_802464C0_mac_03
+00000000 00200018 $Script_802464B0_mac_03 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802496CC_mac_03
+    0:  If  *Flag_MAC_9A  ==  00000000 
+   10:  	Call     SayMessage0 	( 00000000 008C0506 008C0502 00000000 00050000 ) % I'm ruined... Done for! A huge rock is blocking th ...
+   30:  	Return
+   38:  EndIf
+   40:  Switch  *StoryProgress 
+   4C:  	Case  FFFFFFF3  to  00000005 
+   5C:  		If  *Flag_MAC_9D  ==  00000000 
+   6C:  			Call     SayMessage0 	( 00000000 008C0506 008C0502 00000000 00050007 ) % What'll I do... I'm ruined! There's no hope for me ...
+   8C:  			Return
+   94:  		EndIf
+   9C:  EndSwitch
+   A4:  Call     GetEntryID  	( *Var[0] )
+   B4:  If  *Var[0]  ==  00000001 
+   C4:  	Call     SayMessage0 	( 00000000 008C0504 008C0501 00000000 00050006 ) % There's still some time before the next departure. ...
+   E4:  	Return
+   EC:  EndIf
+   F4:  If  *Flag_MAC_9D  ==  00000000 
+  104:  	If  *Flag_MAC_9B  ==  00000000 
+  114:  		Set  *Flag_MAC_9B  00000001 
+  124:  		Set  *Var[0]  00050001 
+  134:  	Else
+  13C:  		Set  *Var[0]  00050002 
+  14C:  	EndIf
+  154:  Else
+  15C:  	If  *Flag_MAC_9E  ==  00000000 
+  16C:  		Set  *Flag_MAC_9E  00000001 
+  17C:  		Set  *Var[0]  00050008 
+  18C:  	Else
+  194:  		Set  *Var[0]  00050002 
+  1A4:  	EndIf
+  1AC:  EndIf
+  1B4:  Call     SayMessage0 	( 00000000 008C0504 008C0501 00000000 *Var[0] ) % variable string ID
+  1D4:  Call     ShowChoice  	( 001E000C ) % Yes No 
+  1E4:  If  *Var[0]  ==  00000000 
+  1F4:  	Call     SayMessage2 	( 00000000 008C0504 008C0501 00000000 00050003 ) % The train is about to depart. Please board quickly ...
+  214:  	Exec     $Script_80245C8C_mac_03 
+  220:  Else
+  228:  	Call     SayMessage2 	( 00000000 008C0504 008C0501 00000000 00050004 ) % We hope to see you again!
+  248:  EndIf
+  250:  Return
+  258:  End
+
+#new:Script $Script_Init_8024992C_mac_03
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802496CC_mac_03 )
+   14:  Return
+   1C:  End
+
+#new:ASCII $ASCII_802513C0_mac_03
+iwa_11
+

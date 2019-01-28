@@ -1,0 +1,49 @@
+% automatically dumped from map kkj_19
+
+#new:Npc $kkj_19_80241904
+00000000 $NpcSettings_80241700_kkj_19 00000000 00000000 00000000 
+08000F05 $Script_Init_80241850_kkj_19 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00200001 00200005 00200008 00200008 00200001 00200001 00200001 00200001 
+00200001 00200001 00200001 00200001 00200001 00200001 00200001 00200001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80241700_kkj_19
+00000000 001A0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241784_kkj_19
+    0:  Call     SetOwnerVar 	( 00000000 00000000 )
+   14:  Return
+   1C:  End
+
+#new:Script $Script_802417A8_kkj_19
+    0:  Loop     
+    C:  	Wait     00000001 
+   18:  	Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+   34:  	Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   50:  	Call     GetOwnerVar 	( 00000001 *Var[0] )
+   64:  	If  *Var[0]  ==  00000001 
+   74:  		Call     NpcFacePlayer 	( .Npc:Partner 00000000 )
+   88:  	EndIf
+   90:  EndLoop
+   98:  Return
+   A0:  End
+
+#new:Script $Script_Init_80241850_kkj_19
+    0:  Call     SetNpcFlagBits ( .Npc:Self 00000002 .True )
+   18:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   2C:  Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+   48:  Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   64:  Call     802CDF8C ( FFFFFFFF 00000014 00000014 )
+   7C:  Call     BindNpcInteract 	( .Npc:Self $Script_80241784_kkj_19 )
+   90:  Call     BindNpcIdle 	( .Npc:Self $Script_802417A8_kkj_19 )
+   A4:  Return
+   AC:  End
+

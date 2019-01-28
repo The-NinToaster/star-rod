@@ -1,0 +1,58 @@
+% automatically dumped from map sam_11
+
+#new:Npc $sam_11_80248DF0
+00000000 $NpcSettings_80244E9C_sam_11 00000000 00000000 00000000 
+00400509 $Script_Init_802489C4_sam_11 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00D00001 00D00002 00D00001 00D00001 00D00001 00D00001 00D00001 00D00001 
+00D00001 00D00001 00D00001 00D00001 00D00001 00D00001 00D00001 00D00001 
+00000000 00000000 00000000 001A00F3 % He's the penguin patrol! Guardian of the city! He  ...
+
+#new:NpcSettings $NpcSettings_80244E9C_sam_11
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802475A0_sam_11
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000003F 
+   18:  		Switch  *MapVar[5] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 00D00004 00D00001 00000000 001200B9 ) % I'm the city guard around here. I'm investigating  ...
+   50:  				Set  *MapVar[5]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 00D00004 00D00001 00000000 001200BA ) % I'm the city guard around here. I'm investigating  ...
+   8C:  				Set  *MapVar[5]  00000000 
+   9C:  		EndSwitch
+   A4:  	Case  <  00000043 
+   B0:  	Case  <  00000044 
+   BC:  		Call     SayMessage0 	( .Npc:Self 00D00004 00D00001 00000000 001200BB ) % For puffin's sake... The Mayor's wife is an alarmi ...
+   DC:  	Case  <  00000057 
+   E8:  		Call     SayMessage0 	( .Npc:Self 00D00004 00D00001 00000000 001200BC ) % Pardon me. I'm on patrol. There have been rumors o ...
+  108:  	Case  >=  00000057 
+  114:  		Call     SayMessage0 	( .Npc:Self 00D00004 00D00001 00000000 001200BD ) % How are you holding up? I fight for peace and just ...
+  134:  EndSwitch
+  13C:  Return
+  144:  End
+
+#new:Script $Script_802476EC_sam_11
+    0:  Return
+    8:  End
+
+#new:Script $Script_Init_802489C4_sam_11
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802475A0_sam_11 )
+   14:  Call     BindNpcIdle 	( .Npc:Self $Script_802476EC_sam_11 )
+   28:  Switch  *StoryProgress 
+   34:  	Case  <  0000003F 
+   40:  	Case  <  00000043 
+   4C:  		Call     RemoveNpc   	( .Npc:Self )
+   5C:  	Case  >=  00000043 
+   68:  EndSwitch
+   70:  Return
+   78:  End
+

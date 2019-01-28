@@ -1,0 +1,1981 @@
+0B-000
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Oh, thank heavens![BR]
+[PAUSE:0A]He's been gravely injured, but I[BR]
+think he'll recover.[WAIT][END]
+
+0B-001
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}But Bowser has the Star Rod![BR]
+Now he's mightier than Mario![BR]
+[WAIT][NEXT]
+It's hopeless! All is lost![WAIT][END]
+
+0B-002
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Everybody just calm down.[BR]
+[PAUSE:0A]As long as we keep it together,[BR]
+there's always hope. Now...[BR]
+[WAIT][NEXT]
+Our fates are in Mario's hands.[BR]
+We must try to revive him.[BR]
+[WAIT][NEXT]
+Gather round, everyone.[BR]
+[PAUSE:0F]Send Mario your power![WAIT][END]
+
+0B-003
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Phew...that's it. That's all we[BR]
+can do right now.[BR]
+[WAIT][NEXT]
+Mario...[BR]
+[PAUSE:0A]Please get up... Please...[WAIT][END]
+
+0B-004
+[STYLE:RIGHT]It really sounded like something[BR]
+fell somewhere around here...[BR]
+[WAIT][NEXT]
+Oh[PAUSE:03].[PAUSE:03].[PAUSE:03].[BR]
+[PAUSE:0A]Who could that be?[WAIT][END]
+
+0B-005
+[STYLE:RIGHT]This red shirt, [PAUSE:05]this hat, [PAUSE:05]and[BR]
+this mustache...[BR]
+[PAUSE:0A]You know, this really looks like[BR]
+the one and only Mario![BR]
+[WAIT][NEXT]
+It couldn't be...could it?[BR]
+[PAUSE:0A]The real Mario?[WAIT][END]
+
+0B-006
+[STYLE:RIGHT]{StartFX:Shrinking}Hey! [PAUSE:04]Hey! Wake up![BR]
+[PAUSE:08]C'mon!! Up and at 'em!![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Oh no! He won't wake up!!![WAIT][END]
+
+0B-007
+[STYLE:RIGHT]Oh, oh, what am I gonna do!?[WAIT][END]
+
+0B-008
+[STYLE:RIGHT]{StartFX:Shrinking}Dad!![BR]
+[PAUSE:05]Goom-pa!![BR]
+[PAUSE:05]Goom-ba-rio!!![WAIT][END]
+
+0B-009
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}[PAUSE:0A]Mario...[BR]
+[PAUSE:0A]Can you hear me, Mario...?[BR]
+[WAIT][NEXT]
+I'm Eldstar, a Star Spirit...[BR]
+[PAUSE:0F]I have something very important[BR]
+to tell you...[BR]
+[WAIT][NEXT]
+It concerns the princess...and[BR]
+all of the Mushroom Kingdom...[BR]
+[WAIT][NEXT]
+[PAUSE:0A]But sadly,[BR]
+[PAUSE:05]I haven't the strength to talk[BR]
+to you here...[BR]
+[WAIT][NEXT]
+Mario...[BR]
+[PAUSE:0A]I need to have you come to[BR]
+{Color:20}Shooting Star Summit{Color:0A}.[BR]
+[PAUSE:0A][WAIT][NEXT]
+[PAUSE:05]Please... Mario...[BR]
+[PAUSE:0A]We Star Spirits will be waiting[BR]
+for you at the summit...[WAIT][END]
+
+0B-00A
+[STYLE:RIGHT]Oh...[PAUSE:05]Mario![BR]
+[WAIT][NEXT]
+I'm so happy[BR]
+[PAUSE:0A]to see you awake![WAIT][END]
+
+0B-00B
+[STYLE:RIGHT]You haven't opened your eyes[BR]
+for days and days![BR]
+Everyone's been worried sick![WAIT][END]
+
+0B-00C
+[STYLE:RIGHT]This place?[BR]
+[WAIT][NEXT]
+This is {Color:20}Goomba Village{Color:0A}.[BR]
+[PAUSE:0A]It's a tiny village that's just[BR]
+west of {Color:20}Toad Town{Color:0A}.[BR]
+[WAIT][NEXT]
+The only residents are me and a[BR]
+single family of Goombas.[WAIT][END]
+
+0B-00D
+[STYLE:RIGHT]The Goombas in the family are[BR]
+just the nicest folks you'll ever[BR]
+meet.[BR]
+[WAIT][NEXT]
+They're the ones who found you[BR]
+unconscious in the forest and[BR]
+carried you here to get better. [WAIT][END]
+
+0B-00E
+[STYLE:RIGHT]Huh...?[BR]
+[PAUSE:05]A Star with a mustache?[BR]
+[PAUSE:0A]You're saying a star told you to[BR]
+go to Shooting Star Summit?[WAIT][END]
+
+0B-00F
+[STYLE:RIGHT]No, [PAUSE:04]I saw nothing like that.[BR]
+[PAUSE:0A]And I sure didn't see anyone[BR]
+come in or out of this house.[BR]
+[WAIT][NEXT]
+I wonder, Mario...[BR]
+[PAUSE:0A]Maybe you just had a dream?[WAIT][END]
+
+0B-010
+[STYLE:RIGHT]Although maybe not...[BR]
+[PAUSE:0A]It could have been some sort of[BR]
+message from a Star Spirit.[BR]
+They live in Star Haven.[BR]
+[WAIT][NEXT]
+Shooting Star Summit is the [BR]
+nearest place to Star Haven, so[BR]
+that would make sense...[WAIT][END]
+
+0B-011
+[STYLE:RIGHT]Who knows? In any case, I'm glad[BR]
+to see you've recovered.[BR]
+[WAIT][NEXT]
+I know the Goombas would be[BR]
+happy if you paid them a visit.[WAIT][END]
+
+0B-012
+[STYLE:RIGHT]Please feel free to come here[BR]
+anytime you get tired.[BR]
+[WAIT][NEXT]
+A good nap will work wonders[BR]
+when you're feeling weak.[WAIT][END]
+
+0B-013
+[STYLE:RIGHT]The Toad House's slogan is...[BR]
+[PAUSE:0A]"Refresh your Body and Mind!"[BR]
+[WAIT][NEXT]
+Anytime you feel tired, a good[BR]
+rest will fix you right up.[BR]
+[WAIT][NEXT]
+Would you like to take a nap?[BR]
+{Func_04}[END]
+
+0B-014
+[STYLE:RIGHT]Welcome to the Toad House! Our[BR]
+slogan is, "Refresh your Body[BR]
+and Mind!"[BR]
+[WAIT][NEXT]
+Would you like to take a nap?[BR]
+{Func_04}[END]
+
+0B-015
+[STYLE:RIGHT]...Really?[BR]
+[PAUSE:0A]You look pretty healthy to me.[BR]
+[PAUSE:0A]Are you sure you want to take a[BR]
+nap?[BR]
+{Func_04}[END]
+
+0B-016
+[NEXT]
+Please come again.[WAIT][END]
+
+0B-017
+[NEXT]
+Make yourself comfortable and[BR]
+enjoy your stay.[WAIT][END]
+
+0B-018
+[STYLE:RIGHT]Did you sleep well?[BR]
+[WAIT][NEXT]
+Take care now![WAIT][END]
+
+0B-019
+[STYLE:RIGHT]Ooh, you startled me![BR]
+[PAUSE:0A]Hm, yes, Mario, isn't it?[BR]
+[WAIT][NEXT]
+So you've awakened at last![BR]
+Good! Knew you'd pull through![BR]
+[WAIT][NEXT]
+Call me Goompa.[BR]
+[PAUSE:0F]I'm the Goomba grandfather,[BR]
+so...I'm Goompa.[BR]
+[WAIT][NEXT]
+I'm sorry, but would you mind[BR]
+giving me the details later?[BR]
+[WAIT][NEXT]
+I'm pretty busy fixing the[BR]
+veranda.[WAIT][END]
+
+0B-01A
+[STYLE:RIGHT]Did you feel that earthquake the[BR]
+other day, young feller? It[BR]
+caused all kinds of damage.[BR]
+[WAIT][NEXT]
+But little by little, Goompapa[BR]
+and I are fixing it all up.[BR]
+[WAIT][NEXT]
+Folks are saying the center of[BR]
+the earthquake was right at[BR]
+Princess Peach's Castle.[BR]
+[PAUSE:0A]Boy, I sure hope not.[WAIT][END]
+
+0B-01B
+[STYLE:RIGHT]Did you feel that earthquake the[BR]
+other day, young feller? It[BR]
+caused all kinds of damage.[BR]
+[WAIT][NEXT]
+But little by little, Goompapa[BR]
+and I are fixing it all up.[BR]
+[WAIT][NEXT]
+Folks are saying the center of[BR]
+the earthquake was right at[BR]
+Princess Peach's Castle.[BR]
+[PAUSE:0A]Boy, I sure hope not.[WAIT][END]
+
+0B-01C
+[STYLE:RIGHT]Never worry, kids, here I am.[BR]
+[PAUSE:05]Thanks to young Mario here, I[BR]
+made it back all right.[WAIT][END]
+
+0B-01D
+[STYLE:RIGHT]Oh, is that thing locked?[BR]
+[PAUSE:0A]Let me open it up for you.[WAIT][END]
+
+0B-01E
+[STYLE:RIGHT]Goompa![BR]
+[PAUSE:0A]Where've you been?[BR]
+[WAIT][NEXT]
+I looked outside and...wow![BR]
+[PAUSE:0A]Both you and the veranda were[BR]
+just plain gone![WAIT][END]
+
+0B-01F
+[STYLE:RIGHT]Goompa,[BR]
+[PAUSE:0A]I was very, very worried about[BR]
+you! Really worried![WAIT][END]
+
+0B-020
+[STYLE:RIGHT]Sorry, kids, I apologize. [BR]
+[PAUSE:0A]I didn't mean to make you fret.[BR]
+You just take it easy, now.[BR]
+[WAIT][NEXT]
+I'm back safe and sound.[WAIT][END]
+
+0B-021
+[STYLE:RIGHT]Now![BR]
+[WAIT][NEXT]
+Before I forget, I've decided to[BR]
+give you something, Mario.[BR]
+[PAUSE:0A]Wait here a minute.[WAIT][END]
+
+0B-022
+[STYLE:RIGHT]Huh?[BR]
+[PAUSE:0A]Hey... That dolly you've got...[BR]
+That's the one Goombaria lost![BR]
+[WAIT][NEXT]
+She was looking all over for it.[BR]
+[PAUSE:0A]Would you give it back to her?[BR]
+{Func_04}[END]
+
+0B-023
+[NEXT]
+Aw, that's just mean, Mario...[BR]
+[WAIT][NEXT]
+I guess you can just give it[BR]
+back when you're done with it.[WAIT][END]
+
+0B-024
+[STYLE:RIGHT]{StartFX:Shrinking}It's my dolly! Dolly, dolly![BR]
+[PAUSE:14]You're back!![BR]
+{EndFX:Shrinking}Thank you so much![HEART][BR]
+[WAIT][NEXT]
+I'm so happy...[BR]
+[PAUSE:0A]My sweet dolly! Don't you ever[BR]
+get lost again![WAIT][END]
+
+0B-025
+[STYLE:RIGHT]Here's a present from me![BR]
+[PAUSE:0A]Look at the pretty glitter![WAIT][END]
+
+0B-026
+[STYLE:RIGHT]And [PAUSE:0A]take this, [PAUSE:0A]too![WAIT][END]
+
+0B-027
+[STYLE:RIGHT]You always seem to beat up your[BR]
+enemies... Do you work out?[BR]
+[WAIT][NEXT]
+I study self-defense by reading[BR]
+books by the masters and[BR]
+listening to Dad and Goompa.[BR]
+[WAIT][NEXT]
+And, I also exercise every day[BR]
+so I can be strong like you![BR]
+[PAUSE:0A]It's starting to show, too! I'm[BR]
+getting big muscles![WAIT][END]
+
+0B-028
+[STYLE:RIGHT]Yeah, Goombario's head is hard[BR]
+as a rock now! Tee hee! [BR]
+[WAIT][NEXT]
+When he does his Headbonk move,[BR]
+it really, really hurts![WAIT][END]
+
+0B-029
+[STYLE:RIGHT]Oh, be quiet, Goombaria! You're[BR]
+embarrassing me![BR]
+[PAUSE:0A]Of course, it IS true...[WAIT][END]
+
+0B-02A
+[STYLE:RIGHT]Sorry to have kept you waiting,[BR]
+Mario.[WAIT][END]
+
+0B-02B
+[STYLE:RIGHT]It's OK, Goompa![BR]
+[PAUSE:0A]We're just rapping with Mario...[WAIT][END]
+
+0B-02C
+[STYLE:RIGHT]Oh. "Rapping," huh? Sorry.[BR]
+[PAUSE:0A]I wanted to give this to Mario.[WAIT][END]
+
+0B-02D
+[STYLE:RIGHT]This is called a {Color:20}Badge{Color:0A}.[BR]
+[WAIT][NEXT]
+If you wear this, you'll be able[BR]
+to do a Power Jump, which means[BR]
+you'll be able to do a lot more[BR]
+damage with your Jump attack.[BR]
+[WAIT][NEXT]
+But listen here, and listen well.[BR]
+You'll only be able to do it if[BR]
+you're wearing the Badge.[BR]
+[WAIT][NEXT]
+You'd better try it first.[BR]
+[PAUSE:0A]Putting Badges on and taking[BR]
+them off is a vital skill. [BR]
+[WAIT][NEXT]
+Would you like a quick lesson in[BR]
+how to use the Badges you[BR]
+collect during your travels?[BR]
+{Func_04}[END]
+
+0B-02E
+[NEXT]
+You'd better listen, Mario. This[BR]
+is really important![BR]
+[PAUSE:0A]Could I please give you a brief[BR]
+lesson in Badges?[BR]
+{Func_04}[END]
+
+0B-02F
+[NEXT]
+All right, I trust you.[WAIT][END]
+
+0B-030
+[NEXT]
+OK, then press {PushColor}{Color:12}[START]{PopColor}.[BR]
+[PAUSE:0A]The menu will open.[BR]
+{Func_04}[END]
+
+0B-031
+[STYLE:RIGHT]Now remember, you need[BR]
+{Color:20}FP (Flower Points) {Color:0A}to use this[BR]
+Power Jump technique.[BR]
+[WAIT][NEXT]
+{StartAnim}{Down:08}{Image1:00}{EndAnim}{SetPrintPos:00:28}{Down:06}Do you remember that we[BR]
+{SetPrintPos:00:28}saw a block like this on the[BR]
+{SetPrintPos:00:28}way back to the village?[BR]
+{Up:06}[BR]
+[WAIT][NEXT]
+Well, these blocks will restore[BR]
+not only HP but also FP.[BR]
+[WAIT][NEXT]
+They're lifesavers, Mario! Use[BR]
+them whenever your HP and FP[BR]
+reserves are getting low.[WAIT][END]
+
+0B-032
+[STYLE:RIGHT]By the by, Mario,[BR]
+[PAUSE:0F]I heard from Gooma...[BR]
+[WAIT][NEXT]
+You're taking it upon yourself to[BR]
+try to rescue the princess[BR]
+from Bowser's clutches.[WAIT][END]
+
+0B-033
+[STYLE:RIGHT]Oh yeah! Mario can beat Bowser[BR]
+with one hand tied behind his[BR]
+back![WAIT][END]
+
+0B-034
+[STYLE:RIGHT]Hush, now, Goombario. Mario,[BR]
+please take this Hammer.[BR]
+[WAIT][NEXT]
+It should serve you well. If I[BR]
+were just a bit younger, I'd[BR]
+accompany you on your trip. I'd[BR]
+have done some damage![BR]
+[WAIT][NEXT]
+The years have started to weigh[BR]
+on me, though. I tell you, this[BR]
+lower back pain...[WAIT][END]
+
+0B-035
+[STYLE:RIGHT]Adventure...you're so lucky![BR]
+[WAIT][NEXT]
+Princess-rescuing is so cool![BR]
+[PAUSE:0A]I really want to be an[BR]
+adventurer, too, someday![WAIT][END]
+
+0B-036
+[STYLE:RIGHT]Me too!![WAIT][END]
+
+0B-037
+[STYLE:RIGHT]Oh! [PAUSE:05]Here's an idea![BR]
+[PAUSE:0F]Goombario...[BR]
+[WAIT][NEXT]
+Perhaps the timing is perfect.[BR]
+You are no longer a child, and[BR]
+evil times are upon us.[BR]
+[WAIT][NEXT]
+I'm sure Mario will agree...[BR]
+[PAUSE:0F]You should accompany Mario.[WAIT][END]
+
+0B-038
+[STYLE:RIGHT]What!? Really!? May I go,[BR]
+Goompa!? May I really go!? [BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}Yes!!!!! Oh yeah!!![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Mario! You won't regret this![WAIT][END]
+
+0B-039
+[STYLE:RIGHT]Way to go, Goombario![WAIT][END]
+
+0B-03A
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0F]I know Goombario will prove to be[BR]
+a worthy companion.[BR]
+[WAIT][NEXT]
+...Well, I think it's about time for[BR]
+my nap. I'll be in the house.[BR]
+[WAIT][NEXT]
+Good-byes have a way of making[BR]
+this old Goomba get weepy.[WAIT][END]
+
+0B-03B
+[STYLE:RIGHT]This is so cool! Mario![BR]
+[PAUSE:0A]{StartFX:Shrinking}{DelayOff}Let's go!![BR]
+{DelayOn}[WAIT][END]
+
+0B-03C
+[STYLE:RIGHT]This is so cool! Mario![BR]
+[PAUSE:0A]{StartFX:Shrinking}{DelayOff}Let's go!![BR]
+{DelayOn}{EndFX:Shrinking}[WAIT][NEXT]
+But wait...[BR]
+[PAUSE:0A]Your HP looks a little low.[BR]
+[WAIT][NEXT]
+Maybe you ought to take a rest[BR]
+at the Toad House.[WAIT][END]
+
+0B-03D
+[STYLE:RIGHT]Ah! Goombario,[BR]
+[PAUSE:0A]I expect that you'll become a[BR]
+fine, upstanding young Goomba by[BR]
+the time you return.[WAIT][END]
+
+0B-03E
+[STYLE:RIGHT]Mario, [PAUSE:0A]you should know that[BR]
+danger lurks everywhere.[BR]
+It can even strike while you're[BR]
+fixing the veranda![BR]
+[WAIT][NEXT]
+I know you get used to danger[BR]
+while you're adventuring, but[BR]
+don't ever scoff at it![BR]
+[PAUSE:14]You should always be careful![WAIT][END]
+
+0B-03F
+[STYLE:RIGHT]So, Mario, how goes the[BR]
+adventure thus far?[BR]
+[WAIT][NEXT]
+Are you keeping cool?[BR]
+[PAUSE:0A]Keep your wits about you and[BR]
+you'll beat Bowser hands down.[WAIT][END]
+
+0B-040
+[STYLE:RIGHT]Mario, [PAUSE:0A]how have you been?[BR]
+[PAUSE:0F]You must have traveled all over[BR]
+the Mushroom Kingdom by now![BR]
+[WAIT][NEXT]
+Is Goombario pulling his weight?[BR]
+[WAIT][NEXT]
+The day you beat Bowser will be[BR]
+a fine time, yes indeedy![WAIT][END]
+
+0B-041
+[STYLE:RIGHT]Goombario, [PAUSE:0A]how are you doing? I'm[BR]
+waiting for the day you come[BR]
+back a full-grown Goomba of the[BR]
+world![WAIT][END]
+
+0B-042
+[STYLE:RIGHT]Even out here we hear stories of[BR]
+your remarkable deeds![BR]
+[WAIT][NEXT]
+Keep up the good work![WAIT][END]
+
+0B-043
+[STYLE:RIGHT]Goombario,[BR]
+[PAUSE:0A]Your family misses you.[BR]
+[PAUSE:05]Come back to us soon![WAIT][END]
+
+0B-044
+[STYLE:RIGHT]Goompa,[BR]
+[PAUSE:0A]I'll do my best![WAIT][END]
+
+0B-045
+[STYLE:RIGHT]You're Goompa, correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry. I deliver[BR]
+letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+0B-046
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+0B-047
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+0B-048
+[STYLE:RIGHT]Now what could this be...?[BR]
+[PAUSE:0A]Koopa Koot...?[BR]
+[PAUSE:05]Eh...I have a bad feeling about[BR]
+this, so I'll read it later.[BR]
+[WAIT][NEXT]
+It's probably the old Koot's usual[BR]
+backstabbing gossip.  [BR]
+[PAUSE:0A]He really needs to get out more.[BR]
+[WAIT][NEXT]
+What's the point of sending all[BR]
+of these gossipy letters? Huh?[BR]
+[WAIT][NEXT]
+I know you're pretty busy, so[BR]
+thanks for delivering this.[BR]
+[PAUSE:0A]Why don't you take this as a[BR]
+token of my thanks?[WAIT][END]
+
+0B-049
+[STYLE:RIGHT]Hm, Mario.[BR]
+[PAUSE:0A]It looks like something else is on[BR]
+your mind.[WAIT][END]
+
+0B-04A
+[STYLE:RIGHT]What!?[BR]
+[PAUSE:0A]Koopa Koot said he wants "The[BR]
+Tape" back?[BR]
+[WAIT][NEXT]
+That old Koopa...[BR]
+[PAUSE:05]How does he remember things[BR]
+from so long ago?[BR]
+[WAIT][NEXT]
+[PAUSE:0A]OK...[BR]
+[PAUSE:05]Wait for just a minute. I'll bring[BR]
+it out for you.[WAIT][END]
+
+0B-04B
+[STYLE:RIGHT]Here. [PAUSE:05]This is it.[BR]
+[PAUSE:0A]When you see that old Koopa,[BR]
+give him my regards.[WAIT][END]
+
+0B-04C
+[STYLE:RIGHT]What's that?[BR]
+[PAUSE:0A]You want to know what's on The[BR]
+Tape, do you?[BR]
+[WAIT][NEXT]
+Oh, no no... I'm sorry...[BR]
+[PAUSE:05]I'm afraid I can't tell you at[BR]
+the moment.[BR]
+[WAIT][NEXT]
+It was great, though![WAIT][END]
+
+0B-04D
+[STYLE:RIGHT]Hey Mario![BR]
+[PAUSE:0A]I'm Goombario.[BR]
+[PAUSE:05]I'm your biggest fan![BR]
+[WAIT][NEXT]
+You don't know what this means[BR]
+for me to meet you! Seriously![WAIT][END]
+
+0B-04E
+[STYLE:RIGHT]Mario, I know all about your[BR]
+adventures around the world.[BR]
+You've been everywhere![BR]
+[WAIT][NEXT]
+And you always get the best of[BR]
+the bad guys. Every time![BR]
+[WAIT][NEXT]
+You're the coolest![BR]
+[PAUSE:05]I wanna be just like you![WAIT][END]
+
+0B-04F
+[STYLE:RIGHT]Mario, I know all about your[BR]
+adventures around the world.[BR]
+You've been everywhere![BR]
+[WAIT][NEXT]
+And you always get the best of[BR]
+the bad guys. Every time! [BR]
+[WAIT][NEXT]
+You're the coolest![BR]
+[PAUSE:05]I wanna be just like you![WAIT][END]
+
+0B-050
+[STYLE:RIGHT]Oh! Mario...[BR]
+[PAUSE:0A]My dad was looking for you.[BR]
+[PAUSE:0A]He said to tell you that he[BR]
+finished fixing the gate.[BR]
+[WAIT][NEXT]
+So I guess now you can travel[BR]
+east to Toad Town and Shooting [BR]
+Star Summit, huh?[BR]
+[WAIT][END]
+
+0B-051
+[STYLE:RIGHT]Hey...I know that ol' Koopa![BR]
+[PAUSE:0A]That was Kammy Koopa![BR]
+[WAIT][NEXT]
+She's way up in the ranks of the[BR]
+Koopa clan. Some people call her[BR]
+the brains behind Bowser.[BR]
+[WAIT][NEXT]
+Boy, she sure looked like one[BR]
+mean Koopa, didn't she?[BR]
+[WAIT][END]
+
+0B-052
+[STYLE:RIGHT]Howdy, Mario![BR]
+[PAUSE:0A]Feeling better?[BR]
+[WAIT][NEXT]
+Feel free to rest in our house.[WAIT][END]
+
+0B-053
+[STYLE:RIGHT]You what?[BR]
+[PAUSE:0A]You have to leave right now?[BR]
+[WAIT][NEXT]
+[PAUSE:0A]...Oh, Shooting Star Summit.[BR]
+Something important, no doubt.[BR]
+[PAUSE:0A]Well, I believe that the summit[BR]
+is near Toad Town.[BR]
+[WAIT][NEXT]
+You'll have to wait a bit.[BR]
+[PAUSE:0A]I have to fix this gate before[BR]
+you can head out to the east.[BR]
+[WAIT][NEXT]
+That earthquake the other day[BR]
+really did a job on it.[BR]
+[PAUSE:0A]Did you feel that quake? Shoot![BR]
+I thought the sky was falling.[BR]
+[WAIT][NEXT]
+Just relax and don't worry. I'll[BR]
+have this fixed in a jiffy.[WAIT][END]
+
+0B-054
+[STYLE:RIGHT]Just a little while longer...[BR]
+[PAUSE:0A]This hinge on the bottom of the[BR]
+gate is kind of tricky.[WAIT][END]
+
+0B-055
+[STYLE:RIGHT]Hoo! What a job! Sorry to have[BR]
+kept you waiting.[BR]
+[PAUSE:0A]The gate is finally fixed.[BR]
+[WAIT][NEXT]
+If you take this road straight[BR]
+ahead, you'll eventually reach[BR]
+Toad Town, the home of Princess[BR]
+Peach's Castle.[BR]
+[WAIT][NEXT]
+I believe that Shooting Star[BR]
+Summit is just beyond there.[BR]
+[WAIT][NEXT]
+It's too bad you can't stay... I[BR]
+feel like I just met you! But[BR]
+duty calls, I know.[BR]
+[PAUSE:0A]Come back and visit if you can.[BR]
+[WAIT] [END]
+
+0B-056
+[STYLE:RIGHT]Howdy, Mario![BR]
+[PAUSE:0A]Feeling better?[BR]
+[WAIT][NEXT]
+Feel free to rest in our house.[BR]
+[WAIT][NEXT]
+It's not such a shabby place. It[BR]
+may look a little unkempt at the[BR]
+moment, but I'm fixing all the[BR]
+earthquake damage.[BR]
+[WAIT][NEXT]
+In fact, I just spent ages[BR]
+fixing this gate.[WAIT][END]
+
+0B-057
+[STYLE:RIGHT]You what?[BR]
+[PAUSE:0A]You have to leave right now?[BR]
+[WAIT][NEXT]
+[PAUSE:0A]...Oh, Shooting Star Summit.[BR]
+Something important, no doubt.[BR]
+[PAUSE:0A]Well, I believe that the summit is[BR]
+near Toad Town.[BR]
+[WAIT][NEXT]
+If you take this road straight[BR]
+ahead, you'll eventually reach[BR]
+Toad Town, the home of Princess[BR]
+Peach's Castle.[BR]
+[WAIT][NEXT]
+I believe that Shooting Star[BR]
+Summit is just beyond there.[BR]
+[WAIT][NEXT]
+It's too bad you can't stay... I[BR]
+feel like I just met you! But[BR]
+duty calls, I know.[BR]
+[PAUSE:0A]Come back and visit if you can.[WAIT][END]
+
+0B-058
+[STYLE:RIGHT]Best of luck, Mario.[WAIT][END]
+
+0B-059
+[STYLE:RIGHT]{StartFX:Shrinking}Heee!! [PAUSE:05]Yee hee heee!!![WAIT][END]
+
+0B-05A
+[STYLE:RIGHT]Bleah heh heh heh...[BR]
+[PAUSE:0A]Ah, my instincts were right...[BR]
+[WAIT][NEXT]
+Mario... I can't believe you're on[BR]
+your feet after taking such a[BR]
+beating from King Bowser.[BR]
+[WAIT][NEXT]
+You're a hardy one, all right.[BR]
+[PAUSE:0A]I was smart to come here to[BR]
+check on you.[WAIT][END]
+
+0B-05B
+[STYLE:RIGHT]Whuh...what? What's that,[BR]
+Daddy!?[BR]
+[PAUSE:0A]What's that weird flying thing?[WAIT][END]
+
+0B-05C
+[STYLE:RIGHT]Weird? You rude little...[BR]
+[PAUSE:0A]I am a beautiful Koopa with a[BR]
+beautiful name: Kammy Koopa! [BR]
+[WAIT][NEXT]
+Hmmmph!![BR]
+[PAUSE:0A]I wish I had time to teach you a[BR]
+lesson, brat! But no.[BR]
+[WAIT][NEXT]
+Mario! Hear this![BR]
+[PAUSE:0A]It is useless for you to try to[BR]
+save Princess Peach. Ridiculous![BR]
+Laughable![BR]
+[WAIT][NEXT]
+As you have seen, King Bowser is[BR]
+more powerful than even you can[BR]
+deal with this time.[BR]
+[WAIT][NEXT]
+Here's a gift from him![WAIT][END]
+
+0B-05D
+[STYLE:RIGHT]Nyeah heh heh heh![BR]
+[WAIT][NEXT]
+Mario! [PAUSE:0A]You will kneel and weep[BR]
+when you see the wonderful[BR]
+changes King Bowser's made! [BR]
+[WAIT][NEXT]
+Your world is ours now![WAIT][END]
+
+0B-05E
+[STYLE:RIGHT]{StartFX:Wavy}Bleah heh ho hyuck heh heh HA!! [BR]
+[PAUSE:14][END]
+
+0B-05F
+[STYLE:RIGHT]Ummmmmm...[BR]
+[PAUSE:0A]I just fixed that gate[PAUSE:03].[PAUSE:05].[PAUSE:08]. [BR]
+[WAIT][NEXT]
+Nobody say "gate" to me...[BR]
+[WAIT][NEXT]
+Kammy Koopa, that fiend![BR]
+[PAUSE:0A]Did you hear what she said about[BR]
+the princess?[BR]
+[WAIT][NEXT]
+It didn't sound good. I hope[BR]
+nothing's happened to her...[WAIT][END]
+
+0B-060
+[STYLE:RIGHT]{StartFX:Shrinking}Wha... [PAUSE:03]Wha... [PAUSE:03]What!?[BR]
+{EndFX:Shrinking}[PAUSE:0A]Bowser went and kidnapped [BR]
+Princess Peach?! Again?![BR]
+[WAIT][NEXT]
+Oh, unbelievable! And now you[BR]
+have to go to Shooting Star[BR]
+Summit and help save her, right?[BR]
+[WAIT][NEXT]
+Ummmm...[BR]
+[PAUSE:05]This could be a problem.[WAIT][END]
+
+0B-061
+[STYLE:RIGHT]Dad, we've just gotta do [BR]
+something, right?[BR]
+[WAIT][NEXT]
+Mario's gotta save the princess![BR]
+Nobody else can do it![WAIT][END]
+
+0B-062
+[STYLE:RIGHT]Ummmmmmm...[BR]
+[WAIT][NEXT]
+Oh, here's an idea![BR]
+[WAIT][NEXT]
+Maybe we can break this block[BR]
+with Goompa's big Hammer![BR]
+[WAIT][NEXT]
+I think he's using it now to fix[BR]
+the veranda.[BR]
+[WAIT][NEXT]
+Go ask him for it, will you?[WAIT][END]
+
+0B-063
+[STYLE:RIGHT]I think Goompa is fixing the[BR]
+veranda on the house.[BR]
+[WAIT][NEXT]
+I'm thinking his Hammer might be[BR]
+able to break this block.[WAIT][END]
+
+0B-064
+[STYLE:RIGHT]Dad![BR]
+[PAUSE:0A]Did ya hear? I'm going out[BR]
+adventuring with Mario![BR]
+[WAIT][NEXT]
+I'll make you proud, Dad, I swear[BR]
+it! Just wait![WAIT][END]
+
+0B-065
+[STYLE:RIGHT]Do your best, son.[BR]
+[PAUSE:0A]You've grown into a strong boy. I[BR]
+know you'll be a great help.[BR]
+[WAIT][NEXT]
+It's a good thing you've spent so[BR]
+much time training, huh?[BR]
+[WAIT][NEXT]
+Now do your old Goompapa proud![WAIT][END]
+
+0B-066
+[STYLE:RIGHT]There we go! Problem solved.[BR]
+[WAIT][NEXT]
+I have a feeling your road will be[BR]
+lined with difficulties, so try not[BR]
+to overdo it.[BR]
+[WAIT][NEXT]
+Be watchful, yet stay cool.[BR]
+[PAUSE:0A]A calm mind is the wisest.[WAIT][END]
+
+0B-067
+[STYLE:RIGHT]Oh, hang on now, Mario![BR]
+[PAUSE:0A]I noticed you aren't wearing the[BR]
+Badge Goompa gave you.[BR]
+[WAIT][NEXT]
+You know, that Badge won't do[BR]
+anything if you don't wear it.[BR]
+[PAUSE:14]I think you'd better put that[BR]
+thing on before you go.[WAIT][END]
+
+0B-068
+[STYLE:RIGHT]It's simple, Mario.[BR]
+[PAUSE:0A]Just keep going straight on this[BR]
+road to find Toad Town.[WAIT][END]
+
+0B-069
+[STYLE:RIGHT]Howdy! Welcome back to Goomba[BR]
+Village, Mario![BR]
+[PAUSE:0A]How's the adventure going?[WAIT][END]
+
+0B-06A
+[STYLE:RIGHT]Howdy, Mario.[BR]
+[PAUSE:0A]How're you doing?[WAIT][END]
+
+0B-06B
+[STYLE:RIGHT]Howdy, Mario.[BR]
+[PAUSE:0A]How's my son Goombario doing?[BR]
+[WAIT][NEXT]
+Hey, by the way, I named the lad[BR]
+after you, Mario.[BR]
+[WAIT][NEXT]
+I always wanted my son to grow[BR]
+up to be strong like you.[BR]
+[WAIT][NEXT]
+He went a little overboard... Now[BR]
+he's way too energetic![BR]
+[PAUSE:0A]Ha, ha, ha, ha![WAIT][END]
+
+0B-06C
+[STYLE:RIGHT]Goombario, [PAUSE:0A]how goes it, son?[BR]
+[WAIT][NEXT]
+I can't wait to hear about all[BR]
+the remarkable things you're out[BR]
+doing.[WAIT][END]
+
+0B-06D
+[STYLE:RIGHT]It must be pretty gloomy around[BR]
+the castle, huh?[BR]
+[PAUSE:14]I'm sure the people there are[BR]
+depending on you, Mario.[BR]
+[WAIT][NEXT]
+The only way to help them is to[BR]
+beat Bowser and save Princess[BR]
+Peach. Please hurry![WAIT][END]
+
+0B-06E
+[STYLE:RIGHT]Goombario,[BR]
+[PAUSE:0A]do your best to help Mario, OK?[BR]
+[WAIT][NEXT]
+I'll make a wish to the Stars for[BR]
+you to have good luck.[WAIT][END]
+
+0B-06F
+[STYLE:RIGHT]You're Goompapa, correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry. I deliver[BR]
+letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+0B-070
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+0B-071
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+0B-072
+[STYLE:RIGHT]Hey, thanks. Much obliged, Mr.[BR]
+Postal Worker![BR]
+[PAUSE:0A]...Oh, great news! [BR]
+[WAIT][NEXT]
+Fishing is one of my hobbies, and[BR]
+this is from a friend who's[BR]
+planning a fishing trip. [BR]
+[PAUSE:05]I can't wait... [BR]
+[WAIT][NEXT]
+...Oh...[BR]
+[PAUSE:05]Sorry to pile work on you, but[BR]
+could I give you a letter?[BR]
+[WAIT][NEXT]
+If it's at all possible for you,[BR]
+could you deliver this to a Toad[BR]
+named Muss T.? He hangs around[BR]
+the castle garden.[BR]
+[WAIT][NEXT]
+I'd really appreciate it.[WAIT][END]
+
+0B-073
+[STYLE:RIGHT]Mr. Goompapa! Parakarry here.[BR]
+[WAIT][NEXT]
+I have a letter for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+0B-074
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+0B-075
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+0B-076
+[STYLE:RIGHT]Thank you, sir. What would we do[BR]
+without postal service?[BR]
+[WAIT][NEXT]
+Oh, how interesting... A letter[BR]
+for Goombaria.[BR]
+[PAUSE:0F]I guess I could open it...[BR]
+[PAUSE:14][WAIT][NEXT]
+I remember she wrote a letter[BR]
+just the other day and I was[BR]
+wondering what it was.[BR]
+[PAUSE:0A]I see. I guess it was a question.[BR]
+[WAIT][NEXT]
+And this seems like the answer.[BR]
+[PAUSE:05]It looks pretty complicated...[BR]
+but I think I understand.[BR]
+[WAIT][NEXT]
+I'll tell her all about it.[BR]
+[WAIT][NEXT]
+Thanks so much for the prompt[BR]
+delivery.[BR]
+[PAUSE:0A]Here, take this![WAIT][END]
+
+0B-077
+[STYLE:RIGHT]Oh, land sakes! Mario![BR]
+[PAUSE:0A]So nice to meet you! My![BR]
+[WAIT][NEXT]
+I'm so glad you woke up! I can't[BR]
+tell you how worried I was when[BR]
+you were just lying there asleep[BR]
+for so long.[WAIT][END]
+
+0B-078
+[STYLE:RIGHT]You should know that my son,[BR]
+Goombario, is a big fan of yours.[BR]
+[WAIT][NEXT]
+All he does the livelong day is[BR]
+train and tell people how he[BR]
+wants to be great like you.[BR]
+[WAIT][NEXT]
+I tell him, "Goombario! It's all[BR]
+well and good to train, but don't[BR]
+you go getting into danger!"[WAIT][END]
+
+0B-079
+[STYLE:RIGHT]Goompa...?[BR]
+[PAUSE:05]I thought he was fixing the[BR]
+veranda.[BR]
+[WAIT][NEXT]
+I think...[BR]
+[PAUSE:05]He most likely had the Hammer[BR]
+you're looking for, too.[WAIT][END]
+
+0B-07A
+[STYLE:RIGHT]Mom![BR]
+[PAUSE:0A]I get to go with Mario![BR]
+[PAUSE:0A]I promise when I come back, I'll[BR]
+bring home souvenirs![WAIT][END]
+
+0B-07B
+[STYLE:RIGHT]Oh, my little baby! I can't[BR]
+believe you're going out into the[BR]
+world with Mario![BR]
+[WAIT][NEXT]
+Now you listen![BR]
+[PAUSE:0A]You be a good boy, you hear![BR]
+Don't cause Mario any trouble![WAIT][END]
+
+0B-07C
+[STYLE:RIGHT]I know, Mom, sheesh. I'll be good.[WAIT][END]
+
+0B-07D
+[STYLE:RIGHT]Goombario, you mind your mom![BR]
+[PAUSE:0A]Wear a sweater when it's cold![BR]
+[PAUSE:0A]Don't be picky about your food![BR]
+Don't start fights! Be polite![BR]
+[WAIT][NEXT]
+Don't boast about all the things[BR]
+Goompa taught you[BR]
+[PAUSE:0A]as if you already knew them!![BR]
+[WAIT][NEXT]
+And remember... And...[WAIT][END]
+
+0B-07E
+[STYLE:RIGHT]Urgh...[BR]
+[PAUSE:05]Mom always nags me...[WAIT][END]
+
+0B-07F
+[STYLE:RIGHT]Now hush! Mario,[BR]
+[PAUSE:0A]please take good care of my[BR]
+sweet little Goombario.[WAIT][END]
+
+0B-080
+[STYLE:RIGHT]Mario, please take good care of[BR]
+my sweet little Goombario.[WAIT][END]
+
+0B-081
+[STYLE:RIGHT]Oh, land sakes! Mario![BR]
+[PAUSE:14]Is my Goombario bothering you?[BR]
+[WAIT][NEXT]
+He can be a real handful,[BR]
+sometimes, so I worry...[WAIT][END]
+
+0B-082
+[STYLE:RIGHT]Ugh...[BR]
+[PAUSE:0F]Mom! C'mon, cut it out![WAIT][END]
+
+0B-083
+[STYLE:RIGHT]I heard that Toad Town has[BR]
+finally calmed down a bit.[BR]
+[PAUSE:0A]Finally! It's been ages since I[BR]
+went shopping in peace![BR]
+[WAIT][NEXT]
+We owe it all to you, Mario.[BR]
+[PAUSE:14]...Or maybe, possibly, my dear[BR]
+son Goombario helped? A little,[BR]
+perhaps?[WAIT][END]
+
+0B-084
+[STYLE:RIGHT]Goombario, c'mere.[BR]
+[PAUSE:0A]I'm sure you're working hard.[BR]
+[WAIT][NEXT]
+Let me just get that gunk off[BR]
+your face. Hold still.[WAIT][END]
+
+0B-085
+[STYLE:RIGHT]C'mon, Mom, quit it![WAIT][END]
+
+0B-086
+[STYLE:RIGHT]I do love to shop, but the[BR]
+problem with Toad Town is that[BR]
+there are just too many things.[BR]
+[WAIT][NEXT]
+Still, it's nice to be in a busy[BR]
+area now and then.[BR]
+[WAIT][NEXT]
+I think the next time I shop, I'll[BR]
+bring Goombaria.[WAIT][END]
+
+0B-087
+[STYLE:RIGHT]Goombario, [PAUSE:0A]good luck, sweetie![WAIT][END]
+
+0B-088
+[STYLE:RIGHT]Mario, you look better.[BR]
+[PAUSE:0A]I'm so glad...[BR]
+[WAIT][NEXT]
+I was really worried about you,[BR]
+[PAUSE:0A]because you were lying there in[BR]
+the forest and you didn't open[BR]
+your eyes at all the whole time.[WAIT][END]
+
+0B-089
+[STYLE:RIGHT]I was the one who found you,[BR]
+you know, Mario. Me! Goombaria![BR]
+[WAIT][NEXT]
+I was in the forest and I found[BR]
+you and then I called Daddy and[BR]
+Goompa and Goombario.[BR]
+[WAIT][NEXT]
+And then they came and got you[BR]
+and I'm glad you're better![WAIT][END]
+
+0B-08A
+[STYLE:RIGHT]I was the one who found you,[BR]
+you know, Mario. Me! Goombaria![BR]
+[WAIT][NEXT]
+I was in the forest and I found[BR]
+you and then I called Daddy and[BR]
+Goompa and Goombario.[BR]
+[WAIT][NEXT]
+And then they came and got you[BR]
+and I'm glad you're better![WAIT][END]
+
+0B-08B
+[STYLE:RIGHT]I wanted to go with you, too, you[BR]
+know, but Daddy told me it was[BR]
+too dangerous, so I have to stay[BR]
+here instead. Hmmph.[WAIT][END]
+
+0B-08C
+[STYLE:RIGHT]Goompa! Come out here! Mario's[BR]
+in trouble![WAIT][END]
+
+0B-08D
+[STYLE:RIGHT]It's not fair! Goombario always[BR]
+gets to do all the fun stuff![BR]
+[PAUSE:0A]Mario, when I grow up, can I go[BR]
+on an adventure, too?[WAIT][END]
+
+0B-08E
+[STYLE:RIGHT]Mario! Have you been beating up[BR]
+lots and lots of bad guys?[WAIT][END]
+
+0B-08F
+[STYLE:RIGHT]Mario! I wanna go with you like[BR]
+Goombario gets to![BR]
+[WAIT][NEXT]
+You go to all kinds of pretty[BR]
+towns and places, don't you?[BR]
+[PAUSE:0A]I wanna go, too! I wanna go![BR]
+Why can't I go, too?[WAIT][END]
+
+0B-090
+[STYLE:RIGHT]You're just a little too young[BR]
+right now, Goombaria.[BR]
+[PAUSE:0A]You wouldn't believe how hard life[BR]
+is out on the road.[WAIT][END]
+
+0B-091
+[STYLE:RIGHT]Shut up, Goombario![BR]
+[PAUSE:0A]Stop smiling! I wanna go, too![WAIT][END]
+
+0B-092
+[STYLE:RIGHT]Everyone in the world is counting[BR]
+on you, huh, Mario?[BR]
+[PAUSE:0A]How do you deal with the[BR]
+pressure all the time?[BR]
+[WAIT][NEXT]
+Well, if it helps at all, you can[BR]
+depend on me, Mario.[BR]
+[PAUSE:02]I'll grow up extra fast so I can[BR]
+help you out! [WAIT][END]
+
+0B-093
+[STYLE:RIGHT]Goombario,[BR]
+[PAUSE:0A]do you actually do anything?[BR]
+[PAUSE:0A]I never hear about anything you[BR]
+do. Only Mario.[WAIT][END]
+
+0B-094
+[STYLE:RIGHT]Of course you don't hear!![BR]
+[PAUSE:0A]My role is to assist Mario, not to[BR]
+be the hero.[WAIT][END]
+
+0B-095
+[STYLE:RIGHT]Huh...?[BR]
+[PAUSE:0F]Really...? You fibber...[WAIT][END]
+
+0B-096
+[STYLE:RIGHT]Please take care of Goombario,[BR]
+OK?[WAIT][END]
+
+0B-097
+[STYLE:RIGHT]Wait, Mario!![BR]
+[WAIT][NEXT]
+That dolly you're holding is mine.[BR]
+I know it![BR]
+[WAIT][NEXT]
+Give it back! Pretty please?[BR]
+{Func_04}[END]
+
+0B-098
+[STYLE:RIGHT]That dolly you are holding is[BR]
+mine, I know it![BR]
+[WAIT][NEXT]
+Give it back! Pretty please?[BR]
+{Func_04}[END]
+
+0B-099
+[NEXT]
+{StartFX:Shrinking}You meanie, Mario![WAIT][END]
+
+0B-09A
+[NEXT]
+Oh, thanks, Mario![BR]
+[PAUSE:0A]You're sweet![HEART][BR]
+[WAIT][NEXT]
+Here, you can have this.[BR]
+[PAUSE:0A]Isn't it pretty, the way it[BR]
+glitters in the sun?[WAIT][END]
+
+0B-09B
+[STYLE:RIGHT]And [PAUSE:0A]take this [PAUSE:0A]too.[WAIT][END]
+
+0B-09C
+[STYLE:RIGHT]Oh, Mario. Hello, dearie.[BR]
+[PAUSE:0A]You may call me Gooma.[BR]
+[WAIT][NEXT]
+I'm a Goomba grandmother, so[BR]
+that's where I got the name.[BR]
+[PAUSE:0A]Ho [PAUSE:03]ho [PAUSE:03]ho [PAUSE:03]ho.[BR]
+[WAIT][NEXT]
+Have you already met my lovely[BR]
+grandchildren? Aren't they[BR]
+sweet?[BR]
+[WAIT][NEXT]
+Especially little Goombaria. Why,[BR]
+she looks just like I did when I[BR]
+was young...[BR]
+[PAUSE:0A]Ho [PAUSE:03]ho [PAUSE:03]ho [PAUSE:03]ho.[WAIT][END]
+
+0B-09D
+[STYLE:RIGHT]You're quite a looker, aren't[BR]
+you?[BR]
+[PAUSE:0A]Why, if I were just 10 years[BR]
+younger, and single, of course...[WAIT][END]
+
+0B-09E
+[STYLE:RIGHT]Are you looking for Goompa?[BR]
+[PAUSE:0A]He was just on the veranda.[WAIT][END]
+
+0B-09F
+[STYLE:RIGHT]Good health is all that matters![BR]
+[PAUSE:0A]Stay healthy no matter what.[BR]
+[PAUSE:0A]Don't overwork yourself, and[BR]
+take a rest when you're weary.[WAIT][END]
+
+0B-0A0
+[STYLE:RIGHT]Take care, Goombario.[BR]
+[PAUSE:0A]You're already one fine Goomba![WAIT][END]
+
+0B-0A1
+[STYLE:RIGHT]I have a bad feeling in my bones[BR]
+these days.[BR]
+[PAUSE:05]Evil things are afoot, I think.[BR]
+[WAIT][NEXT]
+I wish that everyone could just[BR]
+[PAUSE:05]live together in peace.[WAIT][END]
+
+0B-0A2
+[STYLE:RIGHT]What lovely weather today![BR]
+[PAUSE:0A]The laundry's already dry.[BR]
+[WAIT][NEXT]
+How's my Goombario doing? [BR]
+[PAUSE:0A]I get so much joy just seeing[BR]
+my grandchildren's cute faces...[BR]
+Ho ho ho![WAIT][END]
+
+0B-0A3
+[STYLE:RIGHT]Is Goombario leaving again?[BR]
+[WAIT][NEXT]
+I miss you when you're not[BR]
+around here, little Goomba![BR]
+[PAUSE:0A]You hurry up and finish this trip[BR]
+and come home to Gooma![WAIT][END]
+
+0B-0A4
+[STYLE:RIGHT]I'm sure our little Goombario is[BR]
+trying his best and is doing all[BR]
+sorts of great deeds.[BR]
+[WAIT][NEXT]
+But I still miss him when he's[BR]
+gone, you know.[WAIT][END]
+
+0B-0A5
+[STYLE:RIGHT]I'm sure our little Goombario is[BR]
+trying his best and is doing all[BR]
+sorts of great deeds.[BR]
+[WAIT][NEXT]
+But I still miss him when he's[BR]
+gone, you know.[BR]
+[WAIT][NEXT]
+Goombario...[BR]
+[PAUSE:05]When will you be able to stay[BR]
+at home for a while?[WAIT][END]
+
+0B-0A6
+[STYLE:RIGHT]Oh, my back... [PAUSE:05]Hm? Who's that?[BR]
+That you, Mario?[BR]
+[WAIT][NEXT]
+I remember a great crashing[BR]
+noise and then the veranda[BR]
+collapsed and I fell.[BR]
+[WAIT][NEXT]
+Did you fall, too?[BR]
+[PAUSE:0A]Just stepped out the door into[BR]
+thin air, did you?[BR]
+[WAIT][NEXT]
+Well, we're both OK. Problem is,[BR]
+we can't get home because that[BR]
+block is in the way.[WAIT][END]
+
+0B-0A7
+[STYLE:RIGHT]This block...[BR]
+[PAUSE:05]This block shouldn't be here.[BR]
+[PAUSE:0A]Well, this is a problem for us.[WAIT][END]
+
+0B-0A8
+[STYLE:RIGHT]......Huh?[BR]
+[PAUSE:05]A Hammer? Oh, of course![BR]
+[PAUSE:0A]Um... [PAUSE:0A]Where did it go?[BR]
+[WAIT][NEXT]
+I was using it to fix the[BR]
+veranda, so it's likely around[BR]
+here somewhere...[BR]
+[WAIT][NEXT]
+Hm! Nowhere to be seen.[BR]
+[PAUSE:14]I guess it must have fallen[BR]
+somewhere over there.[BR]
+[WAIT][NEXT]
+Mario, [PAUSE:0A]we'd better look for it.[WAIT][END]
+
+0B-0A9
+[STYLE:RIGHT]The Hammer has got to be[BR]
+somewhere close by.[BR]
+[WAIT][NEXT]
+{StartAnim}{SetPrintPos:00:12}{Down:0C}{Item:00:04}{EndAnim}[BR]
+{SetPrintPos:00:3F}{Down:06}It looks just like this.[BR]
+[BR]
+{Up:06}[BR]
+[WAIT][NEXT]
+Look for bushes that might cover[BR]
+it up.[BR]
+[WAIT][NEXT]
+If "{Color:20}!{Color:0A}" appears over your head,[BR]
+you can press {PushColor}{Color:10}[A]{PopColor} to search. [WAIT][END]
+
+0B-0AA
+[STYLE:RIGHT]Oh!! There we go![BR]
+[PAUSE:0A]That's it! That's the Hammer![BR]
+[WAIT][NEXT]
+I'll wager that if you use that[BR]
+Hammer, you can break the block[BR]
+that's in our way.[BR]
+[WAIT][NEXT]
+You can also use the Hammer to[BR]
+hit trees and make them sway.[BR]
+Sometimes stuff will fall out![BR]
+[WAIT][NEXT]
+You can use it by pressing {PushColor}{Color:11}[B]{PopColor}.[WAIT][END]
+
+0B-0AB
+[STYLE:RIGHT]Oh! Well now![BR]
+[PAUSE:05]I believe that's the dolly that[BR]
+Goombaria said she lost![BR]
+[WAIT][NEXT]
+She'll no doubt be overjoyed if[BR]
+you give it back to her.[BR]
+[WAIT][NEXT]
+So many people lose things all[BR]
+over the place, you know.[BR]
+[PAUSE:0A]It almost makes one feel like[BR]
+looking around everywhere...[WAIT][END]
+
+0B-0AC
+[STYLE:RIGHT]Hmmm... Well![BR]
+[PAUSE:0A]We found the Hammer, so I guess[BR]
+we should head for home.[WAIT][END]
+
+0B-0AD
+[STYLE:RIGHT]{StartFX:Shrinking}{Size:30:30}Youch!![WAIT][END]
+
+0B-0AE
+[STYLE:RIGHT]{StartFX:Shrinking}Who are you guys!?[BR]
+[PAUSE:05]This is my playground, idiots![BR]
+[WAIT][NEXT]
+Nobody sets foot in here without[BR]
+my permission! Nobody![BR]
+[WAIT][NEXT]
+Prepare to start crying at the[BR]
+feet of Master Jr. Troopa![WAIT][END]
+
+0B-0AF
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]this is Jr. Troopa. He's the boss[BR]
+of the neighborhood gang. A bit[BR]
+of a bully, obviously.[BR]
+[WAIT][NEXT]
+He's more bark than bite. You[BR]
+can beat him easily.[BR]
+[WAIT][NEXT]
+Just boost yourself up and don't[BR]
+take any lip![BR]
+[WAIT][NEXT]
+I'll stay right here behind you[BR]
+and watch your progress.[WAIT][END]
+
+0B-0B0
+[STYLE:RIGHT]Oh, excellent![BR]
+[PAUSE:0A]Good move! Go on!![WAIT][END]
+
+0B-0B1
+[STYLE:RIGHT]Grrrr!![BR]
+[PAUSE:0A]I'm just getting warmed up![WAIT][END]
+
+0B-0B2
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:05]you've almost got him![BR]
+[PAUSE:0A]Keep it up! Go on![WAIT][END]
+
+0B-0B3
+[STYLE:RIGHT]All right, you asked for it![BR]
+[PAUSE:0A]Say hello to Jr. Troopa's special[BR]
+attack![BR]
+[WAIT][NEXT]
+{Down:0A}{StartFX:Shrinking}{Size:20:20}Full power!![WAIT][END]
+
+0B-0B4
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]that was wonderful fighting. You[BR]
+got {Color:20}Star Points{Color:0A}![BR]
+[WAIT][NEXT]
+You get Star Points every time[BR]
+you beat an enemy.[BR]
+[WAIT][NEXT]
+Every time you save up 100 Star[BR]
+Points, you'll go up a level.[BR]
+[WAIT][NEXT]
+Always try hard to get points![WAIT][END]
+
+0B-0B5
+[STYLE:RIGHT]{StartFX:Shrinking}Shoooooot!![BR]
+[PAUSE:05]I was winning, too! [BR]
+[PAUSE:05]I'll be back, Mario![WAIT][END]
+
+0B-0B6
+[STYLE:RIGHT]I mean it, I'll be back!![WAIT][END]
+
+0B-0B7
+[STYLE:RIGHT]Heads up, Mario![BR]
+[PAUSE:0A]I see bad Goombas ahead.[BR]
+They're loyal to Bowser.[BR]
+[WAIT][NEXT]
+If they see you, they'll attack[BR]
+you without hesitation.[BR]
+[WAIT][NEXT]
+If you can successfully attack[BR]
+an enemy in the field with a[BR]
+{Color:20}Jump {Color:0A}or {Color:20}Hammer{Color:0A},[BR]
+[WAIT][NEXT]
+you'll get the {Color:20}First Strike {Color:0A}when[BR]
+you enter the battle.[BR]
+[WAIT][NEXT]
+Striking first really helps when[BR]
+it comes to battling.[WAIT][END]
+
+0B-0B8
+[STYLE:RIGHT]Listen up, Mario.[BR]
+[PAUSE:0A]The enemy's flying. [BR]
+[PAUSE:0A]Your Hammer won't reach[BR]
+enemies in the air.[BR]
+[WAIT][NEXT]
+To attack airborne enemies, use[BR]
+a Jump attack. [BR]
+[WAIT][NEXT]
+You can jump over one enemy to[BR]
+attack one behind it, too.[BR]
+[PAUSE:0A]This is good advice. Remember it![WAIT][END]
+
+0B-0B9
+[STYLE:RIGHT]This is a Spiked Goomba.[BR]
+[PAUSE:0A]See the spike on his head?[BR]
+[WAIT][NEXT]
+Be careful not to jump on him.[BR]
+You'll definitely get hurt.[WAIT][END]
+
+0B-0BA
+[STYLE:RIGHT]Hey Mario,[BR]
+[WAIT][NEXT]
+during a battle, you can change[BR]
+the order we attack in with {PushColor}{Color:14}[Z]{PopColor}.[BR]
+[WAIT][NEXT]
+I can attack first if you want.[BR]
+I don't mind at all![BR]
+[PAUSE:0A]Just keep it in mind, OK?[WAIT][END]
+
+0B-0BB
+[STYLE:RIGHT]Hey hey! Hold it right there![BR]
+[PAUSE:14]You! Yeah you, suspicious guy![BR]
+[PAUSE:0A]Don't move![WAIT][END]
+
+0B-0BC
+[STYLE:RIGHT]Aha, you're Mario![BR]
+[PAUSE:14]I knew it. You can't go past[BR]
+here, Mr. Big Shot.[BR]
+[WAIT][NEXT]
+It's a direct order from the[BR]
+Goomba King. That's right![BR]
+[WAIT][NEXT]
+I'm sorry, but the only way by[BR]
+[PAUSE:05]is through the Goomba Bros.[BR]
+That's me, Red Goomba, and my[BR]
+brother, Blue Goomba.[WAIT][END]
+
+0B-0BD
+[STYLE:RIGHT]Let's get him, Blue Goomba![WAIT][END]
+
+0B-0BE
+[STYLE:RIGHT]Oh yeah! [PAUSE:05]Let's do it, my red[BR]
+brother![WAIT][END]
+
+0B-0BF
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0F]How'd you like some of this?[WAIT][END]
+
+0B-0C0
+[STYLE:RIGHT]{StartFX:Jitter}Re... [PAUSE:05]Red Goomba, my brother...[BR]
+{EndFX:Jitter}[PAUSE:0A]Noooooo! You meanie, Mario![WAIT][END]
+
+0B-0C1
+[STYLE:RIGHT]{StartFX:Jitter}Blue, [PAUSE:05]Blue Goomba!!!!![BR]
+{EndFX:Jitter}[PAUSE:0A]Gaaah! My little brother! You'll[BR]
+pay for that, Mario![WAIT][END]
+
+0B-0C2
+[STYLE:RIGHT]{StartFX:Jitter}Geeaaaah!!![BR]
+{EndFX:Jitter}[PAUSE:0A]I... I'll let you go for now![WAIT][END]
+
+0B-0C3
+[STYLE:RIGHT]King Goomba! Help us![WAIT][END]
+
+0B-0C4
+[STYLE:RIGHT]Mario beat us up![WAIT][END]
+
+0B-0C5
+[STYLE:RIGHT]Hey, look, Mario![BR]
+[PAUSE:0A]See that building over there?[BR]
+[WAIT][NEXT]
+I'm pretty sure there used to[BR]
+be a bridge on the other side.[BR]
+[PAUSE:0A]I wonder what happened to it.[WAIT][END]
+
+0B-0C6
+[STYLE:RIGHT]{StartFX:Jitter}{StartFX:Shrinking}So, Mario, it's true! You've made[BR]
+it this far. [BR]
+[PAUSE:0A]I respect you for that.[BR]
+[WAIT][NEXT]
+Unfortunately, this is as far as[BR]
+you'll ever get.[BR]
+[WAIT][NEXT]
+Because I, the great and[BR]
+powerful King Goomba, will see to[BR]
+it that you advance no farther![WAIT][END]
+
+0B-0C7
+[STYLE:RIGHT]You hear that, Mario! No[BR]
+farther! Not one step![BR]
+[PAUSE:0A]Are you scared, little man?[WAIT][END]
+
+0B-0C8
+[STYLE:RIGHT]Bah ha ha!!![BR]
+[PAUSE:0A]Yeah, you're scared, all right.[BR]
+You wanna say you're sorry?[WAIT][END]
+
+0B-0C9
+[STYLE:RIGHT]Wow... That King Goomba is...[BR]
+really huge![BR]
+[WAIT][NEXT]
+I'm sure he's no match for you,[BR]
+though, Mario![BR]
+[PAUSE:14]Let's get him![WAIT][END]
+
+0B-0CA
+[STYLE:RIGHT]{StartFX:Jitter}{StartFX:Shrinking}Ready to meet my wrath, Mario?[BR]
+[PAUSE:0A]You'd better be!![WAIT][END]
+
+0B-0CB
+[STYLE:RIGHT]Beat him up, King Goomba!![WAIT][END]
+
+0B-0CC
+[STYLE:RIGHT]We've got your back![WAIT][END]
+
+0B-0CD
+[STYLE:RIGHT]Leave him to me![WAIT][END]
+
+0B-0CE
+[STYLE:RIGHT]Hey Mario![BR]
+[PAUSE:0A]I think maybe we ought to take[BR]
+out the Goomba Bros. first, don't[BR]
+you think?[BR]
+[WAIT][NEXT]
+They must be pretty weak since[BR]
+we just finished beating them up[BR]
+back there.[WAIT][END]
+
+0B-0CF
+[STYLE:RIGHT]Oh no! It can't be! King[BR]
+Goomba!![WAIT][END]
+
+0B-0D0
+[STYLE:RIGHT]I don't believe it! He beat our[BR]
+King Goomba![WAIT][END]
+
+0B-0D1
+[STYLE:RIGHT]Wh...wh...what!?[BR]
+[PAUSE:0A]How could I lose?[WAIT][END]
+
+0B-0D2
+[STYLE:RIGHT]Yeah! I knew we could do it![BR]
+[PAUSE:0A]Cooool!! Victory!![WAIT][END]
+
+0B-0D3
+[STYLE:RIGHT]{StartFX:Faded:D9}Red Goomba,[BR]
+[PAUSE:0A]you're positive that you hid the[BR]
+switch well, right?[WAIT][END]
+
+0B-0D4
+[STYLE:RIGHT]{StartFX:Faded:D9}Of course, King Goomba![BR]
+[PAUSE:0A]I hid it in the grass outside the[BR]
+fortress. [WAIT][END]
+
+0B-0D5
+[STYLE:RIGHT]{StartFX:Faded:D9}{StartFX:Shrinking}{StartFX:Jitter}Outside the... You idiot![BR]
+{EndFX:Jitter}{EndFX:Shrinking}You didn't hide it in here? Mario[BR]
+will find it for sure![WAIT][END]
+
+0B-0D6
+[STYLE:RIGHT]{StartFX:Faded:D9}{StartFX:Shrinking}Oh! Do you think?[BR]
+{EndFX:Shrinking}[PAUSE:0A]You know...you might be right.[WAIT][END]
+
+0B-0D7
+[STYLE:RIGHT]{StartFX:Faded:D9}King Goomba,[BR]
+[PAUSE:0A]maybe we ought to try to trick[BR]
+Mario before he tries to...[WAIT][END]
+
+0B-0D8
+[STYLE:RIGHT]Uh...Mario![BR]
+[PAUSE:0A]Good fight and all that! I must[BR]
+warn you, however...[BR]
+[WAIT][NEXT]
+If you happen to find a strange[BR]
+switch somewhere, you should[BR]
+definitely not press it.[BR]
+[PAUSE:0A]It's dangerous. Understand?[BR]
+[WAIT][NEXT]
+.[PAUSE:05].[PAUSE:05].[PAUSE:05]...you what?[BR]
+[PAUSE:0F]{StartFX:Shrinking}{StartFX:Jitter}You already pressed it?![WAIT][END]
+
+0B-0D9
+[STYLE:RIGHT]{StartFX:Jitter}{StartFX:Shrinking}{Size:30:30}Oh nooo!!![BR]
+[PAUSE:64][END]
+
+0B-0DA
+[STYLE:RIGHT]Look! The bridge!![BR]
+[PAUSE:0A]Now we can cross it and continue[BR]
+our journey. All right![WAIT][END]
+
+0B-0DB
+[STYLE:RIGHT]I wonder what my brother Mario[BR]
+is doing right now...[WAIT][END]
+
+0B-0DC
+[STYLE:RIGHT]{Speed:01:02}Whoa! Mario![BR]
+[PAUSE:0F]It's you! Good to see you![WAIT][END]
+
+0B-0DD
+[STYLE:RIGHT]And you're all right![BR]
+[PAUSE:0A]After all that castle craziness,[BR]
+I was really worried about you.[BR]
+[WAIT][NEXT]
+I ran outside just as the[BR]
+earthquake started, so I[BR]
+managed to escape in time.[WAIT][END]
+
+0B-0DE
+[STYLE:RIGHT]Oh? [PAUSE:0A]And who are you?[WAIT][END]
+
+0B-0DF
+[STYLE:RIGHT]I'm Goombario.[BR]
+[PAUSE:0A]Nice to meet you![WAIT][END]
+
+0B-0E0
+[STYLE:RIGHT]You're Luigi, right?[BR]
+[PAUSE:0A]My name's Kooper.[BR]
+[PAUSE:0A]Pleasure meeting you![WAIT][END]
+
+0B-0E1
+[STYLE:RIGHT]You're Luigi, huh?[BR]
+[PAUSE:0A]I'm Bombette.[BR]
+[PAUSE:05]Nice to meet you![HEART][WAIT][END]
+
+0B-0E2
+[STYLE:RIGHT]The name's Parakarry.[BR]
+[PAUSE:0A]I'm helping Mario out on his[BR]
+adventures.[WAIT][END]
+
+0B-0E3
+[STYLE:RIGHT]I see. Great, just great.[BR]
+[PAUSE:0A]You're on an exciting adventure[BR]
+with Mario. Talk about unfair.[BR]
+[WAIT][NEXT]
+See, someone has to look after[BR]
+this house, so I can't leave. Oh[BR]
+well. Take care of Mario, OK?[WAIT][END]
+
+0B-0E4
+[STYLE:RIGHT]Somebody sure has to save the[BR]
+poor princess. Good luck![WAIT][END]
+
+0B-0E5
+[STYLE:RIGHT]Good luck, Mario. You just have[BR]
+to save that princess![WAIT][END]
+
+0B-0E6
+[STYLE:RIGHT]Mario, I'll go to any lengths to[BR]
+help you out.[BR]
+[WAIT][NEXT]
+I have lots of talents, and I can[BR]
+jump really high and...[BR]
+[WAIT][NEXT]
+What? Stay home and take care[BR]
+of the house?[BR]
+[PAUSE:0F]Man, that's not exciting at all![WAIT][END]
+
+0B-0E7
+[STYLE:RIGHT]Koopa Bros.?[BR]
+[PAUSE:0A]You mean they're a bunch of[BR]
+brothers who're Koopa Troopas?[BR]
+[PAUSE:0A]Tough name to remember, huh?[BR]
+[WAIT][NEXT]
+I have an idea, Mario![BR]
+[PAUSE:0A]Why don't we give them a taste[BR]
+of our Mario Bros. power![BR]
+[WAIT][NEXT]
+I'll join you and together...[BR]
+[WAIT][NEXT]
+What? I can't? Why not?[BR]
+[PAUSE:0F]Come on, Mario![WAIT][END]
+
+0B-0E8
+[STYLE:RIGHT]Hi, Mario.[BR]
+[PAUSE:0A]I figure I'll have an adventure[BR]
+sooner or later, so I'm training.[BR]
+[WAIT][NEXT]
+What's that? Dry Dry Desert?[BR]
+[PAUSE:0A]Oh, sure. There's a train that[BR]
+goes there from Toad Town.[BR]
+[WAIT][NEXT]
+Hey, maybe I'll tag along...[BR]
+[WAIT][NEXT]
+No? You sure?[BR]
+[PAUSE:0F]Just gimme a chance![WAIT][END]
+
+0B-0E9
+[STYLE:RIGHT]I wonder how ol' Mario is doing in[BR]
+his quest.[WAIT][END]
+
+0B-0EA
+[STYLE:RIGHT]{StartFX:Shrinking}Ma... [PAUSE:05]Mario![BR]
+{EndFX:Shrinking}[WAIT][END]
+
+0B-0EB
+[STYLE:RIGHT]Uh-oh... [PAUSE:05]I mean, never mind.[BR]
+[PAUSE:0F]How did you find this place?[WAIT][END]
+
+0B-0EC
+[STYLE:INSPECT]There's nothing on the desk.[WAIT][END]
+
+0B-0ED
+[STYLE:RIGHT]Anything wrong?[BR]
+[PAUSE:0F]Nothing suspicious in the[BR]
+basement, was there?[WAIT][END]
+
+0B-0EE
+[STYLE:RIGHT]Huff [PAUSE:05]huff...[BR]
+[PAUSE:05]You wouldn't believe it... Shy[BR]
+Guys were everywhere...[BR]
+[WAIT][NEXT]
+They moved...like the wind! Huff[BR]
+huff... All I managed to do was[BR]
+get really upset and yell.[WAIT][END]
+
+0B-0EF
+[STYLE:RIGHT]Huff [PAUSE:05]Huff...[BR]
+[PAUSE:05]I'm a great jumper, but my[BR]
+running really needs some work.[BR]
+[WAIT][NEXT]
+A little more training and I'll be[BR]
+vital to your team...[BR]
+[WAIT][NEXT]
+All right, take it easy. I know I[BR]
+can't go.[BR]
+[PAUSE:0A]You go on your adventure. I[BR]
+don't even want to anymore.[BR]
+[WAIT][NEXT]
+I know that it's up to you to[BR]
+save Princess Peach, so hurry[BR]
+up for my sake![WAIT][END]
+
+0B-0F0
+[STYLE:RIGHT]...Hi, Mario. [PAUSE:0F]Are you doing OK?[BR]
+[PAUSE:0F][WAIT][NEXT]
+Don't worry, Bro, I'll watch the[BR]
+house until you get back.[WAIT][END]
+
+0B-0F1
+[STYLE:RIGHT]Boy, hanging out way up high[BR]
+sure was nice...  Such a great[BR]
+view and everything...[BR]
+[WAIT][NEXT]
+Uh...never mind! Say, that's a[BR]
+cool Hammer you got there![BR]
+[PAUSE:0F]I bet you can even beat up[BR]
+enemies with hard shells now![WAIT][END]
+
+0B-0F2
+[STYLE:RIGHT]Boy, hanging out way up high[BR]
+sure was nice... Such a great[BR]
+view and everything...[BR]
+[WAIT][NEXT]
+Uh...never mind. Say, are those[BR]
+new Boots? They look really[BR]
+flashy![BR]
+[PAUSE:0F]Now you'll be a better jumper![WAIT][END]
+
+0B-0F3
+[STYLE:RIGHT]Princess Peach is still caught[BR]
+way up there in the sky...[BR]
+[WAIT][NEXT]
+C'mon, Mario![BR]
+[PAUSE:0F]You're a hero, Bro! You have to[BR]
+save her![WAIT][END]
+
+0B-0F4
+Number of Battles:[END]
+
+0B-0F5
+pcs.[END]
+
+0B-0F6
+times[END]
+
+0B-0F7
+Your First Strikes:[END]
+
+0B-0F8
+Enemies' First Strikes:[END]
+
+0B-0F9
+Total Power Bounces:[END]
+
+0B-0FA
+?  ?  ?[END]
+
+0B-0FB
+Star Pieces Collected:[END]
+
+0B-0FC
+Coins Earned:[END]
+
+0B-0FD
+Badges Collected:[END]
+
+0B-0FE
+Tayce T.'s Recipes:[END]
+
+0B-0FF
+Chuck Quizmo's Quizzes:[END]
+
+0B-100
+[STYLE:INSPECT]There's Luigi's diary![WAIT][END]
+
+0B-101
+[STYLE:INSPECT]There's a letter for Mario![WAIT][END]
+
+0B-102
+[STYLE:INSPECT]Here's the box where letters[BR]
+addressed to Mario go.[BR]
+[PAUSE:0A]It's empty right now.[WAIT][END]
+
+0B-103
+[STYLE:RIGHT]What's that, Mario?[BR]
+[PAUSE:0A]You need something?[WAIT][END]
+
+0B-104
+[STYLE:RIGHT]He what? [BR]
+[PAUSE:0A]Mr. Koopa Koot wants to get my[BR]
+autograph? Me? He wants me to[BR]
+sign something?[BR]
+[WAIT][NEXT]
+Whoa! Cool! I'm flattered![BR]
+[PAUSE:0A]I guess maybe I'm a little bit of[BR]
+a celebrity, huh?[BR]
+[WAIT][NEXT]
+[PAUSE:0A]Wait one second.[BR]
+[PAUSE:05]I'll write it right now.[WAIT][END]
+
+0B-105
+[STYLE:RIGHT]Here you are, Mario.[BR]
+[PAUSE:0A]My autograph.[BR]
+[WAIT][NEXT]
+Give my regards to Mr. Koopa[BR]
+Koot, OK?[WAIT][END]
+
+0B-106
+[STYLE:INSPECT]Do you want to go to bed?[BR]
+{Func_04}[END]
+
+0B-107
+[STYLE:INSPECT]You're at peak strength. Do you[BR]
+still want to go to bed?[BR]
+{Func_04}[END]
+
+0B-108
+[STYLE:INSPECT]Fully energized![WAIT][END]
+

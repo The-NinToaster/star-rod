@@ -1,0 +1,9 @@
+Script: DoShockHit (001C8FDC)
+
+    0:  Call     SetActorRotationOffset 	( FFFFFF81 00000000 00000000 00000000 )
+   1C:  Call     SetActorRotation 	( FFFFFF81 00000000 00000000 00000000 )
+   38:  Call     8026BA04 ( FFFFFF81 00000000 00000000 00000000 )
+   54:  ExecWait 8029A76C 
+   60:  Return
+   68:  End
+

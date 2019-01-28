@@ -1,0 +1,65 @@
+% automatically dumped from map mac_02
+
+#new:Npc $mac_02_8024CB48_7C0
+00000004 $NpcSettings_80246090_mac_02 00000000 00000000 00000000 
+00002D09 $Script_Init_8024C090_mac_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00840301 00840302 00840303 00840303 00840301 00840301 00840306 00840306 
+00840303 00840303 00840303 00840303 00840303 00840303 00840303 00840303 
+00000000 00000000 00000000 001A0036 % She worships Tayce T. because she really loves to  ...
+
+#new:NpcSettings $NpcSettings_80246090_mac_02
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024BE98_mac_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFCB 
+   18:  		If  *Flag_MAC_9A  ==  00000000 
+   28:  			Set  *Var[0]  0004004A 
+   38:  		Else
+   40:  			Set  *Var[0]  0004004B 
+   50:  		EndIf
+   58:  	Case  <  FFFFFFF1 
+   64:  		Set  *Var[0]  0004004C 
+   74:  	Case  <  FFFFFFFD 
+   80:  		Set  *Var[0]  0004004D 
+   90:  	Case  <  00000007 
+   9C:  		Set  *Var[0]  0004004E 
+   AC:  	Case  <  00000059 
+   B8:  		If  *Flag_MAC_98  ==  00000000 
+   C8:  			Set  *Var[0]  0004004F 
+   D8:  		Else
+   E0:  			Switch  *StoryProgress 
+   EC:  				Case  <  0000000A 
+   F8:  					Set  *Var[0]  00040050 
+  108:  				Case  <  00000027 
+  114:  					Set  *Var[0]  00040051 
+  124:  				Case  <  0000002B 
+  130:  					Set  *Var[0]  00040052 
+  140:  				Case  <  00000039 
+  14C:  					Set  *Var[0]  00040053 
+  15C:  				Case  <  0000003D 
+  168:  					Set  *Var[0]  00040054 
+  178:  				Case  <  00000059 
+  184:  					Set  *Var[0]  00040055 
+  194:  			EndSwitch
+  19C:  		EndIf
+  1A4:  	Case  <  00000060 
+  1B0:  		Set  *Var[0]  00040056 
+  1C0:  EndSwitch
+  1C8:  Call     SayMessage0 	( 00000004 00840304 00840301 00000000 *Var[0] ) % variable string ID
+  1E8:  Return
+  1F0:  End
+
+#new:Script $Script_Init_8024C090_mac_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024BE98_mac_02 )
+   14:  Return
+   1C:  End
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SpriteSheet a="2" b="1">
+    <PaletteList>
+        <Palette id="00" src="Palette_00.png"/>
+        <Palette id="01" src="Palette_01.png"/>
+        <Palette id="02" src="Palette_02.png"/>
+    </PaletteList>
+    <RasterList>
+        <Raster id="00" palette="00" src="Raster_00.png"/>
+        <Raster id="01" palette="01" src="Raster_01.png"/>
+        <Raster id="02" palette="02" src="Raster_02.png"/>
+        <Raster id="03" palette="02" src="Raster_03.png"/>
+        <Raster id="04" palette="02" src="Raster_04.png"/>
+    </RasterList>
+    <AnimationList>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="1" y="22" z="1">
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="1001"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+    </AnimationList>
+</SpriteSheet>

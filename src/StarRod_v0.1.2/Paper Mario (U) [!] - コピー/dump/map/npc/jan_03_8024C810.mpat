@@ -1,0 +1,51 @@
+% automatically dumped from map jan_03
+
+#new:Npc $jan_03_8024C810
+00000010 $NpcSettings_80244D04_jan_03 00000000 00000000 00000000 
+00002D09 $Script_Init_8024C584_jan_03 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00070001 00070001 00070001 00070001 00070001 00070001 00070001 00070001 
+00070001 00070001 00070001 00070001 00070001 00070001 00070001 00070001 
+00000000 00000000 $ExtraAnimationList_8024C800_jan_03 001A00CF % She's a Cheep Cheep. Her name is Sushie. She's sor ...
+
+#new:NpcSettings $NpcSettings_80244D04_jan_03
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:Script $Script_8024C470_jan_03
+    0:  If  *AreaFlag[007]  ==  00000000 
+   10:  	Call     SayMessage0 	( .Npc:Self 00070004 00070001 00000000 00100058 ) % Oh, it's so rare to have visitors these days. I'd  ...
+   30:  	Set  *AreaFlag[007]  00000001 
+   40:  Else
+   48:  	Call     SayMessage0 	( .Npc:Self 00070004 00070001 00000000 00100059 ) % I'm watching these boys, who are very, VERY naught ...
+   68:  EndIf
+   70:  Return
+   78:  End
+
+#new:Script $Script_8024C4F0_jan_03
+    0:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   1C:  Call     SetNpcJumpscale 	( .Npc:Self 00000001 )
+   30:  Loop     
+   3C:  	Call     SetNpcAnimation 	( .Npc:Self 00070004 )
+   50:  	Wait     0000001E 
+   5C:  	Call     SetNpcAnimation 	( .Npc:Self 00070003 )
+   70:  	Wait     0000000F 
+   7C:  EndLoop
+   84:  Return
+   8C:  End
+
+#new:Script $Script_Init_8024C584_jan_03
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_8024C4F0_jan_03 )
+   14:  Call     BindNpcInteract 	( .Npc:Self $Script_8024C470_jan_03 )
+   28:  Return
+   30:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8024C800_jan_03
+00070001 00070003 00070004 FFFFFFFF 
+

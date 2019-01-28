@@ -1,0 +1,254 @@
+% automatically dumped from map mac_04
+
+#new:Npc $mac_04_8024D2D8
+00000011 $NpcSettings_80243F38_mac_04 00000000 00000000 00000000 
+00000D09 $Script_Init_80247B1C_mac_04 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00150001 00150001 00150001 00150001 00150001 00150001 00150001 00150001 
+00150000 00150001 00150001 00150001 00150001 00150001 00150001 00150001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80241944_mac_04
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  JAL       800EA1D8
+    C:  ADDIU     A0, R0, 4
+   10:  LIA       V0, 8010F290
+   18:  LBU       V1, 3 (V0)
+   1C:  LBU       A0, 6 (V0)
+   20:  SB        V1, 2 (V0)
+   24:  JAL       800E9B6C
+   28:  SB        A0, 5 (V0)
+   2C:  LW        RA, 10 (SP)
+   30:  ADDIU     V0, R0, 2
+   34:  JR        RA
+   38:  ADDIU     SP, SP, 18
+
+#new:Script $Script_802420C0_mac_04
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  If  *Var[0]  !=  00000004 
+   20:  	Switch  *StoryProgress 
+   2C:  		Case  FFFFFFF3  to  00000005 
+   3C:  			Call     SetMusicTrack 	( 00000000 .Song:ShyGuyInvasion 00000000 00000008 )
+   58:  		Default
+   60:  			Exec     $Script_8024F4E8_mac_04 
+   6C:  	EndSwitch
+   74:  	Thread
+   7C:  		Wait     0000003C 
+   88:  		Call     802D62B8 ( 80000017 )
+   98:  	EndThread
+   A0:  EndIf
+   A8:  Return
+   B0:  End
+
+#new:NpcSettings $NpcSettings_80243F38_mac_04
+00000000 001A0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80246CA0_mac_04
+    0:  Loop     
+    C:  	Loop     0000000A 
+   18:  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   34:  		Sub  *Var[1]  00000001 
+   44:  		Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   60:  		Wait     00000001 
+   6C:  	EndLoop
+   74:  	Loop     0000000A 
+   80:  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   9C:  		Add  *Var[1]  00000001 
+   AC:  		Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   C8:  		Wait     00000001 
+   D4:  	EndLoop
+   DC:  EndLoop
+   E4:  Return
+   EC:  End
+
+#new:Script $Script_80246D94_mac_04
+    0:  Call     DisablePartnerAI 	( 00000000 )
+   10:  Call     802CF56C ( 00000002 )
+   20:  Call     SetNpcPos   	( 00000011 FFFFFDF8 00000028 0000010E )
+   3C:  Call     PlayerFaceNpc 	( 00000011 00000000 )
+   50:  Call     NpcFaceNpc  	( .Npc:Partner 00000011 00000000 )
+   68:  Call     UseSettingsFrom 	( .Default FFFFFE5C 00000014 000000EB )
+   84:  Call     SetPanTarget 	( .Default FFFFFE2A 00000014 000000FA )
+   A0:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+   B4:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   CC:  Call     802D2508 ( )
+   D8:  Call     DisablePlayerInput 	( .True )
+   E8:  Wait     00000028 
+   F4:  Call     SayMessage0 	( 00000011 00150002 00150001 00000200 000600C5 ) % Phew! Ahhh, fresh air! After being cooped up in th ...
+  114:  Call     GetNpcPos   	( 00000011 *Var[0] *Var[1] *Var[2] )
+  130:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  14C:  Call     SetCamDistance ( .Default FFFFFED4 )
+  160:  Call     SetCamAngles 	( .Default *Fixed[17.5] FFFFFFF7 )
+  178:  Call     SetCamSpeed 	( .Default 00000003 )
+  18C:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  1A4:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  1B8:  Wait     0000000A 
+  1C4:  Call     SayMessage0 	( 00000011 00150002 00150001 00000200 000600C6 ) % My name is Muskular. Mario, I must thank you for s ...
+  1E4:  Call     SetPanTarget 	( .Default FFFFFE2A 00000014 000000FA )
+  200:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  214:  Call     MakeLerp    	( 00000000 00000168 0000000A 00000000 )
+  230:  Loop     
+  23C:  	Call     UpdateLerp  	( )
+  248:  	Call     SetNpcRotation ( 00000011 00000000 *Var[0] 00000000 )
+  264:  	Wait     00000001 
+  270:  	If  *Var[1]  ==  00000000 
+  280:  		BreakLoop
+  288:  	EndIf
+  290:  EndLoop
+  298:  Call     EnableNpcAI 	( 00000011 .False )
+  2AC:  Call     SetNpcAnimation 	( 00000011 00150003 )
+  2C0:  Wait     00000014 
+  2CC:  Call     SetPlayerAnimation 	( .PlayerAnim:GotItem )
+  2DC:  Call     PlaySoundAtPlayer 	( 00000139 00000000 )
+  2F0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  308:  Set  *Var[3]  *Var[1] 
+  318:  Add  *Var[0]  0000000A 
+  328:  Add  *Var[1]  00000032 
+  338:  Add  *Var[2]  0000000A 
+  348:  Add  *Var[3]  0000001E 
+  358:  Loop     00000005 
+  364:  	Call     PlayEffect  	( 00000011 00000003 *Var[0] *Var[1] *Var[2] 00000014 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  3A8:  	Wait     00000006 
+  3B4:  	Call     PlayEffect  	( {FX:Sparkles:Random} *Var[0] *Var[3] *Var[2] 00000014 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  3F8:  	Wait     00000006 
+  404:  EndLoop
+  40C:  Wait     00000014 
+  418:  Call     PlaySoundAtPlayer 	( 00000188 00000000 )
+  42C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  444:  Add  *Var[1]  00000014 
+  454:  Call     PlayEffect  	( {FX:EnergyWaveOut:Grey} *Var[0] *Var[1] *Var[2] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  498:  Wait     0000001E 
+  4A4:  Call     SetPlayerAnimation 	( 00010002 )
+  4B4:  Call     SetNpcAnimation 	( 00000011 00150001 )
+  4C8:  Call     EnableNpcAI 	( 00000011 .True )
+  4DC:  Call     $Function_80241944_mac_04 ( )
+  4E8:  Call     ShowMessage 	( 001D0194 000000A0 00000028 ) % Mario's Star Energy goes up to 4! Mario can now us ...
+  500:  Wait     0000000A 
+  50C:  Call     SayMessage0 	( 00000011 00150002 00150001 00000200 000600C7 ) % Call on me whenever you find yourself in trouble.  ...
+  52C:  Call     ShowMessage 	( 000600C8 000000A0 00000028 ) % Mario!
+  544:  Call     SetPanTarget 	( .Default FFFFFE2A 00000014 000000FA )
+  560:  Call     SetCamDistance ( .Default FFFFFE0C )
+  574:  Call     SetCamAngles 	( .Default *Fixed[17.5] FFFFFFF7 )
+  58C:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  5A0:  Wait     00000001 
+  5AC:  Call     SetNpcPos   	( 00000010 FFFFFDA8 000000C8 0000015E )
+  5C8:  Call     NpcJumpX    	( 00000010 FFFFFE4B 0000003C 0000010E 00000000 FFFFFFF6 00000000 )
+  5F0:  Call     SetPlayerAnimation 	( 0001002A )
+  600:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 000600C9 ) % Mario! Mario! I have news... News from the castle. ...
+  620:  Call     InterpNpcYaw 	( 00000010 0000010E 00000000 )
+  638:  Wait     00000014 
+  644:  Call     NpcJump1    	( 00000010 FFFFFE34 0000002D 000000DC 0000000A )
+  664:  Call     SayMessage3 	( 00000010 00200009 00200001 00000200 00000011 000600CA ) % Gasp! Honorable Star Spirit!
+  688:  Call     SetCamDistance ( .Default FFFFFED4 )
+  69C:  Call     SetPlayerAnimation 	( 00010002 )
+  6AC:  Wait     00000001 
+  6B8:  Call     SayMessage3 	( 00000011 00150002 00150001 00000200 00000010 000600CB ) % Hi! Hmmmmmmmmmm... I believe you are... Twink, no? ...
+  6DC:  Call     SayMessage3 	( 00000010 00200009 00200001 00000000 00000011 000600CC ) % What!? You remember my name?!
+  700:  Call     SayMessage3 	( 00000011 00150002 00150001 00000200 00000010 000600CD ) % Ha ha ha! Why, of course! We're like family!
+  724:  Call     SayMessage3 	( 00000010 00200009 00200001 00000000 00000011 000600CE ) % I... I... I'm so touched!!
+  748:  Call     GetNpcPos   	( 00000011 *Var[0] *Var[1] *Var[2] )
+  764:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  780:  Call     SetCamDistance ( .Default FFFFFED4 )
+  794:  Call     SetCamAngles 	( .Default *Fixed[17.5] FFFFFFF7 )
+  7AC:  Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  7C0:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  7D8:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  7EC:  Wait     0000000A 
+  7F8:  Call     SayMessage3 	( 00000011 00150002 00150001 00000200 00000010 000600CF ) % Ho ho ho! Don't make such a fuss, lad. I'm sure yo ...
+  81C:  Call     SetPanTarget 	( .Default FFFFFE3E 00000014 000000FA )
+  838:  Call     SetCamDistance ( .Default FFFFFE70 )
+  84C:  Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  860:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  874:  Call     SetNpcFlagBits ( 00000011 00040000 .True )
+  88C:  Thread
+  894:  	Loop     00000019 
+  8A0:  		Call     GetNpcPos   	( 00000011 *Var[0] *Var[1] *Var[2] )
+  8BC:  		Call     PlayEffect  	( 00000011 00000004 *Var[0] *Var[1] *Var[2] 00000014 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  900:  		Wait     00000004 
+  90C:  	EndLoop
+  914:  EndThread
+  91C:  Thread
+  924:  	Set  *Var[2]  00000000 
+  934:  	Set  *Var[3]  00000708 
+  944:  	Call     MakeLerp    	( *Var[2] *Var[3] 00000064 00000002 )
+  960:  	Loop     
+  96C:  		Call     UpdateLerp  	( )
+  978:  		Call     SetNpcRotation ( 00000011 00000000 *Var[0] 00000000 )
+  994:  		Wait     00000001 
+  9A0:  		If  *Var[1]  ==  00000000 
+  9B0:  			BreakLoop
+  9B8:  		EndIf
+  9C0:  	EndLoop
+  9C8:  EndThread
+  9D0:  Thread
+  9D8:  	Call     GetNpcPos   	( 00000011 *Var[2] *Var[3] *Var[4] )
+  9F4:  	Set  *Var[5]  *Var[3] 
+  A04:  	Add  *Var[5]  000000B4 
+  A14:  	Call     MakeLerp    	( *Var[3] *Var[5] 00000064 00000002 )
+  A30:  	Loop     
+  A3C:  		Call     UpdateLerp  	( )
+  A48:  		Call     SetNpcPos   	( 00000011 *Var[2] *Var[0] *Var[4] )
+  A64:  		Wait     00000001 
+  A70:  		If  *Var[1]  ==  00000000 
+  A80:  			BreakLoop
+  A88:  		EndIf
+  A90:  	EndLoop
+  A98:  	Call     SetNpcPos   	( 00000011 00000000 FFFFFC18 00000000 )
+  AB4:  EndThread
+  ABC:  Thread
+  AC4:  	Wait     0000000F 
+  AD0:  	Call     PlaySoundAtNpc ( 00000011 00002045 00000000 )
+  AE8:  EndThread
+  AF0:  Wait     0000000A 
+  AFC:  Call     SetPlayerAnimation 	( 0001002A )
+  B0C:  Wait     00000073 
+  B18:  Call     SetPlayerAnimation 	( 00010002 )
+  B28:  Call     SetMusicTrack 	( 00000000 .Song:TwinkTheme 00000000 00000008 )
+  B44:  Call     SetPanTarget 	( .Default FFFFFE3E 00000014 000000FA )
+  B60:  Call     SetCamDistance ( .Default FFFFFEA2 )
+  B74:  Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  B88:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  B9C:  Call     SetNpcSpeed 	( 00000010 00000004 )
+  BB0:  Call     NpcJumpX    	( 00000010 FFFFFE20 00000028 0000010E 00000000 0000000A 00000000 )
+  BD8:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 000600D0 ) % Wow! I talked with Muskular, the honorable Star Sp ...
+  BF8:  Call     InterpNpcYaw 	( 00000010 0000010E 00000000 )
+  C10:  Wait     0000001E 
+  C1C:  Call     NpcFacePlayer 	( 00000010 00000000 )
+  C30:  Wait     0000000A 
+  C3C:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 000600D1 ) % Oops, I'm sorry! I have some important news from t ...
+  C5C:  Call     SetPlayerAnimation 	( .PlayerAnim:Question )
+  C6C:  Wait     00000014 
+  C78:  Call     SetPlayerAnimation 	( 00010002 )
+  C88:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 000600D2 ) % According to the information  Princess Peach and I ...
+  CA8:  Call     SetPlayerAnimation 	( .PlayerAnim:NodYes )
+  CB8:  Wait     0000001E 
+  CC4:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 000600D3 ) % I'm going back to rejoin Princess Peach now. Mario ...
+  CE4:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  CFC:  Call     NpcJumpX    	( 00000010 FFFFFDA8 000000C8 0000015E 00000000 FFFFFFF6 00000000 )
+  D24:  Call     SetNpcPos   	( 00000010 00000000 FFFFFC18 00000000 )
+  D40:  Set  *StoryProgress  00000007 
+  D50:  Exec     $Script_802420C0_mac_04 
+  D5C:  Call     EnablePartnerAI 	( )
+  D68:  Call     DisablePlayerInput 	( .False )
+  D78:  Return
+  D80:  End
+
+#new:Script $Script_Init_80247B1C_mac_04
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  If  *Var[0]  ==  00000005 
+   20:  	Call     BindNpcIdle 	( .Npc:Self $Script_80246CA0_mac_04 )
+   34:  	Exec     $Script_80246D94_mac_04 
+   40:  Else
+   48:  	Call     RemoveNpc   	( .Npc:Self )
+   58:  EndIf
+   60:  Return
+   68:  End
+

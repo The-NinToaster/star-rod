@@ -1,0 +1,82 @@
+% automatically dumped from map arn_05
+
+#new:Npc $arn_05_8024223C_3E0
+00000002 $NpcSettings_80241758_arn_05 00000000 00000000 00000000 
+00000D01 $Script_Init_8024202C_arn_05 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00950101 00950102 00950103 00950103 00950101 00950101 00950100 00950100 
+0095010A 00950103 00950103 00950103 00950103 00950103 00950103 00950103 
+00000000 00000000 00000000 001A00B0 % That's a Boo who lives here in Gusty Gulch. It's h ...
+
+#new:NpcSettings $NpcSettings_80241758_arn_05
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241AB4_arn_05
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFE6 
+   18:  	Case  <  FFFFFFF0 
+   24:  	Case  <  FFFFFFF2 
+   30:  	Case  <  00000027 
+   3C:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E00A9 ) % I never thought I'd be back in dear old Gusty Gulc ...
+   5C:  	Case  >=  00000027 
+   68:  		If  *Flag_ARN_0D  ==  00000001 
+   78:  			If  *AreaFlag[009]  ==  00000001 
+   88:  				Call     SayMessage0 	( .Npc:Self 00950105 00950101 00000000 000E00AE ) % Oh...OK. Thanks. I'll do it.
+   A8:  			Else
+   B0:  				Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E00B0 ) % Victoria loves me back! We're going to get married ...
+   D0:  			EndIf
+   D8:  		Else
+   E0:  			Call     SetNpcAnimation 	( .Npc:Self 00950107 )
+   F4:  			Call     SayMessage0 	( .Npc:Self 00950107 00950101 00000000 000E00AA ) % My dear Victoria has also come back safe and sound ...
+  114:  			Call     SetNpcAnimation 	( .Npc:Self 00950109 )
+  128:  			Call     SayMessage2 	( .Npc:Self 00950109 00950101 00000000 000E00AB ) % I finally made up my mind. I'm going to confess my ...
+  148:  			Call     SetNpcAnimation 	( .Npc:Self 0095010A )
+  15C:  			Call     SayMessage2 	( .Npc:Self 0095010A 00950101 00000000 000E00AC ) % First, I figured I'd express my feelings by giving ...
+  17C:  			Call     ShowChoice  	( 001E001E ) % Fire Flower Volt Shroom No idea 
+  18C:  			Switch  *Var[0] 
+  198:  				Case  ==  00000000 
+  1A4:  					Call     SetNpcAnimation 	( .Npc:Self 00950105 )
+  1B8:  					Call     SayMessage2 	( .Npc:Self 00950105 00950101 00000000 000E00AD ) % Oh...OK. Thanks. I'll do it.
+  1D8:  					Call     SetNpcAnimation 	( .Npc:Self 00950101 )
+  1EC:  					Set  *Flag_ARN_0D  00000001 
+  1FC:  					Set  *AreaFlag[009]  00000001 
+  20C:  				Case  ==  00000001 
+  218:  					Call     SetNpcAnimation 	( .Npc:Self 00950105 )
+  22C:  					Call     SayMessage2 	( .Npc:Self 00950105 00950101 00000000 000E00AD ) % Oh...OK. Thanks. I'll do it.
+  24C:  					Call     SetNpcAnimation 	( .Npc:Self 00950101 )
+  260:  					Set  *Flag_ARN_0D  00000001 
+  270:  					Set  *AreaFlag[009]  00000001 
+  280:  				Case  ==  00000002 
+  28C:  					Call     SayMessage2 	( .Npc:Self 00950104 00950101 00000000 000E00AF ) % Oh . . . Thanks for nothing...
+  2AC:  			EndSwitch
+  2B4:  		EndIf
+  2BC:  EndSwitch
+  2C4:  Return
+  2CC:  End
+
+#new:Script $Script_Init_8024202C_arn_05
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80241AB4_arn_05 )
+   14:  Switch  *StoryProgress 
+   20:  	Case  <  FFFFFFDF 
+   2C:  		Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+   44:  	Case  <  FFFFFFE6 
+   50:  		Call     RemoveNpc   	( .Npc:Self )
+   60:  	Case  <  FFFFFFF0 
+   6C:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   88:  		Call     RemoveNpc   	( .Npc:Self )
+   98:  	Case  <  FFFFFFF2 
+   A4:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   C0:  		Call     RemoveNpc   	( .Npc:Self )
+   D0:  	Case  <  00000027 
+   DC:  	Case  >=  00000027 
+   E8:  EndSwitch
+   F0:  Return
+   F8:  End
+

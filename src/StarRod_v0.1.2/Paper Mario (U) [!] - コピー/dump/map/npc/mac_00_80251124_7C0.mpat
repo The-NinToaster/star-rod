@@ -1,0 +1,98 @@
+% automatically dumped from map mac_00
+
+#new:Npc $mac_00_80251124_7C0
+0000000B $NpcSettings_8024EC90_mac_00 00000000 00000000 00000000 
+00412D09 $Script_Init_80250FC8_mac_00 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00840101 00840102 00840103 00840103 00840101 00840101 00840106 00840106 
+00840103 00840103 00840103 00840103 00840103 00840103 00840103 00840103 
+00000000 00000000 00000000 001A0017 % Those Toads are in love. They're so in love, they  ...
+
+#new:NpcSettings $NpcSettings_8024EC90_mac_00
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80250128_mac_00
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF96 
+   18:  		Set  *Var[0]  000200AF 
+   28:  		Set  *Var[1]  000200B0 
+   38:  	Case  <  FFFFFF9C 
+   44:  		Set  *Var[0]  000200B1 
+   54:  		Set  *Var[1]  000200B2 
+   64:  	Case  <  FFFFFFB5 
+   70:  		Set  *Var[0]  000200B3 
+   80:  		Set  *Var[1]  000200B4 
+   90:  	Case  <  FFFFFFCB 
+   9C:  		If  *Flag_MAC_9A  ==  00000000 
+   AC:  			Set  *Var[0]  000200B5 
+   BC:  			Set  *Var[1]  000200B6 
+   CC:  		Else
+   D4:  			Set  *Var[0]  000200B7 
+   E4:  			Set  *Var[1]  000200B8 
+   F4:  		EndIf
+   FC:  	Case  <  FFFFFFF1 
+  108:  		Set  *Var[0]  000200B9 
+  118:  		Set  *Var[1]  000200BA 
+  128:  	Case  <  00000007 
+  134:  		If  *Flag_MAC_9C  ==  00000000 
+  144:  			Set  *Var[0]  000200BB 
+  154:  			Set  *Var[1]  000200BC 
+  164:  		Else
+  16C:  			If  *Flag_MAC_9D  ==  00000000 
+  17C:  				Set  *Var[0]  000200BD 
+  18C:  				Set  *Var[1]  000200BE 
+  19C:  			Else
+  1A4:  				Set  *Var[0]  000200BF 
+  1B4:  				Set  *Var[1]  000200C0 
+  1C4:  			EndIf
+  1CC:  		EndIf
+  1D4:  	Case  <  0000000A 
+  1E0:  		Set  *Var[0]  000200C1 
+  1F0:  		Set  *Var[1]  000200C2 
+  200:  	Case  <  00000027 
+  20C:  		Set  *Var[0]  000200C3 
+  21C:  		Set  *Var[1]  000200C4 
+  22C:  	Case  <  0000002B 
+  238:  		Set  *Var[0]  000200C5 
+  248:  		Set  *Var[1]  000200C6 
+  258:  	Case  <  00000039 
+  264:  		Set  *Var[0]  000200C7 
+  274:  		Set  *Var[1]  000200C8 
+  284:  	Case  <  0000003D 
+  290:  		Set  *Var[0]  000200C9 
+  2A0:  		Set  *Var[1]  000200CA 
+  2B0:  	Case  <  00000059 
+  2BC:  		Set  *Var[0]  000200CB 
+  2CC:  		Set  *Var[1]  000200CC 
+  2DC:  	Case  <  00000060 
+  2E8:  		Set  *Var[0]  000200CD 
+  2F8:  		Set  *Var[1]  000200CE 
+  308:  	Case  >=  00000060 
+  314:  		Set  *Var[0]  00010030 
+  324:  		Set  *Var[1]  00010031 
+  334:  EndSwitch
+  33C:  Call     SayMessage0 	( 0000000A 00830204 00830201 00000005 *Var[0] ) % variable string ID
+  35C:  Call     SayMessage0 	( 0000000B 00840104 00840101 00000005 *Var[1] ) % variable string ID
+  37C:  Return
+  384:  End
+
+#new:Script $Script_80250C00_mac_00
+    0:  Call     SetNpcAnimation 	( .Npc:Self 00840100 )
+   14:  Wait     00000003 
+   20:  Call     SetNpcAnimation 	( .Npc:Self 00840101 )
+   34:  Return
+   3C:  End
+
+#new:Script $Script_Init_80250FC8_mac_00
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80250128_mac_00 )
+   14:  Call     BindNpcAux  	( .Npc:Self $Script_80250C00_mac_00 )
+   28:  Return
+   30:  End
+

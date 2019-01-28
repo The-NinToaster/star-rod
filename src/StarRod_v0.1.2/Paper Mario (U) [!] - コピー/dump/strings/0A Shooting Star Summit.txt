@@ -1,0 +1,954 @@
+0A-000
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Welcome Mario...[BR]
+[PAUSE:0A]We've been waiting for you.[WAIT][END]
+
+0A-001
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}We're the 7 Star Spirits.[BR]
+[WAIT][NEXT]
+Our job is to grant the wishes[BR]
+of good people from our home[BR]
+in Star Haven, a place high[BR]
+beyond the sky.[BR]
+[WAIT][NEXT]
+We're going to tell you something[BR]
+incredibly important.[BR]
+[PAUSE:0A]Please listen carefully.[WAIT][END]
+
+0A-002
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}The other day,[BR]
+[WAIT][NEXT]
+Bowser and his followers invaded[BR]
+our peaceful Star Haven.[BR]
+[WAIT][NEXT]
+They stole our prized treasure,[BR]
+the Star Rod, which we've cared[BR]
+for since the beginning of time.[WAIT][END]
+
+0A-003
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}The Star Rod...[BR]
+[PAUSE:0F]...is powerful beyond belief.[BR]
+It can grant any wish.[BR]
+[WAIT][NEXT]
+For as long as we can remember,[BR]
+Bowser has been making wishes[BR]
+like, for instance...[BR]
+[WAIT][NEXT]
+"I'd like to trounce Mario" or[BR]
+"I want Princess Peach to like[BR]
+me."[BR]
+[WAIT][NEXT]
+Of course, Stars ignore such[BR]
+selfish wishes.[BR]
+[WAIT][NEXT]
+As a result, his wishes were[BR]
+never granted.[WAIT][END]
+
+0A-004
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Bowser...that fiend...[BR]
+[WAIT][NEXT]
+When he found out that we were[BR]
+ignoring his wishes, he came and[BR]
+stole the Star Rod so he could[BR]
+grant his own wishes.[BR]
+[WAIT][NEXT]
+He seems content right now,[BR]
+mainly because he defeated you[BR]
+and captured the princess.[BR]
+[WAIT][NEXT]
+Soon enough, though, I fear he[BR]
+will wish for more...and then[BR]
+terrible things will happen.[WAIT][END]
+
+0A-005
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}It is the responsibility of the[BR]
+7 Star Spirits to keep the Star[BR]
+Rod safe and use it properly.[BR]
+[WAIT][NEXT]
+We must get the Star Rod back[BR]
+from Bowser and return it to[BR]
+its rightful place![BR]
+[WAIT][NEXT]
+In order to do this, Mario,[BR]
+[PAUSE:0A]we need your help![WAIT][END]
+
+0A-006
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Sadly...[BR]
+[WAIT][NEXT]
+...right now you are not strong[BR]
+enough to challenge Bowser...[BR]
+[WAIT][NEXT]
+...he has made himself all-[BR]
+powerful by making wishes with[BR]
+the Star Rod.[BR]
+He is terrible to behold![WAIT][END]
+
+0A-007
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Once we 7 Star Spirits are[BR]
+reunited in Star Haven,[BR]
+[WAIT][NEXT]
+we can give you the power to[BR]
+fight Bowser even with his[BR]
+newfound strength.[BR]
+With our help, you can prevail![WAIT][END]
+
+0A-008
+{InputOff}[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Mario...we are...[BR]
+[PAUSE:0F][END]
+
+0A-009
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Alas...[BR]
+[PAUSE:0F]We've nearly exhausted our[BR]
+power to talk to you.[BR]
+[WAIT][NEXT]
+Although it looks like we're[BR]
+there beside you, it is only an[BR]
+illusion.[BR]
+[WAIT][NEXT]
+We're using all of our strength[BR]
+to communicate with you over a[BR]
+great distance. But even now,[BR]
+our strength is fading...[BR]
+[WAIT][NEXT]
+We've been caught and are being[BR]
+held by Bowser's followers in[BR]
+different places throughout the[BR]
+Mushroom Kingdom.[BR]
+[WAIT][NEXT]
+Please, Mario,[BR]
+[PAUSE:0A]first of all, you must rescue us![WAIT][END]
+
+0A-00A
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}In order to take the Star Rod[BR]
+back from Bowser...[BR]
+[PAUSE:0F]and save Princess Peach...[BR]
+[WAIT][NEXT]
+we need your help...[WAIT][END]
+
+0A-00B
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Please, Mario...[BR]
+[WAIT][NEXT]
+you are our last hope...[BR]
+[PAUSE:0A]and we will...[WAIT][END]
+
+0A-00C
+[STYLE:RIGHT]Mario...[BR]
+[PAUSE:0A]It looks like things are a lot[BR]
+more serious than I thought...[BR]
+[WAIT][NEXT]
+Do you think the princess is[BR]
+going to be all right?[BR]
+I'm really worried about her.[WAIT][END]
+
+0A-00D
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Shrinking}{Size:30:30}Ouch!![BR]
+[PAUSE:14][END]
+
+0A-00E
+[STYLE:RIGHT]{SpeechSound:02}Oh, sorry, sorry, so sorry![BR]
+I'm in a huge hurry!![WAIT][END]
+
+0A-00F
+[STYLE:RIGHT]{SpeechSound:02}Oh...it's...!?[BR]
+[PAUSE:0A]You're Mario, aren't you!?[BR]
+[WAIT][NEXT]
+Thank the Stars I found you![WAIT][END]
+
+0A-010
+[STYLE:RIGHT]{SpeechSound:02}How do you do?[BR]
+[PAUSE:0A]I'm Twink.[BR]
+[PAUSE:0A]Princess Peach asked me to[BR]
+bring something to you.[WAIT][END]
+
+0A-011
+[STYLE:RIGHT]{SpeechSound:02}Ahhh[PAUSE:05].[PAUSE:05].[PAUSE:05].[PAUSE:0F] Yes, here it is![BR]
+[WAIT]{Func_04}[END]
+
+0A-012
+[NEXT]
+{SpeechSound:02}Here, this is it![BR]
+[PAUSE:05]Take it![WAIT][END]
+
+0A-013
+[STYLE:RIGHT]{SpeechSound:02}That's the "{Color:20}Lucky Star{Color:0A}" from[BR]
+Princess Peach.[BR]
+[WAIT][NEXT]
+Now that it's yours, you can use[BR]
+the "{Color:20}action command{Color:0A}."[BR]
+[WAIT][NEXT]
+May I take a moment to explain[BR]
+what the action command is?[BR]
+{Func_04}[END]
+
+0A-014
+{SpeechSound:02}[NEXT]
+This is important, Mario.[BR]
+[PAUSE:0A]I think you'll want to know about[BR]
+this.[BR]
+{Func_04}[END]
+
+0A-015
+{SpeechSound:02}[NEXT]
+Oh! OK! Great![BR]
+[PAUSE:0A]I don't even have to explain.[WAIT][END]
+
+0A-016
+{SpeechSound:02}[NEXT]
+OK.[BR]
+[PAUSE:0A]Let me explain.[BR]
+[WAIT][NEXT]
+[PAUSE:0A]Let me see...[BR]
+[PAUSE:0A][WAIT][NEXT]
+Hang on. You! Behind Mario![BR]
+[PAUSE:0A]Would you mind helping me[BR]
+demonstrate something?[WAIT][END]
+
+0A-017
+[STYLE:RIGHT]Me?[BR]
+[PAUSE:0A]The name's Goombario.[BR]
+[PAUSE:0A]Of course I'll help![WAIT][END]
+
+0A-018
+[STYLE:RIGHT]{SpeechSound:02}Well, Mario and Goombario.[BR]
+Let's begin![WAIT][END]
+
+0A-019
+[STYLE:RIGHT]{SpeechSound:02}First, Mario,[BR]
+[WAIT][NEXT]
+choose the Jump command and[BR]
+then decide which enemy you[BR]
+want to attack.[WAIT][END]
+
+0A-01A
+[STYLE:RIGHT]{SpeechSound:02}Once you decide on the enemy,[BR]
+the explanation of the action[BR]
+command will appear.[WAIT][END]
+
+0A-01B
+[STYLE:RIGHT]{SpeechSound:02}Right now![BR]
+[PAUSE:0A]Just before stomping the enemy.[BR]
+[WAIT][NEXT]
+Press {PushColor}{Color:10}[A]{PopColor} at exactly this moment.[BR]
+{Func_04}[END]
+
+0A-01C
+[STYLE:RIGHT]{SpeechSound:02}Press {PushColor}{Color:10}[A]{PopColor} at exactly this moment.[WAIT][END]
+
+0A-01D
+[STYLE:RIGHT]{SpeechSound:02}When you see "Nice" appear,[BR]
+it means you've successfully[BR]
+used the action command![BR]
+[WAIT][NEXT]
+When you do, you'll increase[BR]
+the amount of damage you do.[BR]
+[PAUSE:0A]OK, now this time, Goombario,[BR]
+you try to attack Mario.[WAIT][END]
+
+0A-01E
+[STYLE:RIGHT]OK![BR]
+[PAUSE:0A]Here it comes, Mario![WAIT][END]
+
+0A-01F
+[STYLE:RIGHT]{SpeechSound:02}Right now![BR]
+[WAIT][NEXT]
+Press {PushColor}{Color:10}[A]{PopColor} just before the attack[BR]
+strikes you.[BR]
+{Func_04}[END]
+
+0A-020
+[STYLE:RIGHT]{SpeechSound:02}Yes! You successfully used the[BR]
+action command.[BR]
+[PAUSE:0A]This will reduce the amount of[BR]
+damage you receive.[BR]
+[WAIT][NEXT]
+Often you'll have to use [BR]
+different techniques to make[BR]
+use of the action command.[BR]
+It depends on the attack.[BR]
+[WAIT][NEXT]
+Try attacking by Hammer.[WAIT][END]
+
+0A-021
+[STYLE:RIGHT]{SpeechSound:02}Often you'll have to use[BR]
+different techniques to make[BR]
+use of the action command.[BR]
+It depends on the attack.[BR]
+[WAIT][NEXT]
+Try attacking by Hammer.[WAIT][END]
+
+0A-022
+[STYLE:RIGHT]{SpeechSound:02}Once you choose an enemy to[BR]
+attack, move the Control Stick[BR]
+to the left.[BR]
+[WAIT][NEXT]
+OK. Move the Control Stick.[BR]
+{Func_04}[END]
+
+0A-023
+[STYLE:RIGHT]{SpeechSound:02}Move the Control Stick to the[BR]
+left and keep it there.[BR]
+[PAUSE:0A]Don't let it go.[BR]
+{Func_04}[END]
+
+0A-024
+[STYLE:RIGHT]{SpeechSound:02}[STAR] flashes as soon as your power[BR]
+reaches its maximum.[BR]
+That's when you let go![BR]
+{Func_04}[END]
+
+0A-025
+[STYLE:RIGHT]{SpeechSound:02}All right! You successfully used[BR]
+the action command![BR]
+[WAIT][NEXT]
+Well, Mario,[BR]
+[PAUSE:0A]do you understand the ins and[BR]
+outs of the action command?[BR]
+[WAIT][NEXT]
+Let's practice a bit to make[BR]
+sure you've mastered how to use[BR]
+it properly.[BR]
+{Func_04}[END]
+
+0A-026
+[STYLE:RIGHT]{SpeechSound:02}Well, Mario,[BR]
+[PAUSE:0A]do you understand the ins and[BR]
+outs of the action command?[BR]
+[WAIT][NEXT]
+Let's practice a bit to make[BR]
+sure you've mastered how to use[BR]
+it properly.[BR]
+{Func_04}[END]
+
+0A-027
+[STYLE:RIGHT]{SpeechSound:02}You don't need to practice[BR]
+anymore...?[BR]
+[PAUSE:0A]That's our Mario![BR]
+[PAUSE:05]You're a quick learner.[BR]
+[WAIT][NEXT]
+Well, [PAUSE:05]I guess that's about all I[BR]
+can teach you.[WAIT][END]
+
+0A-028
+[STYLE:RIGHT]{SpeechSound:02}The action command will serve[BR]
+you well, so practice it.[BR]
+[WAIT][NEXT]
+If you're done with this training[BR]
+session, choose the End Training[BR]
+command.[WAIT][END]
+
+0A-029
+[STYLE:RIGHT]{SpeechSound:02}Well done, Mario!![BR]
+[PAUSE:05]You successfully used the[BR]
+action command.[BR]
+[PAUSE:05]You have great timing![WAIT][END]
+
+0A-02A
+[STYLE:RIGHT]{SpeechSound:02}Almost!![BR]
+[PAUSE:05]That was a little bit too early.[WAIT][END]
+
+0A-02B
+[STYLE:RIGHT]{SpeechSound:02}Almost!![BR]
+[PAUSE:05]That was a little bit too late.[WAIT][END]
+
+0A-02C
+[STYLE:RIGHT]{SpeechSound:02}Well, [PAUSE:05]I guess that's about all I[BR]
+can teach you.[WAIT][END]
+
+0A-02D
+[STYLE:RIGHT]Ouch![BR]
+[PAUSE:14][END]
+
+0A-02E
+[STYLE:RIGHT]Ow![BR]
+[PAUSE:14][END]
+
+0A-02F
+[STYLE:RIGHT]{SpeechSound:02}Once you understand how to use[BR]
+the action command properly,[BR]
+you'll be even more powerful.[WAIT][END]
+
+0A-030
+[STYLE:RIGHT]Terrific![BR]
+[PAUSE:0A]You'll be much tougher in battle[BR]
+now.[WAIT][END]
+
+0A-031
+[STYLE:RIGHT]{Down:06}{Size:20:20}Here you are![WAIT][END]
+
+0A-032
+[STYLE:RIGHT]{SpeechSound:02}What!? [PAUSE:05]It can't be...[BR]
+[PAUSE:05]Were you [PAUSE:05]following me!?[WAIT][END]
+
+0A-033
+[STYLE:RIGHT]What [PAUSE:05]a foolish [PAUSE:05]Star Kid!![BR]
+[WAIT][NEXT]
+I knew that if I followed you,[BR]
+I'd find Mario![BR]
+[WAIT][NEXT]
+If I defeat Mario right now,[BR]
+I'll be famous![BR]
+[WAIT][NEXT]
+I'll tell Kammy Koopa![BR]
+She'll shower me with praise![BR]
+She'll give me a raise![BR]
+[WAIT][NEXT]
+{Down:06}{Size:20:20}{StartFX:Shrinking}{StartFX:Jitter}Here I come!![WAIT][END]
+
+0A-034
+[STYLE:RIGHT]{SpeechSound:02}Well done, Mario![BR]
+[PAUSE:0F]You're as strong as they say.[BR]
+[WAIT][NEXT]
+I know that you'll be able to[BR]
+defeat Bowser![WAIT][END]
+
+0A-035
+[STYLE:RIGHT]{SpeechSound:02}I'm going to return to Princess[BR]
+Peach's side.[BR]
+[WAIT][NEXT]
+I'm not strong enough to really[BR]
+help her, but at least I can tell[BR]
+her you're OK.[BR]
+[WAIT][NEXT]
+Well, Mario...[BR]
+[PAUSE:05]...see you later![WAIT][END]
+
+0A-036
+[STYLE:RIGHT]{SpeechSound:02}Oh dear![BR]
+[PAUSE:0F]I almost forgot to tell you the[BR]
+message from Princess Peach.[BR]
+[WAIT][NEXT]
+"I'm all right, so don't worry[BR]
+about me..."[BR]
+[PAUSE:0A]...that's exactly what she said.[BR]
+[WAIT][NEXT]
+I get the feeling, though... [BR]
+[PAUSE:0A]...that she's very lonely.[BR]
+[WAIT][NEXT]
+Anyway, I'll do my best to help[BR]
+the both of you![BR]
+[WAIT][NEXT]
+But please be brave![BR]
+You must save Princess Peach![WAIT][END]
+
+0A-037
+[STYLE:RIGHT]There he goes...[BR]
+[PAUSE:0A]back to Bowser's Castle.[BR]
+What a brave little guy...[BR]
+[WAIT][NEXT]
+OK, Mario,[BR]
+[PAUSE:0A]let's get down to business![WAIT][END]
+
+0A-038
+[STYLE:RIGHT]Ah... My, my...[HEART][BR]
+[PAUSE:14]I foresaw your arrival, Mario.[BR]
+[WAIT][NEXT]
+My name is Merluvlee.[BR]
+I'm a stunning fortune-teller.[BR]
+[WAIT][NEXT]
+My noble calling is to read[BR]
+fortunes while looking absolutely[BR]
+ravishing. I can help you find[BR]
+what you seek.[BR]
+[WAIT][NEXT]
+My twinkle star here will show[BR]
+me all that's hidden.[BR]
+[PAUSE:0A]My, my...[HEART][BR]
+[WAIT][NEXT]
+Tell me...[BR]
+[PAUSE:0A]Shall I read your fortune?[BR]
+{Func_04}[END]
+
+0A-039
+[STYLE:RIGHT]Ah... My, my...[HEART][BR]
+[PAUSE:0A]We meet again, Mario![BR]
+[WAIT][NEXT]
+My noble calling is to read[BR]
+fortunes while looking absolutely[BR]
+ravishing. I can help you find[BR]
+what you seek.[BR]
+[WAIT][NEXT]
+Tell me...[BR]
+[PAUSE:0A]Shall I read your fortune?[BR]
+{Func_04}[END]
+
+0A-03A
+[STYLE:RIGHT]Ah... My, my...[HEART][BR]
+[WAIT][NEXT]
+Shall I read something else?[BR]
+{Func_04}[END]
+
+0A-03B
+[STYLE:RIGHT]It appears you have found all[BR]
+that I can show you.[BR]
+[WAIT][NEXT]
+Don't be a stranger.[WAIT][END]
+
+0A-03C
+[NEXT]
+My, my...[HEART] Are you sure?[BR]
+[PAUSE:0A]If ever you seek something,[BR]
+please call upon me again.[WAIT][END]
+
+0A-03D
+[NEXT]
+My, my...[HEART][BR]
+[PAUSE:05]How unfortunate![BR]
+[PAUSE:0A]You don't have enough coins.[BR]
+[WAIT][NEXT]
+Alas, I can't read your fortune.[BR]
+[PAUSE:0A]Please call upon me again once[BR]
+you've saved up some coins.[WAIT][END]
+
+0A-03E
+[NEXT]
+Star Piece, is it?[BR]
+[PAUSE:0A]My, my...[HEART] [PAUSE:05]OK[HEART][BR]
+[PAUSE:0A]I'll now read your fortune with[BR]
+grace and unrivaled good looks.[WAIT][END]
+
+0A-03F
+[NEXT]
+Badge, is it?[BR]
+[PAUSE:0A]My, my...[HEART] [PAUSE:05]OK[HEART][BR]
+[PAUSE:0A]I'll now read your fortune with[BR]
+grace and unrivaled good looks.[WAIT][END]
+
+0A-040
+[NEXT]
+Super Block, is it?[BR]
+[PAUSE:0A]My, my...[HEART] [PAUSE:05]OK[HEART][BR]
+[PAUSE:0A]I'll now read your fortune with[BR]
+grace and unrivaled good looks.[WAIT][END]
+
+0A-041
+[STYLE:RIGHT]{StartFX:Shrinking}Waaaa--------!![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Twinkle light![BR]
+Twinkle bright!![BR]
+[WAIT][NEXT]
+Waaa------pang!![BR]
+Woooo-----poy!![BR]
+Wa, waa, waaaaa...!!![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}Uh huh...![BR]
+[PAUSE:0A]Oh yeah...! [HEART] {EndFX:Shrinking}[PAUSE:0A]Master Star![BR]
+Fill my eyes with the light of[BR]
+that which I seek![WAIT][END]
+
+0A-042
+[STYLE:RIGHT]Alas...[BR]
+[PAUSE:0A]At the moment, there are no[BR]
+Star Pieces within your reach.[BR]
+[WAIT][NEXT]
+Do not give up hope, though.[BR]
+There are some beyond my vision.[BR]
+[WAIT][NEXT]
+Trust in your lucky star and[BR]
+you'll find people who possess[BR]
+Star Pieces.[BR]
+[WAIT][NEXT]
+I must give you a full refund[BR]
+for such a poor reading...[BR]
+[PAUSE:0A]Please return to me again.[WAIT][END]
+
+0A-043
+[STYLE:RIGHT]Alas...[BR]
+[PAUSE:0A]At the moment, there are no[BR]
+Badges within your reach.[BR]
+[WAIT][NEXT]
+I must give you a full refund [BR]
+for such a poor reading...[BR]
+[PAUSE:0A]Please return to me again.[WAIT][END]
+
+0A-044
+[STYLE:RIGHT]Alas...[BR]
+[PAUSE:0A]At the moment, there are no[BR]
+Super Blocks within reach.[BR]
+[WAIT][NEXT]
+I must give you a full refund[BR]
+for such a poor reading...[BR]
+[PAUSE:0A]Please return to me again.[WAIT][END]
+
+0A-045
+[STYLE:RIGHT]Ah... My, my...[HEART][BR]
+[PAUSE:0A]Hello there, Mario![BR]
+[WAIT][NEXT]
+This spot is a little tight for[BR]
+fortune-telling.[BR]
+If you want your fortune read,[BR]
+talk to me over the counter.[WAIT][END]
+
+0A-046
+[STYLE:RIGHT]... Excuse me?[BR]
+[PAUSE:0A]You want... [PAUSE:05]...my autograph?[BR]
+[WAIT][NEXT]
+My, my... Mercy![HEART][BR]
+[PAUSE:0A]Are you sure it's mine you want?[BR]
+[WAIT]{Func_04}[END]
+
+0A-047
+[NEXT]
+You really do? Well![BR]
+This is a first![BR]
+[PAUSE:0F]What shall I do[PAUSE:03].[PAUSE:03].[PAUSE:03].?[BR]
+[WAIT][NEXT]
+Ah...of course![HEART][BR]
+[WAIT][NEXT]
+I don't mean to be a[BR]
+stick-in-the-mud...but I'll give[BR]
+you the autograph on one[BR]
+condition.[BR]
+[WAIT][NEXT]
+A small favor...[BR]
+[PAUSE:0A]I want you to visit my twin[BR]
+sister and fetch a Crystal Ball[BR]
+from her.[BR]
+[WAIT][NEXT]
+She lives in a back alley in[BR]
+Dry Dry Outpost.[BR]
+Her name is Merlee.[BR]
+[WAIT][NEXT]
+Well, Mario...[BR]
+[PAUSE:0A]Would you[HEART]?[WAIT][END]
+
+0A-048
+[STYLE:RIGHT]Have you seen my sister yet?[BR]
+[PAUSE:0A]I'm sorry...but I simply can't[BR]
+give you an autograph until you[BR]
+fulfill your promise.[WAIT][END]
+
+0A-049
+[STYLE:RIGHT]Oh! Mercy![HEART] Thank you![BR]
+[PAUSE:0A]I'll cherish this.[BR]
+[WAIT][NEXT]
+And for you...here is my[BR]
+autograph, as promised.[BR]
+[PAUSE:0A]It'll be valuable someday![WAIT][END]
+
+0A-04A
+[STYLE:RIGHT]I'm the famous Merlow of[BR]
+Shooting Star Summit.[BR]
+[PAUSE:0A]I collect Star Pieces.[BR]
+[PAUSE:0A]I have the biggest collection![BR]
+[WAIT][NEXT]
+Mister![BR]
+[PAUSE:0A]You have any Star Pieces?[BR]
+If you do, I'll swap some cool[BR]
+Badges for them![BR]
+[WAIT][NEXT]
+How 'bout it? Let's swap![BR]
+{Func_04}[END]
+
+0A-04B
+[STYLE:RIGHT]I'm the famous Merlow of[BR]
+Shooting Star Summit.[BR]
+[WAIT][NEXT]
+Got any Star Pieces?[BR]
+I'll swap my Badges for them.[BR]
+{Func_04}[END]
+
+0A-04C
+[STYLE:RIGHT]Oh, you wanna trade Star Pieces[BR]
+for Badges, do you?[BR]
+[WAIT][NEXT]
+But I don't have any more[BR]
+Badges! You tapped me out![BR]
+[PAUSE:0A]I'm sorry. See you![WAIT][END]
+
+0A-04D
+[STYLE:RIGHT]You want to trade more?[BR]
+{Func_04}[END]
+
+0A-04E
+[NEXT]
+Later![WAIT][END]
+
+0A-04F
+[NEXT]
+Ahhh...[BR]
+[PAUSE:0A]I can tell you don't have any[BR]
+Star Pieces.[BR]
+[PAUSE:0A]Sorry, then. No can do.[WAIT][END]
+
+0A-050
+[NEXT]
+Which Badges do you want to[BR]
+swap for?[WAIT][END]
+
+0A-051
+[STYLE:RIGHT]Ahh... Did you change your mind?[BR]
+[PAUSE:0A]I see...[WAIT][END]
+
+0A-052
+[STYLE:RIGHT]I'm going to exchange[BR]
+"{Var:00}" for[BR]
+{Var:01} Star Pieces.[BR]
+[WAIT][NEXT]
+The number of BP you'll need for[BR]
+this Badge is "{Var:02}".[BR]
+[WAIT][NEXT]
+Is this the Badge you want?[BR]
+{Func_04}[END]
+
+0A-053
+[STYLE:RIGHT]I'm going to exchange[BR]
+"{Var:00}" for[BR]
+{Var:01} Star Piece.[BR]
+[WAIT][NEXT]
+The number of BP you'll need for[BR]
+this Badge is "{Var:02}".[BR]
+[WAIT][NEXT]
+Is this the Badge you want?[BR]
+{Func_04}[END]
+
+0A-054
+[NEXT]
+Ahh... Did you change your mind?[BR]
+[PAUSE:0A]You're an indecisive guy![BR]
+[WAIT][NEXT]
+OK, OK. You want to trade for a[BR]
+different Badge?[WAIT][END]
+
+0A-055
+[STYLE:RIGHT]All right! These Star Pieces[BR]
+really help round out my[BR]
+collection![BR]
+[WAIT][NEXT]
+Please come back and swap some[BR]
+more with me sometime.[WAIT][END]
+
+0A-056
+[STYLE:RIGHT]All right then, mister.[BR]
+[PAUSE:0A]Why don't we swap some more?[BR]
+{Func_04}[END]
+
+0A-057
+[NEXT]
+You don't want to?[BR]
+[WAIT][NEXT]
+Oh well. At least I was able to[BR]
+add to my radical Star Piece[BR]
+collection.[BR]
+[WAIT][NEXT]
+Please come back and swap some[BR]
+more with me sometime.[WAIT][END]
+
+0A-058
+[STYLE:RIGHT]You are Merlow, correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+0A-059
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+0A-05A
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+0A-05B
+[STYLE:RIGHT]A letter for me?[BR]
+[PAUSE:0A]From Merle in Starborn Valley?[BR]
+Wow! News from my dad![BR]
+[PAUSE:0F][WAIT][NEXT]
+Thanks, Mr. Postman![BR]
+[PAUSE:0A]My dad writes all the time[BR]
+because he worries about me.[BR]
+[WAIT][NEXT]
+My sisters and I are totally bad[BR]
+about writing back, though.[BR]
+[WAIT][NEXT]
+Maybe I oughta write him a little[BR]
+more often, huh?[BR]
+[PAUSE:0F][WAIT][NEXT]
+This is [PAUSE:0F]a treasure that I've[BR]
+kept for a long time. I'm gonna[BR]
+give it to you as thanks.[BR]
+[WAIT][NEXT]
+You could always come back and[BR]
+swap me something for it...[WAIT][END]
+
+0A-05C
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}Mario,[BR]
+[PAUSE:0A]can you hear me...?[WAIT][END]
+
+0A-05D
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}I'm going to open the entrance[BR]
+to Star Way.[BR]
+[WAIT][NEXT]
+Enter this path without fear.[BR]
+[PAUSE:0A]The Star Way continues all the[BR]
+way up here to Star Haven.[BR]
+[WAIT][NEXT]
+We 7 Star Spirits will be waiting[BR]
+for you here. We wish to give you[BR]
+our remaining Power.[BR]
+[WAIT][NEXT]
+With this Power, you will be able[BR]
+to stand up to the Star Rod[BR]
+Bowser holds.[WAIT][END]
+
+0A-05E
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Faded:D9}We anxiously await you...[BR]
+[WAIT][NEXT]
+Mario,[BR]
+[PAUSE:0A]make haste to Star Haven![WAIT][END]
+
+0A-05F
+[STYLE:RIGHT]{SpeechSound:02}Good afternoon,[BR]
+... or good evening, maybe?[BR]
+[WAIT][NEXT]
+In Star Haven you can see[BR]
+stars all the time.[BR]
+[WAIT][NEXT]
+There used to be a lot more[BR]
+shooting stars...but that was[BR]
+before the Star Rod was taken.[BR]
+[WAIT][NEXT]
+The beauty of this place was[BR]
+incredible back then...[WAIT][END]
+
+0A-060
+[STYLE:RIGHT]{SpeechSound:02}When I first heard that all the[BR]
+Star Spirits were captured and[BR]
+the Star Rod was stolen,[BR]
+I lost it.[BR]
+[WAIT][NEXT]
+I figured, this is it![BR]
+This is the end of the world![BR]
+[WAIT][NEXT]
+But now, all of the Star Spirits[BR]
+have safely returned.[BR]
+[WAIT][NEXT]
+It just goes to show you never[BR]
+give up hope.[WAIT][END]
+
+0A-061
+[STYLE:RIGHT]{SpeechSound:02}When the news first hit that[BR]
+the Star Spirits had been taken[BR]
+away, a friend of mine was so[BR]
+shocked that he got sick.[BR]
+[WAIT][NEXT]
+His shining light faded way down[BR]
+to a mere flicker.[BR]
+[WAIT][NEXT]
+Since the Star Spirits have[BR]
+come back, he's regaining a[BR]
+healthy glow.[BR]
+[WAIT][NEXT]
+You're a lightsaver, Mario![WAIT][END]
+
+0A-062
+[STYLE:RIGHT]{SpeechSound:02}Our precious Star Spirits have [BR]
+returned! Oh, happy day![BR]
+It's all because of you![BR]
+[WAIT][NEXT]
+I guess we'll all "wish upon a[BR]
+Mario" from now on![BR]
+[PAUSE:0A]Every Star owes you, Mario![WAIT][END]
+
+0A-063
+[STYLE:RIGHT]{SpeechSound:02}It gives me great joy to hear[BR]
+of the Star Spirits' return.[BR]
+[WAIT][NEXT]
+Our only wish now is for the[BR]
+return of the Star Rod.[BR]
+[WAIT][NEXT]
+It seems so odd...a Star making[BR]
+a wish![WAIT][END]
+
+0A-064
+[STYLE:RIGHT]{SpeechSound:02}Hello![BR]
+[PAUSE:0A]Need a little rest?[BR]
+{Func_04}[END]
+
+0A-065
+[STYLE:RIGHT]{SpeechSound:02}...Are you sure?[BR]
+[PAUSE:0A]You seem pretty healthy to me.[BR]
+[PAUSE:0A]Even so, would you care to stay[BR]
+over anyway?[BR]
+{Func_04}[END]
+
+0A-066
+{SpeechSound:02}[NEXT]
+See you again soon![WAIT][END]
+
+0A-067
+{SpeechSound:02}[NEXT]
+Please relax.[WAIT][END]
+
+0A-068
+[STYLE:RIGHT]{SpeechSound:02}Did you sleep well?[BR]
+[WAIT][NEXT]
+Take care! Bye![WAIT][END]
+
+0A-069
+[STYLE:RIGHT]{SpeechSound:02}Mario,[BR]
+[PAUSE:0A]you finally made it.[BR]
+[WAIT][NEXT]
+The time has come to take the[BR]
+fight to Bowser's turf.[BR]
+[WAIT][NEXT]
+Now...[BR]
+[PAUSE:0A]Hold still while we 7 join[BR]
+together to bestow upon you[BR]
+our final Power.[WAIT][END]
+
+0A-06A
+[STYLE:RIGHT]{SpeechSound:02}If you use this Power, you can[BR]
+drain the power of the Star Rod[BR]
+whenever Bowser uses it.[BR]
+[PAUSE:05][WAIT][NEXT]
+[PAUSE:0A]Ah yes! And one more thing,[BR]
+[PAUSE:0A]I have one final gift which[BR]
+should come in handy.[WAIT][END]
+
+0A-06B
+[STYLE:RIGHT]{SpeechSound:02}This is the legendary Star Ship[BR]
+of Star Haven.[BR]
+[PAUSE:0A]Bowser is keeping his castle[BR]
+way up in the sky.[BR]
+[WAIT][NEXT]
+With this ship, however,[BR]
+you can reach it.[BR]
+[WAIT][NEXT]
+Climb aboard![BR]
+[PAUSE:0A]On to Bowser's Castle![BR]
+[WAIT][NEXT]
+We will always be with you.[BR]
+[PAUSE:0A]Whenever you are in need,[BR]
+use our Powers to help you.[WAIT][END]
+
+0A-06C
+[STYLE:RIGHT]Look... [PAUSE:0A]...a shooting star![BR]
+[WAIT][NEXT]
+Princess... come back...[BR]
+[PAUSE:0A]Princess... come back...[BR]
+[PAUSE:0A]Princess... come back...[WAIT][END]
+
+0A-06D
+[STYLE:RIGHT]Did you wish for something?[BR]
+[PAUSE:0A]I hope your dreams come true.[WAIT][END]
+
+0A-06E
+[STYLE:RIGHT]Me too![HEART][WAIT][END]
+
+0A-06F
+[STYLE:RIGHT]I want to see the princess...[BR]
+[PAUSE:05]I want to see the princess...[BR]
+[PAUSE:05]I want to see the princess...[WAIT][END]
+
+0A-070
+[STYLE:RIGHT]I want to eat Shroom Cake...[BR]
+[PAUSE:08]I want to eat Shroom Cake...[BR]
+[PAUSE:08]I want to eat tons and tons of[BR]
+Shroom Cake... [BR]
+[WAIT][NEXT]
+Oh, shooting star...[BR]
+Please fulfill my wishes...[BR]
+[PAUSE:05]Pretty please...[WAIT][END]
+

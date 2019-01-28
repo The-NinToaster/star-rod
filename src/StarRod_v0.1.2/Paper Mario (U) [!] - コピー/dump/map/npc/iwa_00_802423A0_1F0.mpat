@@ -1,0 +1,237 @@
+% automatically dumped from map iwa_00
+
+#new:Npc $iwa_00_802423A0_1F0
+00000005 $NpcSettings_80240FCC_iwa_00 00000000 00000000 00000000 
+03704F0C $Script_Init_80242338_iwa_00 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00920001 00920001 00920001 00920001 00920001 00920001 00920001 00920001 
+00920001 00920001 00920001 00920001 00920001 00920001 00920001 00920001 
+00000000 00000000 00000000 001A0089 % He's a Whacka. When you hit Whackas, they get Bump ...
+
+#new:Function $Function_80240118_iwa_00
+    0:  ADDIU     SP, SP, FFC8
+    4:  SW        S2, 28 (SP)
+    8:  DADDU     S2, A0, R0
+    C:  SW        RA, 30 (SP)
+   10:  SW        S3, 2C (SP)
+   14:  SW        S1, 24 (SP)
+   18:  SW        S0, 20 (SP)
+   1C:  LW        S3, 148 (S2)
+   20:  LH        A0, 8 (S3)
+   24:  JAL       8003AAEC
+   28:  DADDU     S0, A1, R0
+   2C:  BEQ       S0, R0, .o40
+   30:  DADDU     S1, V0, R0
+   34:  ADDIU     V0, R0, 14
+   38:  SW        R0, 70 (S2)
+   3C:  SW        V0, 74 (S2)
+        .o40
+   40:  LW        V0, 74 (S2)
+   44:  ANDI      V0, V0, 1
+   48:  BEQ       V0, R0, .o5C
+   4C:  ADDIU     V1, R0, FFFD
+   50:  LW        V0, 0 (S1)
+   54:  BEQ       R0, R0, .o64
+   58:  AND       V0, V0, V1
+        .o5C
+   5C:  LW        V0, 0 (S1)
+   60:  ORI       V0, V0, 2
+        .o64
+   64:  SW        V0, 0 (S1)
+   68:  LW        V1, 74 (S2)
+   6C:  ADDIU     V0, R0, F
+   70:  BNE       V1, V0, .o11C
+   74:  NOP
+   78:  ADDIU     A0, R0, 3E5
+   7C:  LHU       V1, A8 (S1)
+   80:  LWC1      F0, 3C (S1)
+   84:  LWC1      F2, 40 (S1)
+   88:  SLL       V1, V1, 10
+   8C:  SRA       V0, V1, 10
+   90:  SRL       V1, V1, 1F
+   94:  ADDU      V0, V0, V1
+   98:  SRA       V0, V0, 1
+   9C:  MTC1      V0, F4
+   A0:  NOP
+   A4:  CVT.S.W   F4, F4
+   A8:  ADD.S     F0, F0, F4
+   AC:  SWC1      F2, 10 (SP)
+   B0:  LW        A2, 38 (S1)
+   B4:  MFC1      A3, F0
+   B8:  JAL       80149D5C
+   BC:  DADDU     A1, R0, R0
+   C0:  LHU       V1, A8 (S1)
+   C4:  LWC1      F4, 3C (S1)
+   C8:  LIF       F2, -1.0
+   D0:  ADDIU     V0, R0, A
+   D4:  SW        R0, 10 (SP)
+   D8:  SW        R0, 18 (SP)
+   DC:  SW        V0, 1C (SP)
+   E0:  SLL       V1, V1, 10
+   E4:  SRA       V0, V1, 10
+   E8:  SRL       V1, V1, 1F
+   EC:  ADDU      V0, V0, V1
+   F0:  SRA       V0, V0, 1
+   F4:  MTC1      V0, F0
+   F8:  NOP
+   FC:  CVT.S.W   F0, F0
+  100:  ADD.S     F4, F4, F0
+  104:  SWC1      F2, 14 (SP)
+  108:  LW        A1, 38 (S1)
+  10C:  LW        A3, 40 (S1)
+  110:  MFC1      A2, F4
+  114:  JAL       80070190
+  118:  ADDIU     A0, R0, 1
+        .o11C
+  11C:  LW        S0, 74 (S2)
+  120:  ADDIU     V0, R0, A
+  124:  BNE       S0, V0, .o164
+  128:  NOP
+  12C:  LIF       F2, 10.0
+  134:  LWC1      F0, 40 (S1)
+  138:  ADD.S     F0, F0, F2
+  13C:  LWC1      F14, 3C (S1)
+  140:  LWC1      F12, 38 (S1)
+  144:  MFC1      A2, F0
+  148:  JAL       8006F8F0
+  14C:  ADD.S     F14, F14, F2
+  150:  LW        V0, 74 (S2)
+  154:  BNE       V0, S0, .o164
+  158:  NOP
+  15C:  JAL       80048280
+  160:  DADDU     A0, S3, R0
+        .o164
+  164:  LW        V1, 74 (S2)
+  168:  ADDIU     V1, V1, FFFF
+  16C:  SW        V1, 74 (S2)
+  170:  LW        RA, 30 (SP)
+  174:  LW        S3, 2C (SP)
+  178:  LW        S2, 28 (SP)
+  17C:  LW        S1, 24 (SP)
+  180:  LW        S0, 20 (SP)
+  184:  SLTIU     V0, V1, 1
+  188:  JR        RA
+  18C:  ADDIU     SP, SP, 38
+
+#new:NpcSettings $NpcSettings_80240FCC_iwa_00
+00000000 001E001A 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241C6C_iwa_00
+    0:  Call     80044600 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000004 
+   28:  		Set  *Var[A]  00000001 
+   38:  	Case  ==  00000002 
+   44:  		Set  *Var[A]  00000001 
+   54:  	Case  ==  00000006 
+   60:  		Call     GetCurrentPartner 	( *Var[2] )
+   70:  		If  *Var[2]  ==  00000002 
+   80:  			Set  *Var[A]  00000002 
+   90:  		Else
+   98:  			Set  *Var[A]  00000003 
+   A8:  		EndIf
+   B0:  	Default
+   B8:  		Set  *Var[A]  00000000 
+   C8:  EndSwitch
+   D0:  If  *Var[A]  ==  00000000 
+   E0:  	Return
+   E8:  EndIf
+   F0:  Call     DisablePlayerInput 	( .True )
+  100:  Call     BindNpcInteract 	( 00000004 00000000 )
+  114:  Call     EnableNpcAI 	( 00000004 .False )
+  128:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  140:  Call     GetNpcPos   	( .Npc:Self *Var[3] *Var[4] *Var[5] )
+  15C:  If  *Var[0]  <  *Var[3] 
+  16C:  	Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+  184:  	Set  *Var[B]  00000000 
+  194:  Else
+  19C:  	Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+  1B4:  	Set  *Var[B]  00000001 
+  1C4:  EndIf
+  1CC:  Add  *WhackaHitCount  00000001 
+  1DC:  If  *Var[A]  ==  00000003 
+  1EC:  	Add  *WhackaHitCount  00000001 
+  1FC:  EndIf
+  204:  Switch  *Var[A] 
+  210:  	CaseOR  ==  00000002 
+  21C:  	CaseOR  ==  00000003 
+  228:  		Call     PlaySoundAtNpc ( 00000004 000000E1 00000000 )
+  240:  	EndCaseGroup
+  248:  EndSwitch
+  250:  Switch  *Var[A] 
+  25C:  	CaseOR  ==  00000001 
+  268:  	CaseOR  ==  00000002 
+  274:  		Wait     00000001 
+  280:  		Call     SetNpcAnimation 	( 00000004 00920004 )
+  294:  		Wait     0000000F 
+  2A0:  		Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  2BC:  		If  *Var[B]  ==  00000000 
+  2CC:  			Add  *Var[0]  0000000E 
+  2DC:  		Else
+  2E4:  			Sub  *Var[0]  0000000E 
+  2F4:  		EndIf
+  2FC:  		Add  *Var[1]  0000001E 
+  30C:  		Add  *Var[2]  00000002 
+  31C:  		Call     MakeItemEntity ( .Item:WhackasBump *Var[0] *Var[1] *Var[2] 0000000D 00000000 )
+  340:  		Call     SetNpcAnimation 	( 00000004 00920001 )
+  354:  		Wait     00000005 
+  360:  	EndCaseGroup
+  368:  	Case  ==  00000003 
+  374:  		Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  390:  		Add  *Var[0]  00000001 
+  3A0:  		Call     SetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  3BC:  		Wait     00000001 
+  3C8:  		Sub  *Var[0]  00000002 
+  3D8:  		Call     SetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  3F4:  		Wait     00000001 
+  400:  		Add  *Var[0]  00000002 
+  410:  		Call     SetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  42C:  		Wait     00000001 
+  438:  		Sub  *Var[0]  00000001 
+  448:  		Call     SetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  464:  		Wait     00000001 
+  470:  	EndCaseGroup
+  478:  EndSwitch
+  480:  If  *WhackaHitCount  <  00000008 
+  490:  	Switch  *Var[A] 
+  49C:  		Case  ==  00000001 
+  4A8:  			Call     SayMessage0 	( 00000004 00920005 00920001 00000000 000D002C ) % Whack-OW! Don't hit me!
+  4C8:  		Case  ==  00000002 
+  4D4:  			Call     SayMessage0 	( 00000004 00920005 00920001 00000000 000D002D ) % Whack-a-bYAAARGH! Quit it!
+  4F4:  		Case  ==  00000003 
+  500:  			Call     SayMessage0 	( 00000004 00920005 00920001 00000000 000D002E ) % Whack-OOOG! That really hurts!
+  520:  	EndSwitch
+  528:  	Call     SetNpcAnimation 	( 00000004 00920003 )
+  53C:  	Wait     0000000F 
+  548:  Else
+  550:  	Call     SayMessage0 	( 00000004 00920005 00920001 00000000 000D002F ) % Whack-a-waaaaaaaaa.... I can't take this abuse!
+  570:  	Wait     00000002 
+  57C:  EndIf
+  584:  If  *WhackaHitCount  >=  00000008 
+  594:  	Call     $Function_80240118_iwa_00 ( )
+  5A0:  EndIf
+  5A8:  Call     SetNpcPos   	( 00000004 00000000 FFFFFC18 00000000 )
+  5C4:  Call     SetNpcPos   	( 00000005 00000000 FFFFFC18 00000000 )
+  5E0:  Call     DisablePlayerInput 	( .False )
+  5F0:  Call     RemoveNpc   	( 00000004 )
+  600:  Call     RemoveNpc   	( 00000005 )
+  610:  Return
+  618:  End
+
+#new:Script $Script_Init_80242338_iwa_00
+    0:  If  *WhackaHitCount  <  00000008 
+   10:  	Call     EnableNpcShadow 	( .Npc:Self .False )
+   24:  	Call     BindNpcHit  	( .Npc:Self $Script_80241C6C_iwa_00 )
+   38:  Else
+   40:  	Call     RemoveNpc   	( .Npc:Self )
+   50:  EndIf
+   58:  Return
+   60:  End
+

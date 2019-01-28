@@ -1,0 +1,92 @@
+% automatically dumped from map dgb_08
+
+#new:Npc $dgb_08_80246528
+0000000B $NpcSettings_80244A28_dgb_08 00000000 00000000 00000000 
+00600D01 $Script_Init_802464C4_dgb_08 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+FFFFFE56 00000000 FFFFFFDA 00000000 00000000 FFFF8001 00000000 FFFFFE56 
+00000000 FFFFFFDA 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00390002 00390003 00390004 00390004 00390002 00390002 0039000C 0039000C 
+00390011 00390012 00390007 00390008 00390001 00390002 00390002 00390002 
+00000002 00000000 00000000 001A00B6 % Everyone left while this Clubba was sleeping. He m ...
+
+#new:Function $Function_80243C50_dgb_08
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, 148 (A0)
+    C:  JAL       8003AAEC
+   10:  LH        A0, 8 (V0)
+   14:  DADDU     A0, V0, R0
+   18:  ADDIU     A1, R0, 32F
+   1C:  JAL       800494C0
+   20:  DADDU     A2, R0, R0
+   24:  LW        RA, 10 (SP)
+   28:  ADDIU     V0, R0, 2
+   2C:  JR        RA
+   30:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80244A28_dgb_08
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80246210_dgb_08
+    0:  Label    00000000 
+    C:  Call     SetNpcAnimation 	( .Npc:Self 00390007 )
+   20:  Wait     0000001E 
+   2C:  Loop     0000000F 
+   38:  	Call     $Function_80243C50_dgb_08 ( )
+   44:  	Wait     0000003C 
+   50:  EndLoop
+   58:  Call     SetNpcAnimation 	( .Npc:Self 0039000C )
+   6C:  Wait     00000014 
+   78:  Call     SetNpcAnimation 	( .Npc:Self 00390007 )
+   8C:  Wait     0000001E 
+   98:  Loop     00000005 
+   A4:  	Call     $Function_80243C50_dgb_08 ( )
+   B0:  	Wait     0000003C 
+   BC:  EndLoop
+   C4:  Call     SetNpcAnimation 	( .Npc:Self 0039000C )
+   D8:  Wait     0000000F 
+   E4:  Goto     00000000 
+   F0:  Return
+   F8:  End
+
+#new:Script $Script_80246310_dgb_08
+    0:  Call     SetNpcAnimation 	( .Npc:Self 00390008 )
+   14:  Call     PlaySoundAtNpc ( .Npc:Self 000002F1 00000000 )
+   2C:  Wait     0000000A 
+   38:  Call     SetNpcAnimation 	( .Npc:Self 00390002 )
+   4C:  Wait     00000014 
+   58:  Call     GetNpcYaw   	( .Npc:Self *Var[0] )
+   6C:  Add  *Var[0]  000000B4 
+   7C:  Call     InterpNpcYaw 	( .Npc:Self *Var[0] 00000000 )
+   94:  Wait     0000000A 
+   A0:  Call     GetNpcYaw   	( .Npc:Self *Var[0] )
+   B4:  Add  *Var[0]  000000B4 
+   C4:  Call     InterpNpcYaw 	( .Npc:Self *Var[0] 00000000 )
+   DC:  Wait     00000019 
+   E8:  Call     GetNpcYaw   	( .Npc:Self *Var[0] )
+   FC:  Add  *Var[0]  000000B4 
+  10C:  Call     InterpNpcYaw 	( .Npc:Self *Var[0] 00000000 )
+  124:  Wait     0000000F 
+  130:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  144:  Call     SayMessage0 	( .Npc:Self 00390005 00390002 00000000 000E00F2 ) % Uh...huh? How long was I asleep? Where is everyone ...
+  164:  Wait     0000000A 
+  170:  Call     SetNpcAnimation 	( .Npc:Self 00390006 )
+  184:  Wait     0000000A 
+  190:  Call     SetNpcAnimation 	( .Npc:Self 00390007 )
+  1A4:  Return
+  1AC:  End
+
+#new:Script $Script_Init_802464C4_dgb_08
+    0:  Call     802CDF8C ( FFFFFFFF 00000024 0000001E )
+   18:  Call     SetNpcAnimation 	( .Npc:Self 00390007 )
+   2C:  Call     BindNpcInteract 	( .Npc:Self $Script_80246310_dgb_08 )
+   40:  Call     BindNpcIdle 	( .Npc:Self $Script_80246210_dgb_08 )
+   54:  Return
+   5C:  End
+

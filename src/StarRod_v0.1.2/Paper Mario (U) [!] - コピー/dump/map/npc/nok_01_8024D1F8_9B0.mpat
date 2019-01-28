@@ -1,0 +1,67 @@
+% automatically dumped from map nok_01
+
+#new:Npc $nok_01_8024D1F8_9B0
+00000005 $NpcSettings_80243650_nok_01 00000000 00000000 00000000 
+00002909 $Script_Init_8024C114_nok_01 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000019 00000000 00000008 00000032 00000000 00017FFD 00000000 00000000 
+00000000 00000000 000001F4 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00900002 00900006 00900004 00900006 00900004 00900004 00900000 00900000 
+00900000 00900000 00900000 00900000 00900000 00900000 00900000 00900000 
+00000000 00000000 00000000 001A006E % Koopa Troopas sunbathe in their shells when it's s ...
+
+#new:AISettings $AISettings_80243600_nok_01
+    1.0 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    -1`
+
+#new:Script $Script_NpcAI_80243630_nok_01
+    0:  Call     DoBasicAI   	( $AISettings_80243600_nok_01 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80243650_nok_01
+00000000 00240018 00000000 00000000 $Script_NpcAI_80243630_nok_01 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024A278_nok_01
+    0:  If  *Flag_NOK_02  ==  00000001 
+   10:  	Call     SayMessage0 	( 00000005 008F0007 008F0009 00000000 000C001B ) % Thanks, Mario! This shell was made to order. That' ...
+   30:  	Return
+   38:  EndIf
+   40:  Call     SayMessage0 	( 00000005 00900009 00900002 00000000 000C0019 ) % Curse those stupid Fuzzies! They put my shell in t ...
+   60:  Return
+   68:  End
+
+#new:Script $Script_8024A2E8_nok_01
+    0:  If  *Flag_NOK_02  ==  00000001 
+   10:  	Return
+   18:  EndIf
+   20:  ExecWait $Script_NpcAI_80243630_nok_01 
+   2C:  Return
+   34:  End
+
+#new:Script $Script_Init_8024C114_nok_01
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_8024A2E8_nok_01 )
+   14:  Call     BindNpcInteract 	( .Npc:Self $Script_8024A278_nok_01 )
+   28:  If  *Flag_NOK_02  ==  00000000 
+   38:  	Call     SetNpcPos   	( 00000006 000000BE 00000072 000000DC )
+   54:  	Return
+   5C:  EndIf
+   64:  Call     802CF208 ( 00000005 008F0002 )
+   78:  Return
+   80:  End
+

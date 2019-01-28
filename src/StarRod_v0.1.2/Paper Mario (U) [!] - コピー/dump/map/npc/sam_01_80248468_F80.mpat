@@ -1,0 +1,60 @@
+% automatically dumped from map sam_01
+
+#new:Npc $sam_01_80248468_F80
+00000008 $NpcSettings_802436D0_sam_01 00000000 00000000 00000000 
+00400C09 $Script_Init_802481F4_sam_01 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009A0001 009A0002 009A0003 009A0003 009A0001 009A0001 009A0001 009A0001 
+009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 
+00000000 00000000 00000000 001A00EA % There aren't many non-penguins, so we stand out in ...
+
+#new:NpcSettings $NpcSettings_802436D0_sam_01
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802476E8_sam_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000003F 
+   18:  		Switch  *MapVar[3] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012005A ) % Anyone for a shaved ice treat? Strawberry flavor?  ...
+   50:  				Set  *MapVar[3]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012005B ) % Anyone for a shaved ice treat? Strawberry flavor?  ...
+   8C:  				Set  *MapVar[3]  00000000 
+   9C:  		EndSwitch
+   A4:  	Case  <  00000043 
+   B0:  		Switch  *MapVar[3] 
+   BC:  			Case  ==  00000000 
+   C8:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012005C ) % Herringway? Yes, of course I know him. Everyone in ...
+   E8:  				Set  *MapVar[3]  00000001 
+   F8:  			Case  ==  00000001 
+  104:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012005D ) % Herringway? Yes, of course I know him. Everyone in ...
+  124:  				Set  *MapVar[3]  00000000 
+  134:  		EndSwitch
+  13C:  	Case  <  00000057 
+  148:  		Switch  *MapVar[3] 
+  154:  			Case  ==  00000000 
+  160:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012005E ) % The case has been closed, huh? I'm really happy th ...
+  180:  				Set  *MapVar[3]  00000001 
+  190:  			Case  ==  00000001 
+  19C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012005F ) % The case has been closed, huh? I'm really happy th ...
+  1BC:  				Set  *MapVar[3]  00000000 
+  1CC:  		EndSwitch
+  1D4:  	Case  >=  00000057 
+  1E0:  		Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120060 ) % Herringway was writing a new novel in his secret r ...
+  200:  EndSwitch
+  208:  Return
+  210:  End
+
+#new:Script $Script_Init_802481F4_sam_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802476E8_sam_01 )
+   14:  Return
+   1C:  End
+

@@ -1,0 +1,146 @@
+% automatically dumped from map kpa_53
+
+#new:Npc $kpa_53_802417EC_1F0
+00000001 $NpcSettings_802405D0_kpa_53 00000000 00000000 00000000 
+01B40F0C $Script_Init_8024171C_kpa_53 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 
+000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 
+00000000 00000000 00000000 001A0120 % It looks like Princess Peach, but something just d ...
+
+#new:NpcSettings $NpcSettings_802405D0_kpa_53
+00000000 002E0024 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802407D4_kpa_53
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     GetNpcPos   	( 00000000 *Var[2] *Var[3] *Var[4] )
+   2C:  Thread
+   34:  	Add  *Var[4]  0000000F 
+   44:  	Loop     00000008 
+   50:  		Call     PlayEffect  	( {FX:BigSmokePuff} *Var[2] *Var[3] *Var[4] 00000001 00000001 00000001 00000001 00000000 00000000 00000000 00000000 00000000 00000000 )
+   94:  		Wait     00000005 
+   A0:  	EndLoop
+   A8:  EndThread
+   B0:  Call     PlaySoundAtNpc ( 00000000 000020B8 00000000 )
+   C8:  Call     MakeLerp    	( 00000000 000005A0 00000014 00000001 )
+   E4:  Loop     
+   F0:  	Call     UpdateLerp  	( )
+   FC:  	Call     SetNpcRotation ( 00000000 00000000 *Var[0] 00000000 )
+  118:  	Wait     00000001 
+  124:  	If  *Var[1]  ==  00000000 
+  134:  		BreakLoop
+  13C:  	EndIf
+  144:  EndLoop
+  14C:  Call     PlaySoundAtNpc ( 00000000 000002CD 00000000 )
+  164:  Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+  180:  Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+  19C:  Call     EnableNpcShadow 	( 00000000 .False )
+  1B0:  Call     SetNpcPos   	( .Npc:Self *Var[2] *Var[3] *Var[4] )
+  1CC:  Call     SetNpcYaw   	( .Npc:Self 0000010E )
+  1E0:  Call     MakeLerp    	( FFFFFA60 00000000 00000014 00000004 )
+  1FC:  Loop     
+  208:  	Call     UpdateLerp  	( )
+  214:  	Call     SetNpcRotation ( .Npc:Self 00000000 *Var[0] 00000000 )
+  230:  	Wait     00000001 
+  23C:  	If  *Var[1]  ==  00000000 
+  24C:  		BreakLoop
+  254:  	EndIf
+  25C:  EndLoop
+  264:  Wait     0000000A 
+  270:  Call     SayMessage0 	( .Npc:Self 004E0005 004E0002 00000000 0013002D ) % Aw, shoot! I wonder how you saw through my disguis ...
+  290:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  2A0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  2B8:  If  *Var[0]  <  000002BC 
+  2C8:  	Add  *Var[0]  0000001E 
+  2D8:  	Call     SetNpcAnimation 	( .Npc:Self 004E0004 )
+  2EC:  	Call     MoveNpcTo   	( .Npc:Self *Var[0] *Var[2] 00000023 )
+  308:  EndIf
+  310:  Return
+  318:  End
+
+#new:Script $Script_80240F0C_kpa_53
+    0:  Call     80044600 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	CaseOR  ==  00000004 
+   28:  	CaseOR  ==  00000002 
+   34:  	CaseOR  ==  00000006 
+   40:  		Call     DisablePlayerInput 	( .True )
+   50:  		Call     SetNpcVar   	( 00000000 00000002 00000001 )
+   68:  		Call     InterpNpcYaw 	( 00000000 0000010E 00000000 )
+   80:  		Call     SetNpcAnimation 	( 00000000 000C0000 )
+   94:  		Wait     0000000A 
+   A0:  		Call     SetNpcAnimation 	( 00000000 000C0026 )
+   B4:  		Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 00130029 ) % Oh, ow! Please don't! How could you?
+   D4:  		Call     SetNpcAnimation 	( 00000000 000C0002 )
+   E8:  		Wait     0000000A 
+   F4:  		Call     SetNpcAnimation 	( 00000000 000A0001 )
+  108:  		Call     SetNpcVar   	( 00000000 00000002 00000000 )
+  120:  		Call     DisablePlayerInput 	( .False )
+  130:  	EndCaseGroup
+  138:  EndSwitch
+  140:  Return
+  148:  End
+
+#new:Script $Script_8024105C_kpa_53
+    0:  Call     80044600 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	CaseOR  ==  00000004 
+   28:  	CaseOR  ==  00000002 
+   34:  	CaseOR  ==  00000006 
+   40:  		Call     DisablePlayerInput 	( .True )
+   50:  		Call     SetNpcVar   	( 00000000 00000002 00000001 )
+   68:  		Call     InterpNpcYaw 	( 00000000 0000010E 00000000 )
+   80:  		Call     SetNpcAnimation 	( 00000000 000C0000 )
+   94:  		Wait     0000000A 
+   A0:  		Call     SetNpcAnimation 	( 00000000 000C0026 )
+   B4:  		Call     GetOwnerVar 	( 00000000 *Var[1] )
+   C8:  		Switch  *Var[1] 
+   D4:  			Case  ==  00000000 
+   E0:  				Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0013002A ) % Ouch! Oh, how could you? You're so cruel, Mario! W ...
+  100:  				Call     SetOwnerVar 	( 00000000 00000001 )
+  114:  			Case  ==  00000001 
+  120:  				Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0013002B ) % No!! Ow! Stop it! Please don't!!! Help me, King Bo ...
+  140:  				Call     SetOwnerVar 	( 00000000 00000002 )
+  154:  			Case  ==  00000002 
+  160:  				Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  178:  				If  *Var[0]  <  0000010E 
+  188:  					Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0013002B ) % No!! Ow! Stop it! Please don't!!! Help me, King Bo ...
+  1A8:  				Else
+  1B0:  					Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0013002C ) % I said, cut it out!!
+  1D0:  					Call     SetOwnerFlagBits 	( 08000000 .True )
+  1E4:  					Call     BindNpcAI   	( 00000002 $Script_802407D4_kpa_53 )
+  1F8:  				EndIf
+  200:  		EndSwitch
+  208:  		Call     SetNpcAnimation 	( 00000000 000C0002 )
+  21C:  		Wait     0000000A 
+  228:  		Call     SetNpcAnimation 	( 00000000 000A0001 )
+  23C:  		Call     SetNpcVar   	( 00000000 00000002 00000000 )
+  254:  		Call     DisablePlayerInput 	( .False )
+  264:  	EndCaseGroup
+  26C:  EndSwitch
+  274:  Return
+  27C:  End
+
+#new:Script $Script_Init_8024171C_kpa_53
+    0:  If  *Flag_KPA_12  ==  00000000 
+   10:  	Call     SetNpcPos   	( .Npc:Self 000002FD 00000000 FFFFFFE2 )
+   2C:  	Call     SetNpcFlagBits ( .Npc:Self 00000002 .True )
+   44:  	Call     EnableNpcShadow 	( .Npc:Self .False )
+   58:  	If  *Flag_KPA_11  ==  00000000 
+   68:  		Call     BindNpcHit  	( .Npc:Self $Script_80240F0C_kpa_53 )
+   7C:  	Else
+   84:  		Call     BindNpcHit  	( .Npc:Self $Script_8024105C_kpa_53 )
+   98:  	EndIf
+   A0:  Else
+   A8:  	Call     RemoveNpc   	( .Npc:Self )
+   B8:  EndIf
+   C0:  Return
+   C8:  End
+

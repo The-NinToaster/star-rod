@@ -1,0 +1,382 @@
+80111D38  2     MakeEntity
+8024E61C  2525  UseCamPreset
+8024E664  29    
+8024E748  2     
+8024E90C  183   SetCamTarget
+8024EA58  312   SetCamOffsetZ
+8024EAE4  1     SetCamYaw
+8024EB24  516   CamTargetActor
+8024EB84  1     
+8024EC08  961   MoveCamOver
+8024EC6C  305   SetCamZoom
+8024ECAC  107   AddCamZoom
+8024ECF8  329   
+8024ED78  16    FreezeCam
+8024EDA4  5     
+802512B4  49    ShowMessageBox
+8025130C  15    ShowVariableMessageBox
+80251384  13    
+802513CC  14    
+80251408  4     
+80252728  16    ItemDamageEnemy
+80252924  1     
+80252B3C  3     
+80252D40  16    ItemCheckHit
+80252F30  211   SayMessage
+802532D0  17    
+80253538  1     
+802535B4  59    
+802535F8  138   SetDmaTableLoadDest
+80253624  101   LoadFromDmaTable
+802536A8  8     
+80253734  8     
+802537C0  1     
+8025385C  2400  PlaySoundAtActor
+802538D0  90    PlaySoundAtSprite
+80253974  3     
+80253A18  4     
+80253AEC  24    
+80253B94  3     
+80253FDC  7     MultiplyByActorScale
+802540DC  4     MultiplyVec3ByActorScale
+80254198  4     
+80254218  129   
+80267ED0  1     
+802681C0  282   LoadActionCommand
+8026919C  37    
+802691C8  40    
+80269294  102   
+802692C0  3     
+802692EC  36    
+80269318  79    
+80269344  15    
+80269370  9     
+8026939C  1     
+802693F0  150   
+80269410  75    
+80269470  52    
+802694A4  83    
+802694F8  116   
+80269524  42    
+80269550  41    
+8026957C  1     
+802695A8  109   
+802695D4  136   
+80269600  2     
+80269DE4  5     LoadBattleSection
+80269E28  223   GetBattlePhase
+80269E54  87    GetLastElement
+80269E80  43    
+80269EAC  83    
+80269EC4  817   SetGoalToHome
+80269F2C  23    
+80269F94  64    SetGoalToIndex
+8026A05C  36    GetIndexFromPos
+8026A0D4  65    GetIndexFromHome
+8026A14C  39    
+8026A1EC  128   ForceHomePos
+8026A2D0  57    SetHomePos
+8026A3A8  1628  SetGoalToTarget
+8026A49C  21    
+8026A510  1915  SetGoalToPos
+8026A62C  106   
+8026A748  739   AddToGoalPos
+8026A820  959   GetGoalPos
+8026A8EC  23    
+8026AAA8  2653  GetActorPos
+8026AB74  53    GetSpriteOffset
+8026AC88  18    GetSpritePos
+8026AD74  39    GetHomePos
+8026AE40  378   SetActorPos
+8026AF18  182   SetSpritePos
+8026B0A0  7     SetEnemyTargetOffset
+8026B1B0  7338  SetAnimation
+8026B238  26    GetAnimation
+8026B2D0  320   SetAnimationSpeed
+8026B358  818   SetActorAngle
+8026B3C8  1     GetActorAngle
+8026B438  62    
+8026B55C  1121  SetActorJumpscale
+8026B5D8  26    
+8026B654  1599  SetActorSpeed
+8026B6D0  94    
+8026B74C  166   SetSpriteJumpscale
+8026B7EC  113   SetSpriteSpeed
+8026B88C  265   SetJumpAnimations
+8026BA04  540   
+8026BC38  320   SetSpriteOffset
+8026BF48  140   
+8026BFB4  2061  GetActorVar
+8026C044  1717  SetActorVar
+8026C0D4  47    ActorVarAdd
+8026C170  22    GetSpriteVar
+8026C22C  196   SetSpriteVar
+8026C3AC  692   SetActorRotation
+8026C4AC  312   SetActorRotationOffset
+8026C634  131   SetSpriteRotation
+8026C740  38    SetSpriteRotationOffset
+8026C828  10    GetSpriteRotation
+8026C904  591   SetActorScale
+8026C9C4  11    
+8026CA84  2     GetActorScale
+8026CB4C  390   SetSpriteScale
+8026CD10  103   GetBattleFlags
+8026CD3C  179   SetBattleFlagBits
+8026CDA0  2     GetBattleFlags2
+8026CDCC  10    SetBattleFlagBits2
+8026CE8C  361   SetActorFlagBits
+8026CF20  182   GetActorFlags
+8026CF88  51    SetSpriteFlags
+8026D010  740   SetSpriteFlagBits
+8026D158  6     
+8026D340  6     SetSpriteEventFlags
+8026D3C8  166   SetSpriteEventBits
+8026D488  28    GetSpriteEventFlags
+8026D5A4  6     
+8026D664  280   HPBarToHome
+8026D7A8  54    HPBarToCurrent
+8026D940  2     
+8026DA94  3     
+8026DB64  86    SummonEnemy
+8026DE00  84    GetOwnerID
+8026DE28  16    SetOwnerID
+8026DE5C  105   ActorExists
+8026DF88  11    
+8026E020  6     
+8026E038  2     
+8026E098  21    
+8026E108  311   
+8026E16C  8     
+8026E198  30    
+8026E208  7     
+8026E2CC  7     
+8026E310  112   CreateTargetList
+8026E354  377   InitTargetIterator
+8026E3A8  6     SetOwnerTarget
+8026E414  217   ChooseNextTarget
+8026E864  28    GetTargetListLength
+8026E8AC  156   GetOwnerTarget
+8026E914  8     
+8026E9FC  4     GetDistanceToTarget
+8026EA7C  20    
+8026EBF8  9     
+8026ED20  11    
+8026EE88  311   AddActorDecoration
+8026EF4C  316   RemoveActorDecoration
+8026EFF0  32    ModifyActorDecoration
+8026F0EC  2285  UseIdleAnimation
+8026F230  998   GetStatusFlags
+8026F44C  7     
+8026F470  273   SetSpriteAlpha
+8026F52C  2     
+8026F59C  6     
+8026F60C  6     
+8026F638  180   SetBattleVar
+8026F694  118   GetBattleVar
+8026F6EC  240   
+8026F740  544   
+8026F838  91    
+8026FA00  55    
+8026FB20  37    SetActorType
+8026FBB0  1     
+8026FC04  7     GetActorAttackBoost
+8026FC6C  13    GetActorDefenseBoost
+8026FCD4  7     BoostAttack
+80270174  5     BoostDefense
+80270614  7     VanishActor
+8027095C  5     ElectrifyActor
+80270CA4  27    HealActor
+8027114C  44    
+80271160  16    CopyStatBoosts
+802733C4  163   GetMenuSelection
+80273444  224   
+80273894  3     
+80273B04  17    
+80273C64  277   
+80273EFC  20    
+80274234  21    GetPlayerHP
+80274260  197   DamageEnemy
+802744A0  18    PowerBounceEnemy
+802746F0  135   CheckEnemyHit
+8027491C  1     
+80274978  209   EnablePlayerBlur
+80274A18  49    
+802752AC  87    
+80275F00  70    
+80276EB4  136   
+80276EFC  161   
+80276F1C  12    
+80278930  303   BindTakeTurn
+802789A4  1     
+80278A1C  1     
+80278A94  289   BindIdle
+80278B4C  1639  EnableIdleScript
+80278C20  334   BindHandleEvent
+80278C94  79    BindNextTurn
+80278D08  1509  JumpToGoal
+8027910C  12    
+80279728  12    
+80279AD4  15    
+80279BEC  33    
+80279E64  702   RunToGoal
+8027A264  62    
+8027A4E4  165   JumpSpriteA
+8027A854  22    JumpSpriteB
+8027AB5C  2     
+8027ACAC  11    RunSpriteTo
+8027B624  558   MoveToGoal
+8027BBB8  32    
+8027BF38  95    MoveSpriteTo
+8027C4E0  358   GetEventType
+8027C548  510   SetTargetActor
+8027C5C8  51    SetEnemyHP
+8027C6A0  139   GetActorHP
+8027C748  82    GetEnemyMaxHP
+8027C7B0  87    RemoveActor
+8027C8A4  19    
+8027CA74  123   SetDefenseTable
+8027CB08  60    SetStatusTable
+8027CB7C  510   SetIdleAnimations
+8027CCB4  530   DamageTarget
+8027CFB8  702   CheckPlayerHit
+8027D1BC  6     
+8027D264  32    DispatchEvent
+8027D2D8  4     
+8027D32C  139   
+8027D380  222   SetTargetOffset
+8027D434  1     
+8027D4C8  202   
+8027D57C  165   EnableActorBlur
+8027D67C  1     
+8027D75C  2     
+8027D7C4  14    
+8027D7F0  471   
+8027D810  31    
+8027D8E0  22    
+8027D970  20    
+8027DA68  62    GetActorType
+8027DB3C  81    GetLastDamage
+8027DBA4  39    EnableActorGlow
+8027DC68  3     
+8027DCBC  17    
+8027DDA0  4     
+8027FD48  6     
+8027FDB4  58    DamageEnemyP
+80280004  11    InflictStatusP
+80280270  3     
+802804D0  35    CheckTargetHitP
+802807D0  40    
+80280818  32    
+80280840  2     
+80280950  8     
+802A9000  282   
+802A9110  9     
+802A911C  1     
+802A9120  185   
+802A9138  1     
+802A916C  1     
+802A9170  4     
+802A9178  2     
+802A917C  3     
+802A9184  1     
+802A91A0  2     
+802A91B0  1     
+802A91B8  6     
+802A91E0  3     
+802A9210  1     
+802A9258  167   
+802A9398  5     
+802C8B60  1485  TranslateModel
+802C8C64  190   RotateModel
+802C8D88  76    ScaleModel
+802C8F28  13    CloneModel
+802C8F80  9     GetModelCenter
+802C9000  118   SetTexPanner
+802C90FC  10    
+802C9208  9     EnableTexPanning
+802C9288  356   EnableModel
+802C9308  153   
+802C9364  161   
+802C94A0  10    
+802C9518  39    
+802C97B4  33    TranslateGroup
+802C98D8  119   RotateGroup
+802C9B98  13    EnableGroup
+802C9C70  10    
+802C9DCC  2     ModifyColliderFlags
+802CA114  2     ParentColliderToModel
+802CA558  8     PlaySoundAtModel
+802CA6C0  10    SetCamFlag2
+802CA774  10    SetCamFlag80
+802CA828  5     SetCamPerspective
+802CAB18  10    SetCamViewport
+802CABE8  5     
+802CAD98  183   SetCamBGColor
+802CAE50  5     
+802CB2A8  745   ShakeCam
+802CCCEC  6     
+802CCE6C  87    PlayModelAnimation
+802CCFE4  19    
+802CD090  3     
+802CD3C0  1     
+802CD418  13    
+802CD5C0  1     
+802CD6E0  2     
+802CD7D8  37    
+802CD8F8  37    
+802CDBA4  14    
+802CDC1C  25    
+802CDCB0  15    
+802CDDB0  43    SetNpcRotation
+802CE01C  3     
+802CE088  2     
+802CE0F4  18    SetNpcAnimation
+802CE1C0  2     
+802CE22C  3     
+802CE6C4  5     
+802CE6FC  63    
+802CEA84  3     
+802CF060  12    SetNpcFlagBits
+802CF0F4  50    GetNpcPos
+802CF268  1     EnableNpcShadow
+802CF2EC  74    EnableNpcBlur
+802CFC74  6     GetCurrentPartner
+802D0118  12    
+802D01AC  5     PlaySoundAtNpc
+802D02B0  4     
+802D3474  15    
+802D3624  10    
+802D36E0  14    
+802D378C  4     
+802D3840  10    
+802D38EC  8     
+802D3998  1     
+802D39FC  16    
+802D3A60  2     
+802D3C58  22    
+802D3EB8  1     
+802D3F74  4     
+802D45B0  163   MakeLerp
+802D462C  163   UpdateLerp
+802D46B0  637   RandInt
+802D4B14  57    AddVectorPolar
+802D5430  11    LoadPath
+802D5524  2     GetNextPathPos
+802D5770  10    GetDist2D
+802D5AB4  8     ClampFloat
+802D6150  226   PlaySound
+802D62B8  27    
+802D6CC0  133   MakeItemEntity
+802D6FCC  102   RemoveItemEntity
+802D7278  7     AddCoin
+802D732C  17    GetItemPower
+802D7520  17    
+802D75D8  14    
+802D78A0  5     ShowEmote
+802D7AE4  55    RemoveEffect
+802D7CF8  2     
+802D829C  1102  PlayEffect
+802D9700  244   SetSpriteShading
+
+Identified 191 of 379 functions (50.40%)
+Identified 61536 of 69781 function calls (88.18%)

@@ -1,0 +1,157 @@
+% automatically dumped from map omo_12
+
+#new:Npc $omo_12_80242964
+00000000 $NpcSettings_80240850_omo_12 00000000 00000000 00000000 
+00040F04 $Script_Init_80242284_omo_12 00000001 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+006D0001 006D0001 006D0001 006D0001 006D0001 006D0001 006D0009 006D0009 
+006D0001 006D0001 006D0001 006D0001 006D0001 006D0001 006D0001 006D0001 
+00000000 00000000 $ExtraAnimationList_8024293C_omo_12 001A00B9 % Say... This is the lantern that belongs to the Big ...
+
+#new:Function $Function_80240314_omo_12
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S1, 1C (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 28 (SP)
+   10:  SW        S3, 24 (SP)
+   14:  SW        S2, 20 (SP)
+   18:  SW        S0, 18 (SP)
+   1C:  LW        S0, C (S1)
+   20:  LW        A1, 0 (S0)
+   24:  JAL       {Func:GetVariable}
+   28:  ADDIU     S0, S0, 4
+   2C:  LW        A1, 0 (S0)
+   30:  ADDIU     S0, S0, 4
+   34:  DADDU     A0, S1, R0
+   38:  JAL       {Func:GetVariable}
+   3C:  DADDU     S3, V0, R0
+   40:  LW        A1, 0 (S0)
+   44:  ADDIU     S0, S0, 4
+   48:  DADDU     A0, S1, R0
+   4C:  JAL       {Func:GetVariable}
+   50:  DADDU     S2, V0, R0
+   54:  DADDU     A0, S1, R0
+   58:  LW        A1, 0 (S0)
+   5C:  JAL       {Func:GetVariable}
+   60:  DADDU     S0, V0, R0
+   64:  ADDIU     A0, R0, 1
+   68:  DADDU     A1, A0, R0
+   6C:  SW        S0, 10 (SP)
+   70:  DADDU     S0, V0, R0
+   74:  DADDU     A2, S3, R0
+   78:  JAL       80137EC0
+   7C:  DADDU     A3, S2, R0
+   80:  MTC1      S0, F0
+   84:  NOP
+   88:  CVT.S.W   F0, F0
+   8C:  MFC1      A1, F0
+   90:  JAL       801380D4
+   94:  ADDIU     A0, R0, 1
+   98:  LUI       A1, 437F
+   9C:  JAL       80137DA4
+   A0:  ADDIU     A0, R0, B
+   A4:  LW        RA, 28 (SP)
+   A8:  LW        S3, 24 (SP)
+   AC:  LW        S2, 20 (SP)
+   B0:  LW        S1, 1C (SP)
+   B4:  LW        S0, 18 (SP)
+   B8:  ADDIU     V0, R0, 2
+   BC:  JR        RA
+   C0:  ADDIU     SP, SP, 30
+
+#new:NpcSettings $NpcSettings_80240850_omo_12
+00000000 0044003C 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241E60_omo_12
+    0:  Loop     
+    C:  	Call     GetOwnerVar 	( 00000000 *Var[0] )
+   20:  	Wait     00000001 
+   2C:  	If  *Var[0]  !=  00000000 
+   3C:  		BreakLoop
+   44:  	EndIf
+   4C:  EndLoop
+   54:  Wait     00000001 
+   60:  Call     StartBossBattle 	( .Song:SpecialBattle )
+   70:  Return
+   78:  End
+
+#new:Script $Script_80241EE0_omo_12
+    0:  Wait     00000001 
+    C:  Call     GetBattleOutcome 	( *Var[0] )
+   1C:  Switch  *Var[0] 
+   28:  	Case  ==  00000000 
+   34:  		Call     ResetCam    	( .Default *Fixed[90.0] )
+   48:  		Set  *AreaByte[1]  00000000 
+   58:  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   74:  		Call     $Function_80240314_omo_12 ( *Var[0] *Var[1] *Var[2] 00000064 )
+   90:  		Thread
+   98:  			Set  *MapFlag[00]  00000000 
+   A8:  			Call     SayMessage0 	( 00000000 006D0008 006D0008 00000000 000F0054 ) % Nooooooooo!! 
+   C8:  			Set  *MapFlag[00]  00000001 
+   D8:  		EndThread
+   E0:  		Thread
+   E8:  			Wait     0000000F 
+   F4:  			Call     SetNpcJumpscale 	( 00000002 *Fixed[1.0] )
+  108:  			Call     SetNpcPos   	( 00000002 00000000 00000000 00000014 )
+  124:  			Call     NpcJump0    	( 00000002 00000000 00000000 00000014 0000000A )
+  144:  			Call     SetNpcPos   	( 00000003 00000000 00000000 00000014 )
+  160:  		EndThread
+  168:  		Call     SetNpcAnimation 	( .Npc:Self 006D0007 )
+  17C:  		Call     SetNpcSpeed 	( .Npc:Self *Fixed[10.0] )
+  190:  		Call     MoveNpcTo   	( .Npc:Self 00000190 00000000 00000000 )
+  1AC:  		Label    00000000 
+  1B8:  		If  *MapFlag[00]  ==  00000000 
+  1C8:  			Wait     00000001 
+  1D4:  			Goto     00000000 
+  1E0:  		EndIf
+  1E8:  		Call     GetNpcPos   	( 00000002 *Var[3] *Var[4] *Var[5] )
+  204:  		SubF  *Var[3]  *Var[0] 
+  214:  		SubF  *Var[4]  *Var[1] 
+  224:  		SubF  *Var[5]  *Var[2] 
+  234:  		DivF  *Var[3]  *Fixed[60.0] 
+  244:  		DivF  *Var[4]  *Fixed[60.0] 
+  254:  		DivF  *Var[5]  *Fixed[60.0] 
+  264:  		SetF  *Var[6]  *Fixed[2.1669922] 
+  274:  		SetF  *Var[7]  *Fixed[100.0] 
+  284:  		Loop     0000003C 
+  290:  			AddF  *Var[0]  *Var[3] 
+  2A0:  			AddF  *Var[1]  *Var[4] 
+  2B0:  			AddF  *Var[2]  *Var[5] 
+  2C0:  			AddF  *Var[7]  *Var[6] 
+  2D0:  			Call     $Function_80240314_omo_12 ( *Var[0] *Var[1] *Var[2] *Var[7] )
+  2EC:  			Wait     00000001 
+  2F8:  		EndLoop
+  300:  		Set  *AreaByte[1]  00000003 
+  310:  		Set  *AreaByte[2]  00000066 
+  320:  		Wait     00000001 
+  32C:  		Call     SetNpcVar   	( 00000002 00000000 00000001 )
+  344:  		Set  *StoryProgress  00000001 
+  354:  		Call     DisablePlayerInput 	( .False )
+  364:  		Call     RemoveNpc   	( .Npc:Self )
+  374:  	Case  ==  00000001 
+  380:  	Case  ==  00000002 
+  38C:  EndSwitch
+  394:  Return
+  39C:  End
+
+#new:Script $Script_Init_80242284_omo_12
+    0:  If  *StoryProgress  >=  00000001 
+   10:  	Call     RemoveNpc   	( .Npc:Self )
+   20:  	Return
+   28:  EndIf
+   30:  Call     BindNpcIdle 	( .Npc:Self $Script_80241E60_omo_12 )
+   44:  Call     BindNpcDefeat 	( .Npc:Self $Script_80241EE0_omo_12 )
+   58:  Return
+   60:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8024293C_omo_12
+006D0001 006D0006 006D0007 006D0008 006D000F 006D0005 006D0002 006D0003 
+006D0004 FFFFFFFF 
+

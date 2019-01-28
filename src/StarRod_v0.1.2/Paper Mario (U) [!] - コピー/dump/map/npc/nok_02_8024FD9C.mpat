@@ -1,0 +1,60 @@
+% automatically dumped from map nok_02
+
+#new:Npc $nok_02_8024FD9C
+00000000 $NpcSettings_80246EC0_nok_02 00000000 00000000 00000000 
+00002D09 $Script_Init_8024CCF0_nok_02 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+FFFFFFF1 00000000 0000003B 00000050 00000000 FFFF8001 00000000 00000018 
+00000000 00000045 000001F4 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008F0002 008F0005 008F0006 008F0006 008F0002 008F0002 008F0000 008F0000 
+008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 
+00000000 00000000 00000000 001A0076 % He's a Koopa Troopa from Koopa Village. You know,  ...
+
+#new:AISettings $AISettings_80246E70_nok_02
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80246EA0_nok_02
+    0:  Call     DoBasicAI   	( $AISettings_80246E70_nok_02 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80246EC0_nok_02
+00000000 00230018 00000000 00000000 $Script_NpcAI_80246EA0_nok_02 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024CBF0_nok_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFA4 
+   18:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0057 ) % I can't help but think that Fuzzies'll steal my sh ...
+   38:  	Case  <  FFFFFFB5 
+   44:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0058 ) % The Fuzzies are gone now. Phew! To tell the truth, ...
+   64:  	Case  <  00000007 
+   70:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0059 ) % What'll we do if those Fuzzies come back sometime! ...
+   90:  	Case  <  00000059 
+   9C:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C005A ) % What's up, Mario? I've been hearing about all the  ...
+   BC:  	Case  >=  00000059 
+   C8:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C005B ) % The stars are beginning to appear more clearly. Ma ...
+   E8:  EndSwitch
+   F0:  Return
+   F8:  End
+
+#new:Script $Script_Init_8024CCF0_nok_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024CBF0_nok_02 )
+   14:  Return
+   1C:  End
+

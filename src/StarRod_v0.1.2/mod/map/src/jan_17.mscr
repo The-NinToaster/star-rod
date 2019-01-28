@@ -1,0 +1,102 @@
+% Script File: jan_17.mscr
+% Decoded from: 0 to 3D0 (jan_17)
+
+#new:Function $Function_80240000
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  JAL       8011BB50
+    C:  NOP
+   10:  LW        RA, 10 (SP)
+   14:  ADDIU     V0, R0, 2
+   18:  JR        RA
+   1C:  ADDIU     SP, SP, 18
+
+#new:EntryList $EntryList
+{Vec4f:Entry0} % -220.0    0.0   10.0   90.0
+{Vec4f:Entry1} %  190.0  450.0  110.0  270.0
+
+#new:Header $Header
+00000000 00000000 00000000 00000000 
+$Script_Main $EntryList 00000002 00000000 
+00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 001900FF 
+
+#new:Script $Script_80240080
+    0:  Call     GetLoadType 	( *Var[1] )
+   10:  If  *Var[1]  ==  00000001 
+   20:  	Call     SetMusicTrack 	( 00000000 .Song:RafaelRaven 00000000 00000008 )
+   3C:  	Set  *AreaFlag[003]  00000000 
+   4C:  EndIf
+   54:  Call     802D60E8 ( 000000FA )
+   64:  Return
+   6C:  End
+
+PADDING: 802400F4 to 80240100 (000000F4 to 00000100)
+00000000 00000000 00000000 
+
+#new:Script $Script_80240100
+    0:  SetGroup 0000001B 
+    C:  Call     UseExitHeading ( 0000003C 00000000 )
+   20:  Exec     ExitWalk 
+   2C:  Call     GotoMap     	( $ASCII_802403C0 00000002 )
+   40:  Wait     00000064 
+   4C:  Return
+   54:  End
+
+#new:Script $Script_8024015C
+    0:  SetGroup 0000001B 
+    C:  Call     UseExitHeading ( 0000003C 00000001 )
+   20:  Exec     ExitWalk 
+   2C:  Call     GotoMap     	( $ASCII_802403C8 00000000 )
+   40:  Wait     00000064 
+   4C:  Return
+   54:  End
+
+#new:Script $Script_802401B8
+    0:  Bind     $Script_80240100 .Trigger:FloorAbove {Collider:deiliw} 00000001 00000000 
+   1C:  Bind     $Script_8024015C .Trigger:FloorAbove {Collider:deilie} 00000001 00000000 
+   38:  Return
+   40:  End
+
+#new:Script_Main $Script_Main
+    0:  Set  *WorldMapLocation  00000024 
+   10:  Call     SetSpriteShading 	( 00060000 )
+   20:  Call     SetCamFlag4 	( .Default .False )
+   34:  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+   54:  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+   70:  Call     SetCamFlag2 	( .Default .True )
+   84:  ExecWait $Script_80240360 
+   90:  Call     $Function_80240000 ( )
+   9C:  Call     ModifyColliderFlags 	( 00000000 {Collider:deilitw} 7FFFFE00 )
+   B4:  Call     ModifyColliderFlags 	( 00000000 {Collider:deilite} 7FFFFE00 )
+   CC:  Call     GetLoadType 	( *Var[1] )
+   DC:  If  *Var[1]  ==  00000001 
+   EC:  	Exec     EnterSavePoint 
+   F8:  	Exec     $Script_802401B8 
+  104:  Else
+  10C:  	Set  *Var[0]  $Script_802401B8 
+  11C:  	Exec     EnterWalk 
+  128:  EndIf
+  130:  Wait     00000001 
+  13C:  ExecWait $Script_80240080 
+  148:  Return
+  150:  End
+
+PADDING: 80240358 to 80240360 (00000358 to 00000360)
+00000000 00000000 
+
+#new:Script $Script_80240360
+    0:  Call     MakeEntity  	( .Entity:SavePoint {Vec4d:Entity80240360} 80000000 )
+   24:  Call     MakeEntity  	( .Entity:PinkFlower {Vec4d:Entity80240384} 80000000 )
+   48:  Return
+   50:  End
+
+PADDING: 802403B8 to 802403C0 (000003B8 to 000003C0)
+00000000 00000000 
+
+#new:ASCII $ASCII_802403C0
+jan_16
+
+#new:ASCII $ASCII_802403C8
+jan_18
+

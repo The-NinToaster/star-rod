@@ -1,0 +1,16 @@
+Script: DoRecover (001CA880)
+
+    0:  Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[1] )
+   18:  Call     SetActorJumpscale 	( FFFFFF81 *Fixed[1.8007812] )
+   2C:  Call     GetActorPos 	( FFFFFF81 *Var[7] *Var[8] *Var[9] )
+   48:  Call     GetActorFlags 	( FFFFFF81 *Var[0] )
+   5C:  If  *Var[0]  &  00000200 
+   6C:  	Call     SetGoalToPos 	( FFFFFF81 *Var[7] *Var[8] *Var[9] )
+   88:  	Call     JumpToGoal  	( FFFFFF81 0000000F 00000000 00000000 00000000 )
+   A8:  Else
+   B0:  	Call     SetGoalToPos 	( FFFFFF81 *Var[7] *Var[8] *Var[9] )
+   CC:  	Call     JumpToGoal  	( FFFFFF81 0000000F 00000000 00000001 00000000 )
+   EC:  EndIf
+   F4:  Return
+   FC:  End
+

@@ -1,0 +1,175 @@
+% automatically dumped from map nok_02
+
+#new:Npc $nok_02_80250B2C_1F0
+00000008 $NpcSettings_80247018_nok_02 00000000 00000000 00000000 
+00002D09 $Script_Init_8024E8B0_nok_02 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00B40001 00B40002 00B40003 00B40003 00B40001 00B40001 00B40001 00B40001 
+00B40001 00B40001 00B40001 00B40001 00B40001 00B40001 00B40001 00B40001 
+00000000 00000000 00000000 001A0073 % She's the wife of Kolorado, who's an archaeologist ...
+
+#new:NpcSettings $NpcSettings_80247018_nok_02
+00000000 00260018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802470CC_nok_02
+    0:  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+   18:  Return
+   20:  Return
+   28:  End
+
+#new:Script $Script_8024988C_nok_02
+    0:  Call     SetPlayerAnimation 	( 00010002 )
+   10:  Wait     00000001 
+   1C:  Call     SetPlayerAnimation 	( 00080007 )
+   2C:  Wait     00000014 
+   38:  Return
+   40:  End
+
+#new:Script $Script_8024E110_nok_02
+    0:  Call     PlaySoundAtCollider 	( *Var[9] 000001C1 00000000 )
+   18:  Call     MakeLerp    	( 00000000 00000050 0000000F 00000001 )
+   34:  Loop     
+   40:  	Call     UpdateLerp  	( )
+   4C:  	Call     RotateGroup 	( *Var[A] *Var[0] 00000000 00000001 00000000 )
+   6C:  	Wait     00000001 
+   78:  	If  *Var[1]  ==  00000000 
+   88:  		BreakLoop
+   90:  	EndIf
+   98:  EndLoop
+   A0:  Wait     00000014 
+   AC:  Call     MakeLerp    	( 00000050 00000000 0000000F 00000001 )
+   C8:  Loop     
+   D4:  	Call     UpdateLerp  	( )
+   E0:  	Call     RotateGroup 	( *Var[A] *Var[0] 00000000 00000001 00000000 )
+  100:  	Wait     00000001 
+  10C:  	If  *Var[1]  ==  00000000 
+  11C:  		BreakLoop
+  124:  	EndIf
+  12C:  EndLoop
+  134:  Call     PlaySoundAtCollider 	( *Var[9] 000001C2 00000000 )
+  14C:  Return
+  154:  End
+
+#new:Script $Script_8024E26C_nok_02
+    0:  Call     EnableModel 	( {Model:g98} .True )
+   14:  Call     EnableGroup 	( {Model:g109} .True )
+   28:  Call     EnableGroup 	( {Model:g47} .True )
+   3C:  Set  *Var[A]  0000003C 
+   4C:  Set  *Var[9]  00000027 
+   5C:  Exec     $Script_8024E110_nok_02 
+   68:  Call     MoveNpcTo   	( 00000008 FFFFFEC6 FFFFFFA2 0000000A )
+   84:  Wait     0000000A 
+   90:  Call     MoveNpcTo   	( 00000008 FFFFFED0 FFFFFF5F 00000014 )
+   AC:  Wait     00000064 
+   B8:  Exec     $Script_8024E110_nok_02 
+   C4:  Wait     0000000A 
+   D0:  Call     MoveNpcTo   	( 00000008 FFFFFECC FFFFFF9A 00000014 )
+   EC:  Wait     0000000A 
+   F8:  Call     MoveNpcTo   	( 00000008 FFFFFEAE FFFFFFAB 00000014 )
+  114:  Call     NpcFacePlayer 	( 00000008 00000000 )
+  128:  Wait     00000014 
+  134:  Call     SetNpcAnimation 	( 00000008 00B40001 )
+  148:  Call     EnableModel 	( {Model:g98} .False )
+  15C:  Call     EnableGroup 	( {Model:g109} .False )
+  170:  Call     EnableGroup 	( {Model:g47} .False )
+  184:  Return
+  18C:  End
+
+#new:Script $Script_8024E400_nok_02
+    0:  Set  *Var[A]  0000003A 
+   10:  Set  *Var[9]  0000002A 
+   20:  Call     MoveNpcTo   	( 00000008 FFFFFEEB FFFFFF46 00000014 )
+   3C:  Exec     $Script_8024E110_nok_02 
+   48:  Wait     0000000A 
+   54:  Call     MoveNpcTo   	( 00000008 FFFFFEF7 FFFFFEFB 00000014 )
+   70:  Wait     00000064 
+   7C:  Exec     $Script_8024E110_nok_02 
+   88:  Wait     0000000A 
+   94:  Call     MoveNpcTo   	( 00000008 FFFFFEEB FFFFFF46 00000014 )
+   B0:  Wait     0000000A 
+   BC:  Call     MoveNpcTo   	( 00000008 FFFFFEB8 FFFFFF4C 00000014 )
+   D8:  Call     NpcFacePlayer 	( 00000008 00000000 )
+   EC:  Wait     00000014 
+   F8:  Call     SetNpcAnimation 	( 00000008 00B40001 )
+  10C:  Return
+  114:  End
+
+#new:Script $Script_8024E51C_nok_02
+    0:  Call     SetNpcFlagBits ( 00000008 00000100 .True )
+   18:  Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C0090 ) % Oh, do you need something? You're doing an errand  ...
+   38:  Call     SetNpcAnimation 	( 00000008 00B40002 )
+   4C:  If  *StoryProgress  >=  00000059 
+   5C:  	ExecWait $Script_8024E26C_nok_02 
+   68:  Else
+   70:  	If  *Flag_NOK_2C  ==  00000001 
+   80:  		ExecWait $Script_8024E26C_nok_02 
+   8C:  	Else
+   94:  		ExecWait $Script_8024E400_nok_02 
+   A0:  	EndIf
+   A8:  EndIf
+   B0:  Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C0091 ) % Found it! You're talking about this book, right? I ...
+   D0:  Set  *Var[0]  0000006E 
+   E0:  Set  *Var[1]  00000001 
+   F0:  ExecWait $Script_802470CC_nok_02 
+   FC:  Call     AddKeyItem  	( .Item:KoopaLegends )
+  10C:  Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C0092 ) % It's strange... That book... it has all these pict ...
+  12C:  Call     SetNpcFlagBits ( 00000008 00000100 .False )
+  144:  Return
+  14C:  End
+
+#new:Script $Script_8024E670_nok_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFA4 
+   18:  		If  *Flag_NOK_07  ==  00000000 
+   28:  			Set  *Flag_NOK_07  00000001 
+   38:  			Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C0088 ) % These Fuzzies! Will their mischief never end? My h ...
+   58:  			Return
+   60:  		EndIf
+   68:  		Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C0089 ) % My husband hasn't come back since he left to find  ...
+   88:  	Case  <  FFFFFFB5 
+   94:  		Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C008A ) % Oh, little Kooper is going to go on Mario's advent ...
+   B4:  	Case  <  FFFFFFCB 
+   C0:  		Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C008B ) % I think my husband went to Dry Dry Desert, but who ...
+   E0:  	Case  <  00000007 
+   EC:  		Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C008C ) % Oh, Mario, you won't believe it! My husband...! He ...
+  10C:  	Case  <  00000027 
+  118:  		Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C008D ) % My husband? Oh, I think he went to some southern i ...
+  138:  	Case  <  00000059 
+  144:  		If  *Flag_NOK_2C  ==  00000000 
+  154:  			Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C008E ) % My husband... Where is he now? What's he thinking  ...
+  174:  		Else
+  17C:  			Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C008F ) % Oh, Mario, my husband came home! He sits around th ...
+  19C:  		EndIf
+  1A4:  	Case  >=  00000059 
+  1B0:  		Call     SayMessage0 	( 00000008 00B40004 00B40001 00000000 000C008F ) % Oh, Mario, my husband came home! He sits around th ...
+  1D0:  EndSwitch
+  1D8:  If  *Byte_NPC_02  ==  00000001 
+  1E8:  	If  *Flag_NOK_2F  ==  00000000 
+  1F8:  		Set  *Flag_NOK_2F  00000001 
+  208:  		ExecWait $Script_8024988C_nok_02 
+  214:  		ExecWait $Script_8024E51C_nok_02 
+  220:  	EndIf
+  228:  EndIf
+  230:  Return
+  238:  End
+
+#new:Script $Script_Init_8024E8B0_nok_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024E670_nok_02 )
+   14:  If  *StoryProgress  >=  00000059 
+   24:  	Call     SetNpcPos   	( .Npc:Self FFFFFEAE 00000000 FFFFFFAB )
+   40:  	Return
+   48:  EndIf
+   50:  If  *Flag_NOK_2C  ==  00000001 
+   60:  	Call     SetNpcPos   	( .Npc:Self FFFFFEAE 00000000 FFFFFFAB )
+   7C:  	Return
+   84:  EndIf
+   8C:  Return
+   94:  End
+

@@ -1,0 +1,7 @@
+Script: EnterSingleDoor (007E6C54)
+
+    0:  Call     80283D00 ( )
+    C:  ExecWait 802861B0 
+   18:  Return
+   20:  End
+

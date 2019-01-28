@@ -1,0 +1,43 @@
+% automatically dumped from map dro_02
+
+#new:Npc $dro_02_8024D7B4_BA0
+00000006 $NpcSettings_8024752C_dro_02 00000000 00000000 00000000 
+00002D01 $Script_Init_8024BCD4_dro_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00930001 00930002 00930003 00930003 00930001 00930001 00930000 00930000 
+00930001 00930001 00930001 00930001 00930001 00930001 00930001 00930001 
+00000000 00000000 00000000 001A009D % That's a Dryite. This guy looks to be pretty easyg ...
+
+#new:NpcSettings $NpcSettings_8024752C_dro_02
+00000000 001A0017 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024BBD0_dro_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFCB 
+   18:  		If  *AreaFlag[003]  ==  00000000 
+   28:  			Call     SayMessage0 	( .Npc:Self 00930004 00930001 00000000 000D00A1 ) % Dry Dry Outpost was built by robbers long ago, you ...
+   48:  			Set  *AreaFlag[003]  00000001 
+   58:  		Else
+   60:  			Call     SayMessage0 	( .Npc:Self 00930004 00930001 00000000 000D00A2 ) % Dry Dry Outpost was built by robbers long ago, you ...
+   80:  			Set  *AreaFlag[003]  00000000 
+   90:  		EndIf
+   98:  	Case  <  00000027 
+   A4:  		Call     SayMessage0 	( .Npc:Self 00930004 00930001 00000000 000D00A3 ) % People are saying that the ruins that were hidden  ...
+   C4:  	Default
+   CC:  		Call     SayMessage0 	( .Npc:Self 00930004 00930001 00000000 000D00A4 ) % I took the train to Toad Town. I can't tell you ho ...
+   EC:  EndSwitch
+   F4:  Return
+   FC:  End
+
+#new:Script $Script_Init_8024BCD4_dro_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024BBD0_dro_02 )
+   14:  Return
+   1C:  End
+

@@ -1,0 +1,81 @@
+2A-000
+Power Jump[END]
+
+2A-001
+Mega Jump[END]
+
+2A-002
+Charge[END]
+
+2A-003
+Super Charge[END]
+
+2A-004
+Sleep Stomp[END]
+
+2A-005
+Dizzy Stomp[END]
+
+2A-006
+Multibounce[END]
+
+2A-007
+Shrink Stomp[END]
+
+2A-008
+D-Down Jump[END]
+
+2A-009
+Power Bounce[END]
+
+2A-00A
+Power Smash[END]
+
+2A-00B
+Mega Smash[END]
+
+2A-00C
+Charge[END]
+
+2A-00D
+Super Charge[END]
+
+2A-00E
+Hammer Throw[END]
+
+2A-00F
+Shrink Smash[END]
+
+2A-010
+Spin Smash[END]
+
+2A-011
+D-Down Pound[END]
+
+2A-012
+Quake Hammer[END]
+
+2A-013
+Power Quake[END]
+
+2A-014
+Mega Quake[END]
+
+2A-015
+Double Dip[END]
+
+2A-016
+Triple Dip[END]
+
+2A-017
+Group Focus[END]
+
+2A-018
+Quick Change[END]
+
+2A-019
+P-Up & D-Down[END]
+
+2A-01A
+P-Down & D-Up[END]
+

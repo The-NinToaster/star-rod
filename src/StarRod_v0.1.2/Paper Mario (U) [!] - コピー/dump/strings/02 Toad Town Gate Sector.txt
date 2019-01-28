@@ -1,0 +1,2494 @@
+02-000
+[STYLE:RIGHT]A Shy Guy took over my shop![BR]
+[PAUSE:0A]My precious shop...[BR]
+[WAIT][NEXT]
+Please, [PAUSE:05]Mr. Mario![BR]
+[PAUSE:0A]Get the Shy Guy out of my shop![WAIT][END]
+
+02-001
+[STYLE:RIGHT]Tee hee hee hee![BR]
+[PAUSE:0A]Welcome to Shy Guy's Shop.[BR]
+[WAIT][NEXT]
+Too bad I'm not gonna sell[BR]
+anything to you, Mario![WAIT][END]
+
+02-002
+[STYLE:RIGHT]{StartFX:Wavy}Oh, no...  Poor me...[WAIT][END]
+
+02-003
+[STYLE:RIGHT]Mario!![BR]
+[PAUSE:0A]Way to show that little hooligan[BR]
+a thing or two![BR]
+[WAIT][NEXT]
+Hooray! [PAUSE:05]Thank you so much![BR]
+[PAUSE:0A]I'm still giving great deals at[BR]
+rock-bottom prices, so don't be[BR]
+a stranger around here![WAIT][END]
+
+02-004
+[STYLE:RIGHT]Oh, salutations.[BR]
+[PAUSE:0F]You are Mario, are you not?[BR]
+[WAIT][NEXT]
+Of course I know who you are.[BR]
+[PAUSE:0A]I'm the wise Toad, Russ T.[BR]
+[PAUSE:0A]Pleasure meeting you.[BR]
+[WAIT][NEXT]
+As you can probably tell, I love[BR]
+books and read all the time.[BR]
+[PAUSE:0A]Because I'm so well read, I know[BR]
+all sorts of interesting facts.[BR]
+[WAIT][NEXT]
+Whenever you visit with me,[BR]
+I'll be happy to share all of[BR]
+my knowledge with you.[WAIT][END]
+
+02-005
+[STYLE:RIGHT]Are you talking to me because[BR]
+you crave knowledge that only [BR]
+my intellect can provide?[BR]
+[PAUSE:0A]Then, how about this...[BR]
+[WAIT]{Func_04}[END]
+
+02-006
+[STYLE:RIGHT]Seeking information again,[BR]
+are we, Mario?[BR]
+[PAUSE:0A]I once told you about this,[BR]
+but perhaps you've forgotten.[BR]
+[WAIT]{Func_04}[END]
+
+02-007
+[NEXT]
+If there's anything else you[BR]
+wish to know, please feel free[BR]
+to ask me.[WAIT][END]
+
+02-008
+[STYLE:RIGHT]Ah... Yes... Well...[BR]
+[PAUSE:0A]It seems I've told you all I[BR]
+know right now...[BR]
+[WAIT][NEXT]
+I used to know a lot more, but I[BR]
+suppose I've forgotten some.[BR]
+[WAIT][NEXT]
+I'll try my best to recall more,[BR]
+so come see me in a little while.[WAIT][END]
+
+02-009
+[STYLE:RIGHT]{StartFX:Shrinking}Aargh! Words are mocking me![BR]
+[PAUSE:0A]I need that Dictionary!![WAIT][END]
+
+02-00A
+[STYLE:RIGHT]Curses!  Mario...[BR]
+[WAIT][NEXT]
+A Shy Guy stole my Dictionary.[BR]
+[WAIT][NEXT]
+Please get it back from him![BR]
+[PAUSE:0A]I'm... I'm losing IQ points![WAIT][END]
+
+02-00B
+[STYLE:RIGHT]To think of my lovely Dictionary[BR]
+in that Shy Guy's hands...[BR]
+[PAUSE:0A]Please get it back for me![WAIT][END]
+
+02-00C
+[STYLE:RIGHT]No?[BR]
+[PAUSE:0A]Mario, how could you?![WAIT][END]
+
+02-00D
+[STYLE:RIGHT]My Dictionary![BR]
+[PAUSE:0A]Oh, wonderful words![BR]
+[PAUSE:05]Many thanks, Mario.[WAIT][END]
+
+02-00E
+[STYLE:RIGHT]You'd like me to translate this[BR]
+note for you?[BR]
+[WAIT][NEXT]
+Let's see...[BR]
+[PAUSE:0A]Ah ha! It seems to be written in[BR]
+the language of the Shy Guys.[BR]
+[WAIT][NEXT]
+Let's see here...yes...accents...[BR]
+...mmm...silent "d", hmmm...[BR]
+[WAIT][NEXT]
+Yes. It says, "Hit yellow,[BR]
+green, red, and then blue."[BR]
+[WAIT][NEXT]
+What an odd thing to write down.[BR]
+[PAUSE:0A]Any idea what it's about?[WAIT][END]
+
+02-00F
+[STYLE:RIGHT]You'd like me to translate this[BR]
+note for you?[BR]
+[WAIT][NEXT]
+Let's see...[BR]
+[PAUSE:0A]Ah ha! It seems to be written in[BR]
+the language of the Shy Guys.[BR]
+[WAIT][NEXT]
+Well, this would be an easy task[BR]
+if I still had my Dictionary,[BR]
+but the Shy Guys stole it.[BR]
+[WAIT][NEXT]
+I'll tell you what: I'll take[BR]
+care of the note for now.[WAIT][END]
+
+02-010
+[STYLE:RIGHT]"Hit yellow, green, red, and[BR]
+then blue."[BR]
+[WAIT][NEXT]
+Hmm... That's what the Shy Guy's[BR]
+note says.[WAIT][END]
+
+02-011
+[STYLE:RIGHT]You are Mr. Russ T., correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+02-012
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+02-013
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+02-014
+[STYLE:RIGHT]Now what could this be about...[BR]
+[PAUSE:0F]Hm! How exceedingly strange.[BR]
+It's from Lavalava Island.[BR]
+[WAIT][NEXT]
+...Yes, yes.  It's a question[BR]
+from a curious kid there.[BR]
+[WAIT][NEXT]
+My mind is quite in demand.[BR]
+Thank you, Parakarry. I thank[BR]
+you for your quick delivery.[BR]
+[WAIT][NEXT]
+I don't usually accept[BR]
+questions, but oh, well...[BR]
+[WAIT][NEXT]
+It's from a kid, and we must[BR]
+educate the younger generation.[BR]
+[PAUSE:05]When I was a child, I had a[BR]
+curious mind as well. Still do![BR]
+[WAIT][NEXT]
+I'll get right on the answer.[BR]
+[WAIT][NEXT]
+Thanks again for bringing this[BR]
+letter such a long way.[BR]
+[PAUSE:05]Please take this as thanks.[WAIT][END]
+
+02-015
+[STYLE:RIGHT]Above us, on the top floor,[BR]
+there is a Dojo.[BR]
+[PAUSE:0A]We are here! Always![BR]
+Training at the Dojo![BR]
+[WAIT][NEXT]
+Unless our Master isn't here,[BR]
+in which case the Dojo's closed.[BR]
+[WAIT][NEXT]
+A letter just arrived saying[BR]
+The Master will return soon.[BR]
+We will train again soon![WAIT][END]
+
+02-016
+[STYLE:RIGHT]Our Master is wandering [BR]
+the world to purify his mind[BR]
+and train his body.[BR]
+[WAIT][NEXT]
+Our Master was a strong man.[BR]
+He is going to come back[BR]
+a very, very strong man.[BR]
+[WAIT][NEXT]
+We will wait here, right here,[BR]
+until our Master returns.[BR]
+[PAUSE:0A]Waiting is part of our training.[WAIT][END]
+
+02-017
+[STYLE:RIGHT]Oh, you must be...Mario.[BR]
+[PAUSE:0A]Welcome to my Dojo.[BR]
+[WAIT][NEXT]
+I am The Master.[BR]
+[PAUSE:0A]I am the head of this Dojo.[BR]
+[WAIT][NEXT]
+{StartFX:Jitter}{StartFX:Shrinking}...cough hack cough...[BR]
+{EndFX:Shrinking}{EndFX:Jitter}[WAIT][NEXT]
+wheeze...[BR]
+[PAUSE:05]Please pardon me.[BR]
+[PAUSE:0A]My health is rather delicate...[BR]
+[WAIT][NEXT]
+Every day we train in this Dojo[BR]
+to improve body and mind.[BR]
+[WAIT][NEXT]
+If you have the purpose and the[BR]
+desire, you may challenge us.[BR]
+[WAIT][NEXT]
+Tell me, what business have you[BR]
+here today?[BR]
+[PAUSE:0A]{StartFX:Jitter}{StartFX:Shrinking}...cough...hack...[BR]
+{Func_04}[END]
+
+02-018
+[STYLE:RIGHT]{StartFX:Wavy}{StartFX:Shrinking}Cough...hack...[BR]
+{EndFX:Shrinking}{EndFX:Wavy}[PAUSE:0A]Ah, Mario,[BR]
+[PAUSE:0A]welcome to our Dojo.[BR]
+[WAIT][NEXT]
+For what purpose did you[BR]
+come here today?[BR]
+{Func_04}[END]
+
+02-019
+[NEXT]
+Very well. Please feel free to[BR]
+observe our training.[BR]
+[PAUSE:05]{StartFX:Wavy}{StartFX:Shrinking}Wheeze...[WAIT][END]
+
+02-01A
+[STYLE:RIGHT]Our doors are always open[BR]
+to you, so come anytime.[BR]
+[PAUSE:0A]{StartFX:Shrinking}{StartFX:Wavy}Cough cough...[WAIT][END]
+
+02-01B
+[STYLE:RIGHT]When fighting, you must try[BR]
+many tactics. A good fighter[BR]
+does not use the same simple[BR]
+attack each time.[BR]
+[WAIT][NEXT]
+Each enemy has its own [BR]
+character and weak points.[BR]
+[WAIT][NEXT]
+Sometimes you use your body...[BR]
+Sometimes you use your items...[BR]
+but always, ALWAYS you must [BR]
+use your mind.[BR]
+[WAIT][NEXT]
+Sometimes you will be surprised[BR]
+by what's effective.[WAIT][END]
+
+02-01C
+[STYLE:RIGHT]A wise fighter knows that[BR]
+sometimes the best tactic is[BR]
+not to fight at all.[BR]
+[WAIT][NEXT]
+There is no cowardice in[BR]
+choosing to run away from a[BR]
+superior foe.[BR]
+[WAIT][NEXT]
+Of course, you will find some [BR]
+enemies that are impossible to[BR]
+escape, once in battle.[BR]
+Face them with bravery.[WAIT][END]
+
+02-01D
+[NEXT]
+Very well.[BR]
+[PAUSE:0F]Then Chan will fight you.[BR]
+[WAIT][NEXT]
+Now, Chan.[BR]
+[PAUSE:0A]It is time for you to fight Mario.[WAIT][END]
+
+02-01E
+[STYLE:RIGHT]As you say, Master![WAIT][END]
+
+02-01F
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0A]Here comes Chan the man![WAIT][END]
+
+02-020
+[STYLE:RIGHT]Ow...[BR]
+[PAUSE:0A]How dishonorable![WAIT][END]
+
+02-021
+[STYLE:RIGHT]Hmmm...[BR]
+[PAUSE:0A]You have some skills.[WAIT][END]
+
+02-022
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]prepare to be finished![WAIT][END]
+
+02-023
+[STYLE:RIGHT]Enough![BR]
+[PAUSE:0A]The winner is Mario.[BR]
+[WAIT][NEXT]
+Chan, you must train harder.[BR]
+[WAIT][NEXT]
+Very well.[BR]
+[PAUSE:0A]I give you this, Mario.[WAIT][END]
+
+02-024
+[NEXT]
+Very well.[BR]
+[PAUSE:0F]This time, Lee will fight you.[BR]
+[WAIT][NEXT]
+Now, Lee...[BR]
+[PAUSE:0A]Let me see how you handle Mario.[WAIT][END]
+
+02-025
+[STYLE:RIGHT]Certainly, sir![BR]
+I will defeat him, Master![WAIT][END]
+
+02-026
+[STYLE:RIGHT]Have at you![WAIT][END]
+
+02-027
+[STYLE:RIGHT]I bet you've never seen a move[BR]
+like this before![WAIT][END]
+
+02-028
+[STYLE:RIGHT]Ooh... You are strong, [BR]
+I'll give you that.[WAIT][END]
+
+02-029
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]now I will finish you.[WAIT][END]
+
+02-02A
+[STYLE:RIGHT]Enough![BR]
+[PAUSE:0A]Mario is the winner.[BR]
+[WAIT][NEXT]
+Lee,[BR]
+[PAUSE:0A]you have much training to do.[BR]
+[WAIT][NEXT]
+Very well.[BR]
+[PAUSE:0A]I give you this, Mario.[WAIT][END]
+
+02-02B
+[NEXT]
+Very well![BR]
+[PAUSE:0F]It's time you fought The Master.[WAIT][END]
+
+02-02C
+[NEXT]
+Very well!  Mario...[BR]
+[PAUSE:0F]I will fight you again.[BR]
+[WAIT][NEXT]
+I will not go easy on you[BR]
+this time, however.[BR]
+[PAUSE:0A]You must concentrate fully if[BR]
+you hope to compete.[WAIT][END]
+
+02-02D
+[NEXT]
+Very well![BR]
+[PAUSE:0A]I will fight you once more.[BR]
+[WAIT][NEXT]
+This time, I will hold nothing[BR]
+back at all.[BR]
+[PAUSE:0A]Do you believe you're ready?[WAIT][END]
+
+02-02E
+[STYLE:RIGHT]To battle!![WAIT][END]
+
+02-02F
+[STYLE:RIGHT]Foolish! That won't work on me.[WAIT][END]
+
+02-030
+[STYLE:RIGHT]Hm![BR]
+[PAUSE:0A]Excellent move.[WAIT][END]
+
+02-031
+[STYLE:RIGHT]You have natural talent.[WAIT][END]
+
+02-032
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]I'm afraid I must finish you.[WAIT][END]
+
+02-033
+[STYLE:RIGHT]Mario, [PAUSE:05]you will fall![WAIT][END]
+
+02-034
+[STYLE:RIGHT]You can't defeat me like that![WAIT][END]
+
+02-035
+[STYLE:RIGHT]Hm![BR]
+[PAUSE:05]Nice maneuver.[WAIT][END]
+
+02-036
+[STYLE:RIGHT]Don't lose your concentration.[BR]
+[PAUSE:0A]I have yet to truly begin[BR]
+fighting back![WAIT][END]
+
+02-037
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0A]Is this your best?![WAIT][END]
+
+02-038
+[STYLE:RIGHT]{StartFX:Shrinking}Kwaaaaa![BR]
+[PAUSE:05]Behold my fury, [PAUSE:05]Mario!![WAIT][END]
+
+02-039
+[STYLE:RIGHT]{StartFX:Shrinking}You [PAUSE:03]foolish [PAUSE:03]novice![BR]
+[PAUSE:0A]Do you think you can beat me[BR]
+with sloppy technique like that?[WAIT][END]
+
+02-03A
+[STYLE:RIGHT]{StartFX:Shrinking}Hm![BR]
+[PAUSE:05]You have great hidden strength[BR]
+for one clothed like a plumber.[WAIT][END]
+
+02-03B
+[STYLE:RIGHT]{StartFX:Shrinking}Now...it is time I stopped[BR]
+being so merciful.[WAIT][END]
+
+02-03C
+[STYLE:RIGHT]{StartFX:Shrinking}Hyaaahhhh!!![BR]
+[PAUSE:05]Mario![BR]
+[PAUSE:03]Survive this [PAUSE:03]if you can!!!![WAIT][END]
+
+02-03D
+[STYLE:RIGHT]{StartFX:Shrinking}You underestimate me, Mario![BR]
+[PAUSE:05]Did you really think you'd win?[WAIT][END]
+
+02-03E
+[STYLE:RIGHT]Hm...[BR]
+[PAUSE:0A]I see why you are so famous, [BR]
+Mario. You are truly a [BR]
+masterful fighter.[BR]
+[WAIT][NEXT]
+Very well, worthy adversary.[BR]
+[PAUSE:0A]I give you this.[WAIT][END]
+
+02-03F
+[STYLE:RIGHT]Hm...[BR]
+[PAUSE:0A]That was a solid fight.[BR]
+[WAIT][NEXT]
+Very well.[BR]
+[PAUSE:0A]I give you this.[WAIT][END]
+
+02-040
+[STYLE:RIGHT]Hmmm![BR]
+[PAUSE:0A]Noble Mario![BR]
+[WAIT][NEXT]
+You have bested me, The Master,[BR]
+the strongest of fighters![BR]
+[WAIT][NEXT]
+Since you have beaten me at[BR]
+my full strength, I give you[BR]
+this with respect.[WAIT][END]
+
+02-041
+[STYLE:RIGHT]You are welcome to train here[BR]
+with us anytime.[BR]
+[PAUSE:0A]{StartFX:Shrinking}{StartFX:Jitter}Cough...wheeze...[WAIT][END]
+
+02-042
+[STYLE:RIGHT]Hm...[BR]
+[PAUSE:0A]You lack strength.[BR]
+[WAIT][NEXT]
+You have skill, though.[BR]
+Please return here after you[BR]
+have trained some more.[BR]
+[PAUSE:0A]{StartFX:Shrinking}{StartFX:Jitter}Cough...hack...[WAIT][END]
+
+02-043
+[NEXT]
+{StartFX:Shrinking}{StartFX:Jitter}Cough cough...[BR]
+{EndFX:Shrinking}{EndFX:Jitter}[PAUSE:0A]Mario, you have already proven[BR]
+yourself stronger than me.[BR]
+[WAIT][NEXT]
+You should train by yourself [BR]
+out in the wide world.[BR]
+[WAIT][NEXT]
+I also need to...[BR]
+[PAUSE:0A]keep on training. Wheeze...[WAIT][END]
+
+02-044
+[STYLE:RIGHT]The earthquake when the castle[BR]
+flew away was terrifying![BR]
+[WAIT][NEXT]
+Everything was shaking...[BR]
+the ground...the houses...[BR]
+I fell right over![BR]
+[WAIT][NEXT]
+It was so horrifying...[BR]
+[PAUSE:05]that I'd just like to forget[BR]
+it ever happened.[WAIT][END]
+
+02-045
+[STYLE:RIGHT]Toad Town without a castle...[BR]
+[PAUSE:05]It just doesn't seem right.[BR]
+Less castle-filled, somehow.[BR]
+[WAIT][NEXT]
+Do you think it'll ever be [BR]
+like the old days around here?[WAIT][END]
+
+02-046
+[STYLE:RIGHT]Toad Town without a castle...[BR]
+[PAUSE:05]It just doesn't seem right.[BR]
+Less castle-filled, somehow.[BR]
+[WAIT][NEXT]
+Do you think it'll ever be [BR]
+like the old days around here?[WAIT][END]
+
+02-047
+[STYLE:RIGHT]Since I worked at the castle,[BR]
+I have nothing to do for a while.[BR]
+[WAIT][NEXT]
+You'd think that'd be relaxing.[BR]
+But this house isn't exactly[BR]
+restful during the day.[BR]
+[WAIT][NEXT]
+My wife doesn't even have any[BR]
+spare time to spend with me.[BR]
+[WAIT][NEXT]
+She works all day cleaning[BR]
+stuff up and dealing with[BR]
+the kids. It must be tough,[BR]
+doing all that work.[WAIT][END]
+
+02-048
+[STYLE:RIGHT]Since I worked at the castle,[BR]
+I have nothing to do for a while.[BR]
+[WAIT][NEXT]
+You'd think that'd be relaxing.[BR]
+But this house isn't exactly[BR]
+restful during the day.[BR]
+[WAIT][NEXT]
+My wife doesn't even have any[BR]
+spare time to spend with me.[BR]
+[WAIT][NEXT]
+She works all day cleaning[BR]
+stuff up and dealing with[BR]
+the kids. It must be tough,[BR]
+doing all that work.[WAIT][END]
+
+02-049
+[STYLE:RIGHT]I think it's time I stopped[BR]
+moping around about the castle[BR]
+being stolen.[BR]
+[WAIT][NEXT]
+My wife is busy working, so...[BR]
+[PAUSE:0A]I guess I'll go on a walk with[BR]
+my children.[WAIT][END]
+
+02-04A
+[STYLE:RIGHT]Take off, you lousy Shy Guy![BR]
+[PAUSE:0A]I don't care how convincing[BR]
+your Mario disguise is![BR]
+[WAIT][NEXT]
+You aren't getting in![BR]
+Stay away from my family![WAIT][END]
+
+02-04B
+[STYLE:RIGHT]Take off, you lousy Shy Guy![BR]
+[PAUSE:0A]I don't care how convincing[BR]
+your Mario disguise is![BR]
+[WAIT][NEXT]
+You aren't getting in![BR]
+Stay away from my family![WAIT][END]
+
+02-04C
+[STYLE:RIGHT]Take off, you lousy Shy Guy![BR]
+[PAUSE:0A]I don't care how convincing[BR]
+your Mario disguise is![BR]
+[WAIT][NEXT]
+You aren't getting in![BR]
+Stay away from my family![WAIT][END]
+
+02-04D
+[STYLE:RIGHT]We've been cooped up too long[BR]
+for fear of those dastardly[BR]
+Shy Guy troublemakers.[BR]
+We need some exercise.[BR]
+[WAIT][NEXT]
+It's high time we went on a[BR]
+family walk, I think. The kids[BR]
+should stretch their legs.[BR]
+[WAIT][NEXT]
+There's nothing like a bit[BR]
+of fresh air and exercise to[BR]
+revitalize the spirit![WAIT][END]
+
+02-04E
+[STYLE:RIGHT]We've been cooped up too long[BR]
+for fear of those dastardly[BR]
+Shy Guy troublemakers.[BR]
+We need some exercise.[BR]
+[WAIT][NEXT]
+It's high time we went on a[BR]
+family walk, I think. The kids[BR]
+should stretch their legs.[BR]
+[WAIT][NEXT]
+There's nothing like a bit[BR]
+of fresh air and exercise to[BR]
+revitalize the spirit![WAIT][END]
+
+02-04F
+[STYLE:RIGHT]I've begun helping my wife with[BR]
+the chores.[BR]
+[WAIT][NEXT]
+...I'm thinking that the work[BR]
+I did at the castle was much[BR]
+easier than this.[BR]
+[WAIT][NEXT]
+I had no idea...[BR]
+I have to get down on my knees[BR]
+and thank my wife for all the[BR]
+work she does every day![WAIT][END]
+
+02-050
+[STYLE:RIGHT]I've begun helping my wife with[BR]
+the chores.[BR]
+[WAIT][NEXT]
+...I'm thinking that the work[BR]
+I did at the castle was much[BR]
+easier than this. [BR]
+[WAIT][NEXT]
+I had no idea...[BR]
+I have to get down on my knees[BR]
+and thank my wife for all the[BR]
+work she does every day![WAIT][END]
+
+02-051
+[STYLE:RIGHT]I've been playing this strange[BR]
+game with my children.[BR]
+[PAUSE:0A]It's pretty difficult.[BR]
+[WAIT][NEXT]
+The kids say I stink at it, too![BR]
+Those rascals...[BR]
+[WAIT][NEXT]
+They have a surprise coming...[BR]
+I've been practicing at night![BR]
+[WAIT][NEXT]
+Don't tell! I can't wait to[BR]
+show them all up![WAIT][END]
+
+02-052
+[STYLE:RIGHT]I've been playing this strange[BR]
+game with my children.[BR]
+[PAUSE:0A]It's pretty difficult.[BR]
+[WAIT][NEXT]
+The kids say I stink at it, too![BR]
+Those rascals...[BR]
+[WAIT][NEXT]
+They have a surprise coming...[BR]
+I've been practicing at night![BR]
+[WAIT][NEXT]
+Don't tell! I can't wait to[BR]
+show them all up![WAIT][END]
+
+02-053
+[STYLE:RIGHT]Mario...[BR]
+[PAUSE:0A]My family means more to me than[BR]
+anything in the world.[BR]
+[WAIT][NEXT]
+I can't be a hero like you,[BR]
+but as a father and husband,[BR]
+I'm doing my best.[BR]
+[WAIT][NEXT]
+Good luck to you, Mario.[BR]
+[PAUSE:0A]My entire family is cheering[BR]
+for your success![WAIT][END]
+
+02-054
+[STYLE:RIGHT]Oh, busy, busy![BR]
+[PAUSE:0A]The room doesn't get tidied[BR]
+up when my darling's at home.[WAIT][END]
+
+02-055
+[STYLE:RIGHT]Oh, how busy, busy![BR]
+[PAUSE:0A]My sweetheart might have[BR]
+some time off from work,[BR]
+but I never have a day off.[BR]
+[WAIT][NEXT]
+It's a lot of work![BR]
+[WAIT][NEXT]
+Aw... Look at my poor dear.[BR]
+[PAUSE:0A]I know he's sad that the castle[BR]
+is gone, but grieving forever[BR]
+won't do anything.[BR]
+[WAIT][NEXT]
+He should try to find something[BR]
+that brings him joy.[BR]
+[PAUSE:0A]If you could, please say[BR]
+something to him, Mario.[WAIT][END]
+
+02-056
+[STYLE:RIGHT]Oh, how busy, busy![BR]
+[PAUSE:0A]My sweetheart might have[BR]
+some time off from work,[BR]
+but I never have a day off.[BR]
+[WAIT][NEXT]
+It's a lot of work![BR]
+[WAIT][NEXT]
+Aw... Look at my poor dear.[BR]
+[PAUSE:0A]I know he's sad that the castle[BR]
+is gone, but grieving forever[BR]
+won't do anything.[BR]
+[WAIT][NEXT]
+He should try to find something[BR]
+that brings him joy.[BR]
+[PAUSE:0A]If you could, please say[BR]
+something to him, Mario.[WAIT][END]
+
+02-057
+[STYLE:RIGHT]I used to love the annual[BR]
+cooking contest at the castle,[BR]
+but it looks like we won't have[BR]
+one this year...[BR]
+[WAIT][NEXT]
+I was sure this was the year[BR]
+I'd beat Tayce T.![WAIT][END]
+
+02-058
+[STYLE:RIGHT]I used to love the annual[BR]
+cooking contest at the castle,[BR]
+but it looks like we won't have[BR]
+one this year...[BR]
+[WAIT][NEXT]
+I was sure this was the year[BR]
+I'd beat Tayce T.![WAIT][END]
+
+02-059
+[STYLE:RIGHT]My darling's spirits seem to[BR]
+have improved lately.[BR]
+[WAIT][NEXT]
+Maybe he realized there was[BR]
+no sense in staying home and[BR]
+grieving all the time.[BR]
+[WAIT][NEXT]
+My darling is a bit timid,[BR]
+but he is such a good-natured[BR]
+person at heart.[HEART][WAIT][END]
+
+02-05A
+[STYLE:RIGHT]It looks like the Shy Guys[BR]
+won't be pestering the town[BR]
+anymore, will they?[BR]
+[WAIT][NEXT]
+I know they're just pranksters,[BR]
+but I still feared for the[BR]
+children while they were loose.[BR]
+[WAIT][NEXT]
+But... My sweetie-pie protected[BR]
+the family! And he looked[BR]
+so cute being brave![HEART][BR]
+[WAIT][NEXT]
+Oh, sorry! How embarrassing![BR]
+[PAUSE:0A]Don't tell my darling that[BR]
+I said that, all right?[WAIT][END]
+
+02-05B
+[STYLE:RIGHT]It looks like the Shy Guys[BR]
+won't be pestering the town[BR]
+anymore, will they?[BR]
+[WAIT][NEXT]
+I know they're just pranksters,[BR]
+but I still feared for the[BR]
+children while they were loose.[BR]
+[WAIT][NEXT]
+But... My sweetie-pie protected[BR]
+the family! And he looked[BR]
+so cute being brave![HEART][BR]
+[WAIT][NEXT]
+Oh, sorry! How embarrassing![BR]
+[PAUSE:0A]Don't tell my darling that[BR]
+I said that, all right?[WAIT][END]
+
+02-05C
+[STYLE:RIGHT]You're in my way, sugar![BR]
+Scoot over![BR]
+[WAIT][NEXT]
+[PAUSE:0A]Oh, gracious! Mario?[BR]
+[PAUSE:0A]Tee hee... How embarrassing![BR]
+[PAUSE:05]I'm awfully sorry.[BR]
+[WAIT][NEXT]
+I thought you were my darling.[BR]
+That's why I shouted.[BR]
+[WAIT][NEXT]
+Even with all that's going on[BR]
+in the world, you can't stop[BR]
+cleaning your house.[BR]
+It sure is tiresome, though...[WAIT][END]
+
+02-05D
+[STYLE:RIGHT]You're in my way, sugar![BR]
+Scoot over![BR]
+[WAIT][NEXT]
+[PAUSE:0A]Oh, gracious! Mario?[BR]
+[PAUSE:0A]Tee hee... How embarrassing![BR]
+[PAUSE:05]I'm awfully sorry.[BR]
+[WAIT][NEXT]
+I thought you were my darling.[BR]
+That's why I shouted.[BR]
+[WAIT][NEXT]
+Even with all that's going on[BR]
+in the world, you can't stop[BR]
+cleaning your house.[BR]
+It sure is tiresome, though...[WAIT][END]
+
+02-05E
+[STYLE:RIGHT]My dumpling's always playing[BR]
+games with the children.[BR]
+[WAIT][NEXT]
+When he used to go to the[BR]
+castle every day for work,[BR]
+[WAIT][NEXT]
+I would sometimes wish to the[BR]
+Stars that the family could[BR]
+be together more often.[BR]
+[WAIT][NEXT]
+I didn't think it would be[BR]
+like this![BR]
+[PAUSE:0A]It's like I have three children[BR]
+instead of two![WAIT][END]
+
+02-05F
+[STYLE:RIGHT]My dumpling's always playing[BR]
+games with the children.[BR]
+[WAIT][NEXT]
+When he used to go to the[BR]
+castle every day for work,[BR]
+[WAIT][NEXT]
+I would sometimes wish to the[BR]
+Stars that the family could[BR]
+be together more often.[BR]
+[WAIT][NEXT]
+I didn't think it would be[BR]
+like this![BR]
+[PAUSE:0A]It's like I have three children[BR]
+instead of two![WAIT][END]
+
+02-060
+[STYLE:RIGHT]So, you're finally on your way[BR]
+to save the princess![BR]
+[WAIT][NEXT]
+Hurry to her![BR]
+[PAUSE:0A]But don't be rash or reckless.[BR]
+[PAUSE:0A]Her Highness would be worried![WAIT][END]
+
+02-061
+[STYLE:RIGHT]My dad works at the castle,[BR]
+so he's not at home usually.[BR]
+[WAIT][NEXT]
+But now the castle's gone,[BR]
+so he's at home.[BR]
+[WAIT][NEXT]
+When I said I'm glad 'cause[BR]
+Dad's at home, I got scolded.[BR]
+[WAIT][NEXT]
+.[PAUSE:03].[PAUSE:05].[PAUSE:0A]What's up with that?[WAIT][END]
+
+02-062
+[STYLE:RIGHT]When the castle was still here,[BR]
+I used to climb the trees[BR]
+and look off into the distance.[BR]
+[WAIT][NEXT]
+But those trees all fell down...[BR]
+[PAUSE:0A]Now there's nothing to do.[WAIT][END]
+
+02-063
+[STYLE:RIGHT]When the castle was still here,[BR]
+I used to climb the trees[BR]
+and look off into the distance.[BR]
+[WAIT][NEXT]
+But those trees all fell down...[BR]
+[PAUSE:0A]Now there's nothing to do.[WAIT][END]
+
+02-064
+[STYLE:RIGHT]Since the castle is gone,[BR]
+Dad is really bummed, and[BR]
+[PAUSE:0A]Mom seems a little frazzled.[BR]
+[WAIT][NEXT]
+I'm kind of happy that Dad's[BR]
+at home now, but I wish we could[BR]
+get him to play with us.[WAIT][END]
+
+02-065
+[STYLE:RIGHT]Since the castle is gone,[BR]
+Dad is really bummed, and[BR]
+[PAUSE:0A]Mom seems a little frazzled.[BR]
+[WAIT][NEXT]
+I'm kind of happy that Dad's[BR]
+at home now, but I wish we could[BR]
+get him to play with us.[WAIT][END]
+
+02-066
+[STYLE:RIGHT]We've been playing with Dad.[BR]
+[WAIT][NEXT]
+He's terrible at our games,[BR]
+so I'm teaching him how to play.[BR]
+[WAIT][NEXT]
+You never realize how much work[BR]
+it is to take care of grown-ups.[WAIT][END]
+
+02-067
+[STYLE:RIGHT]Dad, you are so cool![WAIT][END]
+
+02-068
+[STYLE:RIGHT]Dad, you are so cool![WAIT][END]
+
+02-069
+[STYLE:RIGHT]Dad, you are so cool![WAIT][END]
+
+02-06A
+[STYLE:RIGHT]When the Shy Guys came,[BR]
+Dad protected us, so we[BR]
+had nothing to worry about.[BR]
+[WAIT][NEXT]
+Who knew Dad was so cool?[BR]
+[PAUSE:0A]He was like a raging animal![WAIT][END]
+
+02-06B
+[STYLE:RIGHT]When the Shy Guys came,[BR]
+Dad protected us, so we[BR]
+had nothing to worry about.[BR]
+[WAIT][NEXT]
+Who knew Dad was so cool?[BR]
+[PAUSE:0A]He was like a raging animal![WAIT][END]
+
+02-06C
+[STYLE:RIGHT]When I grow up, I'm going to[BR]
+be just like my dad.[BR]
+[WAIT][NEXT]
+It's not a bad idea to be like[BR]
+you, Mario, but,[BR]
+[PAUSE:0A]my dad's cooler...[BR]
+[WAIT][NEXT]
+Sorry, Mario![WAIT][END]
+
+02-06D
+[STYLE:RIGHT]When I grow up, I'm going to[BR]
+be just like my dad.[BR]
+[WAIT][NEXT]
+It's not a bad idea to be like[BR]
+you, Mario, but,[BR]
+[PAUSE:0A]my dad's cooler...[BR]
+[WAIT][NEXT]
+Sorry, Mario![WAIT][END]
+
+02-06E
+[STYLE:RIGHT]Dad told me about you.[BR]
+[WAIT][NEXT]
+You're trying to save[BR]
+Princess Peach and the people[BR]
+in the castle, aren't you?[BR]
+[WAIT][NEXT]
+That's pretty cool...[BR]
+[PAUSE:0A]You're the second coolest guy[BR]
+after my dad.[WAIT][END]
+
+02-06F
+[STYLE:RIGHT]Dad told me about you.[BR]
+[WAIT][NEXT]
+You're trying to save[BR]
+Princess Peach and the people[BR]
+in the castle, aren't you?[BR]
+[WAIT][NEXT]
+That's pretty cool...[BR]
+[PAUSE:0A]You're the second coolest guy[BR]
+after my dad.[WAIT][END]
+
+02-070
+[STYLE:RIGHT]Dad told me about you.[BR]
+[WAIT][NEXT]
+You're trying to save[BR]
+Princess Peach and the people[BR]
+in the castle, aren't you?[BR]
+[WAIT][NEXT]
+That's pretty cool...[BR]
+[PAUSE:0A]You're the second coolest guy[BR]
+after my dad.[WAIT][END]
+
+02-071
+[STYLE:RIGHT]Princess Peach was kidnapped![BR]
+[PAUSE:0A]So I'm going to save her![BR]
+[WAIT][NEXT]
+But...Mom told me I had to be[BR]
+a good boy and stay home.[BR]
+[WAIT][NEXT]
+How come?[WAIT][END]
+
+02-072
+[STYLE:RIGHT]Princess Peach was kidnapped![BR]
+[PAUSE:0A]So I'm going to save her![BR]
+[WAIT][NEXT]
+But...Mom told me I had to be[BR]
+a good boy and stay home.[BR]
+[WAIT][NEXT]
+How come?[WAIT][END]
+
+02-073
+[STYLE:RIGHT]Princess Peach was kidnapped![BR]
+[PAUSE:0A]So I'm going to save her![BR]
+[WAIT][NEXT]
+But...Mom told me I had to be[BR]
+a good boy and stay home.[BR]
+[WAIT][NEXT]
+How come?[WAIT][END]
+
+02-074
+[STYLE:RIGHT]I started going to the Dojo so[BR]
+I can get stronger and save[BR]
+the beautiful Princess Peach.[BR]
+[WAIT][NEXT]
+But...my mom tells me I have[BR]
+to behave and stay home.[BR]
+[WAIT][NEXT]
+Why is that?[WAIT][END]
+
+02-075
+[STYLE:RIGHT]I started going to the Dojo so[BR]
+I can get stronger and save[BR]
+the beautiful Princess Peach.[BR]
+[WAIT][NEXT]
+But...my mom tells me I have [BR]
+to behave and stay home.[BR]
+[WAIT][NEXT]
+Why is that?[WAIT][END]
+
+02-076
+[STYLE:RIGHT]{StartFX:Jitter}I'm not afraid of ghosts![BR]
+{EndFX:Jitter}[WAIT][NEXT]
+Eee... What if a real ghost[BR]
+heard me and shows up?[BR]
+[WAIT][NEXT]
+Oh, no...[WAIT][END]
+
+02-077
+[STYLE:RIGHT]The Master of the Dojo is[BR]
+really, really strong![BR]
+[WAIT][NEXT]
+Who's stronger, you or[BR]
+The Master? Seriously, who?[WAIT][END]
+
+02-078
+[STYLE:RIGHT]The Master of the Dojo is[BR]
+really, really strong![BR]
+[WAIT][NEXT]
+Who's stronger, you or[BR]
+The Master? Seriously, who?[WAIT][END]
+
+02-079
+[STYLE:RIGHT]You gotta tell me, Mario.[BR]
+[PAUSE:0A]How can I get stronger?[BR]
+[PAUSE:0A]I wanna be super muscular.[BR]
+[WAIT][NEXT]
+The Master at the Dojo says:[BR]
+[PAUSE:05]"Those who desire only strength[BR]
+will always be weak."[BR]
+[WAIT][NEXT]
+Huh? Say what?[BR]
+[PAUSE:0A]Whaddaya think that means?[WAIT][END]
+
+02-07A
+[STYLE:RIGHT]You gotta tell me, Mario.[BR]
+[PAUSE:0A]How can I get stronger?[BR]
+[PAUSE:0A]I wanna be super muscular.[BR]
+[WAIT][NEXT]
+The Master at the Dojo says:[BR]
+[PAUSE:05]"Those who desire only strength[BR]
+will always be weak."[BR]
+[WAIT][NEXT]
+Huh? Say what?[BR]
+[PAUSE:0A]Whaddaya think that means?[WAIT][END]
+
+02-07B
+[STYLE:RIGHT]Dad says he's more afraid of[BR]
+Mom than of anything else in[BR]
+the whole world.[BR]
+[WAIT][NEXT]
+But Mom's such a sweetheart![BR]
+She's totally kind![BR]
+[WAIT][NEXT]
+You think...[BR]
+[PAUSE:0A]Dad's a scaredy-cat?[WAIT][END]
+
+02-07C
+[STYLE:RIGHT]Dad says he's more afraid of[BR]
+Mom than of anything else in[BR]
+the whole world.[BR]
+[WAIT][NEXT]
+But Mom's such a sweetheart![BR]
+She's totally kind![BR]
+[WAIT][NEXT]
+You think...[BR]
+[PAUSE:0A]Dad's a scaredy-cat?[WAIT][END]
+
+02-07D
+[STYLE:RIGHT]I wished to the Stars that[BR]
+I'd become a strong boy.[BR]
+[WAIT][NEXT]
+But then Dad said I should [BR]
+wish for you instead.[BR]
+[WAIT][NEXT]
+He told me to wish that you[BR]
+would beat up Bowser.[BR]
+[WAIT][NEXT]
+I'm gonna wish really hard.[WAIT][END]
+
+02-07E
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0A]I'm so glad [PAUSE:0A]you're OK![BR]
+[WAIT][NEXT]
+The town is in an uproar![BR]
+The princess kidnapped![BR]
+The very castle uprooted![BR]
+It's bedlam![BR]
+[WAIT][NEXT]
+I really don't know what we[BR]
+can do about all this...[BR]
+[WAIT][NEXT]
+Please, Mario![BR]
+[PAUSE:0A]Save Her Highness![WAIT][END]
+
+02-07F
+[STYLE:RIGHT]The town is in an uproar![BR]
+The princess kidnapped![BR]
+The very castle uprooted![BR]
+It's bedlam![BR]
+[WAIT][NEXT]
+Please, Mario![BR]
+[PAUSE:0A]Save Her Highness![WAIT][END]
+
+02-080
+[STYLE:RIGHT]The road in front of the Toad[BR]
+House connects to scenic[BR]
+Pleasant Path.[BR]
+[WAIT][NEXT]
+But I heard that there are[BR]
+weird Toads blocking the way.[BR]
+[WAIT][NEXT]
+Who could they be?[WAIT][END]
+
+02-081
+[STYLE:RIGHT]The weird Toads were actually[BR]
+guys called Koopa Bros.?[BR]
+[WAIT][NEXT]
+Is that bad?[BR]
+[WAIT][NEXT]
+I guess these Koopa Bros. are[BR]
+[PAUSE:0A]loyal to Bowser?[WAIT][END]
+
+02-082
+[STYLE:RIGHT]I heard that the train[BR]
+can't move.[BR]
+[PAUSE:0A]Folks are saying that a giant[BR]
+boulder is blocking the tracks.[BR]
+[WAIT][NEXT]
+If only there were some way[BR]
+of destroying it, we could[BR]
+travel by rail again.[WAIT][END]
+
+02-083
+[STYLE:RIGHT]People are saying that the[BR]
+train started moving again.[BR]
+[PAUSE:0A]Now folks can go to Mt. Rugged![BR]
+[WAIT][NEXT]
+I'll tell you, it's tough to travel[BR]
+if the train won't move.[WAIT][END]
+
+02-084
+[STYLE:RIGHT]People are saying that the[BR]
+train started moving again.[BR]
+[PAUSE:0A]Now folks can go to Mt. Rugged![BR]
+[WAIT][NEXT]
+I'll tell you, it's tough to[BR]
+travel if the train won't move.[WAIT][END]
+
+02-085
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0A]Grr...[PAUSE:03]rrrr...[BR]
+[PAUSE:03]Just a second ago, a Shy Guy[BR]
+ran into Russ T.'s house![BR]
+[WAIT][NEXT]
+Eek... [PAUSE:03]What should we do...[BR]
+[PAUSE:0A]Um...[PAUSE:03]er...[BR]
+[PAUSE:03]Do something, please![WAIT][END]
+
+02-086
+[STYLE:RIGHT]Oh, that wily Shy Guy![BR]
+[PAUSE:0A]He stole Russ T.'s Dictionary![BR]
+[WAIT][NEXT]
+Russ T. really loved that[BR]
+Dictionary, too. LOVED it.[BR]
+[PAUSE:0A]Poor Russ T....[BR]
+[WAIT][NEXT]
+You're his only hope, Mario![BR]
+[PAUSE:0A]Get it back for him![WAIT][END]
+
+02-087
+[STYLE:RIGHT]You were able to get Russ T.'s[BR]
+Dictionary back?[BR]
+[PAUSE:0A]Whoa! Way to go, Mario![BR]
+[WAIT][NEXT]
+Russ T. must be overjoyed.[WAIT][END]
+
+02-088
+[STYLE:RIGHT]Lavalava Island?[BR]
+[PAUSE:0A]It's an island in the sea way[BR]
+south of Toad Town, isn't it?[BR]
+[WAIT][NEXT]
+Folks say there's a volcano[BR]
+on the island that could erupt[BR]
+any time now. If it does,[BR]
+you'll sure see some lavalava![WAIT][END]
+
+02-089
+[STYLE:RIGHT]You're going to go to[BR]
+Lavalava Island?[BR]
+[WAIT][NEXT]
+You have heard about the [BR]
+volcano, right? The one that[BR]
+people say could blow at[BR]
+any moment?[BR]
+[WAIT][NEXT]
+Do you really think it's safe[BR]
+to go there?[BR]
+[PAUSE:0A]OK...but travel carefully.[WAIT][END]
+
+02-08A
+[STYLE:RIGHT]Hey, Mario, Minh T. would[BR]
+like you to lend her a hand.[BR]
+She runs the flower garden.[BR]
+[WAIT][NEXT]
+Flower Fields, a land covered[BR]
+in flowers, is supposedly in[BR]
+grave danger.[BR]
+[WAIT][NEXT]
+I told her I'd send you over[BR]
+to her to learn more.[WAIT][END]
+
+02-08B
+[STYLE:RIGHT]What's going on in Flower Fields?[BR]
+Bad trouble?[BR]
+[WAIT][NEXT]
+I guess we're not the only [BR]
+folks who have problems.[WAIT][END]
+
+02-08C
+[STYLE:RIGHT]I wonder how Princess Peach[BR]
+and the others in the castle[BR]
+are doing?[BR]
+[PAUSE:0A]You think they're...suffering?[BR]
+[WAIT][NEXT]
+I wish things would go back to [BR]
+normal again so that we could [BR]
+all live in peace.[BR]
+[WAIT][NEXT]
+Mario...[BR]
+[PAUSE:0A]you're the only one we can[BR]
+truly rely on.[WAIT][END]
+
+02-08D
+[STYLE:RIGHT]I wonder how Princess Peach[BR]
+and the others in the castle[BR]
+are doing?[BR]
+[PAUSE:0A]You think they're...suffering?[BR]
+[WAIT][NEXT]
+I wish things would go back to[BR]
+normal again so that we could[BR]
+all live in peace.[BR]
+[WAIT][NEXT]
+Mario...[BR]
+[PAUSE:0A]you're the only one we can[BR]
+truly rely on.[WAIT][END]
+
+02-08E
+[STYLE:RIGHT]You always help us during hard [BR]
+times, Mario.[BR]
+[WAIT][NEXT]
+When you're in trouble, who's[BR]
+there to lend a hand?[BR]
+[PAUSE:0F][WAIT][NEXT]
+...Mario...[BR]
+[PAUSE:0A]I know there's not much we can[BR]
+do to help, but we'll be rooting[BR]
+for you always.[WAIT][END]
+
+02-08F
+[STYLE:RIGHT]Hey, Mario,[BR]
+[PAUSE:0A]did you know you can[BR]
+carry up to 10 items?[BR]
+[WAIT][NEXT]
+When you can't carry any more[BR]
+items, it's a good idea to[BR]
+go to a shop like this and [BR]
+ask them to hold items for you.[BR]
+[WAIT][NEXT]
+You can even claim the items[BR]
+at any other shop.[BR]
+Pretty convenient, huh?[WAIT][END]
+
+02-090
+[STYLE:RIGHT]Hey, Mario,[BR]
+[PAUSE:0A]did you know you can[BR]
+carry up to 10 items?[BR]
+[WAIT][NEXT]
+When you can't carry any more[BR]
+items, it's a good idea to[BR]
+go to a shop like this and [BR]
+ask them to hold items for you.[BR]
+[WAIT][NEXT]
+You can even claim the items[BR]
+at any other shop.[BR]
+Pretty convenient, huh?[WAIT][END]
+
+02-091
+[STYLE:RIGHT]I heard that to the east, along[BR]
+Pleasant Path, there are many[BR]
+loyal Koopa Bros. followers.[BR]
+[WAIT][NEXT]
+The Mushrooms and Fire Flowers[BR]
+you can buy at a shop will help[BR]
+you survive.[WAIT][END]
+
+02-092
+[STYLE:RIGHT]Hey... I bet you didn't know[BR]
+[PAUSE:0A]that there's another shop[BR]
+here in Toad Town.[BR]
+[WAIT][NEXT]
+The merchandise they carry[BR]
+is slightly different.[BR]
+[PAUSE:0A]You might want to check it out[BR]
+sometime.[WAIT][END]
+
+02-093
+[STYLE:RIGHT]Hey... I bet you didn't know[BR]
+[PAUSE:0A]that there's another shop[BR]
+here in Toad Town.[BR]
+[WAIT][NEXT]
+The merchandise they carry[BR]
+is slightly different.[BR]
+[PAUSE:0A]You might want to check it out[BR]
+sometime.[WAIT][END]
+
+02-094
+[STYLE:RIGHT]I didn't ever think our town[BR]
+would have ghosts in it.[BR]
+[PAUSE:0A]How scary...[BR]
+[WAIT][NEXT]
+Of course, I'd heard there were[BR]
+lots of them deep within[BR]
+Forever Forest, but not here![BR]
+[WAIT][NEXT]
+I'd never go wandering in there,[BR]
+not for a million coins.[BR]
+[PAUSE:0A]Brrrrrr...[WAIT][END]
+
+02-095
+[STYLE:RIGHT]I just saw some Shy Guys go by.[BR]
+[PAUSE:0A]I'd bet anything that they're[BR]
+up to no good again.[BR]
+[WAIT][NEXT]
+Who knows where they went,[BR]
+but wherever they are, I'm sure[BR]
+they're causing trouble.[WAIT][END]
+
+02-096
+[STYLE:RIGHT]Russ T.'s Dictionary was stolen![BR]
+Can you believe it?[BR]
+[WAIT][NEXT]
+Somebody ought to stop those[BR]
+guys before they strike again![WAIT][END]
+
+02-097
+[STYLE:RIGHT]You got Russ T.'s Dictionary[BR]
+back? Wow![BR]
+[WAIT][NEXT]
+Mario, you're the best![BR]
+[PAUSE:0A]He must have been really happy.[WAIT][END]
+
+02-098
+[STYLE:RIGHT]Do you keep using one favorite[BR]
+item all the time?[BR]
+[WAIT][NEXT]
+It's fine to have favorites,[BR]
+but you really should experiment[BR]
+with other items. You might just[BR]
+find one that's even cooler.[WAIT][END]
+
+02-099
+[STYLE:RIGHT]Do you keep using one favorite[BR]
+item all the time?[BR]
+[WAIT][NEXT]
+It's fine to have favorites,[BR]
+but you really should experiment[BR]
+with other items. You might just[BR]
+find one that's even cooler.[WAIT][END]
+
+02-09A
+[STYLE:RIGHT]Do you keep using one favorite[BR]
+item all the time?[BR]
+[WAIT][NEXT]
+It's fine to have favorites,[BR]
+but you really should experiment[BR]
+with other items. You might just[BR]
+find one that's even cooler.[WAIT][END]
+
+02-09B
+[STYLE:RIGHT]Do you keep using one favorite[BR]
+item all the time?[BR]
+[WAIT][NEXT]
+It's fine to have favorites,[BR]
+but you really should experiment[BR]
+with other items. You might just[BR]
+find one that's even cooler.[WAIT][END]
+
+02-09C
+[STYLE:RIGHT]Do you keep using one favorite[BR]
+item all the time?[BR]
+[WAIT][NEXT]
+It's fine to have favorites,[BR]
+but you really should experiment[BR]
+with other items. You might just[BR]
+find one that's even cooler.[WAIT][END]
+
+02-09D
+[STYLE:RIGHT]Do you keep using one favorite[BR]
+item all the time?[BR]
+[WAIT][NEXT]
+It's fine to have favorites,[BR]
+but you really should experiment[BR]
+with other items. You might just[BR]
+find one that's even cooler.[WAIT][END]
+
+02-09E
+[STYLE:RIGHT]Do you keep using one favorite[BR]
+item all the time?[BR]
+[WAIT][NEXT]
+It's fine to have favorites,[BR]
+but you really should experiment[BR]
+with other items. You might just[BR]
+find one that's even cooler.[WAIT][END]
+
+02-09F
+[STYLE:RIGHT]Oh, no! Doom! Danger![BR]
+[PAUSE:0A]Princess Peach's Castle has[BR]
+flown away, up into the sky![BR]
+[WAIT][NEXT]
+No castle! Horrors![BR]
+Only a hole remains![BR]
+[PAUSE:0A]Our beloved castle! Where is it?[BR]
+[WAIT][NEXT]
+Spread the word! Outrage![WAIT][END]
+
+02-0A0
+[STYLE:RIGHT]Oh, no! Danger![BR]
+[PAUSE:0A]Strange Toads are about in[BR]
+front of the Toad House![BR]
+[WAIT][NEXT]
+They don't look trustworthy![BR]
+[PAUSE:0A]Beware, people, beware![WAIT][END]
+
+02-0A1
+[STYLE:RIGHT]Big news, people![BR]
+[PAUSE:0A]The Koopa Bros. are running[BR]
+rampant at the end of our[BR]
+Pleasant Path![BR]
+[WAIT][NEXT]
+They fight for Bowser![BR]
+[PAUSE:0A]There's even word that they[BR]
+work poor, innocent Bob-ombs[BR]
+like slave drivers.[BR]
+[WAIT][NEXT]
+Mario's going to kick their[BR]
+shells in! Just wait![BR]
+[PAUSE:0A]Attention, people! Listen up![WAIT][END]
+
+02-0A2
+[STYLE:RIGHT]Oh, ill news![BR]
+[PAUSE:0A]Dry Dry Railroad is not running![BR]
+The horror of it all![BR]
+[WAIT][NEXT]
+A giant rock has made travel[BR]
+impossible. The train won't move![BR]
+[PAUSE:05]We can't go to Mt. Rugged![BR]
+[WAIT][NEXT]
+Oh, no. Oh, ruin![BR]
+Big problem, people![WAIT][END]
+
+02-0A3
+[STYLE:RIGHT]Listen up, people![BR]
+Huge news![BR]
+[PAUSE:0A]Dry Dry Railroad started[BR]
+working again![BR]
+[WAIT][NEXT]
+Mario got rid of the rock[BR]
+that blocked the way![BR]
+[WAIT][NEXT]
+We can go to Mt. Rugged now![BR]
+[PAUSE:0A]Good news! Fortune! Joy![WAIT][END]
+
+02-0A4
+[STYLE:RIGHT]Oh, fright! Spooky news![BR]
+[PAUSE:0A]A Boo has been sighted in town[BR]
+near Forever Forest![BR]
+[WAIT][NEXT]
+I didn't actually see it[BR]
+with my own eyes...but I[BR]
+heard about it! Terror![BR]
+[PAUSE:05]Be afraid, people![WAIT][END]
+
+02-0A5
+[STYLE:RIGHT]Oh, cruel fate![BR]
+[PAUSE:0A]Mischievous Shy Guys are[BR]
+running loose in Toad Town![BR]
+[WAIT][NEXT]
+It is a plague! Your precious[BR]
+treasures are in peril! Danger![WAIT][END]
+
+02-0A6
+[STYLE:RIGHT]Oh, cruel fate![BR]
+[PAUSE:0A]Mischievous Shy Guys are[BR]
+running loose in Toad Town![BR]
+[WAIT][NEXT]
+It is a plague! Your precious[BR]
+treasures are in peril! Danger![WAIT][END]
+
+02-0A7
+[STYLE:RIGHT]Oh, cruel fate![BR]
+[PAUSE:0A]Mischievous Shy Guys are[BR]
+running loose in Toad Town![BR]
+[WAIT][NEXT]
+It is a plague! Your precious[BR]
+treasures are in peril! Danger![WAIT][END]
+
+02-0A8
+[STYLE:RIGHT]Big news, people! Huge news![BR]
+[PAUSE:0A]Mario taught those Shy Guys[BR]
+a lesson they won't forget![BR]
+[WAIT][NEXT]
+Our town is peaceful again![BR]
+(Except for people shouting!)[BR]
+[WAIT][NEXT]
+It's big news, people. [BR]
+We're talking massive news![WAIT][END]
+
+02-0A9
+[STYLE:RIGHT]Big news, people! Huge news![BR]
+[PAUSE:0A]Mario taught those Shy Guys[BR]
+a lesson they won't forget![BR]
+[WAIT][NEXT]
+Our town is peaceful again![BR]
+(Except for people shouting!)[BR]
+[WAIT][NEXT]
+It's big news, people.[BR]
+We're talking massive news![WAIT][END]
+
+02-0AA
+[STYLE:RIGHT]Alert! Big news, people![BR]
+[PAUSE:0A]Minh T., our kind citizen who[BR]
+tends to the flower garden,[BR]
+has word of trouble brewing.[BR]
+[WAIT][NEXT]
+Flower Fields, a land peopled[BR]
+with fair flowers, is mired[BR]
+in grave danger![BR]
+[WAIT][NEXT]
+Someone must gather special[BR]
+seeds to help Flower Fields![WAIT][END]
+
+02-0AB
+[STYLE:RIGHT]Big news, people! Wake up![BR]
+[PAUSE:0A]A door has appeared in[BR]
+Minh T.'s flower garden.[BR]
+[WAIT][NEXT]
+This door is, according to[BR]
+my sources, a portal to the[BR]
+land of flowers, Flower Fields.[BR]
+[PAUSE:05]I'm talking big news, here![WAIT][END]
+
+02-0AC
+[STYLE:RIGHT]Big news, people, wow![BR]
+[PAUSE:0A]Mario beat the pollen out[BR]
+of Bowser's henchmen![BR]
+[WAIT][NEXT]
+Flower Fields is saved![BR]
+Big news, folks. Great news![WAIT][END]
+
+02-0AD
+[STYLE:RIGHT]Big news, people, wow![BR]
+[PAUSE:0A]Mario beat the pollen out[BR]
+of Bowser's henchmen![BR]
+[WAIT][NEXT]
+Flower Fields is saved![BR]
+Big news, folks. Great news![WAIT][END]
+
+02-0AE
+[STYLE:RIGHT]Rally, people! Big news![BR]
+[PAUSE:05]Our hero Mario is finally going[BR]
+to Bowser's Castle![BR]
+[WAIT][NEXT]
+Bring back good news, Mario![BR]
+[PAUSE:0A]Good luck! Bowser's going down![BR]
+Fight hard! Be strong![WAIT][END]
+
+02-0AF
+[STYLE:RIGHT]The castle was taken away, and[BR]
+Princess Peach was kidnapped.[BR]
+These are dark days.[BR]
+[WAIT][NEXT]
+Everyone in town is suffering,[BR]
+and yet my heart cares for[BR]
+nothing but you, my sweet.[BR]
+[WAIT][NEXT]
+Does that make me wicked?[WAIT][END]
+
+02-0B0
+[STYLE:RIGHT]My heart is the same, my love.[BR]
+It cares for you, none other.[BR]
+[WAIT][NEXT]
+We are both wicked Toads.[WAIT][END]
+
+02-0B1
+[STYLE:RIGHT]The castle was taken away, and[BR]
+Princess Peach was kidnapped.[BR]
+These are dark days.[BR]
+[WAIT][NEXT]
+Everyone in town is suffering,[BR]
+and yet my heart cares for[BR]
+nothing but you, my sweet.[BR]
+[WAIT][NEXT]
+Does that make me wicked?[WAIT][END]
+
+02-0B2
+[STYLE:RIGHT]My heart is the same, my love.[BR]
+It cares for you, none other.[BR]
+[WAIT][NEXT]
+We are both wicked Toads.[WAIT][END]
+
+02-0B3
+[STYLE:RIGHT]If Bowser himself were to come[BR]
+down and kidnap you...[BR]
+[PAUSE:0A]I would not hesitate to[BR]
+vanquish him and save you.[WAIT][END]
+
+02-0B4
+[STYLE:RIGHT]Oh! My sweet hero...[BR]
+[PAUSE:0A]you're so brave and true.[WAIT][END]
+
+02-0B5
+[STYLE:RIGHT]Whatever obstacle comes,[BR]
+our love will see us through.[BR]
+[WAIT][NEXT]
+The power of my love could[BR]
+blow up any roadblock![WAIT][END]
+
+02-0B6
+[STYLE:RIGHT]Oh! You're so romantic.[BR]
+[PAUSE:0A]Our love is explosive...[WAIT][END]
+
+02-0B7
+[STYLE:RIGHT]If Bowser himself were to come[BR]
+down and kidnap you...[BR]
+[PAUSE:0A]I would not hesitate to[BR]
+vanquish him and save you.[WAIT][END]
+
+02-0B8
+[STYLE:RIGHT]Oh! My sweet hero...[BR]
+[PAUSE:0A]you're such a tough guy.[WAIT][END]
+
+02-0B9
+[STYLE:RIGHT]I do not fear ghosts.[BR]
+[PAUSE:0A]The only thing I fear is[BR]
+the thought of losing you.[WAIT][END]
+
+02-0BA
+[STYLE:RIGHT]Uh... I'm sorry, but I think...[BR]
+[PAUSE:0A]I'm more scared of ghosts.[BR]
+[WAIT][NEXT]
+Oh, forgive my errant words![WAIT][END]
+
+02-0BB
+[STYLE:RIGHT]I heard that Shy Guys are[BR]
+causing trouble all over town.[BR]
+[WAIT][NEXT]
+But as long as you're with me,[BR]
+you will always be safe![WAIT][END]
+
+02-0BC
+[STYLE:RIGHT]As long as you stay with me,[BR]
+I shall have nothing to fear[BR]
+but too much love![WAIT][END]
+
+02-0BD
+[STYLE:RIGHT]I heard that Shy Guys are[BR]
+causing trouble all over town.[BR]
+[WAIT][NEXT]
+But as long as you're with me,[BR]
+you will always be safe![WAIT][END]
+
+02-0BE
+[STYLE:RIGHT]As long as you stay with me,[BR]
+I shall have nothing to fear[BR]
+but too much love![WAIT][END]
+
+02-0BF
+[STYLE:RIGHT]I heard that Shy Guys are[BR]
+causing trouble all over town.[BR]
+[WAIT][NEXT]
+But as long as you're with me, [BR]
+you will always be safe![WAIT][END]
+
+02-0C0
+[STYLE:RIGHT]As long as you stay with me,[BR]
+I shall have nothing to fear[BR]
+but too much love![WAIT][END]
+
+02-0C1
+[STYLE:RIGHT]I want to take you to some[BR]
+far-off land.[BR]
+[WAIT][NEXT]
+Perhaps to a southern island[BR]
+where we can be all alone...[BR]
+[PAUSE:0A]or perhaps to some distant[BR]
+and undiscovered world.[WAIT][END]
+
+02-0C2
+[STYLE:RIGHT]You're so sweet![BR]
+[PAUSE:0A]How about the legendary [BR]
+Lavalava Island?[BR]
+[WAIT][NEXT]
+I will go anywhere in the world[BR]
+as long as you're beside me.[WAIT][END]
+
+02-0C3
+[STYLE:RIGHT]I want to take you to some[BR]
+far-off land.[BR]
+[WAIT][NEXT]
+Perhaps to a southern island[BR]
+where we can be all alone...[BR]
+[WAIT][NEXT]
+or perhaps to some distant[BR]
+and undiscovered world.[WAIT][END]
+
+02-0C4
+[STYLE:RIGHT]You're so sweet![BR]
+[PAUSE:0A]How about the legendary[BR]
+Lavalava Island?[BR]
+[WAIT][NEXT]
+I will go anywhere in the world[BR]
+as long as you're beside me.[WAIT][END]
+
+02-0C5
+[STYLE:RIGHT]You are like the sun to me![BR]
+Gazing down on me with warmth[BR]
+and loveliness, heating up[BR]
+my heart.[BR]
+[WAIT][NEXT]
+Oh! [PAUSE:05]Without you I would wither[BR]
+up and be no more![WAIT][END]
+
+02-0C6
+[STYLE:RIGHT]Oh! Your flowery praise![BR]
+[PAUSE:0A]This sun will never set upon you,[BR]
+my love![WAIT][END]
+
+02-0C7
+[STYLE:RIGHT]You are like the sun to me![BR]
+Gazing down on me with[BR]
+warmth and loveliness,[BR]
+heating up my heart.[BR]
+[WAIT][NEXT]
+Oh! [PAUSE:05]Without you I would wither[BR]
+up and be no more![WAIT][END]
+
+02-0C8
+[STYLE:RIGHT]Oh! Your flowery praise![BR]
+[PAUSE:0A]This sun will never set upon you,[BR]
+my love![WAIT][END]
+
+02-0C9
+[STYLE:RIGHT]Let's wish to the Stars that[BR]
+we'll stay together forever.[BR]
+[WAIT][NEXT]
+I hope that you and I need[BR]
+never be apart again.[WAIT][END]
+
+02-0CA
+[STYLE:RIGHT]Your heart echoes mine![BR]
+[PAUSE:0A]Life without you is just a[BR]
+pale illusion.[WAIT][END]
+
+02-0CB
+[STYLE:RIGHT]Let's wish to the Stars that[BR]
+we'll stay together forever.[BR]
+[WAIT][NEXT]
+I hope that you and I need[BR]
+never be apart again.[WAIT][END]
+
+02-0CC
+[STYLE:RIGHT]Your heart echoes mine![BR]
+[PAUSE:0A]Life without you is just a[BR]
+pale illusion.[WAIT][END]
+
+02-0CD
+[STYLE:RIGHT]I heard that you are going to[BR]
+defeat Bowser so our fair land[BR]
+will once again find peace.[WAIT][END]
+
+02-0CE
+[STYLE:RIGHT]Please succeed, Mario![BR]
+[PAUSE:0A]So we two Toads can stay [BR]
+together forever...[WAIT][END]
+
+02-0CF
+[STYLE:RIGHT]Peach's Castle flew away![WAIT][END]
+
+02-0D0
+[STYLE:RIGHT]How could such a thing happen?[BR]
+[WAIT][NEXT]
+What... What'll become of [BR]
+Princess Peach and the others[BR]
+who were in the castle?[WAIT][END]
+
+02-0D1
+[STYLE:RIGHT]I'm scared, I'm scared...[BR]
+[PAUSE:0A]I, Felissa T., am so scared! [WAIT][END]
+
+02-0D2
+[STYLE:RIGHT]Hey, have you heard?[BR]
+[PAUSE:05]Some Toads I've never seen[BR]
+before are blocking the road![BR]
+[WAIT][NEXT]
+They're keeping Mario from[BR]
+going on his adventure![WAIT][END]
+
+02-0D3
+[STYLE:RIGHT]Huh?  What?  Really?[BR]
+[WAIT][NEXT]
+Why are they bothering Mario?[BR]
+Are they nuts?[BR]
+[WAIT][NEXT]
+There's something weird [BR]
+going on here--I know it.[WAIT][END]
+
+02-0D4
+[STYLE:RIGHT]What do you mean by weird?[BR]
+[PAUSE:0A]I, Felissa T., don't understand[BR]
+what's going on![WAIT][END]
+
+02-0D5
+[STYLE:RIGHT]Hey, have you heard?[BR]
+[WAIT][NEXT]
+Those weird Toads who were[BR]
+blocking the road were actually[BR]
+disguised Koopa Bros.[BR]
+[WAIT][NEXT]
+Merlon saw right through them.[BR]
+He figured it out instantly.[WAIT][END]
+
+02-0D6
+[STYLE:RIGHT]Wow![HEART] That's super![BR]
+[PAUSE:0A]Merlon is so super. Really![BR]
+[PAUSE:0A]He knows everything.[WAIT][END]
+
+02-0D7
+[STYLE:RIGHT]He knows everything?[BR]
+[WAIT][NEXT]
+So... You think Merlon can[BR]
+find out about the secret place[BR]
+where I hide candy?[BR]
+[WAIT][NEXT]
+Oh, no![BR]
+What should I do![WAIT][END]
+
+02-0D8
+[STYLE:RIGHT]I heard that the three maid[BR]
+girls of Princess Peach's Castle[BR]
+are going to go on a trip.[BR]
+[WAIT][NEXT]
+I guess they don't have work,[BR]
+but really! The princess was[BR]
+kidnapped, and times are bad![BR]
+[WAIT][NEXT]
+What on earth are those maids[BR]
+thinking?[WAIT][END]
+
+02-0D9
+[STYLE:RIGHT]Yeah, I agree with you.[BR]
+[PAUSE:0A]Going on a trip during a[BR]
+situation like this?[BR]
+Have they lost it?[WAIT][END]
+
+02-0DA
+[STYLE:RIGHT]Totally, girls.[BR]
+[PAUSE:0A]I, Felissa T., agree.[BR]
+[WAIT][NEXT]
+I think they should think[BR]
+especially hard about[BR]
+[PAUSE:05]which souvenirs to buy.[WAIT][END]
+
+02-0DB
+[STYLE:RIGHT]I heard that the three maid[BR]
+girls of Princess Peach's Castle[BR]
+are going to go on a trip.[BR]
+[WAIT][NEXT]
+I guess they don't have work,[BR]
+but really! The princess was[BR]
+kidnapped, and times are bad![BR]
+[WAIT][NEXT]
+What on earth are those maids[BR]
+thinking?[WAIT][END]
+
+02-0DC
+[STYLE:RIGHT]Yeah, I agree with you.[BR]
+[PAUSE:0A]Going on a trip during a[BR]
+situation like this?[BR]
+Have they lost it?[WAIT][END]
+
+02-0DD
+[STYLE:RIGHT]Totally, girls.[BR]
+[PAUSE:0A]I, Felissa T., agree.[BR]
+[WAIT][NEXT]
+I think they should think[BR]
+especially hard about[BR]
+[PAUSE:05]which souvenirs to buy.[WAIT][END]
+
+02-0DE
+[STYLE:RIGHT]Hey, don't you think[BR]
+there have been fewer[BR]
+stars in the sky lately?[BR]
+[WAIT][NEXT]
+You know, with so few stars,[BR]
+everybody's wishes aren't[BR]
+going to come true.[WAIT][END]
+
+02-0DF
+[STYLE:RIGHT]Yeah, totally.[BR]
+[PAUSE:0A]You think that Bowser found a[BR]
+way to steal our stars?[WAIT][END]
+
+02-0E0
+[STYLE:RIGHT]Oh, no. I hope not![BR]
+[PAUSE:0A]I have soooo many wishes.[BR]
+[WAIT][NEXT]
+Mostly I want some cool boots![BR]
+[WAIT][NEXT]
+Please give me cool boots.[BR]
+[PAUSE:05]Please give me cool boots.[BR]
+[PAUSE:05]Please give me cool boots![BR]
+[WAIT][NEXT]
+I won't wish for anything else![BR]
+[PAUSE:0A]Tee hee![HEART][WAIT][END]
+
+02-0E1
+[STYLE:RIGHT]{StartFX:Wavy}Yaagh!  I've had it![BR]
+{EndFX:Wavy}Why do Shy Guys have to be[BR]
+such pains?![WAIT][END]
+
+02-0E2
+[STYLE:RIGHT]Yeah! Really! I used to think[BR]
+their tricks were cute...[BR]
+[PAUSE:05]but this is too much.[BR]
+[WAIT][NEXT]
+I sense something fishy.[BR]
+[PAUSE:0A]Something weird is definitely[BR]
+going on around here.[WAIT][END]
+
+02-0E3
+[STYLE:RIGHT]Huh?![BR]
+[PAUSE:05]Something fishy?![BR]
+[WAIT][NEXT]
+Sniff-sniff-sniff![BR]
+[PAUSE:05]I don't smell any fish.[WAIT][END]
+
+02-0E4
+[STYLE:RIGHT]{StartFX:Wavy}Yaagh!  I've had it![BR]
+{EndFX:Wavy}Why do Shy Guys have to be[BR]
+such pains?![WAIT][END]
+
+02-0E5
+[STYLE:RIGHT]Yeah! Really! I used to think[BR]
+their tricks were cute...[BR]
+[PAUSE:05]but this is too much.[BR]
+[WAIT][NEXT]
+I sense something fishy.[BR]
+[PAUSE:0A]Something weird is definitely[BR]
+going on around here.[WAIT][END]
+
+02-0E6
+[STYLE:RIGHT]Huh?![BR]
+[PAUSE:05]Something fishy?![BR]
+[WAIT][NEXT]
+Sniff-sniff-sniff![BR]
+[PAUSE:05]I don't smell any fish.[WAIT][END]
+
+02-0E7
+[STYLE:RIGHT]{StartFX:Wavy}Yaagh!  I've had it![BR]
+{EndFX:Wavy}Why do Shy Guys have to be[BR]
+such pains?![WAIT][END]
+
+02-0E8
+[STYLE:RIGHT]Yeah! Really! I used to think[BR]
+their tricks were cute...[BR]
+[PAUSE:05]but this is too much.[BR]
+[WAIT][NEXT]
+I sense something fishy.[BR]
+[PAUSE:0A]Something weird is definitely[BR]
+going on around here.[WAIT][END]
+
+02-0E9
+[STYLE:RIGHT]Huh?![BR]
+[PAUSE:05]Something fishy?![BR]
+[WAIT][NEXT]
+Sniff-sniff-sniff![BR]
+[PAUSE:05]I don't smell any fish.[WAIT][END]
+
+02-0EA
+[STYLE:RIGHT]I heard that someone saw a[BR]
+huge monster at the port.[BR]
+[WAIT][NEXT]
+I think it's some kind of[BR]
+giant, scary fish that rose[BR]
+from the deep sea.[WAIT][END]
+
+02-0EB
+[STYLE:RIGHT]Kris T., you're priceless.[BR]
+[PAUSE:0A]I bet you're right.[WAIT][END]
+
+02-0EC
+[STYLE:RIGHT]Oh, you think?[BR]
+[WAIT][NEXT]
+I, Felissa T., thought it was[BR]
+just a poor troubled whale.[WAIT][END]
+
+02-0ED
+[STYLE:RIGHT]Can you believe that the monster[BR]
+at the port really turned out[BR]
+to be a whale?[BR]
+[WAIT][NEXT]
+I bet that thing would've[BR]
+caused big problems if Mario[BR]
+hadn't helped it.[WAIT][END]
+
+02-0EE
+[STYLE:RIGHT]Mario's so super![BR]
+[PAUSE:0A]He notices things other people[BR]
+totally miss.[WAIT][END]
+
+02-0EF
+[STYLE:RIGHT]Aw, it was a whale![BR]
+[PAUSE:0A]I'd like to take a ride on[BR]
+a whale sometime.[WAIT][END]
+
+02-0F0
+[STYLE:RIGHT]You know, girls, something's[BR]
+been bothering me...[BR]
+[WAIT][NEXT]
+Why was I born so beautiful?[BR]
+[PAUSE:14]Ooh, beauty is a sin![HEART][WAIT][END]
+
+02-0F1
+[STYLE:RIGHT]Nice ego, Kris T.! Really![BR]
+[PAUSE:0A]Way to be in love with yourself![BR]
+[PAUSE:0A]Sometimes you make absolutely[BR]
+no sense at all![WAIT][END]
+
+02-0F2
+[STYLE:RIGHT]You know, people like me[BR]
+because I'm always cheerful![HEART][BR]
+[PAUSE:0A]Who cares about looks?[HEART][WAIT][END]
+
+02-0F3
+[STYLE:RIGHT]I heard that Mario went to[BR]
+Flower Fields.[BR]
+[WAIT][NEXT]
+I guess he's going to save some[BR]
+flowers or something.[WAIT][END]
+
+02-0F4
+[STYLE:RIGHT]You go, Mario! Woo-hoo![BR]
+[PAUSE:0A]Beat up that stupid Bowser!![WAIT][END]
+
+02-0F5
+[STYLE:RIGHT]I'm rooting for you too, Mario.[BR]
+[PAUSE:0A]I put together a little dance[BR]
+number to cheer you on![BR]
+[WAIT][NEXT]
+Umm...[BR]
+[PAUSE:0F]Sorry. I can't dance when[BR]
+people are looking.[WAIT][END]
+
+02-0F6
+[STYLE:RIGHT]It's been quite a while since[BR]
+Princess Peach and the others[BR]
+in the castle were abducted.[BR]
+[WAIT][NEXT]
+I wonder how they're doing?[WAIT][END]
+
+02-0F7
+[STYLE:RIGHT]I hope they're treating[BR]
+Princess Peach OK.[BR]
+[WAIT][NEXT]
+Do you think Her Highness[BR]
+has enough to eat?[BR]
+[PAUSE:0A]I'm really worried.[WAIT][END]
+
+02-0F8
+[STYLE:RIGHT]I want to take something for [BR]
+those people to eat.[BR]
+[WAIT][NEXT]
+If I could somehow float up to[BR]
+the sky and...[BR]
+[PAUSE:0A]...no, it's impossible![BR]
+[WAIT][NEXT]
+{StartFX:Growing}Waaaaah!! [BR]
+{EndFX:Growing}[PAUSE:0A]I, Felissa T., am so useless![WAIT][END]
+
+02-0F9
+[STYLE:RIGHT]It's been quite a while since[BR]
+Princess Peach and the others[BR]
+in the castle were abducted.[BR]
+[WAIT][NEXT]
+I wonder how they're doing?[WAIT][END]
+
+02-0FA
+[STYLE:RIGHT]I hope they're treating[BR]
+Princess Peach OK.[BR]
+[WAIT][NEXT]
+Do you think Her Highness[BR]
+has enough to eat?[BR]
+[PAUSE:0A]I'm really worried.[WAIT][END]
+
+02-0FB
+[STYLE:RIGHT]I want to take something for [BR]
+those people to eat.[BR]
+[WAIT][NEXT]
+If I could somehow float up to[BR]
+the sky and...[BR]
+[PAUSE:0A]...no, it's impossible![BR]
+[WAIT][NEXT]
+{StartFX:Growing}Waaaaah!![BR]
+{EndFX:Growing}[PAUSE:0A]I, Felissa T., am so useless![WAIT][END]
+
+02-0FC
+[STYLE:RIGHT]I heard that Mario is going[BR]
+to take on Bowser![BR]
+[PAUSE:0A]Let's cheer him on![WAIT][END]
+
+02-0FD
+[STYLE:RIGHT]Yeah, Mario! You rock! [BR]
+Good luck!![BR]
+[WAIT][NEXT]
+The stars are now in reach,[BR]
+so save our Princess Peach![WAIT][END]
+
+02-0FE
+[STYLE:RIGHT]I'm cheering you on, too.[BR]
+[PAUSE:0A]{StartFX:Shrinking}M-a-a-r-r-i-o-o-o![BR]
+Gooood luck! Woo![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+I'm rooting for you![BR]
+I, Felissa T., will cheer for you[BR]
+without rest![WAIT][END]
+
+02-0FF
+[STYLE:RIGHT]You are Miss T., correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+02-100
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+02-101
+[STYLE:RIGHT]Another letter, duly received.[BR]
+A postman's job is never done.[WAIT][END]
+
+02-102
+[STYLE:RIGHT]Who is this from?[BR]
+[PAUSE:0F]I don't think I recognize the[BR]
+return address.[BR]
+[WAIT][NEXT]
+Oh, well. I'm always getting [BR]
+love letters from strangers.  [BR]
+I'm super popular.[BR]
+[WAIT][NEXT]
+But enough about me. [BR]
+It's so lucky you came just now,[BR]
+Mr. Postman![BR]
+[WAIT][NEXT]
+Will you do me a favor?[BR]
+[PAUSE:0A]I want you to deliver this[BR]
+letter to the shop owner at[BR]
+Dry Dry Outpost.[HEART][BR]
+[WAIT][NEXT]
+I order lots of things from[BR]
+the desert.[BR]
+[PAUSE:05]They have so much good stuff![BR]
+[WAIT][NEXT]
+It's not easy staying this[BR]
+beautiful. It takes work![BR]
+[PAUSE:0A]Will you please deliver this?[BR]
+[WAIT][NEXT]
+Thanks![WAIT][END]
+
+02-103
+[STYLE:RIGHT]Mario, have you gone back[BR]
+to your house yet?[BR]
+[PAUSE:0A]Luigi was wondering how you[BR]
+were doing.[BR]
+[WAIT][NEXT]
+You can go home through that[BR]
+pipe in front of the main gate[BR]
+over there.[BR]
+[WAIT][NEXT]
+You can enter the pipe by[BR]
+standing on the edge and[BR]
+pushing down on the Control Stick.[BR]
+[WAIT][NEXT]
+Say, why don't you give me[BR]
+a tour of your house someday?[WAIT][END]
+
+02-104
+[STYLE:RIGHT]The Master of the Dojo came[BR]
+back from his training.[BR]
+[WAIT][NEXT]
+Before he left, he said he[BR]
+wouldn't return until he was[BR]
+incredibly strong.[BR]
+He must be pretty tough by now.[WAIT][END]
+
+02-105
+[STYLE:RIGHT]The Master of the Dojo came[BR]
+back from his training.[BR]
+[WAIT][NEXT]
+Before he left, he said he[BR]
+wouldn't return until he was[BR]
+incredibly strong.[BR]
+He must be pretty tough by now.[WAIT][END]
+
+02-106
+[STYLE:RIGHT]The Master of the Dojo came[BR]
+back from his training.[BR]
+[WAIT][NEXT]
+Before he left, he said he[BR]
+wouldn't return until he was[BR]
+incredibly strong.[BR]
+He must be pretty tough by now.[WAIT][END]
+
+02-107
+[STYLE:RIGHT]The Master of the Dojo came[BR]
+back from his training.[BR]
+[WAIT][NEXT]
+Before he left, he said he[BR]
+wouldn't return until he was[BR]
+incredibly strong.[BR]
+He must be pretty tough by now.[WAIT][END]
+
+02-108
+[STYLE:RIGHT]The Master of the Dojo came[BR]
+back from his training.[BR]
+[WAIT][NEXT]
+Before he left, he said he[BR]
+wouldn't return until he was[BR]
+incredibly strong.[BR]
+He must be pretty tough by now.[WAIT][END]
+
+02-109
+[STYLE:RIGHT]Two Shy Guys just ran by![BR]
+[WAIT][NEXT]
+One seems to have invaded the[BR]
+shop over there.[BR]
+The owner was not happy![BR]
+[WAIT][NEXT]
+I have no idea where the other[BR]
+one went.[BR]
+[PAUSE:0A]Those guys can disappear in the[BR]
+blink of an eye.[BR]
+[WAIT][NEXT]
+I bet they're still around here...[WAIT][END]
+
+02-10A
+[STYLE:RIGHT]You know, I'm getting pretty[BR]
+fed up with these Shy Guys.[BR]
+[WAIT][NEXT]
+They didn't use to be such a[BR]
+big nuisance to the town.[BR]
+[WAIT][NEXT]
+Little pranks are one thing,[BR]
+but when you start stealing[BR]
+people's precious treasures,[BR]
+that's just wrong.[WAIT][END]
+
+02-10B
+[STYLE:RIGHT]Mario, you're really showing[BR]
+those Shy Guys a thing or two![BR]
+[WAIT][NEXT]
+Things just seem to work out[BR]
+when you're around.[BR]
+[WAIT][NEXT]
+You'll be able to beat Bowser[BR]
+and save the princess soon,[BR]
+don't you think?[WAIT][END]
+
+02-10C
+[STYLE:RIGHT]Have you heard about the[BR]
+monster at the port?[BR]
+[WAIT][NEXT]
+Everyone is pretty shook up.[BR]
+[WAIT][NEXT]
+But I'm not.[BR]
+[PAUSE:0A]I know you'll take care of it![WAIT][END]
+
+02-10D
+[STYLE:RIGHT]Mario...[BR]
+[PAUSE:0A]People's wishes haven't been[BR]
+coming true lately.[BR]
+[WAIT][NEXT]
+It seems like right now,[BR]
+only the bad guys' wishes are[BR]
+coming true.[BR]
+[WAIT][NEXT]
+Is it all in my head?[WAIT][END]
+
+02-10E
+[STYLE:RIGHT]May I ask you something, Mario?[BR]
+[PAUSE:0A]Why don't you just go save the[BR]
+princess right now?[BR]
+[WAIT][NEXT]
+I thought you had a long history[BR]
+of beating up Bowser...[WAIT][END]
+
+02-10F
+[STYLE:RIGHT]May I ask you something, Mario?[BR]
+[PAUSE:0A]Why don't you just go save the[BR]
+princess right now?[BR]
+[WAIT][NEXT]
+I thought you had a long history[BR]
+of beating up Bowser...[WAIT][END]
+
+02-110
+[STYLE:RIGHT]Mario... Is it...[BR]
+[PAUSE:0A]Is it tougher this time to[BR]
+take on Bowser? Is he somehow[BR]
+stronger than before?[BR]
+[WAIT][NEXT]
+Is that why you're having to[BR]
+work so hard?[WAIT][END]
+
+02-111
+[STYLE:RIGHT]Mario, I heard you're going[BR]
+to the far north.[BR]
+[PAUSE:0A]Bring a sweater or something.[BR]
+[WAIT][NEXT]
+And be careful! It's dangerous![WAIT][END]
+
+02-112
+[STYLE:RIGHT]Mario, I heard you're going[BR]
+to storm Bowser's Castle.[BR]
+[PAUSE:0A]There's not much that I can do,[BR]
+but I'll be cheering you on.[BR]
+[WAIT][NEXT]
+I wish I were a hero like you.[WAIT][END]
+
+02-113
+[STYLE:RIGHT]Oh?[PAUSE:05]...Ha ha ha![BR]
+[PAUSE:0A]You don't have it?[BR]
+[WAIT][NEXT]
+The Degree, Mario.[BR]
+[PAUSE:0A]The Degree shows how strong[BR]
+you are.[BR]
+[PAUSE:0A]Ha ha ha... [PAUSE:05]I have it.[BR]
+[WAIT][NEXT]
+I fought at the Dojo over there[BR]
+and got it from The Master.[BR]
+I am one bad Toad![WAIT][END]
+
+02-114
+[STYLE:RIGHT]Hey, that's...[BR]
+[PAUSE:14]{StartFX:Shrinking}a First-Degree Card![BR]
+[WAIT][NEXT]
+I have one, too. See?[BR]
+A First-Degree Card!![BR]
+[WAIT][NEXT]
+That means I'm as strong [BR]
+as you! Cool! I'm bad! Yeah![WAIT][END]
+
+02-115
+[STYLE:RIGHT]Hey, that's...[BR]
+[PAUSE:14]{StartFX:Shrinking}a Second-Degree Card?[BR]
+[WAIT][NEXT]
+Whoa! Cool![BR]
+[PAUSE:0A]You fought your way to[BR]
+a Second-Degree Card?[BR]
+[PAUSE:0A]Mario, you're awesome![WAIT][END]
+
+02-116
+[STYLE:RIGHT]Hey, that's...[BR]
+[PAUSE:14]{StartFX:Shrinking}a Third-Degree Card?[BR]
+[WAIT][NEXT]
+Whoa! Wow! Whoop![BR]
+[PAUSE:0A]I knew you were strong![WAIT][END]
+
+02-117
+[STYLE:RIGHT]Hey, that's...[BR]
+[PAUSE:14]{StartFX:Shrinking}a Fourth-Degree Card![BR]
+[WAIT][NEXT]
+Whoa! Amazing![BR]
+[PAUSE:0A]You rule, Mario![BR]
+[PAUSE:14]You must be crazy strong![WAIT][END]
+
+02-118
+[STYLE:RIGHT]Whoa! Can it be? That's...[BR]
+[PAUSE:14]{StartFX:Shrinking}a Diploma???[BR]
+[WAIT][NEXT]
+[PAUSE:0A]Whooooopeee!  [BR]
+It's real, isn't it?[BR]
+[WAIT][NEXT]
+You defeated The Master! Wow![BR]
+[PAUSE:0A]You're the best, Mario![WAIT][END]
+
+02-119
+[STYLE:RIGHT]Aargh![BR]
+No more time![BR]
+[WAIT][NEXT]
+Too bad!![BR]
+Please try again next time.[BR]
+[WAIT][NEXT]
+See you at the next[BR]
+trading event, all right?[BR]
+So long![WAIT][END]
+
+02-11A
+[STYLE:RIGHT]Hello![BR]
+I'm the Toad of the[BR]
+trading event. How are you?[BR]
+[PAUSE:0F]Did you bring the item?[BR]
+[WAIT][NEXT]
+No?[BR]
+[PAUSE:14]You don't have anything?[BR]
+[WAIT][NEXT]
+Look, I can't trade with you[BR]
+unless you bring the item[BR]
+I told you to bring.[WAIT][END]
+
+02-11B
+[STYLE:RIGHT]Hello![BR]
+I'm the Toad of the[BR]
+trading event. How are you?[BR]
+[PAUSE:0F]Did you bring the item?[WAIT][END]
+
+02-11C
+[STYLE:RIGHT]Congratulations![BR]
+[WAIT][NEXT]
+This is the item for today![WAIT][END]
+
+02-11D
+[STYLE:RIGHT]Use it wisely![BR]
+[WAIT][NEXT]
+See you again at the next[BR]
+trading event![WAIT][END]
+
+02-11E
+[STYLE:RIGHT]Wrong! Sorry.[BR]
+[PAUSE:0F]That's not the right item.[BR]
+[WAIT][NEXT]
+As a penalty, I'm afraid I'll[BR]
+have to confiscate this item.[WAIT][END]
+
+02-11F
+[STYLE:RIGHT]Hello?[BR]
+[PAUSE:0F]You don't want the item?[WAIT][END]
+

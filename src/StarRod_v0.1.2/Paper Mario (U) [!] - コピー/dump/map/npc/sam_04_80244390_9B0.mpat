@@ -1,0 +1,400 @@
+% automatically dumped from map sam_04
+
+#new:Npc $sam_04_80244390_9B0
+00000005 $NpcSettings_80243850_sam_04 00000000 00000000 00000000 
+00400D09 $Script_Init_802442F0_sam_04 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009A0001 009A0002 009A0003 009A0003 009A0001 009A0001 009A0001 009A0001 
+009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 
+00000000 00000000 00000000 001A010A % It's a snowman. There're so many of snowmen! They  ...
+
+#new:Function $Function_80240240_sam_04
+    0:  ADDIU     SP, SP, FFC8
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  SDC1      F24, 30 (SP)
+   1C:  SDC1      F22, 28 (SP)
+   20:  SDC1      F20, 20 (SP)
+   24:  LW        S0, C (S1)
+   28:  LW        S2, 0 (S0)
+   2C:  ADDIU     S0, S0, 4
+   30:  LW        A1, 0 (S0)
+   34:  JAL       {Func:GetFloatVariable}
+   38:  ADDIU     S0, S0, 4
+   3C:  LW        A1, 0 (S0)
+   40:  ADDIU     S0, S0, 4
+   44:  DADDU     A0, S1, R0
+   48:  JAL       {Func:GetFloatVariable}
+   4C:  MOV.S     F24, F0
+   50:  LW        A1, 0 (S0)
+   54:  ADDIU     S0, S0, 4
+   58:  DADDU     A0, S1, R0
+   5C:  JAL       {Func:GetFloatVariable}
+   60:  MOV.S     F22, F0
+   64:  DADDU     A0, S1, R0
+   68:  LW        A1, 0 (S0)
+   6C:  JAL       {Func:GetFloatVariable}
+   70:  MOV.S     F20, F0
+   74:  MOV.S     F12, F24
+   78:  MFC1      A2, F20
+   7C:  MFC1      A3, F0
+   80:  JAL       80029C80
+   84:  MOV.S     F14, F22
+   88:  JAL       80029B24
+   8C:  MOV.S     F12, F0
+   90:  DADDU     A0, S1, R0
+   94:  MFC1      A2, F0
+   98:  JAL       {Func:SetFloatVariable}
+   9C:  DADDU     A1, S2, R0
+   A0:  LW        RA, 1C (SP)
+   A4:  LW        S2, 18 (SP)
+   A8:  LW        S1, 14 (SP)
+   AC:  LW        S0, 10 (SP)
+   B0:  LDC1      F24, 30 (SP)
+   B4:  LDC1      F22, 28 (SP)
+   B8:  LDC1      F20, 20 (SP)
+   BC:  ADDIU     V0, R0, 2
+   C0:  JR        RA
+   C4:  ADDIU     SP, SP, 38
+
+#new:IntTable $IntTable_80241AA0_sam_04
+$???_80241A40_sam_04 $???_80241A50_sam_04 $???_80241A60_sam_04 $???_80241A70_sam_04 $???_80241A80_sam_04 $???_80241A90_sam_04 
+
+#new:Script $Script_80241BCC_sam_04
+    0:  Thread
+    8:  	Set  *Var[A]  *Var[0] 
+   18:  	UseIntBuffer $IntTable_80241AA0_sam_04 
+   24:  	Add  *Var[A]  00000001 
+   34:  	Loop     *Var[A] 
+   40:  		Get1Int  *Var[B] 
+   4C:  	EndLoop
+   54:  	UseIntBuffer *Var[B] 
+   60:  	Get4Int  *Var[C] *Var[D] *Var[E] *Var[F] 
+   78:  	Add  *Var[4]  00000001 
+   88:  	Loop     *Var[4] 
+   94:  		Call     GetNpcPos   	( *Var[0] *Var[1] *Var[2] *Var[3] )
+   B0:  		Call     TranslateModel ( *Var[C] *Var[1] *Var[2] *Var[3] )
+   CC:  		Call     TranslateModel ( *Var[D] *Var[1] *Var[2] *Var[3] )
+   E8:  		Call     TranslateModel ( *Var[E] *Var[1] *Var[2] *Var[3] )
+  104:  		Call     TranslateModel ( *Var[F] *Var[1] *Var[2] *Var[3] )
+  120:  		Wait     00000001 
+  12C:  	EndLoop
+  134:  EndThread
+  13C:  Call     SetNpcJumpscale 	( *Var[0] *Fixed[1.0] )
+  150:  Call     NpcJump0    	( *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] )
+  170:  Call     PlayEffect  	( {FX:Steam:LargeOutward} *Var[1] *Var[2] *Var[3] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  1B4:  Return
+  1BC:  End
+
+#new:Script $Script_80241D90_sam_04
+    0:  Call     GetNpcPos   	( *Var[0] *Var[5] *Var[6] *Var[7] )
+   1C:  SetF  *Var[8]  *Var[1] 
+   2C:  SetF  *Var[9]  *Var[2] 
+   3C:  SetF  *Var[A]  *Var[3] 
+   4C:  SetF  *Var[B]  *Var[4] 
+   5C:  SubF  *Var[8]  *Var[5] 
+   6C:  SubF  *Var[9]  *Var[6] 
+   7C:  SubF  *Var[A]  *Var[7] 
+   8C:  DivF  *Var[8]  *Var[B] 
+   9C:  DivF  *Var[9]  *Var[B] 
+   AC:  DivF  *Var[A]  *Var[B] 
+   BC:  Loop     *Var[B] 
+   C8:  	AddF  *Var[5]  *Var[8] 
+   D8:  	AddF  *Var[6]  *Var[9] 
+   E8:  	AddF  *Var[7]  *Var[A] 
+   F8:  	SetF  *Var[1]  *Var[5] 
+  108:  	SetF  *Var[2]  *Var[6] 
+  118:  	SetF  *Var[3]  *Var[7] 
+  128:  	Set  *Var[4]  00000014 
+  138:  	ExecWait $Script_80241BCC_sam_04 
+  144:  	Call     PlaySoundAtNpc ( *Var[0] 0000038C 00000000 )
+  15C:  EndLoop
+  164:  Return
+  16C:  End
+
+#new:Script $Script_80241F04_sam_04
+    0:  Wait     00000014 
+    C:  If  *Var[0]  ==  00000000 
+   1C:  	Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+   38:  	Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   54:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   70:  	Call     SetCamDistance ( .Default *Fixed[300.0] )
+   84:  	Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-8.0] )
+   9C:  	Call     SetCamSpeed 	( .Default *Fixed[10.0] )
+   B0:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+   C8:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+   DC:  	Call     SayMessage0 	( 00000002 00830001 00830001 00000000 0012011B ) % A warm scarf! Thank you!
+   FC:  	Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+  118:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  134:  	Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  148:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  160:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  174:  	Wait     0000000F 
+  180:  	Call     SayMessage0 	( 00000005 00830001 00830001 00000000 0012011C ) % A cool bucket hat! Thank you!
+  1A0:  Else
+  1A8:  	Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+  1C4:  	Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  1E0:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  1FC:  	Call     SetCamDistance ( .Default *Fixed[300.0] )
+  210:  	Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-8.0] )
+  228:  	Call     SetCamSpeed 	( .Default *Fixed[10.0] )
+  23C:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  254:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  268:  	Call     SayMessage0 	( 00000005 00830001 00830001 00000000 0012011C ) % A cool bucket hat! Thank you!
+  288:  	Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  2A4:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  2C0:  	Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  2D4:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  2EC:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  300:  	Wait     0000000F 
+  30C:  	Call     SayMessage0 	( 00000002 00830001 00830001 00000000 0012011B ) % A warm scarf! Thank you!
+  32C:  EndIf
+  334:  Call     UseSettingsFrom 	( .Default 00000000 00000000 FFFFFF74 )
+  350:  Call     SetPanTarget 	( .Default 00000000 00000000 FFFFFF9C )
+  36C:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  380:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  398:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  3AC:  Call     ShowMessage 	( 0012011D 000000A0 00000028 ) % What a kind man you are! We thank you. As a reward ...
+  3C4:  Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  3DC:  Call     SetNpcFlagBits ( 00000001 00000100 .True )
+  3F4:  Call     SetNpcFlagBits ( 00000002 00000100 .True )
+  40C:  Call     SetNpcFlagBits ( 00000003 00000100 .True )
+  424:  Call     SetNpcFlagBits ( 00000004 00000100 .True )
+  43C:  Call     SetNpcFlagBits ( 00000005 00000100 .True )
+  454:  Wait     00000001 
+  460:  Thread
+  468:  	Wait     00000016 
+  474:  	Call     DisablePlayerPhysics 	( .True )
+  484:  	Call     SetPlayerAnimation 	( 0001002B )
+  494:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  4AC:  	Call     $Function_80240240_sam_04 ( *Var[3] *Var[0] *Var[2] 00000000 00000000 )
+  4CC:  	Call     GetDist2D   	( *Var[4] *Var[0] *Var[2] 00000000 00000000 )
+  4EC:  	SetF  *Var[5]  *Var[4] 
+  4FC:  	DivF  *Var[5]  *Fixed[5.0] 
+  50C:  	SetF  *Var[8]  *Var[3] 
+  51C:  	SubF  *Var[8]  *Fixed[90.0] 
+  52C:  	Loop     00000004 
+  538:  		Call     AddVectorPolar ( *Var[0] *Var[2] *Var[5] *Var[3] )
+  554:  		SetF  *Var[6]  *Var[0] 
+  564:  		SetF  *Var[7]  *Var[2] 
+  574:  		Call     AddVectorPolar ( *Var[6] *Var[7] *Fixed[20.0] *Var[8] )
+  590:  		Call     SetPlayerJumpscale 	( *Fixed[2.0] )
+  5A0:  		Call     802D1904 ( *Var[6] 00000000 *Var[7] 00000010 )
+  5BC:  		AddF  *Var[8]  *Fixed[180.0] 
+  5CC:  		Wait     00000006 
+  5D8:  	EndLoop
+  5E0:  	Call     SetPlayerJumpscale 	( *Fixed[2.0] )
+  5F0:  	Call     802D1904 ( 00000000 00000000 00000000 00000010 )
+  60C:  	Call     SetPlayerAnimation 	( 00010002 )
+  61C:  	Call     InterpPlayerYaw 	( 00000000 00000000 )
+  630:  	Call     DisablePlayerPhysics 	( .False )
+  640:  EndThread
+  648:  Thread
+  650:  	Wait     0000006E 
+  65C:  	Call     DisablePartnerAI 	( 00000000 )
+  66C:  	Call     SetNpcAnimation 	( .Npc:Partner 00000102 )
+  680:  	Call     SetNpcJumpscale 	( .Npc:Partner *Fixed[0.0] )
+  694:  	Call     NpcJump1    	( .Npc:Partner 00000032 00000000 00000000 00000016 )
+  6B4:  	Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+  6C8:  	Wait     0000006E 
+  6D4:  EndThread
+  6DC:  Thread
+  6E4:  	Wait     00000016 
+  6F0:  	Loop     00000005 
+  6FC:  		Call     ShakeCam    	( .Default 00000000 00000006 *Fixed[2.0] )
+  718:  		Wait     00000010 
+  724:  	EndLoop
+  72C:  EndThread
+  734:  Set  *Var[0]  00000000 
+  744:  SetF  *Var[1]  *Fixed[-175.0] 
+  754:  SetF  *Var[2]  *Fixed[0.0] 
+  764:  SetF  *Var[3]  *Fixed[-180.0] 
+  774:  SetF  *Var[4]  *Fixed[5.0] 
+  784:  Exec     $Script_80241D90_sam_04 
+  790:  Set  *Var[0]  00000001 
+  7A0:  SetF  *Var[1]  *Fixed[-125.0] 
+  7B0:  SetF  *Var[2]  *Fixed[0.0] 
+  7C0:  SetF  *Var[3]  *Fixed[-220.0] 
+  7D0:  SetF  *Var[4]  *Fixed[5.0] 
+  7E0:  Exec     $Script_80241D90_sam_04 
+  7EC:  Set  *Var[0]  00000002 
+  7FC:  SetF  *Var[1]  *Fixed[-75.0] 
+  80C:  SetF  *Var[2]  *Fixed[0.0] 
+  81C:  SetF  *Var[3]  *Fixed[-260.0] 
+  82C:  SetF  *Var[4]  *Fixed[5.0] 
+  83C:  Exec     $Script_80241D90_sam_04 
+  848:  Set  *Var[0]  00000003 
+  858:  SetF  *Var[1]  *Fixed[75.0] 
+  868:  SetF  *Var[2]  *Fixed[0.0] 
+  878:  SetF  *Var[3]  *Fixed[-260.0] 
+  888:  SetF  *Var[4]  *Fixed[5.0] 
+  898:  Exec     $Script_80241D90_sam_04 
+  8A4:  Set  *Var[0]  00000004 
+  8B4:  SetF  *Var[1]  *Fixed[125.0] 
+  8C4:  SetF  *Var[2]  *Fixed[0.0] 
+  8D4:  SetF  *Var[3]  *Fixed[-220.0] 
+  8E4:  SetF  *Var[4]  *Fixed[5.0] 
+  8F4:  Exec     $Script_80241D90_sam_04 
+  900:  Wait     00000001 
+  90C:  Set  *Var[0]  00000005 
+  91C:  SetF  *Var[1]  *Fixed[175.0] 
+  92C:  SetF  *Var[2]  *Fixed[0.0] 
+  93C:  SetF  *Var[3]  *Fixed[-180.0] 
+  94C:  SetF  *Var[4]  *Fixed[5.0] 
+  95C:  ExecWait $Script_80241D90_sam_04 
+  968:  Wait     00000050 
+  974:  Thread
+  97C:  	Call     ShakeCam    	( .Default 00000000 000000C8 *Fixed[1.0] )
+  998:  EndThread
+  9A0:  Thread
+  9A8:  	Loop     0000000A 
+  9B4:  		Set  *Var[0]  FFFFFF6A 
+  9C4:  		Loop     00000006 
+  9D0:  			Call     PlayEffect  	( {FX:Steam:LargeOutward} *Var[0] 00000000 FFFFFEFC 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  A14:  			Add  *Var[0]  0000003C 
+  A24:  		EndLoop
+  A2C:  		Wait     00000014 
+  A38:  	EndLoop
+  A40:  EndThread
+  A48:  Thread
+  A50:  	Wait     00000028 
+  A5C:  	Call     UseSettingsFrom 	( .Default 00000000 00000000 FFFFFF10 )
+  A78:  	Call     SetPanTarget 	( .Default 00000000 00000000 FFFFFF10 )
+  A94:  	Call     SetCamDistance ( .Default *Fixed[300.0] )
+  AA8:  	Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  ABC:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  AD4:  EndThread
+  ADC:  Call     PlaySoundAt 	( 0000038D 00000000 00000000 00000000 FFFFFED4 )
+  AFC:  Call     MakeLerp    	( 00000000 00000064 000000C8 0000000A )
+  B18:  Label    00000000 
+  B24:  Call     UpdateLerp  	( )
+  B30:  Call     TranslateModel ( {Model:o65} 00000000 *Var[0] 00000000 )
+  B4C:  Call     TranslateModel ( {Model:o64} 00000000 *Var[0] 00000000 )
+  B68:  Call     TranslateModel ( {Model:o66} 00000000 *Var[0] 00000000 )
+  B84:  Wait     00000001 
+  B90:  If  *Var[1]  ==  00000001 
+  BA0:  	Goto     00000000 
+  BAC:  EndIf
+  BB4:  Wait     0000003C 
+  BC0:  Thread
+  BC8:  	Call     ShakeCam    	( .Default 00000000 00000064 *Fixed[0.30078125] )
+  BE4:  EndThread
+  BEC:  Thread
+  BF4:  	Call     GetModelCenter ( {Model:o65} )
+  C04:  	Call     PlayEffect  	( {FX:Steam:LargeOutward} *Var[0] 00000000 *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  C48:  	Call     GetModelCenter ( {Model:o64} )
+  C58:  	Call     PlayEffect  	( {FX:Steam:LargeOutward} *Var[0] 00000000 *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  C9C:  EndThread
+  CA4:  Call     PlaySoundAt 	( 0000038E 00000000 00000000 00000000 FFFFFED4 )
+  CC4:  Call     MakeLerp    	( 00000000 00000050 00000064 0000000A )
+  CE0:  Label    00000001 
+  CEC:  Call     UpdateLerp  	( )
+  CF8:  Call     TranslateModel ( {Model:o65} 00000000 00000064 00000000 )
+  D14:  Call     TranslateModel ( {Model:o64} 00000000 00000064 00000000 )
+  D30:  Call     RotateModel 	( {Model:o65} *Var[0] 00000000 00000001 00000000 )
+  D50:  Call     RotateModel 	( {Model:o64} *Var[0] 00000000 FFFFFFFF 00000000 )
+  D70:  Wait     00000001 
+  D7C:  If  *Var[1]  ==  00000001 
+  D8C:  	Goto     00000001 
+  D98:  EndIf
+  DA0:  Wait     0000003C 
+  DAC:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  DC4:  Call     SetCamSpeed 	( .Default *Fixed[10.0] )
+  DD8:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  DEC:  Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  E00:  Wait     0000001E 
+  E0C:  Call     ShowMessage 	( 0012011E 000000A0 00000028 ) % Please pass through here... With many thanks and b ...
+  E24:  Call     EnablePartnerAI 	( )
+  E30:  Call     UpdateColliderTransform 	( {Collider:o78} )
+  E40:  Call     UpdateColliderTransform 	( {Collider:o79} )
+  E50:  Call     UpdateColliderTransform 	( {Collider:o80} )
+  E60:  Call     SetNpcFlagBits ( 00000000 00000100 .False )
+  E78:  Call     SetNpcFlagBits ( 00000001 00000100 .False )
+  E90:  Call     SetNpcFlagBits ( 00000002 00000100 .False )
+  EA8:  Call     SetNpcFlagBits ( 00000003 00000100 .False )
+  EC0:  Call     SetNpcFlagBits ( 00000004 00000100 .False )
+  ED8:  Call     SetNpcFlagBits ( 00000005 00000100 .False )
+  EF0:  Call     BindNpcInteract 	( 00000000 00000000 )
+  F04:  Call     BindNpcInteract 	( 00000001 00000000 )
+  F18:  Call     BindNpcInteract 	( 00000002 00000000 )
+  F2C:  Call     BindNpcInteract 	( 00000003 00000000 )
+  F40:  Call     BindNpcInteract 	( 00000004 00000000 )
+  F54:  Call     BindNpcInteract 	( 00000005 00000000 )
+  F68:  Call     ModifyColliderFlags 	( 00000000 {Collider:o103} 7FFFFE00 )
+  F80:  Call     ModifyColliderFlags 	( 00000001 {Collider:o106} 7FFFFE00 )
+  F98:  Call     ModifyColliderFlags 	( 00000001 {Collider:o118} 7FFFFE00 )
+  FB0:  Call     ModifyColliderFlags 	( 00000001 {Collider:o119} 7FFFFE00 )
+  FC8:  Call     ModifyColliderFlags 	( 00000001 {Collider:o120} 7FFFFE00 )
+  FE0:  Call     ModifyColliderFlags 	( 00000001 {Collider:o121} 7FFFFE00 )
+  FF8:  Call     ModifyColliderFlags 	( 00000001 {Collider:o122} 7FFFFE00 )
+ 1010:  Set  *StoryProgress  0000004A 
+ 1020:  Return
+ 1028:  End
+
+#new:NpcSettings $NpcSettings_80243850_sam_04
+00000000 003C0028 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:ItemList $ItemList_80243B9C_sam_04
+.Item:Bucket
+00000000
+
+#new:Script $Script_80243E70_sam_04
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     FindKeyItem 	( .Item:Bucket *Var[0] )
+   24:  If  *Var[0]  !=  FFFFFFFF 
+   34:  	Call     802D6420 ( )
+   40:  	Call     802D6954 ( )
+   4C:  	Switch  *Var[0] 
+   58:  		Case  ==  00000000 
+   64:  		Case  ==  FFFFFFFF 
+   70:  		Default
+   78:  			Set  *Flag_SAM_01  00000001 
+   88:  			Call     RemoveKeyItemAt 	( *Var[1] )
+   98:  			Call     EnableModel 	( {Model:baketu} .True )
+   AC:  			If  *Flag_SAM_00  ==  00000001 
+   BC:  				Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+   D8:  				Add  *Var[1]  0000003C 
+   E8:  				Add  *Var[2]  00000014 
+   F8:  				Call     PlaySoundAt 	( 00002043 00000000 *Var[0] *Var[1] *Var[2] )
+  118:  				Call     PlayEffect  	( {FX:Sparkles:Star} *Var[0] *Var[1] *Var[2] 0000000A 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  15C:  				Wait     00000014 
+  168:  				Call     PlaySound   	( 0000000B )
+  178:  				Set  *Var[0]  00000001 
+  188:  				ExecWait $Script_80241F04_sam_04 
+  194:  			EndIf
+  19C:  	EndSwitch
+  1A4:  Else
+  1AC:  	Call     ShowMessage 	( 001D015D 000000A0 00000028 ) % It's a snowman. 
+  1C4:  EndIf
+  1CC:  Unbind
+  1D4:  Call     DisablePlayerInput 	( .False )
+  1E4:  Return
+  1EC:  End
+
+#new:Script $Script_80244064_sam_04
+    0:  BindLock $Script_80243E70_sam_04 00000010 00000000 $ItemList_80243B9C_sam_04 00000000 00000001 
+   20:  Return
+   28:  End
+
+#new:Script $Script_802440E4_sam_04
+    0:  Return
+    8:  End
+
+#new:Script $Script_Init_802442F0_sam_04
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80244064_sam_04 )
+   14:  Call     BindNpcIdle 	( .Npc:Self $Script_802440E4_sam_04 )
+   28:  Call     SetNpcFlagBits ( .Npc:Self 10000002 .True )
+   40:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   54:  Return
+   5C:  End
+

@@ -1,0 +1,57 @@
+% automatically dumped from map mim_03
+
+#new:Npc $mim_03_802422B8
+00000000 $NpcSettings_80242080_mim_03 00000000 00000000 00000000 
+00000801 $Script_Init_80242294_mim_03 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00BE0001 00BE0001 00BE0001 00BE0001 00BE0001 00BE0001 00BE0001 00BE0001 
+00BE0001 00BE0001 00BE0001 00BE0001 00BE0001 00BE0001 00BE0001 00BE0001 
+00000000 00000000 00000000 001A00A1 % This is Oaklie. He lives in Forever Forest. He gua ...
+
+#new:NpcSettings $NpcSettings_80242080_mim_03
+00000000 00200018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802420AC_mim_03
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Switch  *StoryProgress 
+   1C:  	Case  <  FFFFFFDC 
+   28:  		If  *AreaFlag[002]  ==  00000000 
+   38:  			Call     SayMessage0 	( .Npc:Self 00BE0002 00BE0001 00000000 000E0009 ) % Listen carefully... If you want to get through thi ...
+   58:  			Set  *AreaFlag[002]  00000001 
+   68:  		Else
+   70:  			Call     SayMessage0 	( .Npc:Self 00BE0002 00BE0001 00000000 000E000A ) % Listen carefully... If you want to get through thi ...
+   90:  			Set  *AreaFlag[002]  00000000 
+   A0:  		EndIf
+   A8:  	Case  <  0000000B 
+   B4:  		If  *AreaFlag[002]  ==  00000000 
+   C4:  			Call     SayMessage0 	( .Npc:Self 00BE0002 00BE0001 00000000 000E000B ) % You probably think that this forest is unpleasant, ...
+   E4:  			Set  *AreaFlag[002]  00000001 
+   F4:  		Else
+   FC:  			Call     SayMessage0 	( .Npc:Self 00BE0002 00BE0001 00000000 000E000C ) % You probably think that this forest is unpleasant, ...
+  11C:  			Set  *AreaFlag[002]  00000000 
+  12C:  		EndIf
+  134:  	Case  >=  0000000B 
+  140:  		If  *AreaFlag[002]  ==  00000000 
+  150:  			Call     SayMessage0 	( .Npc:Self 00BE0002 00BE0001 00000000 000E000D ) % I feel as though I can hear the Stars crying even  ...
+  170:  			Set  *AreaFlag[002]  00000001 
+  180:  		Else
+  188:  			Call     SayMessage0 	( .Npc:Self 00BE0002 00BE0001 00000000 000E000E ) % I feel as though I can hear the Stars crying even  ...
+  1A8:  			Set  *AreaFlag[002]  00000000 
+  1B8:  		EndIf
+  1C0:  EndSwitch
+  1C8:  Call     DisablePlayerInput 	( .False )
+  1D8:  Return
+  1E0:  End
+
+#new:Script $Script_Init_80242294_mim_03
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802420AC_mim_03 )
+   14:  Return
+   1C:  End
+

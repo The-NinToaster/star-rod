@@ -1,0 +1,202 @@
+% automatically dumped from map flo_18
+
+#new:Npc $flo_18_80245CEC_7C0
+00000004 $NpcSettings_80243F3C_flo_18 00000000 00000000 00000000 
+00440D05 $Script_Init_80245B30_flo_18 00000000 00000000 0000010E 
+{Items:25:SuperShroom:2:MapleSyrup:2:ThunderRage:2:StopWatch:2}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:3:40} {FP:30:40:3:40} {FP:50:40:3:40} {FP:80:40:3:40} {FP:100:30:3:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:2}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00570201 00570201 00570201 00570201 00570201 00570201 00570204 00570204 
+00570201 00570201 00570201 00570201 00570201 00570201 00570201 00570201 
+00000000 00000000 00000000 001A00E4 % These followers of Bowser run the Puff Puff Machin ...
+
+#new:NpcSettings $NpcSettings_80243F3C_flo_18
+00000000 00220018 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 001A0000 
+
+#new:VectorList $VectorList_80243F68_flo_18
+% {Path3f:Path_80243F68}
+-55.000000 15.000000 35.000000
+-155.000000 35.000000 35.000000
+-255.000000 75.000000 35.000000
+-355.000000 155.000000 35.000000
+-455.000000 315.000000 35.000000
+
+#new:VectorList $VectorList_80243FA4_flo_18
+% {Path3f:Path_80243FA4}
+-20.000000 15.000000 30.000000
+-120.000000 35.000000 30.000000
+-220.000000 75.000000 30.000000
+-320.000000 155.000000 30.000000
+-420.000000 315.000000 30.000000
+
+#new:VectorList $VectorList_80243FE0_flo_18
+% {Path3f:Path_80243FE0}
+65.000000 15.000000 30.000000
+-35.000000 35.000000 30.000000
+-135.000000 75.000000 30.000000
+-235.000000 155.000000 30.000000
+-335.000000 315.000000 30.000000
+
+#new:VectorList $VectorList_8024401C_flo_18
+% {Path3f:Path_8024401C}
+120.000000 15.000000 30.000000
+20.000000 35.000000 30.000000
+-80.000000 75.000000 30.000000
+-180.000000 155.000000 30.000000
+-280.000000 315.000000 30.000000
+
+#new:Script $Script_80244270_flo_18
+    0:  Thread
+    8:  	Call     PlaySoundAtNpc ( 00000004 0000019E 00000000 )
+   20:  	Call     SetNpcFlagBits ( 00000004 00000100 .True )
+   38:  	Call     InterpNpcYaw 	( 00000004 0000010E 00000000 )
+   50:  	Call     LoadPath    	( 0000003C $VectorList_80243F68_flo_18 00000005 00000000 )
+   6C:  	Loop     
+   78:  		Call     GetNextPathPos ( )
+   84:  		Call     SetNpcPos   	( 00000004 *Var[1] *Var[2] *Var[3] )
+   A0:  		Wait     00000001 
+   AC:  		If  *Var[0]  !=  00000001 
+   BC:  			BreakLoop
+   C4:  		EndIf
+   CC:  	EndLoop
+   D4:  EndThread
+   DC:  Wait     0000000F 
+   E8:  Thread
+   F0:  	Call     PlaySoundAtNpc ( 00000000 0000019F 00000000 )
+  108:  	Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  120:  	Call     InterpNpcYaw 	( 00000000 0000010E 00000000 )
+  138:  	Call     LoadPath    	( 0000003C $VectorList_80243FA4_flo_18 00000005 00000000 )
+  154:  	Loop     
+  160:  		Call     GetNextPathPos ( )
+  16C:  		Call     SetNpcPos   	( 00000000 *Var[1] *Var[2] *Var[3] )
+  188:  		Wait     00000001 
+  194:  		If  *Var[0]  !=  00000001 
+  1A4:  			BreakLoop
+  1AC:  		EndIf
+  1B4:  	EndLoop
+  1BC:  EndThread
+  1C4:  Thread
+  1CC:  	Call     SetNpcFlagBits ( 00000001 00000100 .True )
+  1E4:  	Call     InterpNpcYaw 	( 00000001 0000010E 00000000 )
+  1FC:  	Call     LoadPath    	( 00000046 $VectorList_80243FE0_flo_18 00000005 00000000 )
+  218:  	Loop     
+  224:  		Call     GetNextPathPos ( )
+  230:  		Call     SetNpcPos   	( 00000001 *Var[1] *Var[2] *Var[3] )
+  24C:  		Wait     00000001 
+  258:  		If  *Var[0]  !=  00000001 
+  268:  			BreakLoop
+  270:  		EndIf
+  278:  	EndLoop
+  280:  EndThread
+  288:  Call     PlaySoundAtNpc ( 00000002 0000019F 00000000 )
+  2A0:  Call     SetNpcFlagBits ( 00000002 00000100 .True )
+  2B8:  Call     InterpNpcYaw 	( 00000002 0000010E 00000000 )
+  2D0:  Call     LoadPath    	( 00000050 $VectorList_8024401C_flo_18 00000005 00000000 )
+  2EC:  Loop     
+  2F8:  	Call     GetNextPathPos ( )
+  304:  	Call     SetNpcPos   	( 00000002 *Var[1] *Var[2] *Var[3] )
+  320:  	Wait     00000001 
+  32C:  	If  *Var[0]  !=  00000001 
+  33C:  		BreakLoop
+  344:  	EndIf
+  34C:  EndLoop
+  354:  Return
+  35C:  End
+
+#new:Script $Script_80244774_flo_18
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     DisablePartnerAI 	( 00000000 )
+   20:  Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+   3C:  Call     SetNpcPos   	( .Npc:Partner 00000041 *Var[1] 00000050 )
+   58:  Call     SetNpcYaw   	( .Npc:Partner 0000010E )
+   6C:  Call     UseSettings 	( .Default *Fixed[8.0] 00000000 000001C2 *Fixed[17.0] *Fixed[-6.0] )
+   90:  Call     SayMessage0 	( 00000004 00570209 00570201 00000000 001100BB ) % Ahhhh, retreat, boys!! He beat us, but good!
+   B0:  Wait     00000014 
+   BC:  Exec     $Script_80244270_flo_18 
+   C8:  Wait     00000050 
+   D4:  Call     UseSettings 	( .Default *Fixed[8.0] 00000000 0000012C *Fixed[19.0] *Fixed[-8.5] )
+   F8:  Call     GetCurrentPartner 	( *Var[0] )
+  108:  Call     BringPartnerOut 	( .Partner:Lakilester )
+  118:  If  *Var[0]  !=  00000008 
+  128:  	Call     SetNpcJumpscale 	( .Npc:Partner *Fixed[0.0] )
+  13C:  	Call     GetPlayerPos 	( *Var[1] *Var[2] *Var[3] )
+  154:  	Add  *Var[1]  00000014 
+  164:  	Add  *Var[2]  00000014 
+  174:  	Add  *Var[3]  00000014 
+  184:  	Call     NpcJump0    	( .Npc:Partner *Var[1] *Var[2] *Var[3] 0000001E )
+  1A4:  EndIf
+  1AC:  Call     NpcFacePlayer 	( .Npc:Partner 00000000 )
+  1C0:  Call     DisablePartnerAI 	( 00000000 )
+  1D0:  Call     SayMessage0 	( .Npc:Partner 00080009 00080001 00000005 001100C1 ) % Baah ha ha! Look at those chumps run away! All rig ...
+  1F0:  Call     EnablePartnerAI 	( )
+  1FC:  Wait     00000014 
+  208:  Call     PutPartnerAway ( )
+  214:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  228:  Set  *StoryProgress  00000034 
+  238:  Call     DisablePlayerInput 	( .False )
+  248:  Call     AwaitPlayerApproach 	( FFFFFF06 00000000 00000032 )
+  260:  Call     DisablePlayerInput 	( .True )
+  270:  Call     GetCurrentPartner 	( *Var[0] )
+  280:  Call     BringPartnerOut 	( .Partner:Lakilester )
+  290:  If  *Var[0]  !=  00000008 
+  2A0:  	Call     SetNpcJumpscale 	( .Npc:Partner *Fixed[0.0] )
+  2B4:  	Call     GetPlayerPos 	( *Var[1] *Var[2] *Var[3] )
+  2CC:  	Add  *Var[1]  00000014 
+  2DC:  	Add  *Var[2]  00000014 
+  2EC:  	Add  *Var[3]  00000014 
+  2FC:  	Call     NpcJump0    	( .Npc:Partner *Var[1] *Var[2] *Var[3] 0000001E )
+  31C:  EndIf
+  324:  Call     PlayerFaceNpc 	( .Npc:Partner 00000000 )
+  338:  Call     NpcFacePlayer 	( .Npc:Partner 00000000 )
+  34C:  Call     DisablePartnerAI 	( 00000000 )
+  35C:  Call     SayMessage0 	( .Npc:Partner 00080009 00080001 00000005 001100C2 ) % Hey, hold up, man. You're just going to walk away  ...
+  37C:  Call     EnablePartnerAI 	( )
+  388:  Call     PutPartnerAway ( )
+  394:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  3A8:  Call     DisablePlayerInput 	( .False )
+  3B8:  Return
+  3C0:  End
+
+#new:Script $Script_80244C84_flo_18
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     GetOwnerNpcID 	( *Var[0] )
+   38:  		If  *Var[0]  ==  00000003 
+   48:  			Call     SetNpcPos   	( 00000003 00000000 FFFFFC18 00000000 )
+   64:  			Call     SetNpcPos   	( 00000004 FFFFFFC9 0000000F 00000023 )
+   80:  			Call     GetNpcYaw   	( 00000003 *Var[0] )
+   94:  			Call     SetNpcYaw   	( 00000004 0000005A )
+   A8:  			Call     InterpPlayerYaw 	( 000000B4 00000000 )
+   BC:  			Call     SetPlayerPos 	( 0000001E 00000000 00000050 )
+   D4:  			Call     SetNpcYaw   	( 00000000 0000005A )
+   E8:  			Call     SetNpcPos   	( 00000000 FFFFFFEC 0000000F 0000001E )
+  104:  			Call     SetNpcYaw   	( 00000001 0000010E )
+  118:  			Call     SetNpcPos   	( 00000001 00000041 0000000F 0000001E )
+  134:  			Call     SetNpcYaw   	( 00000002 0000010E )
+  148:  			Call     SetNpcPos   	( 00000002 00000078 0000000F 0000001E )
+  164:  			Exec     $Script_80244774_flo_18 
+  170:  		EndIf
+  178:  	Case  ==  00000001 
+  184:  	Case  ==  00000002 
+  190:  EndSwitch
+  198:  Return
+  1A0:  End
+
+#new:Script $Script_Init_80245B30_flo_18
+    0:  If  *StoryProgress  <  00000034 
+   10:  	Call     BindNpcDefeat 	( .Npc:Self $Script_80244C84_flo_18 )
+   24:  Else
+   2C:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   48:  EndIf
+   50:  Return
+   58:  End
+

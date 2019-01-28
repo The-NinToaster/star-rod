@@ -1,0 +1,156 @@
+% automatically dumped from map jan_16
+
+#new:Npc $jan_16_802420B0
+00000000 $NpcSettings_8024127C_jan_16 00000000 00000000 00000000 
+00401505 $Script_Init_80241FBC_jan_16 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 
+00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 
+00000000 00000000 00000000 001A00D0 % He's Raphael the Raven, the guardian of this jungl ...
+
+#new:Script $Script_80241250_jan_16
+    0:  Call     SetNpcScale 	( .Npc:Self *Fixed[1.5] *Fixed[1.5] *Fixed[1.5] )
+   1C:  Return
+   24:  End
+
+#new:NpcSettings $NpcSettings_8024127C_jan_16
+00000000 00620050 $Script_80241250_jan_16 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802416C4_jan_16
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     ModifyColliderFlags 	( 00000000 {Collider:o130} 7FFFFE00 )
+   28:  Call     SetNpcFlagBits ( .Npc:Self 00000140 .True )
+   40:  Call     SetNpcAnimation 	( .Npc:Self 00C40002 )
+   54:  Call     NpcFacePlayer 	( .Npc:Self 00000004 )
+   68:  Wait     00000005 
+   74:  Call     PlayerFaceNpc 	( .Npc:Self 00000000 )
+   88:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   A4:  Call     802CC3EC ( 00000000 *Fixed[4.5] *Var[0] *Var[1] *Var[2] 000001C2 *Fixed[20.0] *Fixed[-9.5] )
+   D0:  Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+   E8:  Wait     0000000A 
+   F4:  Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  108:  Wait     00000014 
+  114:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  130:  Thread
+  138:  	Call     SetNpcAnimation 	( .Npc:Self 00C4000C )
+  14C:  	Wait     00000008 
+  158:  	Call     SetNpcAnimation 	( .Npc:Self 00C4000D )
+  16C:  	Wait     0000000F 
+  178:  	Call     SetNpcAnimation 	( .Npc:Self 00C40008 )
+  18C:  	Wait     0000000A 
+  198:  	Call     SayMessage0 	( .Npc:Self 00C40008 00C40008 00000005 001000E1 ) % Heave-HOOOOOOO!! 
+  1B8:  	Call     SetNpcAnimation 	( .Npc:Self 00C40003 )
+  1CC:  	Wait     0000000A 
+  1D8:  	Call     SetNpcAnimation 	( .Npc:Self 00C40002 )
+  1EC:  EndThread
+  1F4:  Call     SetNpcJumpscale 	( .Npc:Self 00000002 )
+  208:  Call     NpcJump1    	( .Npc:Self *Var[0] *Var[1] *Var[2] 0000001E )
+  228:  Call     PlaySoundAtNpc ( .Npc:Self 0000018A 00000000 )
+  240:  Thread
+  248:  	Call     ShakeCam    	( .Default 00000000 00000032 *Fixed[1.0] )
+  264:  	Call     SetPlayerAnimation 	( 00010002 )
+  274:  EndThread
+  27C:  Call     SetPlayerAnimation 	( 0001002B )
+  28C:  Thread
+  294:  	Wait     00000014 
+  2A0:  	Loop     0000000A 
+  2AC:  		Call     PlayEffect  	( {FX:Steam:SmallOutward} 00000073 00000000 00000163 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  2F0:  		Call     PlayEffect  	( {FX:Steam:SmallOutward} 000000CD 00000000 000001DB 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  334:  		Wait     00000002 
+  340:  		Call     PlayEffect  	( {FX:Steam:SmallOutward} 000000BE 00000000 000001BD 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  384:  		Wait     00000002 
+  390:  		Call     PlayEffect  	( {FX:Steam:SmallOutward} 0000008C 00000000 0000017C 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  3D4:  		Call     PlayEffect  	( {FX:Steam:SmallOutward} 000000AA 00000000 00000190 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  418:  		Wait     00000002 
+  424:  	EndLoop
+  42C:  EndThread
+  434:  Loop     0000000F 
+  440:  	Call     ScaleGroup  	( {Model:g40} 00000001 *Fixed[1.0507812] 00000001 )
+  45C:  	Wait     00000002 
+  468:  	Call     ScaleGroup  	( {Model:g40} 00000001 *Fixed[0.9501953] 00000001 )
+  484:  	Wait     00000002 
+  490:  EndLoop
+  498:  Thread
+  4A0:  	Wait     0000000F 
+  4AC:  	Call     MakeLerp    	( 00000000 00000064 00000064 00000001 )
+  4C8:  	Loop     
+  4D4:  		Call     UpdateLerp  	( )
+  4E0:  		Call     TranslateGroup ( {Model:g40} 00000000 *Var[0] 00000000 )
+  4FC:  		Wait     00000001 
+  508:  		If  *Var[1]  ==  00000000 
+  518:  			BreakLoop
+  520:  		EndIf
+  528:  	EndLoop
+  530:  EndThread
+  538:  Thread
+  540:  	Set  *Var[0]  00000001 
+  550:  	Loop     00000006 
+  55C:  		Switch  *Var[0] 
+  568:  			Case  00000001  to  00000004 
+  578:  				Call     PlaySoundAtCollider 	( {Collider:o97} 0000018C 00000000 )
+  590:  			Case  ==  00000005 
+  59C:  				Call     PlaySoundAtCollider 	( {Collider:o97} 0000018D 00000000 )
+  5B4:  			Case  ==  00000006 
+  5C0:  				Call     PlaySoundAtCollider 	( {Collider:o97} 0000018E 00000000 )
+  5D8:  		EndSwitch
+  5E0:  		Add  *Var[0]  00000001 
+  5F0:  		Wait     00000014 
+  5FC:  	EndLoop
+  604:  EndThread
+  60C:  SetF  *Var[2]  *Fixed[1.0] 
+  61C:  SetF  *Var[3]  *Fixed[0.25] 
+  62C:  Loop     00000005 
+  638:  	Loop     0000000A 
+  644:  		AddF  *Var[2]  *Var[3] 
+  654:  		Call     ScaleGroup  	( {Model:g40} 00000001 *Var[2] 00000001 )
+  670:  		Wait     00000001 
+  67C:  	EndLoop
+  684:  	Call     PlayEffect  	( {FX:Steam:SmallOutward} 0000007B 00000000 00000160 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  6C8:  	Call     PlayEffect  	( {FX:Steam:SmallOutward} 000000C1 00000000 000001C2 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  70C:  	Loop     0000000A 
+  718:  		SubF  *Var[2]  *Var[3] 
+  728:  		Call     ScaleGroup  	( {Model:g40} 00000001 *Var[2] 00000001 )
+  744:  		Wait     00000001 
+  750:  	EndLoop
+  758:  	Call     PlayEffect  	( {FX:Steam:SmallOutward} 00000073 00000000 00000163 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  79C:  	Call     PlayEffect  	( {FX:Steam:SmallOutward} 000000CD 00000000 000001DB 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  7E0:  	SubF  *Var[3]  *Fixed[0.05078125] 
+  7F0:  EndLoop
+  7F8:  Call     ModifyColliderFlags 	( 00000000 {Collider:o97} 7FFFFE00 )
+  810:  Wait     0000000A 
+  81C:  Call     SayMessage0 	( .Npc:Self 00C40009 00C40002 00000000 001000E2 ) % Come on, then.
+  83C:  Call     SetNpcAnimation 	( .Npc:Self 00C40004 )
+  850:  Call     SetNpcSpeed 	( 00000000 *Fixed[4.0] )
+  864:  Call     MoveNpcTo   	( .Npc:Self 00000154 0000010E 00000000 )
+  880:  Call     SetNpcFlagBits ( .Npc:Self 00000200 .False )
+  898:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  8B4:  Call     ResetCam    	( .Default 00000005 )
+  8C8:  Set  *StoryProgress  00000016 
+  8D8:  Call     DisablePlayerInput 	( .False )
+  8E8:  Return
+  8F0:  End
+
+#new:Script $Script_Init_80241FBC_jan_16
+    0:  If  *StoryProgress  ==  00000015 
+   10:  	Call     SetNpcFlagBits ( .Npc:Self 00000100 .False )
+   28:  	Call     SetNpcPos   	( .Npc:Self 00000055 00000000 0000019A )
+   44:  	Call     BindNpcInteract 	( .Npc:Self $Script_802416C4_jan_16 )
+   58:  	Return
+   60:  Else
+   68:  	Call     ModifyColliderFlags 	( 00000000 {Collider:o130} 7FFFFE00 )
+   80:  	If  *StoryProgress  >=  00000016 
+   90:  		Call     ModifyColliderFlags 	( 00000000 {Collider:o97} 7FFFFE00 )
+   A8:  		Call     TranslateGroup ( {Model:g40} 00000000 00000064 00000000 )
+   C4:  	EndIf
+   CC:  EndIf
+   D4:  Call     RemoveNpc   	( .Npc:Self )
+   E4:  Return
+   EC:  End
+

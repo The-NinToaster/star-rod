@@ -1,0 +1,87 @@
+% Script File: jan_19.mscr
+% Decoded from: 0 to 320 (jan_19)
+
+#new:Function $Function_80240000
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  JAL       8011BB50
+    C:  NOP
+   10:  LW        RA, 10 (SP)
+   14:  ADDIU     V0, R0, 2
+   18:  JR        RA
+   1C:  ADDIU     SP, SP, 18
+
+#new:EntryList $EntryList
+{Vec4f:Entry0} % -220.0    0.0   10.0   90.0
+{Vec4f:Entry1} %  190.0  450.0  110.0  270.0
+
+#new:Header $Header
+00000000 00000000 00000000 00000000 
+$Script_Main $EntryList 00000002 00000000 
+00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00190101 
+
+#new:Script $Script_80240080
+    0:  Call     802D60E8 ( 000000FA )
+   10:  Return
+   18:  End
+
+#new:Script $Script_802400A0
+    0:  SetGroup 0000001B 
+    C:  Call     UseExitHeading ( 0000003C 00000000 )
+   20:  Exec     ExitWalk 
+   2C:  Call     GotoMap     	( $ASCII_80240310 00000001 )
+   40:  Wait     00000064 
+   4C:  Return
+   54:  End
+
+#new:Script $Script_802400FC
+    0:  SetGroup 0000001B 
+    C:  Call     UseExitHeading ( 0000003C 00000001 )
+   20:  Exec     ExitWalk 
+   2C:  Call     GotoMap     	( $ASCII_80240318 00000000 )
+   40:  Wait     00000064 
+   4C:  Return
+   54:  End
+
+#new:Script $Script_80240158
+    0:  Bind     $Script_802400A0 .Trigger:FloorAbove {Collider:deiliw} 00000001 00000000 
+   1C:  Bind     $Script_802400FC .Trigger:FloorAbove {Collider:deilie} 00000001 00000000 
+   38:  Return
+   40:  End
+
+#new:Script_Main $Script_Main
+    0:  Set  *WorldMapLocation  00000024 
+   10:  Call     SetSpriteShading 	( 00060001 )
+   20:  Call     SetCamFlag4 	( .Default .False )
+   34:  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+   54:  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+   70:  Call     SetCamFlag2 	( .Default .True )
+   84:  ExecWait $Script_802402B0 
+   90:  Call     $Function_80240000 ( )
+   9C:  Call     ModifyColliderFlags 	( 00000000 {Collider:deilitw} 7FFFFE00 )
+   B4:  Call     ModifyColliderFlags 	( 00000000 {Collider:deilite} 7FFFFE00 )
+   CC:  Set  *Var[0]  $Script_80240158 
+   DC:  Exec     EnterWalk 
+   E8:  ExecWait $Script_80240080 
+   F4:  Return
+   FC:  End
+
+PADDING: 802402A4 to 802402B0 (000002A4 to 000002B0)
+00000000 00000000 00000000 
+
+#new:Script $Script_802402B0
+    0:  Call     MakeEntity  	( .Entity:PinkFlower {Vec4d:Entity802402B0} 80000000 )
+   24:  Call     MakeEntity  	( .Entity:PinkFlower {Vec4d:Entity802402D4} 80000000 )
+   48:  Return
+   50:  End
+
+PADDING: 80240308 to 80240310 (00000308 to 00000310)
+00000000 00000000 
+
+#new:ASCII $ASCII_80240310
+jan_18
+
+#new:ASCII $ASCII_80240318
+jan_23
+

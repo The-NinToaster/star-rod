@@ -1,0 +1,2756 @@
+14-000
+[STYLE:RIGHT]Mighty King Bowser...[BR]
+[PAUSE:0A]I've been looking for you.[BR]
+[WAIT][NEXT]
+A report, Your Evilness:[BR]
+[PAUSE:0A]Mario defeated the Goomba King.[BR]
+[WAIT][NEXT]
+He's heading for Toad Town now.[WAIT][END]
+
+14-001
+[STYLE:RIGHT]{SpeechSound:01}What? Unbelievable![BR]
+[PAUSE:0A]What was Goomba King thinking?[BR]
+[WAIT][NEXT]
+I used the Star Rod to make him[BR]
+a king because he begged me...[BR]
+[WAIT][NEXT]
+And Mario whips him so easily?[BR]
+[PAUSE:0A]What a wimp!![BR]
+[WAIT][NEXT]
+Uh...Kammy Koopa![BR]
+[PAUSE:0A]You ARE sure that Mario can[BR]
+never defeat us, right?[WAIT][END]
+
+14-002
+[STYLE:RIGHT]Please, please, Your Vileness![BR]
+Try to be calm.[BR]
+[PAUSE:0A]Goomba King is small-time.[BR]
+[PAUSE:0A]I had a feeling he'd fail.[BR]
+[WAIT][NEXT]
+It doesn't matter, because[BR]
+while you hold the Star Rod[BR]
+you are definitely invincible.[BR]
+[WAIT][NEXT]
+You could beat Mario with one[BR]
+claw tied behind your back.[WAIT][END]
+
+14-003
+[STYLE:RIGHT]{SpeechSound:01}Yes, yes. Very good![BR]
+[PAUSE:0A]{StartFX:Shrinking}Gwaaa ha ha ha ha!![BR]
+{EndFX:Shrinking}[WAIT][END]
+
+14-004
+[STYLE:RIGHT]{SpeechSound:01}By the way, Kammy Koopa,[BR]
+[PAUSE:0A]those Star Spirits we captured[BR]
+don't have any way of giving[BR]
+Mario their power, do they?[WAIT][END]
+
+14-005
+[STYLE:RIGHT]Please, don't worry yourself.[BR]
+[PAUSE:0A]Each is held separately.[BR]
+[WAIT][NEXT]
+And each is carefully guarded by[BR]
+your handpicked subjects.[BR]
+[WAIT][NEXT]
+Even Mario can't save all seven[BR]
+of the Star Spirits.[WAIT][END]
+
+14-006
+[STYLE:RIGHT]{SpeechSound:01}Hmmm...[BR]
+[WAIT][NEXT]
+Who's the closest Star Spirit to[BR]
+Mario? It's that one at[BR]
+{Color:20}Koopa Bros. Fortress{Color:0A}, right?[BR]
+[WAIT][NEXT]
+If Mario somehow reaches there,[BR]
+can the Koopa Bros. defeat him?[WAIT][END]
+
+14-007
+[STYLE:RIGHT]King Bowser, you mustn't worry...[WAIT][END]
+
+14-008
+[STYLE:RIGHT]{Down:06}{Size:20:20}{StartFX:Shrinking}Hi-yaa!![BR]
+[PAUSE:1E][END]
+
+14-009
+[STYLE:RIGHT]{StartFX:Shrinking}Here come the Koopa Bros.!![BR]
+[WAIT][NEXT]
+[PAUSE:0A]Uh-huh! Oh yeah! We're the[BR]
+coolest of cool![WAIT][END]
+
+14-00A
+[STYLE:RIGHT]{SpeechSound:01}.[PAUSE:05].[PAUSE:05].[PAUSE:0A][NEXT]
+Pssst! Kammy Koopa.[BR]
+[PAUSE:05]Are you sure these guys can get[BR]
+the job done?[BR]
+[WAIT][NEXT]
+That Goomba King was gigantic,[BR]
+and even he couldn't beat Mario.[WAIT][END]
+
+14-00B
+[STYLE:RIGHT]Pssshaw! Get real, [PAUSE:05]King Bowser![BR]
+[WAIT][NEXT]
+Yeah, the Goomba King was huge,[BR]
+but he was a total wimpola![BR]
+We're nothing like him![BR]
+[WAIT][NEXT]
+See, what we've got going on is[BR]
+the power of teamwork...[BR]
+[WAIT][NEXT]
+Together, we can put the hurt[BR]
+on Mario in seconds flat![WAIT][END]
+
+14-00C
+[STYLE:RIGHT]Excellent![BR]
+[PAUSE:05]That's the spirit! Sell it,[BR]
+Koopa Bros.!![BR]
+[WAIT][NEXT]
+Show our king that special[BR]
+attack you do so well![WAIT][END]
+
+14-00D
+[STYLE:RIGHT]Yes, ma'am![WAIT][END]
+
+14-00E
+[STYLE:RIGHT]Ready, everybody![WAIT][END]
+
+14-00F
+[STYLE:RIGHT]{SpeechSound:01}{Down:08}{Size:20:20}{StartFX:Shrinking}{StartFX:Jitter}Ooh...OOOH![BR]
+[PAUSE:0A]{SizeReset}[BR]
+{Up:0C}[WAIT]{Scroll:03}That... This is... Ohhhhh!!!![WAIT][END]
+
+14-010
+[STYLE:RIGHT]How'd you like it?[BR]
+[PAUSE:0A]King Bowser? How was it?[WAIT][END]
+
+14-011
+[STYLE:RIGHT]{SpeechSound:01}Oh, yeah! [PAUSE:0A]Excellent!! Really!![BR]
+[PAUSE:0A]I'm not easily impressed, either![BR]
+[WAIT][NEXT]
+Mario won't have a chance if you[BR]
+finish him with that attack![WAIT][END]
+
+14-012
+[STYLE:RIGHT]We'll take him, King Bowser![WAIT][END]
+
+14-013
+[STYLE:RIGHT]{SpeechSound:01}By the way, my Koopa Bros....[BR]
+[PAUSE:0A][WAIT][NEXT]
+About the captured Star Spirit[BR]
+I've locked up in your fortress...[BR]
+[PAUSE:0A]Who's guarding him right now?[WAIT][END]
+
+14-014
+[STYLE:RIGHT]...Uh...nobody, sir...[BR]
+[PAUSE:0A]You know, we're here and so...[WAIT][END]
+
+14-015
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}You idiots!! Use your heads![BR]
+[PAUSE:0A]Get back to the fortress and[BR]
+guard that Star Spirit![WAIT][END]
+
+14-016
+[STYLE:RIGHT]Sniffle...[WAIT][END]
+
+14-017
+[STYLE:RIGHT]Mario's probably hurt...[WAIT][END]
+
+14-018
+[STYLE:RIGHT]Everyone's in prison...[WAIT][END]
+
+14-019
+[STYLE:RIGHT]The Mushroom Kingdom will be[BR]
+destroyed if things continue the[BR]
+way they're going.[BR]
+[WAIT][NEXT]
+[PAUSE:0F]Something must be done[PAUSE:01].[PAUSE:02].[PAUSE:03].[BR]
+[PAUSE:0A][WAIT][NEXT]
+If only somebody could help me...[WAIT][END]
+
+14-01A
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}Gwaa ha ha ha ha!![BR]
+{Func_04}[PAUSE:0A]{EndFX:Shrinking}My dear Princess Peach,[BR]
+[PAUSE:05]how are you doing this fine day?[WAIT][END]
+
+14-01B
+[STYLE:RIGHT]It's no use waiting for Mario this[BR]
+time, my dear![BR]
+[WAIT][NEXT]
+We're soooooo high above the sky[BR]
+right now.[BR]
+[PAUSE:0A]Even Mario doesn't have a[BR]
+chance of reaching us up here![WAIT][END]
+
+14-01C
+[STYLE:CENTER]{SpeechSound:01}You know, Princess, as long as I[BR]
+have this Star Rod, no one in the[BR]
+Mushroom Kingdom can touch me.[BR]
+[WAIT]{Func_04}[NEXT]
+You know the power that grants[BR]
+everyone's wishes? It's mine![BR]
+[PAUSE:0A]Isn't that just wonderful?[WAIT][END]
+
+14-01D
+[STYLE:RIGHT]Nyeah hee hee hee![BR]
+[WAIT][NEXT]
+Imagine what it's like down in[BR]
+your kingdom! Your subjects[BR]
+must be so upset because their[BR]
+wishes aren't being granted![BR]
+[WAIT][NEXT]
+Oh, how delightful![BR]
+[PAUSE:0A]They deserve it for the way[BR]
+they've treated us Koopas over[BR]
+the years![WAIT][END]
+
+14-01E
+[STYLE:RIGHT]{SpeechSound:01}If you, you know, want anything,[BR]
+all you need to do is ask me,[BR]
+Princess. I can grant wishes.[BR]
+[WAIT][NEXT]
+Of course, I'll only grant[BR]
+requests that I like...[BR]
+[PAUSE:0A]Anyway, think about it.[BR]
+[WAIT][NEXT]
+You take care, Princess Peach![BR]
+[PAUSE:0A]Enjoy your stay here![WAIT][END]
+
+14-01F
+[STYLE:RIGHT]You watch yourself, Princess.[BR]
+[PAUSE:0A]You'd better not cause trouble.[BR]
+[WAIT][NEXT]
+Bleah heh heh ho ha ha...[WAIT][END]
+
+14-020
+[STYLE:RIGHT]Oh... Please...[BR]
+[PAUSE:0A]If only somebody could help me...[WAIT][END]
+
+14-021
+[STYLE:RIGHT]Huh?[WAIT][END]
+
+14-022
+[STYLE:RIGHT]{SpeechSound:02}Hello, Princess Peach![BR]
+[PAUSE:05]Pleased to meet you![BR]
+[WAIT][NEXT]
+My name is Twink.[WAIT][END]
+
+14-023
+[STYLE:RIGHT]But you're...[BR]
+[PAUSE:05]You're a Star Kid, aren't you?[BR]
+[PAUSE:05]How'd you get here?[WAIT][END]
+
+14-024
+[STYLE:RIGHT]{SpeechSound:02}I came from Star Haven to[BR]
+grant your wish![BR]
+[WAIT][NEXT]
+It's our job to grant wishes, you[BR]
+know.[WAIT][END]
+
+14-025
+[STYLE:RIGHT]Oh! You came because I wished[BR]
+that somebody could help me?[WAIT][END]
+
+14-026
+[STYLE:RIGHT]{SpeechSound:02}Yes, of course![WAIT][END]
+
+14-027
+[STYLE:RIGHT]Oh, that's just great![BR]
+[PAUSE:0A]Thank you so much for coming![BR]
+[WAIT][NEXT]
+Here's my wish: Go right now and[BR]
+take that Star Rod back from[BR]
+Bowser, OK?[BR]
+[WAIT][NEXT]
+Think you can do it?[WAIT][END]
+
+14-028
+[STYLE:RIGHT]{SpeechSound:02}......[BR]
+[PAUSE:14][WAIT][NEXT]
+Uh...sorry...[BR]
+[PAUSE:05]That's a little much for a novice[BR]
+Star like me...[BR]
+[WAIT][NEXT]
+Maybe one of the honorable Star[BR]
+Spirits from Star Haven could[BR]
+grant a wish like that.[BR]
+[WAIT][NEXT]
+I'm so sorry.[BR]
+[PAUSE:0A]Please, ask for something easy,[BR]
+something a small Star can do.[WAIT][END]
+
+14-029
+[STYLE:RIGHT]Then... [PAUSE:03]Can you take me away[BR]
+from here?[BR]
+[WAIT][NEXT]
+Everyone in my castle has been[BR]
+captured and I have to save[BR]
+them all as soon as possible.[WAIT][END]
+
+14-02A
+[STYLE:RIGHT]{SpeechSound:02}...Oh...I'm sorry.[BR]
+[PAUSE:14]I can't grant that wish either,[BR]
+I'm afraid.[BR]
+[WAIT][NEXT]
+Actually, I just got called up to[BR]
+the sky a day ago, so I can't do[BR]
+big wishes yet...[BR]
+[WAIT][NEXT]
+If I were a more splendid Star,[BR]
+maybe I could actually help...[WAIT][END]
+
+14-02B
+[STYLE:RIGHT]It's all right...[BR]
+[PAUSE:0A]Don't be sad, Twink.[BR]
+[WAIT][NEXT]
+Mario will definitely do something[BR]
+to save us all.[BR]
+[PAUSE:14]He's probably coming right now![WAIT][END]
+
+14-02C
+[STYLE:RIGHT]Oh! Twink![BR]
+[PAUSE:14]Do you think you can find Mario?[BR]
+{Func_04}[WAIT][NEXT]
+I want you to give this to him.[WAIT][END]
+
+14-02D
+[STYLE:RIGHT]{SpeechSound:02}This is a {Color:20}Lucky Star{Color:0A}, isn't it?[BR]
+[WAIT][NEXT]
+OK! I'll do it! Princess Peach,[BR]
+[PAUSE:0A]I'll fly to the Mushroom Kingdom[BR]
+just as quick as I can![WAIT][END]
+
+14-02E
+[STYLE:RIGHT]Oh! Wait, Twink![BR]
+[PAUSE:0A]Wait one second! Can you also...[WAIT][END]
+
+14-02F
+[STYLE:RIGHT]Please tell Mario that...[WAIT][END]
+
+14-030
+[STYLE:RIGHT]I'm fine and he shouldn't worry...[BR]
+[PAUSE:0A]...OK? Can you tell him that?[WAIT][END]
+
+14-031
+[STYLE:RIGHT]{SpeechSound:02}Of course![BR]
+[PAUSE:0F]I'll tell him your exact words,[BR]
+Princess Peach! Definitely![BR]
+[WAIT][NEXT]
+Now, don't despair...[BR]
+[PAUSE:0A]I'll be back soon, so stay safe[BR]
+until I return, OK?[WAIT][END]
+
+14-032
+[STYLE:RIGHT]Mario... Where are you...[WAIT][END]
+
+14-033
+[STYLE:RIGHT]I wonder what Mario is doing[BR]
+right now...[BR]
+[WAIT][NEXT]
+I wonder if he's hurt...[BR]
+[PAUSE:14]I'm so worried about him![WAIT][END]
+
+14-034
+[STYLE:RIGHT]{SpeechSound:02}He'll be all right, Princess.[BR]
+[WAIT][NEXT]
+Why, I bet he's saving some Star[BR]
+Spirits right now![WAIT][END]
+
+14-035
+[STYLE:RIGHT]Yes... You're right, Twink.[BR]
+[WAIT][NEXT]
+I must be strong.[BR]
+[WAIT][NEXT]
+I need to concentrate on finding[BR]
+a way out of here.[WAIT][END]
+
+14-036
+[STYLE:RIGHT]{SpeechSound:02}But there are tons of guards[BR]
+just beyond your door...[BR]
+[WAIT][NEXT]
+And it's impossible for you to[BR]
+escape through the window...[WAIT][END]
+
+14-037
+[STYLE:RIGHT]Oh! Wait a minute![BR]
+[WAIT][NEXT]
+I remember the Minister telling[BR]
+me that there was a secret[BR]
+passage out of this room![BR]
+[WAIT][NEXT]
+Twink![BR]
+[PAUSE:0A]Help me look for it![WAIT][END]
+
+14-038
+[STYLE:RIGHT]{SpeechSound:02}Cool! Great idea![WAIT][END]
+
+14-039
+[STYLE:RIGHT]The fireplace... Quite nice...[BR]
+[PAUSE:05]So big...and so warm...[WAIT][END]
+
+14-03A
+[STYLE:RIGHT]Hmmm... A warm fireplace?[BR]
+[PAUSE:0F]Don't you find that suspicious?[WAIT][END]
+
+14-03B
+[STYLE:RIGHT]Do you really think so, Twink?[WAIT][END]
+
+14-03C
+[STYLE:RIGHT]So many dresses...and yet they[BR]
+all look exactly the same![WAIT][END]
+
+14-03D
+[STYLE:RIGHT]They're not the same![BR]
+[PAUSE:05]The designs are all slightly[BR]
+different and very fashionable![WAIT][END]
+
+14-03E
+[STYLE:RIGHT]Oh! [PAUSE:05]A photo of Mario![WAIT][END]
+
+14-03F
+[STYLE:RIGHT]Don't look at that![WAIT][END]
+
+14-040
+[STYLE:RIGHT]This is no time to sleep.[WAIT][END]
+
+14-041
+[STYLE:RIGHT]Yes, let's keep looking![WAIT][END]
+
+14-042
+[STYLE:RIGHT]Beautiful flowers, aren't they?[BR]
+[PAUSE:0A]They smell so good...[HEART][WAIT][END]
+
+14-043
+[STYLE:RIGHT]Sure. I guess.[WAIT][END]
+
+14-044
+[STYLE:RIGHT]Oh... Eeew![BR]
+[PAUSE:0A]I look frightful![WAIT][END]
+
+14-045
+[STYLE:RIGHT]It's not real, Princess...[BR]
+[PAUSE:0F][WAIT][NEXT]
+but... I must say...[BR]
+[PAUSE:0A]That's not a good look for you.[WAIT][END]
+
+14-046
+[STYLE:RIGHT]{SpeechSound:02}Oh! Look![BR]
+[PAUSE:0A]There's something behind this[BR]
+drawing![WAIT][END]
+
+14-047
+[STYLE:RIGHT]{SpeechSound:02}Yes!! Cool!![BR]
+[PAUSE:0A]Now we can get out of this room![WAIT][END]
+
+14-048
+{InputOff}[STYLE:RIGHT]{StartFX:Shrinking}[BR]
+{Down:08}{Indent:50}Ohhhh!!![BR]
+{EndFX:Shrinking}[PAUSE:1E][END]
+
+14-049
+[STYLE:RIGHT]{SpeechSound:02}Where are we... ?[WAIT][END]
+
+14-04A
+[STYLE:RIGHT]{SpeechSound:02}Looks like it's locked.[BR]
+[WAIT][NEXT]
+Oh no[PAUSE:03].[PAUSE:03].[PAUSE:03].[BR]
+[PAUSE:03]We can't get out![WAIT][END]
+
+14-04B
+[STYLE:RIGHT]{SpeechSound:02}Hey! Look at this![BR]
+[WAIT][NEXT]
+It looks like somebody left a[BR]
+private diary just lying around.[BR]
+[PAUSE:0F]Should we read it?[BR]
+{Func_04}[END]
+
+14-04C
+[NEXT]
+{SpeechSound:02}Ohhh... You like doing this sort of[BR]
+thing, do you? Tsk tsk![BR]
+[WAIT][NEXT]
+OK, then...very quietly...[WAIT][END]
+
+14-04D
+[STYLE:RIGHT]{SpeechSound:02}Let's see...[BR]
+[WAIT][NEXT]
+{Color:00}Day: [CIRCLE]/[CIRCLE]  Month: [STAR] [BR]
+Sunny[BR]
+[WAIT][NEXT]
+Today I went to Star Haven and[BR]
+stole the Star Rod.[BR]
+[PAUSE:0A]Now I'm invincible! Cool![BR]
+[WAIT][NEXT]
+I also captured those seven[BR]
+Star Spirits, so they won't[BR]
+annoy me anymore.[BR]
+[WAIT][NEXT]
+It was a hard day's work and[BR]
+I'm feeling pretty bushed.[BR]
+[PAUSE:0A]Dinner was nice but a bit bland.[BR]
+[PAUSE:0A][WAIT][NEXT]
+{Color:0A}........[BR]
+[WAIT][NEXT]
+I feel like I might know the[BR]
+person who wrote this...[BR]
+[PAUSE:0A]Should we read more?[BR]
+{Func_04}[END]
+
+14-04E
+[NEXT]
+{SpeechSound:02}OK, let's continue.[BR]
+[WAIT][NEXT]
+{Color:00}Day: [CIRCLE]/[CROSS]  Month: [STAR][BR]
+Cloudy then sunny[BR]
+[WAIT][NEXT]
+Today was great, diary! I used[BR]
+my castle to lift Princess[BR]
+Peach's Castle way up into the[BR]
+sky! [BR]
+[WAIT][NEXT]
+Then I barged into Peach's[BR]
+Castle and beat up Mario! Yeah![BR]
+[PAUSE:0A]Unbelievable, I know! So fun![BR]
+[WAIT][NEXT]
+And there's more! After that, I[BR]
+kidnapped Princess Peach![BR]
+[PAUSE:0A]I couldn't be happier, diary![BR]
+[PAUSE:05]I hope she likes me...[BR]
+[PAUSE:0A][WAIT][NEXT]
+{StartFX:Shrinking}{Color:0A}...!!![WAIT][END]
+
+14-04F
+[STYLE:RIGHT]{SpeechSound:02}Princess Peach! This is Bowser's[BR]
+diary! Ugh![BR]
+[WAIT][NEXT]
+What'll we do?[BR]
+[PAUSE:0A]Should we read more?[BR]
+{Func_04}[END]
+
+14-050
+[NEXT]
+{SpeechSound:02}What? Really?[BR]
+[PAUSE:0A]You're stopping now?[BR]
+[WAIT][NEXT]
+There might be a hint that can[BR]
+help Mario in here![BR]
+{Func_04}[END]
+
+14-051
+[NEXT]
+{SpeechSound:02}{Color:00}Day: [CROSS]/[CROSS]  Month: [STAR][BR]
+Sunny[BR]
+[WAIT][NEXT]
+Well, the Koopa Bros. got beaten[BR]
+by Mario, diary.[BR]
+[PAUSE:0A]He even set free that stupid[BR]
+Star Spirit I kept there.[BR]
+[WAIT][NEXT]
+I'm so mad I can barely write![BR]
+[PAUSE:0A]"Ohh, I'm Mario, I'm so big and[BR]
+strong and good and helpful..."[BR]
+[WAIT][NEXT]
+I hate him! But I'm not worried.[BR]
+[WAIT][NEXT]
+There's no way Mario can save[BR]
+the Star Spirit being held[BR]
+in {Color:07}Dry Dry Ruins{Color:00}.[BR]
+[WAIT][NEXT]
+To do that, he'd have to solve[BR]
+the mystery of the sands and[BR]
+then find Dry Dry Ruins in [BR]
+{Color:07}Dry Dry Desert{Color:00}.[BR]
+[WAIT][NEXT]
+How would he even know to go to[BR]
+the desert, anyway?[BR]
+[WAIT][NEXT]
+So I'm not worried at all.[BR]
+[PAUSE:0A]In fact, I'm so calm I'm gonna go[BR]
+to bed now.[BR]
+[PAUSE:0A][WAIT][END]
+
+14-052
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Shrinking}!!!!![BR]
+{EndFX:Shrinking}[PAUSE:0A][WAIT][NEXT]
+Dry Dry Ruins in the middle of[BR]
+Dry Dry Desert![BR]
+[PAUSE:0A]One of the revered Star Spirits[BR]
+is being held there![WAIT][END]
+
+14-053
+[STYLE:RIGHT]Twink, do you think you can[BR]
+find Mario and tell him that?[WAIT][END]
+
+14-054
+[STYLE:RIGHT]{SpeechSound:02}Yes, of course, Princess Peach![BR]
+[PAUSE:0A]I'll find Mario right away...[BR]
+[WAIT][NEXT]
+???[WAIT][END]
+
+14-055
+[STYLE:RIGHT]{SpeechSound:01}Oh no! I can't believe I left my[BR]
+secret diary lying out![BR]
+[WAIT][NEXT]
+It would be so embarrassing if[BR]
+somebody read that thing...[WAIT][END]
+
+14-056
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}Whuh... Wha... Whaaaat?[BR]
+[PAUSE:05]What's the princess doing here?[WAIT][END]
+
+14-057
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}AAhhhh!! You little sneak![BR]
+[PAUSE:0A]{EndFX:Shrinking}You read my diary![WAIT][END]
+
+14-058
+[STYLE:RIGHT]King Bowser![BR]
+[PAUSE:05]Is there a problem?[WAIT][END]
+
+14-059
+[STYLE:RIGHT]{SpeechSound:01}You're the worst guards ever![BR]
+[PAUSE:0A]Take Princess Peach back to her[BR]
+room! Immediately!![WAIT][END]
+
+14-05A
+[STYLE:RIGHT]Yes, sir! Straight away! Forgive[BR]
+us, sir![WAIT][END]
+
+14-05B
+[STYLE:RIGHT]{StartFX:Wavy}Noooooo! Put me dooown![WAIT][END]
+
+14-05C
+[STYLE:RIGHT]{SpeechSound:01}Gwaa ha ha ha...hello.[BR]
+{Func_04}[PAUSE:0A]How're you feeling, Princess?[BR]
+[WAIT][NEXT]
+Nothing makes me happier than a[BR]
+smile from you, Peach.[WAIT][END]
+
+14-05D
+[STYLE:RIGHT]Well, tough luck! I'm in a very[BR]
+bad mood, you monster![BR]
+[WAIT][NEXT]
+You've imprisoned all of the[BR]
+guests from the castle![BR]
+[WAIT][NEXT]
+You are the single greatest[BR]
+disaster to ever befall the[BR]
+Mushroom Kingdom![BR]
+[WAIT][NEXT]
+I'll tell you what: I'll smile[BR]
+when you make everything as it[BR]
+was before you showed up![WAIT][END]
+
+14-05E
+[STYLE:RIGHT]{SpeechSound:01}Gwaa ha ha! Oh, that's rich![BR]
+[PAUSE:0A]You know I can't do that![BR]
+{Func_04}[WAIT][NEXT]
+That jerk Mario just beat the[BR]
+Koopa Bros. and Tutankoopa![BR]
+[WAIT][NEXT]
+Sure, they were complete wimps,[BR]
+but they were still loyal to me. I[BR]
+can't forgive Mario for[BR]
+disrespecting me![BR]
+[WAIT][NEXT]
+I'm nipping this in the bud right[BR]
+now. I'm going to use Invincible[BR]
+Tubba Blubba on him.[BR]
+[WAIT][NEXT]
+He's the strongest creature I[BR]
+know...after me.[BR]
+[PAUSE:0A]You'd best forget about Mario...[WAIT][END]
+
+14-05F
+[STYLE:RIGHT]Your Nastiness![WAIT][END]
+
+14-060
+[STYLE:RIGHT]We have a problem![WAIT][END]
+
+14-061
+[STYLE:RIGHT]{SpeechSound:01}Why, Kammy Koopa![BR]
+[PAUSE:0A]What's got you so riled up? You[BR]
+look upset.[WAIT][END]
+
+14-062
+[STYLE:RIGHT]{StartFX:Wavy}Psst...Psst...Psst...[BR]
+[PAUSE:14]{EndFX:Wavy}[WAIT][END]
+
+14-063
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}Whaaaat!!?[BR]
+[PAUSE:05]The Star Spirit flew away from[BR]
+Tubba Blubba's Castle...!?[WAIT][END]
+
+14-064
+[STYLE:RIGHT]Ki... King Bowser![BR]
+[PAUSE:0A]Keep your voice down![BR]
+[PAUSE:0A]Princess Peach will hear you![WAIT][END]
+
+14-065
+[STYLE:RIGHT]{SpeechSound:01}Mmmm... Yes, right... [BR]
+[WAIT][NEXT]
+Tell me the details over there.[WAIT][END]
+
+14-066
+[STYLE:RIGHT]Twink, did you hear that?[WAIT][END]
+
+14-067
+[STYLE:RIGHT]{SpeechSound:02}Yes! I sure did![BR]
+[PAUSE:05]The Star Spirit must have[BR]
+escaped...[BR]
+[WAIT][NEXT]
+Did you hear him call that Tubba[BR]
+Blubba thing "invincible"?[BR]
+[WAIT][NEXT]
+That doesn't sound good![BR]
+[PAUSE:0A]Do you think Mario can win?[WAIT][END]
+
+14-068
+[STYLE:RIGHT]We'd better try to find out[BR]
+about Tubba Blubba.[BR]
+[WAIT][NEXT]
+If we could find something,[BR]
+ANYTHING, about a weak point...[BR]
+it might just save Mario![WAIT][END]
+
+14-069
+[STYLE:RIGHT]{SpeechSound:02}Good idea![WAIT][END]
+
+14-06A
+[STYLE:RIGHT]Then... There's no time to lose.[BR]
+[PAUSE:05]We won't get anything done if we[BR]
+stay in this room.[WAIT][END]
+
+14-06B
+[STYLE:RIGHT]{SpeechSound:02}There are still guards outside.[BR]
+[PAUSE:0A]Be careful not to get caught.[WAIT][END]
+
+14-06C
+[STYLE:RIGHT]{SpeechSound:02}There are guards here, too. [BR]
+[PAUSE:0A]Probably lots of them. We'd[BR]
+better be extra careful.[WAIT][END]
+
+14-06D
+[STYLE:RIGHT]{StartFX:Shrinking}![WAIT][END]
+
+14-06E
+[STYLE:CENTER]{Volume:32}...Hey...  [PAUSE:05]Have you heard[BR]
+[PAUSE:05]about Master Tubba Blubba?[BR]
+[WAIT][NEXT]
+I heard a rumor that he loves[BR]
+eating ghosts![WAIT][END]
+
+14-06F
+[STYLE:LEFT]{Volume:32}Ugh... Ghosts, huh?[BR]
+[WAIT][NEXT]
+Master Tubba Blubba... [BR]
+[PAUSE:0A]He lives deep inside of[BR]
+{Color:20}Forever Forest{Color:0A}, doesn't he?[BR]
+[WAIT][NEXT]
+I think he's guarding one of the[BR]
+Star Spirits right now.[WAIT][END]
+
+14-070
+[STYLE:CENTER]{Volume:32}Yeah, Master Tubba Blubba lives[BR]
+in the castle at the top[BR]
+of {Color:20}Gusty Gulch{Color:0A}.[BR]
+[WAIT][NEXT]
+I heard that somewhere near his[BR]
+castle is a mansion and a village[BR]
+full of ghosts.[BR]
+[WAIT][NEXT]
+I guess Master Tubba Blubba [BR]
+sometimes goes there to catch[BR]
+Boos.[BR]
+[WAIT][NEXT]
+And then, when he catches one,[BR]
+he gobbles it down starting with[BR]
+its head! Chomp![WAIT][END]
+
+14-071
+[STYLE:LEFT]{Volume:32}{StartFX:Jitter}Brrrrr...[BR]
+[PAUSE:0A]Oh, man, that's so scary...[BR]
+[WAIT][NEXT]
+Now I won't be able to walk to[BR]
+the bathroom alone at night...[BR]
+[PAUSE:0A]And I'm gonna have nightmares, I[BR]
+know it! Why'd you tell me?[WAIT][END]
+
+14-072
+[STYLE:CENTER]{Volume:32}I also heard that Master Tubba[BR]
+Blubba is invincible.[BR]
+[PAUSE:0A]They say he can't be hurt.[BR]
+Nobody can even scratch him![BR]
+[WAIT][NEXT]
+He might even be stronger than[BR]
+King Bowser...[WAIT][END]
+
+14-073
+[STYLE:LEFT]{Volume:32}Stronger than King Bowser?[BR]
+[PAUSE:0A]Come on! That's impossible![BR]
+[WAIT][NEXT]
+Even Master Tubba Blubba has to[BR]
+have some weak points. It's just[BR]
+common sense![WAIT][END]
+
+14-074
+[STYLE:CENTER]{Volume:32}Yeah... You may be right...[BR]
+[PAUSE:0A][WAIT][NEXT]
+There's another rumor that[BR]
+Tubba Blubba's got a secret[BR]
+that would ruin him if it ever[BR]
+got out.[BR]
+[WAIT][NEXT]
+I bet it's about his past. I[BR]
+heard he didn't used to be[BR]
+strong at all...[WAIT][END]
+
+14-075
+[STYLE:LEFT][BR]
+{Down:05}{StartFX:Jitter}Shhhhhhhh!!!!![BR]
+{EndFX:Jitter} [BR]
+{Up:05}[WAIT][NEXT]
+{Volume:32}What if Tubba Blubba hears you?[BR]
+He might gobble us up![BR]
+[WAIT][NEXT]
+...Still...[BR]
+[PAUSE:0A]What do you think his secret[BR]
+could be, anyway?[WAIT][END]
+
+14-076
+[STYLE:CENTER]{Volume:32}I don't know.[BR]
+[PAUSE:0A]No one knows. That's why it's a[BR]
+secret, you half-wit![WAIT][END]
+
+14-077
+[STYLE:RIGHT]{Volume:32}Twink... [BR]
+[PAUSE:0A]It sounds like Tubba Blubba has[BR]
+a weak point, after all.[WAIT][END]
+
+14-078
+[STYLE:RIGHT]{Volume:32}{SpeechSound:02}If only we could find out...[WAIT][END]
+
+14-079
+[STYLE:CENTER]{Volume:32}...Huh?[BR]
+[PAUSE:05]Hey... Did you hear someone[BR]
+talking just now?[WAIT][END]
+
+14-07A
+[STYLE:LEFT]{Size:30:30}{StartFX:Shrinking}Gasp![BR]
+{EndFX:Shrinking}{SizeReset}[WAIT]{Scroll:04}{Down:04}{Volume:32}Do you think someone knows we're[BR]
+goofing off in here?[WAIT][END]
+
+14-07B
+[STYLE:RIGHT]Oh! Whoa![BR]
+[PAUSE:05]Princess Peach!![BR]
+[PAUSE:05]How'd you get here?[WAIT][END]
+
+14-07C
+[STYLE:RIGHT]I'm sorry to do this, but...[BR]
+[PAUSE:05]You have to go back to your[BR]
+room. Right now.[WAIT][END]
+
+14-07D
+[STYLE:RIGHT]{StartFX:Wavy}Oh! Nooo![WAIT][END]
+
+14-07E
+[STYLE:RIGHT]{SpeechSound:02}I wonder how Mario is doing...[BR]
+[PAUSE:05]Do you think he found a way to[BR]
+beat that Tubba Blubba?[WAIT][END]
+
+14-07F
+[STYLE:RIGHT]I wonder, too.[BR]
+[PAUSE:0A]I'm so worried...  What if Mario[BR]
+got hurt...?[WAIT][END]
+
+14-080
+[STYLE:RIGHT]{SpeechSound:02}Well... [PAUSE:05]Um... [PAUSE:05]No use wondering![BR]
+[PAUSE:0A]Why don't we go out and try to[BR]
+eavesdrop again?[BR]
+[WAIT][NEXT]
+If Mario managed to beat Tubba[BR]
+Blubba by now,[BR]
+[WAIT][NEXT]
+Bowser and his followers will be[BR]
+really, really mad![BR]
+[PAUSE:14]...Don't you think?[WAIT][END]
+
+14-081
+[STYLE:RIGHT]You may be right, Twink![BR]
+[PAUSE:0A]There's no use just sitting[BR]
+around worrying like this.[BR]
+[PAUSE:0A]Let's see what we can find out.[WAIT][END]
+
+14-082
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}It can't be!! No! No! No![BR]
+{EndFX:Shrinking}[PAUSE:05]Explain that again! Slowly![WAIT][END]
+
+14-083
+[STYLE:RIGHT]Your Wretchedness,[BR]
+[PAUSE:0A]I keep trying to tell you.[BR]
+[WAIT][NEXT]
+Tubba Blubba was...gulp...[BR]
+defeated by Mario.[WAIT][END]
+
+14-084
+[STYLE:RIGHT]{SpeechSound:01}Well, that's strange because...[BR]
+[PAUSE:0A]YOU TOLD ME HE WAS INVINCIBLE![BR]
+[PAUSE:0A]How can you beat someone who's[BR]
+invincible?[WAIT][END]
+
+14-085
+[STYLE:RIGHT]{SpeechSound:01}Grrrr...  [PAUSE:05]Stupid Mario...[BR]
+[PAUSE:0A]I guess maybe he found out the[BR]
+secret that made Tubba Blubba[BR]
+not quite so invincible...[BR]
+[WAIT][NEXT]
+And then he beat him...[BR]
+[PAUSE:0A]Gah!!! I despise Mario! Really![WAIT][END]
+
+14-086
+[STYLE:RIGHT]Your Filthiness...[BR]
+[PAUSE:05]We have to come up with another[BR]
+tactic, and quickly.[BR]
+[WAIT][NEXT]
+Mario will most likely go[BR]
+to {Color:20}Shy Guy's Toy Box {Color:0A}next.[WAIT][END]
+
+14-087
+[STYLE:RIGHT]{SpeechSound:01}Yes... So we should prepare[BR]
+something there for his arrival.[BR]
+[WAIT][NEXT]
+I won't be satisfied just having[BR]
+him beaten up anymore![BR]
+[WAIT][NEXT]
+What we need to do is find his[BR]
+weak point and completely[BR]
+humiliate him! Yeah![BR]
+[WAIT][NEXT]
+Kammy Koopa, you've gotta find[BR]
+out what Mario hates, and...[BR]
+[PAUSE:14][WAIT][END]
+
+14-088
+[STYLE:RIGHT]{SpeechSound:01}Unh...?[BR]
+[PAUSE:0F][WAIT][END]
+
+14-089
+[STYLE:RIGHT][NEXT]
+{SpeechSound:01}{Size:30:30}{StartFX:Shrinking}Gaaaah![BR]
+[PAUSE:0F]{Func_04}[END]
+
+14-08A
+{Scroll:04}{Down:05}{SpeechSound:01}{SizeReset}{EndFX:Shrinking}For the love of... Why...[BR]
+[PAUSE:0A]Why is Princess Peach here?![BR]
+[PAUSE:0A]What's wrong with those guards?[WAIT][END]
+
+14-08B
+[STYLE:RIGHT]{SpeechSound:01}No... Wait, hang on.[BR]
+[PAUSE:0A]This is actually good timing,[BR]
+my mischievous princess.[BR]
+[WAIT][NEXT]
+We're just discussing the weak[BR]
+points of our mutual friend,[BR]
+Mario.[BR]
+[WAIT][NEXT]
+So... Princess Peach...[BR]
+[PAUSE:0A]What do you know about his[BR]
+weaknesses, huh?[BR]
+[WAIT][NEXT]
+And listen. [PAUSE:05]You must be honest![BR]
+[PAUSE:0A]Which one of these things does[BR]
+Mario hate most?[BR]
+{Func_04}[END]
+
+14-08C
+[NEXT]
+{SpeechSound:01}Mmm...[BR]
+[PAUSE:0A]I see! Excellent![BR]
+[WAIT][NEXT]
+Is there another thing that fills[BR]
+him with dread?[BR]
+{Func_04}[END]
+
+14-08D
+[NEXT]
+{SpeechSound:01}Good, good...[BR]
+[PAUSE:0A]And how about these things?[BR]
+Which of these does he hate?[BR]
+{Func_04}[END]
+
+14-08E
+[NEXT]
+{SpeechSound:01}Oh, excellent![BR]
+[PAUSE:05]Perfect! Thanks, Princess![BR]
+[WAIT][NEXT]
+Gwaa ha ha ha ha!!![BR]
+[PAUSE:0A]Be sure Mario can't avoid these[BR]
+things that he hates! We'll[BR]
+beat him for sure![WAIT][END]
+
+14-08F
+[STYLE:RIGHT]{SpeechSound:01}Did you get all that, Kammy[BR]
+Koopa?[BR]
+[PAUSE:0A]Get going immediately![WAIT][END]
+
+14-090
+[STYLE:RIGHT]{StartFX:Wavy}Bleah heh nyeah heh ho![BR]
+{EndFX:Wavy}[PAUSE:0A]Of course, Your Gnarliness![BR]
+[WAIT][NEXT]
+Mario's really in for it now...[BR]
+[PAUSE:14]...or is he...?[BR]
+[PAUSE:0A]Hmmm... I started to wonder for[BR]
+a second there...[BR]
+[WAIT][NEXT]
+But, then again, King Bowser's[BR]
+ordered this so I have no choice[BR]
+but to obey him...[BR]
+[PAUSE:0A]I guess we'll see![WAIT][END]
+
+14-091
+[STYLE:RIGHT]I'm not sure we can entirely[BR]
+trust what the princess tells us[BR]
+about Mario's weak points, but[BR]
+I'll do as you say.[WAIT][END]
+
+14-092
+[STYLE:RIGHT]{SpeechSound:01}Of course you will.[BR]
+[PAUSE:0A]My tactics are brilliant. They're[BR]
+pure art![BR]
+[WAIT]{Func_04}[END]
+
+14-093
+[NEXT]
+{SpeechSound:01}So... Kammy Koopa,[BR]
+[PAUSE:0A]have Princess Peach taken back[BR]
+to her room immediately.[BR]
+[WAIT][NEXT]
+Finally, we will witness the end[BR]
+of Mario! At last![BR]
+[PAUSE:0A]{StartFX:Shrinking}Gwaa ha ha ha ha ha!![WAIT][END]
+
+14-094
+[STYLE:RIGHT]Guards! Attention![BR]
+[PAUSE:0A]Take Princess Peach back to her[BR]
+room at once![WAIT][END]
+
+14-095
+[STYLE:RIGHT]Yes, ma'am!![WAIT][END]
+
+14-096
+[STYLE:RIGHT]{StartFX:Wavy}Noooo! [PAUSE:05]Not again...[WAIT][END]
+
+14-097
+[STYLE:RIGHT]Hey... Twink.[BR]
+[PAUSE:0A]Those guards have stopped[BR]
+paying attention to us again.[BR]
+[WAIT][NEXT]
+Let's sneak out of here.[BR]
+[PAUSE:0A]We might be able to find some[BR]
+news to help Mario.[WAIT][END]
+
+14-098
+[STYLE:RIGHT]{SpeechSound:02}Do you think it's still safe to[BR]
+use that secret path?[BR]
+[WAIT][NEXT]
+Don't you think Bowser's figured[BR]
+it out by now?[WAIT][END]
+
+14-099
+[STYLE:RIGHT]It's still all right, Twink.[BR]
+[PAUSE:05]Bowser hasn't noticed anything.[BR]
+[WAIT][NEXT]
+He looks scary, but he's[BR]
+basically a major bonehead.[BR]
+[PAUSE:0A]Let's get out of here. C'mon![WAIT][END]
+
+14-09A
+[STYLE:RIGHT]Urp... Huh...?[BR]
+[PAUSE:0A]Who are you?[WAIT][END]
+
+14-09B
+[STYLE:RIGHT]Why, I'm Princess Peach.[BR]
+[PAUSE:0A]And who might you be?[WAIT][END]
+
+14-09C
+[STYLE:RIGHT]Oh! You're Princess Peach.[BR]
+[PAUSE:0A]Everyone calls me the Gourmet[BR]
+Guy for some reason.[BR]
+[WAIT][NEXT]
+I guess I'd better report you to[BR]
+King Bowser. You aren't[BR]
+supposed to leave your room.[BR]
+[WAIT][NEXT]
+But I AM really hungry... Tell[BR]
+you what... I'll keep this a[BR]
+secret if you make me something[BR]
+really yummy.[BR]
+[WAIT][NEXT]
+So, Princess Peach,[BR]
+[PAUSE:0A]what do you say? Will you cook[BR]
+me something or what?[WAIT][END]
+
+14-09D
+[STYLE:RIGHT]I'd love to cook for you, Mr.[BR]
+Gourmet Guy, but...[BR]
+[PAUSE:0A]I have no ingredients and no[BR]
+utensils.[WAIT][END]
+
+14-09E
+[STYLE:RIGHT]Aw, that's no problem.[BR]
+[PAUSE:0A]There's a kitchen one floor below[BR]
+us. It's five-star![BR]
+[WAIT][NEXT]
+You can go cook there![WAIT][END]
+
+14-09F
+[STYLE:RIGHT]Here, you'll need this.[BR]
+[PAUSE:0A]This key will open the door that[BR]
+leads downstairs.[BR]
+[PAUSE:0A]Now you can get to the kitchen.[WAIT][END]
+
+14-0A0
+[STYLE:RIGHT]So! I'll just sit here and wait[BR]
+for my yummy meal, OK?[BR]
+[WAIT][NEXT]
+[PAUSE:0A]Oh yeah, I forgot...[BR]
+[PAUSE:0F]There are plenty of guards[BR]
+downstairs, so be careful.[WAIT][END]
+
+14-0A1
+[STYLE:RIGHT]Oh... I can't wait...[HEART][BR]
+[WAIT][END]
+
+14-0A2
+[STYLE:RIGHT]Here you go![WAIT][END]
+
+14-0A3
+[STYLE:RIGHT]Oh! I've been waiting so long![BR]
+[PAUSE:0A]I've wasted away to nothing![WAIT][END]
+
+14-0A4
+[STYLE:RIGHT]Thank you![HEART][WAIT][END]
+
+14-0A5
+[STYLE:RIGHT]Nooooooo! Haaaaackpth![BR]
+[PAUSE:0A]Aw, disgusting! This is awful![BR]
+[WAIT][NEXT]
+Where'd you learn to cook, Truck[BR]
+Driving School?[BR]
+[PAUSE:0A]Go back to the kitchen and follow[BR]
+a recipe or something![WAIT][END]
+
+14-0A6
+[STYLE:RIGHT]I'll never eat such a nasty[BR]
+creation again, I tell you![BR]
+[PAUSE:0A]I swear...trying to poison me...[BR]
+[WAIT][NEXT]
+Go back down there and make[BR]
+something good, will you?[WAIT][END]
+
+14-0A7
+[STYLE:RIGHT]What ingredients did you use in[BR]
+that monstrosity?[BR]
+[WAIT][NEXT]
+Whatever they were, I think they[BR]
+were seriously wrong![WAIT][END]
+
+14-0A8
+[STYLE:RIGHT]Ack! Bleeaaagh...![BR]
+[PAUSE:0A]Awful! Just awful![BR]
+[WAIT][NEXT]
+You didn't mix the ingredients[BR]
+very well![BR]
+[WAIT][NEXT]
+You have to mix them right![WAIT][END]
+
+14-0A9
+[STYLE:RIGHT]Cough...gag... Pbbbbth![BR]
+[PAUSE:0A]This wasn't baked for the right[BR]
+length of time![BR]
+[WAIT][NEXT]
+Listen, baking is the most[BR]
+important part of cake making![BR]
+[PAUSE:0A]You have to time it properly![WAIT][END]
+
+14-0AA
+[STYLE:RIGHT]Mmmmm... No no no. All wrong.[BR]
+[PAUSE:0A]Look at this decoration. Awful.[BR]
+[WAIT][NEXT]
+You shouldn't have too much or[BR]
+too little decoration on a cake,[BR]
+don't you know that?[BR]
+[WAIT][NEXT]
+Try to use a little more care[BR]
+next time, OK?[BR]
+[PAUSE:0A]I feel sorry for the cake.[WAIT][END]
+
+14-0AB
+{InputOff}[STYLE:RIGHT]{StartFX:Shrinking}Oh...       [PAUSE:23]Ohhh,[BR]
+[PAUSE:23]Ohhhhhhh!!!!![BR]
+{EndFX:Shrinking}[PAUSE:1E][NEXT]
+{StartFX:Jitter}Deliciooooooous!!![BR]
+[PAUSE:2D]{EndFX:Jitter}[NEXT]
+{StartFX:Wavy}This [PAUSE:03]is [PAUSE:04]way [PAUSE:05]too [PAUSE:06]DELICIOUS![PAUSE:02]![PAUSE:02]![PAUSE:02]![BR]
+[PAUSE:32][END]
+
+14-0AC
+[STYLE:RIGHT]Phew... [BR]
+[PAUSE:0A]That was really good.[BR]
+[WAIT][NEXT]
+I haven't felt this way since...[BR]
+well, ever![BR]
+[PAUSE:0A]To show you my gratitude, I'll[BR]
+tell you a secret.[WAIT][END]
+
+14-0AD
+[STYLE:RIGHT]One of the Star Spirits is inside[BR]
+{Color:20}Mt. Lavalava {Color:0A}on {Color:20}Lavalava[BR]
+Island{Color:0A}.[BR]
+This island is to the south.[BR]
+[WAIT][NEXT]
+You should tell this to Mario.[BR]
+[WAIT][NEXT]
+But you'd better tell him that[BR]
+there's also a nasty Lava[BR]
+Piranha guarding the Star[BR]
+Spirit.[BR]
+[WAIT][NEXT]
+He'd better be careful.[BR]
+[PAUSE:0A]I really don't dislike Mario.[BR]
+[PAUSE:0A]That's why I'm telling you this.[WAIT][END]
+
+14-0AE
+[STYLE:RIGHT]Twink, did you hear that!?[BR]
+[PAUSE:0A]Mt. Lavalava! Lavalava Island.[BR]
+[PAUSE:0A]The Star Spirit is being held[BR]
+inside that volcano![WAIT][END]
+
+14-0AF
+[STYLE:RIGHT]{SpeechSound:02}Mario could really use this[BR]
+information, huh?[WAIT][END]
+
+14-0B0
+[STYLE:RIGHT]Yes, he could...[BR]
+[WAIT][NEXT]
+Twink, I'm sorry that I keep[BR]
+asking you to do this stuff,[BR]
+but...can you go tell Mario?[WAIT][END]
+
+14-0B1
+[STYLE:RIGHT]{SpeechSound:02}Of course I will.[BR]
+[PAUSE:05]I'll do it right now![WAIT][END]
+
+14-0B2
+[STYLE:RIGHT]{SpeechSound:02}I'll be back soon, Princess[BR]
+Peach![WAIT][END]
+
+14-0B3
+[STYLE:RIGHT]{StartFX:Jitter}What's with all the shouting?[BR]
+[PAUSE:0A]Keep it quiet in here!![WAIT][END]
+
+14-0B4
+[STYLE:RIGHT]So! [PAUSE:05]It was you, Princess Peach![BR]
+[PAUSE:05]You've got to keep it down![BR]
+[WAIT][NEXT]
+You're a prisoner, and as a[BR]
+prisoner you need to keep...[BR]
+[WAIT][NEXT]
+[PAUSE:04].[PAUSE:04].[PAUSE:04].[PAUSE:05]{StartFX:Shrinking}Whuh!?[BR]
+{EndFX:Shrinking}{Func_04}[PAUSE:0A]What are you doing out of your[BR]
+room, anyway![WAIT][END]
+
+14-0B5
+[STYLE:RIGHT]Guards!![BR]
+[PAUSE:0A]Get the princess![WAIT][END]
+
+14-0B6
+[STYLE:RIGHT]{StartFX:Wavy}Nooooo!![WAIT][END]
+
+14-0B7
+[STYLE:RIGHT]Things are getting pretty weird[BR]
+in the castle, huh?[WAIT][END]
+
+14-0B8
+[STYLE:RIGHT]{SpeechSound:02}You said it...[BR]
+[PAUSE:0A]But at least we can go[BR]
+downstairs with this key.[BR]
+[WAIT][NEXT]
+Maybe we'll find something out[BR]
+while we're down there![WAIT][END]
+
+14-0B9
+[STYLE:RIGHT]Well, here's the kitchen.[BR]
+[WAIT][NEXT]
+So...[BR]
+[PAUSE:0A]What shall we do first?[WAIT][END]
+
+14-0BA
+[STYLE:RIGHT]{SpeechSound:02}Princess Peach![BR]
+[PAUSE:0A]This looks like a good cookbook.[BR]
+[PAUSE:0A]Let's use it, OK?[WAIT][END]
+
+14-0BB
+[STYLE:RIGHT]How's it look? [PAUSE:05]Twink?[BR]
+[PAUSE:0A]Anything look really yummy?[WAIT][END]
+
+14-0BC
+[STYLE:RIGHT]{SpeechSound:02}Hang on a second...[BR]
+[PAUSE:0A][WAIT][NEXT]
+[PAUSE:0A]Oh! How about this?[BR]
+[PAUSE:0A]"Special Strawberry Cake."[WAIT][END]
+
+14-0BD
+[STYLE:RIGHT]...Sounds good![HEART][BR]
+[PAUSE:0A]Let's whip one up![BR]
+[WAIT][NEXT]
+OK, Twink,[BR]
+[PAUSE:05]read me the recipe.[WAIT][END]
+
+14-0BE
+[STYLE:RIGHT]{SpeechSound:02}We're in the middle of the[BR]
+recipe! Where are you going?[WAIT][END]
+
+14-0BF
+[NEXT]
+{SpeechSound:02}Ummmm...[BR]
+[PAUSE:0A]You haven't made anything yet.[WAIT][END]
+
+14-0C0
+[NEXT]
+{SpeechSound:02}Ummm... It needs something...[BR]
+[PAUSE:0A]You haven't decorated it yet.[WAIT][END]
+
+14-0C1
+[STYLE:RIGHT]{SpeechSound:02}Princess Peach, you're leaving[BR]
+without the cake![WAIT][END]
+
+14-0C2
+[STYLE:RIGHT]{SpeechSound:02}OK, Princess Peach.[BR]
+[PAUSE:0A]This time, we're gonna make a[BR]
+delicious cake, right?[WAIT][END]
+
+14-0C3
+[STYLE:RIGHT]We sure are! I know we can![BR]
+[PAUSE:0A]This is going to be the best cake[BR]
+Gourmet Guy's ever eaten![BR]
+[WAIT]{Func_04}[END]
+
+14-0C4
+[NEXT]
+OK, Twink,[BR]
+[PAUSE:05]if you please, read me that[BR]
+recipe again.[WAIT][END]
+
+14-0C5
+[STYLE:RIGHT]{SpeechSound:02}Let's start from where we left[BR]
+off, OK?[BR]
+[WAIT][NEXT]
+We got as far as putting in the[BR]
+Sugar and Eggs...[BR]
+[WAIT][NEXT]
+but we need to mix it better.[WAIT][END]
+
+14-0C6
+[STYLE:RIGHT]{SpeechSound:02}Your bowl's over there. It has[BR]
+Sugar and Eggs already in it.[BR]
+[PAUSE:05]Why don't you go over there?[WAIT][END]
+
+14-0C7
+[STYLE:RIGHT]{SpeechSound:02}Let's start from where we left[BR]
+off, OK?[BR]
+[WAIT][NEXT]
+We got as far as mixing the[BR]
+materials in the bowl...[BR]
+[WAIT][NEXT]
+but the Flour and Butter need[BR]
+to be added properly.[WAIT][END]
+
+14-0C8
+[STYLE:RIGHT]{SpeechSound:02}You already have a bowl with[BR]
+some batter in it over there.[BR]
+[WAIT][NEXT]
+Now you need to add Flour and[BR]
+Butter to the bowl.[WAIT][END]
+
+14-0C9
+[STYLE:RIGHT]{SpeechSound:02}Let's start from where we left[BR]
+off, OK?[BR]
+[WAIT][NEXT]
+We got as far as adding Flour[BR]
+and Butter...[BR]
+[WAIT][NEXT]
+but the actual baking part[BR]
+needs some work.[WAIT][END]
+
+14-0CA
+[STYLE:RIGHT]{SpeechSound:02}Your bowl full of batter is right[BR]
+over there.[BR]
+[WAIT][NEXT]
+Mix it lightly and pour it into the[BR]
+pan, OK, Princess?[BR]
+[WAIT][NEXT]
+After you've poured it into the[BR]
+pan, bake it in the oven for 30[BR]
+seconds.[WAIT][END]
+
+14-0CB
+[STYLE:RIGHT]{SpeechSound:02}Let's start from where we left[BR]
+off, OK.[BR]
+[WAIT][NEXT]
+We got as far as baking the[BR]
+cake in the oven...[BR]
+[WAIT][NEXT]
+We should've decorated it with[BR]
+the Cream first and then the[BR]
+Strawberries, I guess. Oh well.[BR]
+Let's do it right this time.[WAIT][END]
+
+14-0CC
+[STYLE:RIGHT]{SpeechSound:02}Hey, that's one good looking[BR]
+cake, huh?[BR]
+[WAIT][NEXT]
+All we have to do now is decorate[BR]
+it and we're done.[BR]
+[WAIT][NEXT]
+What you want to do is put some[BR]
+Cream on it first and then add[BR]
+some Strawberries.[WAIT][END]
+
+14-0CD
+[NEXT]
+{SpeechSound:02}You want to start over from the[BR]
+beginning, Princess?[BR]
+[PAUSE:0A]Let's clean up first.[WAIT][END]
+
+14-0CE
+[STYLE:RIGHT]{SpeechSound:02}OK, Princess Peach,[BR]
+[PAUSE:0A]this time we can do it![WAIT][END]
+
+14-0CF
+[STYLE:RIGHT]We sure can! I know we can![BR]
+[PAUSE:0A]This is going to be the best cake[BR]
+Gourmet Guy's ever eaten![BR]
+[WAIT]{Func_04}[END]
+
+14-0D0
+[NEXT]
+OK, Twink,[BR]
+[PAUSE:05]if you please, read me that[BR]
+recipe again.[WAIT][END]
+
+14-0D1
+[STYLE:RIGHT]{SpeechSound:02}Well[PAUSE:04].[PAUSE:04].[PAUSE:04].[BR]
+[PAUSE:05][WAIT][NEXT]
+OK. Please listen carefully.[BR]
+[PAUSE:0A]First... [BR]
+[PAUSE:05][WAIT][NEXT]
+{Color:00}put Sugar and Eggs in a bowl{Color:0A}.[BR]
+[WAIT][NEXT]
+Go ahead, Princess Peach.[BR]
+[WAIT][NEXT]
+When you've finished, let me know[BR]
+and we'll move on to the next[BR]
+step.[WAIT][END]
+
+14-0D2
+[STYLE:RIGHT]{SpeechSound:02}Done?[BR]
+{Func_04}[END]
+
+14-0D3
+[NEXT]
+{SpeechSound:02}Please tell me when you're done.[WAIT][END]
+
+14-0D4
+[NEXT]
+{SpeechSound:02}OK. Let's move on to the next[BR]
+step then.[BR]
+[WAIT][NEXT]
+Now[PAUSE:04].[PAUSE:04].[PAUSE:04].[BR]
+[PAUSE:05][WAIT][NEXT]
+{Color:00}Mix and whip the ingredients in[BR]
+the bowl{Color:0A}.[WAIT][END]
+
+14-0D5
+[STYLE:RIGHT]{SpeechSound:02}All set?[BR]
+[WAIT][NEXT]
+When I say "start," press {PushColor}{Color:10}[A]{PopColor} as[BR]
+fast as you can for 10 seconds[BR]
+to mix the batter.[BR]
+[WAIT][NEXT]
+Are you ready?[BR]
+[WAIT][NEXT]
+Start![BR]
+[PAUSE:3C][END]
+
+14-0D6
+[STYLE:RIGHT]{SpeechSound:02}That's it! Great job![BR]
+[PAUSE:0A]Did it go well, Princess Peach?[BR]
+{Func_04}[END]
+
+14-0D7
+[NEXT]
+{SpeechSound:02}Oh, no! In that case, what do[BR]
+you want to do now?[BR]
+{Func_04}[END]
+
+14-0D8
+[STYLE:RIGHT]{SpeechSound:02}OK. Let's go on to the next step[BR]
+then.[BR]
+[WAIT][NEXT]
+Now[PAUSE:04].[PAUSE:04].[PAUSE:04].[BR]
+[PAUSE:05][WAIT][NEXT]
+{Color:00}Put Flour and Butter in the bowl{Color:0A}.[BR]
+[WAIT][NEXT]
+Go ahead, Princess Peach.[BR]
+[WAIT][NEXT]
+Just let me know when you're[BR]
+done and we'll move on to the[BR]
+next part of the recipe.[WAIT][END]
+
+14-0D9
+[STYLE:RIGHT]{SpeechSound:02}Done?[BR]
+{Func_04}[END]
+
+14-0DA
+[NEXT]
+{SpeechSound:02}Just let me know as soon as[BR]
+you're done.[WAIT][END]
+
+14-0DB
+[STYLE:RIGHT]{SpeechSound:02}OK. After you've mixed the[BR]
+ingredients in the bowl, pour it[BR]
+into the pan.[WAIT][END]
+
+14-0DC
+[STYLE:RIGHT]{SpeechSound:02}On to the next step![BR]
+[WAIT][NEXT]
+Now[PAUSE:04].[PAUSE:04].[PAUSE:04].[BR]
+[PAUSE:05][WAIT][NEXT]
+{Color:00}Bake the batter in the oven for[BR]
+30 seconds{Color:0A}.[BR]
+[WAIT][NEXT]
+OK. Head over to the oven.[WAIT][END]
+
+14-0DD
+[STYLE:RIGHT]{SpeechSound:02}You can put the cake in the[BR]
+oven with {PushColor}{Color:10}[A]{PopColor}.[BR]
+[WAIT][NEXT]
+Press {PushColor}{Color:10}[A]{PopColor} again when you think[BR]
+30 seconds has passed, then[BR]
+take the cake out of the oven.[BR]
+[WAIT][NEXT]
+You can't redo this part, so be[BR]
+extra careful.[BR]
+[WAIT][NEXT]
+OK. Please put it in the oven.[WAIT][END]
+
+14-0DE
+[STYLE:RIGHT]{SpeechSound:02}Done?[BR]
+{Func_04}[END]
+
+14-0DF
+[NEXT]
+{SpeechSound:02}Oh, no! In that case, what do[BR]
+you want to do now?[BR]
+{Func_04}[END]
+
+14-0E0
+[NEXT]
+{SpeechSound:02}OK, put the cake on the table to[BR]
+cool.[WAIT][END]
+
+14-0E1
+[STYLE:RIGHT]{SpeechSound:02}OK. This is the last thing to do.[BR]
+[PAUSE:0A]{Color:00}We're going to decorate it with[BR]
+cream and strawberries.[BR]
+{Color:0A}[WAIT][NEXT]
+Let me know when you're all[BR]
+finished decorating.[WAIT][END]
+
+14-0E2
+[STYLE:RIGHT]{SpeechSound:02}Done?[BR]
+{Func_04}[END]
+
+14-0E3
+[NEXT]
+{SpeechSound:02}Just let me know as soon as[BR]
+you're done.[WAIT][END]
+
+14-0E4
+[NEXT]
+{SpeechSound:02}Yes!![BR]
+[PAUSE:0A]We made it! It looks great![BR]
+[WAIT][NEXT]
+OK! Let's take this to Gourmet[BR]
+Guy![WAIT][END]
+
+14-0E5
+[STYLE:INSPECT]{Color:00}Pick up this {Color:07}{Var:00}{Color:00}?[BR]
+{Func_04}[END]
+
+14-0E6
+[STYLE:INSPECT]{Color:00}Put down this {Color:07}{Var:00}{Color:00}?[BR]
+{Func_04}[END]
+
+14-0E7
+[STYLE:INSPECT]{Color:00}You picked up the {Color:07}{Var:00}{Color:00}.[WAIT][END]
+
+14-0E8
+[NEXT]
+{Color:00}You put down the {Color:07}{Var:00}{Color:00}.[WAIT][END]
+
+14-0E9
+[STYLE:INSPECT]{Color:00}Put down this {Color:07}{Var:00}{Color:00} and[BR]
+pick up this {Color:07}{Var:01}{Color:00}?[BR]
+{Func_04}[END]
+
+14-0EA
+[NEXT]
+{Color:00}You put down the {Color:07}{Var:00}{Color:00} and[BR]
+picked up the {Color:07}{Var:01}{Color:00}.[WAIT][END]
+
+14-0EB
+[STYLE:RIGHT]...[BR]
+[PAUSE:14][WAIT][NEXT]
+...Hey, Twink...[BR]
+[PAUSE:0A]How would you feel about[BR]
+sneaking out of here again?[BR]
+[PAUSE:0A]Shall we try?[WAIT][END]
+
+14-0EC
+[STYLE:RIGHT]{SpeechSound:02}Princess Peach![BR]
+[PAUSE:0A]You've gotten so bold![BR]
+[WAIT][NEXT]
+And here I thought you were[BR]
+gentle and delicate...[WAIT][END]
+
+14-0ED
+[STYLE:RIGHT]{StartFX:Shrinking}Oh.......[BR]
+{EndFX:Shrinking}[PAUSE:0A]I... [PAUSE:0A]I am delicate![BR]
+[WAIT][NEXT]
+I'm behaving like a delicate[BR]
+princess, just like the Ministers[BR]
+taught me to! [BR]
+[WAIT][NEXT]
+I [PAUSE:05]love [PAUSE:05]to [PAUSE:05]be [PAUSE:05]del[PAUSE:05]icate![PAUSE:05][HEART][WAIT][END]
+
+14-0EE
+[STYLE:RIGHT]{SpeechSound:02}OK, OK...[BR]
+[PAUSE:0F]...I believe you, Peach. You're[BR]
+the princess...[BR]
+[WAIT][NEXT]
+Anyway, let's go for it.[WAIT][END]
+
+14-0EF
+[STYLE:RIGHT]{StartFX:Shrinking}Oh! [PAUSE:0A]It's Princess Peach![BR]
+{EndFX:Shrinking}How'd she get out?![BR]
+[WAIT][NEXT]
+King Bowser's really gonna flip[BR]
+his wig if we don't take her back[BR]
+to her room![WAIT][END]
+
+14-0F0
+[STYLE:RIGHT]Now, hang on just a second. Get[BR]
+a grip on yourself, OK? No need[BR]
+to panic. She can't get out of[BR]
+the castle, anyway.[BR]
+[WAIT][NEXT]
+And besides... What do you think[BR]
+about asking Princess Peach to[BR]
+participate in our little game?[BR]
+[WAIT][NEXT]
+She'd be ideal, and we need a[BR]
+third person...[WAIT][END]
+
+14-0F1
+[STYLE:RIGHT]Hmmm... [PAUSE:05]Yeeeeah. Yeah![BR]
+[PAUSE:0A]You might be on to something![WAIT][END]
+
+14-0F2
+[STYLE:RIGHT]OK! Let's do it![BR]
+[WAIT][NEXT]
+Princess Peach, have you been[BR]
+listening? Come this way.[BR]
+[WAIT][NEXT]
+We won't tell King Bowser about[BR]
+your escape if you help us with[BR]
+this little game we're playing.[WAIT][END]
+
+14-0F3
+[STYLE:RIGHT]We're set up right over here.[WAIT][END]
+
+14-0F4
+[STYLE:RIGHT]{SpeechSound:02}Oh no... [PAUSE:05]Princess Peach![WAIT][END]
+
+14-0F5
+[STYLE:LEFT]Koopa Corps. Presents...[BR]
+[PAUSE:19]{Scroll:01}{Func_29:9C}{Down:08}        The 64th[BR]
+{Down:05}{StartFX:Shrinking}{StartFX:Wavy}  Trivia Quiz-Off!![WAIT][END]
+
+14-0F6
+[STYLE:LEFT]I'm your host,[BR]
+{StartFX:Shrinking}{StartFX:Wavy}Mr. Hammer!![WAIT][END]
+
+14-0F7
+[STYLE:RIGHT]? [PAUSE:0A]? ? [PAUSE:0A]? ? ? ? ? ? ? ?[WAIT][END]
+
+14-0F8
+[STYLE:RIGHT]Let's get right to it, hey![BR]
+[PAUSE:0A]I'm gonna ask you 10 questions,[BR]
+and the contestant who gets the[BR]
+most right is our winner![BR]
+[WAIT][NEXT]
+Press {PushColor}{Color:10}[A]{PopColor} when you think you know[BR]
+the answer, OK, folks?[BR]
+[WAIT][NEXT]
+The winner will get a gorgeous,[BR]
+fabulous prize![BR]
+[PAUSE:0A]Good luck to all of you![BR]
+[WAIT][NEXT]
+Oh, and I gotta tell you...[BR]
+[WAIT][NEXT]
+We're also giving prizes just[BR]
+for participating, so everybody[BR]
+will be a winner! That's just the[BR]
+kind of show we are![WAIT][END]
+
+14-0F9
+[STYLE:RIGHT]{StartFX:Shrinking}All right! Princess Peach![BR]
+[PAUSE:28][END]
+
+14-0FA
+[STYLE:RIGHT]{StartFX:Shrinking}All right! Spiky Tom![BR]
+[PAUSE:28][END]
+
+14-0FB
+[STYLE:RIGHT]{StartFX:Shrinking}All right! Spiky John![BR]
+[PAUSE:28][END]
+
+14-0FC
+[STYLE:RIGHT]Ready?[BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 1![BR]
+{Down:05}[WAIT]{Scroll:03}What's the name of the boss[BR]
+inside the volcano on Lavalava[BR]
+Island?[BR]
+{Func_04}[END]
+
+14-0FD
+[STYLE:RIGHT]Uhhh...Lava Piranha?[BR]
+[PAUSE:28][END]
+
+14-0FE
+[STYLE:RIGHT]Let's go on to the next question,[BR]
+OK, folks?[BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 2![BR]
+{Down:05}[WAIT]{Scroll:03}Where did Master Huff N. Puff [BR]
+imprison the Star Spirit?[BR]
+{Func_04}[END]
+
+14-0FF
+[STYLE:RIGHT]In Flower Fields![BR]
+[PAUSE:28][END]
+
+14-100
+[STYLE:RIGHT]OK!  Next![BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 3![BR]
+{Down:05}[WAIT]{Scroll:03}What is the name of the scary[BR]
+round monster living in Dry Dry[BR]
+Ruins?[BR]
+{Func_04}[END]
+
+14-101
+[STYLE:RIGHT]A...Chomp![BR]
+[PAUSE:28][END]
+
+14-102
+[STYLE:RIGHT]You've still got a chance to make[BR]
+a comeback![BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 4![BR]
+{Down:05}[WAIT]{Scroll:03}How would you get to Flower[BR]
+Fields?[BR]
+{Func_04}[END]
+
+14-103
+[STYLE:RIGHT]Ummm...by passing through the[BR]
+Flower Gate![BR]
+[PAUSE:28][END]
+
+14-104
+[STYLE:RIGHT]It's still anyone's game![BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 5![BR]
+{Down:05}[WAIT]{Scroll:03}What's the name of the person[BR]
+who King Bowser really loves?[BR]
+{Func_04}[END]
+
+14-105
+[STYLE:RIGHT]That's easy! Princess Peach![BR]
+[PAUSE:28][END]
+
+14-106
+[STYLE:RIGHT]Careful now![BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 6![BR]
+{Down:05}[WAIT]{Scroll:03}What thing is most deeply [BR]
+related to Flower Fields?[BR]
+{Func_04}[END]
+
+14-107
+[STYLE:RIGHT]I know! Flowers![BR]
+[PAUSE:28][END]
+
+14-108
+[STYLE:RIGHT]This next question is an easy[BR]
+one, folks.[BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 7![BR]
+{Down:05}[WAIT]{Scroll:03}What's the name of the most[BR]
+admirable, invincible, just[BR]
+downright cool guy around?[BR]
+{Func_04}[END]
+
+14-109
+[STYLE:RIGHT]King Bowser, of course.[BR]
+[PAUSE:28][END]
+
+14-10A
+[STYLE:RIGHT]Think carefully, now.[BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 8![BR]
+{Down:05}[WAIT]{Scroll:03}What's the name for the ghosts[BR]
+who live in and around Forever[BR]
+Forest?[BR]
+{Func_04}[END]
+
+14-10B
+[STYLE:RIGHT]Boos... Boos![BR]
+[PAUSE:28][END]
+
+14-10C
+[STYLE:RIGHT]Use your memory on this one![BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}            Question 9![BR]
+{Down:05}[WAIT]{Scroll:03}What's the name of the area[BR]
+just to the south of the post[BR]
+office in Toad Town?[BR]
+{Func_04}[END]
+
+14-10D
+[STYLE:RIGHT]Ooh! The flower garden![BR]
+[PAUSE:28][END]
+
+14-10E
+[STYLE:RIGHT]Now for the final question![BR]
+[PAUSE:0A]Stay calm, everyone...[BR]
+[WAIT][NEXT]
+[BR]
+{Down:05}           Question 10![BR]
+{Down:05}[WAIT]{Scroll:03}Where is Peach's Castle now?[BR]
+{Func_04}[END]
+
+14-10F
+[STYLE:RIGHT]Way up in the sky, on top of[BR]
+Bowser's Castle.[BR]
+[PAUSE:28][END]
+
+14-110
+[STYLE:RIGHT]{StartFX:Shrinking}That's correct![BR]
+[PAUSE:28][END]
+
+14-111
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "Lava Piranha."[WAIT][END]
+
+14-112
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "Flower Fields."[WAIT][END]
+
+14-113
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "Chomp."[WAIT][END]
+
+14-114
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "By passing[BR]
+through the Flower Gate."[WAIT][END]
+
+14-115
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "Princess[BR]
+Peach."[WAIT][END]
+
+14-116
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "flowers."[WAIT][END]
+
+14-117
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "King Bowser."[WAIT][END]
+
+14-118
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "Boos."[WAIT][END]
+
+14-119
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "The flower [BR]
+garden."[WAIT][END]
+
+14-11A
+[STYLE:RIGHT]I'm sorry...that's wrong![BR]
+[PAUSE:28][NEXT]
+The answer was "Above Bowser's[BR]
+Castle in the sky."[WAIT][END]
+
+14-11B
+[STYLE:RIGHT]So the 64th Trivia Quiz-Off has[BR]
+ended...[BR]
+[PAUSE:0A]in great success![BR]
+[WAIT][NEXT]
+The winner is... [PAUSE:0A]Spi[PAUSE:05]ky [PAUSE:05]TOM![BR]
+[WAIT]{Func_04}[END]
+
+14-11C
+[NEXT]
+Congratulations![BR]
+[PAUSE:0A]Here's your prize.[WAIT][END]
+
+14-11D
+[STYLE:INSPECT]Spiky Tom got Jammin' Jelly.[WAIT][END]
+
+14-11E
+[STYLE:RIGHT]So the 64th Trivia Quiz-Off has[BR]
+ended...[BR]
+[PAUSE:0A]in great success![BR]
+[WAIT][NEXT]
+The winner is...[BR]
+[PAUSE:0A]Spiky [PAUSE:05]JOHN!!!!!!![BR]
+[WAIT]{Func_04}[END]
+
+14-11F
+[NEXT]
+Congratulations![BR]
+[PAUSE:0A]Here's your prize.[WAIT][END]
+
+14-120
+[STYLE:INSPECT]Spiky John got Jammin' Jelly.[WAIT][END]
+
+14-121
+[STYLE:RIGHT]So the 64th Trivia Quiz-Off has[BR]
+ended...[BR]
+[PAUSE:0A]in great success![BR]
+[WAIT][NEXT]
+The winner is... [PAUSE:0A]Wow![BR]
+[PAUSE:05]Our unexpected guest, Princess[BR]
+Peach!![BR]
+[WAIT]{Func_04}[END]
+
+14-122
+[NEXT]
+Congratulations, Peach![BR]
+[PAUSE:0A]Here's your prize.[WAIT][END]
+
+14-123
+[STYLE:RIGHT]So the 64th Trivia Quiz-Off has[BR]
+ended...[BR]
+[PAUSE:0A]in great success![BR]
+[PAUSE:0F][WAIT][NEXT]
+The winner is... Oops![BR]
+[PAUSE:0A]Princess Peach and Spiky Tom[BR]
+have the same score![BR]
+[PAUSE:05]It's a draw![BR]
+[WAIT][NEXT]
+So I'll take the prize. Ha![WAIT][END]
+
+14-124
+[STYLE:RIGHT]So the 64th Trivia Quiz-Off has[BR]
+ended...[BR]
+[PAUSE:0A]in great success![BR]
+[PAUSE:0F][WAIT][NEXT]
+The winner is... Hey![BR]
+[PAUSE:0A]No one has any points! Weak![BR]
+[PAUSE:05]It's a tie![BR]
+[WAIT][NEXT]
+So I'll take the prize. Ha![WAIT][END]
+
+14-125
+[STYLE:RIGHT]Thank you for coming, everyone![BR]
+It's been grand![BR]
+[WAIT][NEXT]
+We'll see you at the next Trivia[BR]
+Quiz-Off!![WAIT][END]
+
+14-126
+[STYLE:RIGHT]Oh... [PAUSE:05]Princess Peach.[BR]
+[PAUSE:0A]I almost forgot! Here's your[BR]
+prize for participating.[WAIT][END]
+
+14-127
+[STYLE:RIGHT]This is a Sneaky Parasol.[BR]
+[PAUSE:0A]If you face someone and press[BR]
+{PushColor}{Color:11}[B]{PopColor} you can transform into that[BR]
+person.[BR]
+[WAIT][NEXT]
+You just have to promise not to[BR]
+use it to sneak around.[BR]
+[PAUSE:0A]I mean, nobody would know you[BR]
+were Princess Peach! Imagine![BR]
+[WAIT][NEXT]
+Sorry for giving you such a little[BR]
+prize, Princess.[BR]
+[WAIT][NEXT]
+Heh heh heh... Hey, it's only a[BR]
+prize for participating...so what[BR]
+do you expect!?[WAIT][END]
+
+14-128
+[STYLE:RIGHT]{SpeechSound:01}Huh?[BR]
+[PAUSE:0A]What are you all doing?[BR]
+{Func_04}[END]
+
+14-129
+[WAIT][NEXT]
+{SpeechSound:01}Hey! It looks fun![BR]
+[PAUSE:0A]I'm gonna join in![WAIT][END]
+
+14-12A
+[STYLE:RIGHT]{SpeechSound:01}What?[BR]
+[PAUSE:0A]You've already finished?[BR]
+[PAUSE:0F]Aw, of all the rotten luck...[WAIT][END]
+
+14-12B
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}Gaaaah!![BR]
+{EndFX:Shrinking}{Func_04}[PAUSE:0A]Princess Peach? What's she doing[BR]
+here?[BR]
+[WAIT][NEXT]
+She sneaked out again! Grr![BR]
+[WAIT][NEXT]
+You!! [BR]
+[PAUSE:0A]Take Princess Peach back to her[BR]
+room! Now!![WAIT][END]
+
+14-12C
+[STYLE:RIGHT]Yes, sir!![WAIT][END]
+
+14-12D
+[STYLE:RIGHT]Sorry, Princess Peach![WAIT][END]
+
+14-12E
+[STYLE:RIGHT]{StartFX:Shrinking}Nooooo!![WAIT][END]
+
+14-12F
+[STYLE:RIGHT]Hey... Twink.[BR]
+[PAUSE:0A]You know the Sneaky Parasol I[BR]
+got on that quiz show?[BR]
+[WAIT][NEXT]
+I can change into someone else[BR]
+when I use it, right?[BR]
+[WAIT][NEXT]
+So don't you think I can use it[BR]
+to get out of here?[WAIT][END]
+
+14-130
+[STYLE:RIGHT]{SpeechSound:02}Yeah... I bet you can...[BR]
+[PAUSE:0A]Why don't you try it out?[BR]
+[WAIT][NEXT]
+Press {PushColor}{Color:11}[B]{PopColor} while facing whoever it[BR]
+is you want to transform into. [WAIT][END]
+
+14-131
+[STYLE:RIGHT]Hey. [PAUSE:05]How goes it?[BR]
+[WAIT][NEXT]
+Phew... They've been working me[BR]
+like a dog lately... [WAIT][END]
+
+14-132
+[STYLE:RIGHT]You too?[BR]
+[PAUSE:0A]Seems like everybody's busy...[BR]
+[WAIT][NEXT]
+King Bowser's all ticked off[BR]
+about something and Kammy[BR]
+Koopa takes it out on us.[BR]
+[WAIT][NEXT]
+You think, maybe...? Maybe it[BR]
+means that Mario's coming to[BR]
+defeat King Bowser![WAIT][END]
+
+14-133
+[STYLE:RIGHT]Sayyyy...[BR]
+[PAUSE:0A]I heard that Kammy Koopa is[BR]
+building some big thing above[BR]
+Princess Peach's Castle.[BR]
+[WAIT][NEXT]
+I bet you it's a secret weapon[BR]
+designed to defeat Mario.[WAIT][END]
+
+14-134
+[STYLE:RIGHT]That thing that Kammy Koopa's[BR]
+making up above the castle... I[BR]
+wonder what she could possibly[BR]
+do with it?[BR]
+[WAIT][NEXT]
+It's not even possible for Mario[BR]
+to get up here, so why would she[BR]
+need a secret weapon?[WAIT][END]
+
+14-135
+[STYLE:RIGHT]On patrol? Very good, then.[BR]
+[PAUSE:05]You can pass through.[WAIT][END]
+
+14-136
+[STYLE:RIGHT]What are you doing here?[BR]
+[PAUSE:05]Get back to your station![BR]
+[WAIT][NEXT]
+Kammy Koopa will chew us both[BR]
+out if she finds you here instead[BR]
+of at your post![WAIT][END]
+
+14-137
+[STYLE:RIGHT]Huh? [PAUSE:05]Are you insane? Get back [BR]
+to your post! Do you have any[BR]
+idea what Kammy Koopa will do to[BR]
+you if she finds you here?[WAIT][END]
+
+14-138
+[STYLE:RIGHT]Why do we bother patrolling?[BR]
+[PAUSE:0A]I mean, don't you agree? Sure, I[BR]
+know, Princess Peach got out a[BR]
+couple of times... [BR]
+[WAIT][NEXT]
+But this castle is hovering in the[BR]
+middle of the sky! Where's she[BR]
+gonna go? Huh?[BR]
+[WAIT][NEXT]
+I think King Bowser's nervous. He[BR]
+hides it well, though.[WAIT][END]
+
+14-139
+[STYLE:RIGHT]Listen, don't hang around me.[BR]
+Kammy Koopa'll get really mad[BR]
+if she finds you here.[BR]
+[WAIT][NEXT]
+I guess I understand why you're[BR]
+so curious, though.[BR]
+[PAUSE:0A]It's not often you get to see so[BR]
+many books in one place.[BR]
+[WAIT][NEXT]
+I've gotta admit, sometimes I[BR]
+sneak a few peeks myself... [BR]
+[PAUSE:05]Heh heh heh...[WAIT][END]
+
+14-13A
+[STYLE:RIGHT]Wha... [PAUSE:05]What're you looking at?[BR]
+[PAUSE:0A]I... I'm not looking for the book[BR]
+you think I'm looking for![BR]
+[WAIT][NEXT]
+I swear! No fooling![BR]
+[WAIT][NEXT]
+I'm trying to study...something![BR]
+[PAUSE:0A]Here, take this and go away! [WAIT][END]
+
+14-13B
+[STYLE:RIGHT]Seriously, leave me alone.[BR]
+[PAUSE:0A]I'm really trying to study.[BR]
+[WAIT][NEXT]
+I always get this killer headache[BR]
+when I open a book...[WAIT][END]
+
+14-13C
+[STYLE:RIGHT]Hey! You![BR]
+[PAUSE:0A]Stop loitering around here![WAIT][END]
+
+14-13D
+[STYLE:RIGHT]Are you still here!?[BR]
+[PAUSE:05]Get back to your post before I'm[BR]
+forced to report you to Kammy[BR]
+Koopa![WAIT][END]
+
+14-13E
+[STYLE:RIGHT]Why'd you leave your station?[BR]
+[PAUSE:05]Oh... You're looking for your[BR]
+relief, huh? Well, get a move on,[BR]
+then![WAIT][END]
+
+14-13F
+[STYLE:RIGHT]Sighhh... [PAUSE:0A]So booooored...[BR]
+[WAIT][NEXT]
+I wish I were Princess Peach's[BR]
+personal guard. Then I could[BR]
+admire at her beauty all day[BR]
+long.[BR]
+[WAIT][NEXT]
+I hope she breaks out of her[BR]
+room and comes here today...[BR]
+[PAUSE:0A]I can't believe I said that! You[BR]
+didn't hear that, did you?[WAIT][END]
+
+14-140
+[STYLE:RIGHT]Hey! Hold up![BR]
+[PAUSE:0A]Your shift? Oh, hurry up, then![WAIT][END]
+
+14-141
+[STYLE:RIGHT]All quiet here![BR]
+[PAUSE:0A]... Me? Nervous? No, not me! You[BR]
+surprised me, that's all.[WAIT][END]
+
+14-142
+[STYLE:RIGHT]I'm not goofing off! I swear it![BR]
+[PAUSE:05]Please, let me guard in peace![WAIT][END]
+
+14-143
+[STYLE:RIGHT]Where have you been?[BR]
+[PAUSE:0A]You took your sweet time![WAIT][END]
+
+14-144
+[STYLE:RIGHT]Where's my relief, already?[BR]
+[PAUSE:0A]My shift has been over for ages[BR]
+now! [BR]
+[WAIT][NEXT]
+Listen... Could you go find that[BR]
+slacker and get him up here?[BR]
+[PAUSE:08]Please! I'm exhausted![BR]
+[WAIT][NEXT]
+{StartAnim}{SetPrintPos:00:05}{Down:01}{Func_1A:00:00:05}{Sprite:00:39:1F}{Func_1A:00:01:06}{Sprite:00:39:20}{Func_1A:00:02:05}{Sprite:00:39:1F}{Func_1A:00:03:06}{Sprite:00:39:20}{Func_1B:00:00}{Func_1C:00}{EndAnim}[BR]
+{SetPrintPos:00:46}{Down:05}[LEFT] He looks like this.[BR]
+[BR]
+{Up:05}[WAIT]{Scroll:04}{Down:0B}He's probably goofing off[BR]
+outside the castle somewhere.[BR]
+[PAUSE:0A]Here. [PAUSE:05]Take this to find him.[WAIT][END]
+
+14-145
+[STYLE:RIGHT]It's the key to the entrance of[BR]
+the castle.[BR]
+[WAIT][NEXT]
+You won't be able to get[BR]
+downstairs without it.[WAIT][END]
+
+14-146
+[STYLE:RIGHT]He still hasn't shown up...[BR]
+[WAIT][NEXT]
+{StartAnim}{SetPrintPos:00:05}{Down:01}{Func_1A:00:00:05}{Sprite:00:39:1F}{Func_1A:00:01:06}{Sprite:00:39:20}{Func_1A:00:02:05}{Sprite:00:39:1F}{Func_1A:00:03:06}{Sprite:00:39:20}{Func_1B:00:00}{Func_1C:00}{EndAnim}[BR]
+{SetPrintPos:00:46}{Down:05}[LEFT] Find this guy, OK?[BR]
+[BR]
+{Up:05}[WAIT][END]
+
+14-147
+[STYLE:RIGHT]Ah! Finally! About time![BR]
+[PAUSE:0A]You're so late! Again![BR]
+[PAUSE:0A]Don't you know how to read the[BR]
+shift schedule?[BR]
+[WAIT][NEXT]
+[PAUSE:0A]Well, I guess I'll let it go this[BR]
+time, but watch it, OK?[BR]
+[PAUSE:0A]OK. Have a good shift.[BR]
+[PAUSE:0A]I'm shovin' off.[WAIT][END]
+
+14-148
+[STYLE:RIGHT]Don't goof off, either![BR]
+[PAUSE:0A]You're on thin ice, buddy![WAIT][END]
+
+14-149
+[STYLE:RIGHT]{StartFX:Wavy}Zzzzz...[WAIT][END]
+
+14-14A
+[STYLE:RIGHT]{StartFX:Wavy}Uh...nnnn...[BR]
+[PAUSE:0A]...Princess Peach...somewhere[BR]
+around here...close by...[BR]
+[WAIT][NEXT]
+Zzz... mumble... mumble...[WAIT][END]
+
+14-14B
+[STYLE:RIGHT]Hey, it's you![BR]
+[PAUSE:14]Oh no, it's just me. Hello me![BR]
+[PAUSE:0A]{StartFX:Wavy}Zzz... mumble... mumble...[WAIT][END]
+
+14-14C
+[STYLE:RIGHT]So sleepy... So very sleepy...[BR]
+[PAUSE:0A]Just lemme catch a quick nap...[BR]
+but don't tell anyone...[BR]
+[PAUSE:0A]{StartFX:Wavy}Zzz... mumble... mumble...[WAIT][END]
+
+14-14D
+[STYLE:RIGHT]Hey, you! Yeah, you![BR]
+[PAUSE:0A]Entry is prohibited for[BR]
+unauthorized people.[BR]
+[WAIT][NEXT]
+But...you're already up here, so[BR]
+I guess it's too late.[BR]
+[WAIT][NEXT]
+It's a stupid restriction,[BR]
+anyway.[WAIT][END]
+
+14-14E
+[STYLE:RIGHT]It's about time Kammy Koopa[BR]
+came back down.[BR]
+[WAIT][NEXT]
+I wonder what she could be doing[BR]
+up there? All those construction[BR]
+sounds...[WAIT][END]
+
+14-14F
+[STYLE:RIGHT]OK, OK. Everything's finally[BR]
+ready.[BR]
+[WAIT][NEXT]
+Even if Mario shows up with all of[BR]
+the Star Spirits, we'll still be[BR]
+all right![BR]
+[WAIT][NEXT]
+It pays to expect the worst.[WAIT][END]
+
+14-150
+[STYLE:RIGHT]Absolutely! Affirmative! You're[BR]
+right, Kammy Koopa![WAIT][END]
+
+14-151
+[STYLE:RIGHT]Mmm!![BR]
+[PAUSE:0A]You there![WAIT][END]
+
+14-152
+[STYLE:RIGHT]You're doing a fine job.[WAIT][END]
+
+14-153
+[STYLE:RIGHT]Keep up the good... Wait...[BR]
+[PAUSE:05]Something's weird about you...[BR]
+[PAUSE:0A]You smell...too nice...[WAIT][END]
+
+14-154
+[STYLE:RIGHT]Yahhhh![WAIT][END]
+
+14-155
+[STYLE:RIGHT]{StartFX:Shrinking}Uh-oh![WAIT][END]
+
+14-156
+[STYLE:RIGHT]You... [PAUSE:05]Why you little...[BR]
+[PAUSE:05]Princess Peach![BR]
+[PAUSE:0A]Unbelievable! Out again!![WAIT][END]
+
+14-157
+[STYLE:RIGHT]Guards! All of you![BR]
+[PAUSE:05]Catch this little runaway and[BR]
+take her back to her room![WAIT][END]
+
+14-158
+[STYLE:RIGHT]{StartFX:Wavy}Noooo![WAIT][END]
+
+14-159
+[STYLE:RIGHT]{SpeechSound:02}Are you all right, Princess?[BR]
+You're not hurt, are you?[WAIT][END]
+
+14-15A
+[STYLE:RIGHT]Yes, I'm fine. Thank you, Twink.[BR]
+[PAUSE:0A]That was such a dumb mistake![BR]
+I've got to be more careful.[BR]
+[WAIT][END]
+
+14-15B
+[STYLE:RIGHT]{SpeechSound:02}It'll be OK next time, Princess[BR]
+Peach.[BR]
+[WAIT][NEXT]
+If you put that Sneaky Parasol[BR]
+to good use, you can get out of[BR]
+here without being spotted.[BR]
+[WAIT][NEXT]
+Press {PushColor}{Color:11}[B]{PopColor} while facing the person[BR]
+you want to change into.[WAIT][END]
+
+14-15C
+[STYLE:RIGHT]{SpeechSound:02}Princess Peach, you need to be[BR]
+more careful, OK?[BR]
+[WAIT][NEXT]
+That Sneaky Parasol is the key[BR]
+to getting out of here without[BR]
+being discovered. Just use it[BR]
+properly.[BR]
+[WAIT][NEXT]
+Press {PushColor}{Color:11}[B]{PopColor} while facing the person[BR]
+you want to change into.[WAIT][END]
+
+14-15D
+[STYLE:RIGHT]{SpeechSound:02}It looks like you can't get out[BR]
+this door, Princess.[BR]
+[PAUSE:0A]There has to be another way...[BR]
+[WAIT][NEXT]
+Hey! Princess Peach![BR]
+[PAUSE:0A]Do you remember that Sneaky[BR]
+Parasol that you won?[BR]
+[WAIT][NEXT]
+If you put that Sneaky Parasol[BR]
+to good use, you can get out of[BR]
+here without being spotted. I'm[BR]
+sure of it![BR]
+[WAIT][NEXT]
+Press {PushColor}{Color:11}[B]{PopColor} while facing the person[BR]
+you want to change into.[WAIT][END]
+
+14-15E
+[STYLE:RIGHT]Oh, Mario... I wonder what he's[BR]
+doing now?[BR]
+[WAIT][NEXT]
+I wish I knew if I was helping him[BR]
+at all...[WAIT][END]
+
+14-15F
+[STYLE:RIGHT]{SpeechSound:02}Of course you are![BR]
+[WAIT][NEXT]
+Mario will be fine! You should be[BR]
+proud of your efforts![BR]
+[WAIT][NEXT]
+Mario knows all you've done.[BR]
+[WAIT][NEXT]
+And don't you worry, Princess![BR]
+You'll be able to talk to him in[BR]
+person before long![WAIT][END]
+
+14-160
+[STYLE:RIGHT]...Tee hee hee... I hope you're[BR]
+right, Twink.[BR]
+[PAUSE:0A]Thanks for cheering me up.[BR]
+[WAIT][NEXT]
+Let's go back to the room, shall[BR]
+we?[WAIT][END]
+
+14-161
+[STYLE:RIGHT]{SpeechSound:01}Oh, Princess Peach! Your cuddly[BR]
+old Bowser's here![WAIT][END]
+
+14-162
+[STYLE:RIGHT]{SpeechSound:01}Can't we have a friendly[BR]
+conversation for a change?[BR]
+[WAIT][NEXT]
+C'mon! Lemme see a smile![WAIT][END]
+
+14-163
+[STYLE:RIGHT]I have nothing to say to you.[WAIT][END]
+
+14-164
+[STYLE:RIGHT]{SpeechSound:01}Oh, don't be such a pill.[BR]
+[WAIT][NEXT]
+You're stuck with me for a long,[BR]
+long time, beautiful.[BR]
+[WAIT][NEXT]
+You'd better get used to it.[WAIT][END]
+
+14-165
+[STYLE:RIGHT]Mario is coming, Bowser. And you[BR]
+can't stop him.[WAIT][END]
+
+14-166
+[STYLE:RIGHT]{Down:08}{Size:20:20}{SpeechSound:01}Gwaa ha ha ha!![BR]
+{SizeReset}[BR]
+{Up:0C}{Func_04}[WAIT]{Scroll:03}Oh, you poor, silly girl![BR]
+[WAIT][NEXT]
+I'm invincible with this Star Rod,[BR]
+didn't you know?[BR]
+[PAUSE:0A]Mario's no match for me![BR]
+[WAIT][NEXT]
+He's history. Get over it.[WAIT][END]
+
+14-167
+[STYLE:RIGHT]................[BR]
+[PAUSE:0A][WAIT][END]
+
+14-168
+[STYLE:RIGHT]Your Raunchiness! We have an[BR]
+emergency![WAIT][END]
+
+14-169
+[STYLE:RIGHT]{SpeechSound:01}Grr! It'd better be important![BR]
+[PAUSE:0A]I'm right in the middle of a[BR]
+friendly chat with the princess.[WAIT][END]
+
+14-16A
+[STYLE:RIGHT]Uh... Mario has now saved all of[BR]
+the Star Spirits![BR]
+[WAIT][NEXT]
+There...IS a chance he could[BR]
+come here using their power...[BR]
+[WAIT][NEXT]
+We must make ourselves ready in[BR]
+case he shows up.[WAIT][END]
+
+14-16B
+[STYLE:RIGHT]{SpeechSound:01}What! Gah![BR]
+[PAUSE:0A]Mar-i-ooooo![BR]
+[WAIT][NEXT]
+OK. Listen, Kammy Koopa.[BR]
+[PAUSE:0A]Send everyone to their posts! [BR]
+[WAIT][NEXT]
+We'll ambush him the second he[BR]
+enters my castle!![WAIT][END]
+
+14-16C
+[STYLE:RIGHT]{SpeechSound:01}Princess Peach, why don't you[BR]
+come with me to watch...[BR]
+[PAUSE:0A]You can have a front-row seat[BR]
+to see Mario get crushed.[BR]
+[WAIT][NEXT]
+You! Yeah, you![BR]
+[PAUSE:0A]Tie her up immediately! If she[BR]
+gets out this time, heads will[BR]
+roll![WAIT][END]
+
+14-16D
+[STYLE:RIGHT]No! Please![BR]
+[PAUSE:1E][END]
+
+14-16E
+[STYLE:RIGHT]{SpeechSound:02}You big...Koopa! Show some[BR]
+respect to the princess![WAIT][END]
+
+14-16F
+[STYLE:RIGHT]{SpeechSound:01}What is this whining little[BR]
+glittering thing? Confetti?[WAIT][END]
+
+14-170
+[STYLE:RIGHT]{SpeechSound:01}Gah! Buzz off![WAIT][END]
+
+14-171
+[STYLE:RIGHT]{StartFX:Shrinking}Twiiiiink![WAIT][END]
+
+14-172
+[STYLE:RIGHT]{SpeechSound:01}Take the princess! Now! Let's[BR]
+move![WAIT][END]
+
+14-173
+[STYLE:RIGHT]{StartFX:Wavy}Noooo![WAIT][END]
+
+14-174
+[STYLE:RIGHT]What?! Princess Peach![BR]
+[PAUSE:0A][WAIT][END]
+
+14-175
+[STYLE:RIGHT]You know you're not allowed to[BR]
+leave the room![BR]
+[WAIT][NEXT]
+I'm sorry, but I have to take[BR]
+you back.[WAIT][END]
+
+14-176
+[STYLE:RIGHT]{SpeechSound:02}Are you all right, Princess? Did[BR]
+they hurt you?[WAIT][END]
+
+14-177
+[STYLE:RIGHT]Yes, I'm fine. Thank you, Twink.[BR]
+[PAUSE:0A]That was just plain stupid! I've[BR]
+got to be more careful![WAIT][END]
+
+14-178
+[STYLE:RIGHT]{SpeechSound:02}It'll be OK next time, Princess[BR]
+Peach.[WAIT][END]
+
+14-179
+[STYLE:RIGHT]{SpeechSound:02}You just need to watch your[BR]
+step a little, Princess.[WAIT][END]
+
+14-17A
+[STYLE:RIGHT]{SpeechSound:02}It doesn't look like you can get[BR]
+out through this door.[WAIT][END]
+
+14-17B
+[STYLE:INSPECT]A rather large fireplace.[BR]
+[PAUSE:0A]The fire feels quite warm.[WAIT][END]
+
+14-17C
+[STYLE:INSPECT]Princess Peach's dresses.[BR]
+[PAUSE:0A]Her favorite outfits![HEART][WAIT][END]
+
+14-17D
+[STYLE:INSPECT]A photo of Mario.[HEART][WAIT][END]
+
+14-17E
+[STYLE:INSPECT]A soft and comfortable bed.[HEART][WAIT][END]
+
+14-17F
+[STYLE:INSPECT]A bouquet of Princess Peach's[BR]
+favorite flowers.[HEART][BR]
+[PAUSE:0A]It smells incredible.[HEART][WAIT][END]
+
+14-180
+[STYLE:RIGHT]{SpeechSound:02}It seems to be locked.[BR]
+[PAUSE:05]You can't open it.[WAIT][END]
+
+14-181
+[STYLE:RIGHT]{SpeechSound:02}Hello? Is anyone in here?[WAIT][END]
+
+14-182
+[STYLE:RIGHT]Oh noo! I'm caught for sure![BR]
+[WAIT][NEXT]
+... [PAUSE:0A]Huh!?[BR]
+[PAUSE:0A]Princess Peach! You're OK![BR]
+Thank the Stars![WAIT][END]
+
+14-183
+[STYLE:RIGHT]You're a Toad from the castle?[BR]
+[PAUSE:0A]How long have you been hiding in[BR]
+here?[WAIT][END]
+
+14-184
+[STYLE:RIGHT]Well, since Bowser took over.[BR]
+[PAUSE:0A]I was so scared of being caught[BR]
+that I jumped into this closet.[BR]
+[WAIT][NEXT]
+I'm hiding here until Mario comes[BR]
+and saves us all.[BR]
+[WAIT][NEXT]
+Princess Peach, you ought to[BR]
+hide too! It's risky out there![BR]
+[PAUSE:0A]Please don't take any chances![WAIT][END]
+
+14-185
+[STYLE:RIGHT]Nobody's in here! Go away![WAIT][END]
+
+14-186
+[STYLE:RIGHT]Nothing in here but clothes![BR]
+Please don't open... Oh![WAIT][END]
+
+14-187
+[STYLE:RIGHT]Huh!? Mario!?[BR]
+[WAIT][NEXT]
+... Oh, sweet!![BR]
+[PAUSE:0A]You came to save me, right?[BR]
+[WAIT][NEXT]
+Phew... I was so scared...[BR]
+[WAIT][NEXT]
+Thanks for coming![BR]
+[PAUSE:14][WAIT][NEXT]
+While you're here, would you like[BR]
+to take a quick nap?[BR]
+[WAIT][NEXT]
+I'll wake you if anyone bad comes[BR]
+in, I swear it.[BR]
+[WAIT][NEXT]
+Would you like to take a nap?[BR]
+{Func_04}[END]
+
+14-188
+[STYLE:RIGHT]Huh!? Mario!?[BR]
+[WAIT][NEXT]
+... Oh, sweet!![BR]
+[PAUSE:0A]You came to save me, right?[BR]
+[WAIT][NEXT]
+Phew... I was so scared...[BR]
+[WAIT][NEXT]
+Thanks for coming![BR]
+[PAUSE:14][WAIT][NEXT]
+While you're here, would you like[BR]
+to take a quick nap?[BR]
+[WAIT][NEXT]
+Oh... Actually... You look fine.[BR]
+[WAIT][NEXT]
+You could take a nap anyway.[BR]
+What do you say?[BR]
+{Func_04}[END]
+
+14-189
+[STYLE:RIGHT]The Toad House slogan is...[BR]
+"Refresh your Body and Soul!"[BR]
+[WAIT][NEXT]
+Tee hee hee... I always wanted[BR]
+to say that.[BR]
+[WAIT][NEXT]
+Would you like to take a nap?[BR]
+{Func_04}[END]
+
+14-18A
+[STYLE:RIGHT]... ?[BR]
+[PAUSE:0A]You look healthy to me.[BR]
+[PAUSE:0A]Still, you're the boss. Are you[BR]
+sure you want a nap?[BR]
+{Func_04}[END]
+
+14-18B
+[NEXT]
+Good luck![BR]
+[PAUSE:0A]I'll be rooting for you, Mario... [BR]
+from in here.[WAIT][END]
+
+14-18C
+[NEXT]
+Please enjoy your rest.[WAIT][END]
+
+14-18D
+[STYLE:RIGHT]Did you sleep well?[BR]
+[WAIT][NEXT]
+Good luck, Mario![WAIT][END]
+
+14-18E
+[STYLE:RIGHT]{SpeechSound:02}Oh! Look there![BR]
+[PAUSE:05]What a beautifully crafted[BR]
+treasure chest![WAIT][END]
+
+14-18F
+[STYLE:RIGHT]Yes, do you like it?[BR]
+[WAIT][NEXT]
+This is a mysterious treasure[BR]
+chest that's been passed down[BR]
+through generations of my family[BR]
+here at the castle.[WAIT][END]
+
+14-190
+[STYLE:RIGHT]{SpeechSound:02}Really? How mysterious.[BR]
+[PAUSE:05]A mysterious treasure chest...[WAIT][END]
+
+14-191
+[STYLE:RIGHT]That's right. This chest is[BR]
+connected to another mysterious[BR]
+treasure chest somewhere in the[BR]
+Mushroom Kingdom.[BR]
+[WAIT][NEXT]
+They say you can put things in[BR]
+this chest and take them out of[BR]
+the other chest. Isn't that, well,[BR]
+mysterious?[WAIT][END]
+
+14-192
+[STYLE:RIGHT]{SpeechSound:02}Yeah! Wow, that's really cool.[BR]
+[PAUSE:0A]So, where is the other treasure[BR]
+chest, anyway?[WAIT][END]
+
+14-193
+[STYLE:RIGHT]Err... Where IS it...?[BR]
+[PAUSE:0A]You know, I can't remember![WAIT][END]
+
+14-194
+[STYLE:RIGHT]{SpeechSound:02}This is that mysterious treasure[BR]
+chest, isn't it?[WAIT][END]
+
+14-195
+[STYLE:RIGHT]Yes, Twink. It is.[WAIT][END]
+
+14-196
+[STYLE:RIGHT]{SpeechSound:02}So if I have this right, you can[BR]
+put something in here and[BR]
+someone can take it out of the[BR]
+other one, right?[BR]
+[WAIT][NEXT]
+You know, maybe Mario could get[BR]
+whatever you put in here.[WAIT][END]
+
+14-197
+[STYLE:RIGHT]Yeah, maybe he could! What can I[BR]
+put in?[WAIT][END]
+
+14-198
+[STYLE:INSPECT]You put in {Var:00}[WAIT][END]
+

@@ -1,0 +1,94 @@
+% automatically dumped from map kzn_22
+
+#new:Npc $kzn_22_80241CE0
+00000000 $NpcSettings_80240F20_kzn_22 00000000 00000000 00000000 
+00110509 $Script_Init_8024131C_kzn_22 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00B60001 00B60004 00B60006 00B60006 00B60001 00B60001 00B60001 00B60001 
+00B60001 00B60001 00B60001 00B60001 00B60001 00B60001 00B60001 00B60001 
+00000000 00000000 00000000 001A0000 % He's the archaeologist, Kolorado. He's famous as b ...
+
+#new:Function $Function_80240340_kzn_22
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  LAH       A2, 8015A552
+   14:  JAL       {Func:SetVariable}
+   18:  LW        A1, 0 (V0)
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80240F20_kzn_22
+00000000 00280018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80240FD0_kzn_22
+    0:  Loop     
+    C:  	Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[0.5] )
+   28:  EndLoop
+   30:  Return
+   38:  End
+
+#new:Script $Script_80241010_kzn_22
+    0:  Exec     $Script_80240FD0_kzn_22 
+    C:  Label    00000000 
+   18:  Call     $Function_80240340_kzn_22 ( *Var[0] )
+   28:  If  *Var[0]  !=  0000000E 
+   38:  	Wait     00000001 
+   44:  	Goto     00000000 
+   50:  EndIf
+   58:  Call     DisablePlayerInput 	( .True )
+   68:  Call     GetPlayerAnimation 	( *Var[0] )
+   78:  If  *Var[0]  ==  0008001A 
+   88:  	Wait     00000023 
+   94:  EndIf
+   9C:  Wait     0000000A 
+   A8:  EndIf
+   B0:  Call     PlayerFaceNpc 	( 00000000 00000000 )
+   C4:  Set  *AreaFlag[00C]  00000001 
+   D4:  Thread
+   DC:  Call     SetNpcAnimation 	( .Npc:Self 00B60007 )
+   F0:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  10C:  Label    00000001 
+  118:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[2.0] )
+  12C:  Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  144:  Call     NpcJump0    	( .Npc:Self *Var[0] *Var[1] *Var[2] 0000000F )
+  164:  If  *AreaFlag[00E]  ==  00000000 
+  174:  	Wait     00000001 
+  180:  	Goto     00000001 
+  18C:  EndIf
+  194:  EndThread
+  19C:  Wait     0000000A 
+  1A8:  Call     GetNpcPos   	( .Npc:Self *Var[3] *Var[4] *Var[5] )
+  1C4:  Call     UseSettingsFrom 	( .Default *Var[3] *Var[4] *Var[5] )
+  1E0:  Call     SetPanTarget 	( .Default *Var[3] *Var[4] *Var[5] )
+  1FC:  Call     SetCamDistance ( .Default *Fixed[350.0] )
+  210:  Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-4.0] )
+  228:  Call     SetCamPosB  	( .Default *Fixed[480.0] *Fixed[299.6006] )
+  240:  Call     SetCamSpeed 	( .Default *Fixed[5.0] )
+  254:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  26C:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  280:  Thread
+  288:  Call     SetPlayerSpeed ( *Fixed[3.0] )
+  298:  Call     MovePlayerTo 	( 000000FA 000000D2 00000000 )
+  2B0:  EndThread
+  2B8:  Wait     00000014 
+  2C4:  Call     802D095C ( 00100116 000001B8 000000F0 000000A5 )
+  2E0:  Wait     00000014 
+  2EC:  Set  *AreaFlag[00D]  00000001 
+  2FC:  Return
+  304:  End
+
+#new:Script $Script_Init_8024131C_kzn_22
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_80241010_kzn_22 )
+   14:  Return
+   1C:  End
+

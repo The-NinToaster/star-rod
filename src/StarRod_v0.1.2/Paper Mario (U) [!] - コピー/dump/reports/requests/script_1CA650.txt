@@ -1,0 +1,17 @@
+Script: 1CA650 (001CA650)
+
+    0:  Call     UseCamPreset 	( 00000002 )
+   10:  Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[1] )
+   28:  Call     GetActorPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+   44:  Set  *Var[1]  00000000 
+   54:  Call     SetGoalToPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+   70:  Call     SetActorJumpscale 	( FFFFFF81 *Fixed[1.4003906] )
+   84:  Call     AddToGoalPos 	( FFFFFF81 0000001E 00000000 00000000 )
+   A0:  Call     JumpToGoal  	( FFFFFF81 0000000F 00000000 00000001 00000000 )
+   C0:  Call     AddToGoalPos 	( FFFFFF81 0000000F 00000000 00000000 )
+   DC:  Call     JumpToGoal  	( FFFFFF81 00000008 00000000 00000001 00000000 )
+   FC:  Call     AddToGoalPos 	( FFFFFF81 00000005 00000000 00000000 )
+  118:  Call     JumpToGoal  	( FFFFFF81 00000005 00000000 00000001 00000000 )
+  138:  Return
+  140:  End
+

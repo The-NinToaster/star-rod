@@ -1,0 +1,96 @@
+% automatically dumped from map arn_03
+
+#new:Npc $arn_03_80243568
+00000001 $NpcSettings_80241C3C_arn_03 00000000 00000000 00000000 
+00000505 $Script_Init_802428A8_arn_03 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00950101 00950102 00950103 00950103 00950101 00950101 00950100 00950100 
+0095010A 00950103 00950103 00950103 00950103 00950103 00950103 00950103 
+00000000 00000000 00000000 001A00AB % That's a Boo who lives here in Gusty Gulch. Have y ...
+
+#new:NpcSettings $NpcSettings_80241C3C_arn_03
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241C6C_arn_03
+    0:  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+   18:  Return
+   20:  Return
+   28:  End
+
+#new:Script $Script_80241E68_arn_03
+    0:  Call     SetPlayerAnimation 	( 00010002 )
+   10:  Wait     00000001 
+   1C:  Call     SetPlayerAnimation 	( 00080007 )
+   2C:  Wait     00000014 
+   38:  Return
+   40:  End
+
+#new:Script $Script_8024254C_arn_03
+    0:  If  *MapVar[0]  !=  00000000 
+   10:  	If  *MapVar[0]  >=  *MapVar[1] 
+   20:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E0081 ) % Thank you for waiting! I finally found it. I can't ...
+   40:  		Set  *Var[0]  00000076 
+   50:  		Set  *Var[1]  00000001 
+   60:  		ExecWait $Script_80241C6C_arn_03 
+   6C:  		Call     AddKeyItem  	( .Item:Package )
+   7C:  		Set  *MapVar[0]  00000000 
+   8C:  		Set  *Flag_ARN_0E  00000001 
+   9C:  		Set  *Flag_ARN_13  00000000 
+   AC:  		Return
+   B4:  	Else
+   BC:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E0080 ) % Can you wait a little while longer? I'm still look ...
+   DC:  		Return
+   E4:  	EndIf
+   EC:  EndIf
+   F4:  Switch  *StoryProgress 
+  100:  	Case  <  FFFFFFE6 
+  10C:  		If  *AreaFlag[003]  ==  00000000 
+  11C:  			Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E0079 ) % Psst! Buddy! Did you know you can walk slowly and  ...
+  13C:  			Set  *AreaFlag[003]  00000001 
+  14C:  		Else
+  154:  			Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E007A ) % Psst! Buddy! Did you know you can walk slowly and  ...
+  174:  			Set  *AreaFlag[003]  00000000 
+  184:  		EndIf
+  18C:  	Case  <  FFFFFFF0 
+  198:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E007B ) % Tubba Blubba is coming!? Oh no! Quick, hide! Aaagh ...
+  1B8:  	Case  <  FFFFFFF2 
+  1C4:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E007C ) % That naughty Boo that Tubba Blubba ate came back!  ...
+  1E4:  	Case  <  00000027 
+  1F0:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E007D ) % That naughty Boo that Tubba Blubba ate came back!  ...
+  210:  	Case  >=  00000027 
+  21C:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E007E ) % Has my naughty friend played any spooky tricks on  ...
+  23C:  EndSwitch
+  244:  If  *Flag_ARN_0E  ==  00000000 
+  254:  	If  *Byte_NPC_02  ==  00000012 
+  264:  		ExecWait $Script_80241E68_arn_03 
+  270:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E007F ) % Oh, hello. You're running an errand for old Koopa  ...
+  290:  		Call     SayMessage1 	( .Npc:Self 00950104 00950101 00000000 )
+  2AC:  		Set  *MapVar[0]  00000000 
+  2BC:  		Set  *MapVar[1]  000001C2 
+  2CC:  		Set  *Flag_ARN_13  00000001 
+  2DC:  		Thread
+  2E4:  			Loop     
+  2F0:  				Add  *MapVar[0]  00000001 
+  300:  				Wait     00000001 
+  30C:  				If  *MapVar[0]  >=  *MapVar[1] 
+  31C:  					BreakLoop
+  324:  				EndIf
+  32C:  			EndLoop
+  334:  		EndThread
+  33C:  	EndIf
+  344:  EndIf
+  34C:  Return
+  354:  End
+
+#new:Script $Script_Init_802428A8_arn_03
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024254C_arn_03 )
+   14:  Return
+   1C:  End
+

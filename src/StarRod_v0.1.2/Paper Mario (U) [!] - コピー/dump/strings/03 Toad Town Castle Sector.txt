@@ -1,0 +1,2262 @@
+03-000
+[STYLE:RIGHT]Hey, what's up?[BR]
+[PAUSE:0A]Good to meet ya, bud.[BR]
+[WAIT][NEXT]
+Rowf's the name.[BR]
+[PAUSE:0A]I'm starting me up a little[BR]
+business in Toad Town.[BR]
+[WAIT][NEXT]
+I'm still setting up, though.[BR]
+[WAIT][NEXT]
+I wanna see you back in here[BR]
+when we open, all right?[WAIT][END]
+
+03-001
+[STYLE:RIGHT]Stop by again after we open,[BR]
+OK, buddy?[WAIT][END]
+
+03-002
+[STYLE:RIGHT]Sorry, bud.[BR]
+[PAUSE:0A]Still a few things to set up.[BR]
+[WAIT][NEXT]
+Come by later, all right?[WAIT][END]
+
+03-003
+[STYLE:RIGHT]Hey! Welcome, buddy![BR]
+[PAUSE:0A]Well, we got it open![BR]
+[PAUSE:0A]What do you think?[BR]
+Pretty spectacular shop, huh?[BR]
+[WAIT][NEXT]
+How about buying something?[BR]
+[WAIT][NEXT]
+Just press {PushColor}{Color:10}[A]{PopColor} in front of a[BR]
+Badge you want to buy.[WAIT][END]
+
+03-004
+[STYLE:RIGHT]Hey, bud! How ya been?[BR]
+[PAUSE:05]Take a look around.[BR]
+[PAUSE:0A]I wanna see you walk out[BR]
+of here with something.[BR]
+[WAIT][NEXT]
+Just press {PushColor}{Color:10}[A]{PopColor} in front of a[BR]
+Badge you want to buy.[WAIT][END]
+
+03-005
+[STYLE:RIGHT]Sorry, bud...nothing new...[BR]
+[PAUSE:0A]This is all I have today.[BR]
+[WAIT][NEXT]
+I'm expecting another shipment,[BR]
+so come on back later.[WAIT][END]
+
+03-006
+[STYLE:RIGHT]Aw, buddy...[BR]
+[PAUSE:0A]I'm cleaned out![BR]
+I've got nothing more to sell![BR]
+[WAIT][NEXT]
+You were one serious repeat[BR]
+customer, bud! [BR]
+I can practically retire now![BR]
+[WAIT][NEXT]
+This town was real nice...[BR]
+but I think I'll take a trip.[BR]
+[PAUSE:0A]Thanks, bud! You're the man![WAIT][END]
+
+03-007
+[STYLE:RIGHT]{StartFX:Shrinking}Hey! You! You little scamp![BR]
+Get your hands off...[BR]
+[PAUSE:0A]Give me back my Calculator![WAIT][END]
+
+03-008
+[STYLE:RIGHT]Sorry, bud.[BR]
+[PAUSE:0A]I had to close up shop.[BR]
+[WAIT][NEXT]
+Some idiot Shy Guy stole[BR]
+my Calculator. You believe that?[BR]
+[WAIT][NEXT]
+I need that thing to calculate[BR]
+sales, bud! I'm not a genius![BR]
+[PAUSE:0A]When I find that little punk...[WAIT][END]
+
+03-009
+[STYLE:RIGHT]Hey, buddy![BR]
+[PAUSE:0A]Isn't that my Calculator?![BR]
+[WAIT][NEXT]
+You're telling me...you got[BR]
+it back from the Shy Guys?[BR]
+[WAIT][NEXT]
+Yeah! In your face, Shy Guy![BR]
+[PAUSE:0A]I can open my shop again![BR]
+[WAIT][NEXT]
+Oh, man, how can I repay you?[BR]
+I know! Take this![BR]
+[PAUSE:0A]This is a special Badge, bud,[BR]
+so use it with care.[WAIT][END]
+
+03-00A
+[STYLE:RIGHT]Thanks to you I can finally[BR]
+open my shop again.[BR]
+[WAIT][NEXT]
+I'll be up and running in[BR]
+no time flat.[BR]
+[PAUSE:0A]Come back soon, bud.[WAIT][END]
+
+03-00B
+[STYLE:RIGHT]Hey![BR]
+[PAUSE:0A]That wasn't my Calculator?[BR]
+[WAIT][NEXT]
+It looked just like mine...[WAIT][END]
+
+03-00C
+[STYLE:RIGHT]Hey, mister.[BR]
+[PAUSE:05]You're a customer, aren't you?[BR]
+[WAIT][NEXT]
+Dad's preparing to open the[BR]
+shop soon, so I guess you[BR]
+gotta wait a little while.[WAIT][END]
+
+03-00D
+[STYLE:RIGHT]Welcome, mister.[BR]
+[PAUSE:0A]Press {PushColor}{Color:10}[A]{PopColor} in front of a Badge[BR]
+you want, if there is one.[BR]
+It's easy![BR]
+[WAIT][NEXT]
+You should buy a lot and[BR]
+spend a lot of coins because[BR]
+Badges are really neat.[WAIT][END]
+
+03-00E
+[STYLE:RIGHT]I'm a good boy because I[BR]
+help my dad every day.[BR]
+[WAIT][NEXT]
+Like my dad says, business is[BR]
+a lot of work, but it pays off[BR]
+in the end.[WAIT][END]
+
+03-00F
+[STYLE:RIGHT]Dad says we're closing and[BR]
+moving to another town.[BR]
+[WAIT][NEXT]
+See ya, mister.[BR]
+[PAUSE:0A]Thanks for shopping so much.[WAIT][END]
+
+03-010
+[STYLE:RIGHT]A Shy Guy just stole[BR]
+Dad's Calculator.[BR]
+[WAIT][NEXT]
+You should've heard what my[BR]
+dad said! We can't open now![BR]
+[WAIT][NEXT]
+Stupid Shy Guy![BR]
+[PAUSE:0A]Give back Dad's Calculator![WAIT][END]
+
+03-011
+[STYLE:RIGHT]Dad says we would've gone[BR]
+out of business if we hadn't[BR]
+gotten that Calculator back.[BR]
+[WAIT][NEXT]
+We can open the shop again![BR]
+All because of you![BR]
+[PAUSE:0A]Thank you, mister![WAIT][END]
+
+03-012
+[STYLE:RIGHT]We can open the shop again![BR]
+Back in business![BR]
+[PAUSE:0A]Thank you, mister![WAIT][END]
+
+03-013
+[STYLE:RIGHT]Hey, mister![BR]
+[WAIT][NEXT]
+My dad's opened his shop.[BR]
+[PAUSE:0A]Don't you wanna take a look?[BR]
+It's really cool.[BR]
+[WAIT][NEXT]
+It's a Badge shop. For Badges.[BR]
+[PAUSE:0A]Come on, check it out.[WAIT][END]
+
+03-014
+[STYLE:RIGHT]We have lots of rare Badges,[BR]
+so take a verrrry close look.[WAIT][END]
+
+03-015
+[STYLE:RIGHT]Hello, Mario![BR]
+[WAIT][NEXT]
+The Toad House's slogan is...[BR]
+[PAUSE:0A]"Refresh your Body and Soul!"[BR]
+[WAIT][NEXT]
+Would you like to take a nap?[BR]
+{Func_04}[END]
+
+03-016
+[STYLE:RIGHT]...Really?[BR]
+[PAUSE:0A]You seem to be in fine shape.[BR]
+[PAUSE:0A]Are you sure you want to take[BR]
+a nap?[BR]
+{Func_04}[END]
+
+03-017
+[NEXT]
+Please come again![WAIT][END]
+
+03-018
+[NEXT]
+Sleep well![WAIT][END]
+
+03-019
+[STYLE:RIGHT]Did you sleep well?[BR]
+[WAIT][NEXT]
+Now that your body and soul[BR]
+are refreshed, your travels[BR]
+will seem much easier.[WAIT][END]
+
+03-01A
+[STYLE:RIGHT]The Toad House's slogan is...[BR]
+[PAUSE:0A]"Refresh your Body and[BR]
+Soul!"[PAUSE:0A]... But...[BR]
+[WAIT][NEXT]
+it's impossible to get refreshed[BR]
+with this Shy Guy jumping all[BR]
+over the place. Sorry.[WAIT][END]
+
+03-01B
+[STYLE:RIGHT]Now that the Shy Guys are[BR]
+gone, you can stay here.[BR]
+[PAUSE:0A]Would you like to take a nap?[BR]
+{Func_04}[END]
+
+03-01C
+[STYLE:RIGHT]{StartFX:Shrinking}Merlon is out![WAIT][END]
+
+03-01D
+[STYLE:RIGHT]{StartFX:Shrinking}I said Merlon is out, so he[BR]
+must be out![WAIT][END]
+
+03-01E
+[STYLE:RIGHT]{StartFX:Shrinking}I'm telling you,[BR]
+Merlon is out!!! Ouuut!!![WAIT][END]
+
+03-01F
+[STYLE:RIGHT]{StartFX:Shrinking}Merlon is out!![WAIT][END]
+
+03-020
+[STYLE:RIGHT]Why do you keep on knocking?[BR]
+I'm telling you he's out!![WAIT][END]
+
+03-021
+[STYLE:RIGHT]What the...?[BR]
+[PAUSE:05]Why is someone sleeping in[BR]
+front of my house?[BR]
+[WAIT][NEXT]
+Wait a minute...[BR]
+[PAUSE:0A]That face seems verrry[BR]
+familiar to me...[WAIT][END]
+
+03-022
+[STYLE:RIGHT]Oh! Maybe...[BR]
+[PAUSE:0A]No... Yes! It must be![BR]
+[PAUSE:0A]You're Mario![BR]
+[WAIT][NEXT]
+I've been waiting for you![BR]
+[WAIT][NEXT]
+You should've come earlier![BR]
+[PAUSE:0A]Well, you're here now. Come in.[WAIT][END]
+
+03-023
+[STYLE:RIGHT]Where to begin...?[BR]
+[PAUSE:14]My name...is Merlon.[BR]
+[PAUSE:0A]I am a wizard.[BR]
+[WAIT][NEXT]
+When I was reading the stars[BR]
+the other day, an oracle[BR]
+came to me.[BR]
+[WAIT][NEXT]
+What I discovered is very[BR]
+important, and it concerns you.[BR]
+[WAIT][NEXT]
+But, before I tell you about it,[BR]
+there are other things of which[BR]
+I must speak.[BR]
+[WAIT][NEXT]
+It is a very long story, but[BR]
+I'll try to shorten it.[BR]
+[PAUSE:05]Where should I start...?[BR]
+[WAIT][NEXT]
+It was in the old days.[BR]
+One of my ancestors was up[BR]
+on Shooting Star Summit[BR]
+and as usual.....[BR]
+[WAIT][NEXT]
+......but one day it happened.[BR]
+...suddenly...a great...[BR]
+...appeared and I...[BR]
+...standing face to face...[BR]
+[WAIT][NEXT]
+Then, the faraway....[BR]
+the pious...[BR]
+was....raised me up...[BR]
+.....was amazing..[BR]
+[WAIT][NEXT]
+..I was still so young then...[BR]
+I believed in .........[BR]
+But....our hearts were.....[BR]
+[WAIT][NEXT]
+...........[BR]
+and...........[BR]
+.....then....[BR]
+...........so......[BR]
+[WAIT][NEXT]
+........[BR]
+...................[BR]
+.....  ..........[BR]
+...  ..........[BR]
+{Func_04}[END]
+
+03-024
+[NEXT]
+...........................[BR]
+.................[BR]
+.........................[BR]
+...................[BR]
+[WAIT][NEXT]
+......................[BR]
+.............[BR]
+.........................[BR]
+..and that is all that matters.[BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}Huh?! Hey, {EndFX:Shrinking}[PAUSE:0A][WAIT][NEXT]
+Mario![BR]
+[PAUSE:0A]Were you listening to me?[WAIT][END]
+
+03-025
+[STYLE:RIGHT]Oh...all right.[BR]
+[WAIT][NEXT]
+...So, anyway, that is why[BR]
+[PAUSE:0A]I am able to help you.[BR]
+[WAIT][NEXT]
+If you get lost during[BR]
+your adventure, you[BR]
+can come to me.[BR]
+[WAIT][NEXT]
+I can predict the path[BR]
+you should take for[BR]
+a small price.[BR]
+[PAUSE:0A][WAIT][NEXT]
+[PAUSE:0A]Right now, your main goal[BR]
+must be to save Princess Peach[BR]
+as quickly as is humanly[BR]
+possible, but...[BR]
+[WAIT][NEXT]
+according to my second sight,[BR]
+your path must first take you[BR]
+to the great fortress of the[BR]
+Koopa Bros.[BR]
+[WAIT][NEXT]
+To reach the Koopa Bros.[BR]
+Fortress, head east on the road[BR]
+in front of the Toad House.[WAIT][END]
+
+03-026
+[STYLE:RIGHT]Make haste to the east.[BR]
+[WAIT][NEXT]
+You must go to the[BR]
+Koopa Bros. Fortress.[BR]
+[WAIT][NEXT]
+Go east on the road in front[BR]
+of Toad House.[WAIT][END]
+
+03-027
+[STYLE:RIGHT]Come again?[BR]
+[PAUSE:0A]Strange Toads blocking the[BR]
+east side of Toad Town?[BR]
+That shouldn't be...[BR]
+[WAIT][NEXT]
+That's ridiculous![BR]
+[PAUSE:0A]Such a thing has never been[BR]
+heard of! Never![BR]
+[WAIT][NEXT]
+I'll get to the bottom of this.[BR]
+[PAUSE:0A]Follow me over there.[BR]
+I'll see what's going on.[WAIT][END]
+
+03-028
+[STYLE:RIGHT]Are these the strange Toads[BR]
+you were talking about?[WAIT][END]
+
+03-029
+[STYLE:RIGHT]I told you that you can't pass![WAIT][END]
+
+03-02A
+[STYLE:RIGHT]Take off![WAIT][END]
+
+03-02B
+[STYLE:RIGHT]Hmmmm![BR]
+[PAUSE:0A]You aren't Toads, are you?![WAIT][END]
+
+03-02C
+[STYLE:RIGHT]...[PAUSE:05]Um...we don't know what[BR]
+you're talking about.[WAIT][END]
+
+03-02D
+[STYLE:RIGHT]Yeah, what gives?[BR]
+[PAUSE:0A]Ask anyone! We're just cute,[BR]
+ordinary Toads hanging out.[WAIT][END]
+
+03-02E
+[STYLE:RIGHT]{StartFX:Shrinking}Reveal your true selves![WAIT][END]
+
+03-02F
+[STYLE:RIGHT]{StartFX:Shrinking}{StartFX:Jitter}Aaaaaaaaaaaaaargh!!![WAIT][END]
+
+03-030
+[STYLE:RIGHT]Hmph! Just as I thought.[BR]
+[PAUSE:0A]You're the Koopa Bros.!![WAIT][END]
+
+03-031
+[STYLE:RIGHT]How... [PAUSE:05]How'd you guess[BR]
+it was us?[BR]
+[PAUSE:0A]We were perfectly disguised!![WAIT][END]
+
+03-032
+[STYLE:RIGHT]Shucks![BR]
+[PAUSE:0A]Black! [PAUSE:05]Yellow! [PAUSE:05]Green![BR]
+[PAUSE:0A]We retreat!! ...for now...[WAIT][END]
+
+03-033
+[STYLE:RIGHT]Mario, those imposters were[BR]
+none other than the Koopa Bros.[BR]
+[WAIT][NEXT]
+You must pursue them to[BR]
+their hideout, the Koopa[BR]
+Bros. Fortress.[WAIT][END]
+
+03-034
+[STYLE:RIGHT]Oh, Mario,[BR]
+[PAUSE:0A]there's one part of your[BR]
+fortune I haven't revealed.[BR]
+[WAIT][NEXT]
+To get to the Koopa Bros.[BR]
+Fortress, you'll need help from[BR]
+{Color:20}a blue-shelled Koopa{Color:0A}.[BR]
+[WAIT][NEXT]
+This is a strange portent. In[BR]
+{Color:20}Koopa Village{Color:0A}, you might find[BR]
+something that will clear it up.[BR]
+[WAIT][NEXT]
+I must return home now.[WAIT][END]
+
+03-035
+[STYLE:RIGHT]To get to Koopa Bros.[BR]
+Fortress, you first need to[BR]
+find a blue-shelled Koopa.[BR]
+[WAIT][NEXT]
+My fortune-telling never lies,[BR]
+Mario, so heed my words.[BR]
+[PAUSE:0A]Trust me.[WAIT][END]
+
+03-036
+[STYLE:RIGHT]Ah, Mario.[BR]
+[PAUSE:0A]Do you want me to predict[BR]
+the path you should take?[BR]
+[WAIT][NEXT]
+It will cost 5 coins.[BR]
+[PAUSE:0A]Is that acceptable?[BR]
+{Func_04}[END]
+
+03-037
+[NEXT]
+Excellent.[BR]
+[PAUSE:0A]Now relax while I read[BR]
+what your future holds.[WAIT][END]
+
+03-038
+[STYLE:RIGHT]{StartFX:Shrinking}Ooooo---------![BR]
+{EndFX:Shrinking}[WAIT]Crystal eye![BR]
+Open wide![BR]
+[WAIT][NEXT]
+Aiiii----------![BR]
+Aiiii-----------cha!![BR]
+Ai, ai, ai------ching!!![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}{Size:30:30}Ah haaaa![WAIT][END]
+
+03-039
+[NEXT]
+You don't want me to[BR]
+predict your future?[BR]
+[PAUSE:0A]All right. Whenever you[BR]
+lose your way, come to me.[BR]
+[WAIT][NEXT]
+If you require something other[BR]
+than fortune-telling, stand[BR]
+beside me to talk to me.[WAIT][END]
+
+03-03A
+[NEXT]
+How tragic.[BR]
+You do not have enough coins.[BR]
+[WAIT][NEXT]
+As my familial code states,[BR]
+I can't predict your future[BR]
+if you lack the funds.[BR]
+I'm very sorry.[WAIT][END]
+
+03-03B
+[STYLE:RIGHT]If you want me to predict[BR]
+your future, talk to me[BR]
+from across the table.[WAIT][END]
+
+03-03C
+[STYLE:RIGHT]Merlon is here![WAIT][END]
+
+03-03D
+[STYLE:RIGHT]Oh, it's you, Mario.[BR]
+[PAUSE:0A]What fortunate timing.[BR]
+[WAIT][NEXT]
+Hmm...? [PAUSE:0A]The town seems to be[BR]
+pretty active today, but[BR]
+it's none of my concern.[WAIT][END]
+
+03-03E
+[STYLE:RIGHT]Oh, it's you, Mario.[BR]
+[PAUSE:05]What fortunate timing.[WAIT][END]
+
+03-03F
+[STYLE:RIGHT]I had a dream last night, and[BR]
+another oracle spoke to me.[BR]
+[WAIT][NEXT]
+Its voice was heavenly...[BR]
+[WAIT][NEXT]
+"If you keep going around[BR]
+and around the red palm tree[BR]
+in the distant desert town[BR]
+-- Dry Dry Outpost --[BR]
+[WAIT][NEXT]
+something good will happen."[BR]
+So said the voice in my dream.[BR]
+[WAIT][NEXT]
+It doesn't seem to make any[BR]
+sense at all to me.[BR]
+[WAIT][NEXT]
+In fact, thinking about it[BR]
+makes me so uneasy that I can't[BR]
+sleep at night.[BR]
+[WAIT][NEXT]
+If you find out what it means, [BR]
+please tell me.[WAIT][END]
+
+03-040
+[STYLE:RIGHT]Hmmm...[BR]
+[WAIT][NEXT]
+"Desert town, red palm tree,[BR]
+go around and around,[BR]
+something good will happen."[BR]
+[WAIT][NEXT]
+What does the dream mean?[BR]
+[PAUSE:0A]I can't get it out of my mind.[BR]
+I can't sleep. I can't eat.[BR]
+I'm obsessed![BR]
+[WAIT][NEXT]
+Anyway, if you want me to[BR]
+predict your future, talk to[BR]
+me from across the table.[WAIT][END]
+
+03-041
+[STYLE:RIGHT]Huh...?[BR]
+[WAIT][NEXT]
+Oh, this Badge is Quick Change![BR]
+[WAIT][NEXT]
+I had no idea such a useful[BR]
+Badge was in my attic...[BR]
+[WAIT][NEXT]
+Mario,[BR]
+[PAUSE:0A]you are a very lucky man.[WAIT][END]
+
+03-042
+[STYLE:RIGHT]You should put that Badge on.[WAIT][END]
+
+03-043
+[STYLE:RIGHT]You are Merlon, correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+03-044
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+03-045
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+03-046
+[STYLE:RIGHT]Hm? Who's it from?[BR]
+[WAIT][NEXT]
+Hmmmmm...[BR]
+[PAUSE:0A]Oh, my granddaughter, Merlee![BR]
+She recently entered the[BR]
+family business.[BR]
+[WAIT][NEXT]
+Umph... [PAUSE:08]Is that so?[BR]
+[PAUSE:0A]Oh, I see. Interesting...[BR]
+[PAUSE:0A][WAIT][NEXT]
+She opened up her business[BR]
+at Dry Dry Outpost, deep in[BR]
+the desert.[BR]
+[WAIT][NEXT]
+It's located somewhere[BR]
+quiet off the main drag.[BR]
+[WAIT][NEXT]
+She seems to be keeping busy.[BR]
+[PAUSE:05]That's good to hear.[BR]
+[WAIT][NEXT]
+Thanks so much for bringing[BR]
+this letter.[BR]
+[PAUSE:0A]I'll give you this.[WAIT][END]
+
+03-047
+[STYLE:RIGHT]Oh, it's you![BR]
+[PAUSE:05]You came at such a good time.[BR]
+[WAIT][NEXT]
+There's a guest waiting[BR]
+for you.[WAIT][END]
+
+03-048
+[STYLE:RIGHT]Nice to meet you.[BR]
+[PAUSE:0A]I come from {Color:20}Starborn Valley{Color:0A}.[BR]
+[WAIT][NEXT]
+Starborn Valley is in the[BR]
+Shiver region, a chill place[BR]
+far to the north, at the very[BR]
+end of the earth.[BR]
+[WAIT][NEXT]
+Merle, who hails from there,[BR]
+said that he had something[BR]
+important to tell you, Mario.[WAIT][END]
+
+03-049
+[STYLE:RIGHT]Merle of Starborn Valley is[BR]
+my son, Mario.[BR]
+[WAIT][NEXT]
+It seems he's calling for you.[BR]
+[WAIT][NEXT]
+If he is searching for you,[BR]
+you can be sure something[BR]
+important is afoot.[BR]
+[WAIT][NEXT]
+You must go to Starborn Valley![BR]
+Do not delay![WAIT][END]
+
+03-04A
+[STYLE:RIGHT]Yes, please hurry![BR]
+[WAIT][NEXT]
+I will run ahead and take[BR]
+tidings of you to Merle.[WAIT][END]
+
+03-04B
+[STYLE:RIGHT]I think somewhere deep below[BR]
+Toad Town is a pipe connected[BR]
+to {Color:20}Shiver City{Color:0A}.[BR]
+[WAIT][NEXT]
+Starborn Valley is located[BR]
+quite near Shiver City.[BR]
+[WAIT][NEXT]
+Mario...[BR]
+[PAUSE:0A]hurry to meet my son.[BR]
+He waits in Starborn Valley.[WAIT][END]
+
+03-04C
+[STYLE:RIGHT]Mario...[BR]
+[PAUSE:0A]you must hurry and find my son[BR]
+in Starborn Valley.[BR]
+[WAIT][NEXT]
+You must enter the tunnels[BR]
+beneath Toad Town and find[BR]
+the pipe that connects to[BR]
+Shiver City.[BR]
+[WAIT][NEXT]
+Starborn Valley is near[BR]
+Shiver City.[WAIT][END]
+
+03-04D
+[STYLE:RIGHT]It's dangerous out there.[BR]
+I wouldn't go.[WAIT][END]
+
+03-04E
+[STYLE:RIGHT]Yeah, you shouldn't go.[WAIT][END]
+
+03-04F
+[STYLE:RIGHT]Nope, no go.[WAIT][END]
+
+03-050
+[STYLE:RIGHT]Sorry, but no.[WAIT][END]
+
+03-051
+[STYLE:RIGHT]You don't wanna go out there.[BR]
+It's way too dangerous.[WAIT][END]
+
+03-052
+[STYLE:RIGHT]Going to Koopa Bros. Fortress[BR]
+would be a huge mistake.[WAIT][END]
+
+03-053
+[STYLE:RIGHT]Definitely. Definitely don't go.[WAIT][END]
+
+03-054
+[STYLE:RIGHT]Most of all, though, you shouldn't[BR]
+go ask old man Merlon for help.[BR]
+[WAIT][NEXT]
+That would be really bad news[BR]
+for us...I mean, for you![BR]
+[PAUSE:0A]Don't even think about it![WAIT][END]
+
+03-055
+[STYLE:RIGHT]Yes, hello...[BR]
+[PAUSE:0A]This is the post office.[BR]
+[WAIT][NEXT]
+You can read any letters that[BR]
+arrive for you or for your[BR]
+other party members.[BR]
+[WAIT][NEXT]
+Please drop by now and then[BR]
+to check and see if you've[BR]
+received any mail.[BR]
+[WAIT][NEXT]
+Well.[PAUSE:05].[PAUSE:05].[BR]
+[PAUSE:0A][WAIT][NEXT]
+Oh! [PAUSE:05]You seem to have some mail.[BR]
+[WAIT]Which one would you like to read?[WAIT][END]
+
+03-056
+[STYLE:RIGHT]Ah yes, Mario.[BR]
+Yes, hello.[BR]
+[WAIT][NEXT]
+Well.[PAUSE:05].[PAUSE:05].[BR]
+[PAUSE:0A][WAIT][NEXT]
+It seems that you have[BR]
+received some mail.[BR]
+[WAIT]Which letter would you like[BR]
+to read?[WAIT][END]
+
+03-057
+[STYLE:RIGHT]Ah yes, Mario.[BR]
+Yes, hello.[BR]
+[PAUSE:05]Well.[PAUSE:05].[PAUSE:05].[BR]
+[PAUSE:0A][WAIT][NEXT]
+It seems that there are no[BR]
+new letters. Sorry.[BR]
+[WAIT]We do still have all of your old[BR]
+letters lying around...[WAIT][END]
+
+03-058
+[STYLE:RIGHT]Whose letter would you like[BR]
+to read?[BR]
+{Func_04}[END]
+
+03-059
+[STYLE:RIGHT]Oh?[BR]
+Shall I put the letters away?[BR]
+{Func_04}[END]
+
+03-05A
+[STYLE:RIGHT]Would you like to read more[BR]
+letters?[BR]
+{Func_04}[END]
+
+03-05B
+[STYLE:RIGHT]Oh...[BR]
+[PAUSE:0A]You aren't going to read it?[BR]
+[WAIT][NEXT]
+Come on by anytime you want[BR]
+to read some letters.[WAIT][END]
+
+03-05C
+[STYLE:RIGHT]Here you go.[WAIT][END]
+
+03-05D
+[STYLE:RIGHT]We'll keep the letters for you.[BR]
+[WAIT][NEXT]
+Come on by anytime you want[BR]
+to read some letters.[WAIT][END]
+
+03-05E
+[STYLE:RIGHT]We'll keep the letters for you.[BR]
+[WAIT][NEXT]
+Come on by anytime you want[BR]
+to read some letters.[WAIT][END]
+
+03-05F
+[STYLE:RIGHT]{StartFX:Shrinking}Stop, thief![WAIT][END]
+
+03-060
+[STYLE:RIGHT]A Shy Guy just stole a bag[BR]
+full of undelivered letters![BR]
+[WAIT][NEXT]
+I'm sure there were tons of[BR]
+important letters in that bag![BR]
+Bills, cards, packages... [BR]
+[PAUSE:0A]What are we going to do?[WAIT][END]
+
+03-061
+[STYLE:RIGHT]Shy Guys stole a full bag[BR]
+of mail from us.[BR]
+[PAUSE:05]We've failed in our duty...[BR]
+[WAIT][NEXT]
+"Come rain or sleet or snow[BR]
+or Shy Guys..." We're supposed[BR]
+to deliver no matter what![BR]
+[PAUSE:0A]Whatever can we do?[WAIT][END]
+
+03-062
+[STYLE:RIGHT]Oh, that's it, that's it![BR]
+[WAIT][NEXT]
+The bag! Thank you, Mario![BR]
+[PAUSE:0A]You'll never know how many[BR]
+people will be happy to get mail.[BR]
+[WAIT][NEXT]
+Let me give you a small [BR]
+thank-you gift.[WAIT][END]
+
+03-063
+[STYLE:RIGHT]Was that the stolen mailbag?[BR]
+[PAUSE:05]Oh, I guess I'm mistaken.[WAIT][END]
+
+03-064
+[STYLE:RIGHT]Greetings.[BR]
+[PAUSE:0A]The name's Parakarry.[BR]
+I deliver letters.[WAIT][END]
+
+03-065
+[STYLE:RIGHT]Water and dirt, sunshine power,[BR]
+[PAUSE:05]beautiful blooms,[BR]
+beautiful flowers.[BR]
+[WAIT][NEXT]
+Hello! My name is Minh T.[BR]
+[PAUSE:05]Please enjoy the beauty[BR]
+[PAUSE:05]of this flower garden.[BR]
+[WAIT][NEXT]
+I've heard there's a lovely[BR]
+flower we don't have here.[BR]
+[PAUSE:05]Supposedly, Bub-ulbs have[BR]
+the only known seeds.[BR]
+[WAIT][NEXT]
+{StartAnim}{SetPrintPos:00:05}{Up:06}{Func_1A:00:00:0E}{Sprite:00:99:22}{Func_1A:00:01:08}{Sprite:00:99:1E}{Func_1A:00:02:0E}{Sprite:00:99:21}{Func_1A:00:03:08}{Sprite:00:99:1E}{Func_1B:00:00}{Func_1C:00}{EndAnim}[BR]
+{SetPrintPos:00:3C}{Down:01}This is what a Bub-ulb[BR]
+{SetPrintPos:00:3C}looks like.[BR]
+[BR]
+{Up:03}[WAIT]{Scroll:04}{Down:03}If you find a Bub-ulb,[BR]
+could you get seeds for me?[BR]
+[WAIT]{Scroll:03}{Down:0B}I'll plant them in this flower[BR]
+garden and raise them lovingly.[WAIT][END]
+
+03-066
+[STYLE:RIGHT]Water and dirt, sunshine power,[BR]
+[PAUSE:05]beautiful blooms,[BR]
+beautiful flowers.[BR]
+[WAIT][NEXT]
+Hello! My name is Minh T.[BR]
+[PAUSE:05]Please enjoy the beauty[BR]
+[PAUSE:05]of this flower garden.[BR]
+[WAIT][NEXT]
+I've heard there's a lovely[BR]
+flower we don't have here.[BR]
+[PAUSE:05]Supposedly, Bub-ulbs have[BR]
+the only known seeds.[BR]
+[WAIT][NEXT]
+{StartAnim}{SetPrintPos:00:05}{Up:06}{Func_1A:00:00:0E}{Sprite:00:99:22}{Func_1A:00:01:08}{Sprite:00:99:1E}{Func_1A:00:02:0E}{Sprite:00:99:21}{Func_1A:00:03:08}{Sprite:00:99:1E}{Func_1B:00:00}{Func_1C:00}{EndAnim}[BR]
+{SetPrintPos:00:3C}{Down:01}This is what a Bub-ulb[BR]
+{SetPrintPos:00:3C}looks like.[BR]
+[BR]
+{Up:03}[WAIT]{Scroll:04}{Down:03}If you find a Bub-ulb,[BR]
+could you get seeds for me?[BR]
+[WAIT]{Scroll:03}{Down:0B}I'll plant them in this flower[BR]
+garden and raise them lovingly.[WAIT][END]
+
+03-067
+[STYLE:RIGHT]Oh! You'll give me this seed?[BR]
+[PAUSE:0A]Thank you![BR]
+I really appreciate it.[BR]
+[WAIT][NEXT]
+I'll plant it right away.[WAIT][END]
+
+03-068
+[STYLE:RIGHT]These seeds relate to an[BR]
+age-old story.[BR]
+[WAIT][NEXT]
+If you plant all four of the[BR]
+different-colored Bub-ulb[BR]
+flowers, a miracle will occur.[BR]
+[WAIT][NEXT]
+I wonder what will happen?[BR]
+[PAUSE:0A]I can hardly wait for that[BR]
+day to come![HEART][WAIT][END]
+
+03-069
+[STYLE:RIGHT]You've got a seed for me?[BR]
+[PAUSE:0A]Thank you! I'm really happy.[WAIT][END]
+
+03-06A
+[STYLE:RIGHT]If all four colors of Bub-ulb's[BR]
+flowers bloom, this garden will[BR]
+become magical.[BR]
+[WAIT][NEXT]
+I still need two more colors.[BR]
+[PAUSE:0A]Please bring me the seeds[BR]
+when you find them![HEART][WAIT][END]
+
+03-06B
+[STYLE:RIGHT]You brought me a seed?[BR]
+[PAUSE:0A]Thanks! I'm so pleased![WAIT][END]
+
+03-06C
+[STYLE:RIGHT]If all four colors of[BR]
+Bub-ulb's flowers bloom,[BR]
+this garden will become magical.[BR]
+[WAIT][NEXT]
+I need just one more color.[BR]
+[PAUSE:0A]Please bring me the seeds[BR]
+when you find them![HEART][WAIT][END]
+
+03-06D
+[STYLE:RIGHT]Shy Guys are trampling all over[BR]
+my flower garden![BR]
+[WAIT][NEXT]
+Oh! The poor flowers...[BR]
+They were so beautiful...[BR]
+[WAIT][NEXT]
+It was my dream to fill Toad[BR]
+Town with beautiful flowers...[BR]
+[WAIT][NEXT]
+I'm so sad...[WAIT][END]
+
+03-06E
+[STYLE:RIGHT]{StartFX:Shrinking}{StartFX:Jitter}No-----!!![BR]
+Don't step on the flowers![WAIT][END]
+
+03-06F
+[STYLE:RIGHT]Oh, thank you![BR]
+[WAIT][NEXT]
+The flowers give you their[BR]
+thanks as well, Mario![WAIT][END]
+
+03-070
+[STYLE:RIGHT]{StartFX:SizeJitter}Kyaaaaaaaah!![HEART][HEART][HEART][BR]
+{EndFX:SizeJitter}[WAIT][NEXT]
+At first it just looked like[BR]
+the flowers were blooming,[BR]
+but suddenly a door appeared![BR]
+[WAIT][NEXT]
+It must be... You must be able[BR]
+to go to Flower Fields from here.[BR]
+[WAIT][NEXT]
+Mario,[BR]
+[PAUSE:0A]Flower Fields needs your aid![BR]
+Please help![WAIT][END]
+
+03-071
+[STYLE:RIGHT]I can just imagine the drooping [BR]
+flowers in Flower Fields...[BR]
+[WAIT][NEXT]
+Mario,[BR]
+[PAUSE:0A]Flower Fields needs your aid![BR]
+Please help![WAIT][END]
+
+03-072
+[STYLE:RIGHT]I can imagine all those flowers![BR]
+So colorful and happy, turning[BR]
+their faces to the sun.[BR]
+[WAIT][NEXT]
+Mario,[BR]
+[PAUSE:0A]you saved them! Flower power![BR]
+[PAUSE:0A]You're a true hero![HEART][WAIT][END]
+
+03-073
+[STYLE:RIGHT]I can imagine all those flowers![BR]
+So colorful and happy, turning[BR]
+their faces to the sun.[BR]
+[WAIT][NEXT]
+Mario,[BR]
+[PAUSE:0A]you saved them! Flower power![BR]
+[PAUSE:0A]You're a true hero![HEART][WAIT][END]
+
+03-074
+[STYLE:RIGHT]Bub-ulbs come from a[BR]
+flower-filled land called[BR]
+{Color:20}Flower Fields{Color:0A}.[BR]
+[WAIT][NEXT]
+They say the flowers in[BR]
+Flower Fields are in trouble![BR]
+[WAIT][NEXT]
+To get to Flower Fields, you[BR]
+need four kinds of seeds that[BR]
+only Bub-ulbs possess.[BR]
+But where are the Bub-ulbs?[BR]
+[WAIT][NEXT]
+Please, Mario,[BR]
+[PAUSE:0A]you must look for Bub-ulbs[BR]
+and get the seeds from them![BR]
+[WAIT][NEXT]
+Maybe Merlon's fortune-telling[BR]
+could help you look...[WAIT][END]
+
+03-075
+[STYLE:RIGHT]Please, Mario,[BR]
+[PAUSE:0A]we need seeds from the Bub-ulbs.[WAIT][END]
+
+03-076
+[STYLE:RIGHT]Wow![BR]
+[PAUSE:0A]You brought me the seed![BR]
+[PAUSE:0A]Thank you so much![WAIT][END]
+
+03-077
+[STYLE:RIGHT]Flower Fields is in a state[BR]
+of despair because of[BR]
+Bowser's minions. [BR]
+[WAIT][NEXT]
+Please![BR]
+[PAUSE:0A]Save us![WAIT][END]
+
+03-078
+[STYLE:RIGHT]You're Minh T., correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+03-079
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+03-07A
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's work is never done.[WAIT][END]
+
+03-07B
+[STYLE:RIGHT]To me? Who's it from?[BR]
+[PAUSE:08]The Wise Wisterwood?[BR]
+[PAUSE:0F]Who's Wise Wisterwood...?[BR]
+[PAUSE:14][WAIT][NEXT]
+"Thank you for making the[BR]
+flowers bloom so beautifully"?[BR]
+...[PAUSE:0A]Oh![BR]
+It's a thank-you note![HEART][BR]
+[WAIT][NEXT]
+It says, "Please drop by[BR]
+Flower Fields sometime."[BR]
+[WAIT][NEXT]
+Wow![BR]
+[PAUSE:0A]How delightful![HEART][BR]
+[WAIT][NEXT]
+But how does Wise Wisterwood [BR]
+know about me...???[BR]
+[PAUSE:14][WAIT][NEXT]
+Oh, excuse me. I'm rambling.[BR]
+[PAUSE:0A]This is a small gift to say[BR]
+thank you for delivering the[BR]
+letter. Please take it![HEART][WAIT][END]
+
+03-07C
+[STYLE:RIGHT]The building with the spinning[BR]
+roof is Merlon's house.[BR]
+[WAIT][NEXT]
+He's weird. He also happens[BR]
+to be as stubborn as a mule.[BR]
+[PAUSE:05]He rarely comes out.[BR]
+[WAIT][NEXT]
+As weird as he is, though,[BR]
+his talent is no joke.[BR]
+He can read the stars.[BR]
+[WAIT][NEXT]
+He even predicted that you'd[BR]
+come back safe and sound![WAIT][END]
+
+03-07D
+[STYLE:RIGHT]Oh... Mario![BR]
+[PAUSE:0A][WAIT][NEXT]
+[PAUSE:05]Merlon was looking for you.[BR]
+He lives in that house with[BR]
+the spinning roof.[BR]
+[WAIT][NEXT]
+He asked me to tell you to go[BR]
+meet him at his house.[BR]
+[WAIT][NEXT]
+I was just about to go look[BR]
+for you, but here you are![BR]
+[WAIT][NEXT]
+It's rare for Merlon to call[BR]
+somebody over to his house...[BR]
+[WAIT][NEXT]
+He's a bit eccentric.[BR]
+Even when he has visitors,[BR]
+it's rare for him to come out[BR]
+of the house at all.[WAIT][END]
+
+03-07E
+[STYLE:RIGHT]Koopa Village is to the east[BR]
+of Toad Town.[BR]
+[WAIT][NEXT]
+You know that famous explorer[BR]
+by the name of Kolorado?[BR]
+He has a house there.[BR]
+[WAIT][NEXT]
+He's probably not there now.[BR]
+I heard that he's in the field[BR]
+exploring Dry Dry Desert.[WAIT][END]
+
+03-07F
+[STYLE:RIGHT]Some guy named Rowf started[BR]
+a Badge Shop in the square[BR]
+over there.[BR]
+[WAIT][NEXT]
+I haven't been, but it looks like[BR]
+he's selling rare Badges.[BR]
+[PAUSE:0A]You been there yet?[WAIT][END]
+
+03-080
+[STYLE:RIGHT]Some guy named Rowf started[BR]
+a Badge Shop in the square[BR]
+over there.[BR]
+[WAIT][NEXT]
+I haven't been, but it looks like[BR]
+he's selling rare Badges.[BR]
+[PAUSE:0A]You been there yet?[WAIT][END]
+
+03-081
+[STYLE:RIGHT]I've been hearing good things[BR]
+about the Badges over there in[BR]
+Rowf's Badge Shop.[BR]
+[WAIT][NEXT]
+Have you been there recently?[WAIT][END]
+
+03-082
+[STYLE:RIGHT]Shy... Shy Guy... [PAUSE:05]Shy Guys[BR]
+[PAUSE:05]just stormed the...[BR]
+post office...[WAIT][END]
+
+03-083
+[STYLE:RIGHT]I tried my best to catch that[BR]
+Shy Guy when he bolted from[BR]
+the post office, but he was[BR]
+way too fast.[BR]
+[WAIT][NEXT]
+Maybe I need to work out more[BR]
+on my "Toadinator."[WAIT][END]
+
+03-084
+[STYLE:RIGHT]I heard you got back the[BR]
+letters those Shy Guys stole[BR]
+from the post office.[BR]
+[WAIT][NEXT]
+You're so smooth, Mario.[BR]
+[PAUSE:0A]You always get the job done![WAIT][END]
+
+03-085
+[STYLE:RIGHT]I've been hearing good things[BR]
+about the Badges over there in[BR]
+Rowf's Badge Shop.[BR]
+[WAIT][NEXT]
+Have you been there recently?[WAIT][END]
+
+03-086
+[STYLE:RIGHT]I've been hearing good things[BR]
+about the Badges over there in[BR]
+Rowf's Badge Shop.[BR]
+[WAIT][NEXT]
+Have you been there recently?[WAIT][END]
+
+03-087
+[STYLE:RIGHT]I asked Minh T. to make a[BR]
+bouquet so I could give it[BR]
+to my mother.[BR]
+[WAIT][NEXT]
+Minh T.'s the absolute best[BR]
+at growing flowers.[BR]
+[PAUSE:0A]She senses flowers' feelings.[BR]
+[WAIT][NEXT]
+My mother was so pleased[BR]
+to get pretty flowers that[BR]
+she made me a pie. Yum![WAIT][END]
+
+03-088
+[STYLE:RIGHT]Bub-ulbs can speak the same[BR]
+language that we do.[BR]
+[WAIT][NEXT]
+They're pretty easy[BR]
+to understand, I guess.[BR]
+[WAIT][NEXT]
+But I definitely don't get how[BR]
+Minh T. communicates with[BR]
+other flowers...[WAIT][END]
+
+03-089
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0A]Great timing.[BR]
+[WAIT][NEXT]
+Somebody was looking for you.[BR]
+He's over at Merlon's house.[WAIT][END]
+
+03-08A
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]do you collect Badges?[BR]
+[WAIT][NEXT]
+I've heard that there are[BR]
+Badges for almost everything![BR]
+[WAIT][NEXT]
+I bet adventuring is a whole[BR]
+lot easier if you have lots[BR]
+of Badges, huh?[WAIT][END]
+
+03-08B
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]do you collect Badges?[BR]
+[WAIT][NEXT]
+I've heard that there are[BR]
+Badges for almost everything![BR]
+[WAIT][NEXT]
+I bet adventuring is a whole[BR]
+lot easier if you have lots[BR]
+of Badges, huh?[WAIT][END]
+
+03-08C
+[STYLE:RIGHT]Up on Shooting Star Summit,[BR]
+there are these two siblings[BR]
+named Merluvlee and Merlow.[BR]
+[WAIT][NEXT]
+Merluvlee tells fortunes.[BR]
+She's really good at finding[BR]
+Badges or Star Pieces.[BR]
+[WAIT][NEXT]
+When you take Star Pieces[BR]
+to Merlow, he'll trade them[BR]
+for Badges.[BR]
+[WAIT][NEXT]
+These two could help you, no?[BR]
+[PAUSE:05]You ought to go meet them.[WAIT][END]
+
+03-08D
+[STYLE:RIGHT]Up on Shooting Star Summit,[BR]
+there are these two siblings[BR]
+named Merluvlee and Merlow.[BR]
+[WAIT][NEXT]
+Merluvlee tells fortunes.[BR]
+She's really good at finding[BR]
+Badges or Star Pieces.[BR]
+[WAIT][NEXT]
+When you take Star Pieces[BR]
+to Merlow, he'll trade them[BR]
+for Badges.[BR]
+[WAIT][NEXT]
+These two could help you, no?[BR]
+[PAUSE:05]You ought to go meet them.[WAIT][END]
+
+03-08E
+[STYLE:RIGHT]If you want to go to[BR]
+Koopa Village, head east[BR]
+on the road in front of[BR]
+the Toad House.[BR]
+[WAIT][NEXT]
+There's a fork in the road,[BR]
+so watch the signs and be[BR]
+careful not to get lost.[WAIT][END]
+
+03-08F
+[STYLE:RIGHT]Are you taking a trip to[BR]
+Dry Dry Desert?[BR]
+[PAUSE:0A]Take the train.[BR]
+There's a station south of town.[BR]
+[WAIT][NEXT]
+After getting to the station[BR]
+at Mt. Rugged, you'll have to[BR]
+hike over the mountain.[BR]
+[WAIT][NEXT]
+Dry Dry Desert is just on the[BR]
+other side of the mountain.[WAIT][END]
+
+03-090
+[STYLE:RIGHT]I heard there are old ruins[BR]
+somewhere in Dry Dry Desert.[BR]
+[WAIT][NEXT]
+Some team of researchers is[BR]
+looking for them, excavating[BR]
+in the sand. Must be hot.[WAIT][END]
+
+03-091
+[STYLE:RIGHT]Have you met the wise Toad?[BR]
+[WAIT][NEXT]
+He lives over by the[BR]
+western gate. The big one.[BR]
+That guy seems to know[BR]
+something about everything.[BR]
+[WAIT][NEXT]
+He's really popular at parties,[BR]
+what with his knowledge and[BR]
+everything. You'd be surprised.[WAIT][END]
+
+03-092
+[STYLE:RIGHT]Did you see that?[BR]
+Shy Guys just went into the[BR]
+post office![BR]
+[WAIT][NEXT]
+Wha... What should we do?![BR]
+[PAUSE:0A]You think they're causing[BR]
+trouble in there?[BR]
+[WAIT][NEXT]
+Maybe they can still be[BR]
+stopped...if we act quickly.[BR]
+[PAUSE:0A][WAIT][NEXT]
+Mario![BR]
+Can you go check in there?[BR]
+I'd go, but I have a bum leg...[WAIT][END]
+
+03-093
+[STYLE:RIGHT]Shy Guys stole the mailbag[BR]
+from the post office![BR]
+[WAIT][NEXT]
+It all happened so fast that[BR]
+I didn't have time to react![BR]
+[PAUSE:0A]They were gone in an instant![WAIT][END]
+
+03-094
+[STYLE:RIGHT]You got the letters back![BR]
+[WAIT][NEXT]
+Mario, you rock![WAIT][END]
+
+03-095
+[STYLE:RIGHT]I have this friend who really[BR]
+loves to fish.[BR]
+[WAIT][NEXT]
+Every time I go to the port,[BR]
+there he is, fishing.[BR]
+[WAIT][NEXT]
+Ever met him?[WAIT][END]
+
+03-096
+[STYLE:RIGHT]I have this friend who really[BR]
+loves to fish.[BR]
+[WAIT][NEXT]
+Every time I go to the port,[BR]
+there he is, fishing.[BR]
+[WAIT][NEXT]
+Ever met him?[WAIT][END]
+
+03-097
+[STYLE:RIGHT]Up on Shooting Star Summit,[BR]
+there are these two siblings[BR]
+named Merluvlee and Merlow.[BR]
+[WAIT][NEXT]
+Merluvlee tells fortunes.[BR]
+She's really good at finding[BR]
+Badges or Star Pieces.[BR]
+[WAIT][NEXT]
+When you take Star Pieces[BR]
+to Merlow, he'll trade them[BR]
+for Badges.[BR]
+[WAIT][NEXT]
+These two could help you, no?[BR]
+[PAUSE:05]You ought to go meet them.[WAIT][END]
+
+03-098
+[STYLE:RIGHT]Up on Shooting Star Summit,[BR]
+there are these two siblings[BR]
+named Merluvlee and Merlow.[BR]
+[WAIT][NEXT]
+Merluvlee tells fortunes.[BR]
+She's really good at finding[BR]
+Badges or Star Pieces.[BR]
+[WAIT][NEXT]
+When you take Star Pieces[BR]
+to Merlow, he'll trade them[BR]
+for Badges.[BR]
+[WAIT][NEXT]
+These two could help you, no?[BR]
+[PAUSE:05]You ought to go meet them.[WAIT][END]
+
+03-099
+[STYLE:RIGHT]Have you met the wise Toad?[BR]
+[WAIT][NEXT]
+He lives over by the[BR]
+western gate. The big one.[BR]
+That guy seems to know[BR]
+something about everything.[BR]
+[WAIT][NEXT]
+He's really popular at parties,[BR]
+what with his knowledge and[BR]
+everything. You'd be surprised.[WAIT][END]
+
+03-09A
+[STYLE:RIGHT]Have you met the wise Toad?[BR]
+[WAIT][NEXT]
+He lives over by the[BR]
+western gate. The big one.[BR]
+That guy seems to know[BR]
+something about everything.[BR]
+[WAIT][NEXT]
+He's really popular at parties,[BR]
+what with his knowledge and[BR]
+everything. You'd be surprised.[WAIT][END]
+
+03-09B
+[STYLE:RIGHT]Up on Shooting Star Summit,[BR]
+there are these two siblings[BR]
+named Merluvlee and Merlow.[BR]
+[WAIT][NEXT]
+Merluvlee tells fortunes.[BR]
+She's really good at finding[BR]
+Badges or Star Pieces.[BR]
+[WAIT][NEXT]
+When you take Star Pieces[BR]
+to Merlow, he'll trade them[BR]
+for Badges.[BR]
+[WAIT][NEXT]
+These two could help you, no?[BR]
+[PAUSE:05]You ought to go meet them.[WAIT][END]
+
+03-09C
+[STYLE:RIGHT]Do you see that blue pole[BR]
+in front of the post office?[BR]
+[PAUSE:0A]That's a road sign.[BR]
+[WAIT][NEXT]
+You can find out what's where[BR]
+in Toad Town by checking out[BR]
+the signs.[BR]
+[WAIT][NEXT]
+What am I telling you this for?[BR]
+I'm sure you know it's smart[BR]
+to read all the signs you see.[WAIT][END]
+
+03-09D
+[STYLE:RIGHT]Do you see that blue pole[BR]
+in front of the post office?[BR]
+[PAUSE:0A]That's a road sign.[BR]
+[WAIT][NEXT]
+You can find out what's where[BR]
+in Toad Town by checking out[BR]
+the signs.[BR]
+[WAIT][NEXT]
+What am I telling you this for?[BR]
+I'm sure you know it's smart[BR]
+to read all the signs you see.[WAIT][END]
+
+03-09E
+[STYLE:RIGHT]Whenever you go somewhere, [BR]
+you really should read all[BR]
+the signs along the way.[BR]
+[WAIT][NEXT]
+Reading signs carefully is a[BR]
+good way to avoid getting lost.[WAIT][END]
+
+03-09F
+[STYLE:RIGHT]Do you see that blue pole[BR]
+in front of the post office?[BR]
+[PAUSE:0A]That's a road sign.[BR]
+[WAIT][NEXT]
+You can find out what's where[BR]
+in Toad Town by checking out[BR]
+the signs.[BR]
+[WAIT][NEXT]
+What am I telling you this for?[BR]
+I'm sure you know it's smart[BR]
+to read all the signs you see.[WAIT][END]
+
+03-0A0
+[STYLE:RIGHT]Whenever you go somewhere,[BR]
+you really should read all[BR]
+the signs along the way.[BR]
+[WAIT][NEXT]
+Reading signs carefully is a[BR]
+good way to avoid getting lost.[WAIT][END]
+
+03-0A1
+[STYLE:RIGHT]How about going to the post[BR]
+office from time to time?[BR]
+[WAIT][NEXT]
+The mail doesn't stop[BR]
+just because you're out[BR]
+gallivanting around.[BR]
+[WAIT][NEXT]
+Everybody in your party might[BR]
+get letters...[BR]
+[PAUSE:0A]Isn't getting mail the greatest?[WAIT][END]
+
+03-0A2
+[STYLE:RIGHT]Shy Guys can be so aggravating![BR]
+Grr![BR]
+[WAIT][NEXT]
+They think stealing people's[BR]
+stuff is funny! It's not![BR]
+People are really upset!![BR]
+[WAIT][NEXT]
+If we don't do something,[BR]
+they'll make off with all[BR]
+the valuables in town![WAIT][END]
+
+03-0A3
+[STYLE:RIGHT]Now Shy Guys stole a mailbag[BR]
+from the post office. A mailbag![BR]
+What's the world coming to?[BR]
+[WAIT][NEXT]
+What could they possibly want[BR]
+with a mailbag?[BR]
+[WAIT][NEXT]
+Think about how many important[BR]
+things travel through the mail![BR]
+Those Shy Guys have really[BR]
+done it this time![WAIT][END]
+
+03-0A4
+[STYLE:RIGHT]Heyyyy... You got that stolen[BR]
+mailbag back, didn't you?[BR]
+[WAIT][NEXT]
+I heard. Way to go![BR]
+The mail is safe once again![BR]
+[WAIT][NEXT]
+The postmaster must be feeling[BR]
+deep relief right about now.[WAIT][END]
+
+03-0A5
+[STYLE:RIGHT]Somebody was just saying [BR]
+there's a monster at the port.[BR]
+[WAIT][NEXT]
+I could almost believe it.[BR]
+Lots of weird stuff's been[BR]
+going on since Peach was taken.[BR]
+[WAIT][NEXT]
+I wonder where Her Highness [BR]
+is now?[BR]
+[WAIT][NEXT]
+I hope she's OK...[BR]
+[PAUSE:0A]I worry about her constantly.[WAIT][END]
+
+03-0A6
+[STYLE:RIGHT]I heard that the monster at[BR]
+the port was really a whale.[BR]
+[WAIT][NEXT]
+Big surprise. Everyone's so[BR]
+on edge, though, that it was[BR]
+easy to believe at first.[BR]
+[WAIT][NEXT]
+If people just kept their heads,[BR]
+we wouldn't have all this panic.[WAIT][END]
+
+03-0A7
+[STYLE:RIGHT]{StartFX:Wavy}Princess Peach...[BR]
+{EndFX:Wavy}[WAIT][NEXT]
+Oh..., [PAUSE:05]If only I could see her[BR]
+smile once again...[WAIT][END]
+
+03-0A8
+[STYLE:RIGHT]{StartFX:Wavy}Princess Peach...[BR]
+{EndFX:Wavy}[WAIT][NEXT]
+Oh..., [PAUSE:05]If only I could see her[BR]
+smile once again...[WAIT][END]
+
+03-0A9
+[STYLE:RIGHT]{StartFX:Shrinking}Bowser! You hear me?![BR]
+[PAUSE:14]Give up our Princess Peach![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Sniffle sniffle...[BR]
+[PAUSE:0A]Mario...[BR]
+[PAUSE:0A]you gotta save her...[WAIT][END]
+
+03-0AA
+[STYLE:RIGHT]{StartFX:Shrinking}Bowser! You hear me?![BR]
+[PAUSE:14]Give up our Princess Peach![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Sniffle sniffle...[BR]
+[PAUSE:0A]Mario...[BR]
+[PAUSE:0A]you gotta save her...[WAIT][END]
+
+03-0AB
+[STYLE:RIGHT]I have a feeling that our[BR]
+beloved Princess Peach will[BR]
+return to us soon.[BR]
+[WAIT][NEXT]
+And all because of you.[BR]
+You...sniffle...work so hard...[BR]
+[WAIT][NEXT]
+Mario...[BR]
+[PAUSE:0A]...you're the greatest, man![BR]
+Only you can save her, so get[BR]
+up there and do it![WAIT][END]
+
+03-0AC
+[STYLE:RIGHT]Hey! Mario![BR]
+[PAUSE:0A]Word is you're needed on[BR]
+Shooting Star Summit.[BR]
+[WAIT][NEXT]
+You never been? Just go through[BR]
+that blue gate there and[BR]
+bear right at Peach's Castle.[BR]
+[WAIT][NEXT]
+...Oops! I forgot...[BR]
+[PAUSE:0A]Peach's Castle is... [PAUSE:0A]gone.[PAUSE:03].[PAUSE:03].[PAUSE:03].[PAUSE:03].[PAUSE:03].[WAIT][END]
+
+03-0AD
+[STYLE:RIGHT]I thought I knew everybody in[BR]
+this town, but I've never seen[BR]
+those dark Toads before.[BR]
+[WAIT][NEXT]
+Seen 'em? Over by the[BR]
+Toad House? They look nasty.[BR]
+[PAUSE:0A]I hope they don't pick a fight.[WAIT][END]
+
+03-0AE
+[STYLE:RIGHT]Those dark Toads were actually[BR]
+the Koopa Bros.! "Nash T."...[BR]
+I should have known![BR]
+[WAIT][NEXT]
+Those no-good scheming...[BR]
+[PAUSE:0A]Dressing up as Toads to cause[BR]
+trouble is just plain rude.[BR]
+[WAIT][NEXT]
+I'm lodging a formal complaint![WAIT][END]
+
+03-0AF
+[STYLE:RIGHT]Hey, by the way, if you were[BR]
+to go across Dry Dry Desert,[BR]
+you'd reach Dry Dry Outpost.[BR]
+[WAIT][NEXT]
+It's a small town. But they do[BR]
+have a shop and a Toad House.[BR]
+[WAIT][NEXT]
+Never been there, myself.[BR]
+[PAUSE:05]I'd like to, but that heat...[WAIT][END]
+
+03-0B0
+[STYLE:RIGHT]Hey, by the way, if you were[BR]
+to go across Dry Dry Desert,[BR]
+you'd reach Dry Dry Outpost.[BR]
+[WAIT][NEXT]
+It's a small town. But they do[BR]
+have a shop and a Toad House.[BR]
+[WAIT][NEXT]
+Never been there, myself.[BR]
+[PAUSE:05]I'd like to, but that heat...[WAIT][END]
+
+03-0B1
+[STYLE:RIGHT]Hey, you've been to Shooting[BR]
+Star Summit, right? Did you[BR]
+meet Merluvlee and Merlow?[BR]
+[WAIT][NEXT]
+I hear that Merluvlee uses[BR]
+her psychic powers to find[BR]
+Star Pieces and Badges.[BR]
+[WAIT][NEXT]
+Her little brother, Merlow?[BR]
+He's crazy about Star Pieces.[BR]
+Trades Badges for 'em.[WAIT][END]
+
+03-0B2
+[STYLE:RIGHT]Hey, hold up! Shy Guys just[BR]
+ran into the post office![BR]
+[WAIT][NEXT]
+You know that isn't good.[BR]
+[WAIT][NEXT]
+Mario, [PAUSE:0A]check it out, will you?[WAIT][END]
+
+03-0B3
+[STYLE:RIGHT]Oh, drag, some mail was stolen?[BR]
+[WAIT][NEXT]
+Maybe we should've warned you[BR]
+earlier about the Shy Guys...[BR]
+[WAIT][NEXT]
+They've always been a problem.[BR]
+I guess I just tuned 'em out.[WAIT][END]
+
+03-0B4
+[STYLE:RIGHT]Hold up, now! You got back all[BR]
+that stolen mail?![BR]
+[WAIT][NEXT]
+Oh, yeah! Way to go![WAIT][END]
+
+03-0B5
+[STYLE:RIGHT]I'm keeping my eyes open for[BR]
+any little movement on the[BR]
+Shy Guy front.[BR]
+[PAUSE:0A]They won't catch me off guard.[WAIT][END]
+
+03-0B6
+[STYLE:RIGHT]I'm keeping my eyes open for[BR]
+any little movement on the[BR]
+Shy Guy front.[BR]
+[PAUSE:0A]They won't catch me off guard.[WAIT][END]
+
+03-0B7
+[STYLE:RIGHT]What should I do if something[BR]
+goes down in Toad Town while[BR]
+you're off adventuring?[BR]
+[WAIT][NEXT]
+Well, I'm worried, Mario![BR]
+[WAIT][NEXT]
+We haven't had much luck[BR]
+solving problems on our own.[WAIT][END]
+
+03-0B8
+[STYLE:RIGHT]What should I do if something[BR]
+goes down in Toad Town while[BR]
+you're off adventuring?[BR]
+[WAIT][NEXT]
+Well, I'm worried, Mario![BR]
+[WAIT][NEXT]
+We haven't had much luck[BR]
+solving problems on our own.[WAIT][END]
+
+03-0B9
+[STYLE:RIGHT]What should I do if something[BR]
+goes down in Toad Town while[BR]
+you're off adventuring?[BR]
+[WAIT][NEXT]
+Well, I'm worried, Mario![BR]
+[WAIT][NEXT]
+We haven't had much luck[BR]
+solving problems on our own.[WAIT][END]
+
+03-0BA
+[STYLE:RIGHT]What should I do if something[BR]
+goes down in Toad Town while[BR]
+you're off adventuring?[BR]
+[WAIT][NEXT]
+Well, I'm worried, Mario![BR]
+[WAIT][NEXT]
+We haven't had much luck[BR]
+solving problems on our own.[WAIT][END]
+
+03-0BB
+[STYLE:RIGHT]So. The time has come.[BR]
+You're gonna take him on.[BR]
+[WAIT][NEXT]
+...Doesn't Bowser scare you?[BR]
+[WAIT][NEXT]
+You've got guts, Mario. [BR]
+That monster's pretty huge![BR]
+[WAIT][NEXT]
+Of course, maybe you're afraid[BR]
+but are going anyway...[BR]
+That's even more courageous![WAIT][END]
+
+03-0BC
+[STYLE:RIGHT]Look at Minh T.! Always with[BR]
+the flowers...[BR]
+[PAUSE:0A]She's as pretty as a rose.[BR]
+[WAIT][NEXT]
+Just watching her from a[BR]
+distance makes me happy![HEART][WAIT][END]
+
+03-0BD
+[STYLE:RIGHT]Look at Minh T.! Always with[BR]
+the flowers...[BR]
+[PAUSE:0A]She's as pretty as a rose.[BR]
+[WAIT][NEXT]
+Just watching her from a[BR]
+distance makes me happy![HEART][WAIT][END]
+
+03-0BE
+[STYLE:RIGHT]Look at Minh T.! Always with[BR]
+the flowers...[BR]
+[PAUSE:0A]She's as pretty as a rose.[BR]
+[WAIT][NEXT]
+Just watching her from a[BR]
+distance makes me happy![HEART][WAIT][END]
+
+03-0BF
+[STYLE:RIGHT]Ah, lovely Minh T.! The most[BR]
+beautiful flower in the garden![BR]
+[PAUSE:0A]She's ever so cute![HEART][BR]
+[WAIT][NEXT]
+I overheard her wishing that[BR]
+this town be filled with flowers.[BR]
+[WAIT][NEXT]
+My wish is to become a[BR]
+Star Spirit so I can grant[BR]
+Minh T.'s wish. Seeing her happy[BR]
+is all that matters![WAIT][END]
+
+03-0C0
+[STYLE:RIGHT]Ah, lovely Minh T.! The most[BR]
+beautiful flower in the garden![BR]
+[PAUSE:0A]She's ever so cute![HEART][BR]
+[WAIT][NEXT]
+I overheard her wishing that[BR]
+this town be filled with flowers.[BR]
+[WAIT][NEXT]
+My wish is to become a[BR]
+Star Spirit so I can grant[BR]
+Minh T.'s wish. Seeing her happy[BR]
+is all that matters![WAIT][END]
+
+03-0C1
+[STYLE:RIGHT]Ah, lovely Minh T.! The most[BR]
+beautiful flower in the garden![BR]
+[PAUSE:0A]She's ever so cute![HEART][BR]
+[WAIT][NEXT]
+I overheard her wishing that[BR]
+this town be filled with flowers.[BR]
+[WAIT][NEXT]
+My wish is to become a[BR]
+Star Spirit so I can grant[BR]
+Minh T.'s wish. Seeing her happy[BR]
+is all that matters![WAIT][END]
+
+03-0C2
+[STYLE:RIGHT]Oh, Mario! Do something![BR]
+[PAUSE:0A]Those Shy Guys are trampling[BR]
+all over Minh T.'s precious[BR]
+flower garden![BR]
+[WAIT][NEXT]
+Look at her! She's so sad![BR]
+I can't bear to see her[BR]
+in such pain![WAIT][END]
+
+03-0C3
+[STYLE:RIGHT]Now that you saved the garden,[BR]
+there's a lot of cleaning up[BR]
+to do. Is this my chance?[BR]
+[WAIT][NEXT]
+I... [PAUSE:05]Maybe I should go help[BR]
+Minh T. fix the garden...[WAIT][END]
+
+03-0C4
+[STYLE:RIGHT]Mario, Mario! I'm bursting![BR]
+[WAIT][NEXT]
+I helped Minh T. fix up[BR]
+the flower garden![BR]
+[WAIT][NEXT]
+She thanked me! And smiled![BR]
+[PAUSE:0A]I've never been so happy![HEART][BR]
+[WAIT][NEXT]
+OK... I should calm down![BR]
+[PAUSE:0A]I shouldn't get so worked up[BR]
+when everyone in town is having[BR]
+such a hard time.[WAIT][END]
+
+03-0C5
+[STYLE:RIGHT]Mario, Mario! I'm bursting![BR]
+[WAIT][NEXT]
+I helped Minh T. fix up[BR]
+the flower garden![BR]
+[WAIT][NEXT]
+She thanked me! And smiled![BR]
+[PAUSE:0A]I've never been so happy![HEART][BR]
+[WAIT][NEXT]
+Oh... I should calm down![BR]
+[PAUSE:0A]I shouldn't get so worked up[BR]
+when everyone in town is having[BR]
+such a hard time. [WAIT][END]
+
+03-0C6
+[STYLE:RIGHT]Mario...[BR]
+[PAUSE:0A]Minh T. seems to be troubled.[WAIT][END]
+
+03-0C7
+[STYLE:RIGHT]Minh T. is a pure genius when[BR]
+it comes to growing flowers.[BR]
+[WAIT][NEXT]
+Flowers grow more lovely in[BR]
+her lovely hands.[BR]
+[PAUSE:0A]Their blooms... Their petals...[BR]
+[WAIT][NEXT]
+Oh,...[BR]
+how beautiful... [PAUSE:0A]Minh T. is![WAIT][END]
+
+03-0C8
+[STYLE:RIGHT]I've always been content just[BR]
+to watch Minh T. at work.[BR]
+[WAIT][NEXT]
+...At least, that's how I[BR]
+used to feel, but lately I've[BR]
+grown restless...[BR]
+[WAIT][NEXT]
+What good is looking at her?[BR]
+If I never get up the nerve[BR]
+to talk to her, she'll never[BR]
+know my true feelings...[BR]
+[WAIT][NEXT]
+Oh... [PAUSE:05]Minh T....[BR]
+[PAUSE:0A]Maybe I could talk to her up[BR]
+on Shooting Star Summit.[WAIT][END]
+
+03-0C9
+[STYLE:RIGHT]I've always been content just[BR]
+to watch Minh T. at work.[BR]
+[WAIT][NEXT]
+...At least, that's how I[BR]
+used to feel, but lately I've[BR]
+grown restless...[BR]
+[WAIT][NEXT]
+What good is looking at her?[BR]
+If I never get up the nerve[BR]
+to talk to her, she'll never[BR]
+know my true feelings...[BR]
+[WAIT][NEXT]
+Oh... [PAUSE:05]Minh T....[BR]
+[PAUSE:0A]Maybe I could talk to her up[BR]
+on Shooting Star Summit.[WAIT][END]
+
+03-0CA
+[STYLE:RIGHT]I've always been content just[BR]
+to watch Minh T. at work.[BR]
+[WAIT][NEXT]
+...At least, that's how I[BR]
+used to feel, but lately I've[BR]
+grown restless...[BR]
+[WAIT][NEXT]
+What good is looking at her?[BR]
+If I never get up the nerve[BR]
+to talk to her, she'll never[BR]
+know my true feelings...[BR]
+[WAIT][NEXT]
+Oh... [PAUSE:05]Minh T....[BR]
+[PAUSE:0A]Maybe I could talk to her up[BR]
+on Shooting Star Summit.[WAIT][END]
+
+03-0CB
+[STYLE:RIGHT]The theft of our castle caused[BR]
+great destruction here.[BR]
+[WAIT][NEXT]
+The worst of it happened[BR]
+in the center of town.[BR]
+It seemed to rain wood.[BR]
+[WAIT][NEXT]
+As a result, we can't get to[BR]
+the southern part of town.[BR]
+[WAIT][NEXT]
+The train station, the port...[BR]
+many important things lie south.[BR]
+[WAIT][NEXT]
+Not being able to get there is[BR]
+a great inconvenience to me[BR]
+and to everyone.[WAIT][END]
+
+03-0CC
+[STYLE:RIGHT]The theft of our castle caused[BR]
+great destruction here.[BR]
+[WAIT][NEXT]
+The worst of it happened[BR]
+in the center of town.[BR]
+It seemed to rain wood.[BR]
+[WAIT][NEXT]
+As a result, we can't get to[BR]
+the southern part of town.[BR]
+[WAIT][NEXT]
+The train station, the port...[BR]
+many important things lie south.[BR]
+[WAIT][NEXT]
+Not being able to get there is[BR]
+a great inconvenience to me[BR]
+and to everyone.[WAIT][END]
+
+03-0CD
+[STYLE:RIGHT]The theft of our castle caused[BR]
+great destruction here.[BR]
+[WAIT][NEXT]
+The worst of it happened[BR]
+in the center of town.[BR]
+It seemed to rain wood.[BR]
+[WAIT][NEXT]
+As a result, we can't get to[BR]
+the southern part of town.[BR]
+[WAIT][NEXT]
+The train station, the port...[BR]
+many important things lie south.[BR]
+[WAIT][NEXT]
+Not being able to get there is[BR]
+a great inconvenience to me[BR]
+and to everyone.[WAIT][END]
+
+03-0CE
+[STYLE:RIGHT]So much broken wood,[BR]
+scattered all over town...[BR]
+[WAIT][NEXT]
+We could no longer reach the[BR]
+south side, and yet...[BR]
+[PAUSE:0A]now we can. Excellent.[BR]
+[WAIT][NEXT]
+We can once again reach the[BR]
+port and the train station.[WAIT][END]
+
+03-0CF
+[STYLE:RIGHT]The trains are up and running[BR]
+again, but I'm told they were[BR]
+stuck for a while because of[BR]
+a large boulder.[BR]
+[WAIT][NEXT]
+Local opinion holds that you[BR]
+broke it for us, Mario.[BR]
+[PAUSE:0A]Thank you. I'm ecstatic.[WAIT][END]
+
+03-0D0
+[STYLE:RIGHT]The Toad who guards the[BR]
+entrance to Forever Forest [BR]
+is a timid lad named Fice T.[BR]
+[WAIT][NEXT]
+Word is that Fice T. had[BR]
+grown tired of being timid,[BR]
+so he requested and got the[BR]
+job of guard of the forest.[BR]
+[WAIT][NEXT]
+Still... His fear remains.[BR]
+He is terrified of ghosts, [BR]
+and looks not into the forest.[WAIT][END]
+
+03-0D1
+[STYLE:RIGHT]Mario. Bad things are afoot.[BR]
+[PAUSE:0A]Shy Guys just ran to the west,[BR]
+toward the Main Gate. They're[BR]
+no doubt up to something.[BR]
+[WAIT][NEXT]
+There is a shop over that way.[BR]
+Perhaps it is there that they[BR]
+have set their sights.[BR]
+[PAUSE:0A]No good can come of this.[WAIT][END]
+
+03-0D2
+[STYLE:RIGHT]I witnessed a Shy Guy fleeing[BR]
+with a book of some sort.[BR]
+[WAIT][NEXT]
+I ran and ran, but he was too[BR]
+fleet of foot.[BR]
+[WAIT][NEXT]
+He headed south, toward the[BR]
+house of Tayce T. I must[BR]
+recover from this excitement.[WAIT][END]
+
+03-0D3
+[STYLE:RIGHT]Mario.[BR]
+[PAUSE:0A]If the Shy Guys aren't stopped,[BR]
+I may have to raise my voice.[WAIT][END]
+
+03-0D4
+[STYLE:RIGHT]The town has grown peaceful[BR]
+once more. The Shy Guy menace[BR]
+is at last halted.[BR]
+[WAIT][NEXT]
+We owe you a debt.[BR]
+[WAIT][NEXT]
+Those Shy Guys...[BR]
+[PAUSE:0A]I'm not usually this emotional.[BR]
+I must calm down.[WAIT][END]
+
+03-0D5
+[STYLE:RIGHT]Mario. Calm my nerves.[BR]
+[PAUSE:05]Princess Peach will return[BR]
+safely to us, is it not so?[BR]
+She must, or I may faint.[BR]
+[WAIT][NEXT]
+This town was once peaceful[BR]
+and carefree. My wish is to[BR]
+see it peaceful once more.[WAIT][END]
+
+03-0D6
+[STYLE:RIGHT]Mario. Calm my nerves.[BR]
+[PAUSE:05]Princess Peach will return[BR]
+safely to us, is it not so?[BR]
+She must, or I may faint.[BR]
+[WAIT][NEXT]
+This town was once peaceful[BR]
+and carefree. My wish is to[BR]
+see it peaceful once more.[WAIT][END]
+
+03-0D7
+[STYLE:RIGHT]Mario. Calm my nerves.[BR]
+[PAUSE:05]Princess Peach will return[BR]
+safely to us, is it not so?[BR]
+She must, or I may faint.[BR]
+[WAIT][NEXT]
+This town was once peaceful[BR]
+and carefree. My wish is to[BR]
+see it peaceful once more.[WAIT][END]
+
+03-0D8
+[STYLE:RIGHT]Shiver City is far from here,[BR]
+in the northern lands.[BR]
+There is snow there always.[BR]
+[WAIT][NEXT]
+If I ever had to live in such[BR]
+a place, I'd never go outside.[BR]
+[WAIT][NEXT]
+The people up there should[BR]
+wish for warmer weather.[BR]
+[PAUSE:0A]Maybe it's none of my business.[WAIT][END]
+
+03-0D9
+[STYLE:RIGHT]Shiver City is far from here,[BR]
+in the northern lands.[BR]
+There is snow there always.[BR]
+[WAIT][NEXT]
+If I ever had to live in such[BR]
+a place, I'd never go outside.[BR]
+[WAIT][NEXT]
+The people up there should[BR]
+wish for warmer weather.[BR]
+[PAUSE:0A]Maybe it's none of my business.[WAIT][END]
+
+03-0DA
+[STYLE:RIGHT]I have a wish... A simple wish[BR]
+that Toad Town would return[BR]
+to its peaceful ways.[BR]
+[WAIT][NEXT]
+Perhaps this time it is you,[BR]
+and not the Stars, that will[BR]
+grant my earnest wish.[BR]
+[WAIT][NEXT]
+I am filled with excitement.[BR]
+Go forth. And good luck.[WAIT][END]
+
+03-0DB
+[STYLE:RIGHT]{SpeechSound:02}{Down:06}{StartFX:Shrinking}{Size:20:20}Mario!![WAIT][END]
+
+03-0DC
+[STYLE:RIGHT]{SpeechSound:02}Mario! Mario![BR]
+[PAUSE:0F]It's me, Twink.[BR]
+[PAUSE:0A]Remember me?[WAIT][END]
+
+03-0DD
+[STYLE:RIGHT]{SpeechSound:02}I heard you saved the honorable[BR]
+Star Spirit who was captured[BR]
+by the Koopa Bros.![BR]
+[WAIT][NEXT]
+Bowser and his gang are so[BR]
+angry about it![BR]
+[WAIT][NEXT]
+I knew you could do it, Mario![BR]
+You're on your way![WAIT][END]
+
+03-0DE
+[STYLE:RIGHT]{SpeechSound:02}But enough celebration for now.[BR]
+I come bearing important[BR]
+information for you.[BR]
+[WAIT][NEXT]
+It seems that one of the Star[BR]
+Spirits is being held captive[BR]
+somewhere in Dry Dry Desert.[BR]
+[WAIT][NEXT]
+Bowser wrote it in his diary.[BR]
+Some place called Dry Dry Ruins.[BR]
+[WAIT][NEXT]
+The princess braved the dangers[BR]
+of the castle to get you this[BR]
+clue, Mario![BR]
+[WAIT][NEXT]
+If we find out anything else,[BR]
+I'll hurry back to tell you.[BR]
+[WAIT][NEXT]
+I have to go back to Her[BR]
+Highness now. She's so brave![BR]
+[PAUSE:0A]I hope this news helps![WAIT][END]
+
+03-0DF
+[STYLE:RIGHT]What-ho, old boy! Ahead is[BR]
+Pleasant Path, but...Kent C.[BR]
+Koopa is blocking it.[BR]
+[WAIT][NEXT]
+It appears he's quite strong.[BR]
+I say, a strong brute indeed![BR]
+[PAUSE:0A]This is a bit of a sticky wicket![BR]
+[WAIT][NEXT]
+There's naught I can do...[BR]
+The only course of action is[BR]
+for me to search for a secret[BR]
+passage to Koopa Village.[WAIT][END]
+
+03-0E0
+[STYLE:RIGHT]You're Kolorado, correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+03-0E1
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+03-0E2
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+03-0E3
+[STYLE:RIGHT]Good gracious![BR]
+[PAUSE:0F]A letter from the missus![BR]
+[WAIT][NEXT]
+But [PAUSE:0A]when did she send this?[BR]
+[WAIT][NEXT]
+Well, [PAUSE:0A]in any event,[BR]
+[PAUSE:0A]cheers for delivering it.[BR]
+[PAUSE:0A]Take this, old boy.[BR]
+[WAIT][NEXT]
+I came upon it during my[BR]
+incredibly important research[BR]
+on Lavalava Island.[WAIT][END]
+
+03-0E4
+[STYLE:RIGHT]The Dry Dry Ruins dig grew[BR]
+tiresome for me. I left it[BR]
+in the hands of my assistants.[BR]
+[WAIT][NEXT]
+[PAUSE:0A]I say...?[BR]
+[WAIT][NEXT]
+Mario, [PAUSE:0A]that artifact of yours[PAUSE:03].[PAUSE:03].[PAUSE:03].[BR]
+[PAUSE:05][WAIT][NEXT]
+That looks like... The subtle[BR]
+craftsmanship...indeed![BR]
+It's a clue to Dry Dry Ruins![BR]
+[WAIT][NEXT]
+A careful study of this by my[BR]
+learned eyes could well solve[BR]
+the mystery of the ruins![BR]
+[WAIT][NEXT]
+Mario! [PAUSE:0A]Old boy! [PAUSE:0A]Be a chum![BR]
+[PAUSE:0F]Could you part with it?[WAIT][END]
+
+03-0E5
+[STYLE:RIGHT]Mario, [PAUSE:0A]I'm a grown Koopa here, [BR]
+begging you on my knees[BR]
+for your generosity.[BR]
+[WAIT][NEXT]
+I must have that artifact![BR]
+I can't stop thinking of it![WAIT][END]
+
+03-0E6
+[STYLE:RIGHT][NEXT]
+Oh, dear...[BR]
+[PAUSE:14]Won't you change your mind?[WAIT][END]
+
+03-0E7
+[STYLE:RIGHT][NEXT]
+Oh, bother![BR]
+[PAUSE:0A]I suppose nothing I can say[BR]
+will sway you.[BR]
+[PAUSE:0A]I guess I'll just suffer...[WAIT][END]
+
+03-0E8
+[STYLE:RIGHT][NEXT]
+Cheers, Mario![BR]
+[PAUSE:0A]Smashing, really, old boy![BR]
+[WAIT][NEXT]
+I'm refilled with vim and vigor![BR]
+[PAUSE:0A]Soon now, the mystery of[BR]
+Dry Dry Ruins will rise from[BR]
+the sands that conceal it![BR]
+[WAIT][NEXT]
+As a brilliant archaeologist,[BR]
+I say it must be so![BR]
+[WAIT][NEXT]
+Hm, yes, of course, well.[BR]
+I suppose a thank-you gift[BR]
+is in order, eh, old boy?[BR]
+[PAUSE:0A]Here you go then![WAIT][END]
+
+03-0E9
+[STYLE:RIGHT]I'll start examining this[BR]
+the moment I get home.[BR]
+[WAIT][NEXT]
+Yes, well, here's to you,[BR]
+old chap. Safe travels![WAIT][END]
+

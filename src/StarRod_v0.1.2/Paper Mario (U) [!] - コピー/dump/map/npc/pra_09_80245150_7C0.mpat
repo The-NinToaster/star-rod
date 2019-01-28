@@ -1,0 +1,804 @@
+% automatically dumped from map pra_09
+
+#new:Npc $pra_09_80245150_7C0
+00000009 $NpcSettings_80241D40_pra_09 00000000 00000000 00000000 
+00E44D00 $Script_Init_80244514_pra_09 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+004E0002 004E0003 004E0004 004E0004 004E0002 004E0002 004E000A 004E000A 
+004E0002 004E0002 004E0002 004E0002 004E0002 004E0002 004E0002 004E0002 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80241310_pra_09
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  LW        S0, C (S1)
+   1C:  LW        A1, 0 (S0)
+   20:  JAL       {Func:GetVariable}
+   24:  ADDIU     S0, S0, 4
+   28:  LW        A1, 0 (S0)
+   2C:  ADDIU     S0, S0, 4
+   30:  DADDU     A0, S1, R0
+   34:  JAL       {Func:GetVariable}
+   38:  DADDU     S2, V0, R0
+   3C:  DADDU     A0, S1, R0
+   40:  LW        A1, 0 (S0)
+   44:  JAL       {Func:GetVariable}
+   48:  DADDU     S0, V0, R0
+   4C:  MTC1      S2, F12
+   50:  NOP
+   54:  CVT.S.W   F12, F12
+   58:  MTC1      V0, F0
+   5C:  NOP
+   60:  CVT.S.W   F0, F0
+   64:  MFC1      A2, F0
+   68:  MTC1      S0, F14
+   6C:  NOP
+   70:  JAL       8006F8F0
+   74:  CVT.S.W   F14, F14
+   78:  LW        RA, 1C (SP)
+   7C:  LW        S2, 18 (SP)
+   80:  LW        S1, 14 (SP)
+   84:  LW        S0, 10 (SP)
+   88:  ADDIU     V0, R0, 2
+   8C:  JR        RA
+   90:  ADDIU     SP, SP, 20
+
+#new:Function $Function_802413A4_pra_09
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S2, 18 (SP)
+    8:  DADDU     S2, A0, R0
+    C:  SW        RA, 24 (SP)
+   10:  SW        S4, 20 (SP)
+   14:  SW        S3, 1C (SP)
+   18:  SW        S1, 14 (SP)
+   1C:  SW        S0, 10 (SP)
+   20:  LW        S0, C (S2)
+   24:  LW        S3, 148 (S2)
+   28:  LW        A1, 0 (S0)
+   2C:  JAL       {Func:GetVariable}
+   30:  ADDIU     S0, S0, 4
+   34:  SLTIU     S1, V0, 1
+   38:  LW        A1, 0 (S0)
+   3C:  ADDIU     S0, S0, 4
+   40:  LIA       S4, 800B0F10
+   48:  JAL       {Func:GetVariable}
+   4C:  DADDU     A0, S2, R0
+   50:  BEQL      V0, R0, .o58
+   54:  ADDIU     S1, S1, 1
+        .o58
+   58:  LW        A1, 0 (S0)
+   5C:  ADDIU     S0, S0, 4
+   60:  JAL       {Func:GetVariable}
+   64:  DADDU     A0, S2, R0
+   68:  BEQL      V0, R0, .o70
+   6C:  ADDIU     S1, S1, 1
+        .o70
+   70:  LW        A1, 0 (S0)
+   74:  JAL       {Func:GetVariable}
+   78:  DADDU     A0, S2, R0
+   7C:  BEQL      V0, R0, .o84
+   80:  ADDIU     S1, S1, 1
+        .o84
+   84:  ADDIU     V0, R0, 2
+   88:  BEQ       S1, V0, .oE4
+   8C:  NOP
+   90:  SLTI      V0, S1, 3
+   94:  BEQ       V0, R0, .oAC
+   98:  ADDIU     V0, R0, 1
+   9C:  BEQ       S1, V0, .oCC
+   A0:  NOP
+   A4:  BEQ       R0, R0, .o12C
+   A8:  NOP
+        .oAC
+   AC:  ADDIU     V0, R0, 3
+   B0:  BEQ       S1, V0, .oFC
+   B4:  NOP
+   B8:  ADDIU     V0, R0, 4
+   BC:  BEQ       S1, V0, .o114
+   C0:  NOP
+   C4:  BEQ       R0, R0, .o12C
+   C8:  NOP
+        .oCC
+   CC:  LB        V0, 4 (S3)
+   D0:  SLL       V0, V0, 2
+   D4:  ADDU      V0, V0, S4
+   D8:  LW        V1, 28 (V0)
+   DC:  BEQ       R0, R0, .o128
+   E0:  ADDIU     V0, R0, 2101
+        .oE4
+   E4:  LB        V0, 4 (S3)
+   E8:  SLL       V0, V0, 2
+   EC:  ADDU      V0, V0, S4
+   F0:  LW        V1, 28 (V0)
+   F4:  BEQ       R0, R0, .o128
+   F8:  ADDIU     V0, R0, 2102
+        .oFC
+   FC:  LB        V0, 4 (S3)
+  100:  SLL       V0, V0, 2
+  104:  ADDU      V0, V0, S4
+  108:  LW        V1, 28 (V0)
+  10C:  BEQ       R0, R0, .o128
+  110:  ADDIU     V0, R0, 2103
+        .o114
+  114:  LB        V0, 4 (S3)
+  118:  SLL       V0, V0, 2
+  11C:  ADDU      V0, V0, S4
+  120:  LW        V1, 28 (V0)
+  124:  ADDIU     V0, R0, 2104
+        .o128
+  128:  SH        V0, 44 (V1)
+        .o12C
+  12C:  LW        RA, 24 (SP)
+  130:  LW        S4, 20 (SP)
+  134:  LW        S3, 1C (SP)
+  138:  LW        S2, 18 (SP)
+  13C:  LW        S1, 14 (SP)
+  140:  LW        S0, 10 (SP)
+  144:  ADDIU     V0, R0, 2
+  148:  JR        RA
+  14C:  ADDIU     SP, SP, 28
+
+#new:Function $Function_802414F4_pra_09
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        S0, 10 (SP)
+   10:  DADDU     S0, A1, R0
+   14:  SW        RA, 18 (SP)
+   18:  JAL       802CDAC0
+   1C:  LW        A1, 84 (S1)
+   20:  BEQ       S0, R0, .o6C
+   24:  DADDU     A0, V0, R0
+   28:  LIO       V0, 00030011
+   30:  LIO       AT, 3F4CCCCD
+   38:  MTC1      AT, F2
+   3C:  LWC1      F0, 88 (S1)
+   40:  CVT.S.W   F0, F0
+   44:  SWC1      F0, 38 (A0)
+   48:  LWC1      F0, 8C (S1)
+   4C:  CVT.S.W   F0, F0
+   50:  SWC1      F0, 3C (A0)
+   54:  LWC1      F0, 90 (S1)
+   58:  CVT.S.W   F0, F0
+   5C:  SWC1      F0, 40 (A0)
+   60:  SW        R0, 1C (A0)
+   64:  SW        V0, 28 (A0)
+   68:  SWC1      F2, 14 (A0)
+        .o6C
+   6C:  LWC1      F6, 4C (A0)
+   70:  LIF       F0, 39.0
+   78:  LWC1      F2, 3C (A0)
+   7C:  SUB.S     F6, F6, F0
+   80:  LWC1      F0, 1C (A0)
+   84:  LWC1      F4, 44 (A0)
+   88:  SUB.S     F2, F2, F0
+   8C:  LIF       F0, 33.0
+   94:  MTC1      R0, F10
+   98:  SUB.S     F4, F4, F0
+   9C:  LWC1      F0, 1C (A0)
+   A0:  SWC1      F2, 3C (A0)
+   A4:  LWC1      F2, 14 (A0)
+   A8:  LWC1      F8, 3C (A0)
+   AC:  ADD.S     F0, F0, F2
+   B0:  SWC1      F6, 4C (A0)
+   B4:  C.LE.S    F8, F10
+   B8:  SWC1      F4, 44 (A0)
+   BC:  BC1T      .oCC
+   C0:  SWC1      F0, 1C (A0)
+   C4:  BEQ       R0, R0, .oF0
+   C8:  DADDU     V0, R0, R0
+        .oCC
+   CC:  LIO       V1, 00030003
+   D4:  ADDIU     V0, R0, 2
+   D8:  SWC1      F10, 3C (A0)
+   DC:  SWC1      F10, 4C (A0)
+   E0:  SWC1      F10, 44 (A0)
+   E4:  SWC1      F10, 1C (A0)
+   E8:  SWC1      F10, 14 (A0)
+   EC:  SW        V1, 28 (A0)
+        .oF0
+   F0:  LW        RA, 18 (SP)
+   F4:  LW        S1, 14 (SP)
+   F8:  LW        S0, 10 (SP)
+   FC:  JR        RA
+  100:  ADDIU     SP, SP, 20
+
+#new:Function $Function_802415F8_pra_09
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        S0, 10 (SP)
+    8:  DADDU     S0, A0, R0
+    C:  SW        RA, 14 (SP)
+   10:  JAL       802CDAC0
+   14:  LW        A1, 90 (S0)
+   18:  DADDU     A0, S0, R0
+   1C:  LW        A1, 94 (A0)
+   20:  JAL       802CDAC0
+   24:  DADDU     S0, V0, R0
+   28:  LHU       V1, A6 (V0)
+   2C:  SH        V1, A6 (S0)
+   30:  LHU       V1, A8 (V0)
+   34:  SH        V1, A8 (S0)
+   38:  LW        RA, 14 (SP)
+   3C:  LW        S0, 10 (SP)
+   40:  ADDIU     V0, R0, 2
+   44:  JR        RA
+   48:  ADDIU     SP, SP, 18
+
+#new:Script $Script_8024196C_pra_09
+    0:  SetGroup 0000001B 
+    C:  Call     UseExitHeading ( 0000003C 00000001 )
+   20:  Exec     ExitWalk 
+   2C:  Call     GotoMap     	( $ASCII_80246A18_pra_09 00000000 )
+   40:  Wait     00000064 
+   4C:  Return
+   54:  End
+
+#new:NpcSettings $NpcSettings_80241D40_pra_09
+00000000 001E002D 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802420B8_pra_09
+    0:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   1C:  Call     SetCamSpeed 	( .Default *Var[A] )
+   30:  Call     SetCamDistance ( .Default *Fixed[350.0] )
+   44:  Call     SetCamAngles 	( .Default *Fixed[12.0] *Fixed[-5.5] )
+   5C:  Call     SetCamPosB  	( .Default *Fixed[500.0] *Fixed[20.0] )
+   74:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   90:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   A8:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+   BC:  Return
+   C4:  End
+
+#new:Script $Script_80242184_pra_09
+    0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   18:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   34:  Call     SetCamSpeed 	( .Default *Fixed[6.0] )
+   48:  Call     SetCamDistance ( .Default *Fixed[500.0] )
+   5C:  Call     SetCamPosB  	( .Default *Fixed[386.0] *Fixed[20.0] )
+   74:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   90:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   A8:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+   BC:  Call     PanToTarget 	( .Default 00000000 00000000 )
+   D4:  Return
+   DC:  End
+
+#new:Script $Script_80242268_pra_09
+    0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   18:  If  *Var[0]  >  00000182 
+   28:  	Set  *Var[0]  00000182 
+   38:  EndIf
+   40:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   5C:  Call     SetCamSpeed 	( .Default *Fixed[6.0] )
+   70:  Call     SetCamDistance ( .Default *Fixed[500.0] )
+   84:  Call     SetCamPosB  	( .Default *Fixed[500.0] *Fixed[20.0] )
+   9C:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   B8:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   D0:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+   E4:  Call     PanToTarget 	( .Default 00000000 00000000 )
+   FC:  Return
+  104:  End
+
+#new:Script $Script_80242374_pra_09
+    0:  Call     $Function_802415F8_pra_09 ( )
+    C:  Call     SetNpcFlagBits ( *Var[3] 00000100 .True )
+   24:  Call     SayMessage0 	( *Var[3] 0003000E 00030003 00000000 *Var[5] ) % variable string ID
+   44:  Call     GetNpcPos   	( *Var[3] *Var[0] *Var[1] *Var[2] )
+   60:  Call     $Function_80241310_pra_09 ( *Var[0] *Var[1] *Var[2] )
+   78:  Call     SetNpcPos   	( *Var[3] 00000000 FFFFFC18 00000000 )
+   94:  Call     SetNpcFlagBits ( *Var[3] 00000100 .False )
+   AC:  Call     SetNpcPos   	( *Var[4] *Var[0] *Var[1] *Var[2] )
+   C8:  Call     PlaySoundAtNpc ( *Var[4] 000002CD 00000000 )
+   E0:  Call     MakeLerp    	( 00000000 00000B40 00000028 00000004 )
+   FC:  Label    00000001 
+  108:  Call     UpdateLerp  	( )
+  114:  Call     SetNpcRotation ( *Var[4] 00000000 *Var[0] 00000000 )
+  130:  Wait     00000001 
+  13C:  If  *Var[1]  ==  00000001 
+  14C:  	Goto     00000001 
+  158:  EndIf
+  160:  Call     SayMessage1 	( *Var[4] 004E0005 004E0002 00000000 )
+  17C:  ExecWait $Script_80242268_pra_09 
+  188:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  1A0:  Thread
+  1A8:  	Call     SetNpcAnimation 	( *Var[4] 004E0004 )
+  1BC:  	Call     InterpNpcYaw 	( *Var[4] 0000005A 00000000 )
+  1D4:  	Call     SetNpcSpeed 	( *Var[4] *Fixed[6.5] )
+  1E8:  	Call     PlaySoundAtNpc ( *Var[4] 000002CB 00000000 )
+  200:  	Call     MoveNpcTo   	( *Var[4] 00000000 *Var[2] 00000000 )
+  21C:  	Call     SetNpcPos   	( *Var[4] 00000000 FFFFFC18 00000000 )
+  238:  EndThread
+  240:  Wait     0000000F 
+  24C:  Return
+  254:  End
+
+#new:Script $Script_802425D0_pra_09
+    0:  Call     SetNpcJumpscale 	( *Var[3] *Fixed[1.0] )
+   14:  Call     GetNpcPos   	( *Var[3] *Var[0] *Var[1] *Var[2] )
+   30:  Call     NpcJump0    	( *Var[3] *Var[0] *Var[1] *Var[2] 0000000A )
+   50:  Call     GetNpcPos   	( *Var[3] *Var[0] *Var[1] *Var[2] )
+   6C:  Call     NpcJump0    	( *Var[3] *Var[0] *Var[1] *Var[2] 0000000A )
+   8C:  Return
+   94:  End
+
+#new:Script $Script_8024266C_pra_09
+    0:  If  *MapVar[2]  ==  00000000 
+   10:  	Thread
+   18:  		Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+   34:  		Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+   50:  		Call     $Function_80241310_pra_09 ( *Var[0] *Var[1] *Var[2] )
+   68:  		Call     SetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+   84:  		Call     PlaySoundAtNpc ( 00000005 000002CD 00000000 )
+   9C:  		Call     SetNpcAnimation 	( 00000005 004E0004 )
+   B0:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   C8:  		Call     MoveNpcTo   	( 00000005 *Var[0] *Var[2] 0000001E )
+   E4:  	EndThread
+   EC:  EndIf
+   F4:  If  *MapVar[3]  ==  00000000 
+  104:  	Thread
+  10C:  		Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  128:  		Call     SetNpcPos   	( 00000002 00000000 FFFFFC18 00000000 )
+  144:  		Call     $Function_80241310_pra_09 ( *Var[0] *Var[1] *Var[2] )
+  15C:  		Call     SetNpcPos   	( 00000006 *Var[0] *Var[1] *Var[2] )
+  178:  		Call     PlaySoundAtNpc ( 00000006 000002CD 00000000 )
+  190:  		Call     SetNpcAnimation 	( 00000006 004E0004 )
+  1A4:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  1BC:  		Call     MoveNpcTo   	( 00000006 *Var[0] *Var[2] 0000001E )
+  1D8:  	EndThread
+  1E0:  EndIf
+  1E8:  If  *MapVar[4]  ==  00000000 
+  1F8:  	Thread
+  200:  		Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+  21C:  		Call     SetNpcPos   	( 00000003 00000000 FFFFFC18 00000000 )
+  238:  		Call     $Function_80241310_pra_09 ( *Var[0] *Var[1] *Var[2] )
+  250:  		Call     SetNpcPos   	( 00000007 *Var[0] *Var[1] *Var[2] )
+  26C:  		Call     PlaySoundAtNpc ( 00000007 000002CD 00000000 )
+  284:  		Call     SetNpcAnimation 	( 00000007 004E0004 )
+  298:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  2B0:  		Call     MoveNpcTo   	( 00000007 *Var[0] *Var[2] 0000001E )
+  2CC:  	EndThread
+  2D4:  EndIf
+  2DC:  If  *MapVar[5]  ==  00000000 
+  2EC:  	Thread
+  2F4:  		Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  310:  		Call     SetNpcPos   	( 00000004 00000000 FFFFFC18 00000000 )
+  32C:  		Call     $Function_80241310_pra_09 ( *Var[0] *Var[1] *Var[2] )
+  344:  		Call     SetNpcPos   	( 00000008 *Var[0] *Var[1] *Var[2] )
+  360:  		Call     PlaySoundAtNpc ( 00000008 000002CD 00000000 )
+  378:  		Call     SetNpcAnimation 	( 00000008 004E0004 )
+  38C:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  3A4:  		Call     MoveNpcTo   	( 00000008 *Var[0] *Var[2] 0000001E )
+  3C0:  	EndThread
+  3C8:  EndIf
+  3D0:  Wait     00000014 
+  3DC:  Return
+  3E4:  End
+
+#new:Script $Script_80242A58_pra_09
+    0:  Call     SetNpcFlagBits ( *Var[3] 00000100 .True )
+   18:  Call     SetNpcAnimation 	( *Var[3] 00030007 )
+   2C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   44:  Call     MoveNpcTo   	( *Var[3] *Var[0] *Var[2] 0000001E )
+   60:  Return
+   68:  End
+
+#new:Script $Script_80242AC8_pra_09
+    0:  Call     InterpNpcYaw 	( *Var[3] *Var[9] 00000000 )
+   18:  Loop     0000001E 
+   24:  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+   40:  	Add  *Var[0]  *Var[4] 
+   50:  	Add  *Var[1]  *Var[5] 
+   60:  	Add  *Var[2]  *Var[6] 
+   70:  	Call     SetNpcPos   	( *Var[3] *Var[0] *Var[1] *Var[2] )
+   8C:  	Wait     00000001 
+   98:  EndLoop
+   A0:  Return
+   A8:  End
+
+#new:Script $Script_80242B78_pra_09
+    0:  Call     MoveNpcTo   	( *Var[3] *Var[0] *Var[2] 00000014 )
+   1C:  Call     SetNpcAnimation 	( *Var[3] 00030003 )
+   30:  Call     SetNpcFlagBits ( *Var[3] 00000100 .False )
+   48:  Call     InterpNpcYaw 	( *Var[3] 0000005A 00000000 )
+   60:  Return
+   68:  End
+
+#new:Script $Script_80242BE8_pra_09
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Loop     
+   1C:  	Wait     00000001 
+   28:  	Call     802D1DD0 ( *Var[0] )
+   38:  	If  *Var[0]  ==  00000000 
+   48:  		BreakLoop
+   50:  	EndIf
+   58:  EndLoop
+   60:  Call     DisablePlayerPhysics 	( .True )
+   70:  If  *MapVar[2]  ==  00000000 
+   80:  	Set  *Var[3]  00000001 
+   90:  	Exec     $Script_80242A58_pra_09 
+   9C:  EndIf
+   A4:  If  *MapVar[3]  ==  00000000 
+   B4:  	Set  *Var[3]  00000002 
+   C4:  	Exec     $Script_80242A58_pra_09 
+   D0:  EndIf
+   D8:  If  *MapVar[4]  ==  00000000 
+   E8:  	Set  *Var[3]  00000003 
+   F8:  	Exec     $Script_80242A58_pra_09 
+  104:  EndIf
+  10C:  If  *MapVar[5]  ==  00000000 
+  11C:  	Set  *Var[3]  00000004 
+  12C:  	Exec     $Script_80242A58_pra_09 
+  138:  EndIf
+  140:  Set  *Var[3]  00000000 
+  150:  ExecWait $Script_80242A58_pra_09 
+  15C:  Call     InterpPlayerYaw 	( 0000005A 00000003 )
+  170:  Call     SetPlayerAnimation 	( 00080009 )
+  180:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  19C:  Add  *Var[1]  00000014 
+  1AC:  Call     SetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  1C4:  Wait     0000000A 
+  1D0:  Thread
+  1D8:  	Loop     00000023 
+  1E4:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  1FC:  		Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  218:  		Call     SetPanTarget 	( .Default *Var[0] 00000000 *Var[2] )
+  234:  		Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  248:  		Call     PanToTarget 	( .Default 00000000 00000001 )
+  260:  		Wait     00000001 
+  26C:  	EndLoop
+  274:  	Call     PanToTarget 	( .Default 00000000 00000000 )
+  28C:  EndThread
+  294:  Thread
+  29C:  	Loop     0000001E 
+  2A8:  		Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  2C4:  		Add  *Var[1]  00000014 
+  2D4:  		Call     SetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  2EC:  		Wait     00000001 
+  2F8:  	EndLoop
+  300:  EndThread
+  308:  If  *MapVar[2]  ==  00000000 
+  318:  	Set  *Var[3]  00000001 
+  328:  	Set  *Var[4]  00000000 
+  338:  	Set  *Var[5]  00000000 
+  348:  	Set  *Var[6]  0000000A 
+  358:  	Exec     $Script_80242AC8_pra_09 
+  364:  EndIf
+  36C:  If  *MapVar[3]  ==  00000000 
+  37C:  	Set  *Var[3]  00000002 
+  38C:  	Set  *Var[4]  FFFFFFEC 
+  39C:  	Set  *Var[5]  00000000 
+  3AC:  	Set  *Var[6]  00000000 
+  3BC:  	Exec     $Script_80242AC8_pra_09 
+  3C8:  EndIf
+  3D0:  If  *MapVar[4]  ==  00000000 
+  3E0:  	Set  *Var[3]  00000003 
+  3F0:  	Set  *Var[4]  FFFFFFEC 
+  400:  	Set  *Var[5]  00000000 
+  410:  	Set  *Var[6]  0000000A 
+  420:  	Exec     $Script_80242AC8_pra_09 
+  42C:  EndIf
+  434:  If  *MapVar[5]  ==  00000000 
+  444:  	Set  *Var[3]  00000004 
+  454:  	Set  *Var[4]  FFFFFFEC 
+  464:  	Set  *Var[5]  00000000 
+  474:  	Set  *Var[6]  00000014 
+  484:  	Exec     $Script_80242AC8_pra_09 
+  490:  EndIf
+  498:  Call     MoveNpcTo   	( 00000000 00000172 00000049 0000001E )
+  4B4:  Call     DisablePlayerPhysics 	( .False )
+  4C4:  If  *MapVar[2]  ==  00000000 
+  4D4:  	Set  *Var[3]  00000001 
+  4E4:  	Set  *Var[0]  00000118 
+  4F4:  	Set  *Var[2]  00000064 
+  504:  	Exec     $Script_80242B78_pra_09 
+  510:  EndIf
+  518:  If  *MapVar[3]  ==  00000000 
+  528:  	Set  *Var[3]  00000002 
+  538:  	Set  *Var[0]  0000013B 
+  548:  	Set  *Var[2]  00000037 
+  558:  	Exec     $Script_80242B78_pra_09 
+  564:  EndIf
+  56C:  If  *MapVar[4]  ==  00000000 
+  57C:  	Set  *Var[3]  00000003 
+  58C:  	Set  *Var[0]  0000015E 
+  59C:  	Set  *Var[2]  00000050 
+  5AC:  	Exec     $Script_80242B78_pra_09 
+  5B8:  EndIf
+  5C0:  If  *MapVar[5]  ==  00000000 
+  5D0:  	Set  *Var[3]  00000004 
+  5E0:  	Set  *Var[0]  000001A4 
+  5F0:  	Set  *Var[2]  0000003C 
+  600:  	Exec     $Script_80242B78_pra_09 
+  60C:  EndIf
+  614:  Set  *Var[3]  00000000 
+  624:  Set  *Var[0]  00000181 
+  634:  Set  *Var[2]  00000078 
+  644:  ExecWait $Script_80242B78_pra_09 
+  650:  Call     ShowMessage 	( 0012014E 000000A0 00000028 ) % So! Choose the impostor!
+  668:  Call     DisablePlayerInput 	( .False )
+  678:  Return
+  680:  End
+
+#new:Script $Script_80243270_pra_09
+    0:  If  *StoryProgress  >=  00000050 
+   10:  	Return
+   18:  EndIf
+   20:  Label    00000000 
+   2C:  Set  *Var[0]  *Flag_PRA_0A 
+   3C:  Wait     00000001 
+   48:  If  *Var[0]  ==  00000000 
+   58:  	Goto     00000000 
+   64:  EndIf
+   6C:  Call     DisablePlayerInput 	( .True )
+   7C:  Wait     00000019 
+   88:  Call     DisablePartnerAI 	( 00000000 )
+   98:  Call     SetNpcFlagBits ( .Npc:Partner 00000102 .True )
+   B0:  Call     UseSettingsFrom 	( .Default 00000182 00000000 0000005D )
+   CC:  Call     SetPanTarget 	( .Default 00000182 00000000 0000005D )
+   E8:  Call     SetCamDistance ( .Default *Fixed[500.0] )
+   FC:  Call     SetCamAngles 	( .Default *Fixed[12.0] *Fixed[-7.0] )
+  114:  Call     SetCamPosB  	( .Default *Fixed[500.0] *Fixed[20.0] )
+  12C:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  140:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  158:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  16C:  Thread
+  174:  	Set  *Var[0]  00000003 
+  184:  	Set  *Var[1]  0000015E 
+  194:  	Set  *Var[2]  00000096 
+  1A4:  	Set  *Var[3]  0000005A 
+  1B4:  	Call     SetNpcFlagBits ( *Var[0] 00000100 .True )
+  1CC:  	Call     $Function_802414F4_pra_09 ( )
+  1D8:  	Wait     00000001 
+  1E4:  	Call     SetNpcFlagBits ( *Var[0] 00000100 .False )
+  1FC:  EndThread
+  204:  Wait     00000005 
+  210:  Thread
+  218:  	Set  *Var[0]  00000001 
+  228:  	Set  *Var[1]  00000118 
+  238:  	Set  *Var[2]  00000096 
+  248:  	Set  *Var[3]  00000064 
+  258:  	Call     SetNpcFlagBits ( *Var[0] 00000100 .True )
+  270:  	Call     $Function_802414F4_pra_09 ( )
+  27C:  	Wait     00000001 
+  288:  	Call     SetNpcFlagBits ( *Var[0] 00000100 .False )
+  2A0:  EndThread
+  2A8:  Wait     00000005 
+  2B4:  Thread
+  2BC:  	Set  *Var[0]  00000004 
+  2CC:  	Set  *Var[1]  000001A4 
+  2DC:  	Set  *Var[2]  00000096 
+  2EC:  	Set  *Var[3]  0000003C 
+  2FC:  	Call     SetNpcFlagBits ( *Var[0] 00000100 .True )
+  314:  	Call     $Function_802414F4_pra_09 ( )
+  320:  	Wait     00000001 
+  32C:  	Call     SetNpcFlagBits ( *Var[0] 00000100 .False )
+  344:  EndThread
+  34C:  Wait     00000005 
+  358:  Thread
+  360:  	Set  *Var[0]  00000000 
+  370:  	Set  *Var[1]  00000181 
+  380:  	Set  *Var[2]  00000096 
+  390:  	Set  *Var[3]  00000078 
+  3A0:  	Call     SetNpcFlagBits ( *Var[0] 00000100 .True )
+  3B8:  	Call     $Function_802414F4_pra_09 ( )
+  3C4:  	Wait     00000001 
+  3D0:  	Call     SetNpcFlagBits ( *Var[0] 00000100 .False )
+  3E8:  EndThread
+  3F0:  Wait     00000005 
+  3FC:  Set  *Var[0]  00000002 
+  40C:  Set  *Var[1]  0000013B 
+  41C:  Set  *Var[2]  00000096 
+  42C:  Set  *Var[3]  00000037 
+  43C:  Call     SetNpcFlagBits ( *Var[0] 00000100 .True )
+  454:  Call     $Function_802414F4_pra_09 ( )
+  460:  Wait     00000001 
+  46C:  Call     SetNpcFlagBits ( *Var[0] 00000100 .False )
+  484:  Wait     0000001E 
+  490:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  4AC:  SetF  *Var[A]  *Fixed[3.0] 
+  4BC:  ExecWait $Script_802420B8_pra_09 
+  4C8:  Set  *Var[3]  00000000 
+  4D8:  Exec     $Script_802425D0_pra_09 
+  4E4:  Call     SayMessage0 	( 00000000 0003000E 00030003 00000000 0012013C ) % What? Who are all of you!? You're all trying to lo ...
+  504:  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  520:  SetF  *Var[A]  *Fixed[3.0] 
+  530:  ExecWait $Script_802420B8_pra_09 
+  53C:  Set  *Var[3]  00000001 
+  54C:  Exec     $Script_802425D0_pra_09 
+  558:  Call     SayMessage0 	( 00000001 0003000E 00030003 00000000 0012013D ) % Hey, I heard that! You're spreading lies, you impo ...
+  578:  Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  594:  SetF  *Var[A]  *Fixed[3.0] 
+  5A4:  ExecWait $Script_802420B8_pra_09 
+  5B0:  Set  *Var[3]  00000002 
+  5C0:  Exec     $Script_802425D0_pra_09 
+  5CC:  Call     SayMessage0 	( 00000002 0003000E 00030003 00000000 0012013E ) % Oh, no, no! Mario. Look carefully at me and you'll ...
+  5EC:  Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+  608:  SetF  *Var[A]  *Fixed[3.0] 
+  618:  ExecWait $Script_802420B8_pra_09 
+  624:  Set  *Var[3]  00000003 
+  634:  Exec     $Script_802425D0_pra_09 
+  640:  Call     SayMessage0 	( 00000003 0003000E 00030003 00000000 0012013F ) % I'm the one!!!! Mario!!!! Me!!!! Don't fall for th ...
+  660:  Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  67C:  SetF  *Var[A]  *Fixed[3.0] 
+  68C:  ExecWait $Script_802420B8_pra_09 
+  698:  Set  *Var[3]  00000004 
+  6A8:  Exec     $Script_802425D0_pra_09 
+  6B4:  Call     SayMessage0 	( 00000004 0003000E 00030003 00000000 00120140 ) % I... I'm the real Bombette... Puh... Please... Tru ...
+  6D4:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  6F0:  SetF  *Var[A]  *Fixed[3.0] 
+  700:  ExecWait $Script_802420B8_pra_09 
+  70C:  Call     SayMessage0 	( 00000000 0003000E 00030003 00000000 00120141 ) % Noooo! I can't bear this! Mario! Smash the imposto ...
+  72C:  Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  748:  SetF  *Var[A]  *Fixed[3.0] 
+  758:  ExecWait $Script_802420B8_pra_09 
+  764:  Call     SayMessage0 	( 00000002 0003000E 00030003 00000000 00120142 ) % Oh, that's a nice idea. That'll clear all this up.
+  784:  Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+  7A0:  SetF  *Var[A]  *Fixed[3.0] 
+  7B0:  ExecWait $Script_802420B8_pra_09 
+  7BC:  Call     SayMessage0 	( 00000003 0003000E 00030003 00000000 00120143 ) % Yes, good idea!!!! I just hate impostors!!!! Mario ...
+  7DC:  Call     ResetCam    	( .Default *Fixed[2.0] )
+  7F0:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  808:  Call     DisablePlayerInput 	( .False )
+  818:  Call     SetPlayerFlagBits 	( 000000C0 .True )
+  82C:  Loop     
+  838:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  850:  	If  *Var[0]  >  000001EA 
+  860:  		Set  *Var[9]  0000010E 
+  870:  		ExecWait $Script_80242BE8_pra_09 
+  87C:  	EndIf
+  884:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  89C:  	If  *Var[0]  <  000000BE 
+  8AC:  		Set  *Var[9]  0000005A 
+  8BC:  		ExecWait $Script_80242BE8_pra_09 
+  8C8:  	EndIf
+  8D0:  	If  *MapVar[2]  ==  00000001 
+  8E0:  		If  *MapVar[3]  ==  00000001 
+  8F0:  			If  *MapVar[4]  ==  00000001 
+  900:  				If  *MapVar[5]  ==  00000001 
+  910:  					Call     DisablePlayerInput 	( .True )
+  920:  					Call     DisablePartnerAI 	( 00000000 )
+  930:  					Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  94C:  					Call     SetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  968:  					Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+  984:  					Call     SetNpcFlagBits ( .Npc:Partner 00000002 .False )
+  99C:  					Call     GetAngleToNPC 	( .Npc:Partner *Var[A] )
+  9B0:  					Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  9C8:  					If  *Var[A]  <=  000000B4 
+  9D8:  						Add  *Var[0]  00000014 
+  9E8:  					Else
+  9F0:  						Add  *Var[0]  FFFFFFEC 
+  A00:  					EndIf
+  A08:  					Call     SetNpcAnimation 	( .Npc:Partner 00030005 )
+  A1C:  					Call     SetNpcFlagBits ( .Npc:Partner 00000100 .True )
+  A34:  					Call     MoveNpcTo   	( .Npc:Partner *Var[0] *Var[2] 00000014 )
+  A50:  					Call     SetNpcAnimation 	( .Npc:Partner 00030003 )
+  A64:  					Call     SayMessage0 	( .Npc:Partner 0003000E 00030003 00000000 0012014F ) % If you'd hit me with the Hammer, Mario, I was goin ...
+  A84:  					Call     SetNpcJumpscale 	( .Npc:Partner *Fixed[1.0] )
+  A98:  					Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  AB4:  					Call     SetNpcAnimation 	( .Npc:Partner 0003000B )
+  AC8:  					Thread
+  AD0:  						Wait     00000005 
+  ADC:  						Add  *Var[1]  0000000A 
+  AEC:  						Call     GetAngleToNPC 	( .Npc:Partner *Var[A] )
+  B00:  						If  *Var[A]  >=  000000B4 
+  B10:  							Add  *Var[0]  00000014 
+  B20:  						EndIf
+  B28:  						Call     PlayEffect  	( {FX:Recover:LittleHeart} *Var[0] *Var[1] *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  B6C:  						Call     PlaySoundAtPlayer 	( 00000214 00000000 )
+  B80:  					EndThread
+  B88:  					Call     NpcJump0    	( .Npc:Partner *Var[0] *Var[1] *Var[2] 0000000A )
+  BA8:  					Call     SetNpcAnimation 	( .Npc:Partner 00030003 )
+  BBC:  					Wait     0000000A 
+  BC8:  					Call     SetNpcFlagBits ( .Npc:Partner 00000100 .False )
+  BE0:  					Call     SetPlayerFlagBits 	( 000000C0 .False )
+  BF4:  					Call     EnablePartnerAI 	( )
+  C00:  					Call     DisablePlayerInput 	( .False )
+  C10:  					Set  *StoryProgress  00000050 
+  C20:  					Bind     $Script_8024196C_pra_09 .Trigger:FloorAbove {Collider:deilise} 00000001 00000000 
+  C3C:  					BreakLoop
+  C44:  				EndIf
+  C4C:  			EndIf
+  C54:  		EndIf
+  C5C:  	EndIf
+  C64:  	Switch  *MapVar[0] 
+  C70:  		Case  ==  00000000 
+  C7C:  			Wait     00000001 
+  C88:  		Case  ==  00000001 
+  C94:  			Call     DisablePlayerInput 	( .True )
+  CA4:  			Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  CC0:  			SetF  *Var[A]  *Fixed[6.0] 
+  CD0:  			ExecWait $Script_802420B8_pra_09 
+  CDC:  			Call     SayMessage0 	( 00000000 0003000E 0003000D 00000000 00120149 ) % Oh! Mario! You're terrible! You don't even recogni ...
+  CFC:  			ExecWait $Script_80242184_pra_09 
+  D08:  			Call     SetPlayerAnimation 	( 0001002B )
+  D18:  			ExecWait $Script_8024266C_pra_09 
+  D24:  			Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  D3C:  			Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  D58:  			Call     $Function_802413A4_pra_09 ( *MapVar[2] *MapVar[3] *MapVar[4] *MapVar[5] )
+  D74:  			Call     DisablePlayerInput 	( .False )
+  D84:  			Call     StartBossBattle 	( .Song:SpecialBattle )
+  D94:  			BreakLoop
+  D9C:  		Case  ==  00000002 
+  DA8:  			Call     DisablePlayerInput 	( .True )
+  DB8:  			Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  DD4:  			SetF  *Var[A]  *Fixed[6.0] 
+  DE4:  			ExecWait $Script_802420B8_pra_09 
+  DF0:  			Set  *Var[3]  00000001 
+  E00:  			Set  *Var[4]  00000005 
+  E10:  			Set  *Var[5]  0012014A 
+  E20:  			ExecWait $Script_80242374_pra_09 
+  E2C:  			Set  *MapVar[0]  00000000 
+  E3C:  			Set  *MapVar[2]  00000001 
+  E4C:  			Call     DisablePlayerInput 	( .False )
+  E5C:  		Case  ==  00000003 
+  E68:  			Call     DisablePlayerInput 	( .True )
+  E78:  			Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  E94:  			SetF  *Var[A]  *Fixed[6.0] 
+  EA4:  			ExecWait $Script_802420B8_pra_09 
+  EB0:  			Set  *Var[3]  00000002 
+  EC0:  			Set  *Var[4]  00000006 
+  ED0:  			Set  *Var[5]  0012014B 
+  EE0:  			ExecWait $Script_80242374_pra_09 
+  EEC:  			Set  *MapVar[0]  00000000 
+  EFC:  			Set  *MapVar[3]  00000001 
+  F0C:  			Call     DisablePlayerInput 	( .False )
+  F1C:  		Case  ==  00000004 
+  F28:  			Call     DisablePlayerInput 	( .True )
+  F38:  			Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+  F54:  			SetF  *Var[A]  *Fixed[6.0] 
+  F64:  			ExecWait $Script_802420B8_pra_09 
+  F70:  			Set  *Var[3]  00000003 
+  F80:  			Set  *Var[4]  00000007 
+  F90:  			Set  *Var[5]  0012014C 
+  FA0:  			ExecWait $Script_80242374_pra_09 
+  FAC:  			Set  *MapVar[0]  00000000 
+  FBC:  			Set  *MapVar[4]  00000001 
+  FCC:  			Call     DisablePlayerInput 	( .False )
+  FDC:  		Case  ==  00000005 
+  FE8:  			Call     DisablePlayerInput 	( .True )
+  FF8:  			Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+ 1014:  			SetF  *Var[A]  *Fixed[6.0] 
+ 1024:  			ExecWait $Script_802420B8_pra_09 
+ 1030:  			Set  *Var[3]  00000004 
+ 1040:  			Set  *Var[4]  00000008 
+ 1050:  			Set  *Var[5]  0012014D 
+ 1060:  			ExecWait $Script_80242374_pra_09 
+ 106C:  			Set  *MapVar[0]  00000000 
+ 107C:  			Set  *MapVar[5]  00000001 
+ 108C:  			Call     DisablePlayerInput 	( .False )
+ 109C:  	EndSwitch
+ 10A4:  EndLoop
+ 10AC:  Return
+ 10B4:  End
+
+#new:Script $Script_8024432C_pra_09
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     DisablePartnerAI 	( 00000000 )
+   20:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+   3C:  Call     SetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+   58:  Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+   74:  Call     SetNpcFlagBits ( .Npc:Partner 00000102 .False )
+   8C:  Call     SetPlayerFlagBits 	( 000000C0 .False )
+   A0:  Call     EnablePartnerAI 	( )
+   AC:  Call     DisablePlayerInput 	( .False )
+   BC:  Set  *StoryProgress  00000050 
+   CC:  Bind     $Script_8024196C_pra_09 .Trigger:FloorAbove {Collider:deilise} 00000001 00000000 
+   E8:  Return
+   F0:  End
+
+#new:Script $Script_Init_80244514_pra_09
+    0:  Call     BindNpcDefeat 	( .Npc:Self $Script_8024432C_pra_09 )
+   14:  Call     SetNpcFlagBits ( .Npc:Self 10000102 .True )
+   2C:  Exec     $Script_80243270_pra_09 
+   38:  Return
+   40:  End
+

@@ -1,0 +1,66 @@
+% automatically dumped from map sbk_30
+
+#new:Npc $sbk_30_80243828_3E0
+00000002 $NpcSettings_80241FC8_sbk_30 00000000 00000000 00000000 
+00002D01 $Script_Init_802437AC_sbk_30 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+FFFFFF56 00000000 000000BE 00000064 00000000 FFFF8001 00000000 FFFFFF56 
+00000000 000000BE 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00B80001 00B80002 00B80003 00B80003 00B80001 00B80001 00B80001 00B80001 
+00B80001 00B80001 00B80001 00B80001 00B80001 00B80001 00B80001 00B80001 
+00000000 00000000 00000000 001A008D % This is a Koopa Troopa from the excavation team. T ...
+
+#new:NpcSettings $NpcSettings_80241FC8_sbk_30
+00000000 002A0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80243498_sbk_30
+    0:  Call     SetNpcAnimation 	( .Npc:Self 00B80004 )
+   14:  Label    00000000 
+   20:  Call     RandInt     	( 00000032 *Var[0] )
+   34:  Add  *Var[0]  00000001 
+   44:  Wait     *Var[0] 
+   50:  Call     GetNpcYaw   	( .Npc:Self *Var[0] )
+   64:  Add  *Var[0]  000000B4 
+   74:  Call     InterpNpcYaw 	( .Npc:Self *Var[0] 00000005 )
+   8C:  Goto     00000000 
+   98:  Return
+   A0:  End
+
+#new:Script $Script_802436B4_sbk_30
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFC1 
+   18:  		If  *AreaFlag[003]  ==  00000000 
+   28:  			Set  *Var[0]  000D0052 
+   38:  			Set  *AreaFlag[003]  00000001 
+   48:  		Else
+   50:  			Set  *Var[0]  000D0053 
+   60:  			Set  *AreaFlag[003]  00000000 
+   70:  		EndIf
+   78:  	Default
+   80:  		If  *Flag_SBK_04  ==  00000000 
+   90:  			Set  *Var[0]  000D0054 
+   A0:  		Else
+   A8:  			Set  *Var[0]  000D0055 
+   B8:  		EndIf
+   C0:  EndSwitch
+   C8:  Call     SayMessage0 	( .Npc:Self 00B80004 00B80001 00000000 *Var[0] ) % variable string ID
+   E8:  Return
+   F0:  End
+
+#new:Script $Script_Init_802437AC_sbk_30
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802436B4_sbk_30 )
+   14:  Call     GetEntryID  	( *Var[0] )
+   24:  Switch  *Var[0] 
+   30:  	CaseOR  ==  00000004 
+   3C:  	CaseOR  ==  00000005 
+   48:  		Call     BindNpcIdle 	( .Npc:Self $Script_80243498_sbk_30 )
+   5C:  	EndCaseGroup
+   64:  EndSwitch
+   6C:  Return
+   74:  End
+

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<MapTable>
+	<Area name="kmr">
+		<Map  name="kmr_00"  background="kmr_bg"  flags="0001"/>
+		<Map  name="kmr_02"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_03"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_04"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_05"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_06"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_07"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_09"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_10"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_11"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_12"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_20"  background="kmr_bg"  flags="0000"/>
+		<Map  name="kmr_21"  background="none"    flags="0000"/>
+		<Map  name="kmr_22"  background="none"    flags="0000"/>
+		<Map  name="kmr_23"  background="none"    flags="0000"/>
+		<Map  name="kmr_24"  background="none"    flags="0000"/>
+		<Map  name="kmr_30"  background="none"    flags="0000"/>
+	</Area>
+	<Area name="mac">
+		<Map  name="machi"   background="nok_bg"  flags="0000"/>
+		<Map  name="mac_00"  background="nok_bg"  flags="0000"/>
+		<Map  name="mac_01"  background="nok_bg"  flags="0000"/>
+		<Map  name="mac_02"  background="nok_bg"  flags="0000"/>
+		<Map  name="mac_03"  background="nok_bg"  flags="0000"/>
+		<Map  name="mac_04"  background="nok_bg"  flags="0000"/>
+		<Map  name="mac_05"  background="nok_bg"  flags="0000"/>
+		<Map  name="mac_06"  background="nok_bg"  flags="0000"/>
+	</Area>
+	<Area name="tik">
+		<Map  name="tik_01"  background="none"    flags="0102"/>
+		<Map  name="tik_02"  background="none"    flags="0102"/>
+		<Map  name="tik_03"  background="none"    flags="0102"/>
+		<Map  name="tik_04"  background="none"    flags="0102"/>
+		<Map  name="tik_05"  background="none"    flags="0102"/>
+		<Map  name="tik_06"  background="none"    flags="0102"/>
+		<Map  name="tik_07"  background="none"    flags="0102"/>
+		<Map  name="tik_08"  background="none"    flags="0102"/>
+		<Map  name="tik_09"  background="none"    flags="0102"/>
+		<Map  name="tik_10"  background="none"    flags="0102"/>
+		<Map  name="tik_12"  background="none"    flags="0102"/>
+		<Map  name="tik_14"  background="none"    flags="0102"/>
+		<Map  name="tik_15"  background="none"    flags="0102"/>
+		<Map  name="tik_17"  background="none"    flags="0102"/>
+		<Map  name="tik_18"  background="none"    flags="0102"/>
+		<Map  name="tik_19"  background="none"    flags="0102"/>
+		<Map  name="tik_20"  background="none"    flags="0102"/>
+		<Map  name="tik_21"  background="none"    flags="0102"/>
+		<Map  name="tik_22"  background="none"    flags="0102"/>
+		<Map  name="tik_23"  background="none"    flags="0102"/>
+		<Map  name="tik_24"  background="none"    flags="0102"/>
+		<Map  name="tik_25"  background="none"    flags="0102"/>
+	</Area>
+	<Area name="kgr">
+		<Map  name="kgr_01"  background="none"    flags="0001"/>
+		<Map  name="kgr_02"  background="none"    flags="0001"/>
+	</Area>
+	<Area name="kkj">
+		<Map  name="kkj_00"  background="nok_bg"  flags="0103"/>
+		<Map  name="kkj_01"  background="nok_bg"  flags="0103"/>
+		<Map  name="kkj_02"  background="nok_bg"  flags="0002"/>
+		<Map  name="kkj_03"  background="nok_bg"  flags="0003"/>
+		<Map  name="kkj_10"  background="none"    flags="0103"/>
+		<Map  name="kkj_11"  background="none"    flags="0103"/>
+		<Map  name="kkj_12"  background="none"    flags="0102"/>
+		<Map  name="kkj_13"  background="kpa_bg"  flags="0103"/>
+		<Map  name="kkj_14"  background="kpa_bg"  flags="0000"/>
+		<Map  name="kkj_15"  background="none"    flags="0000"/>
+		<Map  name="kkj_16"  background="none"    flags="0001"/>
+		<Map  name="kkj_17"  background="none"    flags="0000"/>
+		<Map  name="kkj_18"  background="kpa_bg"  flags="0000"/>
+		<Map  name="kkj_19"  background="none"    flags="0000"/>
+		<Map  name="kkj_20"  background="none"    flags="0000"/>
+		<Map  name="kkj_21"  background="none"    flags="0001"/>
+		<Map  name="kkj_22"  background="kpa_bg"  flags="0102"/>
+		<Map  name="kkj_23"  background="kpa_bg"  flags="0000"/>
+		<Map  name="kkj_24"  background="kpa_bg"  flags="0102"/>
+		<Map  name="kkj_25"  background="kpa_bg"  flags="0000"/>
+		<Map  name="kkj_26"  background="kpa_bg"  flags="0000"/>
+		<Map  name="kkj_26"  background="none"    flags="0002"/>
+		<Map  name="kkj_27"  background="none"    flags="0001"/>
+		<Map  name="kkj_28"  background="none"    flags="0001"/>
+		<Map  name="kkj_29"  background="none"    flags="0001"/>
+	</Area>
+	<Area name="hos">
+		<Map  name="hos_00"  background="nok_bg"  flags="0000"/>
+		<Map  name="hos_01"  background="hos_bg"  flags="0000"/>
+		<Map  name="hos_02"  background="hos_bg"  flags="0000"/>
+		<Map  name="hos_03"  background="hos_bg"  flags="0000"/>
+		<Map  name="hos_04"  background="hos_bg"  flags="0000"/>
+		<Map  name="hos_05"  background="hos_bg"  flags="0102"/>
+		<Map  name="hos_06"  background="hos_bg"  flags="0000"/>
+		<Map  name="hos_10"  background="hos_bg"  flags="0000"/>
+		<Map  name="hos_20"  background="hos_bg"  flags="0000"/>
+	</Area>
+	<Area name="nok">
+		<Map  name="nok_01"  background="nok_bg"  flags="0000"/>
+		<Map  name="nok_02"  background="nok_bg"  flags="0000"/>
+		<Map  name="nok_03"  background="nok_bg"  flags="0000"/>
+		<Map  name="nok_04"  background="nok_bg"  flags="0000"/>
+		<Map  name="nok_11"  background="nok_bg"  flags="0000"/>
+		<Map  name="nok_12"  background="nok_bg"  flags="0000"/>
+		<Map  name="nok_13"  background="nok_bg"  flags="0000"/>
+		<Map  name="nok_14"  background="nok_bg"  flags="0000"/>
+		<Map  name="nok_15"  background="nok_bg"  flags="0000"/>
+	</Area>
+	<Area name="trd">
+		<Map  name="trd_00"  background="nok_bg"  flags="0000"/>
+		<Map  name="trd_01"  background="none"    flags="0103"/>
+		<Map  name="trd_02"  background="none"    flags="0103"/>
+		<Map  name="trd_03"  background="none"    flags="0103"/>
+		<Map  name="trd_04"  background="none"    flags="0103"/>
+		<Map  name="trd_05"  background="none"    flags="0103"/>
+		<Map  name="trd_06"  background="none"    flags="0103"/>
+		<Map  name="trd_07"  background="none"    flags="0103"/>
+		<Map  name="trd_08"  background="none"    flags="0103"/>
+		<Map  name="trd_09"  background="nok_bg"  flags="0000"/>
+		<Map  name="trd_10"  background="none"    flags="0103"/>
+	</Area>
+	<Area name="iwa">
+		<Map  name="iwa_00"  background="iwa_bg"  flags="0000"/>
+		<Map  name="iwa_01"  background="iwa_bg"  flags="0000"/>
+		<Map  name="iwa_02"  background="iwa_bg"  flags="0000"/>
+		<Map  name="iwa_03"  background="iwa_bg"  flags="0000"/>
+		<Map  name="iwa_04"  background="iwa_bg"  flags="0000"/>
+		<Map  name="iwa_10"  background="iwa_bg"  flags="0000"/>
+		<Map  name="iwa_11"  background="iwa_bg"  flags="0000"/>
+	</Area>
+	<Area name="dro">
+		<Map  name="dro_01"  background="sbk_bg"  flags="0000"/>
+		<Map  name="dro_02"  background="sbk_bg"  flags="0000"/>
+	</Area>
+	<Area name="sbk">
+		<Map  name="sbk_00"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_01"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_02"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_03"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_04"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_05"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_06"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_10"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_11"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_12"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_13"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_14"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_15"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_16"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_20"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_21"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_22"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_23"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_24"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_25"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_26"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_30"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_31"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_32"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_33"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_34"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_35"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_36"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_40"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_41"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_42"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_43"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_44"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_45"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_46"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_50"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_51"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_52"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_53"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_54"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_55"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_56"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_60"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_61"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_62"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_63"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_64"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_65"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_66"  background="sbk_bg"  flags="0000"/>
+		<Map  name="sbk_99"  background="sbk_bg"  flags="0000"/>
+	</Area>
+	<Area name="isk">
+		<Map  name="isk_01"  background="sbk3_bg" flags="0102"/>
+		<Map  name="isk_02"  background="sbk3_bg" flags="0102"/>
+		<Map  name="isk_03"  background="none"    flags="0102"/>
+		<Map  name="isk_04"  background="sbk3_bg" flags="0102"/>
+		<Map  name="isk_05"  background="none"    flags="0102"/>
+		<Map  name="isk_06"  background="none"    flags="0102"/>
+		<Map  name="isk_07"  background="none"    flags="0102"/>
+		<Map  name="isk_08"  background="none"    flags="0102"/>
+		<Map  name="isk_09"  background="none"    flags="0102"/>
+		<Map  name="isk_10"  background="none"    flags="0102"/>
+		<Map  name="isk_11"  background="none"    flags="0102"/>
+		<Map  name="isk_12"  background="none"    flags="0102"/>
+		<Map  name="isk_13"  background="none"    flags="0102"/>
+		<Map  name="isk_14"  background="none"    flags="0102"/>
+		<Map  name="isk_16"  background="none"    flags="0102"/>
+		<Map  name="isk_18"  background="none"    flags="0102"/>
+		<Map  name="isk_19"  background="none"    flags="0102"/>
+	</Area>
+	<Area name="mim">
+		<Map  name="mim_01"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_02"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_03"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_04"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_05"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_06"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_07"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_08"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_09"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_10"  background="nok_bg"  flags="0000"/>
+		<Map  name="mim_11"  background="obk_bg"  flags="0102"/>
+		<Map  name="mim_12"  background="arn_bg"  flags="0102"/>
+	</Area>
+	<Area name="obk">
+		<Map  name="obk_01"  background="none"    flags="0102"/>
+		<Map  name="obk_02"  background="obk_bg"  flags="0101"/>
+		<Map  name="obk_03"  background="none"    flags="0101"/>
+		<Map  name="obk_04"  background="none"    flags="0101"/>
+		<Map  name="obk_05"  background="obk_bg"  flags="0101"/>
+		<Map  name="obk_06"  background="none"    flags="0101"/>
+		<Map  name="obk_07"  background="obk_bg"  flags="0101"/>
+		<Map  name="obk_08"  background="obk_bg"  flags="0101"/>
+		<Map  name="obk_09"  background="none"    flags="0102"/>
+	</Area>
+	<Area name="arn">
+		<Map  name="arn_02"  background="arn_bg"  flags="0000"/>
+		<Map  name="arn_03"  background="arn_bg"  flags="0000"/>
+		<Map  name="arn_04"  background="arn_bg"  flags="0000"/>
+		<Map  name="arn_05"  background="arn_bg"  flags="0000"/>
+		<Map  name="arn_07"  background="arn_bg"  flags="0000"/>
+		<Map  name="arn_08"  background="none"    flags="0101"/>
+		<Map  name="arn_09"  background="none"    flags="0101"/>
+		<Map  name="arn_10"  background="none"    flags="0101"/>
+		<Map  name="arn_11"  background="none"    flags="0101"/>
+		<Map  name="arn_12"  background="none"    flags="0101"/>
+		<Map  name="arn_13"  background="none"    flags="0101"/>
+	</Area>
+	<Area name="dgb">
+		<Map  name="dgb_00"  background="arn_bg"  flags="0000"/>
+		<Map  name="dgb_01"  background="none"    flags="0102"/>
+		<Map  name="dgb_02"  background="none"    flags="0102"/>
+		<Map  name="dgb_03"  background="none"    flags="0102"/>
+		<Map  name="dgb_04"  background="none"    flags="0102"/>
+		<Map  name="dgb_05"  background="none"    flags="0102"/>
+		<Map  name="dgb_06"  background="none"    flags="0102"/>
+		<Map  name="dgb_07"  background="none"    flags="0102"/>
+		<Map  name="dgb_08"  background="none"    flags="0102"/>
+		<Map  name="dgb_09"  background="none"    flags="0102"/>
+		<Map  name="dgb_10"  background="none"    flags="0102"/>
+		<Map  name="dgb_11"  background="none"    flags="0102"/>
+		<Map  name="dgb_12"  background="none"    flags="0102"/>
+		<Map  name="dgb_13"  background="none"    flags="0102"/>
+		<Map  name="dgb_14"  background="none"    flags="0102"/>
+		<Map  name="dgb_15"  background="none"    flags="0102"/>
+		<Map  name="dgb_16"  background="none"    flags="0102"/>
+		<Map  name="dgb_17"  background="none"    flags="0102"/>
+		<Map  name="dgb_18"  background="none"    flags="0102"/>
+	</Area>
+	<Area name="omo">
+		<Map  name="omo_01"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_02"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_03"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_04"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_05"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_06"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_07"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_08"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_09"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_10"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_11"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_12"  background="none"    flags="0102"/>
+		<Map  name="omo_13"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_14"  background="none"    flags="0102"/>
+		<Map  name="omo_15"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_16"  background="omo_bg"  flags="0102"/>
+		<Map  name="omo_17"  background="omo_bg"  flags="0102"/>
+	</Area>
+	<Area name="jan">
+		<Map  name="jan_00"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_01"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_02"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_03"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_04"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_05"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_06"  background="jan_bg"  flags="0000"/>
+		<Map  name="jan_07"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_08"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_09"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_10"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_11"  background="jan_bg"  flags="0102"/>
+		<Map  name="jan_12"  background="jan_bg"  flags="0101"/>
+		<Map  name="jan_13"  background="jan_bg"  flags="0101"/>
+		<Map  name="jan_14"  background="jan_bg"  flags="0101"/>
+		<Map  name="jan_15"  background="jan_bg"  flags="0101"/>
+		<Map  name="jan_16"  background="jan_bg"  flags="0101"/>
+		<Map  name="jan_17"  background="jan_bg"  flags="0102"/>
+		<Map  name="jan_18"  background="yos_bg"  flags="0000"/>
+		<Map  name="jan_19"  background="jan_bg"  flags="0102"/>
+		<Map  name="jan_22"  background="jan_bg"  flags="0101"/>
+		<Map  name="jan_23"  background="yos_bg"  flags="0000"/>
+	</Area>
+	<Area name="kzn">
+		<Map  name="kzn_01"  background="none"    flags="0102"/>
+		<Map  name="kzn_02"  background="none"    flags="0102"/>
+		<Map  name="kzn_03"  background="none"    flags="0102"/>
+		<Map  name="kzn_04"  background="none"    flags="0102"/>
+		<Map  name="kzn_05"  background="none"    flags="0102"/>
+		<Map  name="kzn_06"  background="none"    flags="0102"/>
+		<Map  name="kzn_07"  background="none"    flags="0102"/>
+		<Map  name="kzn_08"  background="none"    flags="0102"/>
+		<Map  name="kzn_09"  background="none"    flags="0102"/>
+		<Map  name="kzn_10"  background="none"    flags="0102"/>
+		<Map  name="kzn_11"  background="none"    flags="0102"/>
+		<Map  name="kzn_17"  background="none"    flags="0102"/>
+		<Map  name="kzn_18"  background="none"    flags="0102"/>
+		<Map  name="kzn_19"  background="none"    flags="0102"/>
+		<Map  name="kzn_20"  background="none"    flags="0102"/>
+		<Map  name="kzn_22"  background="none"    flags="0102"/>
+		<Map  name="kzn_23"  background="yos_bg"  flags="0102"/>
+	</Area>
+	<Area name="flo">
+		<Map  name="flo_00"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_03"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_07"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_08"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_09"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_10"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_11"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_12"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_13"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_14"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_15"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_16"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_17"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_18"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_19"  background="sra_bg"  flags="0000"/>
+		<Map  name="flo_21"  background="sra_bg"  flags="0000"/>
+		<Map  name="flo_22"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_23"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_24"  background="fla_bg"  flags="0000"/>
+		<Map  name="flo_25"  background="fla_bg"  flags="0000"/>
+	</Area>
+	<Area name="sam">
+		<Map  name="sam_01"  background="yki_bg"  flags="0000"/>
+		<Map  name="sam_02"  background="yki_bg"  flags="0000"/>
+		<Map  name="sam_03"  background="yki_bg"  flags="0000"/>
+		<Map  name="sam_04"  background="yki_bg"  flags="0000"/>
+		<Map  name="sam_05"  background="sam_bg"  flags="0000"/>
+		<Map  name="sam_06"  background="sam_bg"  flags="0000"/>
+		<Map  name="sam_07"  background="yki_bg"  flags="0101"/>
+		<Map  name="sam_08"  background="yki_bg"  flags="0101"/>
+		<Map  name="sam_09"  background="yki_bg"  flags="0101"/>
+		<Map  name="sam_10"  background="yki_bg"  flags="0101"/>
+		<Map  name="sam_11"  background="yki_bg"  flags="0000"/>
+		<Map  name="sam_12"  background="yki_bg"  flags="0101"/>
+	</Area>
+	<Area name="pra">
+		<Map  name="pra_01"  background="yki_bg"  flags="0001"/>
+		<Map  name="pra_02"  background="none"    flags="0102"/>
+		<Map  name="pra_03"  background="none"    flags="0102"/>
+		<Map  name="pra_04"  background="none"    flags="0102"/>
+		<Map  name="pra_05"  background="none"    flags="0101"/>
+		<Map  name="pra_06"  background="none"    flags="0101"/>
+		<Map  name="pra_09"  background="none"    flags="0102"/>
+		<Map  name="pra_10"  background="none"    flags="0102"/>
+		<Map  name="pra_11"  background="none"    flags="0101"/>
+		<Map  name="pra_12"  background="none"    flags="0101"/>
+		<Map  name="pra_13"  background="none"    flags="0102"/>
+		<Map  name="pra_14"  background="none"    flags="0102"/>
+		<Map  name="pra_15"  background="yki_bg"  flags="0101"/>
+		<Map  name="pra_16"  background="none"    flags="0102"/>
+		<Map  name="pra_18"  background="none"    flags="0102"/>
+		<Map  name="pra_19"  background="none"    flags="0102"/>
+		<Map  name="pra_20"  background="none"    flags="0101"/>
+		<Map  name="pra_21"  background="none"    flags="0102"/>
+		<Map  name="pra_22"  background="none"    flags="0102"/>
+		<Map  name="pra_27"  background="none"    flags="0101"/>
+		<Map  name="pra_28"  background="none"    flags="0101"/>
+		<Map  name="pra_29"  background="none"    flags="0102"/>
+		<Map  name="pra_31"  background="none"    flags="0102"/>
+		<Map  name="pra_32"  background="sam_bg"  flags="0101"/>
+		<Map  name="pra_33"  background="none"    flags="0102"/>
+		<Map  name="pra_34"  background="none"    flags="0101"/>
+		<Map  name="pra_35"  background="none"    flags="0102"/>
+		<Map  name="pra_36"  background="none"    flags="0102"/>
+		<Map  name="pra_37"  background="none"    flags="0102"/>
+		<Map  name="pra_38"  background="none"    flags="0102"/>
+		<Map  name="pra_39"  background="none"    flags="0102"/>
+		<Map  name="pra_40"  background="none"    flags="0101"/>
+	</Area>
+	<Area name="kpa">
+		<Map  name="kpa_01"  background="none"    flags="0103"/>
+		<Map  name="kpa_03"  background="none"    flags="0103"/>
+		<Map  name="kpa_04"  background="none"    flags="0102"/>
+		<Map  name="kpa_08"  background="none"    flags="0102"/>
+		<Map  name="kpa_09"  background="none"    flags="0102"/>
+		<Map  name="kpa_10"  background="none"    flags="0103"/>
+		<Map  name="kpa_11"  background="none"    flags="0103"/>
+		<Map  name="kpa_12"  background="none"    flags="0103"/>
+		<Map  name="kpa_13"  background="none"    flags="0103"/>
+		<Map  name="kpa_14"  background="none"    flags="0103"/>
+		<Map  name="kpa_15"  background="none"    flags="0103"/>
+		<Map  name="kpa_16"  background="none"    flags="0103"/>
+		<Map  name="kpa_17"  background="none"    flags="0102"/>
+		<Map  name="kpa_32"  background="kpa_bg"  flags="0103"/>
+		<Map  name="kpa_33"  background="kpa_bg"  flags="0103"/>
+		<Map  name="kpa_40"  background="none"    flags="0102"/>
+		<Map  name="kpa_41"  background="none"    flags="0102"/>
+		<Map  name="kpa_50"  background="none"    flags="0102"/>
+		<Map  name="kpa_51"  background="none"    flags="0102"/>
+		<Map  name="kpa_52"  background="none"    flags="0102"/>
+		<Map  name="kpa_53"  background="none"    flags="0102"/>
+		<Map  name="kpa_60"  background="kpa_bg"  flags="0000"/>
+		<Map  name="kpa_61"  background="kpa_bg"  flags="0000"/>
+		<Map  name="kpa_62"  background="kpa_bg"  flags="0000"/>
+		<Map  name="kpa_63"  background="none"    flags="0102"/>
+		<Map  name="kpa_70"  background="none"    flags="0103"/>
+		<Map  name="kpa_81"  background="none"    flags="0102"/>
+		<Map  name="kpa_82"  background="none"    flags="0102"/>
+		<Map  name="kpa_83"  background="none"    flags="0102"/>
+		<Map  name="kpa_90"  background="none"    flags="0102"/>
+		<Map  name="kpa_91"  background="none"    flags="0102"/>
+		<Map  name="kpa_94"  background="none"    flags="0102"/>
+		<Map  name="kpa_95"  background="none"    flags="0102"/>
+		<Map  name="kpa_96"  background="none"    flags="0101"/>
+		<Map  name="kpa_100" background="none"    flags="0101"/>
+		<Map  name="kpa_101" background="none"    flags="0101"/>
+		<Map  name="kpa_102" background="none"    flags="0103"/>
+		<Map  name="kpa_111" background="none"    flags="0103"/>
+		<Map  name="kpa_112" background="none"    flags="0102"/>
+		<Map  name="kpa_113" background="none"    flags="0103"/>
+		<Map  name="kpa_114" background="none"    flags="0102"/>
+		<Map  name="kpa_115" background="none"    flags="0103"/>
+		<Map  name="kpa_116" background="none"    flags="0102"/>
+		<Map  name="kpa_117" background="none"    flags="0101"/>
+		<Map  name="kpa_118" background="none"    flags="0102"/>
+		<Map  name="kpa_119" background="none"    flags="0101"/>
+		<Map  name="kpa_121" background="none"    flags="0102"/>
+		<Map  name="kpa_130" background="none"    flags="0103"/>
+		<Map  name="kpa_133" background="none"    flags="0103"/>
+		<Map  name="kpa_134" background="none"    flags="0103"/>
+	</Area>
+	<Area name="osr">
+		<Map  name="osr_00"  background="nok_bg"  flags="0000"/>
+		<Map  name="osr_01"  background="nok_bg"  flags="0000"/>
+		<Map  name="osr_02"  background="kpa_bg"  flags="0000"/>
+		<Map  name="osr_03"  background="kpa_bg"  flags="0000"/>
+		<Map  name="osr_04"  background="nok_bg"  flags="0000"/>
+	</Area>
+	<Area name="end">
+		<Map  name="end_00"  background="none"    flags="0000"/>
+		<Map  name="end_01"  background="none"    flags="0000"/>
+	</Area>
+	<Area name="mgm">
+		<Map  name="mgm_00"  background="none"    flags="0000"/>
+		<Map  name="mgm_01"  background="none"    flags="0000"/>
+		<Map  name="mgm_02"  background="none"    flags="0000"/>
+		<Map  name="mgm_03"  background="none"    flags="0000"/>
+	</Area>
+	<Area name="gv">
+		<Map  name="gv_01"   background="none"    flags="0000"/>
+	</Area>
+	<Area name="tst">
+		<Map  name="tst_01"  background="nok_bg"  flags="0000"/>
+		<Map  name="tst_02"  background="nok_bg"  flags="0000"/>
+		<Map  name="tst_03"  background="nok_bg"  flags="0000"/>
+		<Map  name="tst_04"  background="nok_bg"  flags="0000"/>
+		<Map  name="tst_10"  background="nok_bg"  flags="0000"/>
+		<Map  name="tst_11"  background="nok_bg"  flags="0000"/>
+		<Map  name="tst_12"  background="nok_bg"  flags="0000"/>
+		<Map  name="tst_13"  background="nok_bg"  flags="0000"/>
+		<Map  name="tst_20"  background="nok_bg"  flags="0000"/>
+	</Area>
+</MapTable>

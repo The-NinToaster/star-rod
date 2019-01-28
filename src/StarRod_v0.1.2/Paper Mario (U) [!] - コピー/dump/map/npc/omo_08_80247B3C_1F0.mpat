@@ -1,0 +1,56 @@
+% automatically dumped from map omo_08
+
+#new:Npc $omo_08_80247B3C_1F0
+00000001 $NpcSettings_80247650_omo_08 00000000 00000000 00000000 
+00400D05 $Script_Init_802478FC_omo_08 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008C0301 008C0301 008C0301 008C0301 008C0301 008C0301 008C0301 008C0301 
+008C0301 008C0301 008C0301 008C0301 008C0301 008C0301 008C0301 008C0301 
+00000000 00000000 00000000 001A00B8 % He's an employee of the Toy Box station. The emplo ...
+
+#new:Script $Script_80247640_omo_08
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_80247650_omo_08
+00000000 00200018 $Script_80247640_omo_08 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80247758_omo_08
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000000 
+   18:  		Call     FindKeyItem 	( .Item:MysteryNote *Var[0] )
+   2C:  		If  *Var[0]  ==  FFFFFFFF 
+   3C:  			If  *Flag_OMO_30  ==  00000000 
+   4C:  				Call     SayMessage0 	( .Npc:Self 008C0304 008C0301 00000000 000F002B ) % This is Green Station. I'm certainly feeling green ...
+   6C:  			Else
+   74:  				If  *Flag_OMO_31  ==  00000000 
+   84:  					Call     SayMessage0 	( .Npc:Self 008C0304 008C0301 00000000 000F002C ) % I witnessed a Shy Guy with a book running to the r ...
+   A4:  				Else
+   AC:  					Call     SayMessage0 	( .Npc:Self 008C0304 008C0301 00000000 000F002F ) % It looks like the Shy Guys are really robbing Toad ...
+   CC:  				EndIf
+   D4:  			EndIf
+   DC:  		Else
+   E4:  			Call     SayMessage0 	( .Npc:Self 008C0304 008C0301 00000000 000F002D ) % That Memo you have is written in Shy Guy language. ...
+  104:  		EndIf
+  10C:  	Case  <  00000002 
+  118:  		Call     SayMessage0 	( .Npc:Self 008C0304 008C0301 00000000 000F002E ) % We can go to Red Station now! Great! Feel free to  ...
+  138:  	Case  <  00000004 
+  144:  		Call     SayMessage0 	( .Npc:Self 008C0304 008C0301 00000000 000F002F ) % It looks like the Shy Guys are really robbing Toad ...
+  164:  	Default
+  16C:  		Call     SayMessage0 	( .Npc:Self 008C0304 008C0301 00000000 000F0030 ) % I'm sure the Shy Guys are going to knock it off fo ...
+  18C:  EndSwitch
+  194:  Return
+  19C:  End
+
+#new:Script $Script_Init_802478FC_omo_08
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80247758_omo_08 )
+   14:  Return
+   1C:  End
+

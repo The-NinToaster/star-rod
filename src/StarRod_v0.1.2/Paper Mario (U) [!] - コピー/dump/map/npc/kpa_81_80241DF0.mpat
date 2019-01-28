@@ -1,0 +1,237 @@
+% automatically dumped from map kpa_81
+
+#new:Npc $kpa_81_80241DF0
+00000000 $NpcSettings_80240D40_kpa_81 00000000 00000000 00000000 
+03504D08 $Script_Init_80241D84_kpa_81 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830001 00830002 00830003 00830003 00830001 00830001 00830006 00830006 
+00830003 00830003 00830003 00830003 00830003 00830003 00830003 00830003 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_802404C0_kpa_81
+    0:  Call     SetMusicTrack 	( 00000000 .Song:BowsersCastle 00000000 00000008 )
+   1C:  Call     UseDoorSounds 	( 00000001 )
+   2C:  Thread
+   34:  	Wait     0000001E 
+   40:  	Call     802D5FA4 ( 00000005 )
+   50:  EndThread
+   58:  Return
+   60:  End
+
+#new:NpcSettings $NpcSettings_80240D40_kpa_81
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802410B8_kpa_81
+    0:  Call     802D2B0C ( *Var[0] )
+   10:  If  *Var[0]  !=  00000000 
+   20:  	If  *Var[0]  ==  00000003 
+   30:  		Loop     
+   3C:  			Call     802D2B0C ( *Var[0] )
+   4C:  			Wait     00000001 
+   58:  			If  *Var[0]  ==  00000000 
+   68:  				BreakLoop
+   70:  			EndIf
+   78:  		EndLoop
+   80:  	Else
+   88:  		Call     802D2B6C ( )
+   94:  		Wait     00000014 
+   A0:  	EndIf
+   A8:  EndIf
+   B0:  Return
+   B8:  End
+
+#new:Script $Script_80241178_kpa_81
+    0:  If  *Byte_KPA_01  ==  00000002 
+   10:  	Return
+   18:  EndIf
+   20:  If  *Byte_KPA_01  ==  00000001 
+   30:  	Set  *Byte_KPA_01  00000002 
+   40:  	Call     DisablePlayerInput 	( .True )
+   50:  	Wait     00000023 
+   5C:  	Call     SetCamType  	( .Default 00000006 00000000 )
+   74:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   8C:  	Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   A8:  	Call     SetPanTarget 	( .Default 0000006D 00000000 000000CA )
+   C4:  	Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+   D8:  	Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-10.0] )
+   F0:  	Call     SetCamDistance ( .Default *Fixed[500.0] )
+  104:  	Call     SetCamPosA  	( .Default *Fixed[133.0] *Fixed[100.0] )
+  11C:  	Call     SetCamPosB  	( .Default *Fixed[216.0] *Fixed[230.0] )
+  134:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  14C:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  160:  	Thread
+  168:  		Call     SetMusicTrack 	( 00000000 .Song:FinalBowserBattle 00000001 00000008 )
+  184:  		Wait     00000096 
+  190:  		Call     FadeOutMusic 	( 00000000 000000FA )
+  1A4:  		Wait     0000000F 
+  1B0:  		Exec     $Script_802404C0_kpa_81 
+  1BC:  	EndThread
+  1C4:  	Call     SayMessage0 	( .Npc:Self 00830001 00830001 00000000 00130008 ) % Blooooaa-huh?! You came back!? You escaped from th ...
+  1E4:  	Exec     $Script_802404C0_kpa_81 
+  1F0:  	Call     ResetCam    	( .Default *Fixed[90.0] )
+  204:  	Call     PanToTarget 	( .Default 00000000 00000000 )
+  21C:  	Call     DisablePlayerInput 	( .False )
+  22C:  	Return
+  234:  EndIf
+  23C:  Wait     0000000A 
+  248:  Call     DisablePlayerInput 	( .True )
+  258:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  270:  Call     SetPlayerSpeed ( *Fixed[2.0] )
+  280:  Call     MovePlayerTo 	( FFFFFF8D *Var[2] 00000000 )
+  298:  Call     SetCamType  	( .Default 00000006 00000000 )
+  2B0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  2C8:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  2E4:  Call     SetPanTarget 	( .Default 0000006D 00000000 000000CA )
+  300:  Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  314:  Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-10.0] )
+  32C:  Call     SetCamDistance ( .Default *Fixed[500.0] )
+  340:  Call     SetCamPosA  	( .Default *Fixed[133.0] *Fixed[100.0] )
+  358:  Call     SetCamPosB  	( .Default *Fixed[216.0] *Fixed[230.0] )
+  370:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  388:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  39C:  Thread
+  3A4:  	Call     SetMusicTrack 	( 00000000 .Song:FinalBowserBattle 00000001 00000008 )
+  3C0:  	Wait     00000096 
+  3CC:  	Call     FadeOutMusic 	( 00000000 000000FA )
+  3E0:  	Wait     0000000F 
+  3EC:  	Exec     $Script_802404C0_kpa_81 
+  3F8:  EndThread
+  400:  Call     SayMessage0 	( .Npc:Self 00830001 00830001 00000000 00130000 ) % Bloooaaahhhhhhhh!!!! Welcome, worm! I'm called the ...
+  420:  Call     ShowChoice  	( 001E0013 ) % Yes No 
+  430:  If  *Var[0]  ==  00000000 
+  440:  	Call     SayMessage2 	( .Npc:Self 00830001 00830001 00000000 00130003 ) % OK then... Heh heh heh... Stand in front of me.
+  460:  	Call     ResetCam    	( .Default *Fixed[90.0] )
+  474:  	Call     PanToTarget 	( .Default 00000000 00000000 )
+  48C:  	Call     DisablePlayerInput 	( .False )
+  49C:  	Label    00000064 
+  4A8:  	Wait     00000001 
+  4B4:  	Call     IsPlayerWithin ( 00000078 00000096 0000001E *Var[0] )
+  4D0:  	If  *Var[0]  ==  00000001 
+  4E0:  		Goto     00000003 
+  4EC:  	EndIf
+  4F4:  	Add  *Var[1]  00000001 
+  504:  	If  *Var[1]  <=  0000012C 
+  514:  		Goto     00000064 
+  520:  	EndIf
+  528:  	Call     DisablePlayerInput 	( .True )
+  538:  	ExecWait $Script_802410B8_kpa_81 
+  544:  	Call     SayMessage0 	( .Npc:Self 00830001 00830001 00000000 00130004 ) % What's the matter with you? Are you scared or some ...
+  564:  	Call     DisablePlayerInput 	( .False )
+  574:  	Call     AwaitPlayerApproach 	( 00000078 00000096 0000001E )
+  58C:  	Goto     00000002 
+  598:  Else
+  5A0:  	Call     SayMessage2 	( .Npc:Self 00830001 00830001 00000000 00130002 ) % Well, if you don't want to go through here, then y ...
+  5C0:  	Call     ResetCam    	( .Default *Fixed[90.0] )
+  5D4:  	Call     PanToTarget 	( .Default 00000000 00000000 )
+  5EC:  	Call     DisablePlayerInput 	( .False )
+  5FC:  	Call     AwaitPlayerApproach 	( 00000078 00000096 0000001E )
+  614:  EndIf
+  61C:  Label    00000002 
+  628:  Call     DisablePlayerInput 	( .True )
+  638:  ExecWait $Script_802410B8_kpa_81 
+  644:  Call     SayMessage0 	( .Npc:Self 00830001 00830001 00000000 00130001 ) % What's the matter with you? You want to go through ...
+  664:  Call     ShowChoice  	( 001E0013 ) % Yes No 
+  674:  If  *Var[0]  ==  00000000 
+  684:  	Goto     00000004 
+  690:  Else
+  698:  	Call     SayMessage2 	( .Npc:Self 00830001 00830001 00000000 00130002 ) % Well, if you don't want to go through here, then y ...
+  6B8:  	Call     DisablePlayerInput 	( .False )
+  6C8:  	Call     AwaitPlayerLeave 	( 00000078 00000096 0000001E )
+  6E0:  	Call     AwaitPlayerApproach 	( 00000078 00000096 0000001E )
+  6F8:  	Goto     00000002 
+  704:  EndIf
+  70C:  Label    00000003 
+  718:  Call     DisablePlayerInput 	( .True )
+  728:  ExecWait $Script_802410B8_kpa_81 
+  734:  Thread
+  73C:  	Call     DisablePartnerAI 	( 00000000 )
+  74C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  764:  	Call     MoveNpcTo   	( .Npc:Partner *Var[0] *Var[2] 0000000A )
+  780:  	Call     EnablePartnerAI 	( )
+  78C:  EndThread
+  794:  Call     SayMessage0 	( .Npc:Self 00830001 00830001 00000000 00130005 ) % Are you standing squarely in front of me? OK... Th ...
+  7B4:  Goto     00000005 
+  7C0:  Label    00000004 
+  7CC:  ExecWait $Script_802410B8_kpa_81 
+  7D8:  Thread
+  7E0:  	Call     DisablePartnerAI 	( 00000000 )
+  7F0:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  808:  	Call     MoveNpcTo   	( .Npc:Partner *Var[0] *Var[2] 0000000A )
+  824:  	Call     EnablePartnerAI 	( )
+  830:  EndThread
+  838:  Call     SayMessage2 	( .Npc:Self 00830001 00830001 00000000 00130006 ) % Are you standing squarely in front of me? OK... Th ...
+  858:  Label    00000005 
+  864:  Call     SetCamType  	( .Default 00000006 00000000 )
+  87C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  894:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  8B0:  Call     SetPanTarget 	( .Default 000000A3 FFFFFFB9 0000006C )
+  8CC:  Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  8E0:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-16.0] )
+  8F8:  Call     SetCamDistance ( .Default *Fixed[500.0] )
+  90C:  Call     SetCamPosA  	( .Default *Fixed[133.0] *Fixed[100.0] )
+  924:  Call     SetCamPosB  	( .Default *Fixed[216.0] *Fixed[230.0] )
+  93C:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  954:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  968:  Call     EnableModel 	( 0000000C .True )
+  97C:  Thread
+  984:  	Wait     00000019 
+  990:  	Call     EnableModel 	( 00000046 .False )
+  9A4:  EndThread
+  9AC:  Call     PlaySoundAtCollider 	( 0000001A 00002091 00000000 )
+  9C4:  Call     MakeLerp    	( 00000000 0000005A 0000001E 00000007 )
+  9E0:  Label    0000000A 
+  9EC:  Call     UpdateLerp  	( )
+  9F8:  Call     RotateModel 	( 00000046 *Var[0] 00000000 00000000 FFFFFFFF )
+  A18:  Call     RotateModel 	( 00000048 *Var[0] 00000000 00000000 00000001 )
+  A38:  Wait     00000001 
+  A44:  If  *Var[1]  ==  00000001 
+  A54:  	Goto     0000000A 
+  A60:  EndIf
+  A68:  Call     SetPlayerAnimation 	( 00080017 )
+  A78:  Wait     0000001E 
+  A84:  Call     DisablePlayerPhysics 	( .True )
+  A94:  Call     DisablePartnerAI 	( 00000000 )
+  AA4:  Call     SetPlayerAnimation 	( 00080018 )
+  AB4:  Wait     0000000A 
+  AC0:  Call     PlaySoundAtPlayer 	( 00000161 00000000 )
+  AD4:  Thread
+  ADC:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  AF4:  	Loop     00000041 
+  B00:  		Sub  *Var[1]  00000010 
+  B10:  		Call     SetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  B28:  		Wait     00000001 
+  B34:  	EndLoop
+  B3C:  EndThread
+  B44:  Thread
+  B4C:  	Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  B68:  	Loop     00000041 
+  B74:  		Sub  *Var[1]  00000010 
+  B84:  		Call     SetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  BA0:  		Wait     00000001 
+  BAC:  	EndLoop
+  BB4:  EndThread
+  BBC:  Wait     00000041 
+  BC8:  Call     DisablePlayerInput 	( .False )
+  BD8:  Set  *Byte_KPA_01  00000001 
+  BE8:  Call     GotoMap     	( $ASCII_80242034_kpa_81 00000000 )
+  BFC:  Return
+  C04:  End
+
+#new:Script $Script_Init_80241D84_kpa_81
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_80241178_kpa_81 )
+   14:  Call     SetNpcFlagBits ( .Npc:Self 10000102 .True )
+   2C:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   40:  Call     SetNpcPos   	( .Npc:Self 000000B8 00000014 00000096 )
+   5C:  Return
+   64:  End
+
+#new:ASCII $ASCII_80242034_kpa_81
+kpa_17
+

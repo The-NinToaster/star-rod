@@ -1,0 +1,74 @@
+% automatically dumped from map dro_01
+
+#new:Npc $dro_01_80249B34_F80
+0000000B $NpcSettings_80245060_dro_01 00000000 00000000 00000000 
+00002D01 $Script_Init_80249ABC_dro_01 00000000 00000000 00000101 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000028 00000000 FFFF8001 00000000 00000078 
+00000000 FFFFFF7A 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00930101 00930102 00930103 00930103 00930101 00930101 00930100 00930100 
+00930101 00930101 00930101 00930101 00930101 00930101 00930101 00930101 
+00000000 00000000 00000000 001A0096 % He's a Dryite. I've seen him in Toad Town. He earn ...
+
+#new:AISettings $AISettings_80245010_dro_01
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80245040_dro_01
+    0:  Call     DoBasicAI   	( $AISettings_80245010_dro_01 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80245060_dro_01
+00000000 001A0017 00000000 00000000 $Script_NpcAI_80245040_dro_01 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_802498E8_dro_01
+    0:  Call     FindKeyItem 	( .Item:FirstDegreeCard *Var[1] )
+   14:  Call     FindKeyItem 	( .Item:SecondDegreeCard *Var[2] )
+   28:  Call     FindKeyItem 	( .Item:ThirdDegreeCard *Var[3] )
+   3C:  Call     FindKeyItem 	( .Item:FourthDegreeCard *Var[4] )
+   50:  Call     FindKeyItem 	( .Item:Diploma *Var[5] )
+   64:  If  *Var[1]  !=  FFFFFFFF 
+   74:  	Call     SayMessage0 	( .Npc:Self 00930104 00930101 00000000 000D009A ) % Sayyyyy... Is that... ...a First-Degree Card? Hee  ...
+   94:  	Return
+   9C:  EndIf
+   A4:  If  *Var[2]  !=  FFFFFFFF 
+   B4:  	Call     SayMessage0 	( .Npc:Self 00930104 00930101 00000000 000D009B ) % Sayyyyy... Is that... ...a Second-Degree Card? Hey ...
+   D4:  	Return
+   DC:  EndIf
+   E4:  If  *Var[3]  !=  FFFFFFFF 
+   F4:  	Call     SayMessage0 	( .Npc:Self 00930104 00930101 00000000 000D009C ) % Sayyyyy... Is that... ...a Third-Degree Card? Whoo ...
+  114:  	Return
+  11C:  EndIf
+  124:  If  *Var[4]  !=  FFFFFFFF 
+  134:  	Call     SayMessage0 	( .Npc:Self 00930104 00930101 00000000 000D009D ) % Sayyyyy... Is that... ...a Fourth-Degree Card? Who ...
+  154:  	Return
+  15C:  EndIf
+  164:  If  *Var[5]  !=  FFFFFFFF 
+  174:  	Call     SayMessage0 	( .Npc:Self 00930104 00930101 00000000 000D009E ) % Sayyyyy... Is that... ...a Diploma...!? Whoa! WHOO ...
+  194:  	Return
+  19C:  EndIf
+  1A4:  Call     SayMessage0 	( .Npc:Self 00930104 00930101 00000000 000D0099 ) % Are you aware that there's a Dojo in Toad Town? Th ...
+  1C4:  Return
+  1CC:  End
+
+#new:Script $Script_Init_80249ABC_dro_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802498E8_dro_01 )
+   14:  Return
+   1C:  End
+

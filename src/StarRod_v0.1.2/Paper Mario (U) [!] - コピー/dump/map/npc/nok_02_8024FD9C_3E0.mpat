@@ -1,0 +1,107 @@
+% automatically dumped from map nok_02
+
+#new:Npc $nok_02_8024FD9C_3E0
+00000010 $NpcSettings_8024709C_nok_02 00000000 00000000 00000000 
+00402909 $Script_Init_8024DB48_nok_02 00000000 00000000 000000B4 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00910201 00910202 00910203 00910203 00910201 00910201 00910200 00910200 
+00910200 00910200 00910200 00910200 00910200 00910200 00910200 00910200 
+00000000 00000000 00000000 001A007A % He's a Bob-omb. He was jailed at Koopa Bros. Fortr ...
+
+#new:NpcSettings $NpcSettings_8024709C_nok_02
+00000000 00170014 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_8024D3AC_nok_02
+    0:  If  *Byte_NPC_02  ==  0000000C 
+   10:  	Call     GetCurrentPartner 	( *Var[0] )
+   20:  	If  *Var[0]  ==  00000003 
+   30:  		Set  *AreaFlag[011]  00000001 
+   40:  		Call     SayMessage0 	( 00000010 00910204 00910201 00000000 000C007B ) % Oh, Bombette!!!!! 
+   60:  		Call     SayMessage3 	( 00000011 00910004 00910001 00000000 00000010 000C007C ) % Shut up! Shut up! Shut up! The neighbors are start ...
+   84:  		Call     SayMessage0 	( 00000010 00910204 00910201 00000000 000C007D ) % Oh, Bombette!!!!!!! 
+   A4:  		Call     DisablePartnerAI 	( 00000000 )
+   B4:  		Call     SayMessage3 	( .Npc:Partner 0003000E 00030003 00000000 00000010 000C007E ) % You be quiet now! It's no use yelling my name! I'm ...
+   D8:  		Call     EnablePartnerAI 	( )
+   E4:  		Call     SayMessage0 	( 00000010 00910204 00910201 00000005 000C007F ) % Bombette... Oh don't...
+  104:  		Call     SayMessage3 	( 00000011 00910004 00910001 00000000 00000010 000C0080 ) % Ooh, you made her angry... I feel bad for you, but ...
+  128:  		Call     SetNpcAnimation 	( 00000010 00910201 )
+  13C:  		Call     SetNpcAnimation 	( 00000011 00910001 )
+  150:  		Set  *Flag_NOK_30  00000001 
+  160:  		Set  *Flag_NPC_02  00000001 
+  170:  	Else
+  178:  		Set  *AreaFlag[011]  00000001 
+  188:  		Call     SayMessage0 	( 00000010 00910204 00910201 00000000 000C007B ) % Oh, Bombette!!!!! 
+  1A8:  		Call     SayMessage3 	( 00000011 00910004 00910001 00000000 00000010 000C007C ) % Shut up! Shut up! Shut up! The neighbors are start ...
+  1CC:  		Call     SayMessage0 	( 00000010 00910204 00910201 00000005 000C0081 ) % Oh, Bombette!!!!! Please don't say that! Please! D ...
+  1EC:  		Call     SayMessage3 	( 00000011 00910004 00910001 00000000 00000010 000C0082 ) % Oh, shut up!! Enough already! Stop brooding over h ...
+  210:  		Set  *AreaFlag[011]  00000000 
+  220:  	EndIf
+  228:  Else
+  230:  	Call     GetCurrentPartner 	( *Var[0] )
+  240:  	If  *Var[0]  ==  00000003 
+  250:  		Set  *AreaFlag[011]  00000001 
+  260:  		Call     SayMessage3 	( 00000011 00910004 00910001 00000000 FFFFFFFC 000C0077 ) % Did you hear this guy, Bombette? He never, ever st ...
+  284:  		Call     SayMessage3 	( 00000010 00910204 00910201 00000000 FFFFFFFC 000C0078 ) % Oh, Bombette!!!!!! 
+  2A8:  		Call     DisablePartnerAI 	( 00000000 )
+  2B8:  		Call     SayMessage3 	( .Npc:Partner 0003000E 00030003 00000000 00000010 000C0079 ) % Shut up! Please! Right now! Think about something  ...
+  2DC:  		Call     EnablePartnerAI 	( )
+  2E8:  		Call     SayMessage0 	( 00000010 00910204 00910201 00000005 000C007A ) % Bombette, I'm putting my whole heart into this nex ...
+  308:  		Set  *AreaFlag[011]  00000000 
+  318:  	Else
+  320:  		Set  *AreaFlag[011]  00000001 
+  330:  		Call     SayMessage0 	( 00000011 00910004 00910001 00000000 000C0073 ) % "Bombette!" "Bombette!" It's all he ever says! It' ...
+  350:  		Call     SayMessage3 	( 00000010 00910204 00910201 00000000 00000011 000C0074 ) % Oh, Bombette!!! 
+  374:  		Call     SayMessage3 	( 00000011 00910004 00910001 00000000 00000010 000C0075 ) % Shut up! She probably dumped you 'cause you never  ...
+  398:  		Call     SayMessage3 	( 00000010 00910204 00910201 00000000 00000011 000C0076 ) % No, you shut up! My love for Bombette is deep like ...
+  3BC:  		Set  *AreaFlag[011]  00000000 
+  3CC:  	EndIf
+  3D4:  EndIf
+  3DC:  Return
+  3E4:  End
+
+#new:Script $Script_8024D798_nok_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000007 
+   18:  		If  *AreaFlag[00F]  ==  00000000 
+   28:  			Call     GetCurrentPartner 	( *Var[0] )
+   38:  			If  *Var[0]  ==  00000003 
+   48:  				Set  *AreaFlag[00F]  00000001 
+   58:  				Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+   6C:  				Call     NpcFaceNpc  	( .Npc:Partner .Npc:Self 00000000 )
+   84:  				Call     SayMessage0 	( .Npc:Self 00910204 00910201 00000000 000C006F ) % Bombette...you're...you're joining Mario's adventu ...
+   A4:  				Call     DisablePartnerAI 	( 00000000 )
+   B4:  				Call     SayMessage0 	( .Npc:Partner 0003000E 00030003 00000000 000C0070 ) % One Bob-omb is enough. You should stay here instea ...
+   D4:  				Call     EnablePartnerAI 	( )
+   E0:  				Call     SayMessage0 	( .Npc:Self 00910204 00910201 00000000 000C0071 ) % Oh, you're so cruel, Bombette...
+  100:  			Else
+  108:  				Call     SayMessage0 	( .Npc:Self 00910204 00910201 00000000 000C0072 ) % Sigh... Bombette... I worry about you constantly.  ...
+  128:  			EndIf
+  130:  		Else
+  138:  			Call     SayMessage0 	( .Npc:Self 00910204 00910201 00000000 000C0072 ) % Sigh... Bombette... I worry about you constantly.  ...
+  158:  		EndIf
+  160:  	Case  >=  00000007 
+  16C:  		If  *Flag_NOK_30  ==  00000000 
+  17C:  			ExecWait $Script_8024D3AC_nok_02 
+  188:  		Else
+  190:  			Set  *AreaFlag[011]  00000001 
+  1A0:  			Call     SayMessage0 	( .Npc:Self 00910204 00910201 00000000 000C007F ) % Bombette... Oh don't...
+  1C0:  		EndIf
+  1C8:  EndSwitch
+  1D0:  Return
+  1D8:  End
+
+#new:Script $Script_Init_8024DB48_nok_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024D798_nok_02 )
+   14:  If  *StoryProgress  <  FFFFFFB5 
+   24:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   40:  EndIf
+   48:  Return
+   50:  End
+

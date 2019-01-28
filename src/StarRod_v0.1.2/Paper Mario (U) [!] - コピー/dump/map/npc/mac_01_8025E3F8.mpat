@@ -1,0 +1,86 @@
+% automatically dumped from map mac_01
+
+#new:Npc $mac_01_8025E3F8
+00000006 $NpcSettings_80248B18_mac_01 00000000 00000000 00000000 
+00000F09 $Script_Init_8025B9F4_mac_01 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+003B0001 003B0002 003B0003 003B0003 003B0001 003B0001 003B000C 003B000C 
+003B0015 003B0012 003B0011 003B0010 003B0005 003B0001 003B0001 003B0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80248B18_mac_01
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:Script $Script_8024E6F8_mac_01
+    0:  Loop     
+    C:  	Call     PlaySoundAtNpc ( *Var[0] B0000021 00000000 )
+   24:  	Wait     00000002 
+   30:  EndLoop
+   38:  Return
+   40:  End
+
+#new:Script $Script_8025B760_mac_01
+    0:  Call     GetNpcPos   	( 00000006 *Var[2] *Var[3] *Var[4] )
+   1C:  Add  *Var[3]  00000014 
+   2C:  Call     MakeItemEntity ( .Item:Calculator *Var[2] *Var[3] *Var[4] 00000001 00000000 )
+   50:  Set  *Var[9]  *Var[0] 
+   60:  Wait     00000001 
+   6C:  Loop     00000050 
+   78:  	Call     GetNpcPos   	( 00000006 *Var[2] *Var[3] *Var[4] )
+   94:  	Add  *Var[3]  00000014 
+   A4:  	Call     SetItemPos  	( *Var[9] *Var[2] *Var[3] *Var[4] )
+   C0:  	Wait     00000001 
+   CC:  EndLoop
+   D4:  Call     RemoveItemEntity 	( *Var[9] )
+   E4:  Return
+   EC:  End
+
+#new:Script $Script_8025B854_mac_01
+    0:  Loop     
+    C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  	If  *Var[2]  >  000000C8 
+   34:  		If  *Var[0]  <  00000032 
+   44:  			BreakLoop
+   4C:  		EndIf
+   54:  	EndIf
+   5C:  	Wait     00000001 
+   68:  EndLoop
+   70:  Call     SetNpcPos   	( 00000006 FFFFFEC7 00000000 0000014A )
+   8C:  Call     SetNpcAnimation 	( 00000006 003B0004 )
+   A0:  Wait     00000015 
+   AC:  Call     DisablePlayerInput 	( .True )
+   BC:  Call     SayMessage0 	( 00000001 00A70004 00A70001 00000000 00030007 ) % Hey! You! You little scamp! Get your hands off...  ...
+   DC:  Exec     $Script_8025B760_mac_01 
+   E8:  Set  *Var[0]  00000006 
+   F8:  Call     PlaySoundAtNpc ( *Var[0] 0000203F 00000000 )
+  110:  Exec     $Script_8024E6F8_mac_01 *Var[A] 
+  120:  Call     MoveNpcTo   	( 00000006 FFFFFFD3 0000014A 0000001E )
+  13C:  Call     MoveNpcTo   	( 00000006 FFFFFFD3 000002C6 0000001E )
+  158:  Kill     *Var[A] 
+  164:  Call     SetNpcPos   	( 00000006 00000000 FFFFFC18 00000000 )
+  180:  Call     DisablePlayerInput 	( .False )
+  190:  Return
+  198:  End
+
+#new:Script $Script_Init_8025B9F4_mac_01
+    0:  If  *StoryProgress  <  FFFFFFF3 
+   10:  	Return
+   18:  EndIf
+   20:  If  *StoryProgress  >  00000005 
+   30:  	Return
+   38:  EndIf
+   40:  If  *Flag_MAC_8A  !=  00000000 
+   50:  	Return
+   58:  EndIf
+   60:  Set  *Flag_MAC_8A  00000001 
+   70:  Exec     $Script_8025B854_mac_01 
+   7C:  Return
+   84:  End
+

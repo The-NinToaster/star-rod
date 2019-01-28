@@ -1,0 +1,70 @@
+% automatically dumped from map kkj_11
+
+#new:Npc $kkj_11_80243CDC_7C0
+00000004 $NpcSettings_80242E70_kkj_11 00000000 00000000 00000000 
+00000F0D $Script_Init_80243C04_kkj_11 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00580001 00580004 00580006 00580006 00580001 00580001 00580010 00580010 
+0058000C 0058000B 0058000D 00580001 00580001 00580001 00580001 00580001 
+00000000 00000000 $ExtraAnimationList_80243CB8_kkj_11 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80242E70_kkj_11
+00000000 00280018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00190000 
+
+#new:Script $Script_802438C0_kkj_11
+    0:  Loop     
+    C:  	Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   28:  	Call     AwaitPlayerApproach 	( *Var[0] *Var[2] 00000032 )
+   40:  	Call     GetPlayerPos 	( *Var[0] *Var[3] *Var[2] )
+   58:  	If  *Var[1]  ==  *Var[3] 
+   68:  		BreakLoop
+   70:  	EndIf
+   78:  	Wait     00000001 
+   84:  EndLoop
+   8C:  Call     DisablePlayerInput 	( .True )
+   9C:  SetGroup 00000000 
+   A8:  Call     802D5830 ( 00000001 )
+   B8:  Call     PlaySoundAtNpc ( .Npc:Self 00000262 00000000 )
+   D0:  Call     ShowEmote   	( .Npc:Self .Emote:Exclamation 00000000 00000014 00000001 00000000 00000000 00000000 00000000 )
+  100:  Call     NpcFacePlayer 	( .Npc:Self 00000005 )
+  114:  Wait     00000014 
+  120:  Call     PlayerFaceNpc 	( .Npc:Self 00000000 )
+  134:  Call     SetPlayerAnimation 	( 000C0005 )
+  144:  Call     SayMessage0 	( .Npc:Self 00580008 00580001 00000000 00140174 ) % What?! Princess Peach! 
+  164:  Call     SayMessage0 	( .Npc:Self 00580008 00580001 00000000 00140175 ) % You know you're not allowed to leave the room! I'm ...
+  184:  Call     SetPlayerAnimation 	( 000C0017 )
+  194:  Wait     00000014 
+  1A0:  Call     GotoMapSpecial ( $ASCII_80245F28_kkj_11 0000000B 0000000D )
+  1B8:  Wait     00000064 
+  1C4:  Call     DisablePlayerInput 	( .False )
+  1D4:  Call     802D5830 ( 00000000 )
+  1E4:  Return
+  1EC:  End
+
+#new:Script $Script_Init_80243C04_kkj_11
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  If  *Var[0]  ==  00000004 
+   20:  	Call     SetNpcPos   	( .Npc:Self FFFFFFD8 00000000 FFFFFF24 )
+   3C:  	Call     SetNpcYaw   	( .Npc:Self 0000005A )
+   50:  Else
+   58:  	Call     SetNpcPos   	( .Npc:Self 00000000 00000000 FFFFFF10 )
+   74:  	Call     SetNpcYaw   	( .Npc:Self 000000DC )
+   88:  EndIf
+   90:  Call     BindNpcIdle 	( .Npc:Self $Script_802438C0_kkj_11 )
+   A4:  Return
+   AC:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_80243CB8_kkj_11
+00580001 00580004 00580006 00580008 00580002 00580005 00580007 00580009 
+FFFFFFFF 
+
+#new:ASCII $ASCII_80245F28_kkj_11
+kkj_14
+

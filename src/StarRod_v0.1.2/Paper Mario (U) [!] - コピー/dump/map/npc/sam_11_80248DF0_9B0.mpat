@@ -1,0 +1,79 @@
+% automatically dumped from map sam_11
+
+#new:Npc $sam_11_80248DF0_9B0
+00000007 $NpcSettings_80244E70_sam_11 00000000 00000000 00000000 
+00400C09 $Script_Init_80248CD0_sam_11 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+FFFFFFF6 00000000 FFFFFFEC 0000001E 00000000 FFFF8001 00000000 FFFFFEB6 
+00000000 FFFFFED4 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009A0001 009A0002 009A0003 009A0003 009A0001 009A0001 009A0001 009A0001 
+009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 
+00000000 00000000 00000000 001A00FA % He's a timid penguin. He's terrified of the unknow ...
+
+#new:AISettings $AISettings_80244E20_sam_11
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80244E50_sam_11
+    0:  Call     DoBasicAI   	( $AISettings_80244E20_sam_11 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80244E70_sam_11
+00000000 00180018 00000000 00000000 $Script_NpcAI_80244E50_sam_11 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802485C4_sam_11
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000003F 
+   18:  		Switch  *MapVar[4] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200AF ) % I heard that a horrible monster lives at the end o ...
+   50:  				Set  *MapVar[4]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200B0 ) % I heard that a horrible monster lives at the end o ...
+   8C:  				Set  *MapVar[4]  00000000 
+   9C:  		EndSwitch
+   A4:  	Case  <  00000043 
+   B0:  		Switch  *MapVar[4] 
+   BC:  			Case  ==  00000000 
+   C8:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200B1 ) % ... I SAID, "..."! I don't talk to penguin-killers ...
+   E8:  				Set  *MapVar[4]  00000001 
+   F8:  			Case  ==  00000001 
+  104:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200B2 ) % ... I SAID, "..."! I don't talk to penguin-killers ...
+  124:  				Set  *MapVar[4]  00000000 
+  134:  		EndSwitch
+  13C:  	Case  <  00000057 
+  148:  		Switch  *MapVar[4] 
+  154:  			Case  ==  00000000 
+  160:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200B3 ) % A horrible monster lives somewhere along this path ...
+  180:  				Set  *MapVar[4]  00000001 
+  190:  			Case  ==  00000001 
+  19C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200B4 ) % A horrible monster lives somewhere along this path ...
+  1BC:  				Set  *MapVar[4]  00000000 
+  1CC:  		EndSwitch
+  1D4:  	Case  >=  00000057 
+  1E0:  		Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200B5 ) % Penguins are saying that the monster is gone for g ...
+  200:  EndSwitch
+  208:  Return
+  210:  End
+
+#new:Script $Script_Init_80248CD0_sam_11
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802485C4_sam_11 )
+   14:  Return
+   1C:  End
+

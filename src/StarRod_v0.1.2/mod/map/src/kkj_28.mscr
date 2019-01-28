@@ -1,0 +1,55 @@
+% Script File: kkj_28.mscr
+% Decoded from: 0 to 210 (kkj_28)
+
+#new:EntryList $EntryList
+{Vec4f:Entry0} %  325.0    0.0  -30.0  270.0
+
+#new:Header $Header
+00000000 00000000 00000000 00000000 
+$Script_Main $EntryList 00000001 00000000 
+00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 
+
+#new:Script $Script_80240050
+    0:  SetGroup 0000001B 
+    C:  Call     DisablePlayerInput 	( .True )
+   1C:  Set  *Var[0]  00000000 
+   2C:  Set  *Var[1]  00000002 
+   3C:  Set  *Var[2]  00000095 
+   4C:  Set  *Var[3]  FFFFFFFF 
+   5C:  Exec     ExitSingleDoor 
+   68:  Wait     00000011 
+   74:  Call     GotoMap     	( $ASCII_80240200 00000002 )
+   88:  Wait     00000064 
+   94:  Return
+   9C:  End
+
+#new:Script $Script_802400F4
+    0:  Set  *Var[2]  00000095 
+   10:  Set  *Var[3]  FFFFFFFF 
+   20:  ExecWait EnterSingleDoor 
+   2C:  Return
+   34:  End
+
+#new:Script_Main $Script_Main
+    0:  Set  *WorldMapLocation  0000001A 
+   10:  Call     SetSpriteShading 	( FFFFFFFF )
+   20:  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+   40:  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+   5C:  Call     SetCamFlag2 	( .Default .True )
+   70:  Call     EnableGroup 	( {Model:g40} .False )
+   84:  Call     UseDoorSounds 	( 00000000 )
+   94:  Bind     $Script_80240050 .Trigger:WallPressA {Collider:tte} 00000001 00000000 
+   B0:  Exec     $Script_802400F4 
+   BC:  Return
+   C4:  End
+
+PADDING: 802401FC to 80240200 (000001FC to 00000200)
+00000000 
+
+#new:ASCII $ASCII_80240200
+kkj_10
+
+PADDING: 80240208 to 80240210 (00000208 to 00000210)
+00000000 00000000 
+

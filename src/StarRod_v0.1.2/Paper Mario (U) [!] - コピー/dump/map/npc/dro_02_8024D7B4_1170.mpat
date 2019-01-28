@@ -1,0 +1,43 @@
+% automatically dumped from map dro_02
+
+#new:Npc $dro_02_8024D7B4_1170
+00000008 $NpcSettings_80247558_dro_02 00000000 00000000 00000000 
+00002D01 $Script_Init_8024C038_dro_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00940001 00940004 00940004 00940004 00940001 00940001 00940001 00940001 
+00940001 00940001 00940001 00940001 00940001 00940001 00940001 00940001 
+00000000 00000000 00000000 001A009F % He's a Nomadimouse who likes telling old tales. He ...
+
+#new:NpcSettings $NpcSettings_80247558_dro_02
+00000000 00160019 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024BF34_dro_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFCB 
+   18:  		If  *AreaFlag[005]  ==  00000000 
+   28:  			Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00AB ) % Long ago, in this very land, there was a kingdom c ...
+   48:  			Set  *AreaFlag[005]  00000001 
+   58:  		Else
+   60:  			Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00AC ) % Long ago, in this very land, there was a kingdom c ...
+   80:  			Set  *AreaFlag[005]  00000000 
+   90:  		EndIf
+   98:  	Case  <  00000027 
+   A4:  		Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00AD ) % One of the descendants of King Mousta still lives  ...
+   C4:  	Default
+   CC:  		Call     SayMessage0 	( .Npc:Self 00940005 00940001 00000000 000D00AE ) % Those rebels who rose up against King Mousta... Do ...
+   EC:  EndSwitch
+   F4:  Return
+   FC:  End
+
+#new:Script $Script_Init_8024C038_dro_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024BF34_dro_02 )
+   14:  Return
+   1C:  End
+

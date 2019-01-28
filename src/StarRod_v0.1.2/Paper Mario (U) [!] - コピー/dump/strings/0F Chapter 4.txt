@@ -1,0 +1,921 @@
+0F-000
+[STYLE:RIGHT]Welcome to Blue Station![BR]
+[PAUSE:0A]Umm... Unfortunately, I can't[BR]
+take you to the other stations.[BR]
+[WAIT][NEXT]
+We have the station and the[BR]
+tracks and everything...but[BR]
+the train's missing![WAIT][END]
+
+0F-001
+[STYLE:RIGHT]Welcome to Blue Station![BR]
+[PAUSE:0A]Umm... Unfortunately, I can't[BR]
+take you to the other stations.[BR]
+[WAIT][NEXT]
+We have the station and the[BR]
+tracks and everything...but[BR]
+the train's missing![WAIT][END]
+
+0F-002
+[STYLE:RIGHT]Look, we can't very well ride on[BR]
+a tiny little Toy Train![BR]
+[PAUSE:0A]That'd be impossible.[BR]
+[WAIT][NEXT]
+Put that back in its Toy Box![WAIT][END]
+
+0F-003
+[STYLE:RIGHT]Yaaaahoo![HEART] [BR]
+We're back in business![BR]
+[WAIT][NEXT]
+This train just dropped out of[BR]
+the sky and onto the tracks![BR]
+[PAUSE:05]Public transit's up and running![BR]
+[WAIT]{Func_04}[END]
+
+0F-004
+[STYLE:RIGHT]You can use the switches in[BR]
+front of the station to choose[BR]
+the train's direction.[BR]
+[WAIT][NEXT]
+Just let me know when you've[BR]
+decided which direction you want[BR]
+to go, OK?[BR]
+[PAUSE:0A]All aboard!![WAIT][END]
+
+0F-005
+[NEXT]
+You can use the switches in[BR]
+front of the station to choose[BR]
+the train's direction.[BR]
+[WAIT][NEXT]
+Have you figured out which way[BR]
+you want to go?[BR]
+[WAIT][NEXT]
+Please tell me again if you're[BR]
+sure that's the way you want[BR]
+to go.[BR]
+[PAUSE:0A]All aboard![WAIT][END]
+
+0F-006
+[STYLE:RIGHT]Which way are you heading?[BR]
+[PAUSE:0A]Press one of those switches to[BR]
+choose a direction.[WAIT][END]
+
+0F-007
+[STYLE:RIGHT]Where would you like to go?[BR]
+{Func_04}[END]
+
+0F-008
+[NEXT]
+Please ride with us again, OK?[WAIT][END]
+
+0F-009
+[STYLE:RIGHT]We're leaving! All aboard![WAIT][END]
+
+0F-00A
+{InputOff}[STYLE:RIGHT]Next stop: Blue Station![BR]
+Now arriving at Blue Station![BR]
+[PAUSE:0A]Passengers wishing to exit the[BR]
+Toy Box, please get off here.[BR]
+[PAUSE:1E][END]
+
+0F-00B
+{InputOff}[STYLE:RIGHT]Next stop: Pink Station![BR]
+Now arriving at Pink Station![BR]
+Piiiiiiink Station![BR]
+[PAUSE:1E][END]
+
+0F-00C
+{InputOff}[STYLE:RIGHT]Next stop: Green Station![BR]
+Now arriving at Green Station![BR]
+[PAUSE:0A]Passengers wishing to go to the[BR]
+Slot Machine, please exit.[BR]
+[PAUSE:1E][END]
+
+0F-00D
+{InputOff}[STYLE:RIGHT]Next stop: Red Station![BR]
+Now arriving at Red Station![BR]
+Reeeeeed Station![BR]
+[PAUSE:1E][END]
+
+0F-00E
+[STYLE:RIGHT]Station stop: Blue Station![BR]
+[PAUSE:0A]Welcome to Blue Station,[BR]
+passengers![BR]
+[WAIT][NEXT]
+To exit the Toy Box, please use[BR]
+the jump pad on your left.[BR]
+[WAIT][NEXT]
+Also to the left is a Shy Guy[BR]
+Playground.[WAIT][END]
+
+0F-00F
+[STYLE:RIGHT]Station stop: Pink Station![BR]
+[PAUSE:0A]Welcome to Pink Station,[BR]
+passengers![WAIT][END]
+
+0F-010
+[STYLE:RIGHT]Station stop: Green Station![BR]
+[PAUSE:0A]Welcome to Green Station,[BR]
+passengers![WAIT][END]
+
+0F-011
+[STYLE:RIGHT]Station stop: Red Station![BR]
+[PAUSE:0A]Welcome to Red Station,[BR]
+passengers![WAIT][END]
+
+0F-012
+[STYLE:RIGHT]Oh, there's a track problem![BR]
+[PAUSE:0A]We can't go that direction.[BR]
+[WAIT][NEXT]
+Do you see that lever way behind[BR]
+us on the left? If you can get[BR]
+over there and push it, we'll be[BR]
+able to continue.[WAIT][END]
+
+0F-013
+[STYLE:RIGHT]I think our little track problem[BR]
+will be fixed if you pull down on[BR]
+that lever.[BR]
+[WAIT][NEXT]
+Or maybe not. I'm not sure...[BR]
+[PAUSE:0A]Hmmm...[BR]
+[PAUSE:0A]To pull or not to pull?[WAIT][END]
+
+0F-014
+[STYLE:RIGHT]Do you think pulling that lever[BR]
+will fix the tracks?[BR]
+[PAUSE:0A]Hmmm...[WAIT][END]
+
+0F-015
+[STYLE:RIGHT]Well, I'll be![BR]
+[PAUSE:0A]Just as I suspected![BR]
+[WAIT][NEXT]
+We should have moved that lever[BR]
+a long time ago![WAIT][END]
+
+0F-016
+[STYLE:RIGHT]We can't go to Red Station. [BR]
+The tracks are broken, see?[BR]
+[WAIT][NEXT]
+I'm very sorry...[WAIT][END]
+
+0F-017
+[STYLE:RIGHT]Usually I work here at Blue[BR]
+Station.[BR]
+[PAUSE:0A]But since there's no train, I'm[BR]
+pretty much unemployed now.[WAIT][END]
+
+0F-018
+[STYLE:RIGHT]The Storeroom Key you have in[BR]
+your hand... I'm positive the[BR]
+Shy Guys stole that from[BR]
+somewhere in Toad Town.[BR]
+[WAIT][NEXT]
+I wonder who they stole it from.[BR]
+[PAUSE:0A]Whoever it was must be mad.[WAIT][END]
+
+0F-019
+[STYLE:RIGHT]You gave the Storeroom Key back[BR]
+to the storekeeper?[BR]
+[PAUSE:0A]He must've been super happy![BR]
+[WAIT][NEXT]
+Happier than I am, anyway.[BR]
+[PAUSE:0A]There's still no train, so I still[BR]
+don't have a job.[WAIT][END]
+
+0F-01A
+[STYLE:RIGHT]The train's running again![BR]
+[PAUSE:0A]We can leave anytime!![WAIT][END]
+
+0F-01B
+[STYLE:RIGHT]That Frying Pan you have in[BR]
+your hand... I'm positive the[BR]
+Shy Guys stole that from[BR]
+somewhere in Toad Town.[BR]
+[WAIT][NEXT]
+I'm sure whoever owned it must[BR]
+be all broken up right now.[BR]
+[PAUSE:0A]You can't cook very well without[BR]
+a Frying Pan.[WAIT][END]
+
+0F-01C
+[STYLE:RIGHT]Did you know that Shy Guys[BR]
+really like sweets?[BR]
+Cakes, candies...you name it.[BR]
+[WAIT][NEXT]
+Supposedly, that's all they'd eat[BR]
+if they could.[WAIT][END]
+
+0F-01D
+[STYLE:RIGHT]You can repair all of the broken[BR]
+rails along our route by moving[BR]
+nearby levers.[BR]
+[WAIT][NEXT]
+Obviously, we're going nowhere if[BR]
+the rails don't get fixed.[WAIT][END]
+
+0F-01E
+[STYLE:RIGHT]You can repair all of the broken[BR]
+rails along our route by moving[BR]
+nearby levers.[BR]
+[WAIT][NEXT]
+Or maybe not all of them...[BR]
+[PAUSE:0A]What do we do...?[WAIT][END]
+
+0F-01F
+[STYLE:RIGHT]That Memo you have is written in[BR]
+Shy Guy language.[BR]
+[WAIT][NEXT]
+Don't look at me! I can't read[BR]
+Shy Guy language![BR]
+[WAIT][NEXT]
+You could probably figure it out[BR]
+if you found someone who's smart[BR]
+enough.[WAIT][END]
+
+0F-020
+[STYLE:RIGHT]Oh, thanks a lot for figuring[BR]
+out the secret of the[BR]
+jack-in-the-box switch.[BR]
+Now the train can roll again.[BR]
+[WAIT][NEXT]
+Nothing makes me happier than[BR]
+watching the train roll...[WAIT][END]
+
+0F-021
+[STYLE:RIGHT]Rumor is that there's a vehicle[BR]
+very similar to this in the world[BR]
+outside the box.[BR]
+[PAUSE:0A]They call it a train, too...?[BR]
+[WAIT][NEXT]
+Well...there's no way it can be as[BR]
+cool as our train...[WAIT][END]
+
+0F-022
+[STYLE:RIGHT]It seems as though those Shy[BR]
+Guys have learned a lesson this[BR]
+time. Maybe they won't steal[BR]
+things anymore.[BR]
+[WAIT][NEXT]
+They ought to just learn to live[BR]
+in peace, surrounded by toys![BR]
+[WAIT][NEXT]
+A hand holding a toy is less[BR]
+likely to cause mischief...[WAIT][END]
+
+0F-023
+[STYLE:RIGHT]Some Shy Guy just ran off to[BR]
+the right with a Frying Pan![BR]
+[WAIT][NEXT]
+Ooh, I just bet that he stole it[BR]
+from some innocent soul![BR]
+[PAUSE:0A]And you know he doesn't really[BR]
+want to cook anything with it.[BR]
+[WAIT][NEXT]
+Shy Guys are so obnoxious...[WAIT][END]
+
+0F-024
+[STYLE:RIGHT]Have you seen the Gourmet Guy?[BR]
+[PAUSE:0A]He's a huge Shy Guy who's really[BR]
+particular about food.[BR]
+[WAIT][NEXT]
+Judging by his size, I'd say he's[BR]
+not all that particular.[BR]
+[WAIT][NEXT]
+He has a serious sweet tooth. I[BR]
+hear that he really loves Cake.[WAIT][END]
+
+0F-025
+[STYLE:RIGHT]We have to move some lever in[BR]
+order to repair the tracks so[BR]
+we can go to Green Station.[BR]
+[WAIT][NEXT]
+I think it was that pink lever[BR]
+over there, but...I'm not sure...[BR]
+I forget...[WAIT][END]
+
+0F-026
+[STYLE:RIGHT]We have to move some lever in[BR]
+order to repair the tracks so[BR]
+we can go to Green Station.[BR]
+[WAIT][NEXT]
+I think it was that pink lever[BR]
+over there, but...I'm not sure...[BR]
+I forget...[WAIT][END]
+
+0F-027
+[STYLE:RIGHT]The tracks are all fixed, so we[BR]
+can now go to Green Station.[BR]
+[PAUSE:0A]Feel free to use this train[BR]
+anytime you like![WAIT][END]
+
+0F-028
+[STYLE:RIGHT]Have you seen the Big Lantern[BR]
+Ghost?[BR]
+[PAUSE:0A]He always hides in gloomy places.[BR]
+He loves the darkness.[BR]
+[WAIT][NEXT]
+Then again, he's always carrying[BR]
+this little lantern, so...[BR]
+[WAIT][NEXT]
+...maybe he doesn't like the[BR]
+darkness all that much...[WAIT][END]
+
+0F-029
+[STYLE:RIGHT]I heard that the Big Lantern[BR]
+Ghost took off.[BR]
+[PAUSE:0A]Do you think he left the box?[BR]
+[WAIT][NEXT]
+He won't need that lantern if he[BR]
+lives somewhere bright.[WAIT][END]
+
+0F-02A
+[STYLE:RIGHT]You know, Shy Guys made this Toy[BR]
+Train that we use.[BR]
+[WAIT][NEXT]
+They like to gather worn-out[BR]
+things that no one uses and turn[BR]
+them into toys.[BR]
+[WAIT][NEXT]
+They're pretty good at making[BR]
+something out of nothing.[WAIT][END]
+
+0F-02B
+[STYLE:RIGHT]This is Green Station.[BR]
+[PAUSE:0A]I'm certainly feeling green.[BR]
+Shy Guys hid our tracks![BR]
+[WAIT][NEXT]
+How're we supposed to move?[BR]
+[WAIT][NEXT]
+Oh, by the way, a Shy Guy with a[BR]
+book ran off to the right toward[BR]
+the Slot Machine.[BR]
+[WAIT][NEXT]
+I'm sure the little rogue stole[BR]
+that book from someone.[BR]
+[WAIT][NEXT]
+It'll be impossible to catch him[BR]
+unless you figure out how to get[BR]
+through the wire fence.[WAIT][END]
+
+0F-02C
+[STYLE:RIGHT]I witnessed a Shy Guy with a[BR]
+book running to the right,[BR]
+toward the Slot Machine.[BR]
+[WAIT][NEXT]
+I'm sure the little rogue stole[BR]
+that book from someone.[BR]
+[WAIT][NEXT]
+It'll be impossible to catch him[BR]
+unless you figure out how to get[BR]
+through the wire fence.[WAIT][END]
+
+0F-02D
+[STYLE:RIGHT]That Memo you have is written in[BR]
+Shy Guy language.[BR]
+[WAIT][NEXT]
+Don't look at me! I can't read[BR]
+Shy Guy language![BR]
+[WAIT][NEXT]
+You could probably figure it out[BR]
+if you found someone who's smart[BR]
+enough.[WAIT][END]
+
+0F-02E
+[STYLE:RIGHT]We can go to Red Station now![BR]
+[PAUSE:0A]Great! Feel free to ride with[BR]
+us anytime![WAIT][END]
+
+0F-02F
+[STYLE:RIGHT]It looks like the Shy Guys are[BR]
+really robbing Toad Town blind.[BR]
+[WAIT][NEXT]
+I've heard them say that they[BR]
+want Bowser to reward them for[BR]
+filling up this Toy Box.[BR]
+[WAIT][NEXT]
+It used to be so peaceful inside[BR]
+here...but it's getting downright[BR]
+crowded and noisy.[WAIT][END]
+
+0F-030
+[STYLE:RIGHT]I'm sure the Shy Guys are going[BR]
+to knock it off for a while.[BR]
+[WAIT][NEXT]
+They'll recover eventually,[BR]
+though, and start gathering[BR]
+worn-out junk again for their[BR]
+toy-making needs.[BR]
+[WAIT][NEXT]
+Everyone's much happier when[BR]
+they only take worn-out stuff[BR]
+instead of precious items.[WAIT][END]
+
+0F-031
+[STYLE:RIGHT]The other day, I saw a gang of[BR]
+Shy Guys carrying a sparkling[BR]
+card of some sort in a cage.[BR]
+[WAIT][NEXT]
+They headed off to the right...[BR]
+Do you think I ought to go check[BR]
+out what they were doing?[WAIT][END]
+
+0F-032
+[STYLE:RIGHT]You beat that weird, giggling[BR]
+ghost that likes the dark?[BR]
+[WAIT][NEXT]
+Wow, that's great! Thank you![WAIT][END]
+
+0F-033
+[STYLE:RIGHT]Oh. I see. The Shy Guys were[BR]
+holding a Star Spirit...[BR]
+[WAIT][NEXT]
+I thought they were happy just[BR]
+making and playing with toys.[BR]
+[WAIT][NEXT]
+Who could want more?[BR]
+[WAIT][NEXT]
+Anyway, our only wish was to[BR]
+have our train up and running...[BR]
+[WAIT][NEXT]
+And you made it come true![WAIT][END]
+
+0F-034
+[STYLE:RIGHT]Nyeah heh heh...[BR]
+[PAUSE:05]Perfect. Mario hates this thing,[BR]
+so he'll surely turn back. [BR]
+[WAIT][NEXT]
+Uh... I think...[BR]
+[PAUSE:0A]That doesn't look like the sort[BR]
+of thing that'd bother Mario.[BR]
+[WAIT][NEXT]
+I wonder if I should really trust[BR]
+what Peach says...[WAIT][END]
+
+0F-035
+[STYLE:RIGHT]Well...it doesn't matter.[BR]
+[PAUSE:0A]King Bowser ordered it.[BR]
+[WAIT][NEXT]
+And he's the boss![WAIT][END]
+
+0F-036
+[STYLE:RIGHT]Perfect... Mario really hates[BR]
+these guys so he'll run. [BR]
+[WAIT][NEXT]
+Will they really scare him? They[BR]
+seem pretty weak...[BR]
+[WAIT][NEXT]
+I'm getting a little suspicious of[BR]
+what Peach tells us... [WAIT][END]
+
+0F-037
+[STYLE:RIGHT]Well...it doesn't matter.[BR]
+[PAUSE:0A]King Bowser ordered it.[BR]
+[WAIT][NEXT]
+And he's the boss![WAIT][END]
+
+0F-038
+[STYLE:RIGHT]Nyeah heh heh heh!!![BR]
+[PAUSE:0A]Ooh, I can't wait until Mario[BR]
+gets here![BR]
+[WAIT][NEXT]
+He's gonna get beaten so bad! [BR]
+He'll probably start crying![BR]
+[WAIT][NEXT]
+Then King Bowser and I will laugh[BR]
+and laugh![BR]
+[PAUSE:0A]Come and get it, Mario![WAIT][END]
+
+0F-039
+[STYLE:RIGHT]{StartFX:Wavy}Nyeah heh heh hah!!!!![WAIT][END]
+
+0F-03A
+[STYLE:RIGHT]Oh... Mario!?[BR]
+[PAUSE:0A]I have to fight Mario?![BR]
+[WAIT][NEXT]
+By myself? Why me?[BR]
+[WAIT][NEXT]
+I'm toast...but I have to try![BR]
+[PAUSE:0A]Feel my, uh...wrath, I guess![WAIT][END]
+
+0F-03B
+[STYLE:RIGHT]Oh, it's Mario!![BR]
+[PAUSE:0A]See this fine club I have?[BR]
+I'm gonna introduce you to it.[BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}Club...meet Mario!!![WAIT][END]
+
+0F-03C
+[STYLE:RIGHT]!!!!!!!![BR]
+[PAUSE:0A]Meeeoork! Mario![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}{StartFX:Wavy}This'll be fun![WAIT][END]
+
+0F-03D
+[STYLE:RIGHT]Nyuck yuck yuck...[BR]
+[PAUSE:0A]What took you so long, Mario?[BR]
+[PAUSE:0A]Ready to taste my hammer?[BR]
+[WAIT][NEXT]
+Here it comes!!![WAIT][END]
+
+0F-03E
+[STYLE:RIGHT]!!!!!!!![WAIT][END]
+
+0F-03F
+[STYLE:RIGHT]Yes!! I thought you'd come![BR]
+[PAUSE:0A]Now I get to defeat you and win[BR]
+admiration from King Bowser.[BR]
+[WAIT][NEXT]
+I'm gonna be famous![WAIT][END]
+
+0F-040
+[STYLE:RIGHT]Everybody calls me Gourmet Guy.[BR]
+[WAIT][NEXT]
+I don't know why. I'm just an[BR]
+ordinary, food-loving Shy Guy.[BR]
+[WAIT][NEXT]
+Sigh...[BR]
+[PAUSE:05]I'm hungry...[WAIT][END]
+
+0F-041
+[STYLE:RIGHT]I'm too hungry to move.[BR]
+[PAUSE:0A]I'm famished! I must eat![BR]
+[WAIT][NEXT]
+I need a sweet, sweet Cake![BR]
+[PAUSE:0A]Sweet Cake...with frosting...[BR]
+and cookie crumbles...[WAIT][END]
+
+0F-042
+[STYLE:RIGHT]{StartFX:Wavy}Bleagh!!! Hack! Thppth![BR]
+{EndFX:Wavy}That was disgusting![BR]
+[PAUSE:0A]That wasn't even food! I can't[BR]
+believe I ate that![WAIT][END]
+
+0F-043
+[STYLE:RIGHT]{StartFX:Wavy}Aw, ickthpth!!! Bleah![BR]
+{EndFX:Wavy}That's the worst tasting food[BR]
+I've ever eaten! Ick![BR]
+[WAIT][NEXT]
+My delicate palate is too refined[BR]
+to eat this stuff![BR]
+[WAIT][NEXT]
+I can eat only food of the finest[BR]
+quality, or I might gag.[BR]
+[PAUSE:0A]I'd rather starve than eat such[BR]
+inferior food as this![WAIT][END]
+
+0F-044
+{InputOff}[STYLE:RIGHT]{StartFX:Shrinking}Oh... [PAUSE:23]Ohhh, mmmm...[BR]
+[PAUSE:23]Ohhhhhhh!!!!![BR]
+{EndFX:Shrinking}[PAUSE:1E][NEXT]
+{StartFX:Jitter}Deeeliciouuuuuuus!!![BR]
+[PAUSE:2D]{EndFX:Jitter}[NEXT]
+{StartFX:Wavy}This [PAUSE:03]is [PAUSE:04]lip-[PAUSE:05]smacking [PAUSE:06]good![PAUSE:02]![PAUSE:02]![PAUSE:02]![BR]
+[PAUSE:32][END]
+
+0F-045
+{InputOff}[STYLE:RIGHT]{StartFX:Shrinking}Yuuuuummmm!!!!!!!![BR]
+[PAUSE:0A][END]
+
+0F-046
+[STYLE:RIGHT]{StartFX:Wavy}Hm? What do you want?[BR]
+[WAIT][NEXT]
+Get away from that Treasure[BR]
+Chest, pal![BR]
+{EndFX:Wavy}[WAIT]{Func_04}[NEXT]
+It's mine, see?[BR]
+[PAUSE:0A]Don't mess with me![HEART][BR]
+{Func_04}[END]
+
+0F-047
+[NEXT]
+You wanna fight? Are you nuts?[BR]
+[PAUSE:0A]You don't wanna mess with me![HEART][BR]
+[PAUSE:0A]Are you sure ya wanna fight?[BR]
+{Func_04}[END]
+
+0F-048
+[NEXT]
+{StartFX:Wavy}Good. You're a smart boy![HEART][WAIT][END]
+
+0F-049
+[NEXT]
+What!! Well, all right...[BR]
+[PAUSE:0A]I do love a challenge![HEART][BR]
+[WAIT][NEXT]
+{StartFX:Wavy}Here it comes, pal![BR]
+[PAUSE:0A]Don't say I didn't warn you![WAIT][END]
+
+0F-04A
+[STYLE:RIGHT]Sniff sniff... Sniff?[BR]
+{Func_04}[WAIT]Do I smell Lemon Candy?[BR]
+[WAIT][NEXT]
+Hey! Pal! You have Lemon Candy,[BR]
+and you didn't tell me? [BR]
+{Func_04}[WAIT][NEXT]
+{StartFX:Wavy}Please! I love that stuff![HEART][BR]
+[PAUSE:0A]Lemme have some Lemon Candy![BR]
+[PAUSE:0A]Please! C'mon, pal![BR]
+[WAIT][NEXT]
+Take the treasure--just gimme[BR]
+the Lemon Candy, will ya?![WAIT][END]
+
+0F-04B
+[STYLE:RIGHT]Grrrrr!!![BR]
+[PAUSE:0A]You stingy, candy-hogging punk![BR]
+[WAIT][NEXT]
+Well, you can forget about[BR]
+getting my treasure now![BR]
+[PAUSE:0A]{StartFX:Wavy}You want it? You're going to[BR]
+have to fight me for it.[BR]
+{Func_04}[END]
+
+0F-04C
+[STYLE:RIGHT]{StartFX:Wavy}{StartFX:Shrinking}Yeeeaaaah![HEART][BR]
+[WAIT][NEXT]
+I got some Lemon Candy![HEART][WAIT][END]
+
+0F-04D
+[STYLE:RIGHT]Oh...so good...tart...[BR]
+{StartFX:Wavy}{StartFX:Shrinking}So yummy...[HEART][HEART][HEART][BR]
+{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END]
+
+0F-04E
+[STYLE:RIGHT]{StartFX:Jitter}Wee [PAUSE:05]hee hee [PAUSE:03]hee...[BR]
+[PAUSE:0A]Someone... has come...[BR]
+[WAIT][NEXT]
+Someone is here in the dark...[WAIT][END]
+
+0F-04F
+[STYLE:RIGHT]{StartFX:Jitter}Wee hee hee...[BR]
+[PAUSE:0A]Oh... [PAUSE:05]Could it be...?[BR]
+[PAUSE:0A]Wee hee hee hee... It's Mario!![WAIT][END]
+
+0F-050
+[STYLE:RIGHT]{StartFX:Jitter}Looks like you're mine, Mario![BR]
+[PAUSE:0A]Wee hee...[BR]
+[PAUSE:05]I won't let you go...anywhere...[WAIT][END]
+
+0F-051
+[STYLE:RIGHT]Wee hee hee...[BR]
+[PAUSE:05]I'll take care of you quickly,[BR]
+then return to my darkness.[BR]
+[WAIT][NEXT]
+I hate the light...[BR]
+[WAIT][NEXT]
+So... I'll take you with me...[BR]
+...to the deep dark...[WAIT][END]
+
+0F-052
+[STYLE:RIGHT]{StartFX:Shrinking}{StartFX:Wavy}Woooaaahh!![BR]
+[WAIT][NEXT]
+{EndFX:Shrinking}{EndFX:Wavy}I hate light!!![BR]
+[WAIT][NEXT]
+I'll make it darker...then even[BR]
+darker than that...[WAIT][END]
+
+0F-053
+[STYLE:RIGHT]Ow, that light! It's so bright...[BR]
+[PAUSE:0A]This is no good...[BR]
+Here...darker and darker...[WAIT][END]
+
+0F-054
+[STYLE:RIGHT]{StartFX:Shrinking}{StartFX:Wavy}Nooooooooo!![BR]
+[PAUSE:64][END]
+
+0F-055
+[STYLE:RIGHT]{StartFX:Growing}Hi, mister![BR]
+[PAUSE:0A]I'm Watt.[BR]
+[PAUSE:0A]Can I, um, get out of here?[WAIT][END]
+
+0F-056
+[STYLE:RIGHT]Wait, wait![BR]
+[PAUSE:0A]Don't leave me, please![BR]
+[PAUSE:0A]Let me out, mister, OK?[WAIT][END]
+
+0F-057
+[STYLE:RIGHT]Hm hm hee hee...[BR]
+[PAUSE:0A]Yay! I got out![BR]
+[WAIT][NEXT]
+Yay for me![BR]
+[PAUSE:0A]Thanks, mister![WAIT][END]
+
+0F-058
+[STYLE:RIGHT]Cough cough...[BR]
+{Func_04}[WAIT][NEXT]
+You're crazy, mister![BR]
+[PAUSE:0A]Did ya have to, um, blow it up to[BR]
+get me out?[BR]
+[WAIT][NEXT]
+Jeepers![WAIT][END]
+
+0F-059
+[STYLE:RIGHT]Hey![BR]
+[PAUSE:0A]Aren't you, um, Mario!?[BR]
+{Func_04}[WAIT][NEXT]
+You just saved me like a hero![BR]
+You're a hero, aren't ya?[BR]
+You're the coolest!!![BR]
+[WAIT][NEXT]
+You saved me from the mean guy[BR]
+who laughed like, "Wee hee hee!"[WAIT][END]
+
+0F-05A
+[STYLE:RIGHT]I gotta make it up to you![BR]
+[PAUSE:0A]I'll go with you, Mario, OK?[BR]
+[WAIT][NEXT]
+I heard the, um, Shy Guys saying[BR]
+[PAUSE:0A]that you're trying to save [BR]
+Princess Peach from Bowser.[BR]
+{Func_04}[WAIT][NEXT]
+You're super great![BR]
+[PAUSE:0A]You're the greatest great guy![BR]
+[PAUSE:0A]I think you're the best![BR]
+[WAIT][NEXT]
+So, um, I really want to help.[BR]
+[PAUSE:0A]I'll be good, really![WAIT][END]
+
+0F-05B
+[STYLE:RIGHT]Ooh, it's pretty dark, huh?[BR]
+[PAUSE:0A]I kinda like the dark...[BR]
+[WAIT][NEXT]
+But, um, now I can show you how[BR]
+helpful I can be, OK? [BR]
+[WAIT][NEXT]
+Use my power, OK?[WAIT][END]
+
+0F-05C
+[STYLE:RIGHT]Wow, pretty cool, huh?[BR]
+[PAUSE:0A]Look! It's so bright now![BR]
+[PAUSE:0A]Tee hee hee...[BR]
+[WAIT][NEXT]
+I bet nobody else can help out[BR]
+like that, huh? Can they?[BR]
+[WAIT][NEXT]
+Nope! Now! {StartFX:Shrinking}Let's go![BR]
+{EndFX:Shrinking}[PAUSE:05]Hm hee hee hee...[WAIT][END]
+
+0F-05D
+{InputOff}[STYLE:RIGHT]{StartFX:Wavy}Run! Run for it!![BR]
+[PAUSE:0F][END]
+
+0F-05E
+{InputOff}[STYLE:RIGHT]{StartFX:Wavy}Waaah! Help me!![BR]
+[PAUSE:0F][END]
+
+0F-05F
+[STYLE:RIGHT]So, you came, did you?[WAIT][END]
+
+0F-060
+[STYLE:RIGHT]I'm General Guy.[BR]
+[PAUSE:0A]We're following the orders of[BR]
+King Bowser by guarding a Star[BR]
+Spirit.[BR]
+[WAIT][NEXT]
+As long as we keep it secure, we[BR]
+have permission to do whatever[BR]
+we want. You hear!?[WAIT][END]
+
+0F-061
+[STYLE:RIGHT]I don't care for you, sir. You[BR]
+are rude, and furthermore,[BR]
+you're trespassing in here.[BR]
+[WAIT][NEXT]
+Our Toy Box is off limits to the[BR]
+likes of you![BR]
+[PAUSE:0A]The treasures inside this box[BR]
+are for Shy Guys only![BR]
+[WAIT][NEXT]
+And that Star Spirit's fate is[BR]
+none of your business![WAIT][END]
+
+0F-062
+[STYLE:RIGHT]Prepare to fight me, sir![WAIT][END]
+
+0F-063
+[STYLE:RIGHT]{Down:0A}{Size:20:20}{StartFX:Wavy}Taste defeat![WAIT][END]
+
+0F-064
+[STYLE:RIGHT]{Down:0A}{Size:20:20}{StartFX:Shrinking}{StartFX:Jitter}Charge!![WAIT][END]
+
+0F-065
+[STYLE:RIGHT]OK, guys! All together now![BR]
+[PAUSE:0A]Let's rush him![BR]
+[WAIT][NEXT]
+{Func_04}{StartFX:Wavy}Chaaaaarge!!![BR]
+{EndFX:Wavy}[WAIT][END]
+
+0F-066
+[STYLE:RIGHT]We're gonna lose!![BR]
+[PAUSE:0A]Oh, no! We've gotta run!!![WAIT][END]
+
+0F-067
+[STYLE:RIGHT]Wait! Stand your ground, men![BR]
+[PAUSE:0A]Now's no time for cowards![BR]
+[WAIT][NEXT]
+I will not abide deserters![BR]
+{Func_04}[PAUSE:28][END]
+
+0F-068
+[STYLE:RIGHT]Wait! Stand your ground, men![BR]
+[PAUSE:0A]Now's no time for cowards![BR]
+[WAIT][NEXT]
+I will not abide deserters![BR]
+{Func_04}[PAUSE:28][END]
+
+0F-069
+[STYLE:RIGHT]Mercy, he beat 'em all up![BR]
+[PAUSE:0A]That surely isn't good...[BR]
+[WAIT][NEXT]
+Guess it's up to me![WAIT][END]
+
+0F-06A
+[STYLE:RIGHT]You men make me sick![BR]
+[PAUSE:0A]We must protect the Toy Box![BR]
+[PAUSE:0A]Am I the only one with guts?[WAIT][END]
+
+0F-06B
+[STYLE:RIGHT]Mario! You, sir, will pay![BR]
+[PAUSE:0A]You beat my infantry, [BR]
+[WAIT][NEXT]
+but that's all you'll do![BR]
+[WAIT][NEXT]
+Prepare for the next wave![WAIT][END]
+
+0F-06C
+[STYLE:RIGHT]Go! Attack, Stilt Guys![BR]
+Fight! Fight! Fight![WAIT][END]
+
+0F-06D
+[STYLE:RIGHT]{StartFX:Wavy}{StartFX:Shrinking}Yes, sir! Right away, sir![BR]
+{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END]
+
+0F-06E
+[STYLE:RIGHT]{StartFX:Wavy}Grrrrrrrrr!!!![BR]
+{EndFX:Wavy}Unbelievable!![BR]
+[WAIT][NEXT]
+I guess it's time for my special[BR]
+battalion...[WAIT][END]
+
+0F-06F
+[STYLE:RIGHT]{StartFX:Wavy}Ho ho ho ho ho ho!![BR]
+{EndFX:Wavy}[PAUSE:14]I pity you, sir!![BR]
+[PAUSE:0A]It's time you paid, Mario![BR]
+[WAIT][NEXT]
+Attaaaaaaaack![WAIT][END]
+
+0F-070
+[STYLE:RIGHT]{StartFX:Wavy}{StartFX:Shrinking}Yes, sir!!!!![BR]
+{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END]
+
+0F-071
+[STYLE:RIGHT]............[BR]
+[WAIT][NEXT]
+{Func_04}Gah! Grrrr...![BR]
+[PAUSE:0A]Fine! I'll beat you myself![BR]
+[WAIT][NEXT]
+Nobody embarrasses the brave[BR]
+Shy Guys of my army! Nobody![WAIT][END]
+
+0F-072
+[STYLE:RIGHT]Grrrr![BR]
+[WAIT][NEXT]
+My high-tech tank defenses[BR]
+don't seem to stand up to that[BR]
+electric attack![BR]
+[WAIT][NEXT]
+Quit doing that![BR]
+[PAUSE:0A]It's...it's too powerful! You're[BR]
+breaking the rules of war![WAIT][END]
+
+0F-073
+[STYLE:RIGHT]Grrrr!!!!![BR]
+[WAIT][NEXT]
+Stop it!! That's unfair![BR]
+[PAUSE:0A]You're going to go and break my[BR]
+extremely expensive tank![BR]
+[WAIT][NEXT]
+I'm serious! Quit that attack![BR]
+[PAUSE:0A]It's...it's too powerful! You're[BR]
+breaking the rules of war![WAIT][END]
+
+0F-074
+[STYLE:RIGHT]Grrrrrrrr!!!!!!!![BR]
+[WAIT][NEXT]
+That hurt!![BR]
+[PAUSE:0A]Where'd you learn to fight?[BR]
+[WAIT][NEXT]
+You must be cheating![WAIT][END]
+
+0F-075
+[STYLE:RIGHT]Yay! Yippeeee!![BR]
+[PAUSE:0A]We beat the Shy Guys![BR]
+[PAUSE:0A]Hm hm hee hee hee!!![BR]
+[WAIT][NEXT]
+You weren't so tough, you silly[BR]
+old Shy Guys![BR]
+[WAIT][NEXT]
+I beat 'em up![BR]
+[PAUSE:0A]... Didn't I, Mario?[WAIT][END]
+

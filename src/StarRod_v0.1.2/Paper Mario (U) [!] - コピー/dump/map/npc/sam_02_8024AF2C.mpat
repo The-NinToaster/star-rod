@@ -1,0 +1,52 @@
+% automatically dumped from map sam_02
+
+#new:Npc $sam_02_8024AF2C
+00000002 $NpcSettings_80246B08_sam_02 00000000 00000000 00000000 
+00400C09 $Script_Init_8024A254_sam_02 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009A0001 009A0002 009A0003 009A0003 009A0001 009A0001 009A0001 009A0001 
+009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 
+00000000 00000000 00000000 001A00ED % These penguins love rumors. They gather together j ...
+
+#new:NpcSettings $NpcSettings_80246B08_sam_02
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802496B4_sam_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000003F 
+   18:  		Switch  *MapVar[0] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120071 ) % Starborn Valley and Shiver Mountain are both near  ...
+   50:  				Set  *MapVar[0]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120072 ) % Starborn Valley and Shiver Mountain are both near  ...
+   8C:  				Set  *MapVar[0]  00000000 
+   9C:  		EndSwitch
+   A4:  	Case  <  00000043 
+   B0:  	Case  <  00000057 
+   BC:  		Switch  *MapVar[0] 
+   C8:  			Case  ==  00000000 
+   D4:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120073 ) % It's really rare that we get visitors from other t ...
+   F4:  				Set  *MapVar[0]  00000001 
+  104:  			Case  ==  00000001 
+  110:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120074 ) % It's really rare that we get visitors from other t ...
+  130:  				Set  *MapVar[0]  00000000 
+  140:  		EndSwitch
+  148:  	Case  >=  00000057 
+  154:  		Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120075 ) % Your visit here will go down as one of the most im ...
+  174:  EndSwitch
+  17C:  Return
+  184:  End
+
+#new:Script $Script_Init_8024A254_sam_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802496B4_sam_02 )
+   14:  Return
+   1C:  End
+

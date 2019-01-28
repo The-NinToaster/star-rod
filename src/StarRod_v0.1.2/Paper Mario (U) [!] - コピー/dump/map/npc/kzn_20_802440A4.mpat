@@ -1,0 +1,205 @@
+% automatically dumped from map kzn_20
+
+#new:Npc $kzn_20_802440A4
+00000001 $NpcSettings_802416FC_kzn_20 00000000 00000000 00000000 
+00400001 $Script_Init_80243E38_kzn_20 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00160001 00160001 00160001 00160001 00160001 00160001 00160001 00160001 
+00160000 00160001 00160001 00160001 00160001 00160001 00160001 00160001 
+00000000 00000000 00000000 001A000B % She's the Star Spirit, Misstar. She was imprisoned ...
+
+#new:Function $Function_80240A8C_kzn_20
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  LAH       A2, 8015A552
+   14:  JAL       {Func:SetVariable}
+   18:  LW        A1, 0 (V0)
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_802416FC_kzn_20
+00000000 001A0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:VectorList $VectorList_80243420_kzn_20
+% {Path3f:Path_80243420}
+-120.000000 70.000000 45.000000
+-75.000000 80.000000 90.000000
+-10.000000 115.000000 90.000000
+10.000000 180.000000 70.000000
+50.000000 210.000000 30.000000
+100.000000 160.000000 0.000000
+
+#new:VectorList $VectorList_80243468_kzn_20
+% {Path3f:Path_80243468}
+145.000000 195.000000 -10.000000
+100.000000 190.000000 -90.000000
+80.000000 180.000000 -60.000000
+115.000000 175.000000 -40.000000
+165.000000 170.000000 -10.000000
+230.000000 170.000000 -20.000000
+270.000000 175.000000 -30.000000
+
+#new:Script $Script_802434BC_kzn_20
+    0:  If  *AreaFlag[009]  ==  00000000 
+   10:  	Call     SetNpcPos   	( .Npc:Self FFFFFF88 00000046 0000002D )
+   2C:  	Wait     0000001E 
+   38:  	Set  *AreaFlag[009]  00000001 
+   48:  	Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+   60:  	Call     LoadPath    	( 0000003C $VectorList_80243420_kzn_20 00000006 00000000 )
+   7C:  	Loop     
+   88:  		Call     GetNextPathPos ( )
+   94:  		Call     SetNpcPos   	( .Npc:Self *Var[1] *Var[2] *Var[3] )
+   B0:  		Wait     00000001 
+   BC:  		If  *Var[0]  !=  00000001 
+   CC:  			BreakLoop
+   D4:  		EndIf
+   DC:  	EndLoop
+   E4:  	Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+   FC:  EndIf
+  104:  Label    00000000 
+  110:  Call     $Function_80240A8C_kzn_20 ( *Var[0] )
+  120:  If  *Var[0]  !=  00000013 
+  130:  	Wait     00000001 
+  13C:  	Goto     00000000 
+  148:  EndIf
+  150:  Call     DisablePlayerInput 	( .True )
+  160:  Wait     0000000A 
+  16C:  Thread
+  174:  	Wait     0000000A 
+  180:  	Call     SetPlayerSpeed ( *Fixed[2.0] )
+  190:  	Call     MovePlayerTo 	( 0000003C 00000000 00000000 )
+  1A8:  EndThread
+  1B0:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  1CC:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  1E8:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  204:  Call     SetCamDistance ( .Default *Fixed[350.0] )
+  218:  Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  22C:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  244:  Set  *AreaFlag[00B]  00000000 
+  254:  Set  *MapVar[D]  0000000F 
+  264:  Label    0000000A 
+  270:  Switch  *MapVar[D] 
+  27C:  	Case  ==  00000014 
+  288:  		Set  *AreaFlag[00A]  00000000 
+  298:  		Thread
+  2A0:  			Wait     0000001E 
+  2AC:  			Set  *MapVar[D]  00000019 
+  2BC:  		EndThread
+  2C4:  		Set  *AreaFlag[00A]  00000001 
+  2D4:  	Case  ==  0000001E 
+  2E0:  		Thread
+  2E8:  			Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  300:  			Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  31C:  			Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  338:  			Call     SetCamDistance ( .Default *Fixed[350.0] )
+  34C:  			Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  360:  			Call     PanToTarget 	( .Default 00000000 00000001 )
+  378:  			Call     WaitForCam  	( .Default *Fixed[1.0] )
+  38C:  			Set  *MapVar[D]  0000001F 
+  39C:  		EndThread
+  3A4:  		Wait     0000000A 
+  3B0:  		Call     SayMessage0 	( .Npc:Self 00160009 00160008 00000005 0010010E ) % No! Wait!
+  3D0:  		Label    0000001E 
+  3DC:  		If  *MapVar[D]  ==  0000001E 
+  3EC:  			Wait     00000001 
+  3F8:  			Goto     0000001E 
+  404:  		EndIf
+  40C:  		Set  *MapVar[D]  00000023 
+  41C:  	Case  ==  00000028 
+  428:  		Call     SayMessage0 	( .Npc:Self 00160009 00160008 00000000 00100111 ) % Mario! This volcano is going to erupt any time now ...
+  448:  		Set  *MapVar[D]  0000002D 
+  458:  	Case  ==  00000032 
+  464:  		Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+  47C:  		Wait     0000000F 
+  488:  		Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+  4A0:  		Wait     0000000F 
+  4AC:  		Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+  4C4:  		Wait     0000000F 
+  4D0:  		Call     SetNpcSpeed 	( .Npc:Self *Fixed[3.0] )
+  4E4:  		Call     MoveNpcTo   	( .Npc:Self 00000091 FFFFFFF6 00000000 )
+  500:  		Call     PlaySoundAtNpc ( .Npc:Self 00000262 00000000 )
+  518:  		Call     ShowEmote   	( .Npc:Self .Emote:Exclamation 00000000 0000000F 00000001 00000000 00000000 00000000 00000000 )
+  548:  		Wait     00000014 
+  554:  		Call     SetNpcRotation ( .Npc:Self 00000000 FFFFFFE2 00000000 )
+  570:  		Call     SetNpcAnimation 	( .Npc:Self 00160007 )
+  584:  		Call     SetNpcJumpscale 	( .Npc:Self 00000000 )
+  598:  		Call     NpcJump0    	( .Npc:Self 000000AA 000000AA 00000032 00000014 )
+  5B8:  		Wait     00000005 
+  5C4:  		Call     SetNpcRotation ( .Npc:Self 00000000 FFFFFFC4 00000000 )
+  5E0:  		Call     SetNpcYaw   	( .Npc:Self 0000010E )
+  5F4:  		Call     NpcJump0    	( .Npc:Self 00000091 000000AA FFFFFFF6 0000000F )
+  614:  		Wait     0000000A 
+  620:  		Call     SetNpcAnimation 	( .Npc:Self 00160008 )
+  634:  		Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000000 )
+  650:  		Call     NpcJump1    	( .Npc:Self 00000091 000000A0 FFFFFFF6 00000005 )
+  670:  		Call     SayMessage0 	( .Npc:Self 00160009 00160008 00000000 00100112 ) % I feel a slight wind coming from this cracked wall ...
+  690:  		Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  6A4:  		Set  *MapVar[D]  FFFFFFFF 
+  6B4:  EndSwitch
+  6BC:  If  *MapVar[D]  !=  FFFFFFFF 
+  6CC:  	Wait     00000001 
+  6D8:  	Goto     0000000A 
+  6E4:  EndIf
+  6EC:  Call     DisablePlayerInput 	( .False )
+  6FC:  Label    0000005A 
+  708:  If  *StoryProgress  <  00000025 
+  718:  	Wait     00000001 
+  724:  	Goto     0000005A 
+  730:  EndIf
+  738:  Call     DisablePlayerInput 	( .True )
+  748:  Wait     00000028 
+  754:  Call     ModifyColliderFlags 	( 00000000 {Collider:tt1} 7FFFFE00 )
+  76C:  Thread
+  774:  	Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  78C:  	Call     SetNpcAnimation 	( 00000000 00B60007 )
+  7A0:  	Call     SetNpcSpeed 	( 00000000 *Fixed[5.0] )
+  7B4:  	Call     MoveNpcTo   	( 00000000 00000131 00000000 00000000 )
+  7D0:  	Call     RemoveNpc   	( 00000000 )
+  7E0:  EndThread
+  7E8:  Wait     0000001E 
+  7F4:  Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+  80C:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[0.5] )
+  820:  Call     NpcJump0    	( .Npc:Self 00000091 000000C3 FFFFFFF6 00000005 )
+  840:  Wait     00000005 
+  84C:  Call     SayMessage0 	( .Npc:Self 00160005 00160008 00000000 00100115 ) % Mario, hurry! The lava is getting higher!
+  86C:  Wait     00000005 
+  878:  Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+  890:  Call     LoadPath    	( 0000001E $VectorList_80243468_kzn_20 00000007 00000000 )
+  8AC:  Label    0000005B 
+  8B8:  Call     GetNextPathPos ( )
+  8C4:  Call     SetNpcPos   	( .Npc:Self *Var[1] *Var[2] *Var[3] )
+  8E0:  Wait     00000001 
+  8EC:  If  *Var[0]  ==  00000001 
+  8FC:  	Goto     0000005B 
+  908:  EndIf
+  910:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  92C:  Call     DisablePlayerInput 	( .False )
+  93C:  Return
+  944:  End
+
+#new:Script $Script_80243E08_kzn_20
+    0:  Call     SayMessage0 	( .Npc:Self 00160009 00160008 00000000 00100114 ) % Now! Hurry! We must get out of here!
+   20:  Return
+   28:  End
+
+#new:Script $Script_Init_80243E38_kzn_20
+    0:  If  *StoryProgress  ==  00000024 
+   10:  	Call     SetNpcAnimation 	( .Npc:Self 00160008 )
+   24:  	Call     BindNpcIdle 	( .Npc:Self $Script_802434BC_kzn_20 )
+   38:  	Call     BindNpcInteract 	( .Npc:Self $Script_80243E08_kzn_20 )
+   4C:  Else
+   54:  	Call     RemoveNpc   	( .Npc:Self )
+   64:  EndIf
+   6C:  Return
+   74:  End
+

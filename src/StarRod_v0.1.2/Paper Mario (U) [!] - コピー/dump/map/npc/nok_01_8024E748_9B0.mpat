@@ -1,0 +1,131 @@
+% automatically dumped from map nok_01
+
+#new:Npc $nok_01_8024E748_9B0
+0000000E $NpcSettings_8024382C_nok_01 00000000 00000000 00000000 
+00002909 $Script_Init_8024D1AC_nok_01 00000000 00000000 00000106 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00910101 00910102 00910103 00910103 00910101 00910101 00910100 00910100 
+00910100 00910100 00910100 00910100 00910100 00910100 00910100 00910100 
+00000000 00000000 00000000 001A0072 % He's a Bob-omb. He used to be stuck in the jail at ...
+
+#new:Function $Function_802426A4_nok_01
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 18 (SP)
+   10:  SW        S0, 10 (SP)
+   14:  SDC1      F22, 28 (SP)
+   18:  SDC1      F20, 20 (SP)
+   1C:  LW        S0, C (S1)
+   20:  LW        A1, 0 (S0)
+   24:  JAL       {Func:GetVariable}
+   28:  ADDIU     S0, S0, 4
+   2C:  LW        A1, 0 (S0)
+   30:  ADDIU     S0, S0, 4
+   34:  MTC1      V0, F22
+   38:  NOP
+   3C:  CVT.S.W   F22, F22
+   40:  JAL       {Func:GetVariable}
+   44:  DADDU     A0, S1, R0
+   48:  LW        A1, 0 (S0)
+   4C:  MTC1      V0, F20
+   50:  NOP
+   54:  CVT.S.W   F20, F20
+   58:  JAL       {Func:GetVariable}
+   5C:  DADDU     A0, S1, R0
+   60:  LIF       F0, 15.0
+   68:  MTC1      V0, F2
+   6C:  NOP
+   70:  CVT.S.W   F2, F2
+   74:  ADD.S     F20, F20, F0
+   78:  MFC1      A1, F22
+   7C:  MFC1      A3, F2
+   80:  MFC1      A2, F20
+   84:  JAL       800701F0
+   88:  DADDU     A0, R0, R0
+   8C:  DADDU     A0, R0, R0
+   90:  DADDU     A1, A0, R0
+   94:  JAL       802CB56C
+   98:  ADDIU     A2, R0, 14
+   9C:  LW        RA, 18 (SP)
+   A0:  LW        S1, 14 (SP)
+   A4:  LW        S0, 10 (SP)
+   A8:  LDC1      F22, 28 (SP)
+   AC:  LDC1      F20, 20 (SP)
+   B0:  ADDIU     V0, R0, 2
+   B4:  JR        RA
+   B8:  ADDIU     SP, SP, 30
+
+#new:NpcSettings $NpcSettings_8024382C_nok_01
+00000000 00170014 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_8024CD08_nok_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000007 
+   18:  		If  *AreaFlag[00E]  ==  00000000 
+   28:  			Set  *AreaFlag[00E]  00000001 
+   38:  			Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+   4C:  			Call     NpcFacePlayer 	( 0000000C 00000000 )
+   60:  			Call     NpcFacePlayer 	( 0000000D 00000000 )
+   74:  			Call     SayMessage0 	( .Npc:Self 00910104 00910101 00000000 000C004E ) % Thank you, thank you, thank you! Way to beat the K ...
+   94:  			Call     PlayerFaceNpc 	( 0000000C 00000000 )
+   A8:  			Call     SayMessage0 	( 0000000C 00910104 00910101 00000000 000C004F ) % I feel...so very happy... ...surrounded by friends ...
+   C8:  			Call     PlayerFaceNpc 	( 0000000D 00000000 )
+   DC:  			Call     SayMessage0 	( 0000000D 00910104 00910101 00000000 000C0050 ) % We salute you! Buh-bomb!
+   FC:  			Thread
+  104:  				Call     SetNpcAnimation 	( 0000000D 00910103 )
+  118:  				Wait     0000000A 
+  124:  				Call     SetNpcAnimation 	( 0000000D 00910101 )
+  138:  				Wait     00000003 
+  144:  				Call     GetNpcPos   	( 0000000D *Var[0] *Var[1] *Var[2] )
+  160:  				Call     PlaySoundAtNpc ( 0000000D 00002016 00000000 )
+  178:  				Call     $Function_802426A4_nok_01 ( *Var[0] *Var[1] *Var[2] )
+  190:  			EndThread
+  198:  			Wait     00000014 
+  1A4:  			Thread
+  1AC:  				Call     PlayerFaceNpc 	( 0000000C 00000000 )
+  1C0:  				Call     SetNpcAnimation 	( 0000000C 00910103 )
+  1D4:  				Wait     0000000A 
+  1E0:  				Call     SetNpcAnimation 	( 0000000C 00910101 )
+  1F4:  				Wait     00000003 
+  200:  				Call     GetNpcPos   	( 0000000C *Var[0] *Var[1] *Var[2] )
+  21C:  				Call     PlaySoundAtNpc ( 0000000C 00002016 00000000 )
+  234:  				Call     $Function_802426A4_nok_01 ( *Var[0] *Var[1] *Var[2] )
+  24C:  			EndThread
+  254:  			Wait     00000014 
+  260:  			Thread
+  268:  				Call     PlayerFaceNpc 	( .Npc:Self 00000000 )
+  27C:  				Call     SetNpcAnimation 	( .Npc:Self 00910103 )
+  290:  				Wait     0000000A 
+  29C:  				Call     SetNpcAnimation 	( .Npc:Self 00910101 )
+  2B0:  				Wait     00000003 
+  2BC:  				Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  2D8:  				Call     PlaySoundAtNpc ( .Npc:Self 00002016 00000000 )
+  2F0:  				Call     $Function_802426A4_nok_01 ( *Var[0] *Var[1] *Var[2] )
+  308:  			EndThread
+  310:  		Else
+  318:  			Call     SayMessage0 	( .Npc:Self 00910104 00910101 00000000 000C0051 ) % Some of our other friends who were also in the for ...
+  338:  		EndIf
+  340:  	Case  <  00000059 
+  34C:  		Call     SayMessage0 	( .Npc:Self 00910104 00910101 00000000 000C0052 ) % Oh, yeah... the air out here is so wonderfully cle ...
+  36C:  	Case  >=  00000059 
+  378:  		Call     SayMessage0 	( .Npc:Self 00910104 00910101 00000000 000C0053 ) % It's not fair that bad guys' wishes always come tr ...
+  398:  EndSwitch
+  3A0:  Return
+  3A8:  End
+
+#new:Script $Script_Init_8024D1AC_nok_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024CD08_nok_01 )
+   14:  If  *StoryProgress  <  FFFFFFB5 
+   24:  	Call     RemoveNpc   	( .Npc:Self )
+   34:  EndIf
+   3C:  Return
+   44:  End
+

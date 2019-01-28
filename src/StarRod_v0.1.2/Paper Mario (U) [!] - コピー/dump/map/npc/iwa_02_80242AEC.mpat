@@ -1,0 +1,87 @@
+% automatically dumped from map iwa_02
+
+#new:Npc $iwa_02_80242AEC
+00000005 $NpcSettings_80241D7C_iwa_02 00000000 00000000 00000000 
+00000801 $Script_Init_80242A70_iwa_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00990102 0099010E 0099010E 00990102 00990102 00990102 00990102 00990102 
+00990102 00990102 00990102 00990102 00990102 00990102 00990102 00990102 
+00000000 00000000 00000000 001A0088 % Oh! A Bub-ulb. I don't know why, but they give out ...
+
+#new:Script $Script_80241D6C_iwa_02
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_80241D7C_iwa_02
+00000000 002A001A $Script_80241D6C_iwa_02 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241DAC_iwa_02
+    0:  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+   18:  Return
+   20:  Return
+   28:  End
+
+#new:Script $Script_802427BC_iwa_02
+    0:  If  *AreaFlag[001]  ==  00000000 
+   10:  	Set  *Var[2]  *Var[0] 
+   20:  	Set  *AreaFlag[001]  00000001 
+   30:  Else
+   38:  	Set  *Var[2]  *Var[1] 
+   48:  	Set  *AreaFlag[001]  00000000 
+   58:  EndIf
+   60:  Call     SayMessage0 	( 00000005 00990103 00990102 00000000 *Var[2] ) % variable string ID
+   80:  Return
+   88:  End
+
+#new:Script $Script_8024284C_iwa_02
+    0:  If  *Flag_IWA_1E  ==  00000000 
+   10:  	Call     PlaySoundAtNpc ( .Npc:Self 00000321 00000000 )
+   28:  	Call     PlaySoundAtNpc ( .Npc:Self 00000323 00000000 )
+   40:  	Call     SetNpcAnimation 	( .Npc:Self 00990105 )
+   54:  	Wait     0000002D 
+   60:  	Call     SetNpcAnimation 	( .Npc:Self 00990102 )
+   74:  	Call     802CDF8C ( FFFFFFFF 0000002D 0000001A )
+   8C:  	Call     UseSettings 	( .Default *Fixed[10.0] 00000000 0000015E *Fixed[15.0] *Fixed[-6.5] )
+   B0:  	Call     SayMessage0 	( .Npc:Self 00990103 00990102 00000000 000D001F ) % Huh...? You're talking to me? I don't see anyone e ...
+   D0:  	Set  *Var[0]  0000002C 
+   E0:  	Set  *Var[1]  00000001 
+   F0:  	ExecWait $Script_80241DAC_iwa_02 
+   FC:  	Call     AddKeyItem  	( .Item:MagicalSeed2 )
+  10C:  	Call     SayMessage0 	( .Npc:Self 00990103 00990102 00000000 000D0020 ) % Please grow my Seed with care. It'll help you one  ...
+  12C:  	Call     ResetCam    	( .Default *Fixed[10.0] )
+  140:  	Set  *Flag_IWA_1E  00000001 
+  150:  	Call     80045A58 ( 00000005 001A0088 )
+  164:  Else
+  16C:  	Switch  *StoryProgress 
+  178:  		Case  <  FFFFFFF1 
+  184:  			Set  *Var[0]  000D0021 
+  194:  			Set  *Var[1]  000D0022 
+  1A4:  		Case  <  00000020 
+  1B0:  			Set  *Var[0]  000D0023 
+  1C0:  			Set  *Var[1]  000D0024 
+  1D0:  		Default
+  1D8:  			Set  *Var[0]  000D0025 
+  1E8:  			Set  *Var[1]  000D0026 
+  1F8:  	EndSwitch
+  200:  	ExecWait $Script_802427BC_iwa_02 
+  20C:  EndIf
+  214:  Return
+  21C:  End
+
+#new:Script $Script_Init_80242A70_iwa_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024284C_iwa_02 )
+   14:  If  *Flag_IWA_1E  ==  00000000 
+   24:  	Call     802CDF8C ( FFFFFFFF 00000019 00000019 )
+   3C:  	Call     SetNpcAnimation 	( .Npc:Self 00990107 )
+   50:  	Call     80045A58 ( 00000005 001A0087 )
+   64:  EndIf
+   6C:  Return
+   74:  End
+

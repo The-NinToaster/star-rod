@@ -1,0 +1,78 @@
+% automatically dumped from map sam_11
+
+#new:Npc $sam_11_80249990_1F0
+00000004 $NpcSettings_80244E70_sam_11 00000000 00000000 00000000 
+00400C09 $Script_Init_80248C14_sam_11 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000032 00000000 FFFF8001 00000000 FFFFFFC7 
+0000000A FFFFFF3E 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009A0001 009A0002 009A0003 009A0003 009A0001 009A0001 009A0001 009A0001 
+009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 
+00000000 00000000 00000000 001A00F7 % This penguin likes skating, but he likes rumors ev ...
+
+#new:AISettings $AISettings_80244E20_sam_11
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80244E50_sam_11
+    0:  Call     DoBasicAI   	( $AISettings_80244E20_sam_11 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80244E70_sam_11
+00000000 00180018 00000000 00000000 $Script_NpcAI_80244E50_sam_11 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80248008_sam_11
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000003F 
+   18:  		Switch  *MapVar[1] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012009B ) % I really love sliding around in the snow. Pingy, p ...
+   50:  				Set  *MapVar[1]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012009C ) % I really love sliding around in the snow. Pingy, p ...
+   8C:  				Set  *MapVar[1]  00000000 
+   9C:  		EndSwitch
+   A4:  	Case  <  00000043 
+   B0:  	Case  <  00000057 
+   BC:  		Switch  *MapVar[1] 
+   C8:  			Case  ==  00000000 
+   D4:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012009D ) % Boy, thank goodness the Mayor turned out to be all ...
+   F4:  				Set  *MapVar[1]  00000001 
+  104:  			Case  ==  00000001 
+  110:  				Call     SayMessage0 	( .Npc:Self 009A0005 009A0001 00000000 0012009E ) % Boy, thank goodness the Mayor turned out to be all ...
+  130:  				Set  *MapVar[1]  00000000 
+  140:  		EndSwitch
+  148:  	Case  >=  00000057 
+  154:  		Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012009F ) % We never have problems in Shiver City anymore. We  ...
+  174:  EndSwitch
+  17C:  Return
+  184:  End
+
+#new:Script $Script_Init_80248C14_sam_11
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80248008_sam_11 )
+   14:  Switch  *StoryProgress 
+   20:  	Case  <  0000003F 
+   2C:  	Default
+   34:  		If  *Flag_SAM_22  ==  00000000 
+   44:  			Call     RemoveNpc   	( .Npc:Self )
+   54:  		EndIf
+   5C:  EndSwitch
+   64:  Return
+   6C:  End
+

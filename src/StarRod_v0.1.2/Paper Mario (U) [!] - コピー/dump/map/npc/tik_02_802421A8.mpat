@@ -1,0 +1,150 @@
+% automatically dumped from map tik_02
+
+#new:Npc $tik_02_802421A8
+00000000 $NpcSettings_80241B80_tik_02 00000000 00000000 00000000 
+00840D0D $Script_Init_8024207C_tik_02 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 
+0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 0050000C 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240940_tik_02
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 14 (SP)
+    8:  SW        S0, 10 (SP)
+    C:  LW        V0, C (A0)
+   10:  LW        A1, 0 (V0)
+   14:  JAL       {Func:GetVariable}
+   18:  LW        S0, 148 (A0)
+   1C:  LB        V1, 4 (S0)
+   20:  SLL       V0, V0, 2
+   24:  SLL       V1, V1, 2
+   28:  LTW       A0, V1 (800B0F38)
+   34:  LTHU      V1, V0 ($ShortTable_80241BAC_tik_02[2])
+   40:  SH        V1, 44 (A0)
+   44:  LW        RA, 14 (SP)
+   48:  LW        S0, 10 (SP)
+   4C:  ADDIU     V0, R0, 2
+   50:  JR        RA
+   54:  ADDIU     SP, SP, 18
+
+#new:Script $Script_802409F0_tik_02
+    0:  Call     SetMusicTrack 	( 00000000 .Song:ToadTownTunnels 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:Script $Script_80240A1C_tik_02
+    0:  Call     SetMusicTrack 	( 00000000 .Song:BlooperTheme 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:NpcSettings $NpcSettings_80241B80_tik_02
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241BB8_tik_02
+    0:  Loop     
+    C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  	If  *Var[0]  >  00000041 
+   34:  		BreakLoop
+   3C:  	EndIf
+   44:  	Wait     00000001 
+   50:  EndLoop
+   58:  Call     DisablePlayerInput 	( .True )
+   68:  Exec     $Script_80240A1C_tik_02 
+   74:  Call     ShowMessage 	( 00080000 000000A0 00000028 ) % BLOOPER!
+   8C:  Thread
+   94:  	Call     InterpPlayerYaw 	( 0000013B 00000000 )
+   A8:  	Wait     00000032 
+   B4:  	Call     InterpPlayerYaw 	( 0000002D 00000000 )
+   C8:  EndThread
+   D0:  Call     UseSettingsFrom 	( .Default FFFFFFE7 *Var[1] *Var[2] )
+   EC:  Call     SetPanTarget 	( .Default FFFFFFE7 *Var[1] *Var[2] )
+  108:  Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  11C:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  134:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  148:  Wait     00000014 
+  154:  Thread
+  15C:  	Wait     0000000A 
+  168:  	Call     SetPanTarget 	( .Default 0000008C *Var[1] *Var[2] )
+  184:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  198:  EndThread
+  1A0:  Call     PlaySoundAtNpc ( .Npc:Self 000003DC 00000000 )
+  1B8:  Call     PlaySoundAtNpc ( .Npc:Self 000003E7 00000000 )
+  1D0:  Call     SetNpcPos   	( .Npc:Self FFFFFF9C FFFFFED4 FFFFFF88 )
+  1EC:  Call     SetNpcAnimation 	( .Npc:Self 00500001 )
+  200:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+  214:  Call     NpcJump0    	( .Npc:Self 000000AF 00000000 00000000 00000028 )
+  234:  Call     SetNpcAnimation 	( .Npc:Self 0050000C )
+  248:  Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[1.0] )
+  264:  Wait     0000000F 
+  270:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  280:  Return
+  288:  End
+
+#new:Script $Script_80241E48_tik_02
+    0:  Wait     00000005 
+    C:  Thread
+   14:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   2C:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   48:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+   5C:  EndThread
+   64:  Thread
+   6C:  	Call     SetNpcAnimation 	( .Npc:Self 00500004 )
+   80:  	Call     MakeLerp    	( 00000000 00000870 00000028 00000000 )
+   9C:  	Loop     
+   A8:  		Call     UpdateLerp  	( )
+   B4:  		Call     SetNpcRotation ( .Npc:Self 00000000 *Var[0] 00000000 )
+   D0:  		Call     PlayerFaceNpc 	( .Npc:Self 00000000 )
+   E4:  		Wait     00000001 
+   F0:  		If  *Var[1]  ==  00000000 
+  100:  			BreakLoop
+  108:  		EndIf
+  110:  	EndLoop
+  118:  EndThread
+  120:  Call     PlaySoundAtNpc ( .Npc:Self 000003DD 00000000 )
+  138:  Call     PlaySoundAtNpc ( .Npc:Self 000003E7 00000000 )
+  150:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+  164:  Call     NpcJump0    	( .Npc:Self FFFFFF9C FFFFFED4 FFFFFF88 00000028 )
+  184:  Wait     00000001 
+  190:  If  *Flag_TIK_27  ==  00000000 
+  1A0:  	Set  *Flag_TIK_27  00000001 
+  1B0:  Else
+  1B8:  	Set  *Flag_TIK_28  00000001 
+  1C8:  EndIf
+  1D0:  Set  *Flag_TIK_2A  00000001 
+  1E0:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  1F8:  Exec     $Script_802409F0_tik_02 
+  204:  Call     DisablePlayerInput 	( .False )
+  214:  Call     RemoveNpc   	( .Npc:Self )
+  224:  Return
+  22C:  End
+
+#new:Script $Script_Init_8024207C_tik_02
+    0:  If  *Flag_TIK_2A  ==  00000000 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_80241BB8_tik_02 )
+   24:  	Call     BindNpcDefeat 	( .Npc:Self $Script_80241E48_tik_02 )
+   38:  	If  *Flag_TIK_27  ==  00000000 
+   48:  		Call     SetNpcScale 	( .Npc:Self *Fixed[0.75] *Fixed[0.75] *Fixed[0.75] )
+   64:  		Call     $Function_80240940_tik_02 ( 00000000 )
+   74:  	Else
+   7C:  		If  *Flag_TIK_28  ==  00000000 
+   8C:  			Call     SetNpcScale 	( .Npc:Self *Fixed[1.25] *Fixed[1.25] *Fixed[1.25] )
+   A8:  			Call     $Function_80240940_tik_02 ( 00000001 )
+   B8:  		Else
+   C0:  			Call     SetNpcScale 	( .Npc:Self *Fixed[2.0] *Fixed[2.0] *Fixed[2.0] )
+   DC:  			Call     $Function_80240940_tik_02 ( 00000002 )
+   EC:  		EndIf
+   F4:  	EndIf
+   FC:  Else
+  104:  	Call     RemoveNpc   	( .Npc:Self )
+  114:  EndIf
+  11C:  Return
+  124:  End
+

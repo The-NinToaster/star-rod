@@ -1,0 +1,302 @@
+% automatically dumped from map mac_01
+
+#new:Npc $mac_01_80253488
+00000014 $NpcSettings_80248AC0_mac_01 00000000 00000000 00000000 
+00402D09 $Script_Init_80252E54_mac_01 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00650101 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 001A0027 % He's a funny color for a Toad. I've never seen him ...
+
+#new:NpcSettings $NpcSettings_80248AC0_mac_01
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80250DFC_mac_01
+    0:  Call     SetNpcVar   	( 00000000 00000000 00000000 )
+   18:  Call     802CF56C ( 00000002 )
+   28:  Thread
+   30:  	Call     SetNpcAnimation 	( 00000000 00A50002 )
+   44:  	Call     SetNpcSpeed 	( 00000000 *Fixed[4.0] )
+   58:  	Call     MoveNpcTo   	( 00000000 0000019A 00000000 00000000 )
+   74:  	Call     SetNpcAnimation 	( 00000000 00A50001 )
+   88:  	Call     InterpNpcYaw 	( 00000000 0000005A 00000000 )
+   A0:  EndThread
+   A8:  Call     SayMessage0 	( 00000014 00650104 00650101 00000000 00030029 ) % I told you that you can't pass!
+   C8:  Call     SayMessage0 	( 00000015 00650004 00650001 00000000 0003002A ) % Take off!
+   E8:  Loop     
+   F4:  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  110:  	If  *Var[0]  >=  0000019A 
+  120:  		BreakLoop
+  128:  	EndIf
+  130:  	Wait     00000001 
+  13C:  EndLoop
+  144:  Call     802CC3EC ( 00000000 *Fixed[4.0] 0000019A 00000000 00000000 00000140 0000000F FFFFFFFA )
+  170:  Thread
+  178:  	Wait     00000005 
+  184:  	Call     SetPlayerSpeed ( *Fixed[3.0] )
+  194:  	Call     MovePlayerTo 	( 000001CC 00000000 00000000 )
+  1AC:  	Call     PlayerFaceNpc 	( 00000000 00000000 )
+  1C0:  EndThread
+  1C8:  Call     SetNpcAnimation 	( 00000000 00A50001 )
+  1DC:  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 0003002B ) % Hmmmm! You aren't Toads, are you?!
+  1FC:  Call     SetPanTarget 	( .Default 000001E0 00000000 00000000 )
+  218:  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  22C:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  244:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  258:  Thread
+  260:  	Wait     00000005 
+  26C:  	Call     PlayerFaceNpc 	( 00000014 00000000 )
+  280:  EndThread
+  288:  Call     SayMessage0 	( 00000016 00650205 00650201 00000000 0003002C ) % ...Um...we don't know what you're talking about.
+  2A8:  Call     SayMessage0 	( 00000017 00650305 00650301 00000000 0003002D ) % Yeah, what gives? Ask anyone! We're just cute, ord ...
+  2C8:  Call     SetPanTarget 	( .Default 0000019A 00000000 00000000 )
+  2E4:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  2F8:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  310:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  324:  Thread
+  32C:  	Wait     00000005 
+  338:  	Call     PlayerFaceNpc 	( 00000000 00000000 )
+  34C:  EndThread
+  354:  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 0003002E ) % Reveal your true selves!
+  374:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  38C:  Call     SetCamSpeed 	( .Default *Fixed[5.0] )
+  3A0:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  3B4:  Call     PlaySoundAtNpc ( 00000000 00000209 00000000 )
+  3CC:  Call     SetNpcAnimation 	( 00000000 00A50008 )
+  3E0:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  3FC:  Add  *Var[1]  0000000A 
+  40C:  Call     PlayEffect  	( {FX:RadialFlowIn:YellowLines} *Var[0] *Var[1] *Var[2] 00000001 00000032 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  450:  Wait     0000003C 
+  45C:  Call     SetNpcAnimation 	( 00000000 00A5000A )
+  470:  Wait     00000005 
+  47C:  Call     PlayEffect  	( {FX:EnergyWaveOut:White} *Var[0] *Var[1] *Var[2] 00000001 00000014 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  4C0:  Add  *Var[1]  000000B4 
+  4D0:  Call     PlayerFaceNpc 	( 00000014 00000000 )
+  4E4:  Call     802CC3EC ( 00000000 *Fixed[4.0] 000001E0 00000000 00000000 00000140 0000000F FFFFFFFA )
+  510:  Call     802D5FF8 ( 00000052 00000000 )
+  524:  Thread
+  52C:  	Set  *MapFlag[14]  00000000 
+  53C:  	Wait     00000005 
+  548:  	Call     SayMessage0 	( 00000018 0066010B 0066010B 00000005 0003002F ) % Aaaaaaaaaaaaaargh!!!
+  568:  	Set  *MapFlag[14]  00000001 
+  578:  EndThread
+  580:  Thread
+  588:  	Call     PlaySoundAtNpc ( 00000014 0000020A 00000000 )
+  5A0:  	Call     GetNpcPos   	( 00000014 *Var[3] *Var[4] *Var[5] )
+  5BC:  	Add  *Var[5]  00000005 
+  5CC:  	Call     PlayEffect  	( {FX:Lightning} *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] *Var[5] 00000002 00000014 00000000 00000000 00000000 00000000 )
+  610:  	Call     PlayEffect  	( {FX:ShimmerBurst:Pink} *Var[3] *Var[4] *Var[5] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  654:  	Call     SetNpcAnimation 	( 00000014 00650106 )
+  668:  	Wait     00000005 
+  674:  	Call     PlaySoundAtNpc ( 00000014 00002049 00000000 )
+  68C:  	Call     GetNpcPos   	( 00000014 *Var[3] *Var[4] *Var[5] )
+  6A8:  	Call     SetNpcPos   	( 00000014 *Var[3] FFFFFC18 *Var[2] )
+  6C4:  	Call     SetNpcPos   	( 00000018 *Var[3] *Var[4] *Var[5] )
+  6E0:  	Call     SetNpcJumpscale 	( 00000018 *Fixed[1.0] )
+  6F4:  	Call     SetNpcAnimation 	( 00000018 0066010B )
+  708:  	Call     NpcJump0    	( 00000018 *Var[3] *Var[4] *Var[5] 0000000A )
+  728:  EndThread
+  730:  Thread
+  738:  	Wait     0000000A 
+  744:  	Call     PlaySoundAtNpc ( 00000014 0000020A 00000000 )
+  75C:  	Call     GetNpcPos   	( 00000015 *Var[3] *Var[4] *Var[5] )
+  778:  	Add  *Var[5]  00000005 
+  788:  	Call     PlayEffect  	( {FX:Lightning} *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] *Var[5] 00000002 00000014 00000000 00000000 00000000 00000000 )
+  7CC:  	Call     PlayEffect  	( {FX:ShimmerBurst:Pink} *Var[3] *Var[4] *Var[5] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  810:  	Call     SetNpcAnimation 	( 00000015 00650006 )
+  824:  	Wait     00000005 
+  830:  	Call     PlaySoundAtNpc ( 00000015 00002049 00000000 )
+  848:  	Call     GetNpcPos   	( 00000015 *Var[3] *Var[4] *Var[5] )
+  864:  	Call     SetNpcPos   	( 00000015 *Var[3] FFFFFC18 *Var[2] )
+  880:  	Call     SetNpcPos   	( 00000019 *Var[3] *Var[4] *Var[5] )
+  89C:  	Call     SetNpcJumpscale 	( 00000019 *Fixed[1.0] )
+  8B0:  	Call     SetNpcAnimation 	( 00000019 0066000B )
+  8C4:  	Call     NpcJump0    	( 00000019 *Var[3] *Var[4] *Var[5] 0000000A )
+  8E4:  EndThread
+  8EC:  Thread
+  8F4:  	Wait     00000014 
+  900:  	Call     PlaySoundAtNpc ( 00000014 0000020A 00000000 )
+  918:  	Call     GetNpcPos   	( 00000016 *Var[3] *Var[4] *Var[5] )
+  934:  	Add  *Var[5]  00000005 
+  944:  	Call     PlayEffect  	( {FX:Lightning} *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] *Var[5] 00000002 00000014 00000000 00000000 00000000 00000000 )
+  988:  	Call     PlayEffect  	( {FX:ShimmerBurst:Pink} *Var[3] *Var[4] *Var[5] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  9CC:  	Call     SetNpcAnimation 	( 00000016 00650206 )
+  9E0:  	Wait     00000005 
+  9EC:  	Call     PlaySoundAtNpc ( 00000016 00002049 00000000 )
+  A04:  	Call     GetNpcPos   	( 00000016 *Var[3] *Var[4] *Var[5] )
+  A20:  	Call     SetNpcPos   	( 00000016 *Var[3] FFFFFC18 *Var[2] )
+  A3C:  	Call     SetNpcPos   	( 0000001A *Var[3] *Var[4] *Var[5] )
+  A58:  	Call     SetNpcJumpscale 	( 0000001A *Fixed[1.0] )
+  A6C:  	Call     SetNpcAnimation 	( 0000001A 0066020B )
+  A80:  	Call     NpcJump0    	( 0000001A *Var[3] *Var[4] *Var[5] 0000000A )
+  AA0:  EndThread
+  AA8:  Wait     0000001E 
+  AB4:  Call     PlaySoundAtNpc ( 00000014 0000020A 00000000 )
+  ACC:  Call     GetNpcPos   	( 00000017 *Var[3] *Var[4] *Var[5] )
+  AE8:  Add  *Var[5]  00000005 
+  AF8:  Call     PlayEffect  	( {FX:Lightning} *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] *Var[5] 00000002 00000014 00000000 00000000 00000000 00000000 )
+  B3C:  Call     PlayEffect  	( {FX:ShimmerBurst:Pink} *Var[3] *Var[4] *Var[5] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  B80:  Call     SetNpcAnimation 	( 00000017 00650306 )
+  B94:  Wait     00000005 
+  BA0:  Call     PlaySoundAtNpc ( 00000017 00002049 00000000 )
+  BB8:  Call     GetNpcPos   	( 00000017 *Var[3] *Var[4] *Var[5] )
+  BD4:  Call     SetNpcPos   	( 00000017 *Var[3] FFFFFC18 *Var[2] )
+  BF0:  Call     SetNpcPos   	( 0000001B *Var[3] *Var[4] *Var[5] )
+  C0C:  Call     SetNpcJumpscale 	( 0000001B *Fixed[1.0] )
+  C20:  Call     SetNpcAnimation 	( 0000001B 0066030B )
+  C34:  Call     NpcJump0    	( 0000001B *Var[3] *Var[4] *Var[5] 0000000A )
+  C54:  Call     SetNpcAnimation 	( 00000000 00A50001 )
+  C68:  Loop     
+  C74:  	If  *MapFlag[14]  ==  00000001 
+  C84:  		BreakLoop
+  C8C:  	EndIf
+  C94:  	Wait     00000001 
+  CA0:  EndLoop
+  CA8:  Call     SetNpcAnimation 	( 00000018 00660104 )
+  CBC:  Call     SetNpcAnimation 	( 00000019 00660004 )
+  CD0:  Call     SetNpcAnimation 	( 0000001A 00660204 )
+  CE4:  Call     SetNpcAnimation 	( 0000001B 00660304 )
+  CF8:  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030030 ) % Hmph! Just as I thought. You're the Koopa Bros.!!
+  D18:  Wait     0000000A 
+  D24:  Call     SayMessage0 	( 00000018 00660114 00660104 00000000 00030031 ) % How... How'd you guess it was us? We were perfectl ...
+  D44:  Call     InterpNpcYaw 	( 00000018 0000005A 00000000 )
+  D5C:  Wait     0000000A 
+  D68:  Call     SayMessage0 	( 00000018 00660114 00660104 00000005 00030032 ) % Shucks! Black! Yellow! Green! We retreat!! ...for  ...
+  D88:  Call     InterpNpcYaw 	( 00000018 0000005A 00000000 )
+  DA0:  Call     InterpNpcYaw 	( 00000019 0000005A 00000000 )
+  DB8:  Call     InterpNpcYaw 	( 0000001A 0000005A 00000000 )
+  DD0:  Call     InterpNpcYaw 	( 0000001B 0000005A 00000000 )
+  DE8:  Call     SetNpcAnimation 	( 00000018 00660103 )
+  DFC:  Call     SetNpcAnimation 	( 00000019 00660003 )
+  E10:  Call     SetNpcAnimation 	( 0000001A 00660203 )
+  E24:  Call     SetNpcAnimation 	( 0000001B 00660303 )
+  E38:  Wait     0000000F 
+  E44:  Call     PlaySoundAtNpc ( 0000001A 00000174 00000000 )
+  E5C:  Thread
+  E64:  	Call     SetNpcSpeed 	( 00000018 *Fixed[8.0] )
+  E78:  	Call     MoveNpcTo   	( 00000018 000002BC 00000000 00000000 )
+  E94:  EndThread
+  E9C:  Thread
+  EA4:  	Call     SetNpcSpeed 	( 00000019 *Fixed[8.0] )
+  EB8:  	Call     MoveNpcTo   	( 00000019 000002BC 00000000 00000000 )
+  ED4:  EndThread
+  EDC:  Thread
+  EE4:  	Call     SetNpcSpeed 	( 0000001A *Fixed[8.0] )
+  EF8:  	Call     MoveNpcTo   	( 0000001A 000002BC 00000000 00000000 )
+  F14:  EndThread
+  F1C:  Wait     00000001 
+  F28:  Call     SetNpcSpeed 	( 0000001B *Fixed[8.0] )
+  F3C:  Call     MoveNpcTo   	( 0000001B 000002BC 00000000 00000000 )
+  F58:  Wait     0000000A 
+  F64:  Call     802D5FD8 ( )
+  F70:  Call     SetPanTarget 	( .Default 0000019A 00000000 00000000 )
+  F8C:  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  FA0:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  FB8:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  FCC:  Thread
+  FD4:  	Wait     00000003 
+  FE0:  	Call     PlayerFaceNpc 	( 00000000 00000000 )
+  FF4:  EndThread
+  FFC:  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030033 ) % Mario, those imposters were none other than the Ko ...
+ 101C:  Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+ 1030:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+ 104C:  Set  *Var[3]  *Var[0] 
+ 105C:  Add  *Var[3]  FFFFFFCE 
+ 106C:  Call     SetNpcAnimation 	( 00000000 00A50002 )
+ 1080:  Call     MoveNpcTo   	( 00000000 *Var[3] *Var[2] 00000000 )
+ 109C:  Call     SetNpcAnimation 	( 00000000 00A50001 )
+ 10B0:  Wait     0000000A 
+ 10BC:  Call     SetNpcAnimation 	( 00000000 00A50002 )
+ 10D0:  Call     MoveNpcTo   	( 00000000 *Var[0] *Var[2] 00000000 )
+ 10EC:  Call     SetNpcAnimation 	( 00000000 00A50001 )
+ 1100:  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030034 ) % Oh, Mario, there's one part of your fortune I have ...
+ 1120:  Thread
+ 1128:  	Wait     0000000A 
+ 1134:  	Call     ResetCam    	( .Default 00000002 )
+ 1148:  EndThread
+ 1150:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+ 116C:  Add  *Var[0]  FFFFFF6A 
+ 117C:  Call     SetNpcAnimation 	( 00000000 00A50002 )
+ 1190:  Call     MoveNpcTo   	( 00000000 *Var[0] *Var[2] 00000000 )
+ 11AC:  Call     SetNpcAnimation 	( 00000000 00A50001 )
+ 11C0:  Call     InterpNpcYaw 	( 00000000 00000085 00000000 )
+ 11D8:  Call     SetNpcPos   	( 00000000 FFFFFEAF 00000014 FFFFFE98 )
+ 11F4:  Call     ModifyColliderFlags 	( 00000001 {Collider:o335} 7FFFFE00 )
+ 120C:  Call     ModifyColliderFlags 	( 00000000 {Collider:o336} 7FFFFE00 )
+ 1224:  Call     ModifyColliderFlags 	( 00000000 {Collider:tt} 7FFFFE00 )
+ 123C:  Set  *StoryProgress  FFFFFF9C 
+ 124C:  Set  *AreaFlag[00E]  00000000 
+ 125C:  Set  *AreaFlag[00F]  00000000 
+ 126C:  Set  *AreaFlag[010]  00000000 
+ 127C:  Set  *AreaFlag[011]  00000000 
+ 128C:  Set  *AreaFlag[012]  00000000 
+ 129C:  Set  *AreaFlag[013]  00000000 
+ 12AC:  Set  *AreaFlag[014]  00000000 
+ 12BC:  Call     80044478 ( 00000018 )
+ 12CC:  Return
+ 12D4:  End
+
+#new:Script $Script_80252B60_mac_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF96 
+   18:  		Call     SayMessage0 	( 00000014 00650104 00650101 00000000 0003004D ) % It's dangerous out there. I wouldn't go.
+   38:  		Call     SayMessage0 	( 00000015 00650004 00650001 00000000 0003004E ) % Yeah, you shouldn't go.
+   58:  		Call     SayMessage0 	( 00000016 00650204 00650201 00000000 0003004F ) % Nope, no go.
+   78:  		Call     SayMessage0 	( 00000017 00650304 00650301 00000000 00030050 ) % Sorry, but no.
+   98:  	Case  <  FFFFFF9B 
+   A4:  		Call     UseSettings 	( .Default *Fixed[4.0] 00000000 0000012C *Fixed[15.0] *Fixed[-7.5] )
+   C8:  		Call     SayMessage0 	( 00000014 00650104 00650101 00000000 00030051 ) % You don't wanna go out there. It's way too dangero ...
+   E8:  		Call     SayMessage0 	( 00000015 00650004 00650001 00000000 00030052 ) % Going to Koopa Bros. Fortress would be a huge mist ...
+  108:  		Call     SayMessage0 	( 00000016 00650204 00650201 00000000 00030053 ) % Definitely. Definitely don't go.
+  128:  		Call     SayMessage0 	( 00000017 00650304 00650301 00000000 00030054 ) % Most of all, though, you shouldn't go ask old man  ...
+  148:  		Set  *Flag_MAC_7A  00000001 
+  158:  		Call     ResetCam    	( .Default 00000005 )
+  16C:  EndSwitch
+  174:  Return
+  17C:  End
+
+#new:Script $Script_80252CE4_mac_01
+    0:  Loop     
+    C:  	If  *StoryProgress  >=  FFFFFF9B 
+   1C:  		Set  *Var[0]  00000000 
+   2C:  		Call     GetPlayerPos 	( *Var[1] *Var[2] *Var[3] )
+   44:  		Switch  *Var[1] 
+   50:  			Case  >=  000001CC 
+   5C:  				Add  *Var[0]  00000001 
+   6C:  		EndSwitch
+   74:  		Switch  *Var[3] 
+   80:  			Case  FFFFFFCE  to  00000046 
+   90:  				Add  *Var[0]  00000001 
+   A0:  		EndSwitch
+   A8:  		If  *Var[0]  ==  00000002 
+   B8:  			BreakLoop
+   C0:  		EndIf
+   C8:  	EndIf
+   D0:  	Wait     00000001 
+   DC:  EndLoop
+   E4:  Loop     
+   F0:  	Call     802CFCA0 ( *Var[0] )
+  100:  	If  *Var[0]  ==  00000000 
+  110:  		BreakLoop
+  118:  	EndIf
+  120:  	Wait     00000001 
+  12C:  EndLoop
+  134:  Call     DisablePlayerInput 	( .True )
+  144:  ExecWait $Script_80250DFC_mac_01 
+  150:  Call     DisablePlayerInput 	( .False )
+  160:  Return
+  168:  End
+
+#new:Script $Script_Init_80252E54_mac_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80252B60_mac_01 )
+   14:  Call     BindNpcIdle 	( .Npc:Self $Script_80252CE4_mac_01 )
+   28:  Return
+   30:  End
+

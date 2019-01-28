@@ -1,0 +1,107 @@
+% automatically dumped from map mac_02
+
+#new:Npc $mac_02_8024DEC8
+0000000B $NpcSettings_80246090_mac_02 00000000 00000000 00000000 
+00002F09 $Script_Init_8024BA68_mac_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+003B0001 003B0002 003B0003 003B0003 003B0001 003B0001 003B000C 003B000C 
+003B0015 003B0012 003B0011 003B0010 003B0005 003B0001 003B0001 003B0001 
+00000000 00000000 $ExtraAnimationList_8024DEA8_mac_02 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80246090_mac_02
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024B5AC_mac_02
+    0:  Call     GetNpcPos   	( 0000000B *Var[2] *Var[3] *Var[4] )
+   1C:  Add  *Var[3]  00000014 
+   2C:  Call     MakeItemEntity ( .Item:FryingPan *Var[2] *Var[3] *Var[4] 00000001 00000000 )
+   50:  Set  *Var[9]  *Var[0] 
+   60:  Wait     00000001 
+   6C:  Loop     00000046 
+   78:  	Call     GetNpcPos   	( 0000000B *Var[2] *Var[3] *Var[4] )
+   94:  	Add  *Var[3]  00000014 
+   A4:  	Call     SetItemPos  	( *Var[9] *Var[2] *Var[3] *Var[4] )
+   C0:  	Wait     00000001 
+   CC:  EndLoop
+   D4:  Call     RemoveItemEntity 	( *Var[9] )
+   E4:  Return
+   EC:  End
+
+#new:Script $Script_8024B6A0_mac_02
+    0:  Loop     
+    C:  	Call     PlaySoundAtNpc ( 0000000B B0000021 00000000 )
+   24:  	Wait     00000002 
+   30:  EndLoop
+   38:  Return
+   40:  End
+
+#new:Script $Script_8024B6E8_mac_02
+    0:  Loop     
+    C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  	If  *Var[0]  <  00000028 
+   34:  		If  *Var[2]  <  000000B4 
+   44:  			BreakLoop
+   4C:  		EndIf
+   54:  	EndIf
+   5C:  	Wait     00000001 
+   68:  EndLoop
+   70:  Call     DisablePlayerInput 	( .True )
+   80:  Call     ShowMessage 	( 00040016 000000A0 00000028 ) % Oh-oh-oh-oh-oh... NO! My favorite Frying Pan!
+   98:  Call     802CC3EC ( 00000000 *Fixed[3.0] FFFFFF74 00000014 FFFFFF74 00000190 0000000F FFFFFFFA )
+   C4:  Call     SetNpcPos   	( 0000000B FFFFFF38 00000014 FFFFFEFC )
+   E0:  Call     SetNpcAnimation 	( 0000000B 003B0004 )
+   F4:  Wait     0000000A 
+  100:  Exec     $Script_8024B5AC_mac_02 
+  10C:  Thread
+  114:  	Call     EnableGroup 	( {Model:cook_in} .True )
+  128:  	Call     PlaySoundAtCollider 	( {Collider:deilit1u} 000001C1 00000000 )
+  140:  	Set  *Var[0]  00000000 
+  150:  	Loop     0000000A 
+  15C:  		Add  *Var[0]  00000008 
+  16C:  		Call     RotateModel 	( {Model:c_door} *Var[0] 00000000 FFFFFFFF 00000000 )
+  18C:  		Wait     00000001 
+  198:  	EndLoop
+  1A0:  	Wait     00000005 
+  1AC:  	Loop     0000000A 
+  1B8:  		Add  *Var[0]  FFFFFFF8 
+  1C8:  		Call     RotateModel 	( {Model:c_door} *Var[0] 00000000 FFFFFFFF 00000000 )
+  1E8:  		Wait     00000001 
+  1F4:  	EndLoop
+  1FC:  	Call     PlaySoundAtCollider 	( {Collider:deilit1u} 000001C2 00000000 )
+  214:  	Call     EnableGroup 	( {Model:cook_in} .False )
+  228:  EndThread
+  230:  Wait     00000005 
+  23C:  Call     PlaySoundAtNpc ( 0000000B 0000203F 00000000 )
+  254:  Exec     $Script_8024B6A0_mac_02 *Var[A] 
+  264:  Call     SetNpcSpeed 	( 0000000B 00000008 )
+  278:  Call     MoveNpcTo   	( 0000000B FFFFFF74 FFFFFF10 00000000 )
+  294:  Call     MoveNpcTo   	( 0000000B FFFFFF74 FFFFFF74 00000000 )
+  2B0:  Call     NpcJump0    	( 0000000B FFFFFF74 00000000 FFFFFF9C 00000000 )
+  2D0:  Call     MoveNpcTo   	( 0000000B FFFFFF42 FFFFFFEC 00000000 )
+  2EC:  Call     MoveNpcTo   	( 0000000B FFFFFEA2 FFFFFFEC 00000000 )
+  308:  Kill     *Var[A] 
+  314:  Call     SetNpcPos   	( 0000000B 00000000 FFFFFC18 00000000 )
+  330:  Set  *StoryProgress  FFFFFFF4 
+  340:  Wait     0000000A 
+  34C:  Call     ResetCam    	( .Default *Fixed[3.0] )
+  360:  Call     DisablePlayerInput 	( .False )
+  370:  Return
+  378:  End
+
+#new:Script $Script_Init_8024BA68_mac_02
+    0:  If  *StoryProgress  <  FFFFFFF4 
+   10:  	Exec     $Script_8024B6E8_mac_02 
+   1C:  EndIf
+   24:  Return
+   2C:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8024DEA8_mac_02
+003B0000 003B0001 003B0002 003B0003 003B0011 003B0002 003B0004 FFFFFFFF 
+

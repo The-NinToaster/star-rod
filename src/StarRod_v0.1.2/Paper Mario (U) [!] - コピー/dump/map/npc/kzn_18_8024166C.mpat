@@ -1,0 +1,118 @@
+% automatically dumped from map kzn_18
+
+#new:Npc $kzn_18_8024166C
+00000000 $NpcSettings_80240DC0_kzn_18 00000000 00000000 00000000 
+00110709 $Script_Init_80241360_kzn_18 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00B60001 00B60004 00B60006 00B60006 00B60001 00B60001 00B60001 00B60001 
+00B60001 00B60001 00B60001 00B60001 00B60001 00B60001 00B60001 00B60001 
+00000000 00000000 00000000 001A0000 % He's the archaeologist, Kolorado. He's famous as b ...
+
+#new:Function $Function_80240388_kzn_18
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  LAH       A2, 8015A552
+   14:  JAL       {Func:SetVariable}
+   18:  LW        A1, 0 (V0)
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80240DC0_kzn_18
+00000000 00280018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80240E44_kzn_18
+    0:  If  *StoryProgress  <  00000021 
+   10:  	Label    00000000 
+   1C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   34:  	If  *Var[0]  <  FFFFFF83 
+   44:  		Wait     00000001 
+   50:  		Goto     00000000 
+   5C:  	EndIf
+   64:  	Set  *StoryProgress  00000021 
+   74:  	Call     SetNpcPos   	( .Npc:Self FFFFFEE8 000000FA FFFFFE98 )
+   90:  	Call     SetNpcAnimation 	( .Npc:Self 00B60007 )
+   A4:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   BC:  	If  *Var[2]  <  FFFFFEAC 
+   CC:  		Set  *Var[2]  FFFFFEC0 
+   DC:  	Else
+   E4:  		Set  *Var[2]  FFFFFE98 
+   F4:  	EndIf
+   FC:  	Call     SetNpcSpeed 	( .Npc:Self *Fixed[10.0] )
+  110:  	Call     MoveNpcTo   	( .Npc:Self 000000B9 *Var[2] 00000000 )
+  12C:  	Call     NpcFacePlayer 	( .Npc:Self 00000004 )
+  140:  	Call     SetNpcAnimation 	( .Npc:Self 00B60001 )
+  154:  Else
+  15C:  	Call     SetNpcPos   	( .Npc:Self 000000B9 000000FA FFFFFEAC )
+  178:  	Call     SetNpcYaw   	( .Npc:Self 0000010E )
+  18C:  EndIf
+  194:  Loop     
+  1A0:  	Wait     00000001 
+  1AC:  	Call     $Function_80240388_kzn_18 ( *Var[0] )
+  1BC:  	If  *Var[0]  ==  00000020 
+  1CC:  		BreakLoop
+  1D4:  	EndIf
+  1DC:  	If  *Var[0]  ==  0000002A 
+  1EC:  		BreakLoop
+  1F4:  	EndIf
+  1FC:  EndLoop
+  204:  Call     DisablePlayerInput 	( .True )
+  214:  Call     GetPlayerPos 	( *Var[3] *Var[4] *Var[5] )
+  22C:  Call     UseSettingsFrom 	( .Default *Var[3] *Var[4] *Var[5] )
+  248:  Call     SetPanTarget 	( .Default *Var[3] *Var[4] *Var[5] )
+  264:  Call     SetCamDistance ( .Default *Fixed[400.0] )
+  278:  Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-7.0] )
+  290:  Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  2A4:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  2BC:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  2D0:  Call     SayMessage0 	( .Npc:Self 00B60009 00B60002 00000000 001000FD ) % Close! So very close!! My treasure-hunting senses  ...
+  2F0:  Wait     0000000F 
+  2FC:  Set  *MapVar[A]  00000000 
+  30C:  Thread
+  314:  	Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  330:  	Call     SetNpcJumpscale 	( .Npc:Self *Fixed[2.0] )
+  344:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  35C:  	Call     NpcJump0    	( .Npc:Self *Var[0] *Var[1] *Var[2] 0000000A )
+  37C:  	Call     SetNpcYaw   	( .Npc:Self 0000005A )
+  390:  	Set  *MapVar[A]  00000001 
+  3A0:  EndThread
+  3A8:  Call     SayMessage2 	( .Npc:Self 00B60008 00B60001 00000000 001000FE ) % It's over here!!
+  3C8:  Loop     
+  3D4:  	Wait     00000001 
+  3E0:  	If  *MapVar[A]  ==  00000001 
+  3F0:  		BreakLoop
+  3F8:  	EndIf
+  400:  EndLoop
+  408:  Call     UseSettingsFrom 	( .Default *Var[3] *Var[4] *Var[5] )
+  424:  Call     SetPanTarget 	( .Default 000001A4 000000FA FFFFFEA2 )
+  440:  Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  454:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  46C:  Call     SetNpcAnimation 	( .Npc:Self 00B60006 )
+  480:  Call     SetNpcSpeed 	( .Npc:Self *Fixed[5.0] )
+  494:  Call     MoveNpcTo   	( .Npc:Self 00000212 FFFFFE98 00000000 )
+  4B0:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  4CC:  Wait     0000000F 
+  4D8:  Call     ResetCam    	( .Default *Fixed[3.0] )
+  4EC:  Set  *StoryProgress  00000022 
+  4FC:  Call     DisablePlayerInput 	( .False )
+  50C:  Return
+  514:  End
+
+#new:Script $Script_Init_80241360_kzn_18
+    0:  If  *StoryProgress  <  00000022 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_80240E44_kzn_18 )
+   24:  Else
+   2C:  	Call     RemoveNpc   	( .Npc:Self )
+   3C:  EndIf
+   44:  Return
+   4C:  End
+

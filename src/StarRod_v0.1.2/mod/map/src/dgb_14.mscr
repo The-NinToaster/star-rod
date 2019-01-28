@@ -1,0 +1,115 @@
+% Script File: dgb_14.mscr
+% Decoded from: 0 to 4E0 (dgb_14)
+
+#new:EntryList $EntryList
+{Vec4f:Entry0} %  575.0    0.0  180.0  270.0
+{Vec4f:Entry1} %  575.0  210.0  180.0  270.0
+
+#new:Header $Header
+00000000 00000000 00000000 00000000 
+$Script_Main $EntryList 00000002 00000000 
+00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 001900CE 
+
+#new:Script $Script_80240060
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFE3 
+   18:  		Call     SetMusicTrack 	( 00000000 .Song:TubbasManor 00000000 00000008 )
+   34:  	Case  <  FFFFFFF0 
+   40:  		Call     SetMusicTrack 	( 00000000 .Song:TubbaEscape 00000000 00000008 )
+   5C:  	Default
+   64:  		Call     SetMusicTrack 	( 00000000 .Song:TubbasManor 00000000 00000008 )
+   80:  EndSwitch
+   88:  Return
+   90:  End
+
+PADDING: 802400F8 to 80240100 (000000F8 to 00000100)
+00000000 00000000 
+
+#new:Script $Script_80240100
+    0:  SetGroup 0000001B 
+    C:  Call     DisablePlayerInput 	( .True )
+   1C:  Call     UseDoorSounds 	( 00000003 )
+   2C:  Set  *Var[0]  00000001 
+   3C:  Set  *Var[1]  0000000E 
+   4C:  Set  *Var[2]  00000018 
+   5C:  Set  *Var[3]  00000016 
+   6C:  Exec     ExitDoubleDoor 
+   78:  Wait     00000011 
+   84:  Call     GotoMap     	( $ASCII_802404D0 00000003 )
+   98:  Wait     00000064 
+   A4:  Return
+   AC:  End
+
+#new:Script $Script_802401B4
+    0:  SetGroup 0000001B 
+    C:  Call     DisablePlayerInput 	( .True )
+   1C:  Call     UseDoorSounds 	( 00000003 )
+   2C:  Set  *Var[0]  00000000 
+   3C:  Set  *Var[1]  00000012 
+   4C:  Set  *Var[2]  00000013 
+   5C:  Set  *Var[3]  00000011 
+   6C:  Exec     ExitDoubleDoor 
+   78:  Wait     00000011 
+   84:  Call     GotoMap     	( $ASCII_802404D8 00000000 )
+   98:  Wait     00000064 
+   A4:  Return
+   AC:  End
+
+#new:Script $Script_80240268
+    0:  Call     UseDoorSounds 	( 00000003 )
+   10:  Call     GetEntryID  	( *Var[0] )
+   20:  Switch  *Var[0] 
+   2C:  	Case  ==  00000000 
+   38:  		Set  *Var[2]  00000018 
+   48:  		Set  *Var[3]  00000016 
+   58:  		ExecWait EnterDoubleDoor 
+   64:  	Case  ==  00000001 
+   70:  		Call     DisablePlayerInput 	( .True )
+   80:  		Set  *Var[2]  00000013 
+   90:  		Set  *Var[3]  00000011 
+   A0:  		ExecWait EnterDoubleDoor 
+   AC:  		If  *AreaFlag[001]  ==  00000001 
+   BC:  			Wait     00000005 
+   C8:  			Call     SetPlayerAnimation 	( 0008001D )
+   D8:  			Wait     00000014 
+   E4:  			Call     SetPlayerAnimation 	( 00010002 )
+   F4:  		EndIf
+   FC:  		Call     DisablePlayerInput 	( .False )
+  10C:  EndSwitch
+  114:  Return
+  11C:  End
+
+#new:Script_Main $Script_Main
+    0:  Set  *WorldMapLocation  0000000F 
+   10:  Call     SetSpriteShading 	( FFFFFFFF )
+   20:  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+   40:  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+   5C:  Call     SetCamFlag4 	( .Default .False )
+   70:  Call     SetCamFlag2 	( .Default .True )
+   84:  ExecWait $Script_80240480 
+   90:  Exec     $Script_80240060 
+   9C:  Bind     $Script_80240100 .Trigger:WallPressA {Collider:deilittse} 00000001 00000000 
+   B8:  Bind     $Script_802401B4 .Trigger:WallPressA {Collider:deilittne} 00000001 00000000 
+   D4:  Exec     $Script_80240268 
+   E0:  Return
+   E8:  End
+
+PADDING: 8024047C to 80240480 (0000047C to 00000480)
+00000000 
+
+#new:Script $Script_80240480
+    0:  Call     MakeEntity  	( .Entity:YellowBlock {Vec4d:Entity80240480} .Item:MapleSyrup 80000000 )
+   28:  Call     AssignBlockFlag 	( *Flag_DGB_19 )
+   38:  Return
+   40:  End
+
+PADDING: 802404C8 to 802404D0 (000004C8 to 000004D0)
+00000000 00000000 
+
+#new:ASCII $ASCII_802404D0
+dgb_03
+
+#new:ASCII $ASCII_802404D8
+dgb_15
+

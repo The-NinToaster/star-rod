@@ -1,0 +1,3473 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SpriteSheet a="D" b="2">
+    <PaletteList>
+        <Palette id="00" src="Palette_00.png"/>
+        <Palette id="01" src="Palette_01.png"/>
+        <Palette id="02" src="Palette_02.png"/>
+        <Palette id="03" src="Palette_03.png"/>
+        <Palette id="04" src="Palette_04.png"/>
+        <Palette id="05" src="Palette_05.png"/>
+        <Palette id="06" src="Palette_06.png"/>
+        <Palette id="07" src="Palette_07.png"/>
+    </PaletteList>
+    <RasterList>
+        <Raster id="00" palette="00" src="Raster_00.png"/>
+        <Raster id="01" palette="00" src="Raster_01.png"/>
+        <Raster id="02" palette="00" src="Raster_02.png"/>
+        <Raster id="03" palette="00" src="Raster_03.png"/>
+        <Raster id="04" palette="00" src="Raster_04.png"/>
+        <Raster id="05" palette="00" src="Raster_05.png"/>
+        <Raster id="06" palette="00" src="Raster_06.png"/>
+        <Raster id="07" palette="00" src="Raster_07.png"/>
+        <Raster id="08" palette="00" src="Raster_08.png"/>
+        <Raster id="09" palette="00" src="Raster_09.png"/>
+        <Raster id="0A" palette="00" src="Raster_0A.png"/>
+        <Raster id="0B" palette="00" src="Raster_0B.png"/>
+        <Raster id="0C" palette="00" src="Raster_0C.png"/>
+        <Raster id="0D" palette="00" src="Raster_0D.png"/>
+        <Raster id="0E" palette="00" src="Raster_0E.png"/>
+        <Raster id="0F" palette="00" src="Raster_0F.png"/>
+        <Raster id="10" palette="00" src="Raster_10.png"/>
+        <Raster id="11" palette="00" src="Raster_11.png"/>
+        <Raster id="12" palette="00" src="Raster_12.png"/>
+        <Raster id="13" palette="00" src="Raster_13.png"/>
+        <Raster id="14" palette="00" src="Raster_14.png"/>
+        <Raster id="15" palette="00" src="Raster_15.png"/>
+        <Raster id="16" palette="00" src="Raster_16.png"/>
+        <Raster id="17" palette="00" src="Raster_17.png"/>
+        <Raster id="18" palette="00" src="Raster_18.png"/>
+        <Raster id="19" palette="00" src="Raster_19.png"/>
+        <Raster id="1A" palette="00" src="Raster_1A.png"/>
+        <Raster id="1B" palette="00" src="Raster_1B.png"/>
+        <Raster id="1C" palette="00" src="Raster_1C.png"/>
+        <Raster id="1D" palette="00" src="Raster_1D.png"/>
+        <Raster id="1E" palette="00" src="Raster_1E.png"/>
+        <Raster id="1F" palette="00" src="Raster_1F.png"/>
+        <Raster id="20" palette="00" src="Raster_20.png"/>
+        <Raster id="21" palette="00" src="Raster_21.png"/>
+        <Raster id="22" palette="00" src="Raster_22.png"/>
+        <Raster id="23" palette="00" src="Raster_23.png"/>
+        <Raster id="24" palette="00" src="Raster_24.png"/>
+        <Raster id="25" palette="00" src="Raster_25.png"/>
+        <Raster id="26" palette="00" src="Raster_26.png"/>
+        <Raster id="27" palette="00" src="Raster_27.png"/>
+        <Raster id="28" palette="00" src="Raster_28.png"/>
+        <Raster id="29" palette="00" src="Raster_29.png"/>
+        <Raster id="2A" palette="00" src="Raster_2A.png"/>
+        <Raster id="2B" palette="00" src="Raster_2B.png"/>
+        <Raster id="2C" palette="00" src="Raster_2C.png"/>
+        <Raster id="2D" palette="00" src="Raster_2D.png"/>
+        <Raster id="2E" palette="00" src="Raster_2E.png"/>
+        <Raster id="2F" palette="00" src="Raster_2F.png"/>
+        <Raster id="30" palette="00" src="Raster_30.png"/>
+        <Raster id="31" palette="00" src="Raster_31.png"/>
+        <Raster id="32" palette="00" src="Raster_32.png"/>
+        <Raster id="33" palette="01" src="Raster_33.png"/>
+        <Raster id="34" palette="01" src="Raster_34.png"/>
+        <Raster id="35" palette="01" src="Raster_35.png"/>
+        <Raster id="36" palette="01" src="Raster_36.png"/>
+        <Raster id="37" palette="01" src="Raster_37.png"/>
+        <Raster id="38" palette="01" src="Raster_38.png"/>
+        <Raster id="39" palette="00" src="Raster_39.png"/>
+        <Raster id="3A" palette="00" src="Raster_3A.png"/>
+        <Raster id="3B" palette="00" src="Raster_3B.png"/>
+        <Raster id="3C" palette="00" src="Raster_3C.png"/>
+        <Raster id="3D" palette="00" src="Raster_3D.png"/>
+        <Raster id="3E" palette="00" src="Raster_3E.png"/>
+        <Raster id="3F" palette="00" src="Raster_3F.png"/>
+        <Raster id="40" palette="00" src="Raster_40.png"/>
+        <Raster id="41" palette="00" src="Raster_41.png"/>
+        <Raster id="42" palette="00" src="Raster_42.png"/>
+        <Raster id="43" palette="00" src="Raster_43.png"/>
+        <Raster id="44" palette="00" src="Raster_44.png"/>
+        <Raster id="45" palette="00" src="Raster_45.png"/>
+        <Raster id="46" palette="00" src="Raster_46.png"/>
+        <Raster id="47" palette="00" src="Raster_47.png"/>
+        <Raster id="48" palette="00" src="Raster_48.png"/>
+        <Raster id="49" palette="00" src="Raster_49.png"/>
+    </RasterList>
+    <AnimationList>
+        <Animation>
+            <Component x="-37" y="5" z="-4">
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="-4" z="-2">
+                <Command val="3001"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="90" z="-2">
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="5" z="0">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="71" z="2">
+                <Command val="1001"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="54" z="4">
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="16" y="-2" z="2">
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="3" z="6">
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-37" y="5" z="-4">
+                <Command val="8109"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="-4" z="-2">
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="003C"/>
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="103A"/>
+                <Command val="0024"/>
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="90" z="-2">
+                <Command val="8108"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="5" z="0">
+                <Command val="8108"/>
+                <Command val="1000"/>
+                <Command val="0064"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="71" z="2">
+                <Command val="8108"/>
+                <Command val="1001"/>
+                <Command val="005A"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="00BE"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="0002"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="0046"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="54" z="4">
+                <Command val="8108"/>
+                <Command val="1002"/>
+                <Command val="001E"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="102E"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102B"/>
+                <Command val="0006"/>
+                <Command val="1002"/>
+                <Command val="0088"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="102E"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102B"/>
+                <Command val="0006"/>
+                <Command val="1002"/>
+                <Command val="0006"/>
+                <Command val="7017"/>
+                <Command val="0001"/>
+                <Command val="1002"/>
+                <Command val="00B4"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="102E"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102B"/>
+                <Command val="0005"/>
+                <Command val="2000"/>
+                <Label name="Pos 17" pos="17"/>
+            </Component>
+            <Component x="16" y="-2" z="2">
+                <Command val="1006"/>
+                <Command val="003C"/>
+                <Command val="103B"/>
+                <Command val="0024"/>
+                <Command val="1006"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="3" z="6">
+                <Command val="8109"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="003A"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0024"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="003C"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="001C"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-37" y="5" z="-4">
+                <Command val="8109"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="-4" z="-2">
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0014"/>
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="103A"/>
+                <Command val="000C"/>
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="90" z="-2">
+                <Command val="8108"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="5" z="0">
+                <Command val="8108"/>
+                <Command val="1000"/>
+                <Command val="0064"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="71" z="2">
+                <Command val="8108"/>
+                <Command val="102F"/>
+                <Command val="005A"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="54" z="4">
+                <Command val="8108"/>
+                <Command val="1002"/>
+                <Command val="001E"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="102E"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102B"/>
+                <Command val="0006"/>
+                <Command val="1002"/>
+                <Command val="0088"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="102E"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102B"/>
+                <Command val="0006"/>
+                <Command val="1002"/>
+                <Command val="0006"/>
+                <Command val="7017"/>
+                <Command val="0001"/>
+                <Command val="1002"/>
+                <Command val="00B4"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="102E"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102B"/>
+                <Command val="0005"/>
+                <Command val="2000"/>
+                <Label name="Pos 17" pos="17"/>
+            </Component>
+            <Component x="16" y="-2" z="2">
+                <Command val="1006"/>
+                <Command val="0014"/>
+                <Command val="103B"/>
+                <Command val="000C"/>
+                <Command val="1006"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="3" z="6">
+                <Command val="8109"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0012"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="000C"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0014"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="000B"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8100"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="000E"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-48" y="0" z="-4">
+                <Command val="8102"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-33" y="-9" z="-2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1007"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFF5"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF8"/>
+                <Command val="1007"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="000F"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100B"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="85" z="-2">
+                <Command val="8101"/>
+                <Command val="1011"/>
+                <Command val="0006"/>
+                <Command val="1012"/>
+                <Command val="0004"/>
+                <Command val="1013"/>
+                <Command val="0008"/>
+                <Command val="1014"/>
+                <Command val="0004"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="66" z="2">
+                <Command val="8101"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="00BE"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="0028"/>
+                <Command val="2000"/>
+                <Command val="2000"/>
+                <Command val="2000"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="49" z="4">
+                <Command val="8101"/>
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="5" y="-7" z="2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="3000"/>
+                <Command val="000E"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF2"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="100C"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-12" y="-2" z="6">
+                <Command val="8102"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="000B"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8100"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="000E"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-48" y="0" z="-4">
+                <Command val="8102"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-33" y="-9" z="-2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1007"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFF5"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF8"/>
+                <Command val="1007"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="000F"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100B"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="85" z="-2">
+                <Command val="8101"/>
+                <Command val="1011"/>
+                <Command val="0006"/>
+                <Command val="1012"/>
+                <Command val="0004"/>
+                <Command val="1013"/>
+                <Command val="0008"/>
+                <Command val="1014"/>
+                <Command val="0004"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="66" z="2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102F"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="49" z="4">
+                <Command val="8101"/>
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="5" y="-7" z="2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="3000"/>
+                <Command val="000E"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF2"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="100C"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-12" y="-2" z="6">
+                <Command val="8102"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="000B"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8100"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="000E"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-48" y="0" z="-4">
+                <Command val="8102"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-33" y="-9" z="-2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1007"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFF5"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF8"/>
+                <Command val="1007"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="000F"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100B"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="85" z="-2">
+                <Command val="8101"/>
+                <Command val="1011"/>
+                <Command val="0006"/>
+                <Command val="1012"/>
+                <Command val="0004"/>
+                <Command val="1013"/>
+                <Command val="0008"/>
+                <Command val="1014"/>
+                <Command val="0004"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="66" z="2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1039"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="49" z="4">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="FFF7"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="5" y="-7" z="2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="3000"/>
+                <Command val="000E"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="FFF2"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="100C"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-12" y="-2" z="6">
+                <Command val="8102"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-54" y="73" z="6">
+                <Command val="8101"/>
+                <Command val="1033"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFFC"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="1035"/>
+                <Command val="0004"/>
+                <Command val="1033"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFF8"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="1036"/>
+                <Command val="0004"/>
+                <Command val="2001"/>
+                <Label name="Pos 1" pos="1"/>
+            </Component>
+            <Component x="-24" y="73" z="6">
+                <Command val="8101"/>
+                <Command val="1034"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="000B"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="1037"/>
+                <Command val="0004"/>
+                <Command val="1034"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0009"/>
+                <Command val="FFF7"/>
+                <Command val="0000"/>
+                <Command val="1038"/>
+                <Command val="0004"/>
+                <Command val="2001"/>
+                <Label name="Pos 1" pos="1"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="000B"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8100"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-48" y="0" z="-4">
+                <Command val="8102"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-33" y="-9" z="-2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1007"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFF5"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF8"/>
+                <Command val="1007"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="000F"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100B"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="85" z="-2">
+                <Command val="8101"/>
+                <Command val="1010"/>
+                <Command val="0004"/>
+                <Command val="1011"/>
+                <Command val="0004"/>
+                <Command val="1012"/>
+                <Command val="0004"/>
+                <Command val="1013"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="66" z="2">
+                <Command val="8101"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="00BE"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1016"/>
+                <Command val="0004"/>
+                <Command val="1015"/>
+                <Command val="0002"/>
+                <Command val="1001"/>
+                <Command val="0028"/>
+                <Command val="2000"/>
+                <Command val="2000"/>
+                <Command val="2000"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="49" z="4">
+                <Command val="8101"/>
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="5" y="-7" z="2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="3000"/>
+                <Command val="000E"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="FFF2"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="100C"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-12" y="-2" z="6">
+                <Command val="8102"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="000B"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8100"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-48" y="0" z="-4">
+                <Command val="8102"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-33" y="-9" z="-2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1007"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFF5"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF8"/>
+                <Command val="1007"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="1009"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="000F"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100B"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="85" z="-2">
+                <Command val="8101"/>
+                <Command val="1010"/>
+                <Command val="0004"/>
+                <Command val="1011"/>
+                <Command val="0004"/>
+                <Command val="1012"/>
+                <Command val="0004"/>
+                <Command val="1013"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8101"/>
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="66" z="2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102F"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="49" z="4">
+                <Command val="8101"/>
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="5" y="-7" z="2">
+                <Command val="8101"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="3000"/>
+                <Command val="000E"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1008"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="100A"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="FFF2"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="100C"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-12" y="-2" z="6">
+                <Command val="8102"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-37" y="5" z="-4">
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="-4" z="-2">
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="90" z="-2">
+                <Command val="1010"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0004"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="1044"/>
+                <Command val="0004"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="5" z="0">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="1030"/>
+                <Command val="0004"/>
+                <Command val="1000"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="71" z="2">
+                <Command val="1001"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0008"/>
+                <Command val="0000"/>
+                <Command val="1032"/>
+                <Command val="0004"/>
+                <Command val="1001"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="54" z="4">
+                <Command val="3000"/>
+                <Command val="FFF6"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="FFFA"/>
+                <Command val="FFF9"/>
+                <Command val="0000"/>
+                <Command val="1043"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFF6"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0002"/>
+                <Command val="1002"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="16" y="-2" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="3" z="6">
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-37" y="5" z="-4">
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="-4" z="-2">
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="90" z="-2">
+                <Command val="1010"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0004"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="1044"/>
+                <Command val="0004"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="5" z="0">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="1030"/>
+                <Command val="0004"/>
+                <Command val="1000"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="71" z="2">
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102F"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0008"/>
+                <Command val="0000"/>
+                <Command val="1031"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102F"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="54" z="4">
+                <Command val="3000"/>
+                <Command val="FFF6"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="FFFA"/>
+                <Command val="FFF9"/>
+                <Command val="0000"/>
+                <Command val="1043"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="FFF6"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="102D"/>
+                <Command val="0002"/>
+                <Command val="1002"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="16" y="-2" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="3" z="6">
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-37" y="2" z="-4">
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-26" y="-4" z="-2">
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-9" y="99" z="-2">
+                <Command val="101D"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="8" y="3" z="0">
+                <Command val="1017"/>
+                <Command val="003C"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-27" y="69" z="2">
+                <Command val="1023"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-28" y="46" z="4">
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="19" y="-2" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="1" z="6">
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-68" y="50" z="-4">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="000A"/>
+                <Command val="3000"/>
+                <Command val="FFFE"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000B"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="2012"/>
+                <Label name="Pos 12" pos="12"/>
+            </Component>
+            <Component x="-50" y="-2" z="-2">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0009"/>
+                <Command val="3000"/>
+                <Command val="0006"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="200F"/>
+                <Label name="Pos F" pos="F"/>
+            </Component>
+            <Component x="-16" y="95" z="-2">
+                <Command val="101D"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="1017"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-34" y="65" z="2">
+                <Command val="1023"/>
+                <Command val="0028"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-36" y="43" z="4">
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="2" y="0" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0005"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="200C"/>
+                <Label name="Pos C" pos="C"/>
+            </Component>
+            <Component x="16" y="51" z="4">
+                <Command val="101A"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0007"/>
+                <Command val="0000"/>
+                <Command val="101A"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000B"/>
+                <Command val="0000"/>
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="2008"/>
+                <Label name="Pos 8" pos="8"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-68" y="50" z="-4">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-50" y="-2" z="-2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-16" y="95" z="-2">
+                <Command val="101E"/>
+                <Command val="0004"/>
+                <Command val="101F"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="1017"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-34" y="65" z="2">
+                <Command val="1023"/>
+                <Command val="0028"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-36" y="43" z="4">
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="2" y="0" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="16" y="51" z="4">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000B"/>
+                <Command val="0000"/>
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-68" y="50" z="-4">
+                <Command val="8108"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFDD"/>
+                <Command val="3000"/>
+                <Command val="0002"/>
+                <Command val="0018"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+            <Component x="-50" y="-2" z="-2">
+                <Command val="8108"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF1"/>
+                <Command val="3000"/>
+                <Command val="FFF6"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+            <Component x="-16" y="95" z="-2">
+                <Command val="8108"/>
+                <Command val="101E"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="1020"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="1021"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="101D"/>
+                <Command val="0002"/>
+                <Command val="200F"/>
+                <Label name="Pos F" pos="F"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8108"/>
+                <Command val="1017"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0009"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="1024"/>
+                <Command val="0028"/>
+                <Command val="2003"/>
+                <Label name="Pos 3" pos="3"/>
+            </Component>
+            <Component x="-34" y="65" z="2">
+                <Command val="8108"/>
+                <Command val="1023"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="1023"/>
+                <Command val="0002"/>
+                <Command val="2003"/>
+                <Label name="Pos 3" pos="3"/>
+            </Component>
+            <Component x="2" y="0" z="2">
+                <Command val="8108"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0003"/>
+                <Command val="0008"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+            <Component x="16" y="51" z="4">
+                <Command val="8108"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000B"/>
+                <Command val="0000"/>
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="000C"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000E"/>
+                <Command val="0000"/>
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+            <Component x="-36" y="43" z="8">
+                <Command val="8108"/>
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="5001"/>
+                <Command val="006C"/>
+                <Command val="5002"/>
+                <Command val="0062"/>
+                <Command val="3000"/>
+                <Command val="0002"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="2003"/>
+                <Label name="Pos 3" pos="3"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2012"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-37" y="5" z="-4">
+                <Command val="8108"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="-4" z="-2">
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="90" z="-2">
+                <Command val="8108"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="5" z="0">
+                <Command val="8108"/>
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="71" z="2">
+                <Command val="8108"/>
+                <Command val="1001"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="54" z="4">
+                <Command val="8108"/>
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="16" y="-2" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="3" z="6">
+                <Command val="8108"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="200F"/>
+                <Label name="Pos F" pos="F"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-37" y="4" z="-4">
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-26" y="-4" z="-2">
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-9" y="99" z="0">
+                <Command val="101D"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="8" y="3" z="0">
+                <Command val="1017"/>
+                <Command val="003C"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-28" y="46" z="4">
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="19" y="-2" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="-5" z="6">
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-27" y="69" z="2">
+                <Command val="1045"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-68" y="50" z="-4">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="000A"/>
+                <Command val="3000"/>
+                <Command val="FFFE"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000B"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="2012"/>
+                <Label name="Pos 12" pos="12"/>
+            </Component>
+            <Component x="-50" y="-2" z="-2">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0009"/>
+                <Command val="3000"/>
+                <Command val="0006"/>
+                <Command val="FFFB"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="200F"/>
+                <Label name="Pos F" pos="F"/>
+            </Component>
+            <Component x="-16" y="95" z="-2">
+                <Command val="101D"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="1017"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-36" y="43" z="4">
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="2" y="0" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0005"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="200C"/>
+                <Label name="Pos C" pos="C"/>
+            </Component>
+            <Component x="16" y="51" z="4">
+                <Command val="101A"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0007"/>
+                <Command val="0000"/>
+                <Command val="101A"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000B"/>
+                <Command val="0000"/>
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="2008"/>
+                <Label name="Pos 8" pos="8"/>
+            </Component>
+            <Component x="-36" y="65" z="2">
+                <Command val="1045"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-68" y="50" z="-4">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-50" y="-2" z="-2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-16" y="95" z="-2">
+                <Command val="101E"/>
+                <Command val="0004"/>
+                <Command val="101F"/>
+                <Command val="0004"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="1017"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-36" y="43" z="4">
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="2" y="0" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="16" y="51" z="4">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000B"/>
+                <Command val="0000"/>
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-36" y="65" z="2">
+                <Command val="1045"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-68" y="50" z="-4">
+                <Command val="8107"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="000D"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFDD"/>
+                <Command val="3000"/>
+                <Command val="0002"/>
+                <Command val="0018"/>
+                <Command val="0000"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+            <Component x="-50" y="-2" z="-2">
+                <Command val="8107"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF1"/>
+                <Command val="3000"/>
+                <Command val="FFF6"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="101B"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+            <Component x="-16" y="95" z="-2">
+                <Command val="8107"/>
+                <Command val="101E"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="1020"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="1021"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="101D"/>
+                <Command val="0002"/>
+                <Command val="200F"/>
+                <Label name="Pos F" pos="F"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="8107"/>
+                <Command val="1017"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0009"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="1024"/>
+                <Command val="0028"/>
+                <Command val="2003"/>
+                <Label name="Pos 3" pos="3"/>
+            </Component>
+            <Component x="2" y="0" z="2">
+                <Command val="8107"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0003"/>
+                <Command val="0008"/>
+                <Command val="0000"/>
+                <Command val="101C"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+            <Component x="16" y="51" z="4">
+                <Command val="8107"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000B"/>
+                <Command val="0000"/>
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="000C"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="000E"/>
+                <Command val="0000"/>
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+            <Component x="-36" y="43" z="8">
+                <Command val="8107"/>
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="5001"/>
+                <Command val="006C"/>
+                <Command val="5002"/>
+                <Command val="0062"/>
+                <Command val="3000"/>
+                <Command val="0002"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="1022"/>
+                <Command val="0002"/>
+                <Command val="2003"/>
+                <Label name="Pos 3" pos="3"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2012"/>
+            </Component>
+            <Component x="-36" y="65" z="2">
+                <Command val="8107"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFC"/>
+                <Command val="0000"/>
+                <Command val="1045"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFA"/>
+                <Command val="0000"/>
+                <Command val="1045"/>
+                <Command val="0002"/>
+                <Command val="2007"/>
+                <Label name="Pos 7" pos="7"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="200F"/>
+                <Label name="Pos F" pos="F"/>
+            </Component>
+            <Component x="-37" y="5" z="-4">
+                <Command val="8100"/>
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="-4" z="-2">
+                <Command val="3000"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="90" z="-2">
+                <Command val="8100"/>
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="5" z="0">
+                <Command val="8100"/>
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="71" z="2">
+                <Command val="8100"/>
+                <Command val="3000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="102F"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="54" z="4">
+                <Command val="8100"/>
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="16" y="-2" z="2">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="3" z="6">
+                <Command val="8100"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-61" y="104" z="-4">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFE8"/>
+                <Command val="1018"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="29" z="-2">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0056"/>
+                <Command val="103C"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="36" y="91" z="-2">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="002D"/>
+                <Command val="1049"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="44" y="29" z="0">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="002D"/>
+                <Command val="1025"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="91" z="2">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="002D"/>
+                <Command val="103E"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="39" y="25" z="2">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0022"/>
+                <Command val="5000"/>
+                <Command val="0071"/>
+                <Command val="101C"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="19" y="72" z="6">
+                <Command val="1019"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-9" y="27" z="4">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="002D"/>
+                <Command val="1026"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-29" y="30" z="8">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="002D"/>
+                <Command val="1027"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-26" y="-4" z="-2">
+                <Command val="3001"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-9" y="99" z="-2">
+                <Command val="101D"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="8" y="3" z="0">
+                <Command val="1017"/>
+                <Command val="003C"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-14" y="30" z="2">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="005C"/>
+                <Command val="5000"/>
+                <Command val="0072"/>
+                <Command val="103D"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-27" y="69" z="2">
+                <Command val="1023"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-28" y="46" z="4">
+                <Command val="3001"/>
+                <Command val="0002"/>
+                <Command val="0003"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="0011"/>
+                <Command val="102C"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="19" y="-2" z="2">
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-27" y="-2" z="6">
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFE9"/>
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-13" y="30" z="-4">
+                <Command val="3001"/>
+                <Command val="FFED"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="002F"/>
+                <Command val="1028"/>
+                <Command val="0004"/>
+                <Command val="3001"/>
+                <Command val="FFFC"/>
+                <Command val="003F"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF0"/>
+                <Command val="1029"/>
+                <Command val="0004"/>
+                <Command val="3001"/>
+                <Command val="FFFA"/>
+                <Command val="003F"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF1"/>
+                <Command val="1029"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFF8"/>
+                <Command val="003F"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF2"/>
+                <Command val="1029"/>
+                <Command val="003C"/>
+                <Command val="201B"/>
+                <Label name="Pos 1B" pos="1B"/>
+            </Component>
+            <Component x="-26" y="-4" z="-2">
+                <Command val="3001"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-9" y="99" z="-2">
+                <Command val="3001"/>
+                <Command val="000F"/>
+                <Command val="FFF5"/>
+                <Command val="0000"/>
+                <Command val="1010"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="3001"/>
+                <Command val="001F"/>
+                <Command val="FFF2"/>
+                <Command val="0000"/>
+                <Command val="1046"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="3001"/>
+                <Command val="001F"/>
+                <Command val="FFF2"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="3001"/>
+                <Command val="001E"/>
+                <Command val="FFF2"/>
+                <Command val="0000"/>
+                <Command val="1046"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="001D"/>
+                <Command val="FFF1"/>
+                <Command val="0000"/>
+                <Command val="1046"/>
+                <Command val="0002"/>
+                <Command val="201F"/>
+                <Label name="Pos 1F" pos="1F"/>
+            </Component>
+            <Component x="8" y="3" z="0">
+                <Command val="1000"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="102A"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="102A"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0004"/>
+                <Command val="0000"/>
+                <Command val="102A"/>
+                <Command val="003C"/>
+                <Command val="2014"/>
+                <Label name="Pos 14" pos="14"/>
+            </Component>
+            <Component x="-27" y="69" z="2">
+                <Command val="3001"/>
+                <Command val="0002"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="1001"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="3001"/>
+                <Command val="0007"/>
+                <Command val="0017"/>
+                <Command val="0000"/>
+                <Command val="1047"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="3001"/>
+                <Command val="0006"/>
+                <Command val="0017"/>
+                <Command val="0000"/>
+                <Command val="1047"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="0005"/>
+                <Command val="0016"/>
+                <Command val="0000"/>
+                <Command val="1047"/>
+                <Command val="0002"/>
+                <Command val="2018"/>
+                <Label name="Pos 18" pos="18"/>
+            </Component>
+            <Component x="-28" y="46" z="4">
+                <Command val="1002"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="3001"/>
+                <Command val="FFFA"/>
+                <Command val="0008"/>
+                <Command val="0000"/>
+                <Command val="1048"/>
+                <Command val="0004"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="3001"/>
+                <Command val="FFF9"/>
+                <Command val="0008"/>
+                <Command val="0000"/>
+                <Command val="1048"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFF8"/>
+                <Command val="0007"/>
+                <Command val="0000"/>
+                <Command val="1048"/>
+                <Command val="0002"/>
+                <Command val="2014"/>
+                <Label name="Pos 14" pos="14"/>
+            </Component>
+            <Component x="19" y="-2" z="2">
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-27" y="-2" z="6">
+                <Command val="3001"/>
+                <Command val="FFE8"/>
+                <Command val="000C"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFD3"/>
+                <Command val="5000"/>
+                <Command val="006E"/>
+                <Command val="1004"/>
+                <Command val="0004"/>
+                <Command val="3001"/>
+                <Command val="0030"/>
+                <Command val="009D"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FF4D"/>
+                <Command val="5000"/>
+                <Command val="0078"/>
+                <Command val="1004"/>
+                <Command val="0004"/>
+                <Command val="3001"/>
+                <Command val="002E"/>
+                <Command val="009D"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FF4D"/>
+                <Command val="5000"/>
+                <Command val="0078"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="002C"/>
+                <Command val="009D"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FF4D"/>
+                <Command val="5000"/>
+                <Command val="0078"/>
+                <Command val="1004"/>
+                <Command val="003C"/>
+                <Command val="2021"/>
+                <Label name="Pos 21" pos="21"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0008"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="700A"/>
+                <Command val="0001"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="7016"/>
+                <Command val="0003"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2022"/>
+                <Label name="Pos A" pos="A"/>
+                <Label name="Pos 16" pos="16"/>
+                <Label name="Pos 22" pos="22"/>
+            </Component>
+            <Component x="0" y="0" z="0">
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0006"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFE"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="FFFF"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="700A"/>
+                <Command val="0001"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="7016"/>
+                <Command val="0003"/>
+                <Command val="3000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0002"/>
+                <Command val="2022"/>
+                <Label name="Pos A" pos="A"/>
+                <Label name="Pos 16" pos="16"/>
+                <Label name="Pos 22" pos="22"/>
+            </Component>
+            <Component x="-13" y="30" z="-2">
+                <Command val="8101"/>
+                <Command val="3001"/>
+                <Command val="FFF8"/>
+                <Command val="003F"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF2"/>
+                <Command val="1029"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFC3"/>
+                <Command val="0047"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFA7"/>
+                <Command val="1041"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFBE"/>
+                <Command val="FFEE"/>
+                <Command val="0000"/>
+                <Command val="1041"/>
+                <Command val="0002"/>
+                <Command val="2013"/>
+                <Label name="Pos 13" pos="13"/>
+            </Component>
+            <Component x="-26" y="-4" z="-2">
+                <Command val="3001"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="103A"/>
+                <Command val="003C"/>
+                <Command val="2006"/>
+                <Label name="Pos 6" pos="6"/>
+            </Component>
+            <Component x="-22" y="83" z="-2">
+                <Command val="8101"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF2"/>
+                <Command val="100D"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFF7"/>
+                <Command val="FFF5"/>
+                <Command val="0000"/>
+                <Command val="100D"/>
+                <Command val="0002"/>
+                <Command val="2006"/>
+                <Label name="Pos 6" pos="6"/>
+            </Component>
+            <Component x="8" y="3" z="0">
+                <Command val="8101"/>
+                <Command val="3001"/>
+                <Command val="FFEA"/>
+                <Command val="0006"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF2"/>
+                <Command val="103F"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFF1"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="103F"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFF1"/>
+                <Command val="FFFD"/>
+                <Command val="0000"/>
+                <Command val="103F"/>
+                <Command val="0002"/>
+                <Command val="2010"/>
+                <Label name="Pos 10" pos="10"/>
+            </Component>
+            <Component x="-52" y="51" z="2">
+                <Command val="8101"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF2"/>
+                <Command val="100E"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFFE"/>
+                <Command val="FFEB"/>
+                <Command val="0000"/>
+                <Command val="100E"/>
+                <Command val="0002"/>
+                <Command val="2006"/>
+                <Label name="Pos 6" pos="6"/>
+            </Component>
+            <Component x="-46" y="15" z="4">
+                <Command val="8101"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFF2"/>
+                <Command val="100F"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="0008"/>
+                <Command val="FFF0"/>
+                <Command val="0000"/>
+                <Command val="100F"/>
+                <Command val="0002"/>
+                <Command val="2006"/>
+                <Label name="Pos 6" pos="6"/>
+            </Component>
+            <Component x="19" y="-2" z="2">
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1042"/>
+                <Command val="003C"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-27" y="-2" z="6">
+                <Command val="8100"/>
+                <Command val="3001"/>
+                <Command val="002C"/>
+                <Command val="009D"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FF4D"/>
+                <Command val="5000"/>
+                <Command val="0078"/>
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFEB"/>
+                <Command val="0060"/>
+                <Command val="0000"/>
+                <Command val="4000"/>
+                <Command val="0000"/>
+                <Command val="FFA3"/>
+                <Command val="1040"/>
+                <Command val="0002"/>
+                <Command val="3001"/>
+                <Command val="FFEC"/>
+                <Command val="0002"/>
+                <Command val="0000"/>
+                <Command val="1040"/>
+                <Command val="0002"/>
+                <Command val="2015"/>
+                <Label name="Pos 15" pos="15"/>
+            </Component>
+        </Animation>
+        <Animation>
+            <Component x="-37" y="5" z="-4">
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-22" y="-4" z="-2">
+                <Command val="3001"/>
+                <Command val="000A"/>
+                <Command val="0001"/>
+                <Command val="0000"/>
+                <Command val="1005"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="90" z="-2">
+                <Command val="1010"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="11" y="5" z="0">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="71" z="2">
+                <Command val="1016"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-21" y="54" z="4">
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="16" y="-2" z="2">
+                <Command val="3001"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="0000"/>
+                <Command val="1006"/>
+                <Command val="0006"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-1" y="3" z="6">
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+    </AnimationList>
+</SpriteSheet>

@@ -1,0 +1,618 @@
+% automatically dumped from map mac_01
+
+#new:Npc $mac_01_8025CCA8_1170
+00000003 $NpcSettings_80248AC0_mac_01 00000000 00000000 00000000 
+00012D09 $Script_Init_80257210_mac_01 00000000 00000000 0000012C 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008A0001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 001A0022 % This Paratroopa looks extremely serious. And stubb ...
+
+#new:Function $Function_80244E90_mac_01
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S6, 28 (SP)
+    8:  DADDU     S6, A0, R0
+    C:  SW        S5, 24 (SP)
+   10:  LIA       S5, 8010F290
+   18:  SW        S2, 18 (SP)
+   1C:  ADDIU     S2, R0, FFFF
+   20:  SW        S0, 10 (SP)
+   24:  DADDU     S0, R0, R0
+   28:  SW        S4, 20 (SP)
+   2C:  LIO       S4, *Flag_MAC_17
+   34:  SW        S3, 1C (SP)
+   38:  LIO       S3, *Flag_MAC_2A
+   40:  SW        S1, 14 (SP)
+   44:  LIA       S1, $???_80256ADC_mac_01
+   4C:  SW        RA, 2C (SP)
+        .o50
+   50:  LW        V0, 0 (S1)
+   54:  SLL       V0, V0, 3
+   58:  ADDU      V0, S5, V0
+   5C:  LBU       V0, 14 (V0)
+   60:  BEQ       V0, R0, .o8C
+   64:  DADDU     A0, R0, R0
+   68:  JAL       {Func:GetVariable}
+   6C:  ADDU      A1, S0, S4
+   70:  BEQ       V0, R0, .o8C
+   74:  DADDU     A0, R0, R0
+   78:  JAL       {Func:GetVariable}
+   7C:  ADDU      A1, S0, S3
+   80:  BEQ       V0, R0, .o9C
+   84:  ADDIU     S2, R0, 1
+   88:  DADDU     S2, R0, R0
+        .o8C
+   8C:  ADDIU     S0, S0, 1
+   90:  SLTIU     V0, S0, 13
+   94:  BNE       V0, R0, .o50
+   98:  ADDIU     S1, S1, 14
+        .o9C
+   9C:  SW        S2, 84 (S6)
+   A0:  LW        RA, 2C (SP)
+   A4:  LW        S6, 28 (SP)
+   A8:  LW        S5, 24 (SP)
+   AC:  LW        S4, 20 (SP)
+   B0:  LW        S3, 1C (SP)
+   B4:  LW        S2, 18 (SP)
+   B8:  LW        S1, 14 (SP)
+   BC:  LW        S0, 10 (SP)
+   C0:  ADDIU     V0, R0, 2
+   C4:  JR        RA
+   C8:  ADDIU     SP, SP, 30
+
+#new:Function $Function_80244F5C_mac_01
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S5, 24 (SP)
+    8:  DADDU     S5, A0, R0
+    C:  SW        S1, 14 (SP)
+   10:  DADDU     S1, R0, R0
+   14:  SW        S0, 10 (SP)
+   18:  DADDU     S0, S1, R0
+   1C:  SW        S4, 20 (SP)
+   20:  LIO       S4, *Flag_MAC_17
+   28:  SW        S3, 1C (SP)
+   2C:  LIO       S3, *Flag_MAC_2A
+   34:  SW        S2, 18 (SP)
+   38:  LIA       S2, $???_80256ADC_mac_01
+   40:  SW        RA, 28 (SP)
+        .o44
+   44:  LW        V0, 0 (S2)
+   48:  BNEL      V0, S5, .o88
+   4C:  ADDIU     S0, S0, 1
+   50:  DADDU     A0, R0, R0
+   54:  JAL       {Func:GetVariable}
+   58:  ADDU      A1, S0, S4
+   5C:  BEQL      V0, R0, .o88
+   60:  ADDIU     S0, S0, 1
+   64:  BEQL      S1, R0, .o6C
+   68:  ADDIU     S1, R0, 1
+        .o6C
+   6C:  DADDU     A0, R0, R0
+   70:  JAL       {Func:GetVariable}
+   74:  ADDU      A1, S0, S3
+   78:  BNE       V0, R0, .o88
+   7C:  ADDIU     S0, S0, 1
+   80:  BEQ       R0, R0, .o94
+   84:  ADDIU     S1, R0, 2
+        .o88
+   88:  SLTIU     V0, S0, 13
+   8C:  BNE       V0, R0, .o44
+   90:  ADDIU     S2, S2, 14
+        .o94
+   94:  DADDU     V0, S1, R0
+   98:  LW        RA, 28 (SP)
+   9C:  LW        S5, 24 (SP)
+   A0:  LW        S4, 20 (SP)
+   A4:  LW        S3, 1C (SP)
+   A8:  LW        S2, 18 (SP)
+   AC:  LW        S1, 14 (SP)
+   B0:  LW        S0, 10 (SP)
+   B4:  JR        RA
+   B8:  ADDIU     SP, SP, 30
+
+#new:Function $Function_80245018_mac_01
+    0:  SAW       R0, $End[528]
+    8:  JR        RA
+    C:  ADDIU     V0, R0, 2
+
+#new:Function $Function_80245028_mac_01
+    0:  ADDIU     SP, SP, FFC0
+    4:  SW        S7, 34 (SP)
+    8:  DADDU     S7, A0, R0
+    C:  SW        S8, 38 (SP)
+   10:  LIA       S8, $End[1F8]
+   18:  SW        RA, 3C (SP)
+   1C:  SW        S6, 30 (SP)
+   20:  SW        S5, 2C (SP)
+   24:  SW        S4, 28 (SP)
+   28:  SW        S3, 24 (SP)
+   2C:  SW        S2, 20 (SP)
+   30:  SW        S1, 1C (SP)
+   34:  BEQ       A1, R0, .o14C
+   38:  SW        S0, 18 (SP)
+   3C:  DADDU     S6, R0, R0
+   40:  ADDIU     S5, R0, 1
+   44:  DADDU     A1, S5, R0
+   48:  LIA       S4, 8008EEC4
+   50:  DADDU     S1, S8, R0
+        .o54
+   54:  LW        S0, 0 (S4)
+   58:  LIA       A2, 8010F290
+   60:  SLL       V0, S0, 3
+   64:  ADDU      S3, A2, V0
+   68:  LBU       V0, 14 (S3)
+   6C:  BEQL      V0, R0, .o10C
+   70:  ADDIU     S5, S5, 1
+   74:  ADDIU     A2, R0, 5
+   78:  BEQL      S0, A2, .o10C
+   7C:  ADDIU     S5, S5, 1
+   80:  DADDU     A0, S0, R0
+   84:  SLL       V0, S0, 4
+   88:  LIA       A2, 8008EF20
+   90:  ADDU      S2, V0, A2
+   94:  JAL       $Function_80244F5C_mac_01
+   98:  SW        A1, 10 (SP)
+   9C:  DADDU     V1, V0, R0
+   A0:  LW        A1, 10 (SP)
+   A4:  BEQL      V1, R0, .o10C
+   A8:  ADDIU     S5, S5, 1
+   AC:  SLL       A0, S0, 2
+   B0:  LIA       A2, 800F7F00
+   B8:  ADDU      V0, A0, A2
+   BC:  LW        V0, 0 (V0)
+   C0:  SW        S0, 108 (S1)
+   C4:  SW        A1, 18C (S1)
+   C8:  SW        V0, 0 (S1)
+   CC:  LW        V0, 0 (S2)
+   D0:  SW        V0, 84 (S1)
+   D4:  LW        V0, 8 (S2)
+   D8:  SW        V0, 294 (S1)
+   DC:  LB        V0, 15 (S3)
+   E0:  BNE       V1, A1, .o100
+   E4:  SW        V0, 210 (S1)
+   E8:  LIA       A2, 800F7F40
+   F0:  ADDU      V0, A0, A2
+   F4:  SW        R0, 18C (S1)
+   F8:  LW        V0, 0 (V0)
+   FC:  SW        V0, 0 (S1)
+        .o100
+  100:  ADDIU     S1, S1, 4
+  104:  ADDIU     S6, S6, 1
+  108:  ADDIU     S5, S5, 1
+        .o10C
+  10C:  SLTI      V0, S5, C
+  110:  BNE       V0, R0, .o54
+  114:  ADDIU     S4, S4, 4
+  118:  DADDU     A0, S8, R0
+  11C:  LAW       V1, $End[528]
+  124:  ADDIU     V0, R0, D
+  128:  SW        V0, 318 (S8)
+  12C:  SW        S6, 324 (S8)
+  130:  JAL       800F4E40
+  134:  SW        V1, 328 (S8)
+  138:  JAL       800E98C4
+  13C:  NOP
+  140:  JAL       800E97B8
+  144:  NOP
+  148:  SW        R0, 70 (S7)
+        .o14C
+  14C:  LW        V0, 70 (S7)
+  150:  BNE       V0, R0, .o174
+  154:  ADDIU     V0, V0, 1
+  158:  LH        V0, 32C (S8)
+  15C:  BEQ       V0, R0, .o184
+  160:  SW        V0, 74 (S7)
+  164:  JAL       800F13B0
+  168:  NOP
+  16C:  LW        V0, 70 (S7)
+  170:  ADDIU     V0, V0, 1
+        .o174
+  174:  SW        V0, 70 (S7)
+  178:  SLTI      V0, V0, 14
+  17C:  BEQ       V0, R0, .o18C
+  180:  NOP
+        .o184
+  184:  BEQ       R0, R0, .o1D4
+  188:  DADDU     V0, R0, R0
+        .o18C
+  18C:  JAL       800F1538
+  190:  NOP
+  194:  LW        V1, 74 (S7)
+  198:  ADDIU     V0, R0, FF
+  19C:  BEQ       V1, V0, .o1C8
+  1A0:  ADDIU     V0, V1, FFFF
+  1A4:  SLL       V0, V0, 2
+  1A8:  ADDU      V0, S8, V0
+  1AC:  LW        S0, 108 (V0)
+  1B0:  ADDIU     V0, R0, 2
+  1B4:  ADDIU     V1, V1, FFFF
+  1B8:  SAW       V1, $End[528]
+  1C0:  BEQ       R0, R0, .o1D4
+  1C4:  SW        S0, 88 (S7)
+        .o1C8
+  1C8:  ADDIU     V0, R0, FFFF
+  1CC:  SW        V0, 88 (S7)
+  1D0:  ADDIU     V0, R0, 2
+        .o1D4
+  1D4:  LW        RA, 3C (SP)
+  1D8:  LW        S8, 38 (SP)
+  1DC:  LW        S7, 34 (SP)
+  1E0:  LW        S6, 30 (SP)
+  1E4:  LW        S5, 2C (SP)
+  1E8:  LW        S4, 28 (SP)
+  1EC:  LW        S3, 24 (SP)
+  1F0:  LW        S2, 20 (SP)
+  1F4:  LW        S1, 1C (SP)
+  1F8:  LW        S0, 18 (SP)
+  1FC:  JR        RA
+  200:  ADDIU     SP, SP, 40
+
+#new:Function $Function_8024522C_mac_01
+    0:  ADDIU     SP, SP, FFC0
+    4:  SW        S5, 2C (SP)
+    8:  DADDU     S5, A0, R0
+    C:  SW        RA, 3C (SP)
+   10:  SW        S8, 38 (SP)
+   14:  SW        S7, 34 (SP)
+   18:  SW        S6, 30 (SP)
+   1C:  SW        S4, 28 (SP)
+   20:  SW        S3, 24 (SP)
+   24:  SW        S2, 20 (SP)
+   28:  SW        S1, 1C (SP)
+   2C:  SW        S0, 18 (SP)
+   30:  LW        A3, AC (S5)
+   34:  LIA       S6, $End[1F8]
+   3C:  BEQ       A1, R0, .o134
+   40:  SW        A3, 10 (SP)
+   44:  DADDU     S4, R0, R0
+   48:  DADDU     S3, S4, R0
+   4C:  LIO       S8, *Flag_MAC_17
+   54:  LIO       S7, *Flag_MAC_2A
+   5C:  LIA       S2, $???_80256ADC_mac_01
+   64:  DADDU     S1, S6, R0
+        .o68
+   68:  DADDU     A0, R0, R0
+   6C:  JAL       {Func:GetVariable}
+   70:  ADDU      A1, S3, S8
+   74:  DADDU     A0, R0, R0
+   78:  ADDU      A1, S3, S7
+   7C:  JAL       {Func:GetVariable}
+   80:  DADDU     S0, V0, R0
+   84:  BEQ       S0, R0, .oF8
+   88:  DADDU     A0, V0, R0
+   8C:  LW        V0, 0 (S2)
+   90:  LW        A3, 10 (SP)
+   94:  BNEL      A3, V0, .oFC
+   98:  ADDIU     S3, S3, 1
+   9C:  LAH       V0, 80088364
+   A4:  LIA       A3, 8008A680
+   AC:  SW        S3, 108 (S1)
+   B0:  LW        V1, 8 (S2)
+   B4:  SLL       V0, V0, 3
+   B8:  SW        V1, 84 (S1)
+   BC:  LW        V1, C (S2)
+   C0:  ADDU      V0, V0, A3
+   C4:  SW        R0, 210 (S1)
+   C8:  BEQ       A0, R0, .oE0
+   CC:  SW        V1, 294 (S1)
+   D0:  LW        V0, 4 (V0)
+   D4:  SW        R0, 18C (S1)
+   D8:  BEQ       R0, R0, .oF0
+   DC:  SW        V0, 0 (S1)
+        .oE0
+   E0:  LW        V1, 0 (V0)
+   E4:  ADDIU     V0, R0, 1
+   E8:  SW        V0, 18C (S1)
+   EC:  SW        V1, 0 (S1)
+        .oF0
+   F0:  ADDIU     S1, S1, 4
+   F4:  ADDIU     S4, S4, 1
+        .oF8
+   F8:  ADDIU     S3, S3, 1
+        .oFC
+   FC:  SLTIU     V0, S3, 13
+  100:  BNE       V0, R0, .o68
+  104:  ADDIU     S2, S2, 14
+  108:  DADDU     A0, S6, R0
+  10C:  ADDIU     V0, R0, 8
+  110:  SW        V0, 318 (S6)
+  114:  SW        S4, 324 (S6)
+  118:  JAL       800F4E40
+  11C:  SW        R0, 328 (S6)
+  120:  JAL       800E98C4
+  124:  NOP
+  128:  JAL       800E97B8
+  12C:  NOP
+  130:  SW        R0, 70 (S5)
+        .o134
+  134:  LW        V0, 70 (S5)
+  138:  BNE       V0, R0, .o15C
+  13C:  ADDIU     V0, V0, 1
+  140:  LH        V0, 32C (S6)
+  144:  BEQ       V0, R0, .o16C
+  148:  SW        V0, 74 (S5)
+  14C:  JAL       800F13B0
+  150:  NOP
+  154:  LW        V0, 70 (S5)
+  158:  ADDIU     V0, V0, 1
+        .o15C
+  15C:  SW        V0, 70 (S5)
+  160:  SLTI      V0, V0, 14
+  164:  BEQ       V0, R0, .o174
+  168:  NOP
+        .o16C
+  16C:  BEQ       R0, R0, .o1E4
+  170:  DADDU     V0, R0, R0
+        .o174
+  174:  JAL       800F1538
+  178:  NOP
+  17C:  LW        A0, 74 (S5)
+  180:  ADDIU     V0, R0, FF
+  184:  BEQ       A0, V0, .o1D8
+  188:  LUI       V1, F840
+  18C:  ORI       V1, V1, 5C2C
+  190:  ADDIU     V0, A0, FFFF
+  194:  SLL       V0, V0, 2
+  198:  ADDU      V0, S6, V0
+  19C:  DADDU     A0, R0, R0
+  1A0:  LW        A1, 108 (V0)
+  1A4:  ADDIU     A2, R0, 1
+  1A8:  SLL       V0, A1, 2
+  1AC:  ADDU      V0, V0, A1
+  1B0:  SLL       V0, V0, 2
+  1B4:  SW        A1, 88 (S5)
+  1B8:  LTW       V0, V0 ($IntTable_80256AEC_mac_01)
+  1C4:  ADDU      A1, A1, V1
+  1C8:  JAL       {Func:SetVariable}
+  1CC:  SW        V0, 84 (S5)
+  1D0:  BEQ       R0, R0, .o1E4
+  1D4:  ADDIU     V0, R0, 2
+        .o1D8
+  1D8:  ADDIU     V0, R0, FFFF
+  1DC:  SW        V0, 88 (S5)
+  1E0:  ADDIU     V0, R0, 2
+        .o1E4
+  1E4:  LW        RA, 3C (SP)
+  1E8:  LW        S8, 38 (SP)
+  1EC:  LW        S7, 34 (SP)
+  1F0:  LW        S6, 30 (SP)
+  1F4:  LW        S5, 2C (SP)
+  1F8:  LW        S4, 28 (SP)
+  1FC:  LW        S3, 24 (SP)
+  200:  LW        S2, 20 (SP)
+  204:  LW        S1, 1C (SP)
+  208:  LW        S0, 18 (SP)
+  20C:  JR        RA
+  210:  ADDIU     SP, SP, 40
+
+#new:Function $Function_80245440_mac_01
+    0:  LAB       V0, 8010F2A2
+    8:  ADDIU     SP, SP, FFE8
+    C:  SW        S0, 10 (SP)
+   10:  DADDU     S0, A0, R0
+   14:  SW        RA, 14 (SP)
+   18:  LW        A0, AC (S0)
+   1C:  BEQL      V0, A0, .o34
+   20:  SW        R0, 88 (S0)
+   24:  JAL       800EB168
+   28:  NOP
+   2C:  ADDIU     V0, R0, 1
+   30:  SW        V0, 88 (S0)
+        .o34
+   34:  ADDIU     V0, R0, 2
+   38:  LW        RA, 14 (SP)
+   3C:  LW        S0, 10 (SP)
+   40:  JR        RA
+   44:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80248AC0_mac_01
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80248C34_mac_01
+    0:  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+   18:  Return
+   20:  Return
+   28:  End
+
+#new:Script $Script_8024DA90_mac_01
+    0:  Call     $Function_80243D60_mac_01 ( *Var[0] )
+   10:  BindLock $Script_8024D94C_mac_01 00000010 00000000 $End[30] 00000000 00000001 
+   30:  Call     $Function_80243CD4_mac_01 ( *Var[0] )
+   40:  Return
+   48:  End
+
+#new:Unknown $???_80256ADC_mac_01
+00000001 00000054 0020001B 0020001C 
+
+#new:IntTable $IntTable_80256AEC_mac_01
+0020001D 00000001 00000054 00200018 00200019 0020001A 00000001 00000054 
+0020001E 0020001F 00200020 00000002 00000054 00200027 00200028 00200029 
+00000002 00000054 00200024 00200025 00200026 00000002 00000054 00200021 
+00200022 00200023 00000003 00000054 0020002D 0020002E 0020002F 00000003 
+00000054 00200030 00200031 00200032 00000003 00000054 0020002A 0020002B 
+0020002C 00000004 00000054 00200033 00200034 00200035 00000004 00000054 
+00200036 00200037 00200038 00000009 00000054 00200039 0020003A 0020003B 
+00000009 00000054 0020003C 0020003D 0020003E 00000006 00000054 0020003F 
+00200040 00200041 00000006 00000054 00200042 00200043 00200044 00000007 
+00000054 00200048 00200049 0020004A 00000007 00000054 00200045 00200046 
+00200047 00000008 00000054 0020004E 0020004F 00200050 00000008 00000054 
+0020004B 0020004C 0020004D 
+
+#new:Script $Script_80256C60_mac_01
+    0:  Call     FindKeyItem 	( .Item:Mailbag *Var[0] )
+   14:  If  *Var[0]  ==  FFFFFFFF 
+   24:  	Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030060 ) % A Shy Guy just stole a bag full of undelivered let ...
+   44:  Else
+   4C:  	Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030061 ) % Shy Guys stole a full bag of mail from us. We've f ...
+   6C:  	Set  *Var[0]  $???_80256C58_mac_01 
+   7C:  	Set  *Var[1]  00000003 
+   8C:  	ExecWait $Script_8024DA90_mac_01 
+   98:  	Switch  *Var[0] 
+   A4:  		Case  ==  FFFFFFFF 
+   B0:  			Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030063 ) % Was that the stolen mailbag? Oh, I guess I'm mista ...
+   D0:  		Default
+   D8:  			Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030062 ) % Oh, that's it, that's it! The bag! Thank you, Mari ...
+   F8:  			Set  *Flag_MAC_88  00000001 
+  108:  			Wait     0000000A 
+  114:  			Set  *Var[0]  0000015C 
+  124:  			Set  *Var[1]  00000003 
+  134:  			ExecWait $Script_80248C34_mac_01 
+  140:  			Call     AddStarPiece 	( 00000001 )
+  150:  			Wait     0000000A 
+  15C:  	EndSwitch
+  164:  EndIf
+  16C:  Return
+  174:  End
+
+#new:Script $Script_80256DDC_mac_01
+    0:  If  *StoryProgress  >=  FFFFFFF3 
+   10:  	If  *Flag_MAC_88  ==  00000000 
+   20:  		ExecWait $Script_80256C60_mac_01 
+   2C:  		Return
+   34:  	EndIf
+   3C:  EndIf
+   44:  If  *Flag_MAC_86  ==  00000000 
+   54:  	Set  *Flag_MAC_86  00000001 
+   64:  	Call     $Function_80244E90_mac_01 ( )
+   70:  	Switch  *Var[0] 
+   7C:  		Case  ==  FFFFFFFF 
+   88:  			Return
+   90:  		Case  ==  00000001 
+   9C:  			Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030055 ) % Yes, hello... This is the post office. You can rea ...
+   BC:  	EndSwitch
+   C4:  Else
+   CC:  	Call     $Function_80244E90_mac_01 ( )
+   D8:  	Switch  *Var[0] 
+   E4:  		Case  ==  FFFFFFFF 
+   F0:  			Return
+   F8:  		Case  ==  00000000 
+  104:  			Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030057 ) % Ah yes, Mario. Yes, hello. Well... It seems that t ...
+  124:  		Case  ==  00000001 
+  130:  			Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030056 ) % Ah yes, Mario. Yes, hello. Well... It seems that y ...
+  150:  	EndSwitch
+  158:  EndIf
+  160:  Call     $Function_80245018_mac_01 ( )
+  16C:  Label    00000000 
+  178:  Call     $Function_80245028_mac_01 ( )
+  184:  Wait     00000005 
+  190:  If  *Var[1]  ==  FFFFFFFF 
+  1A0:  	Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030059 ) % Oh? Shall I put the letters away? 
+  1C0:  	Call     ShowChoice  	( 001E000D ) % Yes No 
+  1D0:  	Call     802D0A98 ( )
+  1DC:  	If  *Var[0]  ==  00000000 
+  1EC:  		Goto     00000063 
+  1F8:  	Else
+  200:  		Goto     00000000 
+  20C:  	EndIf
+  214:  EndIf
+  21C:  Set  *Var[A]  *Var[1] 
+  22C:  Call     $Function_8024522C_mac_01 ( )
+  238:  Wait     00000005 
+  244:  If  *Var[1]  ==  FFFFFFFF 
+  254:  	Goto     00000000 
+  260:  EndIf
+  268:  Call     $Function_80245440_mac_01 ( )
+  274:  If  *Var[1]  ==  00000001 
+  284:  	Wait     0000001E 
+  290:  	Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000001 )
+  2A8:  EndIf
+  2B0:  Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 0003005C ) % Here you go.
+  2D0:  Call     ShowMessage 	( *Var[0] 000000A0 00000028 ) % variable string ID
+  2E8:  Wait     00000005 
+  2F4:  If  *StoryProgress  <  FFFFFFB6 
+  304:  	Goto     00000063 
+  310:  EndIf
+  318:  Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 0003005A ) % Would you like to read more letters? 
+  338:  Call     ShowChoice  	( 001E000D ) % Yes No 
+  348:  Call     802D0A98 ( )
+  354:  If  *Var[0]  ==  00000000 
+  364:  	Goto     00000000 
+  370:  EndIf
+  378:  Label    00000063 
+  384:  If  *Flag_MAC_87  ==  00000000 
+  394:  	Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 0003005D ) % We'll keep the letters for you. Come on by anytime ...
+  3B4:  	Set  *Flag_MAC_87  00000001 
+  3C4:  Else
+  3CC:  	Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 0003005E ) % We'll keep the letters for you. Come on by anytime ...
+  3EC:  EndIf
+  3F4:  Return
+  3FC:  End
+
+#new:Script $Script_802571E0_mac_01
+    0:  Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00010043 ) % Yes, hello. I'm awfully sorry, but the post office ...
+   20:  Return
+   28:  End
+
+#new:Script $Script_Init_80257210_mac_01
+    0:  Call     802CDF8C ( FFFFFFFF 00000024 0000002A )
+   18:  Switch  *StoryProgress 
+   24:  	Case  >=  00000060 
+   30:  		Call     BindNpcInteract 	( .Npc:Self $Script_802571E0_mac_01 )
+   44:  	Default
+   4C:  		Call     BindNpcInteract 	( .Npc:Self $Script_80256DDC_mac_01 )
+   60:  EndSwitch
+   68:  If  *StoryProgress  >=  FFFFFFDC 
+   78:  	Set  *Flag_MAC_18  00000001 
+   88:  EndIf
+   90:  If  *StoryProgress  >=  0000000B 
+   A0:  	Set  *Flag_MAC_17  00000001 
+   B0:  EndIf
+   B8:  Set  *Flag_MAC_19  00000001 
+   C8:  If  *StoryProgress  >=  FFFFFFB5 
+   D8:  	Set  *Flag_MAC_1C  00000001 
+   E8:  EndIf
+   F0:  If  *StoryProgress  >=  00000007 
+  100:  	Set  *Flag_MAC_1B  00000001 
+  110:  EndIf
+  118:  If  *StoryProgress  >=  0000003C 
+  128:  	Set  *Flag_MAC_1A  00000001 
+  138:  EndIf
+  140:  If  *StoryProgress  >=  00000029 
+  150:  	Set  *Flag_MAC_1F  00000001 
+  160:  EndIf
+  168:  If  *StoryProgress  >=  FFFFFFBC 
+  178:  	Set  *Flag_MAC_1D  00000001 
+  188:  EndIf
+  190:  If  *StoryProgress  >=  0000004D 
+  1A0:  	Set  *Flag_MAC_1E  00000001 
+  1B0:  EndIf
+  1B8:  If  *StoryProgress  >=  00000007 
+  1C8:  	Set  *Flag_MAC_20  00000001 
+  1D8:  EndIf
+  1E0:  If  *WhackaHitCount  >=  00000002 
+  1F0:  	Set  *Flag_MAC_21  00000001 
+  200:  EndIf
+  208:  If  *StoryProgress  >=  00000029 
+  218:  	Set  *Flag_MAC_22  00000001 
+  228:  EndIf
+  230:  If  *StoryProgress  >=  FFFFFFF3 
+  240:  	Set  *Flag_MAC_23  00000001 
+  250:  EndIf
+  258:  If  *StoryProgress  >=  00000059 
+  268:  	Set  *Flag_MAC_24  00000001 
+  278:  EndIf
+  280:  If  *StoryProgress  >=  00000029 
+  290:  	Set  *Flag_MAC_25  00000001 
+  2A0:  EndIf
+  2A8:  If  *StoryProgress  >=  0000002B 
+  2B8:  	Set  *Flag_MAC_27  00000001 
+  2C8:  EndIf
+  2D0:  If  *StoryProgress  >=  0000005B 
+  2E0:  	Set  *Flag_MAC_26  00000001 
+  2F0:  EndIf
+  2F8:  If  *StoryProgress  >=  0000003C 
+  308:  	Set  *Flag_MAC_29  00000001 
+  318:  EndIf
+  320:  If  *StoryProgress  >=  00000059 
+  330:  	Set  *Flag_MAC_28  00000001 
+  340:  EndIf
+  348:  Return
+  350:  End
+

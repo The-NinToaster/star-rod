@@ -1,0 +1,54 @@
+% automatically dumped from map sam_06
+
+#new:Npc $sam_06_8024A08C_7C0
+00000004 $NpcSettings_802440B8_sam_06 00000000 00000000 00000000 
+00402D09 $Script_Init_80249ECC_sam_06 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 0000001E 00000000 FFFF8001 00000000 00000063 
+FFFFFFA6 0000005A 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00CD0001 00CD0002 00CD0001 00CD0001 00CD0001 00CD0001 00CD0001 00CD0001 
+00CD0001 00CD0001 00CD0001 00CD0001 00CD0001 00CD0001 00CD0001 00CD0001 
+00000000 00000000 00000000 001A00FF % He's one of the Ninjis. The Ninjis are taking care ...
+
+#new:AISettings $AISettings_80244068_sam_06
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80244098_sam_06
+    0:  Call     DoBasicAI   	( $AISettings_80244068_sam_06 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_802440B8_sam_06
+00000000 00180018 00000000 00000000 $Script_NpcAI_80244098_sam_06 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802494CC_sam_06
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000057 
+   18:  		Call     SayMessage0 	( .Npc:Self 00CD0004 00CD0001 00000000 00120102 ) % I've got my hands full with these Star Kids. They' ...
+   38:  	Case  >=  00000057 
+   44:  		Call     SayMessage0 	( .Npc:Self 00CD0004 00CD0001 00000000 00120103 ) % Why, they say you saved all of the Star Spirits! T ...
+   64:  EndSwitch
+   6C:  Return
+   74:  End
+
+#new:Script $Script_Init_80249ECC_sam_06
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802494CC_sam_06 )
+   14:  Return
+   1C:  End
+

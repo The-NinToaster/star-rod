@@ -1,0 +1,95 @@
+Script: DoBurnHit (001C89B0)
+
+    0:  Call     GetEventType 	( FFFFFF81 *Var[3] )
+   14:  If  *Var[3]  ==  .Event:BurnDeath
+   24:  	Call     EnableActorGlow 	( FFFFFF81 00000000 )
+   38:  EndIf
+   40:  Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[1] )
+   58:  Call     80269E80 ( *Var[3] )
+   68:  Switch  *Var[3] 
+   74:  	Case  ==  00000009 
+   80:  		Call     GetActorType 	( FFFFFF81 *Var[7] )
+   94:  		Switch  *Var[7] 
+   A0:  			CaseOR  ==  00000012 
+   AC:  			CaseOR  ==  00000030 
+   B8:  			EndCaseGroup
+   C0:  			Default
+   C8:  				Call     GetActorPos 	( FFFFFF81 *Var[4] *Var[5] *Var[6] )
+   E4:  				Call     SetActorJumpscale 	( FFFFFF81 *Fixed[0.0107421875] )
+   F8:  				Add  *Var[5]  00000037 
+  108:  				Call     SetGoalToPos 	( FFFFFF81 *Var[4] *Var[5] *Var[6] )
+  124:  				Call     JumpToGoal  	( FFFFFF81 00000008 00000000 00000000 00000000 )
+  144:  		EndSwitch
+  14C:  		Set  *Var[7]  00000000 
+  15C:  		Loop     0000001E 
+  168:  			Add  *Var[7]  00000030 
+  178:  			Call     SetActorAngle 	( FFFFFF81 *Var[7] )
+  18C:  			Wait     00000001 
+  198:  		EndLoop
+  1A0:  		Call     GetActorType 	( FFFFFF81 *Var[7] )
+  1B4:  		Switch  *Var[7] 
+  1C0:  			CaseOR  ==  00000012 
+  1CC:  			CaseOR  ==  00000030 
+  1D8:  				Wait     0000001E 
+  1E4:  			EndCaseGroup
+  1EC:  			Default
+  1F4:  				Sub  *Var[5]  00000037 
+  204:  				Call     SetActorJumpscale 	( FFFFFF81 *Fixed[0.80078125] )
+  218:  				If  *Var[5]  ==  00000000 
+  228:  					Call     SetGoalToPos 	( FFFFFF81 *Var[4] *Var[5] *Var[6] )
+  244:  					Call     JumpToGoal  	( FFFFFF81 0000000F 00000000 00000001 00000000 )
+  264:  					Call     SetGoalToPos 	( FFFFFF81 *Var[4] *Var[5] *Var[6] )
+  280:  					Call     JumpToGoal  	( FFFFFF81 0000000A 00000000 00000001 00000000 )
+  2A0:  					Call     SetGoalToPos 	( FFFFFF81 *Var[4] *Var[5] *Var[6] )
+  2BC:  					Call     JumpToGoal  	( FFFFFF81 00000005 00000000 00000001 00000000 )
+  2DC:  				Else
+  2E4:  					Call     SetGoalToPos 	( FFFFFF81 *Var[4] *Var[5] *Var[6] )
+  300:  					Call     JumpToGoal  	( FFFFFF81 0000000F 00000000 00000000 00000000 )
+  320:  					Call     SetGoalToPos 	( FFFFFF81 *Var[4] *Var[5] *Var[6] )
+  33C:  					Call     JumpToGoal  	( FFFFFF81 0000000A 00000000 00000000 00000000 )
+  35C:  					Call     SetGoalToPos 	( FFFFFF81 *Var[4] *Var[5] *Var[6] )
+  378:  					Call     JumpToGoal  	( FFFFFF81 00000005 00000000 00000000 00000000 )
+  398:  				EndIf
+  3A0:  		EndSwitch
+  3A8:  	Default
+  3B0:  		Wait     00000014 
+  3BC:  EndSwitch
+  3C4:  If  *Var[2]  !=  FFFFFFFF 
+  3D4:  	Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[2] )
+  3EC:  EndIf
+  3F4:  Wait     0000000A 
+  400:  Call     GetEventType 	( FFFFFF81 *Var[1] )
+  414:  Switch  *Var[1] 
+  420:  	Case  ==  .Event:BurnHit
+  42C:  		Call     GetSpriteEventFlags 	( FFFFFF81 *Var[0] *Var[1] )
+  444:  		If  *Var[1]  !&  00000202 
+  454:  			Call     GetActorPos 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  470:  			Call     8027D8E0 ( FFFFFF81 *Var[3] *Var[4] )
+  488:  			Call     GetStatusFlags ( FFFFFF81 *Var[5] )
+  49C:  			If  *Var[5]  &  00080000 
+  4AC:  				MulF  *Var[3]  *Fixed[0.40039062] 
+  4BC:  				MulF  *Var[4]  *Fixed[0.40039062] 
+  4CC:  			EndIf
+  4D4:  			DivF  *Var[3]  *Fixed[2.0] 
+  4E4:  			Call     GetActorFlags 	( FFFFFF81 *Var[5] )
+  4F8:  			If  *Var[5]  &  00000800 
+  508:  				SubF  *Var[1]  *Var[3] 
+  518:  			Else
+  520:  				AddF  *Var[1]  *Var[3] 
+  530:  			EndIf
+  538:  			AddF  *Var[2]  *Fixed[5.0] 
+  548:  			DivF  *Var[3]  *Fixed[10.0] 
+  558:  			Call     GetStatusFlags ( FFFFFF81 *Var[5] )
+  56C:  			If  *Var[5]  &  00080000 
+  57C:  				MulF  *Var[3]  *Fixed[0.40039062] 
+  58C:  				If  *Var[3]  <  00000001 
+  59C:  					SetF  *Var[3]  *Fixed[1.0] 
+  5AC:  				EndIf
+  5B4:  			EndIf
+  5BC:  			Call     PlayEffect  	( 00000027 00000000 *Var[0] *Var[1] *Var[2] *Var[3] 0000000A 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  600:  		EndIf
+  608:  	Case  ==  .Event:BurnDeath
+  614:  EndSwitch
+  61C:  Return
+  624:  End
+

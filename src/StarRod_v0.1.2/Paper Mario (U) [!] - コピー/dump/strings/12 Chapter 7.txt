@@ -1,0 +1,3264 @@
+12-000
+[STYLE:RIGHT]Oh, we have a guest![BR]
+[PAUSE:0A]Welcome! You poor man, you must[BR]
+be freezing![BR]
+[WAIT][NEXT]
+If you'd like to see my husband,[BR]
+he's in the other room.[BR]
+[WAIT][NEXT]
+Please, go right in.[WAIT][END]
+
+12-001
+[STYLE:RIGHT]If you'd like to see my husband,[BR]
+he's in the other room.[BR]
+[WAIT][NEXT]
+Please, go right in.[WAIT][END]
+
+12-002
+[STYLE:INSPECT]No reply...[BR]
+[PAUSE:05]Mayor Penguin's body doesn't[BR]
+budge an inch.[BR]
+[WAIT][NEXT]
+What's this? He has a memo in his[BR]
+hand that says, "Herringway."[WAIT][END]
+
+12-003
+[STYLE:INSPECT]No reply...[BR]
+[PAUSE:05]Mayor Penguin's body doesn't[BR]
+budge an inch.[BR]
+[WAIT][NEXT]
+What's this? He has a memo in his[BR]
+hand that says, "Herringway."[WAIT][END]
+
+12-004
+[STYLE:INSPECT]Something's inside the box. It's[BR]
+quite heavy.[BR]
+[WAIT][NEXT]
+What could be inside?[WAIT][END]
+
+12-005
+[STYLE:RIGHT]Darling,[BR]
+[PAUSE:0A]would you like a cup of tea?[BR]
+[PAUSE:01].[PAUSE:03].[PAUSE:05].[PAUSE:0A].[PAUSE:0A]... [PAUSE:05]Hmm? [BR]
+[PAUSE:0A][WAIT][NEXT]
+Oh... [PAUSE:0A]Dear, you know you'll catch[BR]
+a cold if you sleep there![WAIT][END]
+
+12-006
+[STYLE:RIGHT]{StartFX:Shrinking}{StartFX:Jitter}{StartFX:Wavy}[BR]
+{Down:06}Nooooooooooooooooooooooooooo!![WAIT][END]
+
+12-007
+[STYLE:RIGHT]{StartFX:Shrinking}{StartFX:Jitter}Help! Somebody! Anybody![BR]
+[PAUSE:05]My husband is dead!![BR]
+[PAUSE:05]He's been murdered![BR]
+{EndFX:Jitter}{EndFX:Shrinking}[WAIT][NEXT]
+[PAUSE:14]It's a[BR]
+[PAUSE:0A]{StartFX:Wavy}{StartFX:Jitter}{StartFX:Shrinking}penguin murder mystery!!![WAIT][END]
+
+12-008
+[STYLE:RIGHT]What's going on here, madam?[BR]
+[WAIT][NEXT]
+Just calm down, now.[BR]
+[PAUSE:0A]You need to speak slowly so I[BR]
+can get to the bottom of this.[WAIT][END]
+
+12-009
+[STYLE:RIGHT]My husband is dead![BR]
+[PAUSE:0A]Look at him lying there![BR]
+[WAIT][NEXT]
+Oh, my darling husband!!![BR]
+[PAUSE:0A]Somebody clipped his flippers!![WAIT][END]
+
+12-00A
+[STYLE:RIGHT]By puffin, you're right![BR]
+[PAUSE:0A]The Mayor's been murdered![BR]
+[WAIT][NEXT]
+This is like a mystery novel![BR]
+[PAUSE:0A]Except it's real! How tragic! [BR]
+[WAIT][NEXT]
+But madam, if I may ask...[BR]
+[PAUSE:0A]Who on earth would have reason[BR]
+to put this penguin on ice?[WAIT][END]
+
+12-00B
+[STYLE:RIGHT]Him! Right there! That man with[BR]
+the suspicious mustache![BR]
+[WAIT][NEXT]
+I told him not to come in the[BR]
+house, but he barged right in![BR]
+[WAIT][NEXT]
+My husband was alive right up[BR]
+until this man showed up![BR]
+[WAIT][NEXT]
+He must be the murderer![WAIT][END]
+
+12-00C
+[STYLE:RIGHT]Hey, you... Mustache![BR]
+[PAUSE:0A]Are you listening?[BR]
+[PAUSE:0A]This good woman's accusing you.[BR]
+What do you say for yourself?[WAIT][END]
+
+12-00D
+[STYLE:RIGHT]Don't try to play ignorant with[BR]
+me, buddy. I'm a professional.[BR]
+[PAUSE:0A]We've got a witness here.[BR]
+[WAIT][NEXT]
+Isn't that right, madam?[WAIT][END]
+
+12-00E
+[STYLE:RIGHT]Yes! That's right![BR]
+[PAUSE:0A]He did it in cold blood![BR]
+[PAUSE:0A]I, uh...saw it with my own eyes![BR]
+[WAIT][NEXT]
+Besides, he's the only one who[BR]
+came into this room![BR]
+[PAUSE:0A]It all adds up![WAIT][END]
+
+12-00F
+[STYLE:RIGHT]So you're sticking to your story,[BR]
+claiming you're not the culprit.[WAIT][END]
+
+12-010
+[STYLE:RIGHT]What's your problem?[BR]
+[PAUSE:0A]You don't actually think Mario[BR]
+did it, do you?[WAIT][END]
+
+12-011
+[STYLE:RIGHT]Are you crazy?[BR]
+[PAUSE:0A]Do you really think Mario would[BR]
+do something like that!?[WAIT][END]
+
+12-012
+[STYLE:RIGHT]Don't be ridiculous![BR]
+[PAUSE:0A]Mario didn't do it![WAIT][END]
+
+12-013
+[STYLE:RIGHT]Mario didn't do it.[BR]
+[PAUSE:0A]He's obviously innocent![WAIT][END]
+
+12-014
+[STYLE:RIGHT]I was with him the whole time.[BR]
+[PAUSE:0A]I swear on my own grave! Mario's[BR]
+innocent![WAIT][END]
+
+12-015
+[STYLE:RIGHT]Mario, um, didn't do it![BR]
+[WAIT][NEXT]
+It's mean that you're treating[BR]
+him like he's a bad guy, even[BR]
+though there's no, um, evidence![WAIT][END]
+
+12-016
+[STYLE:RIGHT]Hey, use your head![BR]
+[PAUSE:0A]Do you really think Mario is[BR]
+capable of such a thing?[BR]
+[PAUSE:0A]Think about it.[WAIT][END]
+
+12-017
+[STYLE:RIGHT]What! Are you nuts, man?[BR]
+[PAUSE:0A]Mario's not a murderer! That's[BR]
+completely ridiculous![WAIT][END]
+
+12-018
+[STYLE:RIGHT]Hmm... [PAUSE:0A]If you're telling the[BR]
+truth, then we're dealing with a[BR]
+backroom murder case.[BR]
+[PAUSE:0A]Oh, I never trained for this...[BR]
+[WAIT][NEXT]
+A backroom murder case... A[BR]
+high-ranking penguin slain...[BR]
+[WAIT][NEXT]
+How could such a horrible plot[BR]
+twist hit our peaceful city?[BR]
+[WAIT][NEXT]
+You! Mr. Mustache! Once more[BR]
+for the record! You swear you[BR]
+didn't do this?[WAIT][END]
+
+12-019
+[STYLE:RIGHT]OK... I think I believe you.[BR]
+[PAUSE:0F]But this means we have to find[BR]
+[PAUSE:0A]the true murderer.[PAUSE:05].[PAUSE:05].[PAUSE:05].[PAUSE:05].[PAUSE:05].[PAUSE:05]. [BR]
+[PAUSE:0A][WAIT][NEXT]
+Ah! Perfect![BR]
+[WAIT][NEXT]
+I'll give you a chance.[BR]
+[WAIT][NEXT]
+Since you claim that you're not[BR]
+the guilty party, then you must[BR]
+bring me the murderer yourself![BR]
+[WAIT][NEXT]
+If you do that, I'll believe you.[BR]
+[PAUSE:0A]It's the only way...[WAIT][END]
+
+12-01A
+[STYLE:RIGHT]All right, off with you.[BR]
+[WAIT][NEXT]
+You haven't proved that you're[BR]
+innocent yet, so I must forbid[BR]
+you to leave the city.[WAIT][END]
+
+12-01B
+[STYLE:RIGHT]Hmm?[BR]
+[PAUSE:0F]Got any leads yet?[BR]
+[WAIT][NEXT]
+You're still our main suspect, so[BR]
+I'd advise you to go find the[BR]
+real criminal. And fast.[WAIT][END]
+
+12-01C
+[STYLE:RIGHT]You killed him, didn't you?[BR]
+[PAUSE:0A]I knew my instincts were right.[BR]
+[WAIT][NEXT]
+When I saw a stranger like you[BR]
+out here in such a remote place, I[BR]
+knew that you must be up to no[BR]
+good! Oh, the horror![BR]
+[WAIT][NEXT]
+My poor, poor penguin-kins![BR]
+[PAUSE:0A]Please forgive me for letting[BR]
+this murderer in the house![WAIT][END]
+
+12-01D
+[STYLE:RIGHT]Oh, you again.[BR]
+[PAUSE:0A]Have you come up with anything?[BR]
+[WAIT][NEXT]
+Hmm...!?[BR]
+[WAIT][NEXT]
+Say, isn't that penguin behind[BR]
+you the mystery novel writer[BR]
+named Herringway?[WAIT][END]
+
+12-01E
+[STYLE:RIGHT]What-what!?[BR]
+[PAUSE:0F]Mayor Penguin was clutching a[BR]
+piece of paper that had[BR]
+"Herringway" written on it?[BR]
+[WAIT][NEXT]
+Bah! If that were true, I most[BR]
+certainly would've noticed it.[WAIT][END]
+
+12-01F
+[STYLE:RIGHT]Hmmm... He definitely does[BR]
+appear to be holding a piece[BR]
+of paper.[BR]
+[WAIT][NEXT]
+Yes, of course![BR]
+[PAUSE:0A]It's a message about his death![BR]
+[WAIT][NEXT]
+With his last breath, the Mayor[BR]
+told us the murderer's identity![WAIT][END]
+
+12-020
+[STYLE:RIGHT]So... Mr. Herringway...[BR]
+[PAUSE:05]You cold-hearted murderer![BR]
+[WAIT][NEXT]
+It all makes sense now![BR]
+[PAUSE:05]No wonder your novels are so[BR]
+exciting and suspenseful![BR]
+[WAIT][NEXT]
+You live out your own plots![WAIT][END]
+
+12-021
+[STYLE:RIGHT]Dear man... [PAUSE:05]Do you have any idea[BR]
+how ridiculous you sound?[BR]
+[PAUSE:0F]You actually think I would do this[BR]
+to the Mayor?[BR]
+[WAIT][NEXT]
+He's a great friend of mine![WAIT][END]
+
+12-022
+[STYLE:RIGHT]Mmmm... Yes...[BR]
+[PAUSE:0A]Yes, you were good friends...[BR]
+[WAIT][NEXT]
+Ah ha! But that was just a[BR]
+cover so that no one would[BR]
+suspect you of this heinous[BR]
+crime![BR]
+[WAIT][NEXT]
+That's it, isn't it? I've solved[BR]
+this crafty mystery![WAIT][END]
+
+12-023
+[STYLE:RIGHT]Oh, come on. Really.[BR]
+[PAUSE:0A]You simple, simple penguin.[BR]
+[PAUSE:0A]I would never be so predictable.[BR]
+[WAIT][NEXT]
+Besides, I'm completely innocent.[BR]
+I've been working in my house on[BR]
+my new novel for weeks.[BR]
+[WAIT][NEXT]
+I didn't have time to sneak over[BR]
+here to kill Mayor Penguin.[WAIT][END]
+
+12-024
+[STYLE:RIGHT]I'd just like to say that I still[BR]
+think the man with the mustache[BR]
+is the murderer.[WAIT][END]
+
+12-025
+[STYLE:RIGHT]Hmmmm...[BR]
+[PAUSE:0A]This penguin murder mystery is[BR]
+getting more intriguing all the[BR]
+time...[WAIT][END]
+
+12-026
+[STYLE:RIGHT]{StartFX:Wavy}[PAUSE:05]Uuhhh...[BR]
+[PAUSE:05][WAIT][END]
+
+12-027
+[STYLE:RIGHT]Oh, my aching... Ouch...[BR]
+[PAUSE:0A][WAIT][END]
+
+12-028
+[STYLE:RIGHT]{StartFX:Jitter}{StartFX:Shrinking}Eeeeeeek![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+{StartFX:Wavy}My husband's returned![BR]
+[PAUSE:0A]He's a ghost!!! Eeeeek! [WAIT][END]
+
+12-029
+[STYLE:RIGHT]Oh, good gracious![BR]
+[PAUSE:0A]Hello, everyone.[BR]
+[WAIT][NEXT]
+What's going on here?[WAIT][END]
+
+12-02A
+[STYLE:RIGHT]What-what?! Mayor![BR]
+[PAUSE:05]We thought you were dead![BR]
+[WAIT][NEXT]
+Our backroom murder mystery[BR]
+is a wash! What a plot twist![WAIT][END]
+
+12-02B
+[STYLE:RIGHT]Huh...?[BR]
+[PAUSE:0A]What are you talking about?[BR]
+[PAUSE:0A][WAIT][END]
+
+12-02C
+[STYLE:RIGHT]Umm[PAUSE:05].[PAUSE:03].[PAUSE:03].[PAUSE:03].[BR]
+[WAIT][NEXT]
+I think... [PAUSE:05]I seem to remember[BR]
+going to the shelf to get this[BR]
+souvenir for Herringway.[BR]
+[PAUSE:0A][WAIT][NEXT]
+[PAUSE:0A]Oh, yes, of course![BR]
+[PAUSE:0A]I reached up, slipped, and then[BR]
+whacked my head on the floor.[BR]
+[PAUSE:0A]Yes, that's what happened![WAIT][END]
+
+12-02D
+[STYLE:RIGHT]Here you are, Herringway.[BR]
+[PAUSE:0A]This is what I was reaching for.[BR]
+[WAIT][NEXT]
+Toad Town was great fun.[BR]
+[PAUSE:0A]So many interesting sights... Wish[BR]
+you could've been there.[BR]
+[WAIT][NEXT]
+Some time after all this hubbub[BR]
+settles down, I'll give you a full[BR]
+account of the big city.[WAIT][END]
+
+12-02E
+[STYLE:RIGHT]Well...uh, thank you, old friend.[BR]
+[PAUSE:0A]That's very thoughtful...[WAIT][END]
+
+12-02F
+[STYLE:RIGHT]But Mayor![BR]
+[PAUSE:0A]Here we were thinking that you'd[BR]
+been murdered![BR]
+[WAIT][NEXT]
+The whole city was up in arms![BR]
+[PAUSE:0A]Next time be more careful![WAIT][END]
+
+12-030
+[STYLE:RIGHT]Ah... [PAUSE:05]Yes. [PAUSE:05]So sorry.[WAIT][END]
+
+12-031
+[STYLE:RIGHT]Ha ha! I thought it rather [BR]
+entertaining, actually.[BR]
+[PAUSE:0A]Besides, everything's OK now.[BR]
+The Mayor's just fine.[BR]
+[WAIT][NEXT]
+I must return to my home now.[BR]
+[PAUSE:0A]I believe I've just had an idea[BR]
+for the sequel to my new novel.[WAIT][END]
+
+12-032
+[STYLE:RIGHT]Ummm...[BR]
+[PAUSE:0A]I have the best intentions, but[BR]
+for some reason I always end up[BR]
+causing a ruckus.[WAIT][END]
+
+12-033
+[STYLE:RIGHT]Hello. [PAUSE:0A]Sorry about all that.[BR]
+[PAUSE:0A]I must apologize[PAUSE:03].[PAUSE:03].[PAUSE:03]. [BR]
+[PAUSE:0A][WAIT][NEXT]
+... Say![BR]
+[PAUSE:0A]You're Mario, aren't you?[BR]
+[PAUSE:0A]Well, let me welcome you to Shiver[BR]
+City, jewel of the north![WAIT][END]
+
+12-034
+[STYLE:RIGHT]...[PAUSE:03]What's the matter?[BR]
+[PAUSE:0A]Oh, you want to hike over to[BR]
+Starborn Valley, do you?[BR]
+[WAIT][NEXT]
+I see... Of course.[BR]
+[PAUSE:05]I'll tell the gatekeeper to allow[BR]
+you out of the city.[BR]
+[WAIT][NEXT]
+You'd better bundle up![WAIT][END]
+
+12-035
+[STYLE:RIGHT]Uh...I knew you were innocent the[BR]
+whole time![BR]
+[WAIT][NEXT]
+A backroom murder case?[BR]
+Please! How completely silly![BR]
+[WAIT][NEXT]
+That over-zealous guard must[BR]
+read too many mystery novels.[BR]
+[PAUSE:0A]Ha ha ha ha ha...aaanyway...[WAIT][END]
+
+12-036
+[STYLE:RIGHT]Hi there! How are you?[BR]
+[WAIT][NEXT]
+Herringway's mystery novels[BR]
+have become very popular here in[BR]
+Shiver City, you know.[BR]
+[WAIT][NEXT]
+But when I became a character[BR]
+in a mystery, I realized that[BR]
+I'm not so fond of books like[BR]
+that.[BR]
+[WAIT][NEXT]
+I'm serious. I mean it.[BR]
+[PAUSE:0A]Only penguin poetry for me now![WAIT][END]
+
+12-037
+[STYLE:RIGHT]Oh, hello there, Mario![BR]
+[PAUSE:0A]My husband tells me you're[BR]
+looking for the Crystal Palace.[BR]
+[WAIT][NEXT]
+What an exciting adventure![BR]
+[PAUSE:0A]You're like a hero in a novel![BR]
+[WAIT][NEXT]
+Imagine that, being in a story...[WAIT][END]
+
+12-038
+[STYLE:RIGHT]My husband says that you're[BR]
+preparing to fight Bowser so you[BR]
+can save Princess Peach.[BR]
+[WAIT][NEXT]
+Ah! It's like a romantic novel![BR]
+[WAIT][NEXT]
+I'm on your side. I want there to[BR]
+be a happy ending![BR]
+[PAUSE:0A]Good luck![BR]
+[WAIT][NEXT]
+Save the princess![WAIT][END]
+
+12-039
+[STYLE:RIGHT]Please come back anytime.[BR]
+[WAIT][NEXT]
+These northern lands aren't[BR]
+much for scenery, but there's[BR]
+always plenty of suspense![BR]
+[WAIT][NEXT]
+Ha ha! Only joking, only joking.[BR]
+[PAUSE:0A]You'll always get a warm welcome[BR]
+around here.[WAIT][END]
+
+12-03A
+[STYLE:RIGHT]Oh, Mario![BR]
+[PAUSE:0A]Did you reach Starborn Valley?[BR]
+[PAUSE:0A]Did you see Merle?[BR]
+[PAUSE:14][WAIT][NEXT]
+... Oh, excellent. He said what?[BR]
+[PAUSE:0A]An item that has been passed[BR]
+down in this city?[BR]
+[WAIT][NEXT]
+Um... Oh, right! There was[BR]
+something like that.[BR]
+[WAIT][NEXT]
+Just a minute,[BR]
+[PAUSE:05]I think I've got it somewhere.[WAIT][END]
+
+12-03B
+[STYLE:RIGHT]Yes, I found it.[BR]
+[PAUSE:0A]Here it is.[WAIT][END]
+
+12-03C
+[STYLE:RIGHT]This Bucket has been passed[BR]
+down through the years in[BR]
+Shiver City.[BR]
+[WAIT][NEXT]
+As Merle must have told you, [BR]
+there's a legend associated with[BR]
+it.[BR]
+[WAIT][NEXT]
+If you use this and the Scarf[BR]
+together, the way to the Crystal[BR]
+Palace will open.[BR]
+[WAIT][NEXT]
+Who knows what all that means,[BR]
+though! Ha ha ha![BR]
+[PAUSE:0A]I don't have the slightest clue[BR]
+as to how to use them together.[WAIT][END]
+
+12-03D
+[STYLE:RIGHT]Sounds like those Star Kids in[BR]
+Starborn Valley are in trouble.[BR]
+[WAIT][NEXT]
+I hope you do your best for the[BR]
+little tykes. They're just kids.[BR]
+[PAUSE:0A]Best of luck to you![WAIT][END]
+
+12-03E
+[STYLE:RIGHT]Have you found the way to the[BR]
+Crystal Palace yet?[BR]
+[WAIT][NEXT]
+Oh... No, huh? Boy, it must be[BR]
+difficult being a famous[BR]
+adventurer...[BR]
+[WAIT][NEXT]
+Poor Princess Peach...[BR]
+[PAUSE:0A]If you can't save her, I don't[BR]
+know who can![WAIT][END]
+
+12-03F
+[STYLE:RIGHT]You found the path to the[BR]
+Crystal Palace!?[BR]
+[PAUSE:0A]That's fantastic!![BR]
+[WAIT][NEXT]
+That Star Spirit up there is as[BR]
+good as saved already![WAIT][END]
+
+12-040
+[STYLE:RIGHT]Mario, I do believe you've saved[BR]
+all seven Star Spirits![BR]
+[WAIT][NEXT]
+Now all you have to do is defeat[BR]
+Bowser and bring back the Star[BR]
+Rod so that the world can be[BR]
+peaceful again.[BR]
+[WAIT][NEXT]
+And all those poor, kidnapped[BR]
+people can come back![BR]
+[WAIT][NEXT]
+I wish to the Stars you'll win![WAIT][END]
+
+12-041
+[STYLE:RIGHT]You're Mayor Penguin of Shiver[BR]
+City, correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry. I deliver[BR]
+letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+12-042
+[STYLE:RIGHT]Uh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+12-043
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+12-044
+[STYLE:RIGHT]For me?[BR]
+[PAUSE:05]Oh... It's from Yoshi Village![BR]
+[PAUSE:08]I don't know where that is, but I[BR]
+bet it's pretty far away.[BR]
+[WAIT][NEXT]
+I'll read this later.[BR]
+[PAUSE:0A]Thanks very much![BR]
+[WAIT][NEXT]
+Oh, hang on![BR]
+[PAUSE:0A]I'll give you this.[WAIT][END]
+
+12-045
+[STYLE:RIGHT]A really shady individual came[BR]
+to the city recently.[BR]
+[WAIT][NEXT]
+He was screaming at the top of[BR]
+his lungs and running around...[BR]
+[WAIT][NEXT]
+It was reeeeally odd...[BR]
+[PAUSE:0A]I think something strange is[BR]
+going on in our peaceful city.[WAIT][END]
+
+12-046
+[STYLE:RIGHT]A really shady individual came[BR]
+to the city recently.[BR]
+[WAIT][NEXT]
+He was screaming at the top of[BR]
+his lungs and running around...[BR]
+[WAIT][NEXT]
+It was reeeeally odd...[BR]
+[PAUSE:0A]I think something strange is[BR]
+going on in our peaceful city.[WAIT][END]
+
+12-047
+[STYLE:RIGHT]Ha! I'm not going to help you.[BR]
+[WAIT][NEXT]
+I don't socialize with murderers.[BR]
+[PAUSE:0A]Get away from me![WAIT][END]
+
+12-048
+[STYLE:RIGHT]Ha! I'm not going to help you.[BR]
+[WAIT][NEXT]
+I don't socialize with murderers.[BR]
+[PAUSE:0A]Get away from me![WAIT][END]
+
+12-049
+[STYLE:RIGHT]So...you weren't the criminal[BR]
+after all, huh?[BR]
+[PAUSE:0A]Ha ha ha ha ha... Sorry.[BR]
+[WAIT][NEXT]
+The Mayor's wife raised such a[BR]
+stink that I believed it.[BR]
+[WAIT][NEXT]
+I'm just happy that the Mayor's[BR]
+doing fine.[WAIT][END]
+
+12-04A
+[STYLE:RIGHT]So...you weren't the criminal[BR]
+after all, huh?[BR]
+[PAUSE:0A]Ha ha ha ha ha... Sorry.[BR]
+[WAIT][NEXT]
+The Mayor's wife raised such a[BR]
+stink that I believed it.[BR]
+[WAIT][NEXT]
+I'm just happy that the Mayor's[BR]
+doing fine.[WAIT][END]
+
+12-04B
+[STYLE:RIGHT]I've heard that all the Star [BR]
+Spirits made it back to Star[BR]
+Haven. Fantastic![BR]
+[WAIT][NEXT]
+That means soon all our wishes[BR]
+will once again be granted.[BR]
+[WAIT][NEXT]
+Right now, we're all wishing that[BR]
+you'll beat that evil Bowser and[BR]
+restore the peace.[WAIT][END]
+
+12-04C
+[STYLE:RIGHT]People who travel to here from[BR]
+other towns must think that this[BR]
+city is freezing cold.[BR]
+[WAIT][NEXT]
+I'm used to it. I heard, though,[BR]
+that somewhere in the world is a[BR]
+hot town covered in sand. Now[BR]
+THAT would be intolerable.[BR]
+[WAIT][NEXT]
+I don't believe it even exists.[WAIT][END]
+
+12-04D
+[STYLE:RIGHT]People who travel to here from[BR]
+other towns must think that this[BR]
+city is freezing cold.[BR]
+[WAIT][NEXT]
+I'm used to it. I heard, though,[BR]
+that somewhere in the world is a[BR]
+hot town covered in sand. Now[BR]
+THAT would be intolerable.[BR]
+[WAIT][NEXT]
+I don't believe it even exists.[WAIT][END]
+
+12-04E
+[STYLE:RIGHT]Herringway?[BR]
+[PAUSE:0A]Why, he's a mystery novelist who[BR]
+lives in this city.[BR]
+[WAIT][NEXT]
+You suspect Herringway?[BR]
+[WAIT][NEXT]
+Nah! It couldn't be him![BR]
+[PAUSE:0A]He and the Mayor are friends![WAIT][END]
+
+12-04F
+[STYLE:RIGHT]Herringway?[BR]
+[PAUSE:0A]Why, he's a mystery novelist who[BR]
+lives in this city.[BR]
+[WAIT][NEXT]
+You suspect Herringway?[BR]
+[WAIT][NEXT]
+Nah! It couldn't be him![BR]
+[PAUSE:0A]He and the Mayor are friends![WAIT][END]
+
+12-050
+[STYLE:RIGHT]Boy, thank goodness the Mayor is[BR]
+doing OK.[BR]
+[WAIT][NEXT]
+He really does seem to be as[BR]
+careless as they come, you know.[WAIT][END]
+
+12-051
+[STYLE:RIGHT]Boy, thank goodness the Mayor is[BR]
+doing OK.[BR]
+[WAIT][NEXT]
+He really does seem to be as[BR]
+careless as they come, you know.[WAIT][END]
+
+12-052
+[STYLE:RIGHT]So, Mario, you're finally going[BR]
+to fight against Bowser![BR]
+[WAIT][NEXT]
+Trust me--we'll all be cheering[BR]
+for you to beat him![BR]
+[WAIT][NEXT]
+Once peace returns, I wanna go[BR]
+visit Toad Town.[BR]
+[PAUSE:0A]I wanna visit the great Mario's[BR]
+house, too![WAIT][END]
+
+12-053
+[STYLE:RIGHT]Pengy pengy penguin pop[NOTE][BR]
+Feel the rhythm, stop 'n' bop[NOTE][BR]
+Do the pengy penguin hop[NOTE][BR]
+[WAIT][NEXT]
+All the snowmen in a line[NOTE][BR]
+[PAUSE:05]A bucket hat fits super fine,[BR]
+Eyes and noses, looking cool[NOTE][BR]
+Bring a scarf, you pengy fool![NOTE][WAIT][END]
+
+12-054
+[STYLE:RIGHT]Pengy pengy penguin pop[NOTE][BR]
+Feel the rhythm, stop 'n' bop[NOTE][BR]
+Do the pengy penguin hop[NOTE][BR]
+[WAIT][NEXT]
+All the snowmen in a line[NOTE][BR]
+[PAUSE:05]A bucket hat fits super fine,[BR]
+Eyes and noses, looking cool[NOTE][BR]
+Bring a scarf, you pengy fool![NOTE][WAIT][END]
+
+12-055
+[STYLE:RIGHT]{StartFX:Shrinking}You! Penguin killer!!!![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+You just keep your distance![BR]
+What's that gleam in your eye?![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}{StartFX:Wavy}Noooo!!! AIIIIGH![BR]
+{EndFX:Wavy}I'm gonna be a murder victim![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Please, {StartFX:Shrinking}{StartFX:Wavy}somebody help me!!![WAIT][END]
+
+12-056
+[STYLE:RIGHT]{StartFX:Shrinking}You! Penguin killer!!!![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+You just keep your distance![BR]
+What's that gleam in your eye?![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}{StartFX:Wavy}Noooo!!! AIIIIGH![BR]
+{EndFX:Wavy}I'm gonna be a murder victim![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Please, {StartFX:Shrinking}{StartFX:Wavy}somebody help me!!![WAIT][END]
+
+12-057
+[STYLE:RIGHT]{StartFX:SizeWave}Whoa ho ho ho...[BR]
+{EndFX:SizeWave}It's a good thing that murder[BR]
+case got settled.[BR]
+[WAIT][NEXT]
+Um... I'm really sorry that[BR]
+everyone called you a criminal.[BR]
+[PAUSE:0A]Really sorry![WAIT][END]
+
+12-058
+[STYLE:RIGHT]{StartFX:SizeWave}Whoa ho ho ho...[BR]
+{EndFX:SizeWave}It's a good thing that murder[BR]
+case got settled.[BR]
+[WAIT][NEXT]
+Um... I'm really sorry that[BR]
+everyone called you a criminal.[BR]
+[PAUSE:0A]Really sorry![WAIT][END]
+
+12-059
+[STYLE:RIGHT]The last Star Spirit was held[BR]
+near this city, wasn't it?[BR]
+[WAIT][NEXT]
+So, our humble frozen home is[BR]
+the setting for a great story![BR]
+[WAIT][NEXT]
+Oooh! How exciting![BR]
+[PAUSE:0A]I bet people in Toad Town will[BR]
+start giving Shiver City some[BR]
+respect now![WAIT][END]
+
+12-05A
+[STYLE:RIGHT]Anyone for a shaved ice treat?[BR]
+[PAUSE:03]Strawberry flavor?[HEART] Maybe[BR]
+watermelon?[HEART][HEART][BR]
+[WAIT][NEXT]
+...Or my personal favorite,[BR]
+tangy tangerine...?[HEART][BR]
+[PAUSE:08]Ho ho![HEART] [PAUSE:05]I love frozen treats![HEART][WAIT][END]
+
+12-05B
+[STYLE:RIGHT]Anyone for a shaved ice treat?[BR]
+[PAUSE:03]Strawberry flavor?[HEART] Maybe[BR]
+watermelon?[HEART][HEART][BR]
+[WAIT][NEXT]
+...Or my personal favorite,[BR]
+tangy tangerine...?[HEART][BR]
+[PAUSE:08]Ho ho![HEART] [PAUSE:05]I love frozen treats![HEART][WAIT][END]
+
+12-05C
+[STYLE:RIGHT]Herringway?[BR]
+[PAUSE:0A]Yes, of course I know him.[BR]
+[WAIT][NEXT]
+Everyone in this city knows[BR]
+about him. He's a world-famous[BR]
+mystery novelist.[BR]
+[WAIT][NEXT]
+...You think Herringway killed[BR]
+Mayor Penguin?[BR]
+[PAUSE:0A]Hmm... That sounds nuts, but...[BR]
+[WAIT][NEXT]
+...you might be on to something.[BR]
+[PAUSE:0A]Herringway does know everything[BR]
+about crimes and criminals.[BR]
+[WAIT][NEXT]
+And he seems to have[BR]
+mysteriously disappeared...[WAIT][END]
+
+12-05D
+[STYLE:RIGHT]Herringway?[BR]
+[PAUSE:0A]Yes, of course I know him.[BR]
+[WAIT][NEXT]
+Everyone in this city knows[BR]
+about him. He's a world-famous[BR]
+mystery novelist.[BR]
+[WAIT][NEXT]
+...You think Herringway killed[BR]
+Mayor Penguin?[BR]
+[PAUSE:0A]Hmm... That sounds nuts, but...[BR]
+[WAIT][NEXT]
+...you might be onto something.[BR]
+[PAUSE:0A]Herringway does know everything[BR]
+about crimes and criminals.[BR]
+[WAIT][NEXT]
+And he seems to have[BR]
+mysteriously disappeared...[WAIT][END]
+
+12-05E
+[STYLE:RIGHT]The case [PAUSE:0A]has been closed, huh?[BR]
+I'm really happy that [BR]
+Herringway wasn't guilty.[BR]
+[WAIT][NEXT]
+What? Me? I thought it was him?[BR]
+[WAIT][NEXT]
+Oh, ha ha ha ha... [PAUSE:05]That was just[BR]
+me being silly![WAIT][END]
+
+12-05F
+[STYLE:RIGHT]The case [PAUSE:0A]has been closed, huh?[BR]
+I'm really happy that [BR]
+Herringway wasn't guilty.[BR]
+[WAIT][NEXT]
+What? Me? I thought it was him?[BR]
+[WAIT][NEXT]
+Oh, ha ha ha ha... [PAUSE:05]That was just[BR]
+me being silly![WAIT][END]
+
+12-060
+[STYLE:RIGHT]Herringway was writing a new[BR]
+novel in his secret room.[BR]
+[PAUSE:0A]No wonder nobody could figure[BR]
+out where he was![BR]
+[WAIT][NEXT]
+By the way, Mario...[BR]
+[PAUSE:0A]You've read some of his[BR]
+manuscript, haven't you?[BR]
+[WAIT][NEXT]
+Tell me the ending! Pleeeease![WAIT][END]
+
+12-061
+[STYLE:RIGHT]Mayor Penguin was murdered![BR]
+[WAIT][NEXT]
+In his back room![BR]
+[PAUSE:0A]And no one has the slightest idea[BR]
+who did it![WAIT][END]
+
+12-062
+[STYLE:RIGHT]Oh! It can't be![BR]
+[PAUSE:0A]It's like we're in one of[BR]
+Herringway's mystery novels![BR]
+[WAIT][NEXT]
+How could such a terrible thing[BR]
+happen in such a small, peaceful[BR]
+city?[BR]
+[WAIT][NEXT]
+Who could do such a thing?[WAIT][END]
+
+12-063
+[STYLE:RIGHT]The Mayor's wife said the man[BR]
+with the mustache did it.[BR]
+[WAIT][NEXT]
+And he seemed to be such a[BR]
+gentleman, too. Still, I guess you[BR]
+shouldn't trust anyone who[BR]
+carries such a huge Hammer.[WAIT][END]
+
+12-064
+[STYLE:RIGHT]Brrr! How terrifying![BR]
+[PAUSE:0A]It just goes to show you that[BR]
+you should never trust your[BR]
+first impression of people.[WAIT][END]
+
+12-065
+[STYLE:RIGHT]The Mayor wasn't murdered![BR]
+[WAIT][NEXT]
+He just whacked his own head on[BR]
+the floor and fainted.[WAIT][END]
+
+12-066
+[STYLE:RIGHT]But that means...[BR]
+[PAUSE:0A]...the man with the mustache[BR]
+wasn't evil, after all.[WAIT][END]
+
+12-067
+[STYLE:RIGHT]Yeah, you're right![BR]
+[PAUSE:0A]Hey, I solved the case! The[BR]
+criminal was a box of souvenirs[BR]
+from Toad Town![WAIT][END]
+
+12-068
+[STYLE:RIGHT]Waaaa ha ha ha ha![BR]
+[PAUSE:0A]Who would've believed we'd have a[BR]
+mystery in this sleepy city?[BR]
+[WAIT][NEXT]
+It's quiet, peaceful... I love it.[BR]
+[PAUSE:0A]I'm going home now.[BR]
+[PAUSE:0A]I'm gonna read a novel.[WAIT][END]
+
+12-069
+[STYLE:RIGHT]Please come again, OK?[WAIT][END]
+
+12-06A
+[STYLE:RIGHT]Look, I'm not selling anything to[BR]
+Mayor Penguin's killer.[BR]
+[PAUSE:05]Get out of here, will you?[WAIT][END]
+
+12-06B
+[STYLE:RIGHT]The Toad House slogan is... [BR]
+"Refresh your Body and Soul."[BR]
+[WAIT][NEXT]
+Do you want to take a nap?[BR]
+{Func_04}[END]
+
+12-06C
+[STYLE:RIGHT]...Huh?[BR]
+[PAUSE:0A]You look OK to me, Mario.[BR]
+[PAUSE:0A]Are you sure you feel like taking[BR]
+a nap?[BR]
+{Func_04}[END]
+
+12-06D
+[NEXT]
+Hope to see you again![WAIT][END]
+
+12-06E
+[NEXT]
+Sleep well.[WAIT][END]
+
+12-06F
+[STYLE:RIGHT]Did you have a good nap?[BR]
+[WAIT][NEXT]
+Good luck to you![WAIT][END]
+
+12-070
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0A]I took a nap, and when I woke up[BR]
+there were all these items![BR]
+[WAIT][NEXT]
+And it was the weirdest thing...[BR]
+The floor was all wet, as if snow[BR]
+had melted everywhere...[BR]
+[WAIT][NEXT]
+Do you think someone left these[BR]
+as a present for you, Mario?[BR]
+[PAUSE:0A]But who would do that???[WAIT][END]
+
+12-071
+[STYLE:RIGHT]Starborn Valley and Shiver[BR]
+Mountain are both near here.[BR]
+[WAIT][NEXT]
+But you'd better dress warmly if[BR]
+you plan on reaching them.[WAIT][END]
+
+12-072
+[STYLE:RIGHT]Starborn Valley and Shiver[BR]
+Mountain are both near here.[BR]
+[WAIT][NEXT]
+But you'd better dress warmly if[BR]
+you plan on reaching them.[WAIT][END]
+
+12-073
+[STYLE:RIGHT]It's really rare that we get[BR]
+visitors from other towns.[BR]
+[WAIT][NEXT]
+You may have noticed everyone[BR]
+gets nervous around strangers.[BR]
+[WAIT][NEXT]
+It seems like just recently we've[BR]
+had several visitors from other[BR]
+places...[BR]
+[WAIT][NEXT]
+Do you think it means that Shiver[BR]
+City is getting to be popular?[WAIT][END]
+
+12-074
+[STYLE:RIGHT]It's really rare that we get[BR]
+visitors from other towns.[BR]
+[WAIT][NEXT]
+You may have noticed everyone[BR]
+gets nervous around strangers.[BR]
+[WAIT][NEXT]
+It seems like just recently we've[BR]
+had several visitors from other[BR]
+places...[BR]
+[WAIT][NEXT]
+Do you think it means that Shiver[BR]
+City is getting to be popular?[WAIT][END]
+
+12-075
+[STYLE:RIGHT]Your visit here will go down as[BR]
+one of the most important times[BR]
+in Shiver City history.[BR]
+[WAIT][NEXT]
+When I heard about your[BR]
+legendary deeds, I imagined you[BR]
+as this ultra-strong guy...[BR]
+[WAIT][NEXT]
+You turned out...ahem...much[BR]
+more normal than I expected.[WAIT][END]
+
+12-076
+[STYLE:RIGHT]...Starborn Valley?[BR]
+[WAIT][NEXT]
+Oh. Sure.[BR]
+[PAUSE:0A]Go east from this city.[BR]
+[WAIT][NEXT]
+But you have to be careful![BR]
+[WAIT][NEXT]
+I have it on good faith that[BR]
+there're lots of scary monsters[BR]
+between here and there.[BR]
+[WAIT][NEXT]
+The thought makes me shiver...[BR]
+[PAUSE:0A]It seems like all I hear these[BR]
+days are frightening rumors.[BR]
+[PAUSE:0A]What's Shiver City coming to?[WAIT][END]
+
+12-077
+[STYLE:RIGHT]...Starborn Valley?[BR]
+[WAIT][NEXT]
+Oh. Sure.[BR]
+[PAUSE:0A]Go east from this city.[BR]
+[WAIT][NEXT]
+But you have to be careful![BR]
+[WAIT][NEXT]
+I have it on good faith that[BR]
+there're lots of scary monsters[BR]
+between here and there.[BR]
+[WAIT][NEXT]
+The thought makes me shiver...[BR]
+[PAUSE:0A]It seems like all I hear these[BR]
+days are frightening rumors.[BR]
+[PAUSE:0A]What's Shiver City coming to?[WAIT][END]
+
+12-078
+[STYLE:RIGHT]That backroom murder case was[BR]
+the greatest mystery in the[BR]
+history of Shiver City![BR]
+[WAIT][NEXT]
+Although it was kind of a joke...[BR]
+I'm glad the case got solved.[BR]
+[PAUSE:0A]It's a good thing that the Mayor[BR]
+turned out to be OK.[BR]
+[WAIT][NEXT]
+You certainly got a raw deal for[BR]
+a while there, Mario.[WAIT][END]
+
+12-079
+[STYLE:RIGHT]That backroom murder case was[BR]
+the greatest mystery in the[BR]
+history of Shiver City![BR]
+[WAIT][NEXT]
+Although it was kind of a joke...[BR]
+I'm glad the case got solved.[BR]
+[PAUSE:0A]It's a good thing that the Mayor[BR]
+turned out to be OK.[BR]
+[WAIT][NEXT]
+You certainly got a raw deal for[BR]
+a while there, Mario.[WAIT][END]
+
+12-07A
+[STYLE:RIGHT]Your adventures are already[BR]
+more thrilling than any novel I've[BR]
+ever read![BR]
+[WAIT][NEXT]
+Aren't you afraid to take on[BR]
+that monster, Bowser?[BR]
+[WAIT][NEXT]
+Boy, I would be. Good luck![WAIT][END]
+
+12-07B
+[STYLE:RIGHT]Yah, hello![BR]
+[PAUSE:0A]This is the northernmost burg,[BR]
+Shiver City.[BR]
+[WAIT][NEXT]
+You come from Toad Town?[BR]
+[PAUSE:0A]Very, very far away, yah?[BR]
+Welcome to Shiver City.[WAIT][END]
+
+12-07C
+[STYLE:RIGHT]Yah, hello![BR]
+[PAUSE:0A]This is the northernmost burg,[BR]
+Shiver City.[BR]
+[WAIT][NEXT]
+You come from Toad Town?[BR]
+[PAUSE:0A]Very, very far away, yah?[BR]
+Welcome to Shiver City.[WAIT][END]
+
+12-07D
+[STYLE:RIGHT]You'd better show some evidence[BR]
+if you're really not the one who[BR]
+murdered Mayor Penguin![BR]
+[WAIT][NEXT]
+Until you do, I'm sorry, but I[BR]
+can't let you leave the city. I[BR]
+won't budge from this spot, oh no[BR]
+sirree![BR]
+[WAIT][NEXT]
+I'm serious, now! There's no use[BR]
+trying to move me![BR]
+[PAUSE:0A]...[PAUSE:03]Am I being too rude? Sorry.[WAIT][END]
+
+12-07E
+[STYLE:RIGHT]You'd better show some evidence[BR]
+if you're really not the one who[BR]
+murdered Mayor Penguin![BR]
+[WAIT][NEXT]
+Until you do, I'm sorry, but I[BR]
+can't let you leave the city. I[BR]
+won't budge from this spot, oh no[BR]
+sirree![BR]
+[WAIT][NEXT]
+I'm serious, now! There's no use[BR]
+trying to move me![BR]
+[PAUSE:0A]...[PAUSE:03]Am I being too rude? Sorry.[WAIT][END]
+
+12-07F
+[STYLE:RIGHT]Oh! Such a fuss the Mayor's wife[BR]
+made, yah? Her exaggeration was[BR]
+the beginning of all this trouble,[BR]
+that's for sure.[BR]
+[WAIT][NEXT]
+She reads too many of those[BR]
+mystery novels, I think.[BR]
+[WAIT][NEXT]
+...Although, to be fair, I[BR]
+suspected you, too.[BR]
+[PAUSE:0F]Ha ha ha ha ha...... Oops![WAIT][END]
+
+12-080
+[STYLE:RIGHT]Oh! Such a fuss the Mayor's wife[BR]
+made, yah? Her exaggeration was[BR]
+the beginning of all this trouble,[BR]
+that's for sure.[BR]
+[WAIT][NEXT]
+She reads too many of those[BR]
+mystery novels, I think.[BR]
+[WAIT][NEXT]
+...Although, to be fair, I[BR]
+suspected you, too.[BR]
+[PAUSE:0F]Ha ha ha ha ha...... Oops![WAIT][END]
+
+12-081
+[STYLE:RIGHT]Mario! You're heading to[BR]
+Bowser's Castle to try to save[BR]
+Princess Peach and all the[BR]
+others, yah?[BR]
+[WAIT][NEXT]
+A friend of mine followed the[BR]
+Mayor to Toad Town and I[BR]
+haven't seen him since. Do you[BR]
+think he was captured?[BR]
+[WAIT][NEXT]
+So many people were caught...[BR]
+[PAUSE:05]I wonder if they're all OK.[BR]
+[PAUSE:0A]Oh, I'm so worried.[WAIT][END]
+
+12-082
+[STYLE:RIGHT]This city is becoming pretty[BR]
+dangerous lately.[BR]
+[WAIT][NEXT]
+I saw this totally suspicious[BR]
+stranger wandering around just[BR]
+a short time ago.[BR]
+[WAIT][NEXT]
+He seemed to be searching for[BR]
+someone. I didn't like his looks.[BR]
+[PAUSE:0A]I wonder where he got off to.[WAIT][END]
+
+12-083
+[STYLE:RIGHT]This city is becoming pretty[BR]
+dangerous lately.[BR]
+[WAIT][NEXT]
+I saw this totally suspicious[BR]
+stranger wandering around just[BR]
+a short time ago.[BR]
+[WAIT][NEXT]
+He seemed to be searching for[BR]
+someone. I didn't like his looks.[BR]
+[PAUSE:0A]I wonder where he got off to.[WAIT][END]
+
+12-084
+[STYLE:RIGHT]Herringway?[BR]
+[PAUSE:0A]Yeah, sure. He lives right next[BR]
+to the lake.[BR]
+[WAIT][NEXT]
+His house is always empty,[BR]
+though. Who knows where he is...[BR]
+[WAIT][NEXT]
+Whaaat!? [PAUSE:05].[PAUSE:05].[PAUSE:05].[PAUSE:0A]Herringway might be[BR]
+a murderer? No![BR]
+[WAIT][NEXT]
+That can't be... [BR]
+[PAUSE:0A]He's a really good friend of the[BR]
+Mayor's. He'd have no reason to[BR]
+off him![BR]
+[WAIT][NEXT]
+...Unless there was some super-[BR]
+secret reason![BR]
+[WAIT][NEXT]
+Ever since I started reading[BR]
+Herringway's mystery novels, I[BR]
+suspect the unsuspected![WAIT][END]
+
+12-085
+[STYLE:RIGHT]Herringway?[BR]
+[PAUSE:0A]Yeah, sure. He lives right next[BR]
+to the lake.[BR]
+[WAIT][NEXT]
+His house is always empty,[BR]
+though. Who knows where he is...[BR]
+[WAIT][NEXT]
+Whaaat!? [PAUSE:05].[PAUSE:05].[PAUSE:05].[PAUSE:0A]Herringway might be[BR]
+a murderer? No![BR]
+[WAIT][NEXT]
+That can't be... [BR]
+[PAUSE:0A]He's a really good friend of the[BR]
+Mayor's. He'd have no reason to[BR]
+off him![BR]
+[WAIT][NEXT]
+...Unless there was some super-[BR]
+secret reason![BR]
+[WAIT][NEXT]
+Ever since I started reading[BR]
+Herringway's mystery novels, I[BR]
+suspect the unsuspected![WAIT][END]
+
+12-086
+[STYLE:RIGHT]I saw a crazy guy in the city[BR]
+the other day.[BR]
+[WAIT][NEXT]
+He was shouting, "Mariooo![BR]
+Mariooo!" and running around.[BR]
+[WAIT][NEXT]
+What a freak.[BR]
+[PAUSE:0A]I steered way clear of him,[BR]
+that's for sure.[WAIT][END]
+
+12-087
+[STYLE:RIGHT]I saw a crazy guy in the city[BR]
+the other day.[BR]
+[WAIT][NEXT]
+He was shouting, "Mariooo![BR]
+Mariooo!" and running around.[BR]
+[WAIT][NEXT]
+What a freak.[BR]
+[PAUSE:0A]I steered way clear of him,[BR]
+that's for sure.[WAIT][END]
+
+12-088
+[STYLE:RIGHT]You're THE Mario!?[BR]
+[WAIT][NEXT]
+Oh... But...[BR]
+[PAUSE:0A]You look totally normal.[BR]
+[WAIT][NEXT]
+You're just some ordinary[BR]
+person in real life?![WAIT][END]
+
+12-089
+[STYLE:RIGHT]I saw this really bizarre guy[BR]
+around here the other day. He[BR]
+was shouting like... [BR]
+[WAIT][NEXT]
+"{StartFX:Shrinking}Ohhhhhhhhhhhhhhh!!{EndFX:Shrinking}" or[BR]
+"{StartFX:Shrinking}It's freeeeezing!!!{EndFX:Shrinking}".[BR]
+[WAIT][NEXT]
+And he was also going...[BR]
+"{StartFX:Shrinking}Nooooo!! Marioooo!!!{EndFX:Shrinking}"[BR]
+[WAIT][NEXT]
+Who was that nut?[WAIT][END]
+
+12-08A
+[STYLE:RIGHT]I saw this really bizarre guy[BR]
+around here the other day. He[BR]
+was shouting like... [BR]
+[WAIT][NEXT]
+"{StartFX:Shrinking}Ohhhhhhhhhhhhhhh!!{EndFX:Shrinking}" or[BR]
+"{StartFX:Shrinking}It's freeeeezing!!!{EndFX:Shrinking}".[BR]
+[WAIT][NEXT]
+And he was also going...[BR]
+"{StartFX:Shrinking}Nooooo!! Marioooo!!!{EndFX:Shrinking}"[BR]
+[WAIT][NEXT]
+Who was that nut?[WAIT][END]
+
+12-08B
+[STYLE:RIGHT]There's a rumor that you[BR]
+murdered Mayor Penguin.[BR]
+[PAUSE:0A]Did you really do it?[BR]
+[WAIT][NEXT]
+I don't think you did. I bet it[BR]
+was that crazy guy I saw[BR]
+running around here the other[BR]
+day. He was weird.[BR]
+[WAIT][NEXT]
+You don't look so weird.[WAIT][END]
+
+12-08C
+[STYLE:RIGHT]There's a rumor that you[BR]
+murdered Mayor Penguin.[BR]
+[PAUSE:0A]Did you really do it?[BR]
+[WAIT][NEXT]
+I don't think you did. I bet it[BR]
+was that crazy guy I saw[BR]
+running around here the other[BR]
+day. He was weird.[BR]
+[WAIT][NEXT]
+You don't look so weird.[WAIT][END]
+
+12-08D
+[STYLE:RIGHT]I knew you weren't the criminal.[BR]
+[WAIT][NEXT]
+The Mayor just fainted, right?[BR]
+[WAIT][NEXT]
+So who was that weird guy I saw[BR]
+the other day?[BR]
+[PAUSE:0A]No relation to the case at all?[BR]
+[WAIT][NEXT]
+Well, that's...unexciting...[WAIT][END]
+
+12-08E
+[STYLE:RIGHT]I knew you weren't the criminal.[BR]
+[WAIT][NEXT]
+The Mayor just fainted, right?[BR]
+[WAIT][NEXT]
+So who was that weird guy I saw[BR]
+the other day?[BR]
+[PAUSE:0A]No relation to the case at all?[BR]
+[WAIT][NEXT]
+Well, that's...unexciting...[WAIT][END]
+
+12-08F
+[STYLE:RIGHT]I didn't know that you were the[BR]
+world-famous Mario.[BR]
+[WAIT][NEXT]
+So you're going to duke it out[BR]
+with Bowser, are you?[BR]
+[PAUSE:0A]Good luck! You'll need it![BR]
+[WAIT][NEXT]
+Before you do, could you find out[BR]
+who that stranger that I saw[BR]
+before was?[BR]
+[WAIT][NEXT]
+I figure it must've been a[BR]
+monster made of snow and ice. [BR]
+[WAIT][NEXT]
+If that's true, this city is in[BR]
+serious trouble![BR]
+[WAIT][NEXT]
+What'll we do if it runs amok in[BR]
+our streets?![BR]
+{StartFX:Wavy}Mariooooo!![WAIT][END]
+
+12-090
+[STYLE:RIGHT]Did you know that there's a Dojo[BR]
+in Toad Town?[BR]
+[WAIT][NEXT]
+I go there all the time. I finally[BR]
+got my Third-Degree Card the[BR]
+other day.[BR]
+[WAIT][NEXT]
+I'm sure you have a much higher[BR]
+ranking than I do, though.[BR]
+[WAIT][NEXT]
+What?[BR]
+[PAUSE:0A]You don't have anything?[WAIT][END]
+
+12-091
+[STYLE:RIGHT]Hey... You have...[BR]
+[PAUSE:14]...a First-Degree Card![BR]
+[WAIT][NEXT]
+Heh heh heh. A beginner, huh?[BR]
+[PAUSE:0A]I've got a Third-Degree Card.[BR]
+[WAIT][NEXT]
+Looks like I'm stronger than you.[WAIT][END]
+
+12-092
+[STYLE:RIGHT]Hey... You have...[BR]
+[PAUSE:14]...a Second-Degree Card![BR]
+[WAIT][NEXT]
+Heh heh heh. It's a start.[BR]
+[PAUSE:0A]I've got a Third-Degree Card.[BR]
+[WAIT][NEXT]
+I must be tougher than you.[WAIT][END]
+
+12-093
+[STYLE:RIGHT]Hey... You have...[BR]
+[PAUSE:14]...a Third-Degree Card![BR]
+[WAIT][NEXT]
+I've got a Third-Degree Card,[BR]
+too!! Cool![BR]
+[WAIT][NEXT]
+We have the same ranking![BR]
+[PAUSE:0A]We're equals![WAIT][END]
+
+12-094
+[STYLE:RIGHT]Hey... You have...[BR]
+[PAUSE:14]...a Fourth-Degree Card![BR]
+[WAIT][NEXT]
+Wow, you're strong![BR]
+[WAIT][NEXT]
+I wish I were that strong...[BR]
+[PAUSE:0A]I'd better train harder![WAIT][END]
+
+12-095
+[STYLE:RIGHT]Hey... You have...[BR]
+[PAUSE:14]...a Diploma...[BR]
+[WAIT][NEXT]
+Wooow! I mean, woooooow![BR]
+[PAUSE:14]You beat The Master!![BR]
+[WAIT][NEXT]
+How'd you manage that?[BR]
+[PAUSE:0F]You're the strongest guy ever![WAIT][END]
+
+12-096
+[STYLE:RIGHT]I love sliding on the ice.[BR]
+[PAUSE:05]Whiiiish...[PAUSE:05] So much fun![BR]
+[WAIT][NEXT]
+How about you? [BR]
+[PAUSE:05]Wanna join me?[WAIT][END]
+
+12-097
+[STYLE:RIGHT]I love sliding on the ice.[BR]
+[PAUSE:05]Whiiiish...[PAUSE:05] So much fun![BR]
+[WAIT][NEXT]
+How about you? [BR]
+[PAUSE:05]Wanna join me?[WAIT][END]
+
+12-098
+[STYLE:RIGHT]I love being the first to leave my[BR]
+footprints in fresh snow.[BR]
+[WAIT][NEXT]
+I also like making snow angels[BR]
+with my flippers. Ha ha![BR]
+[PAUSE:03]Snow is the best![WAIT][END]
+
+12-099
+[STYLE:RIGHT]I love being the first to leave my[BR]
+footprints in fresh snow.[BR]
+[WAIT][NEXT]
+I also like making snow angels[BR]
+with my flippers. Ha ha![BR]
+[PAUSE:03]Snow is the best![WAIT][END]
+
+12-09A
+[STYLE:RIGHT]It snows pretty much every day[BR]
+here in Shiver City.[BR]
+[PAUSE:05]Each day's a fresh powder day![BR]
+[WAIT][NEXT]
+You really ought to come back[BR]
+here once peace has returned.[BR]
+[WAIT][NEXT]
+I'll show you how to make the[BR]
+perfect penguin snow angel![WAIT][END]
+
+12-09B
+[STYLE:RIGHT]I really love sliding around in the[BR]
+snow.[BR]
+[WAIT][NEXT]
+Pingy, pangy, pengy pong[NOTE][BR]
+Snow is falling all day long[NOTE][BR]
+Skate or spin or sing a song[NOTE][BR]
+[WAIT][NEXT]
+Waah ohhhhh...hey![NOTE] Doo[BR]
+beeeee...say![NOTE] Way [BR]
+vonnnce...yay![NOTE][BR]
+[WAIT][NEXT]
+Oh! [PAUSE:0A]I think I'd better practice.[WAIT][END]
+
+12-09C
+[STYLE:RIGHT]I really love sliding around in the[BR]
+snow.[BR]
+[WAIT][NEXT]
+Pingy, pangy, pengy pong[NOTE][BR]
+Snow is falling all day long[NOTE][BR]
+Skate or spin or sing a song[NOTE][BR]
+[WAIT][NEXT]
+Waah ohhhhh...hey![NOTE] Doo[BR]
+beeeee...say![NOTE] Way[BR]
+vonnnce...yay![NOTE][BR]
+[WAIT][NEXT]
+Oh! [PAUSE:0A]I think I'd better practice.[WAIT][END]
+
+12-09D
+[STYLE:RIGHT]Boy, thank goodness the Mayor[BR]
+turned out to be all right.[BR]
+[PAUSE:0A]It's hard to imagine anything[BR]
+terrible happening in this city.[BR]
+[WAIT][NEXT]
+Peace, love and little kitties[NOTE][BR]
+Hot haikus and lovely ditties[NOTE][BR]
+All for you, oh Shiver City[NOTE][BR]
+[WAIT][NEXT]
+So cold and quiet in the snow![BR]
+My love burns hot as fire! Lo![BR]
+My city!!! Never crumble! Oh![BR]
+Peng 'n' roll! Yeah! Yo![NOTE][BR]
+[WAIT][NEXT]
+...A song this good comes[BR]
+straight from the heart.[WAIT][END]
+
+12-09E
+[STYLE:RIGHT]Boy, thank goodness the Mayor[BR]
+turned out to be all right.[BR]
+[PAUSE:0A]It's hard to imagine anything[BR]
+terrible happening in this city.[BR]
+[WAIT][NEXT]
+Peace, love and little kitties[NOTE][BR]
+Hot haikus and lovely ditties[NOTE][BR]
+All for you, oh Shiver City[NOTE][BR]
+[WAIT][NEXT]
+So cold and quiet in the snow![BR]
+My love burns hot as fire! Lo![BR]
+My city!!! Never crumble! Oh![BR]
+Peng 'n' roll! Yeah! Yo![NOTE][BR]
+[WAIT][NEXT]
+...A song this good comes[BR]
+straight from the heart.[WAIT][END]
+
+12-09F
+[STYLE:RIGHT]We never have problems in Shiver[BR]
+City anymore.[BR]
+[WAIT][NEXT]
+We have one guard and one[BR]
+gatekeeper. That's plenty.[WAIT][END]
+
+12-0A0
+[STYLE:RIGHT]This building's a warehouse.[BR]
+Nobody can get in because some[BR]
+careless guard managed to lose[BR]
+the key to the door.[BR]
+[WAIT][NEXT]
+Actually, I'm the one who lost it.[BR]
+[WAIT][NEXT]
+I had it just a little while ago.[WAIT][END]
+
+12-0A1
+[STYLE:RIGHT]This building's a warehouse.[BR]
+Nobody can get in because some[BR]
+careless guard managed to lose[BR]
+the key to the door.[BR]
+[WAIT][NEXT]
+Actually, I'm the one who lost it.[BR]
+[WAIT][NEXT]
+I had it just a little while ago.[WAIT][END]
+
+12-0A2
+[STYLE:RIGHT]This building's a warehouse.[BR]
+Nobody can get in because some[BR]
+careless guard managed to lose[BR]
+the key to the door.[BR]
+[WAIT][NEXT]
+I can't believe I lost it... I[BR]
+ought to retrace my steps...[BR]
+[WAIT][NEXT]
+Hey, listen, if you find a key[BR]
+anywhere, let me know, OK?[WAIT][END]
+
+12-0A3
+[STYLE:RIGHT]Thanks for finding that key![BR]
+[PAUSE:0A]I would've been in deep trouble[BR]
+if I couldn't get inside.[WAIT][END]
+
+12-0A4
+[STYLE:RIGHT]Now I've got to be sure to keep[BR]
+the warehouse in order.[BR]
+[PAUSE:0A]I keep a lot of precious things in[BR]
+there, you know.[BR]
+[WAIT][NEXT]
+Very, very precious...[BR]
+[WAIT][NEXT]
+...junk.[HEART][WAIT][END]
+
+12-0A5
+[STYLE:RIGHT]Now I've got to be sure to keep[BR]
+the warehouse in order.[BR]
+[PAUSE:0A]I keep a lot of precious things in[BR]
+there, you know.[BR]
+[WAIT][NEXT]
+Very, very precious...[BR]
+[WAIT][NEXT]
+...junk.[HEART][WAIT][END]
+
+12-0A6
+[STYLE:RIGHT]Don't you just love junk?[BR]
+[PAUSE:0A]When I'm beak-deep in junk, time[BR]
+just flies on by.[BR]
+[WAIT][NEXT]
+I don't even care what goes on[BR]
+in the outside world.[BR]
+[WAIT][NEXT]
+Anyway, I... You're WHAT?![BR]
+You're fighting Bowser?[BR]
+[WAIT][NEXT]
+Are you crazy!?[BR]
+[PAUSE:0A]What in the world's going on!?[WAIT][END]
+
+12-0A7
+[STYLE:RIGHT]Starborn Valley is a little ways[BR]
+off from this city.[BR]
+[WAIT][NEXT]
+It's a very mysterious place.[BR]
+[PAUSE:0A]They say that Star Kids rise up[BR]
+to the sky from there.[BR]
+[WAIT][NEXT]
+But I haven't seen any stars[BR]
+rising to the sky lately...[WAIT][END]
+
+12-0A8
+[STYLE:RIGHT]Starborn Valley is a little ways[BR]
+off from this city.[BR]
+[WAIT][NEXT]
+It's a very mysterious place.[BR]
+[PAUSE:0A]They say that Star Kids rise up[BR]
+to the sky from there.[BR]
+[WAIT][NEXT]
+But I haven't seen any stars[BR]
+rising to the sky lately...[WAIT][END]
+
+12-0A9
+[STYLE:RIGHT]This is Herringway's house. He's[BR]
+a novelist.[BR]
+[WAIT][NEXT]
+Herringway should be in there,[BR]
+but I haven't seen him lately...[BR]
+[PAUSE:0A]It's very peculiar...[WAIT][END]
+
+12-0AA
+[STYLE:RIGHT]This is Herringway's house. He's[BR]
+a novelist.[BR]
+[WAIT][NEXT]
+Herringway should be in there,[BR]
+but I haven't seen him lately...[BR]
+[PAUSE:0A]It's very peculiar...[WAIT][END]
+
+12-0AB
+[STYLE:RIGHT]So, Herringway WAS in the house.[BR]
+[WAIT][NEXT]
+I peeped in the windows, but I[BR]
+never caught even a glimpse of[BR]
+him. I figured he was out.[BR]
+[WAIT][NEXT]
+So where was he hiding?[BR]
+[PAUSE:14]Verrrry peculiar...[WAIT][END]
+
+12-0AC
+[STYLE:RIGHT]Starborn Valley is a little ways[BR]
+off from this city.[BR]
+[WAIT][NEXT]
+It's a very mysterious place.[BR]
+[PAUSE:0A]They say that Star Kids rise up[BR]
+to the sky from there.[BR]
+[WAIT][NEXT]
+But I haven't seen any stars[BR]
+rising to the sky lately...[WAIT][END]
+
+12-0AD
+[STYLE:RIGHT]Starborn Valley is a little ways[BR]
+off from this city.[BR]
+[WAIT][NEXT]
+It's a very mysterious place.[BR]
+[PAUSE:0A]They say that Star Kids rise up[BR]
+to the sky from there.[BR]
+[WAIT][NEXT]
+But I haven't seen any stars[BR]
+rising to the sky lately...[WAIT][END]
+
+12-0AE
+[STYLE:RIGHT]When the world is at peace, you[BR]
+can see the Star Kids rising to[BR]
+the sky from Starborn Valley.[BR]
+[WAIT][NEXT]
+It's really a beautiful sight.[BR]
+[WAIT][NEXT]
+You should check it out one day.[WAIT][END]
+
+12-0AF
+[STYLE:RIGHT]I heard that a horrible monster[BR]
+lives at the end of this path.[BR]
+[WAIT][NEXT]
+Everyone is so scared of it that[BR]
+they don't leave the city.[BR]
+[WAIT][NEXT]
+... Why can't we have peace? I[BR]
+wish there were no monsters... [WAIT][END]
+
+12-0B0
+[STYLE:RIGHT]I heard that a horrible monster[BR]
+lives at the end of this path.[BR]
+[WAIT][NEXT]
+Everyone is so scared of it that[BR]
+they don't leave the city.[BR]
+[WAIT][NEXT]
+... Why can't we have peace? I[BR]
+wish there were no monsters...[WAIT][END]
+
+12-0B1
+[STYLE:RIGHT]...[BR]
+[WAIT][NEXT]
+I SAID, "..."![BR]
+[WAIT][NEXT]
+I don't talk to penguin-killers.[WAIT][END]
+
+12-0B2
+[STYLE:RIGHT]...[BR]
+[WAIT][NEXT]
+I SAID, "..."![BR]
+[WAIT][NEXT]
+I don't talk to penguin-killers.[WAIT][END]
+
+12-0B3
+[STYLE:RIGHT]A horrible monster lives[BR]
+somewhere along this path.[BR]
+[WAIT][NEXT]
+Penguins talk about hearing[BR]
+strange screaming, too.[BR]
+[WAIT][NEXT]
+No one can confirm what kind of[BR]
+horrible monster it is because[BR]
+everyone's too scared to go[BR]
+check it out.[BR]
+[WAIT][NEXT]
+Of course, you won't see me[BR]
+volunteering for that job![WAIT][END]
+
+12-0B4
+[STYLE:RIGHT]A horrible monster lives[BR]
+somewhere along this path.[BR]
+[WAIT][NEXT]
+Penguins talk about hearing[BR]
+strange screaming, too.[BR]
+[WAIT][NEXT]
+No one can confirm what kind of[BR]
+horrible monster it is because[BR]
+everyone's too scared to go[BR]
+check it out.[BR]
+[WAIT][NEXT]
+Of course, you won't see me[BR]
+volunteering for that job![WAIT][END]
+
+12-0B5
+[STYLE:RIGHT]Penguins are saying that the[BR]
+monster is gone for good.[BR]
+[WAIT][NEXT]
+Phew! Finally, we can safely[BR]
+travel outside the city.[BR]
+[WAIT][NEXT]
+I can only hope the rest of the[BR]
+world becomes peaceful as well.[WAIT][END]
+
+12-0B6
+[STYLE:RIGHT]What're you doing? Stop that! [BR]
+[PAUSE:0A]Have you lost your wits? What if[BR]
+the ice breaks?[WAIT][END]
+
+12-0B7
+[STYLE:RIGHT]No! Are you a complete idiot? I[BR]
+told you not to do that![BR]
+[PAUSE:0A]That's really dangerous![WAIT][END]
+
+12-0B8
+[STYLE:RIGHT]Don't you ever listen?[BR]
+[PAUSE:0A]You're a public nuisance! Take a[BR]
+hike![WAIT][END]
+
+12-0B9
+[STYLE:RIGHT]I'm the city guard around here.[BR]
+[PAUSE:0A]I'm investigating a report of a[BR]
+suspicious character wandering[BR]
+around the city.[BR]
+[WAIT][NEXT]
+You...[BR]
+[PAUSE:14]You're not him, are you?[WAIT][END]
+
+12-0BA
+[STYLE:RIGHT]I'm the city guard around here.[BR]
+[PAUSE:0A]I'm investigating a report of a[BR]
+suspicious character wandering[BR]
+around the city.[BR]
+[WAIT][NEXT]
+You...[BR]
+[PAUSE:14]You're not him, are you?[WAIT][END]
+
+12-0BB
+[STYLE:RIGHT]For puffin's sake...[BR]
+[PAUSE:0A]The Mayor's wife is an alarmist.[BR]
+[WAIT][NEXT]
+Although I bet everyone involved[BR]
+in that case would agree that my[BR]
+detective work was perfect.[WAIT][END]
+
+12-0BC
+[STYLE:RIGHT]Pardon me. I'm on patrol.[BR]
+[WAIT][NEXT]
+There have been rumors of a[BR]
+screaming monster appearing.[BR]
+[WAIT][NEXT]
+Penguins scare easily, so I have[BR]
+to keep the city's borders[BR]
+extra safe.[WAIT][END]
+
+12-0BD
+[STYLE:RIGHT]How are you holding up?[BR]
+[PAUSE:0A]I fight for peace and justice,[BR]
+too, you know. In Shiver City.[BR]
+[WAIT][NEXT]
+Good luck saving the world![WAIT][END]
+
+12-0BE
+[STYLE:RIGHT]When you hear about Shiver City,[BR]
+ice skating is the first thing[BR]
+that comes to mind![HEART][WAIT][END]
+
+12-0BF
+[STYLE:RIGHT]Well, skiing's nice, too, but not[BR]
+when a monster's loose![WAIT][END]
+
+12-0C0
+[STYLE:RIGHT]It's scary out in the snow, so[BR]
+city-skating we will go![NOTE][BR]
+[PAUSE:05]Yeah, yeah![HEART][WAIT][END]
+
+12-0C1
+[STYLE:RIGHT]Ahhhhhhhhhhhhh!![BR]
+{StartFX:Shrinking}The ice on the lake broke!![WAIT][END]
+
+12-0C2
+[STYLE:RIGHT]We were just about to go ice[BR]
+skating!![WAIT][END]
+
+12-0C3
+[STYLE:RIGHT]{StartFX:Growing}Nooo! This is totally unfair![BR]
+[PAUSE:0A]I was so looking forward to[BR]
+skating all day long![WAIT][END]
+
+12-0C4
+[STYLE:RIGHT]Cold... It's cold here![BR]
+{StartFX:SizeJitter}{StartFX:Wavy}It's too cooooold![BR]
+{EndFX:Wavy}{EndFX:SizeJitter}{StartFX:Jitter}Brrrrr![BR]
+[WAIT][NEXT]
+No ice-skating. Monsters about.[BR]
+Nothing to do but shiver...[BR]
+[PAUSE:0A]What did we come here for!?[BR]
+[WAIT][NEXT]
+It's not like we can just zip[BR]
+back to Toad Town![WAIT][END]
+
+12-0C5
+[STYLE:RIGHT]Hey, didn't you hear?[BR]
+[WAIT][NEXT]
+That monster's gone now![BR]
+[PAUSE:05]Let's go to Star Valley and hit[BR]
+the slopes![WAIT][END]
+
+12-0C6
+[STYLE:RIGHT]That'll be great![BR]
+[PAUSE:0F]Skiing in a world of snow, ice,[BR]
+and stars[PAUSE:05].[PAUSE:05].[PAUSE:05]. [BR]
+[PAUSE:0A]How perfectly marvelous![BR]
+[WAIT][NEXT]
+Sounds lovely![HEART][BR]
+[PAUSE:0F]Let's go! Let's go right now![WAIT][END]
+
+12-0C7
+[STYLE:RIGHT]We're on alert because a[BR]
+stranger appeared in the city.[BR]
+[WAIT][NEXT]
+So I can't let you pass without[BR]
+permission from the Mayor.[WAIT][END]
+
+12-0C8
+[STYLE:RIGHT]Uh, hello? You're the number one[BR]
+suspect in the Mayor's murder![BR]
+[WAIT][NEXT]
+You can't leave the city! Not[BR]
+until you prove you're innocent![WAIT][END]
+
+12-0C9
+[STYLE:RIGHT]Oh, OK...[BR]
+[PAUSE:0A]The Mayor said it's OK for you[BR]
+to go on through.[WAIT][END]
+
+12-0CA
+[STYLE:RIGHT]Basically, what I do is watch this[BR]
+gate to see if strangers go in[BR]
+or out of the city.[BR]
+[WAIT][NEXT]
+It may sound simple, but it's[BR]
+incredibly important.[BR]
+[PAUSE:0A]By and large, it's a good job.[BR]
+[WAIT][NEXT]
+It is a bit chilly, though.[WAIT][END]
+
+12-0CB
+[STYLE:RIGHT]The sky was filled with so many[BR]
+beautiful stars last night.[BR]
+[PAUSE:0A]It was really incredible.[BR]
+[WAIT][NEXT]
+I don't think it's quite as[BR]
+beautiful as it was when things[BR]
+were peaceful in the world, but[BR]
+some of the brightness is back.[WAIT][END]
+
+12-0CC
+[STYLE:RIGHT]{StartFX:Shrinking}What in the...?[WAIT][END]
+
+12-0CD
+[STYLE:RIGHT]Why are you in my fireplace?[BR]
+[WAIT][NEXT]
+You found my secret room...[BR]
+[PAUSE:0A]...through the chimney...[BR]
+...ingenious...[WAIT][END]
+
+12-0CE
+[STYLE:RIGHT]Me?[BR]
+[PAUSE:0A]I'm Herringway. The novelist.[BR]
+[WAIT][NEXT]
+Haven't you heard of me?[WAIT][END]
+
+12-0CF
+[STYLE:RIGHT]{StartFX:Shrinking}Whaaat!?[BR]
+{EndFX:Shrinking}Mayor Penguin was murdered?[BR]
+[PAUSE:0A]And I'm the chief suspect?[BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}You must be joking![BR]
+[PAUSE:0A]{EndFX:Shrinking}That's ridiculous![BR]
+[PAUSE:05]I did no such thing![WAIT][END]
+
+12-0D0
+[STYLE:RIGHT]You're very suspicious, huh?[BR]
+[WAIT][NEXT]
+Well, I suppose I would be, too.[BR]
+[PAUSE:0A]It appears as though I should[BR]
+drop in at the Mayor's house.[WAIT][END]
+
+12-0D1
+[STYLE:RIGHT]Engage stairs![WAIT][END]
+
+12-0D2
+[STYLE:RIGHT]All right then, come on. Let's go[BR]
+to the Mayor's house.[WAIT][END]
+
+12-0D3
+[STYLE:RIGHT]There's no time to lose. To the[BR]
+Mayor's house![WAIT][END]
+
+12-0D4
+[STYLE:RIGHT]Let's get to the bottom of this[BR]
+case right now![WAIT][END]
+
+12-0D5
+[STYLE:RIGHT]That's just like the Mayor,[BR]
+hitting his head on the floor and[BR]
+knocking himself out.[BR]
+[WAIT][NEXT]
+I was really worried there, and[BR]
+all for nothing![BR]
+[WAIT][NEXT]
+At least it wasn't a complete[BR]
+waste of time. Now I have[BR]
+material for a new novel.[BR]
+[WAIT][NEXT]
+You know... Maybe I could write a[BR]
+story about you, too...[BR]
+[WAIT][NEXT]
+How about that? Ha ha![BR]
+[PAUSE:0A]Don't worry, I'd write about you[BR]
+as a hero, not a criminal.[WAIT][END]
+
+12-0D6
+[STYLE:RIGHT]My secret room's exposed now.[BR]
+[WAIT][NEXT]
+The penguins of the city always[BR]
+try to read my manuscripts[BR]
+before I finish them.[BR]
+[WAIT][NEXT]
+I suppose I'd better make a new[BR]
+secret room...[WAIT][END]
+
+12-0D7
+[STYLE:RIGHT]You saved the last Star Spirit![BR]
+[PAUSE:0A]Everybody's talking about it![BR]
+[WAIT][NEXT]
+You know, I never thought about[BR]
+you as the famous Mario.[BR]
+[WAIT][NEXT]
+It's so exciting to meet a hero![BR]
+[WAIT][NEXT]
+I'm a huge fan![BR]
+[PAUSE:05]I'm pulling for you![BR]
+[PAUSE:05]Best of luck to you![WAIT][END]
+
+12-0D8
+[STYLE:RIGHT]{StartFX:Shrinking}Hey hey hey hey hey![WAIT][END]
+
+12-0D9
+[STYLE:RIGHT]{StartFX:Shrinking}Brrrraaah ha ha ha! Brrr![BR]
+[PAUSE:0A]I've been waiting for you,[BR]
+Mariooooooooo![BR]
+[PAUSE:0A]I've been here forever![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+I was getting desperate![BR]
+[PAUSE:0A]I thought I was gonna freeze![BR]
+[WAIT][NEXT]
+This place is freezing, and cold,[BR]
+and nasty and icy! I hate it![BR]
+[PAUSE:0A]{StartFX:Shrinking}I can't take it anymore!![WAIT][END]
+
+12-0DA
+[STYLE:RIGHT]I gotta get out of here![BR]
+[WAIT][NEXT]
+I'm going to beat you up in[BR]
+record time and head back to[BR]
+some place warm.[BR]
+[WAIT][NEXT]
+You ready, ice-boy? Let's do[BR]
+it!![BR]
+[PAUSE:0A][END]
+
+12-0DB
+[STYLE:RIGHT]Oh, I've been busy, Mario! I[BR]
+learned cooool techniques![BR]
+[WAIT][NEXT]
+Check this out![BR]
+[PAUSE:0A]{Size:20:20}Aah hahhhhhhh![WAIT][END]
+
+12-0DC
+[STYLE:RIGHT]Look at that piece of work![BR]
+[PAUSE:0A]I've been taking a little magic[BR]
+course on the side![BR]
+[WAIT][NEXT]
+And now, you're gonna be my[BR]
+final exam! Yeah![BR]
+[PAUSE:0A]{StartFX:Shrinking}I've gotta win this time![WAIT][END]
+
+12-0DD
+[STYLE:RIGHT]Mario! You like magic tricks?[BR]
+[PAUSE:0A]You won't like this one![WAIT][END]
+
+12-0DE
+[STYLE:RIGHT]Ha ha ha ha!! That felt[BR]
+fantastic![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}I just keep on getting better![WAIT][END]
+
+12-0DF
+[STYLE:RIGHT]Nooooo!![WAIT][END]
+
+12-0E0
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Shrinking}{StartFX:Jitter}Boooooaaaaahhhh!![WAIT][END]
+
+12-0E1
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Shrinking}{StartFX:Jitter}Tuuuuurn back.[BR]
+[PAUSE:0A]Coooome no farther.[BR]
+[PAUSE:0A]Tuuuurn away, or I'll eat you![WAIT][END]
+
+12-0E2
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Jitter}Whaaaaat do you think?[BR]
+[PAUSE:0A]Scaaaary monster, aren't I?[BR]
+[PAUSE:0A]Youuu know you want to run...[BR]
+{Func_04}[END]
+
+12-0E3
+[NEXT]
+{SpeechSound:02}{StartFX:Jitter}Yeeeeees.[BR]
+[PAUSE:0A]Veeeerrrry good.[BR]
+[PAUSE:0A]Veeeeerrry smart.[WAIT][END]
+
+12-0E4
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Jitter}Whaaat![BR]
+[PAUSE:0A]Youuuu will regret this![WAIT][END]
+
+12-0E5
+[STYLE:RIGHT]{SpeechSound:02}Are you scaaaaared yet?[WAIT][END]
+
+12-0E6
+[STYLE:RIGHT]{SpeechSound:02}Ho ho ho ho! Your puuuuny[BR]
+attack doesn't hurt me at all![BR]
+[WAIT][NEXT]
+Giiiiive up or suffer![WAIT][END]
+
+12-0E7
+[STYLE:RIGHT]{SpeechSound:02}Thiiiis is your only chance![WAIT][END]
+
+12-0E8
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Jitter}{StartFX:Shrinking}Noooo![BR]
+[PAUSE:05]Ruuuuun away![WAIT][END]
+
+12-0E9
+[STYLE:RIGHT]Ah. You're Mario, yes?[BR]
+[PAUSE:0A]Thank you for coming.[WAIT][END]
+
+12-0EA
+[STYLE:RIGHT]How do you do?[BR]
+[PAUSE:0A]I'm called Merle.[BR]
+[WAIT][NEXT]
+I care for the Star Kids born[BR]
+here in Starborn Valley.[BR]
+[WAIT][NEXT]
+There are many things I must[BR]
+tell you...[BR]
+[WAIT][NEXT]
+...but not here. Come, let's go to[BR]
+my house.[BR]
+[WAIT][NEXT]
+I cannot concentrate out here in[BR]
+the cold.[WAIT][END]
+
+12-0EB
+[STYLE:RIGHT]This way. [PAUSE:05]Please follow me.[WAIT][END]
+
+12-0EC
+[STYLE:RIGHT]I must apologize for the rude[BR]
+reception of the Star Kids.[BR]
+[WAIT][NEXT]
+None of us expected that you'd[BR]
+come here so quickly.[BR]
+[WAIT][NEXT]
+They frighten strangers to try[BR]
+to keep this valley safe from[BR]
+Bowser's followers.[BR]
+[WAIT][NEXT]
+Please...you must forgive them.[WAIT][END]
+
+12-0ED
+[STYLE:RIGHT]Come in, please.[WAIT][END]
+
+12-0EE
+[STYLE:RIGHT]Now. Mario.[BR]
+[PAUSE:0A]You must heed well what I'm[BR]
+about to tell you.[WAIT][END]
+
+12-0EF
+[STYLE:RIGHT]This frozen area is called[BR]
+Starborn Valley.[BR]
+[WAIT][NEXT]
+It is named this because it is[BR]
+here that Stars are born and[BR]
+raised before rising to the sky.[BR]
+[WAIT][NEXT]
+But now... Ever since Bowser[BR]
+stole the Star Rod from Star[BR]
+Haven...[BR]
+[WAIT][NEXT]
+The power of that place has[BR]
+weakened and Star Kids have[BR]
+found themselves unable to rise[BR]
+up into the sky.[WAIT][END]
+
+12-0F0
+[STYLE:RIGHT]I sent a Ninji to my father,[BR]
+Merlon, hoping that I could coax[BR]
+you to come here...[BR]
+[WAIT][NEXT]
+Because I have found out where[BR]
+the last Star Spirit is.[BR]
+[WAIT][NEXT]
+It came to me in a dream... A[BR]
+vision of the last Star Spirit[BR]
+begging me for help.[BR]
+[WAIT][NEXT]
+If my vision speaks truly, then[BR]
+the last Star Spirit is being held[BR]
+atop Shiver Mountain, which lies[BR]
+to the north.[BR]
+[WAIT][NEXT]
+Up top sits the {Color:20}Crystal Palace{Color:0A}.[BR]
+The Star Spirit waits there.[BR]
+[WAIT][NEXT]
+The Crystal Palace was originally[BR]
+built to honor the Stars...[BR]
+[WAIT][NEXT]
+But as time passed, it slowly [BR]
+faded from the memories of local[BR]
+people...[BR]
+[WAIT][NEXT]
+...and now, no one can remember[BR]
+how to reach the palace.[BR]
+[WAIT][NEXT]
+There is a way, though, and it[BR]
+involves items that have been[BR]
+passed down in these lands.[BR]
+[WAIT][NEXT]
+Here, take this.[WAIT][END]
+
+12-0F1
+[STYLE:RIGHT]This Scarf has been passed down[BR]
+through many generations in[BR]
+Starborn Valley.[BR]
+[WAIT][NEXT]
+I wish I knew how to use it...[BR]
+but I do not.[BR]
+[WAIT][NEXT]
+According to the legends...[BR]
+[PAUSE:0A]You must use this and another[BR]
+item that has been passed down[BR]
+in Shiver City[BR]
+[WAIT][NEXT]
+if you hope to open the way to[BR]
+the Crystal Palace. Sadly,[BR]
+that's all I know.[WAIT][END]
+
+12-0F2
+[STYLE:RIGHT]If things remain as they are,[BR]
+Star Kids will never again be[BR]
+able to rise to Star Haven.[BR]
+[PAUSE:0A]Such a fate would be awful.[BR]
+[WAIT][NEXT]
+Please! Help them! And expel[BR]
+Bowser from the sky![WAIT][END]
+
+12-0F3
+[STYLE:RIGHT]Oh yes... Mario![BR]
+[PAUSE:0A]I'd almost forgotten![BR]
+[WAIT][NEXT]
+There is supposed to be a small[BR]
+shrine somewhere along the path[BR]
+to the Crystal Palace.[BR]
+[WAIT][NEXT]
+A legend has been handed down[BR]
+in this valley regarding the[BR]
+shrine's secret:[BR]
+[WAIT][NEXT]
+"Truth lies not only in the eyes.[BR]
+Sometimes, even walls may lie."[BR]
+[WAIT][NEXT]
+Confusing, yes, but you must[BR]
+find this shrine and solve its[BR]
+mystery to reach the Crystal[BR]
+Palace.[BR]
+[WAIT][NEXT]
+Please don't forget it![WAIT][END]
+
+12-0F4
+[STYLE:RIGHT]Mayor Penguin of Shiver City[BR]
+should have the other vital item[BR]
+you need. If you use it and the[BR]
+Scarf,[BR]
+[WAIT][NEXT]
+it is said that the way to the[BR]
+Crystal Palace will open.[BR]
+[WAIT][NEXT]
+First, you must go to Shiver City[BR]
+and visit Mayor Penguin.[WAIT][END]
+
+12-0F5
+[STYLE:RIGHT]My dream told me that a Star[BR]
+Spirit waits in Crystal Palace.[BR]
+[PAUSE:0A]Please, you must save him![WAIT][END]
+
+12-0F6
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0A]You have saved the last[BR]
+imprisoned Star Spirit![BR]
+[WAIT][NEXT]
+I saw your triumph in a vision.[BR]
+[WAIT][NEXT]
+Now, finally, it is time to take[BR]
+back the Star Rod.[BR]
+[WAIT][NEXT]
+Mario...[BR]
+[PAUSE:05]...the fate of the Stars rests[BR]
+squarely on your shoulders.[BR]
+[WAIT][NEXT]
+Good luck to you![WAIT][END]
+
+12-0F7
+[STYLE:RIGHT]Mario...[BR]
+[PAUSE:05]I have a wish... My wish is for[BR]
+you to reclaim the Star Rod as[BR]
+quickly as possible.[BR]
+[WAIT][NEXT]
+The fate of the Stars and yes,[BR]
+the whole world, lies with you.[BR]
+[PAUSE:0F]Good luck to you![WAIT][END]
+
+12-0F8
+[STYLE:RIGHT]Please get the Star Rod back[BR]
+from Bowser, Mario![BR]
+[WAIT][NEXT]
+The Mushroom Kingdom deserves[BR]
+to be at peace.[BR]
+[WAIT][NEXT]
+Good luck...[WAIT][END]
+
+12-0F9
+[STYLE:RIGHT]I can hardly believe it! You've[BR]
+saved all the Star Spirits![BR]
+[WAIT][NEXT]
+So I guess now you're going[BR]
+straight to Bowser's Castle?[BR]
+[WAIT][NEXT]
+All right! I hope the princess[BR]
+and everybody else is still doing[BR]
+OK...[BR]
+[WAIT][NEXT]
+You'd better save them as[BR]
+quickly as possible![BR]
+[PAUSE:0A]You're the only one who can do[BR]
+it, you know.[WAIT][END]
+
+12-0FA
+[STYLE:RIGHT]Along with the Ninjis, we're[BR]
+taking care of the Star Kids[BR]
+[PAUSE:05]under the instruction of the[BR]
+mystic, Merle.[BR]
+[WAIT][NEXT]
+It's very rewarding to think[BR]
+that one of these kids might[BR]
+grow up to be a Star Spirit![BR]
+[WAIT][NEXT]
+Oh, can you imagine it? What a[BR]
+happy day that'd be...[BR]
+[WAIT][NEXT]
+But unless things get better[BR]
+around here, it'll just be a[BR]
+fantasy that never comes true.[WAIT][END]
+
+12-0FB
+[STYLE:RIGHT]The Star Spirits are all back in[BR]
+Star Haven! Hooray![BR]
+[WAIT][NEXT]
+That means the day when these[BR]
+little Star Kids might rise up is[BR]
+coming soon.[BR]
+[WAIT][NEXT]
+Oh, I've dreamed about that day[BR]
+for so long! Until it comes, I'll[BR]
+keep taking care of them.[WAIT][END]
+
+12-0FC
+[STYLE:RIGHT]One of the Star Kids seems to[BR]
+be playing hide-and-seek.[BR]
+[PAUSE:05]You haven't seen him, have you?[BR]
+[WAIT][NEXT]
+I swear, the second I take my[BR]
+eyes off him he always runs off[BR]
+somewhere...[BR]
+[PAUSE:0A]What a naughty little Star Kid.[WAIT][END]
+
+12-0FD
+[STYLE:RIGHT]You saved the last Star Spirit![BR]
+[PAUSE:0A]Congratulations, Mario!![BR]
+[WAIT][NEXT]
+Bowser doesn't have a chance![BR]
+You'll have that Star Rod back[BR]
+in Star Haven in no time![BR]
+[WAIT][NEXT]
+Best of luck![BR]
+[WAIT][NEXT]
+Hey, by the way, I still haven't[BR]
+found that Star Kid who's been[BR]
+playing hide-and-seek... Where[BR]
+could he be...?[BR]
+[WAIT][NEXT]
+Have you seen him, Mario?[WAIT][END]
+
+12-0FE
+[STYLE:RIGHT]You're Frost T., correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry. I deliver[BR]
+letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+12-0FF
+[STYLE:RIGHT]Uh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+12-100
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+12-101
+[STYLE:RIGHT]Oh, thank you.[BR]
+[WAIT][NEXT]
+Ah! How nice![BR]
+[PAUSE:0A]It's a letter from little Dane T.[BR]
+and Mini T.[BR]
+[WAIT][NEXT]
+Those naughty little rascals...[BR]
+[PAUSE:0A]When I visited their home, they[BR]
+were always up to something.[BR]
+[WAIT][NEXT]
+They do write me letters often.[BR]
+[PAUSE:0A]It's nice to get letters... Their[BR]
+mail makes me as happy as mail[BR]
+from my wife and daughter.[BR]
+[WAIT][NEXT]
+Oh yes, I almost forgot! I need[BR]
+a letter delivered.[BR]
+[WAIT][NEXT]
+I'd like you to take this letter[BR]
+to Goompapa in Goomba Village.[BR]
+[WAIT][NEXT]
+It's actually a reply to little[BR]
+Goombaria, but I think her dad[BR]
+could explain it to her better.[BR]
+[WAIT][NEXT]
+Drop it off whenever you have a[BR]
+chance, all right? Thank you so[BR]
+much.[WAIT][END]
+
+12-102
+[STYLE:RIGHT]I've got my hands full with these[BR]
+Star Kids.[BR]
+[WAIT][NEXT]
+They're all so active![WAIT][END]
+
+12-103
+[STYLE:RIGHT]Why, they say you saved all of[BR]
+the Star Spirits![BR]
+[PAUSE:0A]That's awfully good of you![BR]
+[WAIT][NEXT]
+Now what you need to do is get[BR]
+back that Star Rod.[BR]
+[PAUSE:05]Star Kids are counting on you![WAIT][END]
+
+12-104
+[STYLE:RIGHT]I've never been so busy.[BR]
+[PAUSE:05]These Star Kids are as hyper as[BR]
+the day is long.[WAIT][END]
+
+12-105
+[STYLE:RIGHT]I watch the sky at night...[BR]
+[PAUSE:0A]The stars are so beautiful.[BR]
+[WAIT][NEXT]
+Soon, they'll be as bright as they[BR]
+used to be, back when the Star[BR]
+Rod was in Star Haven.[BR]
+[WAIT][NEXT]
+I just know it.[WAIT][END]
+
+12-106
+[STYLE:RIGHT]One of the Star Kids is hiding[BR]
+somewhere! Hmmmph![BR]
+[PAUSE:0A]Could you tell me if you find him?[BR]
+[WAIT][NEXT]
+I suppose it's natural for[BR]
+youngsters to be full of energy,[BR]
+but they're trying my patience![BR]
+[PAUSE:0A]I don't have time for this...[WAIT][END]
+
+12-107
+[STYLE:RIGHT]The Star Spirits are all back in[BR]
+Star Haven? That's great![BR]
+[PAUSE:0A]I couldn't be happier![BR]
+[WAIT][NEXT]
+Now, though, you still have to get[BR]
+that Star Rod back.[BR]
+[WAIT][NEXT]
+These poor Star Kids...[BR]
+[PAUSE:0A]Until the Star Rod's back, they[BR]
+can't rise up to the sky.[WAIT][END]
+
+12-108
+[STYLE:RIGHT]{SpeechSound:02}I wanna go to Star Haven.[BR]
+[WAIT][NEXT]
+When I get to go there, I wanna[BR]
+deliver lots of people's wishes,[BR]
+and I wanna become a great[BR]
+Star Spirit someday.[BR]
+[WAIT][NEXT]
+When I do, I'll grant your wishes,[BR]
+Mario! Of course I will![BR]
+[PAUSE:0A]I promise![WAIT][END]
+
+12-109
+[STYLE:RIGHT]{SpeechSound:02}What's Star Haven like?[BR]
+[PAUSE:0A]You're gonna go there before we[BR]
+even get to, aren't you?[BR]
+[WAIT][NEXT]
+I bet it's super cool...[WAIT][END]
+
+12-10A
+[STYLE:RIGHT]{SpeechSound:02}I wonder how Twink is doing?[BR]
+[WAIT][NEXT]
+He was the last one to rise up[BR]
+to the sky. He went just before[BR]
+Bowser took the Star Rod.[BR]
+[WAIT][NEXT]
+He was such a great kid. He[BR]
+looked after everybody.[BR]
+[WAIT][NEXT]
+Do you think I'll ever get to see[BR]
+Twink again?[WAIT][END]
+
+12-10B
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Shrinking}Yes! Yes! {EndFX:Shrinking}Stellar! I can rise up[BR]
+to the sky pretty soon now,[BR]
+right?[BR]
+[WAIT][NEXT]
+I can't wait! I'm gonna rise up[BR]
+the second the Star Rod is back.[BR]
+[WAIT][NEXT]
+And the first thing I'm gonna do[BR]
+is visit Twink.[WAIT][END]
+
+12-10C
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Wavy}You found me![BR]
+{EndFX:Wavy}Hee hee hee hee...[BR]
+[PAUSE:0A]What, did you see me glittering?[BR]
+[WAIT][NEXT]
+Hey, do you think I can rise into[BR]
+the sky soon?[WAIT][END]
+
+12-10D
+[STYLE:RIGHT]{SpeechSound:02}{StartFX:Wavy}You found me![BR]
+{EndFX:Wavy}Hee hee hee hee...[BR]
+[PAUSE:0A]What, did you see me glittering?[BR]
+[WAIT][NEXT]
+When I grow up, I'm gonna be a[BR]
+really great star that people[BR]
+can see from really far away,[BR]
+and I'll be really cool.[WAIT][END]
+
+12-10E
+[STYLE:RIGHT]{SpeechSound:02}Tell me a story![BR]
+[PAUSE:0A]Tell me the story about the time[BR]
+you saved a Star Spirit![WAIT][END]
+
+12-10F
+[STYLE:RIGHT]{SpeechSound:02}Mario, when you see the Star[BR]
+Spirits and they ask about us,[BR]
+[WAIT][NEXT]
+tell them that we'll be good so[BR]
+they'll let us rise up as soon as[BR]
+possible, OK?[WAIT][END]
+
+12-110
+[STYLE:RIGHT]{SpeechSound:02}I wonder what Twink is doing.[BR]
+[WAIT][NEXT]
+Do you think Twink's doing fun[BR]
+stuff up there?[WAIT][END]
+
+12-111
+[STYLE:RIGHT]{SpeechSound:02}I've still got some more time 'til[BR]
+I rise up to the sky.[BR]
+[WAIT][NEXT]
+Once we all rise up, lots more[BR]
+little stars will come here.[BR]
+[WAIT][NEXT]
+I'll be an older star then.[WAIT][END]
+
+12-112
+[STYLE:RIGHT]{SpeechSound:02}Somebody read me a story.[BR]
+[PAUSE:0A]It was all about how Stars[BR]
+in Star Haven grant people's[BR]
+wishes.[WAIT][END]
+
+12-113
+[STYLE:RIGHT]{SpeechSound:02}When I [PAUSE:05]go up to the sky,[BR]
+[PAUSE:05]I wanna grant all the wishes of[BR]
+everyone in this valley.[BR]
+[WAIT][NEXT]
+They take good care of us and[BR]
+always stand up for us.[WAIT][END]
+
+12-114
+[STYLE:RIGHT]I'm cooking for the Star Kids.[BR]
+[PAUSE:0A]They're behaving pretty well.[BR]
+[WAIT][NEXT]
+That's a relief. It's probably[BR]
+because they believe you'll get[BR]
+the Star Rod back.[BR]
+[PAUSE:0A]I certainly hope you do.[WAIT][END]
+
+12-115
+[STYLE:RIGHT]All of the Star Spirits have[BR]
+finally returned![BR]
+[PAUSE:0A]What a joyous day![BR]
+[WAIT][NEXT]
+Things are really looking up![BR]
+[PAUSE:0A]We're all cheering for you![WAIT][END]
+
+12-116
+[STYLE:RIGHT]The slogan of Toad House is...[BR]
+"Refresh your Body and Soul!"[BR]
+[WAIT][NEXT]
+Would you like to take a nap?[BR]
+{Func_04}[END]
+
+12-117
+[STYLE:RIGHT]...Huh?[BR]
+[PAUSE:0A]But...you look healthy.[BR]
+[PAUSE:0A]You want to stay over anyway?[BR]
+{Func_04}[END]
+
+12-118
+[NEXT]
+Please come again![WAIT][END]
+
+12-119
+[NEXT]
+Pleasant dreams![WAIT][END]
+
+12-11A
+[STYLE:RIGHT]Did you sleep well?[BR]
+[WAIT][NEXT]
+I wish you luck![WAIT][END]
+
+12-11B
+[STYLE:RIGHT]A warm scarf![HEART][BR]
+[PAUSE:05]Thank you![WAIT][END]
+
+12-11C
+[STYLE:RIGHT]A cool bucket hat![HEART][BR]
+[PAUSE:05]Thank you![WAIT][END]
+
+12-11D
+[STYLE:RIGHT]What a kind man you are![BR]
+[PAUSE:05]We thank you.[BR]
+[WAIT][NEXT]
+As a reward for your kindness,[BR]
+we shall tell you our secret.[WAIT][END]
+
+12-11E
+[STYLE:RIGHT]Please pass through here...[BR]
+[PAUSE:0A]With many thanks and blessings[BR]
+from the snowmen![HEART][WAIT][END]
+
+12-11F
+[STYLE:RIGHT]Mmm??[WAIT][END]
+
+12-120
+[STYLE:RIGHT]{Size:30:30}{StartFX:Shrinking}Nooo!![BR]
+[PAUSE:0F][END]
+
+12-121
+[STYLE:RIGHT]What's wrong with my eyes?[BR]
+[PAUSE:05]You look just like me![BR]
+[WAIT][NEXT]
+[PAUSE:0A]Impostor! Who are you really?[BR]
+[PAUSE:0A]Tell me your name![WAIT][END]
+
+12-122
+[STYLE:RIGHT]I'm Kooper... Yeah, that's it.[BR]
+[PAUSE:0A]The question is, who are you?[WAIT][END]
+
+12-123
+[STYLE:RIGHT]Wha... Wha... Whaaat!?[BR]
+[PAUSE:0A]That's impossible![BR]
+[PAUSE:0A]I'm the one and only Kooper!![WAIT][END]
+
+12-124
+[STYLE:RIGHT]You're talking crazy-talk now.[BR]
+You're making no sense![BR]
+[PAUSE:0A]I'm the genuine Kooper! Really![BR]
+[WAIT][NEXT]
+C'mon, Mario! You know me.[BR]
+[PAUSE:0A]This guy's a big liar.[WAIT][END]
+
+12-125
+[STYLE:RIGHT]I'm not lying![BR]
+[PAUSE:0A]Mario...you know I'm Kooper,[BR]
+don't you?[BR]
+[WAIT][NEXT]
+Don't you recognize your buddy?[WAIT][END]
+
+12-126
+[STYLE:RIGHT]Shut your mouth, goody-goody![BR]
+[PAUSE:0A]I'm his buddy! Yeah, that's it.[WAIT][END]
+
+12-127
+[STYLE:RIGHT]Why you... You're the one who[BR]
+should shut his mouth! [BR]
+[PAUSE:0A]I'm his buddy![WAIT][END]
+
+12-128
+[STYLE:RIGHT]Listen, Moron...er, Mario, [BR]
+[PAUSE:0A]you have to decide who's lying.[BR]
+[WAIT][NEXT]
+It's the only way. Pick the one[BR]
+you think is lying and whack him[BR]
+really hard with the Hammer.[WAIT][END]
+
+12-129
+[STYLE:RIGHT]Fine! Yeah, fine with me![BR]
+[PAUSE:0A]If you think you'll get away with[BR]
+a trick like that, fine![BR]
+[WAIT][NEXT]
+I know Mario knows who I am.[BR]
+[PAUSE:0A]I believe in you, Mario![WAIT][END]
+
+12-12A
+[STYLE:RIGHT]Don't listen to this idiot![BR]
+[PAUSE:0A]Look at him! He's a liar![BR]
+[PAUSE:0A]Go on, hit him! Hit HIM![BR]
+[WAIT][NEXT]
+This guy thinks he can pull the[BR]
+wool over your eyes, Mario![BR]
+[WAIT][NEXT]
+Don't let him get away with it![BR]
+[PAUSE:0A]Hit him as hard as you can![WAIT][END]
+
+12-12B
+[STYLE:RIGHT]I'm not worried...[BR]
+[WAIT][NEXT]
+You and I go way back, Mario. I[BR]
+know you know who I am.[WAIT][END]
+
+12-12C
+[STYLE:RIGHT]Ow! Unbelievable![BR]
+[PAUSE:0A]You don't even recognize me?[WAIT][END]
+
+12-12D
+[STYLE:RIGHT]Baaa ha ha ha ha![BR]
+[PAUSE:0A]You simpleton, Mario![BR]
+[PAUSE:0A]{StartFX:Wavy}I completely fooled you! Ha![WAIT][END]
+
+12-12E
+[STYLE:RIGHT]You deceitful monster![BR]
+[PAUSE:0A]How dare you try to trick Mario![WAIT][END]
+
+12-12F
+[STYLE:RIGHT]What're you gonna do about it?[WAIT][END]
+
+12-130
+[STYLE:RIGHT]Yeeeow![BR]
+[PAUSE:0A]What made you think that I was[BR]
+the one lying, huh?[BR]
+[WAIT][NEXT]
+It must've been luck. No one has[BR]
+instincts that good.[WAIT][END]
+
+12-131
+[STYLE:RIGHT]Don't be such a crybaby![BR]
+[PAUSE:0A]You lost![BR]
+[WAIT][NEXT]
+What were you thinking, trying to[BR]
+trick Mario like that?[WAIT][END]
+
+12-132
+[STYLE:RIGHT]What? Shut up![BR]
+[PAUSE:0A]I'll trick YOU...[WAIT][END]
+
+12-133
+[STYLE:RIGHT]{StartFX:Faded:D9}At last...it is Mario![BR]
+[PAUSE:0A]I'm glad you found this place.[BR]
+[WAIT][NEXT]
+I've been expecting you.[BR]
+[WAIT][NEXT]
+Hm hm hm ho ho...[BR]
+[PAUSE:0A]Do you find it strange that I[BR]
+know of you?[WAIT][END]
+
+12-134
+[STYLE:RIGHT]{StartFX:Faded:D9}My name is Madam Merlar.[BR]
+[PAUSE:0A]I am a messenger of the Stars.[BR]
+[WAIT][NEXT]
+You know Merlon and Merle well. I[BR]
+am their ancestor.[BR]
+[WAIT][NEXT]
+The Stars spoke to me of you[BR]
+through my dreams...[BR]
+[WAIT][NEXT]
+They said you would come to the[BR]
+shrine on Shiver Mountain.[BR]
+[PAUSE:0A]It is here that I guard the way[BR]
+to the Crystal Palace.[WAIT][END]
+
+12-135
+[STYLE:RIGHT]{StartFX:Faded:D9}We have little time to waste, so[BR]
+listen carefully.[BR]
+[WAIT][NEXT]
+You may not know this, but the[BR]
+followers of Bowser have invaded[BR]
+Crystal Palace, where stars are[BR]
+honored.[BR]
+[WAIT][NEXT]
+Now, what I have to tell you is[BR]
+very important.[BR]
+[PAUSE:0A]Listen to every word I say![BR]
+[WAIT][NEXT]
+I can't tell you the whole tale.[BR]
+[PAUSE:0A]In the interest of time I'll be[BR]
+brief, so pay attention to the[BR]
+key points.[BR]
+[WAIT][NEXT]
+The story begins a long, long[BR]
+time ago...[BR]
+[WAIT][NEXT]
+I was still a young woman back[BR]
+then...[BR]
+[WAIT][NEXT]
+A horrible thing happened on the[BR]
+mountain one day...[BR]
+[WAIT][NEXT]
+I ran there immediately and...[BR]
+...but it was actually...[BR]
+.... [BR]
+[WAIT][NEXT]
+Oh! Such a sight! I...[BR]
+[PAUSE:0A]...was...and...it was so...[BR]
+....[BR]
+[WAIT]{Func_04}[NEXT]
+It was.....none other...... [BR]
+........so.......than....[BR]
+.............then I....[BR]
+.....................[BR]
+[WAIT][NEXT]
+...........   ......[BR]
+.........[BR]
+... .....[BR]
+................[BR]
+............   ......[BR]
+........[BR]
+[PAUSE:28]{Func_04}[END]
+
+12-136
+[STYLE:RIGHT][NEXT]
+{StartFX:Faded:D9}..................................[BR]
+..................................[BR]
+..................................[BR]
+[WAIT][NEXT]
+.................so that's why you[BR]
+must get Bowser's men out of[BR]
+the Crystal Palace. [PAUSE:08]But... [BR]
+{InputOn}[WAIT][NEXT]
+{StartFX:Shrinking}Hey! {EndFX:Shrinking}You! [PAUSE:0A]Were you even[BR]
+listening to my story?[BR]
+[PAUSE:0F][WAIT][END]
+
+12-137
+[STYLE:RIGHT]{StartFX:Faded:D9}Well... OK, then.[BR]
+[WAIT][NEXT]
+As I was saying, you need the[BR]
+Star Stone to reach the palace.[BR]
+[PAUSE:0A][WAIT][NEXT]
+I'll give it to you.[WAIT][END]
+
+12-138
+[STYLE:RIGHT]{StartFX:Faded:D9}With this stone, you can open the[BR]
+way to the Crystal Palace. [BR]
+[PAUSE:0A]Go on. Make haste![BR]
+[WAIT][NEXT]
+... Hmmm.[BR]
+[PAUSE:0A]Do you think you understood my[BR]
+shortened version of the tale?[BR]
+[WAIT][NEXT]
+It really doesn't do the story[BR]
+justice, you know. Perhaps one [BR]
+day I'll tell you the full story.[BR]
+[WAIT][NEXT]
+Until then, good luck.[WAIT][END]
+
+12-139
+[STYLE:RIGHT]Yikes! Mario's here![WAIT][END]
+
+12-13A
+[STYLE:RIGHT]Whoa! We'd better beat him![WAIT][END]
+
+12-13B
+[STYLE:RIGHT]Noo!![BR]
+[PAUSE:0A]The real Mario's so strong![WAIT][END]
+
+12-13C
+[STYLE:RIGHT]What? Who are all of you!?[BR]
+You're all trying to look like me![BR]
+[WAIT][NEXT]
+[PAUSE:0A]Mario...[BR]
+[PAUSE:0A]Don't tell me you can't tell which[BR]
+one is the real Bombette! You[BR]
+can tell, right?[WAIT][END]
+
+12-13D
+[STYLE:RIGHT]Hey, I heard that![STAR][BR]
+[PAUSE:0A]You're spreading lies, you[BR]
+impostor![STAR][BR]
+[WAIT][NEXT]
+I'm the real Bombette![STAR][WAIT][END]
+
+12-13E
+[STYLE:RIGHT]Oh, no, no![HEART][BR]
+[WAIT][NEXT]
+Mario. Look carefully at me and[BR]
+you'll know.[HEART][BR]
+[WAIT][NEXT]
+I'm the real Bombette.[HEART] It can[BR]
+only be me.[HEART][BR]
+[PAUSE:0A]These others are all liars.[HEART][WAIT][END]
+
+12-13F
+[STYLE:RIGHT]I'm the one!!!![BR]
+[PAUSE:0A]Mario!!!! Me!!!! Don't fall for[BR]
+these tricks!!!![BR]
+[WAIT][NEXT]
+I'll blow you up if you do!!!![WAIT][END]
+
+12-140
+[STYLE:RIGHT]I... I'm the real Bombette...[BR]
+[PAUSE:0A]Puh... Please... Trust your eyes[BR]
+and look at me...[BR]
+[PAUSE:0A]I... I'm not lying...[WAIT][END]
+
+12-141
+[STYLE:RIGHT]Noooo![BR]
+[PAUSE:0A]I can't bear this![BR]
+[WAIT][NEXT]
+Mario! Smash the impostors with[BR]
+your Hammer![BR]
+[WAIT][NEXT]
+All of you pretending to be me! I[BR]
+can't take it another second![WAIT][END]
+
+12-142
+[STYLE:RIGHT]Oh, that's a nice idea.[HEART][BR]
+[PAUSE:0A]That'll clear all this up.[HEART][WAIT][END]
+
+12-143
+[STYLE:RIGHT]Yes, good idea!!!![BR]
+[PAUSE:0A]I just hate impostors!!!![BR]
+[WAIT][NEXT]
+Mario!!!! I'm the real Bombette[BR]
+so don't you dare hit me!!!![WAIT][END]
+
+12-144
+[STYLE:RIGHT]Mario, I'm Bombette![BR]
+[PAUSE:0A]I'm not ever going to forgive you[BR]
+if you mess this up.[WAIT][END]
+
+12-145
+[STYLE:RIGHT]I'm Bombette![STAR][BR]
+[PAUSE:0A]You know it![STAR][WAIT][END]
+
+12-146
+[STYLE:RIGHT]Mario.[HEART][BR]
+[PAUSE:0A]I am Bombette.[HEART][WAIT][END]
+
+12-147
+[STYLE:RIGHT]There's no way that Mario will[BR]
+make a mistake!!!![BR]
+[PAUSE:0A]We have journeyed so very far[BR]
+together!!!![BR]
+[WAIT][NEXT]
+Isn't that right, Mario????[BR]
+[PAUSE:0A]You know which one of us is the[BR]
+real Bombette, don't you????[WAIT][END]
+
+12-148
+[STYLE:RIGHT]Thuh... This is terrible...[BR]
+[PAUSE:0A]It... It's so clear that I'm the[BR]
+real Bombette...[WAIT][END]
+
+12-149
+[STYLE:RIGHT]Oh! Mario! You're terrible![BR]
+[PAUSE:0A]You don't even recognize me![BR]
+[PAUSE:0A]Oh, I can't bear it![WAIT][END]
+
+12-14A
+[STYLE:RIGHT]Ohh![STAR][BR]
+[PAUSE:0A]Somehow you managed to see[BR]
+through my disguise.[STAR][BR]
+[WAIT]{Func_04}[NEXT]
+Darn it![BR]
+[PAUSE:0A]I thought I was doing so well![WAIT][END]
+
+12-14B
+[STYLE:RIGHT]Oh![HEART][BR]
+You must be very smart to[BR]
+figure out I was an impostor.[HEART][BR]
+[WAIT]{Func_04}[NEXT]
+Curses! I thought we were doing[BR]
+a great job of confusing you![BR]
+[PAUSE:0A]I'll be back![WAIT][END]
+
+12-14C
+[STYLE:RIGHT]{StartFX:Wavy}What!!!![BR]
+[PAUSE:0A]Why did you hit me!!!![BR]
+{EndFX:Wavy}[PAUSE:0A][WAIT]{Func_04}[NEXT]
+Blast![BR]
+[PAUSE:0A]You found me!![BR]
+[PAUSE:0A]What's wrong with my disguise?[WAIT][END]
+
+12-14D
+[STYLE:RIGHT]No... Noooo...[BR]
+[PAUSE:0A]I... I should have worked harder[BR]
+on my Bombette disguise...[BR]
+[WAIT]{Func_04}[NEXT]
+I... I won't forget this.[WAIT][END]
+
+12-14E
+[STYLE:RIGHT]So! Choose the impostor![WAIT][END]
+
+12-14F
+[STYLE:RIGHT]If you'd hit me with the Hammer,[BR]
+Mario, I was going to bomb you[BR]
+the next time you napped.[BR]
+[WAIT][NEXT]
+But you didn't![BR]
+[PAUSE:0A]I'm so happy that you knew I[BR]
+was the real Bombette![HEART][WAIT][END]
+
+12-150
+[STYLE:RIGHT]Who're you?[BR]
+[WAIT][NEXT]
+The great and honorable Crystal[BR]
+King said that I can't let anyone[BR]
+pass![BR]
+[WAIT][NEXT]
+You're up to no good! I'm going[BR]
+to have to hurt you![WAIT][END]
+
+12-151
+[STYLE:RIGHT]I won't let you![BR]
+[PAUSE:0A]I won't and I won't and I won't![BR]
+You can't![BR]
+[WAIT][NEXT]
+You'll have to go through me if[BR]
+you wanna get past![WAIT][END]
+
+12-152
+[STYLE:RIGHT]Hey, didn't you hear me? I said[BR]
+I'm not budging, you got that?[BR]
+[WAIT][NEXT]
+Do you have any idea how mad[BR]
+the Crystal King will get if I let[BR]
+you pass here?[BR]
+[WAIT][NEXT]
+I don't want him mad at me, so I[BR]
+have to teach you a lesson![WAIT][END]
+
+12-153
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]I'm the real Kooper.[BR]
+[PAUSE:0A]But of course you know that,[BR]
+don't you, old boy?[WAIT][END]
+
+12-154
+[STYLE:RIGHT]Mario![BR]
+[PAUSE:0A]Look at me! I'm the real deal![BR]
+[PAUSE:0A]Nobody else looks like Kooper.[WAIT][END]
+
+12-155
+[STYLE:RIGHT]Mario, come on![BR]
+[PAUSE:0A]I'm Kooper![BR]
+[PAUSE:0A]I mean, this is ridiculous.[WAIT][END]
+
+12-156
+[STYLE:RIGHT]I'm the real Kooper, sonny.[BR]
+[PAUSE:0A]You believe me, don't you?[WAIT][END]
+
+12-157
+[STYLE:RIGHT]I'm the real Kooper.[BR]
+[PAUSE:0A]There isn't any doubt in your[BR]
+mind, is there? Brother?[WAIT][END]
+
+12-158
+[STYLE:RIGHT]OK, old bean...[BR]
+[PAUSE:0A]You'd best smash these[BR]
+impostors one by one.[WAIT][END]
+
+12-159
+[STYLE:RIGHT]That's a good idea.[WAIT][END]
+
+12-15A
+[STYLE:RIGHT]Brother,[BR]
+[PAUSE:0A]smash them all except me, OK?[WAIT][END]
+
+12-15B
+[STYLE:RIGHT]Listen, old chap,[BR]
+[PAUSE:0A]I'm the real Kooper.[BR]
+[PAUSE:0A]It's rather obvious to anyone[BR]
+with a bit of sense.[WAIT][END]
+
+12-15C
+[STYLE:RIGHT]Mario, listen.[BR]
+[PAUSE:0A]I'm the real Kooper.[BR]
+[PAUSE:0A]These others are impostors.[WAIT][END]
+
+12-15D
+[STYLE:RIGHT]Mario, open your eyes![BR]
+[PAUSE:0A]I'm Kooper![BR]
+[PAUSE:0A]I mean, seriously! Look at me![BR]
+[WAIT][NEXT]
+Is it really that tough to see[BR]
+through these "disguises"?[BR]
+[PAUSE:0A]Please![WAIT][END]
+
+12-15E
+[STYLE:RIGHT]I'm the real Kooper, youngster.[BR]
+[PAUSE:0A]You're not saying you suspect[BR]
+this old Koopa, are you?[WAIT][END]
+
+12-15F
+[STYLE:RIGHT]Brother![BR]
+[PAUSE:0A]I'm the real Kooper![BR]
+[PAUSE:0A]As my brother, you must be able[BR]
+to see that, right?[WAIT][END]
+
+12-160
+[STYLE:RIGHT]Hm! Mario![BR]
+[PAUSE:0A]Well done! I don't know how you[BR]
+did it, but you found me out![BR]
+[WAIT]{Func_04}[NEXT]
+Good-bye![WAIT][END]
+
+12-161
+[STYLE:RIGHT]Ouch! That hurt![BR]
+[PAUSE:0A]Still, good job.[BR]
+You must have some incredibly[BR]
+keen eyes to spot me.[BR]
+[WAIT]{Func_04}[NEXT]
+Darn it![WAIT][END]
+
+12-162
+[STYLE:RIGHT]Mario! Ow![BR]
+[PAUSE:0A]You did that on purpose, didn't[BR]
+you!?[BR]
+[WAIT][NEXT]
+{StartFX:Jitter}That's just plain mean![WAIT][END]
+
+12-163
+[STYLE:RIGHT]You must have some sort of sixth[BR]
+sense, sonny.[BR]
+[WAIT]{Func_04}[NEXT]
+Grrrr![BR]
+[PAUSE:0A]Remember me! I'll return![WAIT][END]
+
+12-164
+[STYLE:RIGHT]Brother![BR]
+[PAUSE:05]I said I was the real Kooper so[BR]
+many times... [PAUSE:0A]So mean...[BR]
+[WAIT]{Func_04}[NEXT]
+Just joking.[BR]
+[PAUSE:0A]I definitely thought I had you[BR]
+going there, though...[WAIT][END]
+
+12-165
+[STYLE:RIGHT]You must choose the impostors![WAIT][END]
+
+12-166
+[STYLE:RIGHT]Yes! Yes![BR]
+[PAUSE:0A]Good call, Mario![BR]
+[WAIT][NEXT]
+I knew you'd get it right![BR]
+[PAUSE:0A]Those were the worst disguises[BR]
+ever![WAIT][END]
+
+12-167
+[STYLE:RIGHT]You can't go through here unless[BR]
+you solve the puzzle.[BR]
+[PAUSE:0A]Once you solve the puzzle, we'll[BR]
+let you through.[WAIT][END]
+
+12-168
+[STYLE:RIGHT]You can't go through here unless[BR]
+you solve the puzzle.[BR]
+[PAUSE:0A]Once you solve the puzzle, we'll[BR]
+let you through.[WAIT][END]
+
+12-169
+[STYLE:RIGHT]You can't go through here unless[BR]
+you solve the puzzle.[BR]
+[PAUSE:0A]Once you solve the puzzle, we'll[BR]
+let you through.[WAIT][END]
+
+12-16A
+[STYLE:RIGHT]{StartFX:Shrinking}Who comes to my palace!?[BR]
+[PAUSE:0A][WAIT][END]
+
+12-16B
+[STYLE:RIGHT]{StartFX:Shrinking}{StartFX:Jitter}Mario...[BR]
+[PAUSE:0A]You finally arrived![BR]
+[WAIT][NEXT]
+Heh, heh, heh, heh...[BR]
+[PAUSE:0A]I know you believe you can save[BR]
+the Star Spirit, but I'm afraid I[BR]
+won't let you.[BR]
+[WAIT][NEXT]
+First I shall defeat you, then[BR]
+I shall present Bowser with an[BR]
+iced Mario gift![WAIT][END]
+
+12-16C
+[STYLE:RIGHT]Oh no![BR]
+The last Star Spirit!![BR]
+[PAUSE:0A]King Bowser, forgive meeeeee!![WAIT][END]
+
+12-16D
+[STYLE:RIGHT]{SpeechSound:02}My name is Kalmar.[BR]
+[PAUSE:0A]Mario,[BR]
+[PAUSE:07]well done. Thank you for coming.[BR]
+[WAIT][NEXT]
+You have successfully rescued[BR]
+all of us Star Spirits.[BR]
+[PAUSE:0A]We are in your debt.[BR]
+[WAIT][NEXT]
+Now all that is left is for you[BR]
+to challenge Bowser.[BR]
+[WAIT][NEXT]
+My Power should help you...[BR]
+[WAIT][NEXT]
+to bring back the Star Rod,[BR]
+[PAUSE:0A]to beat Bowser, to bring peace[BR]
+back to the Mushroom Kingdom,[BR]
+[WAIT][NEXT]
+and...[BR]
+[PAUSE:0A]to save Princess Peach.[WAIT][END]
+
+12-16E
+[STYLE:RIGHT]{SpeechSound:02}Mario,[BR]
+[PAUSE:0A]you must make your way back to[BR]
+Shooting Star Summit.[BR]
+[WAIT][NEXT]
+From Shooting Star Summit, we'll[BR]
+prepare the route to[BR]
+{Color:20}Star Haven{Color:0A}.[BR]
+[WAIT][NEXT]
+The name of this route is [BR]
+{Color:20}Star Way{Color:0A}.[BR]
+[WAIT][NEXT]
+Once you travel the Star Way,[BR]
+you'll finally reach Star Haven.[WAIT][END]
+
+12-16F
+[STYLE:RIGHT]{SpeechSound:02}My only wish is for you to save[BR]
+this precious world.[BR]
+[WAIT][NEXT]
+You can do it, Mario.[BR]
+[PAUSE:0A]Good-bye for now.[WAIT][END]
+

@@ -1,0 +1,917 @@
+05-000
+[STYLE:RIGHT]I'm ruined... [PAUSE:05]Done for![BR]
+[PAUSE:0A]A huge rock is blocking[BR]
+the train tracks![BR]
+[WAIT][NEXT]
+When Peach's Castle was[BR]
+uprooted, one of the boulders[BR]
+from that stack rolled off and[BR]
+landed here. What bad luck![BR]
+[WAIT][NEXT]
+If we can't do something[BR]
+about that boulder, I can't[BR]
+make my run to Mt. Rugged![WAIT][END]
+
+05-001
+[STYLE:RIGHT]Oh, thank you, Mario!![BR]
+[PAUSE:0A]The train's back on track![BR]
+[WAIT][NEXT]
+All aboard!![BR]
+[PAUSE:0A]This train is bound for[BR]
+{Color:20}Mt. Rugged{Color:0A}.[BR]
+[WAIT][NEXT]
+Are you coming, Mario?[BR]
+{Func_04}[END]
+
+05-002
+[STYLE:RIGHT]Howdy, Mario.[BR]
+[PAUSE:0A]This train is bound for[BR]
+Mt. Rugged.[BR]
+[WAIT][NEXT]
+Are you getting on?[BR]
+{Func_04}[END]
+
+05-003
+[NEXT]
+The train is about to depart.[BR]
+[PAUSE:05]Please board quickly.[WAIT][END]
+
+05-004
+[NEXT]
+We hope to see you again![WAIT][END]
+
+05-005
+[STYLE:RIGHT]Toad Town![BR]
+[PAUSE:0F]Toad Town![WAIT][END]
+
+05-006
+[STYLE:RIGHT]There's still some time before[BR]
+the next departure.[BR]
+[PAUSE:0A]Come back in a bit.[WAIT][END]
+
+05-007
+[STYLE:RIGHT]What'll I do... I'm ruined![BR]
+[PAUSE:05]There's no hope for me![BR]
+[WAIT][NEXT]
+We can't get the train moving[BR]
+because of the pesky Shy Guy on[BR]
+the tracks.[BR]
+[WAIT][NEXT]
+I told him to scram,[BR]
+but he won't listen to me,[BR]
+and he won't move at all.[BR]
+[WAIT][NEXT]
+What am I gonna do?[WAIT][END]
+
+05-008
+[STYLE:RIGHT]Oh, thank you, Mario!![BR]
+[PAUSE:0A]We're rolling now![BR]
+[WAIT][NEXT]
+All aboard!![BR]
+[PAUSE:0A]Are you coming along?[BR]
+{Func_04}[END]
+
+05-009
+[STYLE:RIGHT][BR]
+Sit tight, folks.[BR]
+Now departing for Mt. Rugged.[WAIT][END]
+
+05-00A
+[STYLE:RIGHT]I love trains, don't you?[BR]
+[PAUSE:05]I love to come here and watch[BR]
+it come and go, but it doesn't[BR]
+seem to move at all now.[BR]
+[WAIT][NEXT]
+It's really a lot more fun to[BR]
+watch when it's moving.[BR]
+[PAUSE:05]The problem must be that[BR]
+gigantic rock on the tracks.[WAIT][END]
+
+05-00B
+[STYLE:RIGHT]You're the best, Mario![BR]
+[PAUSE:0A]It's nice to see the train[BR]
+up and running once again.[BR]
+[WAIT][NEXT]
+It really wasn't a whole lot of[BR]
+fun watching it just sit there.[WAIT][END]
+
+05-00C
+[STYLE:RIGHT]I overheard someone saying that[BR]
+there's been a Boo sighting[BR]
+at the edge of Forever Forest.[BR]
+[WAIT][NEXT]
+Boos never come to Toad Town.[BR]
+[PAUSE:0A]Most unusual...[BR]
+[WAIT][NEXT]
+By the way, Mario,[BR]
+[PAUSE:0A]did you know that this here[BR]
+blue pole is a road sign?[BR]
+[WAIT][NEXT]
+There are signs all over[BR]
+Toad Town, so check them well.[BR]
+[WAIT][NEXT]
+Road signs could even lead you[BR]
+to Forever Forest.[WAIT][END]
+
+05-00D
+[STYLE:RIGHT](No need to translate)[WAIT][END]
+
+05-00E
+[STYLE:RIGHT]That Shy Guy on the tracks[BR]
+has stopped the train schedule[BR]
+again.[BR]
+[WAIT][NEXT]
+This is no good.[BR]
+[PAUSE:0A]Can you scare him off?[WAIT][END]
+
+05-00F
+[STYLE:RIGHT]The sound of the wheels when[BR]
+the train is running...[BR]
+Psshhh! The loud hissing...[BR]
+And the WHOOO-WHOOOOOOO![BR]
+[WAIT][NEXT]
+Just listening to trains[BR]
+makes me feel at peace.[BR]
+[WAIT][NEXT]
+I want the train to keep on[BR]
+running today, tomorrow, the[BR]
+next day...[BR]
+[PAUSE:0A]That's my wish, all right.[WAIT][END]
+
+05-010
+[STYLE:RIGHT]The sound of the wheels when[BR]
+the train is running...[BR]
+Psshhh! The loud hissing...[BR]
+And the WHOOO-WHOOOOOOO![BR]
+[WAIT][NEXT]
+Just listening to trains[BR]
+makes me feel at peace.[BR]
+[WAIT][NEXT]
+I want the train to keep on[BR]
+running today, tomorrow, the[BR]
+next day...[BR]
+[PAUSE:0A]That's my wish, all right.[WAIT][END]
+
+05-011
+[STYLE:RIGHT]I guess it's sort of odd that[BR]
+this train only goes between[BR]
+Toad Town and Mt. Rugged.[BR]
+[WAIT][NEXT]
+Maybe they ought to expand[BR]
+to some other areas.[WAIT][END]
+
+05-012
+[STYLE:RIGHT]I like watching the train from[BR]
+here rather than actually[BR]
+getting on it.[BR]
+[WAIT][NEXT]
+If I get on it, I won't be able[BR]
+to see the train.[WAIT][END]
+
+05-013
+[STYLE:RIGHT]I like watching the train from[BR]
+here rather than actually[BR]
+getting on it.[BR]
+[WAIT][NEXT]
+If I get on it, I won't be able[BR]
+to see the train.[WAIT][END]
+
+05-014
+[STYLE:RIGHT]I get all excited when I hear[BR]
+the train chugging along and[BR]
+watch the smoke puffing.[BR]
+[WAIT][NEXT]
+I wish that someday, in a far-[BR]
+away land, I'll find someone who[BR]
+loves trains as much as I do.[WAIT][END]
+
+05-015
+[STYLE:RIGHT]I get all excited when I hear[BR]
+the train chugging along and[BR]
+watch the smoke puffing.[BR]
+[WAIT][NEXT]
+I wish that someday, in a far-[BR]
+away land, I'll find someone who[BR]
+loves trains as much as I do.[WAIT][END]
+
+05-016
+[STYLE:RIGHT]So! I hear you're off to[BR]
+fight Bowser.[BR]
+[WAIT][NEXT]
+Princess Peach and everyone[BR]
+in the castle will finally[BR]
+come back, won't they?[BR]
+[WAIT][NEXT]
+Mario...[BR]
+[PAUSE:05]when peace returns here, I want[BR]
+to tell you something, OK?[WAIT][END]
+
+05-017
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]you do keep a good supply[BR]
+of items on hand, don't you?[BR]
+[WAIT][NEXT]
+If you get attacked when you[BR]
+have nothing, you'll be in a[BR]
+pretty tight fix, huh?[BR]
+[WAIT][NEXT]
+My advice is, whenever you're[BR]
+going on a long journey,[BR]
+you should stop by a shop and[BR]
+load up with supplies.[WAIT][END]
+
+05-018
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]you do keep a good supply[BR]
+of items on hand, don't you?[BR]
+[WAIT][NEXT]
+If you get attacked when you[BR]
+have nothing, you'll be in a[BR]
+pretty tight fix, huh?[BR]
+[WAIT][NEXT]
+My advice is, whenever you're[BR]
+going on a long journey,[BR]
+you should stop by a shop and[BR]
+load up with supplies.[WAIT][END]
+
+05-019
+[STYLE:RIGHT]Mario,[BR]
+[PAUSE:0A]you do keep a good supply[BR]
+of items on hand, don't you?[BR]
+[WAIT][NEXT]
+If you get attacked when you[BR]
+have nothing, you'll be in a[BR]
+pretty tight fix, huh?[BR]
+[WAIT][NEXT]
+My advice is, whenever you're[BR]
+going on a long journey,[BR]
+you should stop by a shop and[BR]
+load up with supplies.[WAIT][END]
+
+05-01A
+[STYLE:RIGHT](No need to translate)[WAIT][END]
+
+05-01B
+[STYLE:RIGHT]That's just great.[BR]
+The train can't move because[BR]
+a Shy Guy is on the track.[BR]
+[WAIT][NEXT]
+Say, Mario...[BR]
+[PAUSE:05]Any chance you could do[BR]
+something about that guy?[WAIT][END]
+
+05-01C
+[STYLE:RIGHT]Aw, thanks, Mario![BR]
+[PAUSE:05]The train's back in business![WAIT][END]
+
+05-01D
+[STYLE:RIGHT]Say, Mario,[BR]
+[PAUSE:0A]you do always carry items[BR]
+when you travel, don't you?[BR]
+[WAIT][NEXT]
+Don't be overconfident.[BR]
+You never know when you might[BR]
+get caught off guard.[WAIT][END]
+
+05-01E
+[STYLE:RIGHT]Say, Mario,[BR]
+[PAUSE:0A]you do always carry items[BR]
+when you travel, don't you?[BR]
+[WAIT][NEXT]
+Don't be overconfident.[BR]
+You never know when you might[BR]
+get caught off guard.[WAIT][END]
+
+05-01F
+[STYLE:RIGHT]You know, if you're out in[BR]
+the field and need an item,[BR]
+there may not be a shop around.[BR]
+[WAIT][NEXT]
+You should always be prepared[BR]
+for the worst.[BR]
+[WAIT][NEXT]
+They have lots of good stuff at[BR]
+the shops here in Toad Town...[WAIT][END]
+
+05-020
+[STYLE:RIGHT]You know, if you're out in[BR]
+the field and need an item,[BR]
+there may not be a shop around.[BR]
+[WAIT][NEXT]
+You should always be prepared[BR]
+for the worst.[BR]
+[WAIT][NEXT]
+They have lots of good stuff at[BR]
+the shops here in Toad Town...[WAIT][END]
+
+05-021
+[STYLE:RIGHT]You know, if you're out in[BR]
+the field and need an item,[BR]
+there may not be a shop around.[BR]
+[WAIT][NEXT]
+You should always be prepared[BR]
+for the worst.[BR]
+[WAIT][NEXT]
+They have lots of good stuff at[BR]
+the shops here in Toad Town...[WAIT][END]
+
+05-022
+[STYLE:RIGHT]You know, if you're out in[BR]
+the field and need an item,[BR]
+there may not be a shop around.[BR]
+[WAIT][NEXT]
+You should always be prepared[BR]
+for the worst.[BR]
+[WAIT][NEXT]
+They have lots of good stuff at[BR]
+the shops here in Toad Town...[WAIT][END]
+
+05-023
+[STYLE:RIGHT]You know, if you're out in[BR]
+the field and need an item,[BR]
+there may not be a shop around.[BR]
+[WAIT][NEXT]
+You should always be prepared[BR]
+for the worst.[BR]
+[WAIT][NEXT]
+They have lots of good stuff at[BR]
+the shops here in Toad Town...[WAIT][END]
+
+05-024
+[STYLE:RIGHT]Ever been to Dry Dry Desert?[BR]
+It's a really scary place.[BR]
+[WAIT][NEXT]
+I've seen packs of cactus[BR]
+monsters, thieves who prey on[BR]
+travelers' coins, and even[BR]
+whirlwinds![BR]
+[WAIT][NEXT]
+It's a lot safer to stick to[BR]
+the path so you don't get lost.[BR]
+It goes in a direct line from[BR]
+Mt. Rugged to Dry Dry Outpost.[WAIT][END]
+
+05-025
+[STYLE:RIGHT]Ever been to Dry Dry Desert?[BR]
+It's a really scary place.[BR]
+[WAIT][NEXT]
+I've seen packs of cactus[BR]
+monsters, thieves who prey on[BR]
+travelers' coins, and even[BR]
+whirlwinds![BR]
+[WAIT][NEXT]
+It's a lot safer to stick to[BR]
+the path so you don't get lost.[BR]
+It goes in a direct line from[BR]
+Mt. Rugged to Dry Dry Outpost.[WAIT][END]
+
+05-026
+[STYLE:RIGHT]Ever been to Dry Dry Desert?[BR]
+It's a really scary place.[BR]
+[WAIT][NEXT]
+I've seen packs of cactus[BR]
+monsters, thieves who prey on[BR]
+travelers' coins, and even[BR]
+whirlwinds![BR]
+[WAIT][NEXT]
+It's a lot safer to stick to[BR]
+the path so you don't get lost.[BR]
+It goes in a direct line from[BR]
+Mt. Rugged to Dry Dry Outpost.[WAIT][END]
+
+05-027
+[STYLE:RIGHT](No need to translate)[WAIT][END]
+
+05-028
+[STYLE:RIGHT]Look at this idiot...[BR]
+Playing on the train tracks?[BR]
+How dumb are these Shy Guys?[BR]
+[PAUSE:0A]What a nuisance...[BR]
+[WAIT][NEXT]
+I mean, Shy Guys are known[BR]
+for being aggravating,[BR]
+but this is ridiculous.[WAIT][END]
+
+05-029
+[STYLE:RIGHT]Shy Guys always play pranks,[BR]
+but they never seemed so wicked[BR]
+before this.[BR]
+[WAIT][NEXT]
+You don't think that Bowser[BR]
+could have something to do[BR]
+with this, do you?[WAIT][END]
+
+05-02A
+[STYLE:RIGHT]A lot of people claim that[BR]
+hidden treasure is spread[BR]
+all over Dry Dry Desert.[BR]
+[WAIT][NEXT]
+If you get to know the area[BR]
+pretty well, it might not be[BR]
+a bad idea to check around[BR]
+a bit and try to find some.[BR]
+[WAIT][NEXT]
+As for me, I'm too scared of[BR]
+getting lost out in that heat.[BR]
+I just stick to the path and[BR]
+go right to Dry Dry Outpost.[WAIT][END]
+
+05-02B
+[STYLE:RIGHT]A lot of people claim that[BR]
+hidden treasure is spread[BR]
+all over Dry Dry Desert.[BR]
+[WAIT][NEXT]
+If you get to know the area[BR]
+pretty well, it might not be[BR]
+a bad idea to check around[BR]
+a bit and try to find some.[BR]
+[WAIT][NEXT]
+As for me, I'm too scared of[BR]
+getting lost out in that heat.[BR]
+I just stick to the path and[BR]
+go right to Dry Dry Outpost.[WAIT][END]
+
+05-02C
+[STYLE:RIGHT]The people in Dry Dry Outpost[BR]
+look totally different from[BR]
+us Toad Towners, don't they?[BR]
+[WAIT][NEXT]
+Well, variety is the spice[BR]
+of life, you know.[BR]
+[WAIT][NEXT]
+I love that town... I'd go there[BR]
+all the time if the desert[BR]
+weren't so dangerous.[WAIT][END]
+
+05-02D
+[STYLE:RIGHT]The people in Dry Dry Outpost[BR]
+look totally different from[BR]
+us Toad Towners, don't they?[BR]
+[WAIT][NEXT]
+Well, variety is the spice[BR]
+of life, you know.[BR]
+[WAIT][NEXT]
+I love that town... I'd go there[BR]
+all the time if the desert[BR]
+weren't so dangerous.[WAIT][END]
+
+05-02E
+[STYLE:RIGHT]Mario, I really admire the fact[BR]
+that you're so well traveled.[BR]
+[WAIT][NEXT]
+If I had one-eighth of your[BR]
+strength and courage, I think[BR]
+I'd travel the world having[BR]
+adventures, too.[WAIT][END]
+
+05-02F
+[STYLE:RIGHT]Mario, I really admire the fact[BR]
+that you're so well traveled.[BR]
+[WAIT][NEXT]
+If I had one-eighth of your[BR]
+strength and courage, I think[BR]
+I'd travel the world having[BR]
+adventures, too.[WAIT][END]
+
+05-030
+[STYLE:RIGHT]Best of luck, Mario![BR]
+[PAUSE:0A]You're the only hope for[BR]
+Princess Peach and the other[BR]
+captives of that evil Bowser.[BR]
+[WAIT][NEXT]
+You can do it![BR]
+[PAUSE:05]Here we go, Mari-o, woo woo![BR]
+Here we go, Mari-o, woo woo![WAIT][END]
+
+05-031
+[STYLE:RIGHT]What up, Mario?[BR]
+[PAUSE:0A]Like slides? The slides on[BR]
+Mt. Rugged are the coolest![WAIT][END]
+
+05-032
+[STYLE:RIGHT]Yeah! Some are kiddie sized,[BR]
+but there are also huge ones[BR]
+that launch you way out![BR]
+[PAUSE:0A]I wanna go there again![WAIT][END]
+
+05-033
+[STYLE:RIGHT]What up, Mario?[BR]
+[PAUSE:0A]Like slides? The slides on[BR]
+Mt. Rugged are the coolest![WAIT][END]
+
+05-034
+[STYLE:RIGHT]Yeah! Some are kiddie sized,[BR]
+but there are also huge ones[BR]
+that launch you way out![BR]
+[PAUSE:0A]I wanna go there again![WAIT][END]
+
+05-035
+[STYLE:RIGHT]What up, Mario?[BR]
+[PAUSE:0A]Like slides? The slides on[BR]
+Mt. Rugged are the coolest![WAIT][END]
+
+05-036
+[STYLE:RIGHT]Yeah! Some are kiddie sized,[BR]
+but there are also huge ones[BR]
+that launch you way out![BR]
+[PAUSE:0A]I wanna go there again![WAIT][END]
+
+05-037
+[STYLE:RIGHT]Can you believe this stuff?[BR]
+A mischievous Shy Guy has[BR]
+stopped the train![WAIT][END]
+
+05-038
+[STYLE:RIGHT]Yeah, let's go beat him up![BR]
+[WAIT][NEXT]
+...No, maybe he's too tough.[BR]
+[WAIT][NEXT]
+Hey! Hey! Mario![BR]
+[PAUSE:0A]How about you go beat him up[BR]
+instead of us?[WAIT][END]
+
+05-039
+[STYLE:RIGHT]Yippee![BR]
+[PAUSE:14]See you later, Shy Guy![WAIT][END]
+
+05-03A
+[STYLE:RIGHT]You're so tough, Mario!![BR]
+[WAIT][NEXT]
+I'm going to get stronger 'til[BR]
+I can beat up Shy Guys, too![WAIT][END]
+
+05-03B
+[STYLE:RIGHT]You know what? There are [BR]
+whirlwinds in the desert.[BR]
+[WAIT][NEXT]
+They swallow you up, then[BR]
+spit you out somewhere else.[BR]
+I know 'cause I heard it's true.[WAIT][END]
+
+05-03C
+[STYLE:RIGHT]Yeah! Whirlwinds always happen[BR]
+in the same places, too.[BR]
+[WAIT][NEXT]
+My friend says that where you[BR]
+end up depends on where you[BR]
+meet up with the whirlwind.[BR]
+[WAIT][NEXT]
+Nature's a mystery, huh?[BR]
+[PAUSE:0A]I'd avoid 'em. Who'd climb into[BR]
+a whirlwind on purpose?[WAIT][END]
+
+05-03D
+[STYLE:RIGHT]You know what? There are [BR]
+whirlwinds in the desert.[BR]
+[WAIT][NEXT]
+They swallow you up, then[BR]
+spit you out somewhere else.[BR]
+I know 'cause I heard it's true.[WAIT][END]
+
+05-03E
+[STYLE:RIGHT]Yeah! Whirlwinds always happen[BR]
+in the same places, too.[BR]
+[WAIT][NEXT]
+My friend says that where you[BR]
+end up depends on where you[BR]
+meet up with the whirlwind.[BR]
+[WAIT][NEXT]
+Nature's a mystery, huh?[BR]
+[PAUSE:0A]I'd avoid 'em. Who'd climb into[BR]
+a whirlwind on purpose?[WAIT][END]
+
+05-03F
+[STYLE:RIGHT]Is it true that there was a[BR]
+huge, scary, fire-breathing,[BR]
+flower-like monster somewhere[BR]
+here in the Mushroom Kingdom?[BR]
+[WAIT][NEXT]
+And you beat it up, right?[BR]
+Did you really?[WAIT][END]
+
+05-040
+[STYLE:RIGHT]How could something that looks[BR]
+like a flower be scary?[BR]
+[WAIT][NEXT]
+Will the flowers Minh T. is [BR]
+growing also turn into scary[BR]
+monsters someday?[BR]
+[WAIT][NEXT]
+That won't happen, will it?[WAIT][END]
+
+05-041
+[STYLE:RIGHT]Is it true that there was a[BR]
+huge, scary, fire-breathing,[BR]
+flower-like monster somewhere[BR]
+here in the Mushroom Kingdom?[BR]
+[WAIT][NEXT]
+And you beat it up, right?[WAIT][END]
+
+05-042
+[STYLE:RIGHT]How could something that looks[BR]
+like a flower be scary?[BR]
+[WAIT][NEXT]
+Will the flowers Minh T. is [BR]
+growing also turn into scary[BR]
+monsters someday?[BR]
+[WAIT][NEXT]
+That won't happen, will it?[WAIT][END]
+
+05-043
+[STYLE:RIGHT]What up, Mario?[BR]
+[PAUSE:0A]You ever read mystery stories?[BR]
+[WAIT][NEXT]
+My pal says there's a guy [BR]
+in Shiver City who writes [BR]
+really interesting mysteries.[WAIT][END]
+
+05-044
+[STYLE:RIGHT]I guess mysteries are all right,[BR]
+but I think that funny and[BR]
+exciting stories are better.[BR]
+[WAIT][NEXT]
+I'd rather read a story about[BR]
+one of your adventures, Mario.[BR]
+That'd be the best![WAIT][END]
+
+05-045
+[STYLE:RIGHT]What up, Mario?[BR]
+[PAUSE:0A]You ever read mystery stories?[BR]
+[WAIT][NEXT]
+My pal says there's a guy [BR]
+in Shiver City who writes [BR]
+really interesting mysteries.[WAIT][END]
+
+05-046
+[STYLE:RIGHT]I guess mysteries are all right,[BR]
+but I think that funny and[BR]
+exciting stories are better.[BR]
+[WAIT][NEXT]
+I'd rather read a story about[BR]
+one of your adventures, Mario.[BR]
+That'd be the best![WAIT][END]
+
+05-047
+[STYLE:RIGHT]So, you're going to save[BR]
+Princess Peach, huh?[WAIT][END]
+
+05-048
+[STYLE:RIGHT]We're all rooting for you![BR]
+[PAUSE:0A]Yeah, Mario! Yeah![WAIT][END]
+
+05-049
+[STYLE:RIGHT]You're Dane T., correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+05-04A
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+05-04B
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+05-04C
+[STYLE:RIGHT]Thanks, Mister![BR]
+[WAIT][NEXT]
+Wow! I mean, wow![BR]
+[PAUSE:0F]It's an invitation to the [BR]
+haunted mansion![BR]
+[WAIT][NEXT]
+I didn't think it would really[BR]
+come...[BR]
+[WAIT][NEXT]
+All the kids in Toad Town[BR]
+have been talking about this[BR]
+invitation, wondering if it was[BR]
+for real.[BR]
+[WAIT][NEXT]
+But... [PAUSE:05]now that it's come,[BR]
+I guess I have to go...[BR]
+[PAUSE:0F]Mini T., are you brave enough[BR]
+to go with me?[WAIT][END]
+
+05-04D
+[STYLE:RIGHT]Uhhhh... You know, I'm really[BR]
+kind of busy and...[BR]
+[PAUSE:0A]Oh! Yeah! [BR]
+I just had the greatest idea![BR]
+[WAIT][NEXT]
+Let's ask that Yoshi Kid from [BR]
+Yoshi's Village to come.[BR]
+[WAIT][NEXT]
+You just got a letter from that[BR]
+kid last week, didn't you?[BR]
+[PAUSE:0A]You know! That letter you got[BR]
+from the island?[BR]
+[WAIT][NEXT]
+Let's send a letter back to him[BR]
+and tell him about the scary[BR]
+adventure we're gonna have.[BR]
+[PAUSE:14][WAIT][NEXT]
+Hey! Mr. Postman![BR]
+[PAUSE:05]Take this letter to the red[BR]
+Yoshi Kid in Yoshi's Village![WAIT][END]
+
+05-04E
+[STYLE:RIGHT]You're Dane T., correct?[BR]
+[WAIT][NEXT]
+The name's Parakarry.[BR]
+I deliver letters.[BR]
+[WAIT][NEXT]
+I believe I have one for you.[BR]
+[PAUSE:0A]Hang on a moment.[WAIT][END]
+
+05-04F
+[STYLE:RIGHT]Oh...no! Confound it![BR]
+[PAUSE:0A]I seem to have lost it![BR]
+[PAUSE:0A]...I'm terribly sorry.[WAIT][END]
+
+05-050
+[STYLE:RIGHT]Another letter, duly delivered.[BR]
+A postman's job is never done.[WAIT][END]
+
+05-051
+[STYLE:RIGHT]Wow! Thanks a lot![BR]
+[WAIT][NEXT]
+You're much faster than the[BR]
+old postman, that's for sure.[BR]
+[PAUSE:0A]That Yoshi Kid is a really[BR]
+good pen pal, huh?[BR]
+[WAIT][NEXT]
+He writes really long letters.[BR]
+[PAUSE:0A]It sounds like there's always[BR]
+something fun going on over[BR]
+where he is. Lucky Yoshi...[BR]
+[WAIT][NEXT]
+We should write back again.[BR]
+[PAUSE:14]Hmmmm... What do you think[BR]
+we ought to write about?[WAIT][END]
+
+05-052
+[STYLE:RIGHT]Hmmmm... I don't know.[BR]
+[PAUSE:0A]Let's think about it later.[BR]
+[WAIT][NEXT]
+By the way, I wanna ask you[BR]
+for a favor, Mr. Parakarry.[BR]
+[PAUSE:08]Can you deliver this?[BR]
+[WAIT][NEXT]
+It's a letter for Uncle Frost T.[BR]
+of Starborn Valley.[BR]
+[WAIT][NEXT]
+He's my uncle.[BR]
+He's up there taking care[BR]
+of lots of Star Kids.[BR]
+[WAIT][NEXT]
+It sounds like a hard job.[BR]
+He has to chase 'em around[BR]
+all the time.[BR]
+[WAIT][NEXT]
+At least that's what he says[BR]
+in the letters he sends.[BR]
+[PAUSE:0A]Anyway, I wrote him a letter[BR]
+to take his mind off work.[BR]
+[WAIT][NEXT]
+I know it's far from here,[BR]
+but I'd really appreciate it.[WAIT][END]
+
+05-053
+[STYLE:RIGHT]I love Li'l-Oinks![BR]
+[PAUSE:0A]Love 'em! You... You want[BR]
+to learn about 'em?[BR]
+{Func_04}[END]
+
+05-054
+[STYLE:RIGHT]Ha... [PAUSE:0A]Li'l-Oinks are so cute![BR]
+[PAUSE:0A]Aren't they the most adorable[BR]
+things you've ever seen?[WAIT][END]
+
+05-055
+[NEXT]
+Oh, OK... [PAUSE:0A]If you want to hear [BR]
+about the different types of[BR]
+Li'l Oinks, just ask, OK?[WAIT][END]
+
+05-056
+[NEXT]
+Li'l-Oinks are timid and [BR]
+mysterious creatures that [BR]
+hatch from eggs.[BR]
+[WAIT][NEXT]
+They spook easily, and will[BR]
+run away if you approach them.[BR]
+Observe them from out here.[BR]
+[WAIT][NEXT]
+There are many breeds of [BR]
+Li'l-Oinks. They're very easy[BR]
+to tell apart.[BR]
+[WAIT][NEXT]
+White ones, black ones...[BR]
+even gold and silver ones![BR]
+[WAIT][NEXT]
+If you're curious about the[BR]
+breed of a newborn Li'l-Oink,[BR]
+come over to talk to me.[BR]
+[WAIT][NEXT]
+I wish the world were full[BR]
+of Li'l-Oinks![BR]
+[PAUSE:0A]That would be grand![WAIT][END]
+
+05-057
+[STYLE:RIGHT]{StartFX:Shrinking}Oh, wow![BR]
+[PAUSE:0A]It's a Silver Li'l-Oink![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Look at its silver hide![BR]
+[PAUSE:0A]Glittering in the sunshine...[BR]
+What a gorgeous creature![WAIT][END]
+
+05-058
+[STYLE:RIGHT]{StartFX:Shrinking}Whoopee!![BR]
+[PAUSE:0A]It's a Gold Li'l-Oink![BR]
+{EndFX:Shrinking}[WAIT][NEXT]
+Look at its golden hide![BR]
+[PAUSE:0A]It glows like a treasure[BR]
+of ancient times![WAIT][END]
+
+05-059
+[STYLE:RIGHT]Oh, it's a Black Li'l-Oink![BR]
+[PAUSE:0A]They're known to be wild![WAIT][END]
+
+05-05A
+[STYLE:RIGHT]Oh, it's a White Li'l-Oink![BR]
+[PAUSE:0A]So pale and dainty![WAIT][END]
+
+05-05B
+[STYLE:RIGHT]Oh, it's a Pink Li'l-Oink![BR]
+[PAUSE:0A]Such coloring![WAIT][END]
+
+05-05C
+[STYLE:RIGHT]Oh, it's a Tiger Li'l-Oink![BR]
+[PAUSE:0A]Look at those stripes![WAIT][END]
+
+05-05D
+[STYLE:RIGHT]Oh, it's a Shroom Li'l-Oink![BR]
+[PAUSE:0A]They're the cutest![WAIT][END]
+
+05-05E
+[STYLE:RIGHT]Oh, it's a Flower Li'l-Oink![BR]
+[PAUSE:0A]Nice floral design![WAIT][END]
+
+05-05F
+[STYLE:RIGHT]Oh, it's a Star Li'l-Oink![BR]
+[PAUSE:0A]The stars...so mystical![WAIT][END]
+
+05-060
+[STYLE:RIGHT]Oh, it's a Question Mark[BR]
+Li'l-Oink![BR]
+[PAUSE:0A]How weird... Uh, I mean[BR]
+[PAUSE:0A]how int... [PAUSE:05]interesting.[WAIT][END]
+
+05-061
+[STYLE:RIGHT]We can't work because [BR]
+Peach's Castle flew away.[BR]
+[PAUSE:05]Oh, well! I guess there's[BR]
+nothing to be done![BR]
+[WAIT][NEXT]
+The girls and I always wanted[BR]
+to go on a long trip.[BR]
+[PAUSE:0A]How lucky for us![HEART][WAIT][END]
+
+05-062
+[STYLE:RIGHT]At first, I said let's not go[BR]
+because there's so much trouble[BR]
+going on.[BR]
+[PAUSE:05]But...[BR]
+[WAIT][NEXT]
+Eventually I came around![HEART][BR]
+[PAUSE:0A]We're ready to roll! But now[BR]
+the train can't move. Great. [WAIT][END]
+
+05-063
+[STYLE:RIGHT]Our first stop was going to [BR]
+be the desert town.[BR]
+[PAUSE:05]I wish we could go! Right now![WAIT][END]
+
+05-064
+[STYLE:RIGHT]We're finally departing.[BR]
+[PAUSE:0A]On the train, girls![WAIT][END]
+
+05-065
+[STYLE:RIGHT]Do you girls have all your bags[BR]
+and everything?[BR]
+[PAUSE:0A]I hope I didn't forget anything.[BR]
+I bet I did, though.[WAIT][END]
+
+05-066
+[STYLE:RIGHT]Okay, okay. Let's go to [BR]
+Mt. Rugged! Except...[BR]
+[WAIT][NEXT]
+Let me just check my bags[BR]
+one more time real quick.[WAIT][END]
+

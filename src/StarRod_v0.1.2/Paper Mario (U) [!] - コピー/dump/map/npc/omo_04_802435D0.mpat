@@ -1,0 +1,83 @@
+% automatically dumped from map omo_04
+
+#new:Npc $omo_04_802435D0
+00000001 $NpcSettings_8024307C_omo_04 00000000 00000000 00000000 
+00440F00 $Script_Init_80243334_omo_04 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00390002 00390003 00390004 00390004 00390002 00390002 0039000C 0039000C 
+00390011 00390012 00390007 00390008 00390002 00390002 00390002 00390002 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80241E04_omo_04
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ORI       V0, V0, 1000
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:Function $Function_80241E20_omo_04
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ANDI      V0, V0, EFFF
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:NpcSettings $NpcSettings_8024307C_omo_04
+00000000 00240022 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 000D0000 
+
+#new:Script $Script_802430D4_omo_04
+    0:  Label    00000000 
+    C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  If  *Var[0]  <  0000041A 
+   34:  	Wait     00000001 
+   40:  	Goto     00000000 
+   4C:  EndIf
+   54:  Call     DisablePlayerInput 	( .True )
+   64:  Call     $Function_80241E04_omo_04 ( )
+   70:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   8C:  Call     802CC3EC ( 00000000 *Fixed[5.0] *Var[0] *Var[1] *Var[2] 0000012C *Fixed[13.0] *Fixed[-9.5] )
+   B8:  If  *Peach_Item_1  ==  00000000 
+   C8:  	Call     SayMessage0 	( 00000000 00260003 00260001 00000000 000F003A ) % Oh... Mario!? I have to fight Mario?! By myself? W ...
+   E8:  Else
+   F0:  	Call     SayMessage0 	( 00000001 00390005 00390002 00000000 000F003B ) % Oh, it's Mario!! See this fine club I have? I'm go ...
+  110:  EndIf
+  118:  Thread
+  120:  	Call     $Function_80241E20_omo_04 ( )
+  12C:  	Call     ResetCam    	( .Default *Fixed[4.0] )
+  140:  EndThread
+  148:  Call     DisablePlayerInput 	( .False )
+  158:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  168:  Return
+  170:  End
+
+#new:Script $Script_8024324C_omo_04
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Set  *Flag_OMO_04  00000001 
+   38:  		Call     DoNpcDefeat 	( )
+   44:  	Case  ==  00000001 
+   50:  	Case  ==  00000002 
+   5C:  EndSwitch
+   64:  Return
+   6C:  End
+
+#new:Script $Script_Init_80243334_omo_04
+    0:  If  *Peach_Item_1  ==  00000001 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_802430D4_omo_04 )
+   24:  	Call     BindNpcDefeat 	( .Npc:Self $Script_8024324C_omo_04 )
+   38:  Else
+   40:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   5C:  EndIf
+   64:  Return
+   6C:  End
+

@@ -1,0 +1,146 @@
+% automatically dumped from map obk_09
+
+#new:Npc $obk_09_80241C78_3E0
+00000002 $NpcSettings_80241830_obk_09 00000000 00000000 00000000 
+00000801 $Script_Init_80241B44_obk_09 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00140001 00140001 00140001 00140001 00140001 00140001 00140001 00140001 
+00140000 00140001 00140001 00140001 00140001 00140001 00140001 00140001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240190_obk_09
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S2, 20 (SP)
+    8:  DADDU     S2, A0, R0
+    C:  SW        RA, 24 (SP)
+   10:  SW        S1, 1C (SP)
+   14:  SW        S0, 18 (SP)
+   18:  JAL       8003AB48
+   1C:  LW        A0, 14C (S2)
+   20:  ADDIU     A0, R0, 20
+   24:  JAL       8002ACE4
+   28:  DADDU     S1, V0, R0
+   2C:  DADDU     S0, V0, R0
+   30:  SW        S0, 60 (S2)
+   34:  LWC1      F0, 38 (S1)
+   38:  LIF       F2, 1.0
+   40:  SWC1      F0, 0 (S0)
+   44:  LWC1      F0, 3C (S1)
+   48:  SWC1      F0, 4 (S0)
+   4C:  LWC1      F0, 40 (S1)
+   50:  SW        R0, 10 (S0)
+   54:  SWC1      F0, 8 (S0)
+   58:  SWC1      F2, 10 (SP)
+   5C:  SW        R0, 14 (SP)
+   60:  LW        A1, 0 (S0)
+   64:  LW        A2, 4 (S0)
+   68:  LW        A3, 8 (S0)
+   6C:  JAL       800726B0
+   70:  ADDIU     A0, R0, 1
+   74:  SW        V0, 1C (S0)
+   78:  LW        V1, C (V0)
+   7C:  ADDIU     V0, R0, 2
+   80:  SB        V0, 34 (V1)
+   84:  LW        A1, 0 (S0)
+   88:  LW        A2, 4 (S0)
+   8C:  LW        A3, 8 (S0)
+   90:  JAL       80112260
+   94:  DADDU     A0, R0, R0
+   98:  SW        V0, 18 (S0)
+   9C:  LW        RA, 24 (SP)
+   A0:  LW        S2, 20 (SP)
+   A4:  LW        S1, 1C (SP)
+   A8:  LW        S0, 18 (SP)
+   AC:  ADDIU     V0, R0, 2
+   B0:  JR        RA
+   B4:  ADDIU     SP, SP, 28
+
+#new:Function $Function_80240248_obk_09
+    0:  ADDIU     SP, SP, FFE0
+    4:  DADDU     V0, A0, R0
+    8:  SW        RA, 1C (SP)
+    C:  SW        S2, 18 (SP)
+   10:  SW        S1, 14 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  LW        A0, 14C (V0)
+   1C:  JAL       8003AB48
+   20:  LW        S0, 60 (V0)
+   24:  LW        A0, 18 (S0)
+   28:  JAL       80110604
+   2C:  DADDU     S1, V0, R0
+   30:  LWC1      F0, 38 (S1)
+   34:  LIF       F2, 2.0
+   3C:  NOP
+   40:  SUB.S     F0, F0, F2
+   44:  LIF       F2, 12.0
+   4C:  SWC1      F0, 0 (S0)
+   50:  LWC1      F0, 3C (S1)
+   54:  ADD.S     F0, F0, F2
+   58:  LIF       F2, 30.0
+   60:  SWC1      F0, 4 (S0)
+   64:  LWC1      F0, 40 (S1)
+   68:  LW        S2, 1C (S0)
+   6C:  SUB.S     F0, F0, F2
+   70:  LIO       AT, 40D33333
+   78:  MTC1      AT, F12
+   7C:  SWC1      F0, 8 (S0)
+   80:  LW        V1, C (S2)
+   84:  LWC1      F0, 0 (S0)
+   88:  SWC1      F0, 4 (V1)
+   8C:  LW        V1, C (S2)
+   90:  LWC1      F0, 4 (S0)
+   94:  SWC1      F0, 8 (V1)
+   98:  LW        V1, C (S2)
+   9C:  LWC1      F0, 8 (S0)
+   A0:  SWC1      F0, C (V1)
+   A4:  LWC1      F0, 10 (S0)
+   A8:  ADD.S     F12, F0, F12
+   AC:  JAL       80029B24
+   B0:  DADDU     S1, V0, R0
+   B4:  SWC1      F0, 10 (S0)
+   B8:  LW        V0, C (S2)
+   BC:  LIF       F2, 40.0
+   C4:  SWC1      F0, 24 (V0)
+   C8:  LWC1      F0, 0 (S0)
+   CC:  SWC1      F0, 10 (S1)
+   D0:  LWC1      F0, 4 (S0)
+   D4:  SUB.S     F0, F0, F2
+   D8:  SWC1      F0, 14 (S1)
+   DC:  LWC1      F0, 8 (S0)
+   E0:  SWC1      F0, 18 (S1)
+   E4:  LW        RA, 1C (SP)
+   E8:  LW        S2, 18 (SP)
+   EC:  LW        S1, 14 (SP)
+   F0:  LW        S0, 10 (SP)
+   F4:  DADDU     V0, R0, R0
+   F8:  JR        RA
+   FC:  ADDIU     SP, SP, 20
+
+#new:NpcSettings $NpcSettings_80241830_obk_09
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241B1C_obk_09
+    0:  Call     $Function_80240190_obk_09 ( )
+    C:  Call     $Function_80240248_obk_09 ( )
+   18:  Return
+   20:  End
+
+#new:Script $Script_Init_80241B44_obk_09
+    0:  Call     BindNpcAux  	( .Npc:Self $Script_80241B1C_obk_09 )
+   14:  Call     SetNpcAnimation 	( .Npc:Self 00140009 )
+   28:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 FFFFFF9C )
+   44:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   58:  Call     802CFD30 ( FFFFFFFF 00000007 000000AA 00000000 00000000 00000000 )
+   7C:  If  *StoryProgress  >=  FFFFFFDC 
+   8C:  	Call     RemoveNpc   	( .Npc:Self )
+   9C:  EndIf
+   A4:  Return
+   AC:  End
+

@@ -1,0 +1,156 @@
+% automatically dumped from map nok_02
+
+#new:Npc $nok_02_8024EA3C_9B0
+0000000A $NpcSettings_80246FC0_nok_02 00000000 00000000 00000000 
+00400D09 $Script_Init_8024CA98_nok_02 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00020003 00020004 00020004 00020004 00020004 00020004 00020000 00020000 
+00020000 00020000 00020000 00020000 00020000 00020000 00020000 00020000 
+00000000 00000000 00000000 001A0074 % It's a pity that he's missing his shell. How embar ...
+
+#new:Function $Function_80242FE4_nok_02
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  JAL       {Func:GetVariable}
+   10:  LW        A1, 0 (V0)
+   14:  JAL       800EB168
+   18:  DADDU     A0, V0, R0
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80246FC0_nok_02
+00000000 00230018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024A17C_nok_02
+    0:  If  *StoryProgress  <  FFFFFFA0 
+   10:  	Set  *StoryProgress  FFFFFFA0 
+   20:  	Call     ShowMessage 	( 000C00B4 000000A0 00000028 ) % Who's there? I'm kind of busy right now!
+   38:  	Call     GetPlayerPos 	( *Var[A] *Var[B] *Var[C] )
+   50:  	Call     UseSettingsFrom 	( .Default *Var[A] *Var[B] *Var[C] )
+   6C:  	Call     SetPanTarget 	( .Default 00000000 00000000 FFFFFF4C )
+   88:  	Call     SetCamDistance ( .Default 00000177 )
+   9C:  	Call     SetCamAngles 	( .Default 00000011 *Fixed[-5.5] )
+   B4:  	Call     SetCamSpeed 	( .Default 00000004 )
+   C8:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+   E0:  	Call     802C9308 ( 00000056 00000001 )
+   F4:  	Thread
+   FC:  		Wait     0000000A 
+  108:  		Call     PlaySoundAt 	( 000001C1 00000000 00000000 00000000 FFFFFF4C )
+  128:  		Call     MakeLerp    	( 00000000 0000005A 0000000F 00000008 )
+  144:  		Label    0000000A 
+  150:  		Call     UpdateLerp  	( )
+  15C:  		Call     RotateModel 	( {Model:o185} *Var[0] 00000000 00000001 00000000 )
+  17C:  		Wait     00000001 
+  188:  		If  *Var[1]  ==  00000001 
+  198:  			Goto     0000000A 
+  1A4:  		EndIf
+  1AC:  	EndThread
+  1B4:  	Thread
+  1BC:  		Call     MovePlayerTo 	( FFFFFFE7 FFFFFF7E 0000000A )
+  1D4:  		Call     PlayerFaceNpc 	( 0000000A 00000000 )
+  1E8:  	EndThread
+  1F0:  	Thread
+  1F8:  		Call     $Function_80242FE4_nok_02 ( 00000001 )
+  208:  		Call     DisablePartnerAI 	( 00000000 )
+  218:  		Call     MoveNpcTo   	( .Npc:Partner FFFFFFC9 FFFFFF7E 0000000F )
+  234:  		Call     NpcFaceNpc  	( .Npc:Partner 0000000A 00000000 )
+  24C:  		Call     EnablePartnerAI 	( )
+  258:  	EndThread
+  260:  	Call     SetNpcFlagBits ( 0000000A 00000100 .True )
+  278:  	Call     SetNpcPos   	( 0000000A 00000000 00000000 FFFFFF31 )
+  294:  	Call     SetNpcAnimation 	( 0000000A 00110003 )
+  2A8:  	Wait     00000023 
+  2B4:  	Call     SetNpcAnimation 	( 0000000A 00110007 )
+  2C8:  	Thread
+  2D0:  		Loop     0000001E 
+  2DC:  			Call     PlayerFaceNpc 	( 0000000A 00000000 )
+  2F0:  			Wait     00000001 
+  2FC:  		EndLoop
+  304:  	EndThread
+  30C:  	Call     MoveNpcTo   	( 0000000A 00000000 FFFFFF6C 00000014 )
+  328:  	Thread
+  330:  		Call     MakeLerp    	( 0000005A 00000000 0000001E 0000000A )
+  34C:  		Label    00000014 
+  358:  		Call     UpdateLerp  	( )
+  364:  		Call     RotateModel 	( {Model:o185} *Var[0] 00000000 00000001 00000000 )
+  384:  		Wait     00000001 
+  390:  		If  *Var[1]  ==  00000001 
+  3A0:  			Goto     00000014 
+  3AC:  		EndIf
+  3B4:  		Call     PlaySoundAt 	( 000001C2 00000000 00000000 00000000 FFFFFF4C )
+  3D4:  		Call     802C9308 ( 00000056 00000000 )
+  3E8:  	EndThread
+  3F0:  	Call     MoveNpcTo   	( 0000000A 00000019 FFFFFF7E 0000000A )
+  40C:  	Call     SetNpcAnimation 	( 0000000A 00110003 )
+  420:  	Call     NpcFacePlayer 	( 0000000A 00000000 )
+  434:  	Call     SetNpcFlagBits ( 0000000A 00000100 .False )
+  44C:  	Wait     0000000A 
+  458:  	Call     SayMessage0 	( 0000000A 0011000D 00110003 00000000 000C00B5 ) % What!? Wait... Could it be...?! Aren't you Mario!? ...
+  478:  	Call     SetPlayerAnimation 	( .PlayerAnim:NodYes )
+  488:  	Wait     0000000F 
+  494:  	Call     SayMessage1 	( 0000000A 00110009 00110003 00000000 )
+  4B0:  	Call     SetNpcAnimation 	( 0000000A 0011000D )
+  4C4:  	Wait     0000001E 
+  4D0:  	Call     SetNpcAnimation 	( 0000000A 00110003 )
+  4E4:  	Call     SayMessage1 	( 0000000A 00110009 00110003 00000000 )
+  500:  	Call     UseSettings 	( .Default 00000006 0000001E *Fixed[225.0] *Fixed[17.0] *Fixed[-8.5] )
+  524:  	Wait     00000005 
+  530:  	Call     SayMessage0 	( 0000000A 00110009 00110003 00000000 000C00B6 ) % This wild Fuzzy took my shell, which, next to my l ...
+  550:  	Wait     0000000A 
+  55C:  	Call     SetNpcAnimation 	( 0000000A 0011000F )
+  570:  	Wait     0000001E 
+  57C:  	Call     SetNpcAnimation 	( 0000000A 00110003 )
+  590:  	Call     SayMessage1 	( 0000000A 00110009 00110003 00000000 )
+  5AC:  	Call     UseSettings 	( .Default 00000004 FFFFFFE2 *Fixed[225.0] *Fixed[17.0] *Fixed[-8.5] )
+  5D0:  	Wait     0000000A 
+  5DC:  	Thread
+  5E4:  		Wait     00000003 
+  5F0:  		Call     PlayerFaceNpc 	( .Npc:Partner 00000000 )
+  604:  	EndThread
+  60C:  	Call     DisablePartnerAI 	( 00000000 )
+  61C:  	Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000C00B7 ) % Hey, Mario. It looks like he's in a bad way. We ou ...
+  63C:  	Call     EnablePartnerAI 	( )
+  648:  	Call     UseSettings 	( .Default *Fixed[90.0] 00000000 *Fixed[375.0] *Fixed[17.0] *Fixed[-5.5] )
+  66C:  	Wait     0000000A 
+  678:  	Call     PlayerFaceNpc 	( 0000000A 00000000 )
+  68C:  	Wait     0000000A 
+  698:  	Call     SayMessage0 	( 0000000A 00110009 00110003 00000000 000C00B8 ) % The Fuzzy that took my shell is just inside my hou ...
+  6B8:  	Call     BindNpcInteract 	( 0000000A $Script_8024A17C_nok_02 )
+  6CC:  	Thread
+  6D4:  		Call     ResetCam    	( .Default 00000003 )
+  6E8:  	EndThread
+  6F0:  	Return
+  6F8:  EndIf
+  700:  If  *StoryProgress  <  FFFFFFA3 
+  710:  	Call     SayMessage0 	( 0000000A 00110009 00110003 00000000 000C00BA ) % I've got outside covered! Catch that Fuzzy!
+  730:  Else
+  738:  	Call     SayMessage0 	( 0000000A 00110009 00110003 00000000 000C00BB ) % You get him yet, Mario? No? You gotta, Mario! I re ...
+  758:  EndIf
+  760:  Return
+  768:  End
+
+#new:Script $Script_Init_8024CA98_nok_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFA0 
+   18:  		Call     SetNpcPos   	( 0000000A 00000000 FFFFFC18 00000000 )
+   34:  	Case  >=  FFFFFFA4 
+   40:  		Call     BindNpcInteract 	( .Npc:Self $Script_8024A17C_nok_02 )
+   54:  		Call     SetNpcPos   	( 0000000A 00000000 FFFFFC18 00000000 )
+   70:  		Return
+   78:  	Default
+   80:  		Call     BindNpcInteract 	( .Npc:Self $Script_8024A17C_nok_02 )
+   94:  EndSwitch
+   9C:  Call     802CF208 ( 0000000A 00110003 )
+   B0:  Return
+   B8:  End
+

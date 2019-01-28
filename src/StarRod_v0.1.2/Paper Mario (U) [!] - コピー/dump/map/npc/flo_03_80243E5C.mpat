@@ -1,0 +1,190 @@
+% automatically dumped from map flo_03
+
+#new:Npc $flo_03_80243E5C
+00000003 $NpcSettings_80240EB0_flo_03 00000000 00000000 00000000 
+00000F01 $Script_Init_802434CC_flo_03 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+002F0101 002F0102 002F0103 002F0103 002F0101 002F0101 002F0105 002F0105 
+002F0100 002F0100 002F0100 002F0100 002F0100 002F0100 002F0100 002F0100 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_802406A0_flo_03
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  If  *Var[0]  ==  00000002 
+   20:  	Call     SetMusicTrack 	( 00000000 .Song:SunshineReturns 00000000 00000008 )
+   3C:  Else
+   44:  	Switch  *StoryProgress 
+   50:  		Case  <=  0000002C 
+   5C:  			If  *Flag_FLO_31  ==  00000000 
+   6C:  				Call     SetMusicTrack 	( 00000000 .Song:MontyMoleAssault 00000000 00000008 )
+   88:  			Else
+   90:  				Call     SetMusicTrack 	( 00000000 .Song:FlowerFieldsCloudy 00000000 00000008 )
+   AC:  			EndIf
+   B4:  		Case  <  00000035 
+   C0:  			Call     SetMusicTrack 	( 00000000 .Song:FlowerFieldsCloudy 00000000 00000008 )
+   DC:  		Default
+   E4:  			Call     SetMusicTrack 	( 00000000 .Song:FlowerFieldsSunny 00000000 00000008 )
+  100:  	EndSwitch
+  108:  EndIf
+  110:  Return
+  118:  End
+
+#new:NpcSettings $NpcSettings_80240EB0_flo_03
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:IntTable $IntTable_80240F90_flo_03
+FFFFFF42 00000000 00000050 FFFFFF7E 00000000 00000000 FFFFFFBA 00000000 
+FFFFFFC4 
+
+#new:Script $Script_80241F64_flo_03
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     GetOwnerNpcID 	( *Var[0] )
+   38:  		Switch  *Var[0] 
+   44:  			Case  ==  00000002 
+   50:  				Set  *Flag_FLO_05  00000001 
+   60:  			Case  ==  00000003 
+   6C:  				Set  *Flag_FLO_06  00000001 
+   7C:  			Case  ==  00000004 
+   88:  				Set  *Flag_FLO_07  00000001 
+   98:  			Case  ==  00000005 
+   A4:  				Set  *Flag_FLO_08  00000001 
+   B4:  		EndSwitch
+   BC:  		Set  *Var[0]  00000000 
+   CC:  		Add  *Var[0]  *Flag_FLO_05 
+   DC:  		Add  *Var[0]  *Flag_FLO_06 
+   EC:  		Add  *Var[0]  *Flag_FLO_07 
+   FC:  		Add  *Var[0]  *Flag_FLO_08 
+  10C:  		If  *Var[0]  !=  00000004 
+  11C:  			Call     SetNpcAnimation 	( 00000000 00C70006 )
+  130:  		Else
+  138:  			Call     SetNpcAnimation 	( 00000000 00C70001 )
+  14C:  			Set  *Flag_FLO_31  00000001 
+  15C:  			ExecWait $Script_802406A0_flo_03 
+  168:  		EndIf
+  170:  		Call     DoNpcDefeat 	( )
+  17C:  	Case  ==  00000001 
+  188:  		Call     SetNpcAnimation 	( .Npc:Self 002F0101 )
+  19C:  	Case  ==  00000002 
+  1A8:  		Call     SetNpcAnimation 	( .Npc:Self 002F0101 )
+  1BC:  EndSwitch
+  1C4:  Return
+  1CC:  End
+
+#new:Script $Script_80242138_flo_03
+    0:  If  *StoryProgress  ==  0000002C 
+   10:  	Call     80044600 ( *Var[0] )
+   20:  	If  *Var[0]  !=  00000001 
+   30:  		Call     SetNpcAnimation 	( .Npc:Self 002F0105 )
+   44:  	EndIf
+   4C:  EndIf
+   54:  Return
+   5C:  End
+
+#new:Script $Script_80242618_flo_03
+    0:  Loop     
+    C:  	If  *MapVar[B]  ==  00000000 
+   1C:  		If  *AreaFlag[018]  ==  00000001 
+   2C:  			Goto     00000000 
+   38:  		EndIf
+   40:  		Set  *Var[3]  00000001 
+   50:  	Else
+   58:  		Label    00000000 
+   64:  		Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+   80:  		Call     IsPlayerWithin ( *Var[0] *Var[2] *MapVar[F] *Var[3] )
+   9C:  	EndIf
+   A4:  	Call     802D2B0C ( *Var[9] )
+   B4:  	If  *Var[9]  ==  00000009 
+   C4:  		Set  *Var[3]  00000000 
+   D4:  	EndIf
+   DC:  	If  *MapVar[E]  ==  00000001 
+   EC:  		Set  *Var[3]  00000000 
+   FC:  	EndIf
+  104:  	If  *Var[3]  ==  00000001 
+  114:  		If  *AreaFlag[018]  ==  00000000 
+  124:  			Call     SetNpcFlagBits ( 00000003 00008048 .True )
+  13C:  			Call     NpcFacePlayer 	( 00000003 00000001 )
+  150:  			Wait     00000001 
+  15C:  			Set  *AreaFlag[018]  00000001 
+  16C:  			If  *MapVar[B]  !=  00000000 
+  17C:  				If  *StoryProgress  <  0000002C 
+  18C:  					Set  *Var[1]  00000004 
+  19C:  				Else
+  1A4:  					Set  *Var[1]  0000000A 
+  1B4:  				EndIf
+  1BC:  				Call     PlaySoundAtNpc ( 00000003 00000262 00000000 )
+  1D4:  				Call     ShowEmote   	( 00000003 .Emote:Exclamation 00000000 *Var[1] 00000001 00000000 00000000 00000000 00000000 )
+  204:  				Wait     *Var[1] 
+  210:  				Call     SetOwnerFlagBits 	( 17100000 .True )
+  224:  			EndIf
+  22C:  			Call     PlaySoundAtNpc ( 00000003 00000322 00000000 )
+  244:  			Call     SetNpcAnimation 	( 00000003 002F0111 )
+  258:  			Wait     00000014 
+  264:  			If  *Flag_FLO_06  ==  00000000 
+  274:  				Call     SetNpcPos   	( 00000003 00000000 FFFFFFCE 00000000 )
+  290:  			EndIf
+  298:  			Wait     0000002D 
+  2A4:  		EndIf
+  2AC:  	Else
+  2B4:  		If  *AreaFlag[018]  ==  00000001 
+  2C4:  			If  *Flag_FLO_06  ==  00000000 
+  2D4:  				Call     RandInt     	( 00000002 *Var[0] )
+  2E8:  				Add  *Var[0]  00000001 
+  2F8:  				UseIntBuffer $IntTable_80240F90_flo_03 
+  304:  				Loop     *Var[0] 
+  310:  					Get3Int  *Var[1] *Var[2] *Var[3] 
+  324:  				EndLoop
+  32C:  				Call     SetNpcPos   	( 00000003 *Var[1] *Var[2] *Var[3] )
+  348:  			EndIf
+  350:  			Call     SetNpcFlagBits ( 00000003 00008048 .True )
+  368:  			Set  *AreaFlag[018]  00000000 
+  378:  			Call     NpcFacePlayer 	( 00000003 00000001 )
+  38C:  			Wait     00000001 
+  398:  			Call     PlaySoundAtNpc ( 00000003 00000321 00000000 )
+  3B0:  			Call     SetNpcAnimation 	( 00000003 002F0110 )
+  3C4:  			Wait     0000000A 
+  3D0:  			Call     SetOwnerFlagBits 	( 17100000 .False )
+  3E4:  			Call     RandInt     	( 00000023 *Var[0] )
+  3F8:  			Add  *Var[0]  00000037 
+  408:  			Set  *MapVar[B]  *Var[0] 
+  418:  		Else
+  420:  			If  *MapVar[B]  >  00000000 
+  430:  				Sub  *MapVar[B]  00000001 
+  440:  			EndIf
+  448:  		EndIf
+  450:  	EndIf
+  458:  	Wait     00000001 
+  464:  EndLoop
+  46C:  Return
+  474:  End
+
+#new:Script $Script_Init_802434CC_flo_03
+    0:  Call     BindNpcHit  	( .Npc:Self $Script_80242138_flo_03 )
+   14:  Call     BindNpcDefeat 	( .Npc:Self $Script_80241F64_flo_03 )
+   28:  Call     EnableNpcShadow 	( 00000003 .False )
+   3C:  Switch  *StoryProgress 
+   48:  	Case  <  0000002C 
+   54:  		Call     BindNpcIdle 	( .Npc:Self $Script_80242618_flo_03 )
+   68:  		Call     SetNpcAnimation 	( 00000003 002F0110 )
+   7C:  	Case  ==  0000002C 
+   88:  		If  *Flag_FLO_06  ==  00000000 
+   98:  			Call     BindNpcIdle 	( .Npc:Self $Script_80242618_flo_03 )
+   AC:  			Call     SetNpcAnimation 	( 00000003 002F0110 )
+   C0:  			Call     SetNpcFlagBits2 	( 00000003 00000001 00000000 )
+   D8:  		Else
+   E0:  			Call     SetNpcPos   	( 00000003 00000000 FFFFFC18 00000000 )
+   FC:  		EndIf
+  104:  	Default
+  10C:  		Call     SetNpcPos   	( 00000003 00000000 FFFFFC18 00000000 )
+  128:  EndSwitch
+  130:  Return
+  138:  End
+

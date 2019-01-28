@@ -1,0 +1,79 @@
+% automatically dumped from map sam_01
+
+#new:Npc $sam_01_80248468_BA0
+00000006 $NpcSettings_802436A4_sam_01 00000000 00000000 00000000 
+00400C09 $Script_Init_802481AC_sam_01 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000032 00000000 FFFF8001 00000000 FFFFFF9C 
+00000000 FFFFFF06 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009A0001 009A0002 009A0003 009A0003 009A0001 009A0001 009A0001 009A0001 
+009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 
+00000000 00000000 00000000 001A00E8 % He's a friendly penguin. He seems to be very fair.
+
+#new:AISettings $AISettings_80243654_sam_01
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80243684_sam_01
+    0:  Call     DoBasicAI   	( $AISettings_80243654_sam_01 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_802436A4_sam_01
+00000000 00180018 00000000 00000000 $Script_NpcAI_80243684_sam_01 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802472B8_sam_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000003F 
+   18:  		Switch  *MapVar[1] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012004C ) % People who travel to here from other towns must th ...
+   50:  				Set  *MapVar[1]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012004D ) % People who travel to here from other towns must th ...
+   8C:  				Set  *MapVar[1]  00000000 
+   9C:  		EndSwitch
+   A4:  	Case  <  00000043 
+   B0:  		Switch  *MapVar[1] 
+   BC:  			Case  ==  00000000 
+   C8:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012004E ) % Herringway? Why, he's a mystery novelist who lives ...
+   E8:  				Set  *MapVar[1]  00000001 
+   F8:  			Case  ==  00000001 
+  104:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 0012004F ) % Herringway? Why, he's a mystery novelist who lives ...
+  124:  				Set  *MapVar[1]  00000000 
+  134:  		EndSwitch
+  13C:  	Case  <  00000057 
+  148:  		Switch  *MapVar[1] 
+  154:  			Case  ==  00000000 
+  160:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120050 ) % Boy, thank goodness the Mayor is doing OK. He real ...
+  180:  				Set  *MapVar[1]  00000001 
+  190:  			Case  ==  00000001 
+  19C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120051 ) % Boy, thank goodness the Mayor is doing OK. He real ...
+  1BC:  				Set  *MapVar[1]  00000000 
+  1CC:  		EndSwitch
+  1D4:  	Case  >=  00000057 
+  1E0:  		Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 00120052 ) % So, Mario, you're finally going to fight against B ...
+  200:  EndSwitch
+  208:  Return
+  210:  End
+
+#new:Script $Script_Init_802481AC_sam_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802472B8_sam_01 )
+   14:  Return
+   1C:  End
+

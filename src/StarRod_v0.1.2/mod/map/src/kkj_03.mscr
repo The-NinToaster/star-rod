@@ -1,0 +1,542 @@
+% Script File: kkj_03.mscr
+% Decoded from: 0 to 1410 (kkj_03)
+
+#new:Function_Init $Function_Init
+    0:  LAW       V1, 8007419C
+    8:  ADDIU     V0, R0, 2
+    C:  SB        V0, 84 (V1)
+   10:  JR        RA
+   14:  DADDU     V0, R0, R0
+
+PADDING: 80240018 to 80240020 (00000018 to 00000020)
+00000000 00000000 
+
+#new:Function $Function_80240020
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        S0, 10 (SP)
+    8:  DADDU     S0, A0, R0
+    C:  SW        RA, 14 (SP)
+   10:  LW        V1, A8 (S0)
+   14:  LW        V0, 88 (S0)
+   18:  ADDU      V1, V1, V0
+   1C:  BGEZ      V1, .o30
+   20:  SW        V1, A8 (S0)
+   24:  LUI       V0, 2
+   28:  BEQ       R0, R0, .o40
+   2C:  ADDU      V0, V1, V0
+        .o30
+   30:  LUI       A0, 2
+   34:  SLT       V0, A0, V1
+   38:  BEQ       V0, R0, .o44
+   3C:  SUBU      V0, V1, A0
+        .o40
+   40:  SW        V0, A8 (S0)
+        .o44
+   44:  LW        V1, AC (S0)
+   48:  LW        V0, 8C (S0)
+   4C:  ADDU      V1, V1, V0
+   50:  BGEZ      V1, .o64
+   54:  SW        V1, AC (S0)
+   58:  LUI       V0, 2
+   5C:  BEQ       R0, R0, .o74
+   60:  ADDU      V0, V1, V0
+        .o64
+   64:  LUI       A0, 2
+   68:  SLT       V0, A0, V1
+   6C:  BEQ       V0, R0, .o78
+   70:  SUBU      V0, V1, A0
+        .o74
+   74:  SW        V0, AC (S0)
+        .o78
+   78:  LW        V1, B0 (S0)
+   7C:  LW        V0, 90 (S0)
+   80:  ADDU      V1, V1, V0
+   84:  BGEZ      V1, .o98
+   88:  SW        V1, B0 (S0)
+   8C:  LUI       V0, 2
+   90:  BEQ       R0, R0, .oA8
+   94:  ADDU      V0, V1, V0
+        .o98
+   98:  LUI       A0, 2
+   9C:  SLT       V0, A0, V1
+   A0:  BEQ       V0, R0, .oAC
+   A4:  SUBU      V0, V1, A0
+        .oA8
+   A8:  SW        V0, B0 (S0)
+        .oAC
+   AC:  LW        V1, B4 (S0)
+   B0:  LW        V0, 94 (S0)
+   B4:  ADDU      V1, V1, V0
+   B8:  BGEZ      V1, .oCC
+   BC:  SW        V1, B4 (S0)
+   C0:  LUI       V0, 2
+   C4:  BEQ       R0, R0, .oDC
+   C8:  ADDU      V0, V1, V0
+        .oCC
+   CC:  LUI       A0, 2
+   D0:  SLT       V0, A0, V1
+   D4:  BEQ       V0, R0, .oE0
+   D8:  SUBU      V0, V1, A0
+        .oDC
+   DC:  SW        V0, B4 (S0)
+        .oE0
+   E0:  LW        A0, 84 (S0)
+   E4:  JAL       8011BC1C
+   E8:  LW        A1, A8 (S0)
+   EC:  LW        A0, 84 (S0)
+   F0:  JAL       8011BC34
+   F4:  LW        A1, AC (S0)
+   F8:  LW        A0, 84 (S0)
+   FC:  JAL       8011BC4C
+  100:  LW        A1, B0 (S0)
+  104:  LW        A0, 84 (S0)
+  108:  JAL       8011BC64
+  10C:  LW        A1, B4 (S0)
+  110:  LW        RA, 14 (SP)
+  114:  LW        S0, 10 (SP)
+  118:  DADDU     V0, R0, R0
+  11C:  JR        RA
+  120:  ADDIU     SP, SP, 18
+
+#new:Function $Function_80240144
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        S0, 10 (SP)
+    8:  DADDU     S0, A0, R0
+    C:  BEQ       A1, R0, .o24
+   10:  SW        RA, 14 (SP)
+   14:  SW        R0, 70 (S0)
+   18:  SW        R0, 74 (S0)
+   1C:  SW        R0, 78 (S0)
+   20:  SW        R0, 7C (S0)
+        .o24
+   24:  LW        V0, 70 (S0)
+   28:  BNE       V0, R0, .o64
+   2C:  NOP
+   30:  LW        V1, A8 (S0)
+   34:  LW        V0, 88 (S0)
+   38:  ADDU      V1, V1, V0
+   3C:  BGEZ      V1, .o50
+   40:  SW        V1, A8 (S0)
+   44:  LUI       V0, 2
+   48:  BEQ       R0, R0, .o60
+   4C:  ADDU      V0, V1, V0
+        .o50
+   50:  LUI       A0, 2
+   54:  SLT       V0, A0, V1
+   58:  BEQ       V0, R0, .o64
+   5C:  SUBU      V0, V1, A0
+        .o60
+   60:  SW        V0, A8 (S0)
+        .o64
+   64:  LW        V0, 74 (S0)
+   68:  BNE       V0, R0, .oA4
+   6C:  NOP
+   70:  LW        V1, AC (S0)
+   74:  LW        V0, 8C (S0)
+   78:  ADDU      V1, V1, V0
+   7C:  BGEZ      V1, .o90
+   80:  SW        V1, AC (S0)
+   84:  LUI       V0, 2
+   88:  BEQ       R0, R0, .oA0
+   8C:  ADDU      V0, V1, V0
+        .o90
+   90:  LUI       A0, 2
+   94:  SLT       V0, A0, V1
+   98:  BEQ       V0, R0, .oA4
+   9C:  SUBU      V0, V1, A0
+        .oA0
+   A0:  SW        V0, AC (S0)
+        .oA4
+   A4:  LW        V0, 78 (S0)
+   A8:  BNE       V0, R0, .oE4
+   AC:  NOP
+   B0:  LW        V1, B0 (S0)
+   B4:  LW        V0, 90 (S0)
+   B8:  ADDU      V1, V1, V0
+   BC:  BGEZ      V1, .oD0
+   C0:  SW        V1, B0 (S0)
+   C4:  LUI       V0, 2
+   C8:  BEQ       R0, R0, .oE0
+   CC:  ADDU      V0, V1, V0
+        .oD0
+   D0:  LUI       A0, 2
+   D4:  SLT       V0, A0, V1
+   D8:  BEQ       V0, R0, .oE4
+   DC:  SUBU      V0, V1, A0
+        .oE0
+   E0:  SW        V0, B0 (S0)
+        .oE4
+   E4:  LW        V0, 7C (S0)
+   E8:  BNE       V0, R0, .o124
+   EC:  NOP
+   F0:  LW        V1, B4 (S0)
+   F4:  LW        V0, 94 (S0)
+   F8:  ADDU      V1, V1, V0
+   FC:  BGEZ      V1, .o110
+  100:  SW        V1, B4 (S0)
+  104:  LUI       V0, 2
+  108:  BEQ       R0, R0, .o120
+  10C:  ADDU      V0, V1, V0
+        .o110
+  110:  LUI       A0, 2
+  114:  SLT       V0, A0, V1
+  118:  BEQ       V0, R0, .o124
+  11C:  SUBU      V0, V1, A0
+        .o120
+  120:  SW        V0, B4 (S0)
+        .o124
+  124:  LW        A0, 84 (S0)
+  128:  JAL       8011BC1C
+  12C:  LW        A1, A8 (S0)
+  130:  LW        A0, 84 (S0)
+  134:  JAL       8011BC34
+  138:  LW        A1, AC (S0)
+  13C:  LW        A0, 84 (S0)
+  140:  JAL       8011BC4C
+  144:  LW        A1, B0 (S0)
+  148:  LW        A0, 84 (S0)
+  14C:  JAL       8011BC64
+  150:  LW        A1, B4 (S0)
+  154:  LW        V0, 70 (S0)
+  158:  LW        V1, 78 (S0)
+  15C:  LW        A0, 98 (S0)
+  160:  ADDIU     V0, V0, 1
+  164:  SW        V0, 70 (S0)
+  168:  LW        V0, 74 (S0)
+  16C:  ADDIU     V1, V1, 1
+  170:  SW        V1, 78 (S0)
+  174:  LW        V1, 70 (S0)
+  178:  ADDIU     V0, V0, 1
+  17C:  SW        V0, 74 (S0)
+  180:  LW        V0, 7C (S0)
+  184:  SLT       V1, V1, A0
+  188:  ADDIU     V0, V0, 1
+  18C:  BNE       V1, R0, .o198
+  190:  SW        V0, 7C (S0)
+  194:  SW        R0, 70 (S0)
+        .o198
+  198:  LW        V0, 74 (S0)
+  19C:  LW        V1, 9C (S0)
+  1A0:  SLT       V0, V0, V1
+  1A4:  BEQL      V0, R0, .o1AC
+  1A8:  SW        R0, 74 (S0)
+        .o1AC
+  1AC:  LW        V0, 78 (S0)
+  1B0:  LW        V1, A0 (S0)
+  1B4:  SLT       V0, V0, V1
+  1B8:  BEQL      V0, R0, .o1C0
+  1BC:  SW        R0, 78 (S0)
+        .o1C0
+  1C0:  LW        V0, 7C (S0)
+  1C4:  LW        V1, A4 (S0)
+  1C8:  SLT       V0, V0, V1
+  1CC:  BEQL      V0, R0, .o1D4
+  1D0:  SW        R0, 7C (S0)
+        .o1D4
+  1D4:  LW        RA, 14 (SP)
+  1D8:  LW        S0, 10 (SP)
+  1DC:  DADDU     V0, R0, R0
+  1E0:  JR        RA
+  1E4:  ADDIU     SP, SP, 18
+
+PADDING: 8024032C to 80240330 (0000032C to 00000330)
+00000000 
+
+#new:EntryList $EntryList
+{Vec4f:Entry0} %  -95.0    0.0    0.0   90.0
+{Vec4f:Entry1} %  630.0    0.0    0.0   90.0
+{Vec4f:Entry2} %  630.0    0.0    0.0   90.0
+
+#new:Header $Header
+00000000 00000000 00000000 00000000 
+$Script_Main $EntryList 00000003 00000000 
+00000000 00000000 00000000 00000000 
+00000000 00000000 80200000 00000000 
+
+#new:Script $Script_802403A0
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     SetMusicTrack 	( 00000000 .Song:PeachsCastleParty 00000001 00000005 )
+   44:  		Wait     00000003 
+   50:  		Call     SetMusicTrack 	( 00000000 .Song:PeachsCastleParty 00000001 00000004 )
+   6C:  	Default
+   74:  		Call     SetMusicTrack 	( 00000000 .Song:BowserAttacks 00000000 00000008 )
+   90:  	EndCaseGroup
+   98:  EndSwitch
+   A0:  Return
+   A8:  End
+
+#new:Script $Script_80240450
+    0:  SetGroup 00000000 
+    C:  If  *Var[5]  ==  00000001 
+   1C:  	If  *Var[6]  ==  00000001 
+   2C:  		If  *Var[7]  ==  00000001 
+   3C:  			If  *Var[8]  ==  00000001 
+   4C:  				Call     $Function_80240020 ( )
+   58:  				Return
+   60:  			EndIf
+   68:  		EndIf
+   70:  	EndIf
+   78:  EndIf
+   80:  Call     $Function_80240144 ( )
+   8C:  Return
+   94:  End
+
+PADDING: 802404EC to 802404F0 (000004EC to 000004F0)
+00000000 
+
+#new:DisplayList $DisplayList_802404F0
+E7000000 00000000 D7000002 FFFFFFFF E3000A01 00100000 E3000C00 00080000 
+E3000D01 00000000 E3000F00 00000000 E3001001 00000000 E3001201 00002000 
+E3001402 00000C00 FA000000 4B1F13FF FB000000 FF764D00 FC10E5E0 230B1D52 
+E200001C 0C184B50 D9FDFFFF 00000000 D9FFFFFF 00200404 DF000000 00000000 
+
+#new:Script $Script_80240570
+    0:  SetGroup 0000001B 
+    C:  Call     DisablePlayerInput 	( .True )
+   1C:  Set  *Var[0]  00000000 
+   2C:  Set  *Var[1]  00000000 
+   3C:  Set  *Var[2]  00000047 
+   4C:  Set  *Var[3]  00000049 
+   5C:  Exec     ExitDoubleDoor 
+   68:  Wait     00000011 
+   74:  Call     GotoMap     	( $ASCII_802413F0 00000001 )
+   88:  Wait     00000064 
+   94:  Return
+   9C:  End
+
+#new:Script $Script_80240614
+    0:  Bind     $Script_80240570 .Trigger:WallPressA {Collider:deilit1} 00000001 00000000 
+   1C:  Return
+   24:  End
+
+#new:Script $Script_80240640
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Set  *Var[2]  00000047 
+   38:  		Set  *Var[3]  00000049 
+   48:  		ExecWait EnterDoubleDoor 
+   54:  		Exec     $Script_80240B40 
+   60:  	Case  ==  00000001 
+   6C:  		Exec     $Script_80241140 
+   78:  EndSwitch
+   80:  Return
+   88:  End
+
+#new:Script_Main $Script_Main
+    0:  Set  *WorldMapLocation  00000019 
+   10:  Call     SetSpriteShading 	( FFFFFFFF )
+   20:  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+   40:  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+   5C:  Call     SetCamFlag2 	( .Default .True )
+   70:  Call     SetCamFlag4 	( .Default .False )
+   84:  Call     MakeNpcs    	( 00000000 $NpcGroupList_80240B1C )
+   98:  Call     EnableGroup 	( {Model:g156} .False )
+   AC:  Call     SetTexPanner 	( {Model:o715} 00000000 )
+   C0:  Thread
+   C8:  	Set  *Var[0]  00000000 
+   D8:  	Set  *Var[1]  00000000 
+   E8:  	Set  *Var[2]  00000000 
+   F8:  	Set  *Var[3]  00000028 
+  108:  	Set  *Var[4]  00000384 
+  118:  	Set  *Var[5]  00000001 
+  128:  	Set  *Var[6]  00000001 
+  138:  	Set  *Var[7]  00000001 
+  148:  	Set  *Var[8]  00000001 
+  158:  	Set  *Var[9]  00000000 
+  168:  	Set  *Var[A]  00000000 
+  178:  	Set  *Var[B]  00000000 
+  188:  	Set  *Var[C]  00000000 
+  198:  	Exec     $Script_80240450 
+  1A4:  EndThread
+  1AC:  Call     802C90FC ( 00000093 00000000 FFFFFFFF )
+  1C4:  Call     802C9428 ( 00000000 $DisplayList_802404F0 00000000 )
+  1DC:  Exec     $Script_802403A0 
+  1E8:  Call     UseDoorSounds 	( 00000002 )
+  1F8:  Exec     $Script_80240614 
+  204:  Exec     $Script_80240640 
+  210:  Wait     00000001 
+  21C:  Return
+  224:  End
+
+PADDING: 802408FC to 80240900 (000008FC to 00000900)
+00000000 
+
+#new:NpcSettings $NpcSettings_80240900
+00000000 002E0024 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:NpcGroup $NpcGroup_8024092C
+00000000 $NpcSettings_80240900 {Vec3f:NPC_8024092C} % 670 0 -12
+00020F0D 00000000 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+{Movement:NPC_8024092C}
+000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 
+000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 000A0000 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcGroupList $NpcGroupList_80240B1C
+00000001 $NpcGroup_8024092C 00000000 
+00000000 00000000 00000000 
+
+PADDING: 80240B34 to 80240B40 (00000B34 to 00000B40)
+00000000 00000000 00000000 
+
+#new:Script $Script_80240B40
+    0:  Loop     
+    C:  	Wait     00000001 
+   18:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   30:  	If  *Var[0]  >=  0000020D 
+   40:  		BreakLoop
+   48:  	EndIf
+   50:  EndLoop
+   58:  Call     DisablePlayerInput 	( .True )
+   68:  Call     FadeOutMusic 	( 00000000 0000029A )
+   7C:  Wait     00000014 
+   88:  Call     SetMusicTrack 	( 00000000 .Song:PrisonerPeachTheme 00000000 00000008 )
+   A4:  Call     PlayerFaceNpc 	( 00000000 00000000 )
+   B8:  Call     SetNpcAnimation 	( 00000000 000A0002 )
+   CC:  Call     SetNpcSpeed 	( 00000000 *Fixed[2.0] )
+   E0:  Call     MoveNpcTo   	( 00000000 00000271 00000000 00000000 )
+   FC:  Call     SetNpcAnimation 	( 00000000 000A0001 )
+  110:  Wait     0000000A 
+  11C:  Call     SetNpcAnimation 	( 00000000 000C0000 )
+  130:  Wait     0000000A 
+  13C:  Call     SetNpcAnimation 	( 00000000 000C0026 )
+  150:  Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0000004B ) % Oh, Mario! You came to the party to see me! You're ...
+  170:  Call     SetNpcAnimation 	( 00000000 000C0002 )
+  184:  Wait     0000000A 
+  190:  Call     SetNpcAnimation 	( 00000000 000A0001 )
+  1A4:  Thread
+  1AC:  	Call     802CC3EC ( 00000000 *Fixed[5.0] 00000258 00000000 FFFFFFF4 *Fixed[325.0] *Fixed[17.0] *Fixed[-9.0] )
+  1D8:  EndThread
+  1E0:  Call     MovePlayerTo 	( 0000023F 00000000 00000014 )
+  1F8:  Wait     0000000A 
+  204:  Call     SetNpcAnimation 	( 00000000 000C0000 )
+  218:  Wait     0000000A 
+  224:  Call     SetNpcAnimation 	( 00000000 000C0026 )
+  238:  Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0000004C ) % I was just resting a bit. It gets tiring, greeting ...
+  258:  Call     SetPlayerAnimation 	( .PlayerAnim:NodYes )
+  268:  Wait     00000014 
+  274:  Call     SetPlayerAnimation 	( 00010002 )
+  284:  Wait     0000000A 
+  290:  Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0000004D ) % It was a lovely day today, so I'm sure it's comfor ...
+  2B0:  Call     SetNpcAnimation 	( 00000000 000C0002 )
+  2C4:  Wait     0000000A 
+  2D0:  Call     SetNpcAnimation 	( 00000000 000A0001 )
+  2E4:  Wait     0000000A 
+  2F0:  Call     FadeOutMusic 	( 00000000 000003E8 )
+  304:  Thread
+  30C:  	Wait     0000000A 
+  318:  	Call     MovePlayerTo 	( 0000024E 00000000 0000000A )
+  330:  	Wait     00000005 
+  33C:  	Call     PlaySoundAtPlayer 	( 00000262 00000000 )
+  350:  	Call     ShowEmote   	( 00000000 .Emote:Exclamation FFFFFFD3 00000014 00000000 00000000 00000000 00000000 00000000 )
+  380:  EndThread
+  388:  Thread
+  390:  	Call     InterpNpcYaw 	( 00000000 0000005A 00000007 )
+  3A8:  	Call     SetNpcAnimation 	( 00000000 000A0002 )
+  3BC:  	Call     MoveNpcTo   	( 00000000 00000280 00000000 0000000A )
+  3D8:  	Call     SetNpcAnimation 	( 00000000 000A0001 )
+  3EC:  	Call     PlaySoundAtNpc ( 00000000 00000262 00000000 )
+  404:  	Call     ShowEmote   	( 00000000 .Emote:Exclamation FFFFFFD3 00000014 00000001 00000000 00000000 00000000 00000000 )
+  434:  	Wait     00000014 
+  440:  	Call     SetNpcAnimation 	( 00000000 000C0011 )
+  454:  	Wait     0000003C 
+  460:  	Call     InterpNpcYaw 	( 00000000 0000010E 00000007 )
+  478:  EndThread
+  480:  Wait     00000011 
+  48C:  Thread
+  494:  	Call     PlaySound   	( 80000056 )
+  4A4:  	Call     ShakeCam    	( .Default 00000000 000000C8 *Fixed[1.0] )
+  4C0:  EndThread
+  4C8:  Wait     0000003C 
+  4D4:  Call     GotoMap     	( $ASCII_802413F8 00000000 )
+  4E8:  Wait     00000064 
+  4F4:  Call     DisablePlayerInput 	( .False )
+  504:  Return
+  50C:  End
+
+#new:Script $Script_80241054
+    0:  Call     EnableTexPanning 	( {Model:o718} .True )
+   14:  Set  *Var[0]  00000000 
+   24:  Loop     
+   30:  	Add  *Var[0]  FFFFFF38 
+   40:  	Call     802C9364 ( 00000002 00000000 *Var[0] 00000000 )
+   5C:  	Wait     00000001 
+   68:  EndLoop
+   70:  Return
+   78:  End
+
+#new:Script $Script_802410D4
+    0:  Set  *Var[0]  00000000 
+   10:  Loop     
+   1C:  	Call     TranslateGroup ( {Model:g159} 00000000 *Var[0] 00000000 )
+   38:  	Add  *Var[0]  FFFFFFFE 
+   48:  	Wait     00000001 
+   54:  EndLoop
+   5C:  Return
+   64:  End
+
+#new:Script $Script_80241140
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     SetNpcPos   	( 00000000 000002A8 00000000 FFFFFFF1 )
+   2C:  Call     EnableGroup 	( {Model:g156} .True )
+   40:  Exec     $Script_80241054 
+   4C:  Exec     $Script_802410D4 
+   58:  Call     UseSettingsFrom 	( .Default 00000258 00000000 FFFFFFF1 )
+   74:  Call     SetPanTarget 	( .Default 00000258 00000000 FFFFFFF1 )
+   90:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+   A4:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   BC:  Thread
+   C4:  	Call     SetPlayerJumpscale 	( 00000000 )
+   D4:  	Loop     
+   E0:  		Call     InterpPlayerYaw 	( 0000010E 00000000 )
+   F4:  		Call     802D1904 ( 00000226 00000000 00000000 00000014 )
+  110:  		Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  124:  		Call     802D1904 ( 00000276 00000000 00000000 00000014 )
+  140:  	EndLoop
+  148:  EndThread
+  150:  Thread
+  158:  	Loop     
+  164:  		Call     SetPlayerAnimation 	( .PlayerAnim:Running )
+  174:  		Wait     0000000F 
+  180:  		Call     SetPlayerAnimation 	( 00060003 )
+  190:  		Wait     0000000F 
+  19C:  	EndLoop
+  1A4:  EndThread
+  1AC:  Thread
+  1B4:  	Call     SetNpcAnimation 	( 00000000 000A0004 )
+  1C8:  	Loop     
+  1D4:  		Call     MoveNpcTo   	( 00000000 00000258 00000000 00000014 )
+  1F0:  		Call     MoveNpcTo   	( 00000000 000002A8 00000000 00000014 )
+  20C:  	EndLoop
+  214:  EndThread
+  21C:  Thread
+  224:  	Call     PlaySound   	( 80000056 )
+  234:  	Call     ShakeCam    	( .Default 00000000 000000C8 *Fixed[1.0] )
+  250:  EndThread
+  258:  Wait     00000064 
+  264:  Call     GotoMap     	( $ASCII_80241400 00000001 )
+  278:  Wait     00000064 
+  284:  Call     DisablePlayerInput 	( .False )
+  294:  Return
+  29C:  End
+
+PADDING: 802413E4 to 802413F0 (000013E4 to 000013F0)
+00000000 00000000 00000000 
+
+#new:ASCII $ASCII_802413F0
+kkj_02
+
+#new:ASCII $ASCII_802413F8
+osr_04
+
+#new:ASCII $ASCII_80241400
+osr_03
+
+PADDING: 80241408 to 80241410 (00001408 to 00001410)
+00000000 00000000 
+

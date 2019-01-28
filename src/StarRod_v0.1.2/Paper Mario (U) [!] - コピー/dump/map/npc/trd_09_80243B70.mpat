@@ -1,0 +1,104 @@
+% automatically dumped from map trd_09
+
+#new:Npc $trd_09_80243B70
+00000046 $NpcSettings_802420A0_trd_09 00000000 00000000 00000000 
+00000001 00000000 00000001 00000000 0000010E 
+{NoDrops}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_80240D3C_trd_09
+    0:  If  *StoryProgress  >=  FFFFFFB1 
+   10:  	Call     RemoveNpc   	( .Npc:Self )
+   20:  EndIf
+   28:  Return
+   30:  End
+
+#new:Script $Script_NpcAI_80240D74_trd_09
+    0:  Label    00000000 
+    C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  Wait     00000001 
+   30:  If  *Var[0]  <  FFFFFE8E 
+   40:  	Goto     00000000 
+   4C:  EndIf
+   54:  Call     DisablePlayerInput 	( .True )
+   64:  Wait     00000014 
+   70:  Call     FadeOutMusic 	( 00000000 000007D0 )
+   84:  Call     UseSettingsFrom 	( .Default 00000514 00000000 00000000 )
+   A0:  Call     SetPanTarget 	( .Default 000005D2 00000000 00000000 )
+   BC:  Call     SetCamPosB  	( .Default 000005BA *Fixed[41.600586] )
+   D4:  Call     SetCamSpeed 	( .Default *Fixed[1.5] )
+   E8:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  100:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  114:  Wait     00000014 
+  120:  Call     SetCamPosB  	( .Default 000005BA *Fixed[41.600586] )
+  138:  Call     SetPanTarget 	( .Default 000005D2 0000003C 00000000 )
+  154:  Call     SetCamDistance ( .Default 0000012C )
+  168:  Call     SetCamAngles 	( .Default 00000019 FFFFFFF7 )
+  180:  Call     SetCamSpeed 	( .Default *Fixed[5.0] )
+  194:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  1AC:  Wait     00000014 
+  1B8:  Call     PlaySound   	( 000001C3 )
+  1C8:  Call     SetMusicTrack 	( 00000000 .Song:KoopaBrosTheme 00000000 00000008 )
+  1E4:  Call     MakeLerp    	( 00000000 0000006E 0000000A 0000000A )
+  200:  Label    00000002 
+  20C:  Call     UpdateLerp  	( )
+  218:  Call     RotateModel 	( {Model:o60} *Var[0] 00000000 FFFFFFFF 00000000 )
+  238:  Call     RotateModel 	( {Model:o65} *Var[0] 00000000 00000001 00000000 )
+  258:  Wait     00000001 
+  264:  If  *Var[1]  ==  00000001 
+  274:  	Goto     00000002 
+  280:  EndIf
+  288:  Call     SetNpcVar   	( 00000047 00000000 00000001 )
+  2A0:  Call     SetNpcVar   	( 00000048 00000000 00000001 )
+  2B8:  Call     SetNpcVar   	( 00000049 00000000 00000001 )
+  2D0:  Wait     0000003C 
+  2DC:  Call     SetNpcAnimation 	( .Npc:Self 00660103 )
+  2F0:  Call     SetNpcSpeed 	( .Npc:Self *Fixed[3.0] )
+  304:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[0.80078125] )
+  318:  Call     MoveNpcTo   	( .Npc:Self 000005D2 00000000 00000000 )
+  334:  Wait     0000000A 
+  340:  Call     SayMessage0 	( .Npc:Self 0066011B 0066011B 00000000 000C00F2 ) % Well, well, well! Mario! I wouldn't have bet you'd ...
+  360:  Call     UseSettingsFrom 	( .Default 00000514 00000000 00000000 )
+  37C:  Call     SetCamPosB  	( .Default 000005BA *Fixed[41.600586] )
+  394:  Call     SetPanTarget 	( .Default 000004E2 00000000 00000000 )
+  3B0:  Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  3C4:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  3DC:  Call     SetNpcAnimation 	( .Npc:Self 00660112 )
+  3F0:  Call     NpcJump0    	( .Npc:Self 000005A0 0000001E 00000000 00000014 )
+  410:  Call     NpcJump0    	( .Npc:Self 00000564 00000000 00000000 00000014 )
+  430:  Call     SetNpcAnimation 	( .Npc:Self 00660103 )
+  444:  Call     MoveNpcTo   	( .Npc:Self 00000550 00000000 00000000 )
+  460:  Wait     00000014 
+  46C:  Call     SetNpcAnimation 	( .Npc:Self 00660104 )
+  480:  Call     SayMessage0 	( .Npc:Self 0066011B 0066011B 00000000 000C00F3 ) % Yeah, boys!! Open fire!
+  4A0:  Call     SetNpcVar   	( 00000047 00000000 00000002 )
+  4B8:  Call     SetNpcVar   	( 00000048 00000000 00000002 )
+  4D0:  Call     SetNpcVar   	( 00000049 00000000 00000002 )
+  4E8:  Call     SetOwnerVar 	( 00000000 00000001 )
+  4FC:  Call     SetMusicTrack 	( 00000000 .Song:BulletBillAssault 00000000 00000008 )
+  518:  Wait     0000003C 
+  524:  Call     UseSettingsFrom 	( .Default 00000514 00000000 00000000 )
+  540:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  558:  Call     SetCamSpeed 	( .Default *Fixed[1.5] )
+  56C:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  580:  Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  594:  Set  *StoryProgress  FFFFFFB1 
+  5A4:  Call     DisablePlayerInput 	( .False )
+  5B4:  Call     RotateModel 	( {Model:o60} 00000000 00000000 FFFFFFFF 00000000 )
+  5D4:  Call     RotateModel 	( {Model:o65} 00000000 00000000 00000001 00000000 )
+  5F4:  Call     RemoveNpc   	( .Npc:Self )
+  604:  Return
+  60C:  End
+
+#new:NpcSettings $NpcSettings_802420A0_trd_09
+00660102 00220018 $Script_80240D3C_trd_09 00000000 $Script_NpcAI_80240D74_trd_09 00000000 00000000 00000000 
+00000700 00000000 00630000 
+

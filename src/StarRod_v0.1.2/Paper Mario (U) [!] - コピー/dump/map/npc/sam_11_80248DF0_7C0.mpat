@@ -1,0 +1,62 @@
+% automatically dumped from map sam_11
+
+#new:Npc $sam_11_80248DF0_7C0
+00000006 $NpcSettings_80244E9C_sam_11 00000000 00000000 00000000 
+00400C09 $Script_Init_80248CAC_sam_11 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009A0001 009A0002 009A0003 009A0003 009A0001 009A0001 009A0001 009A0001 
+009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 009A0001 
+00000000 00000000 00000000 001A00F9 % This penguin's camped out by Herringway's house. W ...
+
+#new:NpcSettings $NpcSettings_80244E9C_sam_11
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80248380_sam_11
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000003F 
+   18:  		Switch  *MapVar[3] 
+   24:  			Case  ==  00000000 
+   30:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200A7 ) % Starborn Valley is a little ways off from this cit ...
+   50:  				Set  *MapVar[3]  00000001 
+   60:  			Case  ==  00000001 
+   6C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200A8 ) % Starborn Valley is a little ways off from this cit ...
+   8C:  				Set  *MapVar[3]  00000000 
+   9C:  		EndSwitch
+   A4:  	Case  <  00000041 
+   B0:  		Switch  *MapVar[3] 
+   BC:  			Case  ==  00000000 
+   C8:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200A9 ) % This is Herringway's house. He's a novelist. Herri ...
+   E8:  				Set  *MapVar[3]  00000001 
+   F8:  			Case  ==  00000001 
+  104:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200AA ) % This is Herringway's house. He's a novelist. Herri ...
+  124:  				Set  *MapVar[3]  00000000 
+  134:  		EndSwitch
+  13C:  	Case  <  00000043 
+  148:  		Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200AB ) % So, Herringway WAS in the house. I peeped in the w ...
+  168:  	Case  <  00000057 
+  174:  		Switch  *MapVar[3] 
+  180:  			Case  ==  00000000 
+  18C:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200AC ) % Starborn Valley is a little ways off from this cit ...
+  1AC:  				Set  *MapVar[3]  00000001 
+  1BC:  			Case  ==  00000001 
+  1C8:  				Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200AD ) % Starborn Valley is a little ways off from this cit ...
+  1E8:  				Set  *MapVar[3]  00000000 
+  1F8:  		EndSwitch
+  200:  	Case  >=  00000057 
+  20C:  		Call     SayMessage0 	( .Npc:Self 009A0004 009A0001 00000000 001200AE ) % When the world is at peace, you can see the Star K ...
+  22C:  EndSwitch
+  234:  Return
+  23C:  End
+
+#new:Script $Script_Init_80248CAC_sam_11
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80248380_sam_11 )
+   14:  Return
+   1C:  End
+

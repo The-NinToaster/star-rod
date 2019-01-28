@@ -1,0 +1,65 @@
+% automatically dumped from map jan_04
+
+#new:Npc $jan_04_80242978_1F0
+00000001 $NpcSettings_80241A7C_jan_04 00000000 00000000 00000000 
+00400D09 $Script_Init_802428E4_jan_04 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00990302 0099030E 0099030E 00990302 00990302 00990302 00990302 00990302 
+00990302 00990302 00990302 00990302 00990302 00990302 00990302 00990302 
+00000000 00000000 00000000 001A00D2 % Oh! A Bub-ulb. I don't know why it's growing here. ...
+
+#new:Script $Script_80241A6C_jan_04
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_80241A7C_jan_04
+00000000 002A001A $Script_80241A6C_jan_04 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80242714_jan_04
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000015 
+   18:  		If  *Flag_JAN_3D  ==  00000000 
+   28:  			Wait     0000001E 
+   34:  			Call     SetNpcAnimation 	( .Npc:Self 00990305 )
+   48:  			Wait     0000000A 
+   54:  			Call     PlaySoundAtNpc ( .Npc:Self 00000321 00000000 )
+   6C:  			Call     PlaySoundAtNpc ( .Npc:Self 00000323 00000000 )
+   84:  			Wait     00000023 
+   90:  			Call     SetNpcAnimation 	( .Npc:Self 00990302 )
+   A4:  			Call     802CDF8C ( FFFFFFFF 0000002D 0000001A )
+   BC:  			Call     SayMessage0 	( 00000001 00990303 00990302 00000000 001000A8 ) % Yo, what's up? Thanks for waking me up. This islan ...
+   DC:  			Set  *Flag_JAN_3D  00000001 
+   EC:  			Call     80045A58 ( 00000001 001A00D2 )
+  100:  			Return
+  108:  		Else
+  110:  			Call     SayMessage0 	( 00000001 00990303 00990302 00000000 001000A9 ) % Did you come for the seed? Sorry, but it's not rea ...
+  130:  		EndIf
+  138:  	Case  <  00000028 
+  144:  		Call     SayMessage0 	( 00000001 00990303 00990302 00000000 001000AA ) % Oh, hello. How are you doing? What? You want that  ...
+  164:  	Case  <  0000002A 
+  170:  		Call     SayMessage0 	( 00000001 00990303 00990302 00000000 001000AB ) % Hey, there's my seed! So you were able to track it ...
+  190:  	Default
+  198:  		Call     SayMessage0 	( 00000001 00990303 00990302 00000000 001000AC ) % Yo, what's up? I can't get over how perfect the te ...
+  1B8:  EndSwitch
+  1C0:  Return
+  1C8:  End
+
+#new:Script $Script_Init_802428E4_jan_04
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80242714_jan_04 )
+   14:  If  *StoryProgress  <  00000015 
+   24:  	If  *Flag_JAN_3D  ==  00000000 
+   34:  		Call     802CDF8C ( FFFFFFFF 00000019 00000019 )
+   4C:  		Call     SetNpcAnimation 	( .Npc:Self 00990307 )
+   60:  		Call     80045A58 ( 00000001 001A003B )
+   74:  	EndIf
+   7C:  EndIf
+   84:  Return
+   8C:  End
+

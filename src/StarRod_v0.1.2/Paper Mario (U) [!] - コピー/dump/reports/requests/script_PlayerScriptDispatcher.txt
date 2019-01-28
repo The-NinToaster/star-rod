@@ -1,0 +1,32 @@
+Script: PlayerScriptDispatcher (001B379C)
+
+    0:  Call     GetBattlePhase ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000
+   28:  		ExecWait 8028505C 
+   34:  	Case  ==  .Phase:FirstStrike
+   40:  		ExecWait 802851FC 
+   4C:  	Case  ==  00000005
+   58:  		ExecWait 80286194 
+   64:  	Case  ==  00000003
+   70:  		ExecWait 802868BC 
+   7C:  	Case  ==  00000007
+   88:  		ExecWait 80287078 
+   94:  	Case  ==  00000004
+   A0:  		ExecWait 80287128 
+   AC:  	Case  ==  00000008
+   B8:  		ExecWait 802879C0 
+   C4:  	Case  ==  00000006
+   D0:  		ExecWait 802852B8 
+   DC:  	Case  ==  00000014
+   E8:  		ExecWait 80288400 
+   F4:  	Case  ==  00000015
+  100:  		ExecWait 8028870C 
+  10C:  	Case  ==  00000016
+  118:  		ExecWait 80288A58 
+  124:  	Case  ==  0000001E
+  130:  		ExecWait 80288D64 
+  13C:  EndSwitch
+  144:  Return
+  14C:  End
+

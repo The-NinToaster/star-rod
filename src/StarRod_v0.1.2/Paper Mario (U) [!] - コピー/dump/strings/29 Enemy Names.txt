@@ -1,0 +1,393 @@
+29-000
+Goomba[END]
+
+29-001
+Spiked Goomba[END]
+
+29-002
+Paragoomba[END]
+
+29-003
+Red Goomba[END]
+
+29-004
+Blue Goomba[END]
+
+29-005
+Goomba King[END]
+
+29-006
+Goomnut Tree[END]
+
+29-007
+Koopa Troopa[END]
+
+29-008
+Paratroopa[END]
+
+29-009
+Fuzzy[END]
+
+29-00A
+Bob-omb[END]
+
+29-00B
+Bullet Bill[END]
+
+29-00C
+Bill Blaster[END]
+
+29-00D
+Bowser???[END]
+
+29-00E
+R Ninjakoopa[END]
+
+29-00F
+B Ninjakoopa[END]
+
+29-010
+Y Ninjakoopa[END]
+
+29-011
+G Ninjakoopa[END]
+
+29-012
+Koopa Bros.[END]
+
+29-013
+Jr. Troopa[END]
+
+29-014
+Monty Mole[END]
+
+29-015
+Cleft[END]
+
+29-016
+Pokey[END]
+
+29-017
+Bandit[END]
+
+29-018
+Pokey Mummy[END]
+
+29-019
+Buzzy Beetle[END]
+
+29-01A
+Swooper[END]
+
+29-01B
+Buzzar[END]
+
+29-01C
+Tutankoopa[END]
+
+29-01D
+Chomp[END]
+
+29-01E
+Stone Chomp[END]
+
+29-01F
+Piranha Plant[END]
+
+29-020
+Forest Fuzzy[END]
+
+29-021
+Hyper Goomba[END]
+
+29-022
+Hyper Paragoomba[END]
+
+29-023
+Hyper Cleft[END]
+
+29-024
+Clubba[END]
+
+29-025
+Tubba Blubba[END]
+
+29-026
+Tubba's Heart[END]
+
+29-027
+Shy Guy[END]
+
+29-028
+Groove Guy[END]
+
+29-029
+Spy Guy[END]
+
+29-02A
+Pyro Guy[END]
+
+29-02B
+Sky Guy[END]
+
+29-02C
+Medi Guy[END]
+
+29-02D
+Anti Guy[END]
+
+29-02E
+Big Lantern Ghost[END]
+
+29-02F
+General Guy[END]
+
+29-030
+Shy Squad[END]
+
+29-031
+Shy Stack[END]
+
+29-032
+Stilt Guy[END]
+
+29-033
+Hurt Plant[END]
+
+29-034
+M. Bush[END]
+
+29-035
+Jungle Fuzzy[END]
+
+29-036
+Spear Guy[END]
+
+29-037
+Putrid Piranha[END]
+
+29-038
+Lava Bubble[END]
+
+29-039
+Spike Top[END]
+
+29-03A
+Lava Piranha[END]
+
+29-03B
+Lava Bud[END]
+
+29-03C
+Petit Piranha[END]
+
+29-03D
+Lakitu[END]
+
+29-03E
+Spiny[END]
+
+29-03F
+Bzzap![END]
+
+29-040
+Crazee Dayzee[END]
+
+29-041
+Amazy Dayzee[END]
+
+29-042
+Monty Mole[END]
+
+29-043
+Spike?[END]
+
+29-044
+Ruff Puff[END]
+
+29-045
+Huff N. Puff[END]
+
+29-046
+Tuff Puff[END]
+
+29-047
+Gulpit[END]
+
+29-048
+Gulpits' Rocks[END]
+
+29-049
+Monstar[END]
+
+29-04A
+Frost Piranha[END]
+
+29-04B
+White Clubba[END]
+
+29-04C
+Duplighost[END]
+
+29-04D
+Watt???[END]
+
+29-04E
+Kooper???[END]
+
+29-04F
+Goombario???[END]
+
+29-050
+Sushie???[END]
+
+29-051
+Lakilester???[END]
+
+29-052
+Parakarry???[END]
+
+29-053
+Bombette???[END]
+
+29-054
+Bow???[END]
+
+29-055
+Albino Dino[END]
+
+29-056
+Swoopula[END]
+
+29-057
+Crystal King[END]
+
+29-058
+Crystal Bit[END]
+
+29-059
+Ember[END]
+
+29-05A
+Dry Bones[END]
+
+29-05B
+Bony Beetle[END]
+
+29-05C
+Magikoopa[END]
+
+29-05D
+Koopatrol[END]
+
+29-05E
+Hammer Bros.[END]
+
+29-05F
+Bombshell Bill[END]
+
+29-060
+B. Bill Blaster[END]
+
+29-061
+Bowser[END]
+
+29-062
+Kammy Koopa[END]
+
+29-063
+Kent C. Koopa[END]
+
+29-064
+Blooper[END]
+
+29-065
+Electro Blooper[END]
+
+29-066
+Super Blooper[END]
+
+29-067
+Blooper Baby[END]
+
+29-068
+The Master[END]
+
+29-069
+Chan[END]
+
+29-06A
+Lee[END]
+
+29-06B
+Gloomba[END]
+
+29-06C
+Paragloomba[END]
+
+29-06D
+Spiked Gloomba[END]
+
+29-06E
+Dark Koopa[END]
+
+29-06F
+D. Paratroopa[END]
+
+29-070
+R Magikoopa[END]
+
+29-071
+GRN Magikoopa[END]
+
+29-072
+Y Magikoopa[END]
+
+29-073
+GRY Magikoopa[END]
+
+29-074
+W Magikoopa[END]
+
+29-075
+Mario[END]
+
+29-076
+Slot Machine (start)[END]
+
+29-077
+Slot Machine (stop)[END]
+
+29-078
+Whacka[END]
+
+29-079
+General Guy[END]
+
+29-07A
+Bulb[END]
+
+29-07B
+Shy Squad[END]
+
+29-07C
+Fuzzipede[END]
+
+29-07D
+Monty's Hole[END]
+
+29-07E
+Balloon[END]
+
+29-07F
+Lantern[END]
+
+29-080
+Aqua Fuzzy[END]
+
+29-081
+Red Goomba[END]
+
+29-082
+R Paragoomba[END]
+

@@ -1,0 +1,69 @@
+% automatically dumped from map jan_06
+
+#new:Npc $jan_06_80245A50
+00000004 $NpcSettings_80244F7C_jan_06 00000000 00000000 00000000 
+00408D01 00000000 00000000 00000000 0000005A 
+{Items:10:TastyTonic:5:SuperSoda:5}
+{HP:20:70:3:50} {HP:30:60:3:50} {HP:50:50:3:40} {HP:80:40:3:40} {HP:100:30:3:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:2}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00440001 00440001 00440001 00440001 00440001 00440001 0044000E 0044000E 
+00440001 00440001 00440001 00440001 00440001 00440001 00440001 00440001 
+00000000 00000000 00000000 001A00D3 % A Heart Plant. These grow only on Lavalava Island. ...
+
+#new:Script $Script_NpcAI_80244D3C_jan_06
+    0:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   14:  Call     SetNpcAnimation 	( .Npc:Self 00440001 )
+   28:  Call     SetOwnerVar 	( 00000000 00000000 )
+   3C:  Label    00000000 
+   48:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   5C:  If  *Var[0]  ==  00000000 
+   6C:  	Wait     00000001 
+   78:  	Goto     00000000 
+   84:  EndIf
+   8C:  SetGroup 00000000 
+   98:  Call     802D5830 ( 00000001 )
+   A8:  Call     DisablePlayerInput 	( .True )
+   B8:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+   CC:  Call     SetNpcAnimation 	( .Npc:Self 00440008 )
+   E0:  Wait     0000000F 
+   EC:  Call     PlaySoundAtNpc ( .Npc:Self 0000209A 00000000 )
+  104:  Wait     0000000A 
+  110:  Call     SetPlayerAnimation 	( 0001002B )
+  120:  Wait     00000005 
+  12C:  Call     SetNpcAnimation 	( .Npc:Self 00440002 )
+  140:  Call     DisablePlayerInput 	( .False )
+  150:  Call     802D5830 ( 00000000 )
+  160:  Call     StartBattle 	( )
+  16C:  Return
+  174:  End
+
+#new:Script $Script_80244EB8_jan_06
+    0:  Call     SetOwnerVar 	( 00000000 00000001 )
+   14:  Return
+   1C:  End
+
+#new:Script $Script_80244EDC_jan_06
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     DoNpcDefeat 	( )
+   34:  	Case  ==  00000002 
+   40:  		Call     BindNpcAI   	( .Npc:Self $Script_NpcAI_80244D3C_jan_06 )
+   54:  	Case  ==  00000003 
+   60:  		Call     SetNpcFlagBits2 	( .Npc:Self 00000010 00000001 )
+   78:  		Call     RemoveNpc   	( .Npc:Self )
+   88:  EndSwitch
+   90:  Return
+   98:  End
+
+#new:NpcSettings $NpcSettings_80244F7C_jan_06
+00000000 0014001C 00000000 $Script_80244EB8_jan_06 $Script_NpcAI_80244D3C_jan_06 00000000 00000000 $Script_80244EDC_jan_06 
+00000000 00000000 00100000 
+

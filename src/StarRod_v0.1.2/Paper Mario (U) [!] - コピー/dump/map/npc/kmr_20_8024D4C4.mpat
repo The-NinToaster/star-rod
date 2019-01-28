@@ -1,0 +1,225 @@
+% automatically dumped from map kmr_20
+
+#new:Npc $kmr_20_8024D4C4
+00000001 $NpcSettings_8024A8B0_kmr_20 00000000 00000000 00000000 
+00000D01 $Script_Init_8024CFB8_kmr_20 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00820000 00820000 00820000 00820000 00820000 00820000 00820000 00820000 
+00820000 00820000 00820000 00820000 00820000 00820000 00820000 00820000 
+00000000 00000000 00000000 001A0069 % He's Luigi. I don't have to say anything about him ...
+
+#new:NpcSettings $NpcSettings_8024A8B0_kmr_20
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024A90C_kmr_20
+    0:  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+   18:  Return
+   20:  Return
+   28:  End
+
+#new:Script $Script_8024A96C_kmr_20
+    0:  Call     SetPlayerAnimation 	( 00010002 )
+   10:  Wait     00000001 
+   1C:  Call     SetPlayerAnimation 	( 00080007 )
+   2C:  Wait     00000014 
+   38:  Return
+   40:  End
+
+#new:Script $Script_8024A9B4_kmr_20
+    0:  If  *Byte_NPC_02  !=  00000005 
+   10:  	Return
+   18:  EndIf
+   20:  If  *Flag_KMR_45  !=  00000000 
+   30:  	Return
+   38:  EndIf
+   40:  Call     SetNpcAnimation 	( .Npc:Self 00820004 )
+   54:  ExecWait $Script_8024A96C_kmr_20 
+   60:  Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B0103 ) % What's that, Mario? You need something?
+   80:  Call     SetPlayerAnimation 	( .PlayerAnim:NodYes )
+   90:  Wait     00000028 
+   9C:  Call     SetPlayerAnimation 	( 00010002 )
+   AC:  Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B0104 ) % He what?  Mr. Koopa Koot wants to get my autograph ...
+   CC:  Call     GetNpcYaw   	( .Npc:Self *Var[0] )
+   E0:  Set  *Var[1]  *Var[0] 
+   F0:  Add  *Var[1]  000000B4 
+  100:  Call     InterpNpcYaw 	( .Npc:Self *Var[1] 00000005 )
+  118:  Wait     0000000A 
+  124:  Call     SetNpcAnimation 	( .Npc:Self 0082001C )
+  138:  Wait     00000028 
+  144:  Call     SetNpcAnimation 	( .Npc:Self 00820004 )
+  158:  Call     InterpNpcYaw 	( .Npc:Self *Var[0] 00000005 )
+  170:  Wait     0000000A 
+  17C:  Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B0105 ) % Here you are, Mario. My autograph. Give my regards ...
+  19C:  Wait     0000000A 
+  1A8:  Set  *Var[0]  0000006F 
+  1B8:  Set  *Var[1]  00000001 
+  1C8:  ExecWait $Script_8024A90C_kmr_20 
+  1D4:  Call     AddKeyItem  	( *Var[0] )
+  1E4:  Set  *Flag_KMR_45  00000001 
+  1F4:  If  *StoryProgress  >=  FFFFFFF3 
+  204:  	If  *StoryProgress  <  00000004 
+  214:  		Call     GetOwnerVar 	( 00000000 *Var[0] )
+  228:  		If  *Var[0]  ==  00000000 
+  238:  			Call     SetNpcAnimation 	( .Npc:Self 0082000A )
+  24C:  			Wait     00000001 
+  258:  		EndIf
+  260:  	EndIf
+  268:  EndIf
+  270:  Return
+  278:  End
+
+#new:Script $Script_8024B844_kmr_20
+    0:  Label    00000014 
+    C:  Call     GetNpcVar   	( .Npc:Self 00000000 *Var[0] )
+   24:  If  *Var[0]  ==  00000001 
+   34:  	Goto     00000015 
+   40:  EndIf
+   48:  Call     SetNpcAnimation 	( .Npc:Self 00820007 )
+   5C:  Call     GetNpcPos   	( .Npc:Self *Var[A] *Var[B] *Var[C] )
+   78:  Add  *Var[B]  00000019 
+   88:  Add  *Var[C]  00000002 
+   98:  Call     PlayEffect  	( {FX:MusicNote:Right} *Var[A] *Var[B] *Var[C] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+   DC:  Wait     0000000D 
+   E8:  Call     GetNpcVar   	( .Npc:Self 00000000 *Var[0] )
+  100:  Call     GetNpcPos   	( .Npc:Self *Var[A] *Var[B] *Var[C] )
+  11C:  Add  *Var[B]  00000019 
+  12C:  Add  *Var[C]  00000002 
+  13C:  Call     PlayEffect  	( {FX:MusicNote:Right} *Var[A] *Var[B] *Var[C] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  180:  If  *Var[0]  ==  00000001 
+  190:  	Goto     00000015 
+  19C:  EndIf
+  1A4:  Call     SetNpcAnimation 	( .Npc:Self 00820017 )
+  1B8:  Wait     00000016 
+  1C4:  Goto     00000014 
+  1D0:  Label    00000015 
+  1DC:  Return
+  1E4:  End
+
+#new:Script $Script_8024C784_kmr_20
+    0:  Call     SetNpcSpeed 	( .Npc:Self *Fixed[3.0] )
+   14:  Call     SetNpcAnimation 	( .Npc:Self 0082000A )
+   28:  Call     SetOwnerVar 	( 00000000 00000000 )
+   3C:  Label    0000000A 
+   48:  Call     SetNpcAnimation 	( .Npc:Self 0082000A )
+   5C:  Call     MoveNpcTo   	( .Npc:Self 0000027B FFFFFF94 00000000 )
+   78:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   8C:  If  *Var[0]  !=  00000000 
+   9C:  	Goto     00000064 
+   A8:  EndIf
+   B0:  Call     SetNpcAnimation 	( .Npc:Self 0082000A )
+   C4:  Call     MoveNpcTo   	( .Npc:Self 00000210 00000014 00000000 )
+   E0:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   F4:  If  *Var[0]  !=  00000000 
+  104:  	Goto     00000064 
+  110:  EndIf
+  118:  Call     SetNpcAnimation 	( .Npc:Self 0082000A )
+  12C:  Call     MoveNpcTo   	( .Npc:Self 0000027B FFFFFF94 00000000 )
+  148:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+  15C:  If  *Var[0]  !=  00000000 
+  16C:  	Goto     00000064 
+  178:  EndIf
+  180:  Call     SetNpcAnimation 	( .Npc:Self 0082000A )
+  194:  Call     MoveNpcTo   	( .Npc:Self 00000210 00000014 00000000 )
+  1B0:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+  1C4:  If  *Var[0]  !=  00000000 
+  1D4:  	Goto     00000064 
+  1E0:  EndIf
+  1E8:  Goto     0000000A 
+  1F4:  Label    00000064 
+  200:  Call     SetNpcAnimation 	( .Npc:Self 00820004 )
+  214:  Call     InterpNpcYaw 	( .Npc:Self 00000027 00000000 )
+  22C:  Return
+  234:  End
+
+#new:Script $Script_8024C9C0_kmr_20
+    0:  If  *MapFlag[0A]  ==  00000001 
+   10:  	Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00E5 ) % Good luck, Mario. You just have to save that princ ...
+   30:  Else
+   38:  	Switch  *StoryProgress 
+   44:  		Case  <  FFFFFF9C 
+   50:  			Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00E6 ) % Mario, I'll go to any lengths to help you out. I h ...
+   70:  		Case  <  FFFFFFB5 
+   7C:  			Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00E7 ) % Koopa Bros.? You mean they're a bunch of brothers  ...
+   9C:  		Case  <  FFFFFFCB 
+   A8:  			Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00E8 ) % Hi, Mario. I figure I'll have an adventure sooner  ...
+   C8:  		Case  <  FFFFFFF1 
+   D4:  			Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00ED ) % Anything wrong? Nothing suspicious in the basement ...
+   F4:  		Case  <  00000007 
+  100:  			If  *Flag_KMR_4F  ==  00000000 
+  110:  				Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00EE ) % Huff huff... You wouldn't believe it... Shy Guys w ...
+  130:  			Else
+  138:  				Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00EF ) % Huff Huff... I'm a great jumper, but my running re ...
+  158:  			EndIf
+  160:  		Case  <  00000027 
+  16C:  			Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00F0 ) % ...Hi, Mario. Are you doing OK? Don't worry, Bro,  ...
+  18C:  		Case  <  00000039 
+  198:  			Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00F1 ) % Boy, hanging out way up high sure was nice...  Suc ...
+  1B8:  		Case  <  00000059 
+  1C4:  			Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000000 000B00F2 ) % Boy, hanging out way up high sure was nice... Such ...
+  1E4:  		Case  <  00000060 
+  1F0:  			Call     SayMessage0 	( .Npc:Self 00820014 00820004 00000010 000B00F3 ) % Princess Peach is still caught way up there in the ...
+  210:  	EndSwitch
+  218:  EndIf
+  220:  ExecWait $Script_8024A9B4_kmr_20 
+  22C:  If  *MapFlag[0A]  !=  00000001 
+  23C:  	Switch  *StoryProgress 
+  248:  		Case  <  00000059 
+  254:  		EndCaseGroup
+  25C:  		Case  <  00000060 
+  268:  			Call     InterpNpcYaw 	( .Npc:Self 00000027 00000005 )
+  280:  	EndSwitch
+  288:  EndIf
+  290:  Return
+  298:  End
+
+#new:Script $Script_Init_8024CFB8_kmr_20
+    0:  Call     SetNpcVar   	( .Npc:Self 00000000 00000000 )
+   18:  Call     SetNpcAnimation 	( .Npc:Self 00820004 )
+   2C:  Call     802CDF8C ( FFFFFFFF 0000002D 00000018 )
+   44:  Call     BindNpcInteract 	( .Npc:Self $Script_8024C9C0_kmr_20 )
+   58:  If  *MapFlag[0A]  ==  00000001 
+   68:  	Return
+   70:  EndIf
+   78:  Switch  *StoryProgress 
+   84:  	Case  <  FFFFFF9C 
+   90:  		Call     SetNpcPos   	( .Npc:Self 000001F4 00000000 FFFFFF38 )
+   AC:  		Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+   C4:  	Case  <  FFFFFFB5 
+   D0:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   EC:  	Case  <  FFFFFFCB 
+   F8:  		Call     SetNpcPos   	( .Npc:Self 0000012C 00000032 00000096 )
+  114:  		Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+  12C:  		Call     SetNpcAnimation 	( .Npc:Self 00820007 )
+  140:  		Call     SetNpcAux   	( .Npc:Self $Script_8024B844_kmr_20 )
+  154:  	Case  <  FFFFFFF1 
+  160:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  17C:  	Case  <  00000007 
+  188:  		Call     SetNpcPos   	( .Npc:Self 00000230 00000000 FFFFFFB5 )
+  1A4:  		Call     BindNpcIdle 	( .Npc:Self $Script_8024C784_kmr_20 )
+  1B8:  	Case  <  00000027 
+  1C4:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  1E0:  	Case  <  00000039 
+  1EC:  		Call     SetNpcPos   	( .Npc:Self 0000012C 00000032 00000096 )
+  208:  		Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+  220:  		Call     SetNpcAnimation 	( .Npc:Self 00820007 )
+  234:  		Call     SetNpcAux   	( .Npc:Self $Script_8024B844_kmr_20 )
+  248:  	Case  <  00000059 
+  254:  		Call     SetNpcPos   	( .Npc:Self 0000012C 00000073 00000096 )
+  270:  		Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+  288:  		Call     SetNpcAnimation 	( .Npc:Self 00820007 )
+  29C:  		Call     SetNpcAux   	( .Npc:Self $Script_8024B844_kmr_20 )
+  2B0:  	Case  <  00000060 
+  2BC:  		Call     SetNpcPos   	( .Npc:Self 00000132 0000001E FFFFFF6F )
+  2D8:  		Call     InterpNpcYaw 	( .Npc:Self 00000027 00000000 )
+  2F0:  		Call     SetOwnerFlagBits 	( 00400000 .True )
+  304:  EndSwitch
+  30C:  Return
+  314:  End
+

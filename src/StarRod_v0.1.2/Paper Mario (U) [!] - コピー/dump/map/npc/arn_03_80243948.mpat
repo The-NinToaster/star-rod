@@ -1,0 +1,47 @@
+% automatically dumped from map arn_03
+
+#new:Npc $arn_03_80243948
+00000003 $NpcSettings_80241C3C_arn_03 00000000 00000000 00000000 
+00000505 $Script_Init_80243328_arn_03 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00950101 00950102 00950103 00950103 00950101 00950101 00950100 00950100 
+0095010A 00950103 00950103 00950103 00950103 00950103 00950103 00950103 
+00000000 00000000 00000000 001A00AD % That's a Boo who lives here in Gusty Gulch. This l ...
+
+#new:NpcSettings $NpcSettings_80241C3C_arn_03
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802431C8_arn_03
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFE6 
+   18:  		If  *AreaFlag[005]  ==  00000000 
+   28:  			Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E008C ) % I had a friend who escaped from Tubba Blubba's Cas ...
+   48:  			Set  *AreaFlag[005]  00000001 
+   58:  		Else
+   60:  			Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E008D ) % I had a friend who escaped from Tubba Blubba's Cas ...
+   80:  			Set  *AreaFlag[005]  00000000 
+   90:  		EndIf
+   98:  	Case  <  FFFFFFF0 
+   A4:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E008E ) % What? Whaaaaat? Tubba Blubba's behind you? Noooo!  ...
+   C4:  	Case  <  FFFFFFF2 
+   D0:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E008F ) % Peace has finally returned to our hill. Tubba Blub ...
+   F0:  	Case  <  00000027 
+   FC:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E0090 ) % My friend came back! I couldn't be happier! Now it ...
+  11C:  	Case  >=  00000027 
+  128:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E0091 ) % Now then... What to do, what to do? Who should I s ...
+  148:  EndSwitch
+  150:  Return
+  158:  End
+
+#new:Script $Script_Init_80243328_arn_03
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802431C8_arn_03 )
+   14:  Return
+   1C:  End
+

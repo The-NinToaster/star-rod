@@ -1,0 +1,326 @@
+Maps featuring battles:
+00000000 : arn_03   arn_03   arn_03   arn_03   arn_03   arn_03   arn_03   arn_03   arn_03   arn_03   arn_03   arn_05   arn_05   arn_05   arn_05   arn_05   arn_07   arn_07   arn_07   arn_07   arn_08   arn_08   arn_09   arn_10   arn_12   arn_13   dgb_00   dgb_00   dgb_00   dgb_00   dgb_00   dgb_00   dgb_00   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_01   dgb_04   dgb_06   dgb_08   dgb_08   dgb_08   dgb_09   dgb_18   dro_01   dro_01   dro_01   dro_02   flo_00   flo_00   flo_00   flo_00   flo_00   flo_00   flo_03   flo_07   flo_08   flo_10   flo_12   flo_13   flo_13   flo_14   flo_15   flo_23   flo_25   hos_00   hos_01   hos_03   hos_04   hos_05   hos_05   hos_05   hos_06   hos_10   hos_10   isk_16   iwa_00   iwa_02   iwa_10   iwa_10   iwa_10   iwa_10   iwa_10   iwa_11   jan_00   jan_00   jan_00   jan_00   jan_00   jan_00   jan_01   jan_02   jan_02   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_03   jan_04   jan_04   jan_04   jan_05   jan_05   jan_06   jan_07   jan_08   jan_08   jan_08   jan_10   jan_11   jan_15   jan_15   jan_16   jan_22   jan_22   jan_22   jan_22   jan_23   kkj_00   kkj_00   kkj_00   kkj_00   kkj_00   kkj_00   kkj_00   kkj_00   kkj_00   kkj_00   kkj_01   kkj_02   kkj_03   kkj_10   kkj_10   kkj_11   kkj_11   kkj_12   kkj_13   kkj_13   kkj_14   kkj_14   kkj_14   kkj_14   kkj_15   kkj_15   kkj_15   kkj_16   kkj_16   kkj_18   kkj_19   kkj_19   kkj_20   kkj_23   kkj_23   kkj_23   kkj_23   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_25   kkj_29   kmr_00   kmr_00   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_02   kmr_04   kmr_10   kmr_11   kmr_20   kmr_20   kmr_20   kmr_20   kmr_22   kmr_22   kmr_22   kmr_22   kmr_22   kmr_22   kmr_22   kmr_22   kmr_23   kmr_23   kmr_23   kmr_23   kmr_23   kmr_23   kmr_23   kmr_30   kpa_133  kpa_134  kpa_17   kpa_91   kpa_95   kpa_96   kzn_01   kzn_02   kzn_03   kzn_04   kzn_04   kzn_04   kzn_09   kzn_11   kzn_11   kzn_11   kzn_17   kzn_18   kzn_18   kzn_19   kzn_19   kzn_20   kzn_20   kzn_22   kzn_22   kzn_23   kzn_23   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_00   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_01   mac_02   mac_02   mac_02   mac_02   mac_02   mac_03   mac_03   mac_03   mac_03   mac_04   mac_04   mac_04   mac_04   mac_04   mac_04   mac_04   mac_04   mac_04   mac_06   mac_06   mac_06   machi    mgm_00   mgm_00   mgm_00   mgm_01   mgm_02   mgm_02   mgm_02   mgm_02   mgm_02   mgm_02   mgm_02   mgm_02   mgm_02   mgm_02   mgm_02   mgm_02   mim_02   mim_03   mim_04   mim_10   mim_10   mim_11   mim_12   nok_01   nok_01   nok_01   nok_01   nok_01   nok_01   nok_02   nok_02   nok_02   nok_02   nok_02   nok_02   nok_02   nok_02   nok_02   nok_03   obk_01   obk_01   obk_01   obk_01   obk_02   obk_03   obk_04   obk_04   obk_04   obk_04   obk_04   obk_04   obk_04   obk_04   obk_04   obk_04   obk_04   obk_05   obk_07   obk_07   obk_07   obk_08   obk_08   obk_08   obk_08   obk_08   obk_08   obk_08   obk_08   obk_08   obk_08   obk_08   obk_09   obk_09   omo_02   omo_02   omo_03   omo_03   omo_03   omo_04   omo_05   omo_06   omo_07   omo_08   omo_09   omo_10   omo_12   omo_12   omo_12   omo_14   omo_14   omo_16   omo_17   osr_00   osr_00   osr_00   osr_00   osr_00   osr_00   osr_01   osr_02   osr_02   osr_03   sam_01   sam_01   sam_01   sam_02   sam_02   sam_04   sam_04   sam_11   sam_11   sam_11   sbk_02   sbk_02   sbk_30   sbk_34   trd_00   trd_05   trd_06   trd_06   trd_06   trd_09   tst_04   tst_13   
+00000001 : kpa_81   sam_01   sam_01   sam_01   sam_01   sam_01   sam_01   sam_01   sam_02   sam_02   sam_02   sam_06   sam_11   sam_11   sam_11   sam_11   sam_11   sam_11   sam_11   sam_11   sam_11   sam_12   
+00000002 : trd_03   
+00000003 : kmr_09   kpa_10   kpa_11   
+00000004 : kmr_05   kmr_05   kmr_05   kmr_05   
+00010003 : kmr_09   kmr_09   kmr_12   
+00020000 : kmr_03   
+00060000 : tik_15   trd_08   trd_08   
+00080000 : machi    machi    
+00080003 : kmr_09   
+00080004 : kmr_05   
+00090003 : kmr_06   
+000A0004 : kmr_05   
+000B0003 : kmr_06   
+01000002 : kmr_07   
+01010000 : kmr_11   
+02000004 : kmr_05   
+02010004 : kmr_05   
+02020000 : kmr_04   
+02030000 : nok_11   
+02040000 : mim_07   
+02060000 : sam_03   
+02070000 : kpa_83   
+04000000 : hos_00   
+04010002 : hos_02   hos_02   hos_02   
+04030000 : hos_00   
+05010002 : nok_12   nok_12   
+05020001 : nok_11   
+05030002 : nok_11   
+05040002 : nok_12   nok_12   
+05060001 : nok_14   
+05080001 : nok_11   
+05090001 : nok_12   nok_12   
+050B0001 : nok_14   
+050C0001 : nok_14   
+050D0001 : nok_15   
+050F0001 : nok_12   nok_12   
+05110003 : nok_14   
+05140001 : nok_15   
+05160002 : nok_03   nok_03   
+05160004 : nok_04   
+05170004 : nok_04   
+05180001 : nok_11   
+06000008 : trd_01   
+06010004 : trd_07   
+06010008 : trd_01   
+06030002 : trd_03   trd_03   
+06030003 : trd_01   
+06040002 : trd_03   
+0604000C : trd_06   
+0605000D : trd_04   trd_04   
+0607000D : trd_02   
+06080004 : trd_07   
+060A0004 : trd_07   
+060D0006 : trd_04   trd_04   
+06100008 : trd_01   
+0610000A : trd_02   trd_02   
+06170007 : trd_09   
+061A0007 : trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   trd_09   
+07000000 : trd_10   
+08000000 : trd_00   
+09000001 : iwa_03   
+09000002 : iwa_02   
+09010001 : iwa_03   
+09010002 : iwa_02   iwa_04   
+09030001 : iwa_03   
+09030002 : iwa_02   
+09040002 : iwa_01   
+09050002 : iwa_02   
+09060002 : iwa_00   iwa_01   iwa_01   
+09070002 : iwa_00   iwa_01   iwa_01   
+09090001 : iwa_03   
+090C0003 : iwa_04   
+0A000001 : sbk_00   sbk_03   sbk_05   sbk_05   sbk_05   sbk_12   sbk_53   
+0A010001 : sbk_00   sbk_01   sbk_03   sbk_04   sbk_04   sbk_05   sbk_05   sbk_05   sbk_05   sbk_12   sbk_32   sbk_53   sbk_62   sbk_62   sbk_63   
+0A020001 : sbk_03   sbk_05   sbk_05   sbk_12   sbk_32   sbk_53   sbk_55   sbk_62   
+0A030001 : sbk_01   sbk_03   sbk_05   sbk_55   sbk_60   sbk_63   
+0A040001 : sbk_11   sbk_13   sbk_44   
+0A050001 : sbk_13   sbk_15   sbk_44   sbk_51   
+0A060001 : sbk_26   sbk_46   
+0A070001 : sbk_15   
+0A080001 : sbk_22   
+0A090001 : sbk_66   
+0A0A0001 : sbk_20   sbk_25   sbk_25   sbk_42   sbk_66   sbk_66   sbk_66   
+0A0B0001 : sbk_32   sbk_40   sbk_40   sbk_42   sbk_66   
+0A0C0001 : sbk_06   sbk_20   sbk_26   sbk_31   sbk_35   sbk_46   sbk_66   
+0A0D0001 : sbk_11   sbk_46   
+0A0E0001 : sbk_13   sbk_22   sbk_44   sbk_51   
+0B000006 : isk_02   isk_02   
+0B00000D : isk_07   
+0B010006 : isk_02   
+0B02000D : isk_07   
+0B03000D : isk_07   
+0B07000A : isk_05   
+0B07000B : isk_13   
+0B07000C : isk_14   
+0B090004 : isk_04   isk_04   
+0B0A0004 : isk_08   
+0B0C0009 : isk_18   
+0B0F0009 : isk_18   
+0B130009 : isk_18   
+0C000002 : isk_16   
+0D000001 : mim_02   
+0D010001 : mim_02   
+0D020001 : mim_07   
+0D040001 : mim_04   
+0D050001 : mim_09   
+0D060001 : mim_07   
+0D070001 : mim_06   
+0D090001 : mim_01   mim_08   
+0D0A0001 : mim_05   
+0D0B0001 : mim_05   
+0D0D0001 : mim_06   
+0D0E0001 : mim_06   
+0D0F0001 : mim_08   
+0D100001 : mim_08   
+0E000005 : arn_10   
+0E010005 : arn_12   
+0E020005 : arn_13   
+0E030001 : arn_02   arn_04   
+0E060002 : arn_07   
+0E070002 : arn_07   
+0E080002 : arn_07   
+0E090001 : arn_04   
+0E0A0001 : arn_02   
+0E0C0001 : arn_04   
+0E0D0001 : arn_02   
+0E0E0001 : arn_04   
+0E0F0000 : arn_11   
+0E100002 : arn_07   
+0F000003 : dgb_16   dgb_16   dgb_16   
+0F010001 : dgb_02   dgb_09   
+0F010002 : dgb_03   dgb_03   
+0F010003 : dgb_05   dgb_07   dgb_16   dgb_16   
+0F020001 : dgb_02   
+0F020003 : dgb_05   dgb_08   dgb_08   dgb_08   
+0F030001 : dgb_03   dgb_09   
+0F030003 : dgb_08   dgb_16   
+0F040000 : dgb_01   dgb_18   
+0F040001 : dgb_01   dgb_01   dgb_08   dgb_15   
+10000001 : omo_01   
+10010001 : omo_01   
+10020001 : omo_01   omo_01   
+10030001 : omo_13   
+10040001 : omo_04   omo_04   omo_04   
+10050001 : omo_01   
+10090001 : omo_09   omo_09   omo_09   
+100F0001 : omo_04   omo_04   omo_04   
+10120001 : omo_07   omo_07   omo_07   
+10140001 : omo_07   omo_07   omo_07   
+10170007 : omo_17   
+10190001 : omo_09   omo_09   omo_09   
+101B0001 : omo_02   
+101D0007 : omo_17   
+10220008 : omo_11   
+10240008 : omo_11   
+10250001 : omo_13   
+102A0007 : omo_05   
+102B0007 : omo_17   
+102C0001 : omo_13   
+11000000 : omo_15   
+12000000 : omo_12   
+12010001 : omo_04   omo_04   
+12030001 : omo_04   omo_04   
+12050006 : omo_07   omo_07   
+12070006 : omo_07   omo_07   
+12080005 : omo_09   omo_09   
+12090005 : omo_09   omo_09   
+120A0002 : omo_07   omo_07   omo_07   omo_07   omo_07   omo_07   omo_07   omo_07   omo_07   omo_07   omo_07   omo_07   
+120A0005 : omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   omo_09   
+120A0007 : omo_08   omo_08   omo_08   omo_08   
+13000001 : kgr_02   
+14000002 : jan_05   
+14000008 : jan_22   
+14010002 : jan_08   
+14010004 : jan_07   
+14020002 : jan_06   
+14030003 : jan_09   
+14060007 : jan_12   
+14080002 : jan_05   jan_06   jan_06   jan_08   
+140A0001 : jan_01   jan_01   jan_01   
+140A0002 : jan_05   
+140A0004 : jan_10   
+140A0005 : jan_14   
+140B0001 : jan_01   
+140B0005 : jan_14   
+140D0002 : jan_06   
+140E0002 : jan_05   jan_08   
+140E0003 : jan_09   jan_09   
+14100002 : jan_08   
+15010004 : jan_07   
+15030005 : jan_15   
+16000003 : kzn_02   kzn_11   
+16050002 : kzn_07   
+16060002 : kzn_07   
+16070003 : kzn_11   
+16080002 : kzn_03   
+16090002 : kzn_03   
+160A0002 : kzn_03   
+160B0002 : kzn_09   
+160D0001 : kzn_17   
+160F0002 : kzn_09   
+16110005 : kzn_08   
+16130002 : kzn_03   
+16140001 : kzn_17   
+17000007 : kzn_19   
+18040005 : flo_13   
+18060005 : flo_13   
+18070009 : flo_11   
+18090003 : flo_17   
+180A0003 : flo_17   
+180B0007 : flo_18   
+180C0003 : flo_13   flo_13   flo_13   flo_13   flo_13   flo_13   flo_17   flo_17   flo_17   flo_17   flo_23   
+180D0003 : flo_23   
+180F0001 : flo_08   
+180F0002 : flo_03   flo_08   flo_08   flo_08   flo_08   flo_22   
+18100005 : flo_09   
+18120002 : flo_08   
+18140001 : flo_08   
+18150005 : flo_09   
+18170002 : flo_09   flo_09   
+18170003 : flo_22   
+18190001 : flo_14   
+181A0002 : flo_25   
+181C0001 : flo_08   
+181F0008 : flo_21   
+18200006 : flo_16   
+18220006 : flo_25   
+18240006 : flo_16   
+19000008 : flo_21   
+19010002 : flo_03   
+19020002 : flo_03   
+19030002 : flo_03   
+19040002 : flo_03   
+19050002 : flo_13   
+1A000004 : tik_09   
+1A010004 : tik_09   
+1A020004 : tik_09   
+1A040004 : tik_20   
+1A050004 : tik_20   
+1A060001 : tik_24   
+1A070001 : tik_24   
+1A0A0001 : tik_18   
+1A0C0002 : tik_07   
+1A0D0002 : tik_07   
+1A0E0001 : tik_18   
+1A0E0002 : tik_04   
+1A0F0002 : tik_04   
+1A100001 : tik_05   
+1A120001 : tik_05   
+1A150002 : tik_12   
+1A160004 : tik_23   tik_23   
+1A170004 : tik_23   
+1B000001 : tik_01   tik_02   tik_08   
+1D000005 : sam_08   sam_08   
+1D010001 : sam_03   
+1D010006 : sam_05   
+1D020001 : sam_03   
+1D030003 : sam_07   
+1D060006 : sam_05   sam_05   
+1D070003 : sam_07   
+1D090003 : sam_07   
+1D0A0006 : sam_05   sam_05   
+1D0B0005 : sam_08   
+1D0C0003 : sam_10   
+1E000006 : sam_05   sam_05   
+1F010001 : pra_10   pra_38   
+1F020001 : pra_38   
+1F030001 : pra_10   
+1F080002 : pra_35   
+1F090003 : pra_18   
+1F0B0003 : pra_18   
+1F0C0004 : pra_18   
+1F0D0001 : pra_37   
+20000000 : pra_32   
+21000001 : pra_04   
+21010001 : pra_01   pra_09   pra_09   pra_09   
+21010002 : pra_19   pra_19   pra_19   pra_31   
+21020001 : pra_13   pra_13   
+21040001 : pra_35   
+21080001 : pra_39   
+210A0001 : pra_36   
+22000004 : kpa_01   
+22010004 : kpa_01   kpa_03   
+22040004 : kpa_03   
+2206000D : kpa_113  
+2207000D : kpa_111  
+220B0002 : kpa_09   
+220C000D : kpa_111  
+220F0001 : kpa_50   
+22130001 : kpa_52   
+2214000D : kpa_115  
+22150001 : kpa_52   
+2216000B : kpa_102  
+2217000E : kpa_91   kpa_95   
+22180001 : kpa_50   
+22180003 : kpa_11   kpa_70   
+22190003 : kpa_70   
+221A0001 : kpa_50   
+221D0003 : kpa_16   
+221F0004 : kpa_03   
+22200004 : kpa_03   
+22210009 : kpa_61   
+22230009 : kpa_61   
+22240001 : kpa_51   
+2224000B : kpa_102  
+22290001 : kpa_51   
+222B0002 : kpa_08   
+222C0001 : kpa_51   
+222F0004 : kpa_03   
+2232000B : kpa_102  
+22330009 : kpa_61   
+22350009 : kpa_61   
+23010000 : kkj_13   
+23020000 : kkj_13   kkj_13   
+23030000 : kkj_25   kkj_25   
+23040000 : kkj_25   
+24000001 : kpa_82   kpa_82   kpa_82   kpa_82   kpa_82   kpa_82   kpa_82   kpa_82   
+24020001 : kpa_53   
+25010005 : kpa_130  kpa_130  kpa_130  kpa_130  kpa_130  kpa_130  kpa_130  kpa_130  kpa_130  kpa_130  
+25020005 : kpa_130  
+25020006 : kpa_130  
+25030006 : kpa_130  
+25040006 : kpa_130  
+26000000 : kkj_25   kkj_25   kkj_25   

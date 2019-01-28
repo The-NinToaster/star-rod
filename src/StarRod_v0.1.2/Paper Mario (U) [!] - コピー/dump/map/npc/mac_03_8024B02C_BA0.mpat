@@ -1,0 +1,109 @@
+% automatically dumped from map mac_03
+
+#new:Npc $mac_03_8024B02C_BA0
+00000006 $NpcSettings_80246568_mac_03 00000000 00000000 00000000 
+00002D09 $Script_Init_8024A3EC_mac_03 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000028 00000014 FFFF8001 00000001 00000000 
+00000000 00000000 0000000A 0000000A 00000001 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00860301 00860302 00860303 00860303 00860301 00860301 00860300 00860300 
+00860300 00860300 00860300 00860300 00860300 00860300 00860300 00860300 
+00000000 00000000 00000000 001A0042 % These Toad kids always seem to be together. They s ...
+
+#new:AISettings $AISettings_802464EC_mac_03
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_8024651C_mac_03
+    0:  Call     DoBasicAI   	( $AISettings_802464EC_mac_03 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80246568_mac_03
+00000000 00170013 00000000 00000000 $Script_NpcAI_8024651C_mac_03 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_80249F80_mac_03
+    0:  SetGroup 00000000 
+    C:  Call     802D5830 ( 00000002 )
+   1C:  Call     EnableNpcAI 	( 00000005 .False )
+   30:  Call     EnableNpcAI 	( 00000006 .False )
+   44:  Call     GetNpcAnimation 	( 00000005 *Var[2] )
+   58:  Call     GetNpcAnimation 	( 00000006 *Var[3] )
+   6C:  Call     SetNpcAnimation 	( 00000005 00860001 )
+   80:  Call     SetNpcAnimation 	( 00000006 00860301 )
+   94:  Switch  *StoryProgress 
+   A0:  	Case  <  FFFFFFCB 
+   AC:  		If  *Flag_MAC_9A  ==  00000000 
+   BC:  			Set  *Var[0]  00050031 
+   CC:  			Set  *Var[1]  00050032 
+   DC:  		Else
+   E4:  			Set  *Var[0]  00050033 
+   F4:  			Set  *Var[1]  00050034 
+  104:  		EndIf
+  10C:  	Case  <  FFFFFFF1 
+  118:  		Set  *Var[0]  00050035 
+  128:  		Set  *Var[1]  00050036 
+  138:  	Case  <  00000007 
+  144:  		If  *Flag_MAC_9C  ==  00000000 
+  154:  		Else
+  15C:  			If  *Flag_MAC_9D  ==  00000000 
+  16C:  				Set  *Var[0]  00050037 
+  17C:  				Set  *Var[1]  00050038 
+  18C:  			Else
+  194:  				Set  *Var[0]  00050039 
+  1A4:  				Set  *Var[1]  0005003A 
+  1B4:  			EndIf
+  1BC:  		EndIf
+  1C4:  	Case  <  0000000A 
+  1D0:  		Set  *Var[0]  0005003B 
+  1E0:  		Set  *Var[1]  0005003C 
+  1F0:  	Case  <  00000027 
+  1FC:  		Set  *Var[0]  0005003D 
+  20C:  		Set  *Var[1]  0005003E 
+  21C:  	Case  <  0000002B 
+  228:  		Set  *Var[0]  0005003F 
+  238:  		Set  *Var[1]  00050040 
+  248:  	Case  <  00000039 
+  254:  		Set  *Var[0]  00050041 
+  264:  		Set  *Var[1]  00050042 
+  274:  	Case  <  0000003D 
+  280:  		Set  *Var[0]  00050043 
+  290:  		Set  *Var[1]  00050044 
+  2A0:  	Case  <  00000059 
+  2AC:  		Set  *Var[0]  00050045 
+  2BC:  		Set  *Var[1]  00050046 
+  2CC:  	Case  <  00000060 
+  2D8:  		Set  *Var[0]  00050047 
+  2E8:  		Set  *Var[1]  00050048 
+  2F8:  EndSwitch
+  300:  Call     SayMessage0 	( 00000005 00860004 00860001 00000000 *Var[0] ) % variable string ID
+  320:  Wait     0000000A 
+  32C:  Call     SayMessage0 	( 00000006 00860304 00860301 00000000 *Var[1] ) % variable string ID
+  34C:  Call     SetNpcAnimation 	( 00000005 *Var[2] )
+  360:  Call     SetNpcAnimation 	( 00000006 *Var[3] )
+  374:  Call     EnableNpcAI 	( 00000005 .True )
+  388:  Call     EnableNpcAI 	( 00000006 .True )
+  39C:  Call     802D5830 ( 00000000 )
+  3AC:  Return
+  3B4:  End
+
+#new:Script $Script_Init_8024A3EC_mac_03
+    0:  Call     BindNpcInteract 	( 00000006 $Script_80249F80_mac_03 )
+   14:  Return
+   1C:  End
+

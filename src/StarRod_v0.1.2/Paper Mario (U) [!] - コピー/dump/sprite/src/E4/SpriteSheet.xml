@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SpriteSheet a="8" b="1">
+    <PaletteList>
+        <Palette id="00" src="Palette_00.png"/>
+    </PaletteList>
+    <RasterList>
+        <Raster id="00" palette="00" src="Raster_00.png"/>
+        <Raster id="01" palette="00" src="Raster_01.png"/>
+        <Raster id="02" palette="00" src="Raster_02.png"/>
+        <Raster id="03" palette="00" src="Raster_03.png"/>
+        <Raster id="04" palette="00" src="Raster_04.png"/>
+        <Raster id="05" palette="00" src="Raster_05.png"/>
+    </RasterList>
+    <AnimationList>
+        <Animation>
+            <Component x="22" y="-1" z="-4">
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-10" y="3" z="-2">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-2" y="83" z="-2">
+                <Command val="1001"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="0" y="5" z="0">
+                <Command val="1003"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="48" y="4" z="2">
+                <Command val="1002"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="74" z="2">
+                <Command val="1004"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="23" y="12" z="4">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+            <Component x="-32" y="31" z="4">
+                <Command val="1005"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+    </AnimationList>
+</SpriteSheet>

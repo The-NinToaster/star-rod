@@ -1,0 +1,90 @@
+% automatically dumped from map mac_04
+
+#new:Npc $mac_04_8024B1D8_1930
+0000000C $NpcSettings_80243E88_mac_04 00000000 00000000 00000000 
+00002D09 $Script_Init_8024AE54_mac_04 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830301 00830302 00830303 00830303 00830301 00830301 00830306 00830306 
+00830303 00830303 00830303 00830303 00830303 00830303 00830303 00830303 
+00000000 00000000 00000000 001A004E % He's part of the Great Gossip Trio. I wonder how t ...
+
+#new:NpcSettings $NpcSettings_80243E88_mac_04
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024AA54_mac_04
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFCB 
+   18:  		If  *Flag_MAC_9A  ==  00000000 
+   28:  			Set  *Var[0]  00060081 
+   38:  			Set  *Var[1]  00060082 
+   48:  			Set  *Var[2]  00060083 
+   58:  		Else
+   60:  			Set  *Var[0]  00060084 
+   70:  			Set  *Var[1]  00060085 
+   80:  			Set  *Var[2]  00060086 
+   90:  		EndIf
+   98:  	Case  <  FFFFFFF1 
+   A4:  		Set  *Var[0]  00060087 
+   B4:  		Set  *Var[1]  00060088 
+   C4:  		Set  *Var[2]  00060089 
+   D4:  	Case  <  FFFFFFF9 
+   E0:  		If  *Flag_MAC_A0  ==  00000000 
+   F0:  			Set  *Var[0]  0006008A 
+  100:  			Set  *Var[1]  0006008B 
+  110:  			Set  *Var[2]  0006008C 
+  120:  		Else
+  128:  			Set  *Var[0]  0006008D 
+  138:  			Set  *Var[1]  0006008E 
+  148:  			Set  *Var[2]  0006008F 
+  158:  		EndIf
+  160:  	Case  <  00000007 
+  16C:  		Set  *Var[0]  00060090 
+  17C:  		Set  *Var[1]  00060091 
+  18C:  		Set  *Var[2]  00060092 
+  19C:  	Case  <  0000000A 
+  1A8:  		Set  *Var[0]  00060093 
+  1B8:  		Set  *Var[1]  00060094 
+  1C8:  		Set  *Var[2]  00060095 
+  1D8:  	Case  <  00000027 
+  1E4:  		Set  *Var[0]  00060096 
+  1F4:  		Set  *Var[1]  00060097 
+  204:  		Set  *Var[2]  00060098 
+  214:  	Case  <  0000002B 
+  220:  		Set  *Var[0]  00060099 
+  230:  		Set  *Var[1]  0006009A 
+  240:  		Set  *Var[2]  0006009B 
+  250:  	Case  <  00000039 
+  25C:  		Set  *Var[0]  0006009C 
+  26C:  		Set  *Var[1]  0006009D 
+  27C:  		Set  *Var[2]  0006009E 
+  28C:  	Case  <  0000003D 
+  298:  		Set  *Var[0]  0006009F 
+  2A8:  		Set  *Var[1]  000600A0 
+  2B8:  		Set  *Var[2]  000600A1 
+  2C8:  	Case  <  00000059 
+  2D4:  		Set  *Var[0]  000600A2 
+  2E4:  		Set  *Var[1]  000600A3 
+  2F4:  		Set  *Var[2]  000600A4 
+  304:  	Case  <  00000060 
+  310:  		Set  *Var[0]  000600A5 
+  320:  		Set  *Var[1]  000600A6 
+  330:  		Set  *Var[2]  000600A7 
+  340:  EndSwitch
+  348:  Call     SayMessage0 	( 0000000A 00830104 00830101 00000000 *Var[0] ) % variable string ID
+  368:  Call     SayMessage0 	( 0000000B 00830004 00830001 00000000 *Var[1] ) % variable string ID
+  388:  Call     SayMessage0 	( 0000000C 00830304 00830301 00000000 *Var[2] ) % variable string ID
+  3A8:  Return
+  3B0:  End
+
+#new:Script $Script_Init_8024AE54_mac_04
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024AA54_mac_04 )
+   14:  Return
+   1C:  End
+

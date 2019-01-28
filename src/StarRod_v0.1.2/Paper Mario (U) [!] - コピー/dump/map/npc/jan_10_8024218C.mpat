@@ -1,0 +1,93 @@
+% automatically dumped from map jan_10
+
+#new:Npc $jan_10_8024218C
+00000000 $NpcSettings_80241BE8_jan_10 00000000 00000000 00000000 
+0040090D $Script_Init_802420D0_jan_10 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00970101 00970102 00970103 00970103 00970101 00970101 00970101 00970101 
+00970101 00970101 00970101 00970101 00970101 00970101 00970101 00970101 
+00000000 00000000 00000000 001A00C4 % He's a blue Yoshi kid. He thinks he's different fr ...
+
+#new:Script $Script_80241790_jan_10
+    0:  Call     SetMusicTrack 	( 00000000 .Song:JadeJungle 00000000 00000008 )
+   1C:  Call     802D60E8 ( 000000FA )
+   2C:  Return
+   34:  End
+
+#new:NpcSettings $NpcSettings_80241BE8_jan_10
+00000000 001C0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241DD0_jan_10
+    0:  Set  *AreaFlag[002]  00000000 
+   10:  Loop     
+   1C:  	Call     PlaySoundAtNpc ( 00000000 000001F0 00000000 )
+   34:  	Wait     00000014 
+   40:  	If  *AreaFlag[002]  ==  00000001 
+   50:  		BreakLoop
+   58:  	EndIf
+   60:  EndLoop
+   68:  Return
+   70:  End
+
+#new:Script $Script_80241E48_jan_10
+    0:  Call     UseSettings 	( .Default *Fixed[4.0] 00000000 0000015E *Fixed[17.0] *Fixed[-7.0] )
+   24:  Set  *AreaFlag[002]  00000001 
+   34:  Wait     0000000F 
+   40:  Call     GetCurrentPartner 	( *Var[0] )
+   50:  If  *Var[0]  ==  00000007 
+   60:  	Call     SayMessage0 	( .Npc:Self 0097010B 0097010A 00000000 001000B2 ) % Wuh-huh-waaaaaaa! Sniff sniff... We were playing h ...
+   80:  Else
+   88:  	Call     SayMessage0 	( .Npc:Self 0097010B 0097010A 00000000 001000B3 ) % Wuh-huh-waaaaaaa! Sniff sniff... We were playing h ...
+   A8:  EndIf
+   B0:  Call     SayMessage1 	( .Npc:Self 00970104 00970101 00000000 )
+   CC:  Thread
+   D4:  	Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+   EC:  	Call     SetNpcAnimation 	( .Npc:Self 00970103 )
+  100:  	Call     SetNpcSpeed 	( .Npc:Self *Fixed[5.0] )
+  114:  	Call     MoveNpcTo   	( .Npc:Self FFFFFF10 0000000A 00000000 )
+  130:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  14C:  EndThread
+  154:  Set  *Flag_JAN_12  00000001 
+  164:  Set  *Var[0]  00000000 
+  174:  Add  *Var[0]  *Flag_JAN_0F 
+  184:  Add  *Var[0]  *Flag_JAN_10 
+  194:  Add  *Var[0]  *Flag_JAN_11 
+  1A4:  Add  *Var[0]  *Flag_JAN_12 
+  1B4:  Add  *Var[0]  *Flag_JAN_13 
+  1C4:  If  *Var[0]  ==  00000005 
+  1D4:  	Call     SetMusicTrack 	( 00000000 .Song:YoshiKidsFound 00000000 00000008 )
+  1F0:  	Set  *StoryProgress  00000010 
+  200:  	Call     SetPlayerAnimation 	( .PlayerAnim:ThumbsUp )
+  210:  	Wait     00000078 
+  21C:  	Exec     $Script_80241790_jan_10 
+  228:  	Call     SetPlayerAnimation 	( 00010002 )
+  238:  Else
+  240:  	Wait     0000001E 
+  24C:  EndIf
+  254:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  268:  Call     RemoveNpc   	( .Npc:Self )
+  278:  Return
+  280:  End
+
+#new:Script $Script_Init_802420D0_jan_10
+    0:  If  *StoryProgress  ==  0000000F 
+   10:  	Exec     $Script_80241DD0_jan_10 
+   1C:  	If  *Flag_JAN_12  ==  00000000 
+   2C:  		Call     SetNpcAnimation 	( .Npc:Self 00970106 )
+   40:  		Call     SetNpcYaw   	( .Npc:Self 0000005A )
+   54:  		Call     SetNpcPos   	( .Npc:Self FFFFFE3E 00000000 00000046 )
+   70:  		Call     BindNpcInteract 	( .Npc:Self $Script_80241E48_jan_10 )
+   84:  		Return
+   8C:  	EndIf
+   94:  EndIf
+   9C:  Call     RemoveNpc   	( .Npc:Self )
+   AC:  Return
+   B4:  End
+

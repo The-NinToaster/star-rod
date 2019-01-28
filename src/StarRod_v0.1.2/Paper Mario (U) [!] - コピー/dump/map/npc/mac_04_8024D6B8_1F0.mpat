@@ -1,0 +1,44 @@
+% automatically dumped from map mac_04
+
+#new:Npc $mac_04_8024D6B8_1F0
+00000013 $NpcSettings_80243F0C_mac_04 00000000 00000000 00000000 
+00002D09 $Script_Init_8024B1B4_mac_04 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+009E0001 009E0005 009E0007 009E0007 009E0001 009E0001 009E0000 009E0000 
+009E0007 009E0007 009E0007 009E0007 009E0007 009E0007 009E0007 009E0007 
+00000000 00000000 00000000 001A0067 % She's my sister, Goombaria. She's a spoiled girl,  ...
+
+#new:NpcSettings $NpcSettings_80243F0C_mac_04
+00000000 00160018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024B064_mac_04
+    0:  Call     GetCurrentPartner 	( *Var[0] )
+   10:  If  *Var[0]  ==  00000001 
+   20:  	Call     DisablePartnerAI 	( 00000001 )
+   30:  	If  *AreaFlag[030]  ==  00000000 
+   40:  		Call     SayMessage0 	( .Npc:Self 009E000B 009E0001 00000000 000600C1 ) % Mario... Please take good care of my brother, OK?
+   60:  		Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000600C2 ) % Come on, we're in a hurry,  Goombaria! Seriously!  ...
+   80:  		Call     SayMessage0 	( .Npc:Self 009E000B 009E0001 00000000 000600C3 ) % Be quiet!
+   A0:  		Set  *AreaFlag[030]  00000001 
+   B0:  	Else
+   B8:  		Call     SayMessage0 	( .Npc:Self 009E000B 009E0001 00000000 000600C4 ) % Bye, Mario! Good luck! Take care, Goombario!
+   D8:  	EndIf
+   E0:  	Call     EnablePartnerAI 	( )
+   EC:  Else
+   F4:  	Call     SayMessage0 	( .Npc:Self 009E000B 009E0001 00000000 000600C0 ) % Mario! Nice to see you again! How's my brother doi ...
+  114:  EndIf
+  11C:  Return
+  124:  End
+
+#new:Script $Script_Init_8024B1B4_mac_04
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024B064_mac_04 )
+   14:  Return
+   1C:  End
+

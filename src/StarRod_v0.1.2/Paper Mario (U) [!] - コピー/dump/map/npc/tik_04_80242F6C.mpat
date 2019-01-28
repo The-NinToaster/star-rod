@@ -1,0 +1,82 @@
+% automatically dumped from map tik_04
+
+#new:Npc $tik_04_80242F6C
+00000000 $NpcSettings_80242D00_tik_04 00000000 00000000 00000000 
+00000400 $Script_Init_80242F48_tik_04 00000000 00000000 0000010E 
+{Items:20:DizzyDial:5:SleepySheep:5}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:1:2}
+00000000 00000000 00000000 0000001E 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 000000C8 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00270101 00270103 00270103 00270103 00270103 00270101 00270105 00270105 
+00270100 00270100 00270100 00270100 00270100 00270100 00270100 00270100 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:AISettings $AISettings_80242CB0_tik_04
+    2.2 % move speed
+    0` % move time
+    0` % wait time
+   70.0 % alert radius
+    0.0
+    1`
+    3.2 % chase speed
+    15`
+    1`
+   90.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80242CE0_tik_04
+    0:  Call     DoBasicAI   	( $AISettings_80242CB0_tik_04 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80242D00_tik_04
+00000000 00170017 00000000 00000000 $Script_NpcAI_80242CE0_tik_04 80077F70 00000000 8007809C 
+00000000 00000000 000C0000 
+
+#new:Script $Script_80242D2C_tik_04
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     SetNpcPos   	( .Npc:Self 00000118 FFFFFFF6 00000000 )
+   44:  	Case  ==  00000001 
+   50:  		Call     BindNpcAI   	( .Npc:Self $Script_NpcAI_80242CE0_tik_04 )
+   64:  		Return
+   6C:  	Case  ==  00000002 
+   78:  		Call     SetNpcPos   	( .Npc:Self 00000118 FFFFFFF6 00000000 )
+   94:  	Case  ==  00000003 
+   A0:  		Call     SetNpcPos   	( .Npc:Self 00000168 FFFFFFF6 00000000 )
+   BC:  EndSwitch
+   C4:  Label    00000064 
+   D0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   E8:  If  *Var[0]  <  FFFFFFE2 
+   F8:  	Wait     00000001 
+  104:  	Goto     00000064 
+  110:  EndIf
+  118:  Call     SetNpcAnimation 	( .Npc:Self 00270103 )
+  12C:  Call     SetNpcFlagBits ( .Npc:Self 00000028 .False )
+  144:  Call     SetNpcFlagBits ( .Npc:Self 00000200 .True )
+  15C:  Call     SetNpcSpeed 	( .Npc:Self 00000002 )
+  170:  Call     GetOwnerNpcID 	( *Var[0] )
+  180:  If  *Var[0]  ==  00000000 
+  190:  	Call     MoveNpcTo   	( .Npc:Self 00000037 00000000 00000000 )
+  1AC:  Else
+  1B4:  	Wait     0000000E 
+  1C0:  	Call     MoveNpcTo   	( .Npc:Self 0000003C 00000000 00000000 )
+  1DC:  EndIf
+  1E4:  Call     SetNpcAnimation 	( .Npc:Self 00270101 )
+  1F8:  Call     BindNpcAI   	( .Npc:Self $Script_NpcAI_80242CE0_tik_04 )
+  20C:  Return
+  214:  End
+
+#new:Script $Script_Init_80242F48_tik_04
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_80242D2C_tik_04 )
+   14:  Return
+   1C:  End
+

@@ -1,0 +1,69 @@
+% automatically dumped from map mac_02
+
+#new:Npc $mac_02_8024CB48_BA0
+00000006 $NpcSettings_80245F90_mac_02 00000000 00000000 00000000 
+00002D09 $Script_Init_8024C3A4_mac_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000064 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 0000000A 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00860301 00860302 00860303 00860303 00860301 00860301 00860300 00860300 
+00860300 00860300 00860300 00860300 00860300 00860300 00860300 00860300 
+00000000 00000000 00000000 001A0038 % He always talks about what he wants to be when he  ...
+
+#new:AISettings $AISettings_80245F40_mac_02
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80245F70_mac_02
+    0:  Call     DoBasicAI   	( $AISettings_80245F40_mac_02 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80245F90_mac_02
+00000000 001E0018 00000000 00000000 $Script_NpcAI_80245F70_mac_02 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024C29C_mac_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFCB 
+   18:  		Set  *Var[0]  00040064 
+   28:  	Case  <  FFFFFFF1 
+   34:  		Set  *Var[0]  00040065 
+   44:  	Case  <  00000007 
+   50:  		Set  *Var[0]  00040066 
+   60:  	Case  <  00000027 
+   6C:  		Set  *Var[0]  00040067 
+   7C:  	Case  <  00000039 
+   88:  		Set  *Var[0]  00040068 
+   98:  	Case  <  00000059 
+   A4:  		Set  *Var[0]  00040069 
+   B4:  	Case  <  00000060 
+   C0:  		Set  *Var[0]  0004006A 
+   D0:  EndSwitch
+   D8:  Call     SayMessage0 	( 00000006 00860304 00860301 00000000 *Var[0] ) % variable string ID
+   F8:  Return
+  100:  End
+
+#new:Script $Script_Init_8024C3A4_mac_02
+    0:  If  *StoryProgress  <  FFFFFFB5 
+   10:  	Call     RemoveNpc   	( .Npc:Self )
+   20:  Else
+   28:  	Call     BindNpcInteract 	( .Npc:Self $Script_8024C29C_mac_02 )
+   3C:  EndIf
+   44:  Return
+   4C:  End
+

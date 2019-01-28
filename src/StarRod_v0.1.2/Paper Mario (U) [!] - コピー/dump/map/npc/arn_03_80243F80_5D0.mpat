@@ -1,0 +1,49 @@
+% automatically dumped from map arn_03
+
+#new:Npc $arn_03_80243F80_5D0
+00000008 $NpcSettings_80241C3C_arn_03 00000000 00000000 00000000 
+00402705 $Script_Init_80243F44_arn_03 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00950101 00950102 00950103 00950103 00950101 00950101 00950100 00950100 
+0095010A 00950103 00950103 00950103 00950103 00950103 00950103 00950103 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80241C3C_arn_03
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80243D28_arn_03
+    0:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   1C:  Set  *Var[3]  *Var[0] 
+   2C:  Add  *Var[3]  FFFFFFC4 
+   3C:  Set  *Var[4]  *Var[0] 
+   4C:  Add  *Var[4]  0000003C 
+   5C:  Loop     
+   68:  	Call     RandInt     	( 00000005 *Var[5] )
+   7C:  	SetF  *Var[6]  *Var[5] 
+   8C:  	MulF  *Var[6]  *Fixed[0.10058594] 
+   9C:  	AddF  *Var[6]  *Fixed[0.80078125] 
+   AC:  	Call     SetNpcSpeed 	( .Npc:Self *Var[6] )
+   C0:  	Call     MoveNpcTo   	( .Npc:Self *Var[3] *Var[2] 00000000 )
+   DC:  	Call     RandInt     	( 00000005 *Var[5] )
+   F0:  	SetF  *Var[6]  *Var[5] 
+  100:  	MulF  *Var[6]  *Fixed[0.10058594] 
+  110:  	AddF  *Var[6]  *Fixed[0.80078125] 
+  120:  	Call     SetNpcSpeed 	( .Npc:Self *Var[6] )
+  134:  	Call     MoveNpcTo   	( .Npc:Self *Var[4] *Var[2] 00000000 )
+  150:  EndLoop
+  158:  Return
+  160:  End
+
+#new:Script $Script_Init_80243F44_arn_03
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_80243D28_arn_03 )
+   14:  Call     SetNpcFlagBits ( .Npc:Self 00000010 .False )
+   2C:  Return
+   34:  End
+

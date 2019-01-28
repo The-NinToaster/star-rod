@@ -1,0 +1,904 @@
+24-000
+A flower that burns all enemies [BR]
+with fireballs. Attack Power: 3[END]
+
+24-001
+A snowman that crushes all[BR]
+enemies. Attack Power: 4[END]
+
+24-002
+Lightning that strikes all[BR]
+enemies. Attack Power: 5[END]
+
+24-003
+Lightning that strikes an enemy.[BR]
+Attack Power: 5[END]
+
+24-004
+Shooting stars that hit all[BR]
+enemies. Attack Power: 6[END]
+
+24-005
+A dusty old Hammer. Throw it to[BR]
+damage an enemy.[END]
+
+24-006
+A common pebble. Throw it to[BR]
+damage an enemy.[END]
+
+24-007
+Turns Mario to stone and makes[BR]
+him unable to move for a while. [END]
+
+24-008
+Electrifies Mario briefly and[BR]
+damages enemies who touch him.[END]
+
+24-009
+A regular Mushroom. Restores[BR]
+5 HP.[END]
+
+24-00A
+A truly super Mushroom.[BR]
+Restores 10 HP.[END]
+
+24-00B
+An ultra-fine Mushroom. Restores[BR]
+50 HP.[END]
+
+24-00C
+A life-giving Mushroom. Restores[BR]
+10 HP when Mario's HP hits 0.[END]
+
+24-00D
+A very dry Mushroom. Restores[BR]
+1 HP.[END]
+
+24-00E
+A very tasty tonic. Cures[BR]
+poisoning and shrinking.[END]
+
+24-00F
+A bubbly soda. Cures shrinking or[BR]
+poisoning and restores 5 FP.[END]
+
+24-010
+no data[END]
+
+24-011
+no data[END]
+
+24-012
+no data[END]
+
+24-013
+no data[END]
+
+24-014
+no data[END]
+
+24-015
+no data[END]
+
+24-016
+Sweet honey syrup. Restores[BR]
+5 FP.[END]
+
+24-017
+Delicious maple syrup. Restores[BR]
+10 FP.[END]
+
+24-018
+A highly nutritious snack.[BR]
+Restores 50 FP.[END]
+
+24-019
+no data[END]
+
+24-01A
+no data[END]
+
+24-01B
+no data[BR]
+[END]
+
+24-01C
+no data[END]
+
+24-01D
+Pasta from Dry Dry Outpost.[BR]
+Restores 3 HP and 2 FP.[END]
+
+24-01E
+no data[END]
+
+24-01F
+no data[END]
+
+24-020
+no data[BR]
+[END]
+
+24-021
+no data[END]
+
+24-022
+no data[END]
+
+24-023
+no data[END]
+
+24-024
+no data[END]
+
+24-025
+no data[END]
+
+24-026
+If it works, makes all enemies [BR]
+sleep for a little while.[END]
+
+24-027
+Flips shell enemies and inflicts[BR]
+2 damage points on all enemies.[END]
+
+24-028
+If it works, paralyzes all[BR]
+enemies for a short time.[END]
+
+24-029
+If it works, dazes and paralyzes[BR]
+all enemies briefly.[BR]
+[END]
+
+24-02A
+Makes a scary spirit appear and[BR]
+chase some enemies away.[END]
+
+24-02B
+Who knows what it does... Take a[BR]
+chance to find out![END]
+
+24-02C
+Makes Mario transparent and[BR]
+invulnerable for a short time. [END]
+
+24-02D
+nothing[END]
+
+24-02E
+nothing[END]
+
+24-02F
+nothing[END]
+
+24-030
+nothing[END]
+
+24-031
+nothing[END]
+
+24-032
+nothing[END]
+
+24-033
+nothing[END]
+
+24-034
+nothing[END]
+
+24-035
+nothing[END]
+
+24-036
+nothing[END]
+
+24-037
+nothing[END]
+
+24-038
+nothing[END]
+
+24-039
+nothing[END]
+
+24-03A
+nothing[END]
+
+24-03B
+nothing[END]
+
+24-03C
+nothing[END]
+
+24-03D
+nothing[END]
+
+24-03E
+nothing[END]
+
+24-03F
+nothing[END]
+
+24-040
+nothing[END]
+
+24-041
+nothing[END]
+
+24-042
+nothing[END]
+
+24-043
+nothing[END]
+
+24-044
+nothing[END]
+
+24-045
+nothing[END]
+
+24-046
+nothing[END]
+
+24-047
+nothing[END]
+
+24-048
+nothing[END]
+
+24-049
+nothing[END]
+
+24-04A
+nothing[END]
+
+24-04B
+nothing[END]
+
+24-04C
+nothing[END]
+
+24-04D
+nothing[END]
+
+24-04E
+nothing[END]
+
+24-04F
+nothing[END]
+
+24-050
+nothing[END]
+
+24-051
+nothing[END]
+
+24-052
+nothing[END]
+
+24-053
+nothing[END]
+
+24-054
+nothing[END]
+
+24-055
+nothing[END]
+
+24-056
+nothing[END]
+
+24-057
+nothing[END]
+
+24-058
+Mario stomps on a single enemy[BR]
+using a lot of attack power.[END]
+
+24-059
+Mario stomps on a single enemy[BR]
+using tons of attack power.[END]
+
+24-05A
+When charged, Mario's Jump[BR]
+power goes up by 2.[END]
+
+24-05B
+When supercharged, Mario's Jump[BR]
+power goes up by 3.[END]
+
+24-05C
+If it works, the enemy Mario[BR]
+jumps on falls asleep for a bit.[END]
+
+24-05D
+If it works, the enemy Mario [BR]
+jumps on becomes dizzy.[END]
+
+24-05E
+Jumps on all enemies in a row if[BR]
+action command is timed right.[END]
+
+24-05F
+If it works, the enemy shrinks.[BR]
+Its attack power decreases.[END]
+
+24-060
+Disables an enemy's defense[BR]
+power and causes some damage.[END]
+
+24-061
+Jumps on one enemy continuously [BR]
+until you miss an action command.[END]
+
+24-062
+Hammers an enemy using lots of[BR]
+attack power.[END]
+
+24-063
+Hammers an enemy with a huge[BR]
+amount of attack power.[END]
+
+24-064
+When charged, Mario's Hammer[BR]
+power goes up by 2.[END]
+
+24-065
+When supercharged, Mario's [BR]
+Hammer power goes up by 3.[END]
+
+24-066
+Hits one enemy with the Hammer,[BR]
+no matter where the enemy is. [END]
+
+24-067
+If it works, the enemy shrinks.[BR]
+Its attack power decreases.[END]
+
+24-068
+If Mario hits an enemy, it[BR]
+smashes into the ones behind it.[END]
+
+24-069
+Disables an enemy's defense[BR]
+power and injures it.[END]
+
+24-06A
+Slightly damages all enemies [BR]
+on the ground or ceiling.[END]
+
+24-06B
+Greatly damages all enemies [BR]
+on the ground or ceiling.[END]
+
+24-06C
+Severely damages all enemies[BR]
+on the ground or ceiling.[END]
+
+24-06D
+During battle, lets you use two[BR]
+items during one turn.[END]
+
+24-06E
+During battle, lets you use three[BR]
+items during one turn.[END]
+
+24-06F
+Lets Mario's party members use[BR]
+the Focus command as well.[END]
+
+24-070
+Changes your party member and[BR]
+attacks with it on that turn.[END]
+
+24-071
+Increases maximum HP by 5.[END]
+
+24-072
+Increases maximum FP by 5.[END]
+
+24-073
+Increases Mario's Jump and[BR]
+Hammer attack powers by 1.[END]
+
+24-074
+Decreases the damage that[BR]
+Mario takes by 1.[END]
+
+24-075
+If you do the action command,[BR]
+decreases Mario's damage by 1.[END]
+
+24-076
+Increases attack power by 1.[BR]
+Decreases defense power by 1.[END]
+
+24-077
+Decreases attack power by 1.[BR]
+Increases defense power by 1.[END]
+
+24-078
+Decreases Mario's attack power [BR]
+by 1. Restores 1 HP per turn.[END]
+
+24-079
+Restores HP automatically during[BR]
+battle at a slow rate.[END]
+
+24-07A
+Restores FP automatically during[BR]
+battle at a slow rate.[END]
+
+24-07B
+During battle, saves 1 FP every[BR]
+time you attack. [END]
+
+24-07C
+After beating an enemy, makes[BR]
+more hearts appear than usual.[END]
+
+24-07D
+After beating an enemy, makes [BR]
+more flowers appear than usual.[END]
+
+24-07E
+When using Focus, charges Star[BR]
+Energy more than usual.[END]
+
+24-07F
+Lets Mario jump on a spiked[BR]
+enemy without taking damage.[END]
+
+24-080
+Makes the action command work[BR]
+more frequently.[END]
+
+24-081
+Makes enemies fail to attack[BR]
+Mario every once in a while.[END]
+
+24-082
+Sometimes makes enemies fail to[BR]
+attack Mario.[END]
+
+24-083
+When Mario's in Danger, enemies[BR]
+sometimes fail to attack.[END]
+
+24-084
+When Mario's in Danger, his[BR]
+attack power increases by 2.[END]
+
+24-085
+When Mario's in Danger, he[BR]
+receives only half the damage.[END]
+
+24-086
+When Mario's in Peril, his[BR]
+attack power goes up by 4.   [END]
+
+24-087
+Lets Mario destroy a weaker [BR]
+enemy with a First Strike.  [END]
+
+24-088
+Lets Mario destroy a weaker[BR]
+enemy in the field by hitting it.[END]
+
+24-089
+Lets Mario destroy a weaker[BR]
+enemy with a spinning move.[END]
+
+24-08A
+Delivers a blow that makes an[BR]
+enemy dizzy and unable to move.[END]
+
+24-08B
+Increases the distance Mario[BR]
+can Spin Dash.[END]
+
+24-08C
+Protects Mario from poisoning[BR]
+and dizziness during attack.[END]
+
+24-08D
+Changes the sound effects when[BR]
+Mario's attacking.[END]
+
+24-08E
+Changes the sound effects when[BR]
+Mario's attacking.[END]
+
+24-08F
+Changes the sound effects when[BR]
+Mario's attacking.[END]
+
+24-090
+Changes the sound effects when[BR]
+Mario's attacking.[END]
+
+24-091
+Changes the sound effects when[BR]
+Mario's attacking.[END]
+
+24-092
+Changes the sound effects[BR]
+when Mario's attacking.[END]
+
+24-093
+If the action command works,[BR]
+attack power +1. If not, it's 0.[END]
+
+24-094
+Makes Mario unable to run. His[BR]
+pace becomes very slow.[END]
+
+24-095
+Increases attack power against[BR]
+fire enemies by 2.  [END]
+
+24-096
+The more damage Mario takes,[BR]
+the more coins he receives.[END]
+
+24-097
+Makes the damage Mario takes[BR]
+from fire attacks go down by 1.[END]
+
+24-098
+Keeps you from being hit by a[BR]
+First Strike.[END]
+
+24-099
+In battle, makes most enemies[BR]
+who touch Mario take damage.  [END]
+
+24-09A
+After a battle, lets Mario get[BR]
+twice as many coins as usual.[END]
+
+24-09B
+Makes the action command work[BR]
+every time Mario attacks.[END]
+
+24-09C
+Lets Mario earn Star Points[BR]
+even if he escapes from battle. [END]
+
+24-09D
+Refunds some coins if you use an[BR]
+item in battle.[END]
+
+24-09E
+A sound and icon alert you to a[BR]
+nearby hidden panel.[END]
+
+24-09F
+Makes it possible to see your[BR]
+enemy's HP.[END]
+
+24-0A0
+no data[END]
+
+24-0A1
+no data[END]
+
+24-0A2
+no data[END]
+
+24-0A3
+no data[END]
+
+24-0A4
+no data[END]
+
+24-0A5
+no data[END]
+
+24-0A6
+no data[END]
+
+24-0A7
+nothing[END]
+
+24-0A8
+nothing[END]
+
+24-0A9
+nothing[END]
+
+24-0AA
+nothing[END]
+
+24-0AB
+nothing[END]
+
+24-0AC
+nothing[END]
+
+24-0AD
+nothing[END]
+
+24-0AE
+nothing[END]
+
+24-0AF
+nothing[END]
+
+24-0B0
+nothing[END]
+
+24-0B1
+nothing[END]
+
+24-0B2
+nothing[END]
+
+24-0B3
+nothing[END]
+
+24-0B4
+nothing[END]
+
+24-0B5
+nothing[END]
+
+24-0B6
+nothing[END]
+
+24-0B7
+nothing[END]
+
+24-0B8
+nothing[END]
+
+24-0B9
+nothing[END]
+
+24-0BA
+nothing[END]
+
+24-0BB
+nothing[END]
+
+24-0BC
+nothing[END]
+
+24-0BD
+nothing[END]
+
+24-0BE
+nothing[END]
+
+24-0BF
+nothing[END]
+
+24-0C0
+nothing[END]
+
+24-0C1
+nothing[END]
+
+24-0C2
+nothing[END]
+
+24-0C3
+nothing[END]
+
+24-0C4
+nothing[END]
+
+24-0C5
+nothing[END]
+
+24-0C6
+nothing[END]
+
+24-0C7
+nothing[END]
+
+24-0C8
+nothing[END]
+
+24-0C9
+nothing[END]
+
+24-0CA
+nothing[END]
+
+24-0CB
+nothing[END]
+
+24-0CC
+nothing[END]
+
+24-0CD
+nothing[END]
+
+24-0CE
+nothing[END]
+
+24-0CF
+nothing[END]
+
+24-0D0
+nothing[END]
+
+24-0D1
+nothing[END]
+
+24-0D2
+nothing[END]
+
+24-0D3
+nothing[END]
+
+24-0D4
+nothing[END]
+
+24-0D5
+nothing[END]
+
+24-0D6
+nothing[END]
+
+24-0D7
+nothing[END]
+
+24-0D8
+no data[END]
+
+24-0D9
+no data[END]
+
+24-0DA
+no data[END]
+
+24-0DB
+no data[END]
+
+24-0DC
+no data[END]
+
+24-0DD
+no data[END]
+
+24-0DE
+no data[END]
+
+24-0DF
+no data[END]
+
+24-0E0
+no data[END]
+
+24-0E1
+no data[END]
+
+24-0E2
+no data[END]
+
+24-0E3
+no data[END]
+
+24-0E4
+no data[END]
+
+24-0E5
+no data[END]
+
+24-0E6
+no data[END]
+
+24-0E7
+no data[END]
+
+24-0E8
+no data[END]
+
+24-0E9
+no data[END]
+
+24-0EA
+no data[END]
+
+24-0EB
+no data[END]
+
+24-0EC
+no data[END]
+
+24-0ED
+no data[END]
+
+24-0EE
+no data[END]
+
+24-0EF
+no data[END]
+
+24-0F0
+no data[END]
+
+24-0F1
+no data[END]
+
+24-0F2
+no data[END]
+
+24-0F3
+no data[END]
+
+24-0F4
+no data[END]
+
+24-0F5
+no data[END]
+
+24-0F6
+no data[END]
+
+24-0F7
+no data[END]
+
+24-0F8
+no data[END]
+
+24-0F9
+no data[END]
+
+24-0FA
+no data[END]
+
+24-0FB
+no data[END]
+
+24-0FC
+no data[END]
+
+24-0FD
+no data[END]
+
+24-0FE
+no data[END]
+
+24-0FF
+no data[END]
+
+24-100
+no data[END]
+
+24-101
+no data[END]
+
+24-102
+no data[END]
+
+24-103
+none[END]
+
+24-104
+none[END]
+
+24-105
+none[END]
+
+24-106
+none[END]
+
+24-107
+none[END]
+
+24-108
+none[END]
+
+24-109
+none[END]
+
+24-10A
+none[END]
+
+24-10B
+none[END]
+

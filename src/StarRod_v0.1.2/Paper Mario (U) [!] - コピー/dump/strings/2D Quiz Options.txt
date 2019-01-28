@@ -1,0 +1,384 @@
+2D-000
+[STYLE:CHOICE:64:46:78:3E]{DelayOff}{Cursor:00}{Option:00}Goombette[BR]
+{Cursor:01}{Option:01}Goombalina[BR]
+{Cursor:02}{Option:02}Goombaria[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-001
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}Red[BR]
+{Cursor:01}{Option:01}Yellow[BR]
+{Cursor:02}{Option:02}Gray[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-002
+[STYLE:CHOICE:72:46:5C:3E]{DelayOff}{Cursor:00}{Option:00}Jump[BR]
+{Cursor:01}{Option:01}Tattle[BR]
+{Cursor:02}{Option:02}Dive[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-003
+[STYLE:CHOICE:56:46:94:3E]{DelayOff}{Cursor:00}{Option:00}Blue and White[BR]
+{Cursor:01}{Option:01}Red and Blue[BR]
+{Cursor:02}{Option:02}Red and White[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-004
+[STYLE:CHOICE:62:46:7C:3E]{DelayOff}{Cursor:00}{Option:00}Jump[BR]
+{Cursor:01}{Option:01}Item[BR]
+{Cursor:02}{Option:02}Strategies[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-005
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}One[BR]
+{Cursor:01}{Option:01}Two[BR]
+{Cursor:02}{Option:02}Three[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-006
+[STYLE:CHOICE:5F:46:82:3E]{DelayOff}{Cursor:00}{Option:00}Dr. Goomba[BR]
+{Cursor:01}{Option:01}Big Goom[BR]
+{Cursor:02}{Option:02}Goomba King[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-007
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}Blue[BR]
+{Cursor:01}{Option:01}Green[BR]
+{Cursor:02}{Option:02}Yellow[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-008
+[STYLE:CHOICE:79:46:4E:3E]{DelayOff}{Cursor:00}{Option:00}Four[BR]
+{Cursor:01}{Option:01}Five[BR]
+{Cursor:02}{Option:02}Six[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-009
+[STYLE:CHOICE:63:46:7A:3E]{DelayOff}{Cursor:00}{Option:00}It's me[HEART][BR]
+{Cursor:01}{Option:01}Star Piece[BR]
+{Cursor:02}{Option:02}Mushroom[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-00A
+[STYLE:CHOICE:6A:46:6C:3E]{DelayOff}{Cursor:00}{Option:00}Russ T.[BR]
+{Cursor:01}{Option:01}Smarr T.[BR]
+{Cursor:02}{Option:02}Toace T.[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-00B
+[STYLE:CHOICE:79:46:4E:3E]{DelayOff}{Cursor:00}{Option:00}Four[BR]
+{Cursor:01}{Option:01}Five[BR]
+{Cursor:02}{Option:02}Six[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-00C
+[STYLE:CHOICE:4D:46:A6:3E]{DelayOff}{Cursor:00}{Option:00}Red Ninjakoopa[BR]
+{Cursor:01}{Option:01}Blue Ninjakoopa[BR]
+{Cursor:02}{Option:02}Black Ninjakoopa[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-00D
+[STYLE:CHOICE:70:46:60:3E]{DelayOff}{Cursor:00}{Option:00}2 coins[BR]
+{Cursor:01}{Option:01}4 coins[BR]
+{Cursor:02}{Option:02}8 coins[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-00E
+[STYLE:CHOICE:3E:46:C4:3E]{DelayOff}{Cursor:00}{Option:00}Shooting Star Summit[BR]
+{Cursor:01}{Option:01}Toad Town[BR]
+{Cursor:02}{Option:02}Bowser's Castle[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-00F
+[STYLE:CHOICE:67:46:72:3E]{DelayOff}{Cursor:00}{Option:00}Goombario[BR]
+{Cursor:01}{Option:01}Kooper[BR]
+{Cursor:02}{Option:02}Bombette[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-010
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}Red[BR]
+{Cursor:01}{Option:01}Green[BR]
+{Cursor:02}{Option:02}Yellow[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-011
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}One[BR]
+{Cursor:01}{Option:01}Five[BR]
+{Cursor:02}{Option:02}Seven[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-012
+[STYLE:CHOICE:61:46:7E:3E]{DelayOff}{Cursor:00}{Option:00}Koopa Krab[BR]
+{Cursor:01}{Option:01}Koopa Koot[BR]
+{Cursor:02}{Option:02}Old Koop[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-013
+[STYLE:CHOICE:72:46:5C:3E]{DelayOff}{Cursor:00}{Option:00}Four[BR]
+{Cursor:01}{Option:01}Eight[BR]
+{Cursor:02}{Option:02}Twelve[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-014
+[STYLE:CHOICE:57:46:92:3E]{DelayOff}{Cursor:00}{Option:00}Koopa Village[BR]
+{Cursor:01}{Option:01}Toad Town[BR]
+{Cursor:02}{Option:02}Goomba Village[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-015
+[STYLE:CHOICE:57:46:92:3E]{DelayOff}{Cursor:00}{Option:00}Goomba Village[BR]
+{Cursor:01}{Option:01}Koopa Village[BR]
+{Cursor:02}{Option:02}Mt. Rugged[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-016
+[STYLE:CHOICE:6B:46:6A:3E]{DelayOff}{Cursor:00}{Option:00}Merlow[BR]
+{Cursor:01}{Option:01}Rowf[BR]
+{Cursor:02}{Option:02}Kolorado[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-017
+[STYLE:CHOICE:53:46:9A:3E]{DelayOff}{Cursor:00}{Option:00}Star Rod[BR]
+{Cursor:01}{Option:01}Twink[BR]
+{Cursor:02}{Option:02}Princess Peach[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-018
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}Red[BR]
+{Cursor:01}{Option:01}Yellow[BR]
+{Cursor:02}{Option:02}Blue[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-019
+[STYLE:CHOICE:62:46:7C:3E]{DelayOff}{Cursor:00}{Option:00}Mario[BR]
+{Cursor:01}{Option:01}Kolorado[BR]
+{Cursor:02}{Option:02}Koopa Koot[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-01A
+[STYLE:CHOICE:53:46:9A:3E]{DelayOff}{Cursor:00}{Option:00}Fortune-telling[BR]
+{Cursor:01}{Option:01}Casting spells[BR]
+{Cursor:02}{Option:02}Cooking[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-01B
+[STYLE:CHOICE:5D:46:86:3E]{DelayOff}{Cursor:00}{Option:00}Mummy Man[BR]
+{Cursor:01}{Option:01}Moustafa[BR]
+{Cursor:02}{Option:02}Pokey Mummy[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-01C
+[STYLE:CHOICE:70:46:60:3E]{DelayOff}{Cursor:00}{Option:00}Cards[BR]
+{Cursor:01}{Option:01}Coins[BR]
+{Cursor:02}{Option:02}Badges[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-01D
+[STYLE:CHOICE:67:46:72:3E]{DelayOff}{Cursor:00}{Option:00}Kolorado[BR]
+{Cursor:01}{Option:01}Moustafa[BR]
+{Cursor:02}{Option:02}Goombario[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-01E
+[STYLE:CHOICE:63:46:7A:3E]{DelayOff}{Cursor:00}{Option:00}Star Piece[BR]
+{Cursor:01}{Option:01}Cake Mix[BR]
+{Cursor:02}{Option:02}Mushroom[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-01F
+[STYLE:CHOICE:63:46:7A:3E]{DelayOff}{Cursor:00}{Option:00}Jr. Troopa[BR]
+{Cursor:01}{Option:01}Oaklie[BR]
+{Cursor:02}{Option:02}Cleft[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-020
+[STYLE:CHOICE:6F:46:62:3E]{DelayOff}{Cursor:00}{Option:00}Ghosts[BR]
+{Cursor:01}{Option:01}Thieves[BR]
+{Cursor:02}{Option:02}Sheets[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-021
+[STYLE:CHOICE:6A:46:6C:3E]{DelayOff}{Cursor:00}{Option:00}Heart[BR]
+{Cursor:01}{Option:01}Mushroom[BR]
+{Cursor:02}{Option:02}Bump[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-022
+[STYLE:CHOICE:6E:46:64:3E]{DelayOff}{Cursor:00}{Option:00}Coconut[BR]
+{Cursor:01}{Option:01}Apple[BR]
+{Cursor:02}{Option:02}Lime[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-023
+[STYLE:CHOICE:60:46:80:3E]{DelayOff}{Cursor:00}{Option:00}Rat Cheepa[BR]
+{Cursor:01}{Option:01}Diz Onnest[BR]
+{Cursor:02}{Option:02}Chet Rippo[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-024
+[STYLE:CHOICE:74:46:58:3E]{DelayOff}{Cursor:00}{Option:00}Sing[BR]
+{Cursor:01}{Option:01}Dance[BR]
+{Cursor:02}{Option:02}Bomb[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-025
+[STYLE:CHOICE:66:46:74:3E]{DelayOff}{Cursor:00}{Option:00}Cake[BR]
+{Cursor:01}{Option:01}Mushrooms[BR]
+{Cursor:02}{Option:02}Kooper[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-026
+[STYLE:CHOICE:63:46:7A:3E]{DelayOff}{Cursor:00}{Option:00}Bombette[BR]
+{Cursor:01}{Option:01}Kooper[BR]
+{Cursor:02}{Option:02}Parakarry[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-027
+[STYLE:CHOICE:5E:46:84:3E]{DelayOff}{Cursor:00}{Option:00}Pokey[BR]
+{Cursor:01}{Option:01}Bandit[BR]
+{Cursor:02}{Option:02}Nomadimouse[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-028
+[STYLE:CHOICE:6A:46:6C:3E]{DelayOff}{Cursor:00}{Option:00}Eldstar[BR]
+{Cursor:01}{Option:01}Muskular[BR]
+{Cursor:02}{Option:02}Skolar[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-029
+[STYLE:CHOICE:6A:46:6C:3E]{DelayOff}{Cursor:00}{Option:00}Parcels[BR]
+{Cursor:01}{Option:01}Letters[BR]
+{Cursor:02}{Option:02}Handbills[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-02A
+[STYLE:CHOICE:57:46:92:3E]{DelayOff}{Cursor:00}{Option:00}Shop[BR]
+{Cursor:01}{Option:01}Station[BR]
+{Cursor:02}{Option:02}Mayor's House[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-02B
+[STYLE:CHOICE:66:46:74:3E]{DelayOff}{Cursor:00}{Option:00}Gardening[BR]
+{Cursor:01}{Option:01}Cooking[BR]
+{Cursor:02}{Option:02}Fishing[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-02C
+[STYLE:CHOICE:5C:46:88:3E]{DelayOff}{Cursor:00}{Option:00}Sir Quizzby[BR]
+{Cursor:01}{Option:01}I. Q. Testa[BR]
+{Cursor:02}{Option:02}Chuck Quizmo[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-02D
+[STYLE:CHOICE:3D:46:C6:3E]{DelayOff}{Cursor:00}{Option:00}In towns and villages[BR]
+{Cursor:01}{Option:01}On the street[BR]
+{Cursor:02}{Option:02}In the jail[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-02E
+[STYLE:CHOICE:56:46:94:3E]{DelayOff}{Cursor:00}{Option:00}Trumpet Plant[BR]
+{Cursor:01}{Option:01}Hurt Plant[BR]
+{Cursor:02}{Option:02}Bellbell Plant[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-02F
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}Blue[BR]
+{Cursor:01}{Option:01}Green[BR]
+{Cursor:02}{Option:02}Pink[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-030
+[STYLE:CHOICE:69:46:6E:3E]{DelayOff}{Cursor:00}{Option:00}Merlow[BR]
+{Cursor:01}{Option:01}Merlon[BR]
+{Cursor:02}{Option:02}Merluvlee[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-031
+[STYLE:CHOICE:77:46:52:3E]{DelayOff}{Cursor:00}{Option:00}Six[BR]
+{Cursor:01}{Option:01}Eight[BR]
+{Cursor:02}{Option:02}Ten[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-032
+[STYLE:CHOICE:67:46:72:3E]{DelayOff}{Cursor:00}{Option:00}Easygoing[BR]
+{Cursor:01}{Option:01}Bossy[BR]
+{Cursor:02}{Option:02}Sleepy[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-033
+[STYLE:CHOICE:57:46:92:3E]{DelayOff}{Cursor:00}{Option:00}Shop[BR]
+{Cursor:01}{Option:01}Station[BR]
+{Cursor:02}{Option:02}Merlon's house[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-034
+[STYLE:CHOICE:54:46:98:3E]{DelayOff}{Cursor:00}{Option:00}First-Degree[BR]
+{Cursor:01}{Option:01}Second-Degree[BR]
+{Cursor:02}{Option:02}Third-Degree[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-035
+[STYLE:CHOICE:7B:46:4A:3E]{DelayOff}{Cursor:00}{Option:00}Blue[BR]
+{Cursor:01}{Option:01}Red[BR]
+{Cursor:02}{Option:02}Pink[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-036
+[STYLE:CHOICE:77:46:52:3E]{DelayOff}{Cursor:00}{Option:00}Posie[BR]
+{Cursor:01}{Option:01}Rosie[BR]
+{Cursor:02}{Option:02}Lily[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-037
+[STYLE:CHOICE:68:46:70:3E]{DelayOff}{Cursor:00}{Option:00}Landolaki[BR]
+{Cursor:01}{Option:01}Lakitofu[BR]
+{Cursor:02}{Option:02}Lakilulu[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-038
+[STYLE:CHOICE:5E:46:84:3E]{DelayOff}{Cursor:00}{Option:00}Jump[BR]
+{Cursor:01}{Option:01}Hit a tree[BR]
+{Cursor:02}{Option:02}Hit a switch[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-039
+[STYLE:CHOICE:69:46:6E:3E]{DelayOff}{Cursor:00}{Option:00}Dancer[BR]
+{Cursor:01}{Option:01}Composer[BR]
+{Cursor:02}{Option:02}Pop Diva[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-03A
+[STYLE:CHOICE:74:46:58:3E]{DelayOff}{Cursor:00}{Option:00}Sing[BR]
+{Cursor:01}{Option:01}Dance[BR]
+{Cursor:02}{Option:02}Run[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-03B
+[STYLE:CHOICE:68:46:70:3E]{DelayOff}{Cursor:00}{Option:00}Neighbors[BR]
+{Cursor:01}{Option:01}Friends[BR]
+{Cursor:02}{Option:02}Brothers[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-03C
+[STYLE:CHOICE:6F:46:62:3E]{DelayOff}{Cursor:00}{Option:00}Penguin[BR]
+{Cursor:01}{Option:01}Lakitu[BR]
+{Cursor:02}{Option:02}Ninji[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-03D
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}Seven[BR]
+{Cursor:01}{Option:01}Eight[BR]
+{Cursor:02}{Option:02}Nine[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-03E
+[STYLE:CHOICE:76:46:54:3E]{DelayOff}{Cursor:00}{Option:00}Gleem[BR]
+{Cursor:01}{Option:01}Twink[BR]
+{Cursor:02}{Option:02}Glo[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+
+2D-03F
+[STYLE:CHOICE:75:46:56:3E]{DelayOff}{Cursor:00}{Option:00}Five[BR]
+{Cursor:01}{Option:01}Seven[BR]
+{Cursor:02}{Option:02}Ten[BR]
+{Option:FF}{DelayOn}{EndChoice:03}{Func_04}[END]
+

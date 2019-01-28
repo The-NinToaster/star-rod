@@ -1,0 +1,149 @@
+% automatically dumped from map trd_09
+
+#new:Npc $trd_09_80242240
+0000000A $NpcSettings_80242150_trd_09 00000000 00000000 00000000 
+00242D00 $Script_Init_802421EC_trd_09 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+FFFFFB14 00000000 00000028 00000000 00000000 FFFF8001 00000000 FFFFFB14 
+00000000 00000028 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+002E0001 002E0001 002E0001 002E0001 002E0001 002E0001 002E0003 002E0003 
+002E0001 002E0001 002E0001 002E0001 002E0001 002E0001 002E0001 002E0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240000_trd_09
+    0:  ADDIU     SP, SP, FFD8
+    4:  SW        S3, 1C (SP)
+    8:  DADDU     S3, A0, R0
+    C:  SW        RA, 24 (SP)
+   10:  SW        S4, 20 (SP)
+   14:  SW        S2, 18 (SP)
+   18:  SW        S1, 14 (SP)
+   1C:  SW        S0, 10 (SP)
+   20:  LW        S0, C (S3)
+   24:  LW        S2, 148 (S3)
+   28:  LW        A1, 0 (S0)
+   2C:  JAL       {Func:GetVariable}
+   30:  ADDIU     S0, S0, 4
+   34:  DADDU     S1, V0, R0
+   38:  LW        A1, 0 (S0)
+   3C:  ADDIU     S0, S0, 4
+   40:  JAL       {Func:GetVariable}
+   44:  DADDU     A0, S3, R0
+   48:  DADDU     S4, V0, R0
+   4C:  ADDIU     V0, R0, FFFF
+   50:  BNE       S1, V0, .o5C
+   54:  LW        S0, 0 (S0)
+   58:  LH        S1, 8 (S2)
+        .o5C
+   5C:  JAL       8003ECE8
+   60:  DADDU     A0, S1, R0
+   64:  DADDU     S2, V0, R0
+   68:  BEQ       S2, R0, .o84
+   6C:  DADDU     A0, S3, R0
+   70:  SLL       V0, S4, 2
+   74:  ADDU      V0, S2, V0
+   78:  LW        A2, 6C (V0)
+   7C:  BEQ       R0, R0, .o8C
+   80:  DADDU     A1, S0, R0
+        .o84
+   84:  DADDU     A1, S0, R0
+   88:  ADDIU     A2, R0, FFFF
+        .o8C
+   8C:  JAL       {Func:SetVariable}
+   90:  NOP
+   94:  LW        RA, 24 (SP)
+   98:  LW        S4, 20 (SP)
+   9C:  LW        S3, 1C (SP)
+   A0:  LW        S2, 18 (SP)
+   A4:  LW        S1, 14 (SP)
+   A8:  LW        S0, 10 (SP)
+   AC:  ADDIU     V0, R0, 2
+   B0:  JR        RA
+   B4:  ADDIU     SP, SP, 28
+
+#new:Script $Script_80240820_trd_09
+    0:  Call     SetOwnerFlagBits 	( 00200000 .True )
+   14:  Return
+   1C:  End
+
+#new:Script $Script_80240A48_trd_09
+    0:  Call     80044A38 ( 00000003 )
+   10:  Call     80044600 ( *Var[0] )
+   20:  Switch  *Var[0] 
+   2C:  	Case  ==  00000001 
+   38:  	CaseOR  ==  00000002 
+   44:  	CaseOR  ==  00000004 
+   50:  	CaseOR  ==  00000006 
+   5C:  		Set  *Var[0]  002E0003 
+   6C:  		ExecWait 800936DC 
+   78:  	Case  ==  00000003 
+   84:  		Thread
+   8C:  			Call     800458CC ( *Var[0] )
+   9C:  			If  *Var[0]  ==  00000000 
+   AC:  				Set  *Var[A]  00000000 
+   BC:  				Loop     0000001E 
+   C8:  					Add  *Var[A]  00000028 
+   D8:  					Call     SetNpcRotation ( .Npc:Self 00000000 *Var[A] 00000000 )
+   F4:  					Wait     00000001 
+  100:  				EndLoop
+  108:  			EndIf
+  110:  		EndThread
+  118:  	EndCaseGroup
+  120:  EndSwitch
+  128:  Return
+  130:  End
+
+#new:Script $Script_NpcAI_802419DC_trd_09
+    0:  If  *StoryProgress  <  FFFFFFB1 
+   10:  	Label    00000064 
+   1C:  	Call     GetNpcVar   	( 00000046 00000000 *Var[0] )
+   34:  	If  *Var[0]  ==  00000000 
+   44:  		Wait     00000001 
+   50:  		Goto     00000064 
+   5C:  	EndIf
+   64:  EndIf
+   6C:  Label    00000000 
+   78:  Set  *Var[A]  00000014 
+   88:  Loop     0000000A 
+   94:  	Call     $Function_80240000_trd_09 ( *Var[A] 00000000 *Var[0] )
+   AC:  	If  *Var[0]  ==  00000000 
+   BC:  		Call     GetOwnerNpcID 	( *Var[0] )
+   CC:  		Call     SetNpcVar   	( *Var[A] 00000000 *Var[0] )
+   E4:  		Call     SetNpcAnimation 	( .Npc:Self 002E0002 )
+   F8:  		Wait     0000000F 
+  104:  		Call     SetNpcAnimation 	( .Npc:Self 002E0001 )
+  118:  		Call     RandInt     	( 00000064 *Var[0] )
+  12C:  		Add  *Var[0]  0000003C 
+  13C:  		Wait     *Var[0] 
+  148:  	EndIf
+  150:  	Add  *Var[A]  00000001 
+  160:  EndLoop
+  168:  Wait     00000001 
+  174:  Goto     00000000 
+  180:  Return
+  188:  End
+
+#new:NpcSettings $NpcSettings_80242150_trd_09
+002E0001 001A0020 $Script_80240820_trd_09 00000000 $Script_NpcAI_802419DC_trd_09 $Script_80240A48_trd_09 00000000 00000000 
+00000000 00000000 000A0000 
+
+#new:Script $Script_802421A8_trd_09
+    0:  Call     ModifyColliderFlags 	( 00000000 {Collider:o85} 7FFFFE00 )
+   18:  Set  *Flag_TRD_17  00000001 
+   28:  Call     DoNpcDefeat 	( )
+   34:  Return
+   3C:  End
+
+#new:Script $Script_Init_802421EC_trd_09
+    0:  If  *Flag_TRD_17  ==  00000000 
+   10:  	Call     BindNpcDefeat 	( .Npc:Self $Script_802421A8_trd_09 )
+   24:  Else
+   2C:  	Call     80044478 ( FFFFFFFF )
+   3C:  EndIf
+   44:  Return
+   4C:  End
+

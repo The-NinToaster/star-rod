@@ -1,0 +1,123 @@
+% automatically dumped from map pra_18
+
+#new:Npc $pra_18_80242B90
+00000001 $NpcSettings_80241940_pra_18 00000000 00000000 00000000 
+00500D00 $Script_Init_8024248C_pra_18 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00390102 00390103 00390104 00390104 00390102 00390102 0039010C 0039010C 
+00390111 00390112 00390107 00390108 00390102 00390102 00390102 00390102 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80241940_pra_18
+00000000 0046003C 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241990_pra_18
+    0:  Call     SetOwnerVar 	( 00000000 00000001 )
+   14:  Return
+   1C:  End
+
+#new:Script $Script_802419FC_pra_18
+    0:  Call     SetOwnerVar 	( 00000000 00000002 )
+   14:  Return
+   1C:  End
+
+#new:Script $Script_80241B98_pra_18
+    0:  Loop     
+    C:  	Wait     00000001 
+   18:  	Call     GetOwnerVar 	( 00000000 *Var[0] )
+   2C:  	If  *Var[0]  !=  00000000 
+   3C:  		BreakLoop
+   44:  	EndIf
+   4C:  	Call     GetNpcPos   	( .Npc:Self *Var[3] *Var[4] *Var[5] )
+   68:  	Call     IsPlayerWithin ( *Var[3] *Var[5] 00000050 *Var[0] )
+   84:  	If  *Var[0]  ==  00000001 
+   94:  		BreakLoop
+   9C:  	EndIf
+   A4:  EndLoop
+   AC:  If  *Var[0]  !=  00000002 
+   BC:  	Call     DisablePlayerInput 	( .True )
+   CC:  	Call     SayMessage0 	( .Npc:Self 00390105 00390102 00000000 00120151 ) % I won't let you! I won't and I won't and I won't!  ...
+   EC:  	Call     DisablePlayerInput 	( .False )
+   FC:  EndIf
+  104:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  114:  Return
+  11C:  End
+
+#new:Script $Script_80241DF4_pra_18
+    0:  Wait     00000014 
+    C:  Loop     00000004 
+   18:  	Set  *Var[0]  *Var[A] 
+   28:  	Set  *Var[1]  *Var[B] 
+   38:  	Set  *Var[2]  *Var[C] 
+   48:  	Call     RandInt     	( 00000032 *Var[3] )
+   5C:  	Call     RandInt     	( 00000032 *Var[4] )
+   70:  	Add  *Var[0]  FFFFFFF1 
+   80:  	Add  *Var[0]  *Var[3] 
+   90:  	Add  *Var[1]  *Var[4] 
+   A0:  	Call     PlayEffect  	( {FX:Firework:White} *Var[0] *Var[1] *Var[2] *Fixed[0.80078125] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+   E4:  	Call     PlaySoundAt 	( B0000018 00000000 *Var[0] *Var[1] *Var[2] )
+  104:  	Wait     00000002 
+  110:  	Set  *Var[0]  *Var[A] 
+  120:  	Set  *Var[1]  *Var[B] 
+  130:  	Set  *Var[2]  *Var[C] 
+  140:  	Call     RandInt     	( 00000032 *Var[3] )
+  154:  	Call     RandInt     	( 00000032 *Var[4] )
+  168:  	Add  *Var[0]  FFFFFFF1 
+  178:  	Add  *Var[0]  *Var[3] 
+  188:  	Add  *Var[1]  *Var[4] 
+  198:  	Call     PlayEffect  	( {FX:Firework:White} *Var[0] *Var[1] *Var[2] *Fixed[0.80078125] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  1DC:  	Call     PlaySoundAt 	( B0000018 00000000 *Var[0] *Var[1] *Var[2] )
+  1FC:  	Wait     00000008 
+  208:  EndLoop
+  210:  Return
+  218:  End
+
+#new:Script $Script_80242140_pra_18
+    0:  Thread
+    8:  	Call     DisablePlayerInput 	( .True )
+   18:  	Wait     00000032 
+   24:  	Loop     0000000A 
+   30:  		Wait     00000002 
+   3C:  		Call     802C9308 ( 0000003E 00000001 )
+   50:  		Wait     00000002 
+   5C:  		Call     802C9308 ( 0000003E 00000000 )
+   70:  	EndLoop
+   78:  	Call     ModifyColliderFlags 	( 00000000 {Collider:o1175} 7FFFFE00 )
+   90:  	Set  *Byte_PRA_01  00000002 
+   A0:  	Call     DisablePlayerInput 	( .False )
+   B0:  EndThread
+   B8:  Thread
+   C0:  	Wait     0000001E 
+   CC:  	Set  *Var[A]  000001E0 
+   DC:  	Set  *Var[B]  00000014 
+   EC:  	Set  *Var[C]  FFFFFFB5 
+   FC:  	Exec     $Script_80241DF4_pra_18 
+  108:  EndThread
+  110:  Call     DoNpcDefeat 	( )
+  11C:  Return
+  124:  End
+
+#new:Script $Script_Init_8024248C_pra_18
+    0:  If  *StoryProgress  >=  00000051 
+   10:  	Call     RemoveNpc   	( .Npc:Self )
+   20:  	Return
+   28:  EndIf
+   30:  If  *Byte_PRA_01  >=  00000002 
+   40:  	Call     RemoveNpc   	( .Npc:Self )
+   50:  	Return
+   58:  EndIf
+   60:  Call     BindNpcInteract 	( .Npc:Self $Script_80241990_pra_18 )
+   74:  Call     BindNpcIdle 	( .Npc:Self $Script_80241B98_pra_18 )
+   88:  Call     BindNpcDefeat 	( .Npc:Self $Script_80242140_pra_18 )
+   9C:  Call     BindNpcHit  	( .Npc:Self $Script_802419FC_pra_18 )
+   B0:  Call     SetNpcFlagBits ( .Npc:Self 10000000 .True )
+   C8:  Return
+   D0:  End
+

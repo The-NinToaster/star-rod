@@ -1,0 +1,79 @@
+% automatically dumped from map mim_04
+
+#new:Npc $mim_04_80242B44
+00000000 $NpcSettings_802425E8_mim_04 00000000 00000000 00000000 
+00000801 $Script_Init_802428D8_mim_04 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00990202 0099020E 0099020E 00990202 00990202 00990202 00990202 00990202 
+00990202 00990202 00990202 00990202 00990202 00990202 00990202 00990202 
+00000000 00000000 00000000 001A00A3 % Oh! It's a Bub-ulb. The flower we saw must be the  ...
+
+#new:Script $Script_802425D8_mim_04
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_802425E8_mim_04
+00000000 002A001A $Script_802425D8_mim_04 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80242618_mim_04
+    0:  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+   18:  Return
+   20:  Return
+   28:  End
+
+#new:Script $Script_80242678_mim_04
+    0:  If  *Flag_MIM_06  ==  00000000 
+   10:  	Call     PlaySoundAtNpc ( .Npc:Self 00000321 00000000 )
+   28:  	Call     PlaySoundAtNpc ( .Npc:Self 00000323 00000000 )
+   40:  	Call     SetNpcAnimation 	( .Npc:Self 00990205 )
+   54:  	Wait     0000002D 
+   60:  	Call     SetNpcAnimation 	( .Npc:Self 00990202 )
+   74:  	Call     802CDF8C ( FFFFFFFF 0000002D 0000001A )
+   8C:  	Call     SayMessage0 	( .Npc:Self 00990203 00990202 00000000 000E000F ) % Heey! Hello there! I'm a Bub-ulb from the land cal ...
+   AC:  	Set  *Var[0]  0000002D 
+   BC:  	Set  *Var[1]  00000001 
+   CC:  	ExecWait $Script_80242618_mim_04 
+   D8:  	Call     AddKeyItem  	( .Item:MagicalSeed3 )
+   E8:  	Call     SayMessage0 	( .Npc:Self 00990203 00990202 00000000 000E0010 ) % Please plant it somewhere nice and take extra good ...
+  108:  	Set  *Flag_MIM_06  00000001 
+  118:  	Call     80045A58 ( 00000000 001A00A3 )
+  12C:  Else
+  134:  	Switch  *StoryProgress 
+  140:  		Case  <  FFFFFFF1 
+  14C:  			Set  *Var[0]  000E0011 
+  15C:  			Set  *Var[1]  000E0012 
+  16C:  		Case  <  00000027 
+  178:  			Set  *Var[0]  000E0013 
+  188:  			Set  *Var[1]  000E0014 
+  198:  		Default
+  1A0:  			Set  *Var[0]  000E0015 
+  1B0:  			Set  *Var[1]  000E0016 
+  1C0:  	EndSwitch
+  1C8:  	If  *AreaFlag[004]  ==  00000000 
+  1D8:  		Call     SayMessage0 	( 00000000 00990203 00990202 00000000 *Var[0] ) % variable string ID
+  1F8:  		Set  *AreaFlag[004]  00000001 
+  208:  	Else
+  210:  		Call     SayMessage0 	( 00000000 00990203 00990202 00000000 *Var[1] ) % variable string ID
+  230:  		Set  *AreaFlag[004]  00000000 
+  240:  	EndIf
+  248:  EndIf
+  250:  Return
+  258:  End
+
+#new:Script $Script_Init_802428D8_mim_04
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80242678_mim_04 )
+   14:  If  *Flag_MIM_06  ==  00000000 
+   24:  	Call     802CDF8C ( FFFFFFFF 00000019 00000019 )
+   3C:  	Call     SetNpcAnimation 	( .Npc:Self 00990207 )
+   50:  	Call     80045A58 ( 00000000 001A00A2 )
+   64:  EndIf
+   6C:  Return
+   74:  End
+

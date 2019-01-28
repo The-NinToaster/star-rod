@@ -1,0 +1,289 @@
+% automatically dumped from map nok_01
+
+#new:Npc $nok_01_8024D1F8_1F0
+00000001 $NpcSettings_802437A8_nok_01 00000000 00000000 00000000 
+19500008 $Script_Init_8024BF2C_nok_01 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 000003E8 00000000 00000000 00000000 FFFF8001 00000000 00000000 
+000003E8 00000000 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+002B0002 002B0002 002B0003 002B0003 002B0001 002B0001 002B0008 002B0008 
+002B0003 002B0003 002B0003 002B0003 002B0003 002B0003 002B0003 002B0003 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80242514_nok_01
+    0:  ADDIU     SP, SP, FFB8
+    4:  SW        S2, 18 (SP)
+    8:  DADDU     S2, A0, R0
+    C:  SW        RA, 28 (SP)
+   10:  SW        S5, 24 (SP)
+   14:  SW        S4, 20 (SP)
+   18:  SW        S3, 1C (SP)
+   1C:  SW        S1, 14 (SP)
+   20:  SW        S0, 10 (SP)
+   24:  SDC1      F24, 40 (SP)
+   28:  SDC1      F22, 38 (SP)
+   2C:  SDC1      F20, 30 (SP)
+   30:  LW        S0, C (S2)
+   34:  LW        S4, 0 (S0)
+   38:  ADDIU     S0, S0, 4
+   3C:  JAL       {Func:GetVariable}
+   40:  DADDU     A1, S4, R0
+   44:  DADDU     S3, V0, R0
+   48:  LW        S5, 0 (S0)
+   4C:  ADDIU     S0, S0, 4
+   50:  LW        A1, 0 (S0)
+   54:  ADDIU     S0, S0, 4
+   58:  JAL       {Func:GetFloatVariable}
+   5C:  DADDU     A0, S2, R0
+   60:  LW        A1, 0 (S0)
+   64:  ADDIU     S0, S0, 4
+   68:  DADDU     A0, S2, R0
+   6C:  JAL       {Func:GetFloatVariable}
+   70:  MOV.S     F24, F0
+   74:  LW        A1, 0 (S0)
+   78:  ADDIU     S0, S0, 4
+   7C:  DADDU     A0, S2, R0
+   80:  JAL       {Func:GetVariable}
+   84:  MOV.S     F20, F0
+   88:  LW        A1, 0 (S0)
+   8C:  ADDIU     S0, S0, 4
+   90:  DADDU     A0, S2, R0
+   94:  JAL       {Func:GetVariable}
+   98:  DADDU     S1, V0, R0
+   9C:  DADDU     A0, S2, R0
+   A0:  LW        A1, 0 (S0)
+   A4:  JAL       {Func:GetFloatVariable}
+   A8:  DADDU     S0, V0, R0
+   AC:  LIF       F2, 180.0
+   B4:  LIO       AT, 40490FD8
+   BC:  MTC1      AT, F4
+   C0:  DIV.S     F0, F0, F2
+   C4:  MUL.S     F22, F0, F4
+   C8:  NOP
+   CC:  SUB.S     F20, F20, F24
+   D0:  LIF       F0, 0.5
+   D8:  NOP
+   DC:  MUL.S     F20, F20, F0
+   E0:  NOP
+   E4:  BEQ       S0, R0, .o104
+   E8:  SLT       V0, S1, S3
+   EC:  BEQ       V0, R0, .o104
+   F0:  DADDU     A0, S2, R0
+   F4:  DADDU     S3, S1, R0
+   F8:  DADDU     A1, S4, R0
+   FC:  JAL       {Func:SetVariable}
+  100:  DADDU     A2, S1, R0
+        .o104
+  104:  LIO       AT, 40490FD8
+  10C:  MTC1      AT, F0
+  110:  MTC1      S3, F12
+  114:  NOP
+  118:  CVT.S.W   F12, F12
+  11C:  MUL.S     F12, F12, F0
+  120:  NOP
+  124:  MTC1      S1, F0
+  128:  NOP
+  12C:  CVT.S.W   F0, F0
+  130:  DIV.S     F12, F12, F0
+  134:  JAL       {Func:CosRad}
+  138:  ADD.S     F12, F12, F22
+  13C:  MUL.S     F0, F20, F0
+  140:  NOP
+  144:  ADD.S     F2, F24, F20
+  148:  SUB.S     F2, F2, F0
+  14C:  DADDU     A0, S2, R0
+  150:  MFC1      A2, F2
+  154:  JAL       {Func:SetFloatVariable}
+  158:  DADDU     A1, S5, R0
+  15C:  LW        RA, 28 (SP)
+  160:  LW        S5, 24 (SP)
+  164:  LW        S4, 20 (SP)
+  168:  LW        S3, 1C (SP)
+  16C:  LW        S2, 18 (SP)
+  170:  LW        S1, 14 (SP)
+  174:  LW        S0, 10 (SP)
+  178:  LDC1      F24, 40 (SP)
+  17C:  LDC1      F22, 38 (SP)
+  180:  LDC1      F20, 30 (SP)
+  184:  ADDIU     V0, R0, 2
+  188:  JR        RA
+  18C:  ADDIU     SP, SP, 48
+
+#new:NpcSettings $NpcSettings_802437A8_nok_01
+00000000 00140016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_80248F90_nok_01
+    0:  Call     GetNpcYaw   	( *Var[4] *Var[1] )
+   14:  Set  *Var[2]  0000001E 
+   24:  If  *Var[1]  >  00000097 
+   34:  	If  *Var[1]  <=  0000014B 
+   44:  		Set  *Var[2]  FFFFFFE2 
+   54:  	EndIf
+   5C:  EndIf
+   64:  Set  *Var[0]  00000000 
+   74:  Loop     0000000F 
+   80:  	Add  *Var[0]  *Var[2] 
+   90:  	Call     SetNpcRotation ( *Var[3] 00000000 00000000 *Var[0] )
+   AC:  	Wait     00000001 
+   B8:  EndLoop
+   C0:  Return
+   C8:  End
+
+#new:Script $Script_8024B2B0_nok_01
+    0:  SetGroup 0000000A 
+    C:  If  *Flag_NOK_00  ==  00000001 
+   1C:  	Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+   38:  	Call     SetNpcPos   	( 00000002 00000000 FFFFFC18 00000000 )
+   54:  	Return
+   5C:  EndIf
+   64:  Set  *Var[A]  FFFFFF30 
+   74:  Set  *Var[B]  00000000 
+   84:  Set  *Var[C]  0000011A 
+   94:  Label    0000000A 
+   A0:  If  *StoryProgress  <  FFFFFF9F 
+   B0:  	Call     GetNpcPos   	( 00000001 *Var[A] *Var[B] *Var[C] )
+   CC:  	Add  *Var[A]  00000014 
+   DC:  	Wait     00000001 
+   E8:  	Goto     0000000A 
+   F4:  EndIf
+   FC:  Set  *Var[0]  000000A2 
+  10C:  Label    00000000 
+  118:  If  *Flag_NOK_00  ==  00000001 
+  128:  	Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+  144:  	Return
+  14C:  EndIf
+  154:  Call     $Function_80242514_nok_01 ( *Var[0] *Var[1] FFFFFFCE 00000032 00000078 00000000 000000B4 )
+  17C:  Call     $Function_80242514_nok_01 ( *Var[0] *Var[2] FFFFFFE0 00000020 00000078 00000000 0000001E )
+  1A4:  Add  *Var[1]  *Var[A] 
+  1B4:  Add  *Var[2]  *Var[C] 
+  1C4:  Call     SetNpcAnimation 	( 00000001 002B0003 )
+  1D8:  Call     SetNpcPos   	( 00000001 *Var[1] *Var[B] *Var[2] )
+  1F4:  Set  *Var[3]  *Var[B] 
+  204:  Add  *Var[3]  00000002 
+  214:  Add  *Var[0]  00000002 
+  224:  Add  *Var[2]  00000001 
+  234:  If  *Var[0]  ==  000000F0 
+  244:  	Set  *Var[0]  00000000 
+  254:  EndIf
+  25C:  Call     SetNpcPos   	( 00000002 *Var[1] *Var[3] *Var[2] )
+  278:  Label    00000001 
+  284:  Wait     00000001 
+  290:  Goto     00000000 
+  29C:  Return
+  2A4:  End
+
+#new:Script $Script_8024B55C_nok_01
+    0:  Call     80044600 ( *Var[0] )
+   10:  Set  *Var[1]  00000000 
+   20:  If  *Var[0]  ==  00000004 
+   30:  	Add  *Var[1]  00000001 
+   40:  EndIf
+   48:  If  *Var[0]  ==  00000002 
+   58:  	Add  *Var[1]  00000001 
+   68:  EndIf
+   70:  If  *Var[1]  !=  00000000 
+   80:  	Call     DisablePlayerInput 	( .True )
+   90:  	Set  *Flag_NOK_00  00000001 
+   A0:  	Call     SetOwnerFlagBits 	( 00000020 .True )
+   B4:  	Thread
+   BC:  		Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+   D8:  		Call     SetNpcAnimation 	( 00000001 002B0008 )
+   EC:  		Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  104:  		Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 00000019 )
+  124:  		Add  *Var[0]  00000028 
+  134:  		Add  *Var[2]  FFFFFFD8 
+  144:  		Call     SetNpcAnimation 	( 00000001 002B0008 )
+  158:  		Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  170:  		Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 0000000F )
+  190:  		Add  *Var[0]  0000001E 
+  1A0:  		Add  *Var[2]  FFFFFFE2 
+  1B0:  		Call     SetNpcAnimation 	( 00000001 002B0009 )
+  1C4:  		Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  1DC:  		Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 0000000D )
+  1FC:  		Add  *Var[0]  00000014 
+  20C:  		Add  *Var[2]  FFFFFFEC 
+  21C:  		Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  234:  		Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 0000000B )
+  254:  		Add  *Var[0]  0000000A 
+  264:  		Add  *Var[2]  FFFFFFF6 
+  274:  		Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  28C:  		Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 00000009 )
+  2AC:  		Add  *Var[0]  00000050 
+  2BC:  		Add  *Var[2]  FFFFFFB0 
+  2CC:  		Call     SetNpcAnimation 	( 00000001 002B0003 )
+  2E0:  		Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  2F8:  		Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 0000000F )
+  318:  		Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+  334:  	EndThread
+  33C:  	Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  358:  	Call     NpcJump0    	( 00000002 *Var[0] 00000000 *Var[2] 0000000F )
+  378:  	Loop     00000046 
+  384:  		Call     PlayerFaceNpc 	( 00000001 00000000 )
+  398:  		Call     NpcFaceNpc  	( 00000000 00000001 00000000 )
+  3B0:  		Wait     00000001 
+  3BC:  	EndLoop
+  3C4:  	Call     PlayerFaceNpc 	( 00000002 00000000 )
+  3D8:  	Call     NpcFaceNpc  	( 00000000 00000002 00000000 )
+  3F0:  	Thread
+  3F8:  		Call     UseSettings 	( .Default 00000004 00000000 *Fixed[-300.0] *Fixed[17.0] *Fixed[-7.0] )
+  41C:  	EndThread
+  424:  	Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  43C:  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  458:  	Call     SetNpcAnimation 	( 00000000 0090000B )
+  46C:  	Call     NpcJump0    	( 00000000 *Var[0] 00000000 *Var[2] 0000000F )
+  48C:  	Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  4A8:  	Add  *Var[0]  00000001 
+  4B8:  	Add  *Var[2]  00000001 
+  4C8:  	Call     SetNpcAnimation 	( 00000000 00900005 )
+  4DC:  	Call     MoveNpcTo   	( 00000000 *Var[0] *Var[2] 0000000F )
+  4F8:  	Call     SetNpcAnimation 	( 00000000 00900001 )
+  50C:  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  528:  	Add  *Var[0]  00000001 
+  538:  	Add  *Var[2]  00000001 
+  548:  	Add  *Var[1]  0000000A 
+  558:  	Call     NpcJump0    	( 00000002 *Var[0] *Var[1] *Var[2] 0000000A )
+  578:  	Call     PlayerFaceNpc 	( 00000000 00000000 )
+  58C:  	Call     NpcFacePlayer 	( 00000000 00000000 )
+  5A0:  	Wait     0000000A 
+  5AC:  	Call     SetNpcAnimation 	( 00000000 00900000 )
+  5C0:  	Call     EnableNpcBlur 	( 00000002 .True )
+  5D4:  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  5F0:  	Add  *Var[0]  00000001 
+  600:  	Add  *Var[2]  00000001 
+  610:  	Add  *Var[1]  00000014 
+  620:  	Set  *Var[3]  00000002 
+  630:  	Set  *Var[4]  00000000 
+  640:  	Exec     $Script_80248F90_nok_01 
+  64C:  	Call     InterpNpcYaw 	( *Var[3] 0000003C 00000000 )
+  664:  	Call     NpcJump0    	( 00000002 *Var[0] *Var[1] *Var[2] 0000001E )
+  684:  	Call     SetNpcPos   	( 00000002 00000000 FFFFFC18 00000000 )
+  6A0:  	Call     802CF208 ( 00000000 008F0002 )
+  6B4:  	Call     SetNpcFlagBits ( 00000000 00000100 .False )
+  6CC:  	Call     SetNpcAnimation 	( 00000000 008F0000 )
+  6E0:  	Wait     00000004 
+  6EC:  	Call     EnableNpcBlur 	( 00000002 .True )
+  700:  	Call     SetNpcAnimation 	( 00000000 008F0002 )
+  714:  	Call     SetNpcAnimation 	( 00000000 008F0009 )
+  728:  	Wait     0000001E 
+  734:  	Call     SetNpcAnimation 	( 00000000 008F0002 )
+  748:  	Call     SayMessage0 	( 00000000 008F0007 008F0002 00000000 000C0002 ) % Oh, thank you, Mario! I owe you one. I just can't  ...
+  768:  	Thread
+  770:  		Call     ResetCam    	( .Default 00000004 )
+  784:  	EndThread
+  78C:  	Call     DisablePlayerInput 	( .False )
+  79C:  	Call     SetNpcFlagBits2 	( 00000000 00400000 00000000 )
+  7B4:  EndIf
+  7BC:  Return
+  7C4:  End
+
+#new:Script $Script_Init_8024BF2C_nok_01
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_8024B2B0_nok_01 )
+   14:  Call     BindNpcHit  	( .Npc:Self $Script_8024B55C_nok_01 )
+   28:  Return
+   30:  End
+

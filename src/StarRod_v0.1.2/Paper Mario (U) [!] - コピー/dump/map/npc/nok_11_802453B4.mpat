@@ -1,0 +1,410 @@
+% automatically dumped from map nok_11
+
+#new:Npc $nok_11_802453B4
+00000005 $NpcSettings_802429E8_nok_11 00000000 00000000 00000000 
+00640D0D $Script_Init_80245300_nok_11 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00210003 00210007 00210007 00210007 00210003 00210003 00210003 00210003 
+00210003 00210003 00210003 00210003 00210003 00210003 00210003 00210003 
+00000000 00000000 00000000 001A0006 % That's Jr. Troopa. He used to boot us out of the f ...
+
+#new:Function $Function_80241CCC_nok_11
+    0:  ADDIU     SP, SP, FFD0
+    4:  SDC1      F20, 18 (SP)
+    8:  MTC1      A1, F20
+    C:  SDC1      F22, 20 (SP)
+   10:  MTC1      A2, F22
+   14:  SW        S0, 10 (SP)
+   18:  SDC1      F24, 28 (SP)
+   1C:  MTC1      A3, F24
+   20:  SW        RA, 14 (SP)
+   24:  JAL       800674A0
+   28:  DADDU     S0, A0, R0
+   2C:  MUL.S     F22, F20, F22
+   30:  NOP
+   34:  MUL.S     F20, F20, F24
+   38:  NOP
+   3C:  LIF       F0, 1.0
+   44:  NOP
+   48:  SWC1      F0, 14 (S0)
+   4C:  SWC1      F22, 10 (S0)
+   50:  SWC1      F20, 18 (S0)
+   54:  LW        RA, 14 (SP)
+   58:  LW        S0, 10 (SP)
+   5C:  LDC1      F24, 28 (SP)
+   60:  LDC1      F22, 20 (SP)
+   64:  LDC1      F20, 18 (SP)
+   68:  JR        RA
+   6C:  ADDIU     SP, SP, 30
+
+#new:Function $Function_80241D3C_nok_11
+    0:  ADDIU     SP, SP, FF78
+    4:  SW        S1, 54 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 5C (SP)
+   10:  SW        S2, 58 (SP)
+   14:  SW        S0, 50 (SP)
+   18:  SDC1      F28, 80 (SP)
+   1C:  SDC1      F26, 78 (SP)
+   20:  SDC1      F24, 70 (SP)
+   24:  SDC1      F22, 68 (SP)
+   28:  SDC1      F20, 60 (SP)
+   2C:  LW        S0, C (S1)
+   30:  LW        A1, 0 (S0)
+   34:  JAL       {Func:GetVariable}
+   38:  ADDIU     S0, S0, 4
+   3C:  JAL       8011B010
+   40:  DADDU     A0, V0, R0
+   44:  LW        A1, 0 (S0)
+   48:  ADDIU     S0, S0, 4
+   4C:  DADDU     A0, S1, R0
+   50:  JAL       {Func:GetFloatVariable}
+   54:  DADDU     S2, V0, R0
+   58:  LW        A1, 0 (S0)
+   5C:  ADDIU     S0, S0, 4
+   60:  DADDU     A0, S1, R0
+   64:  JAL       {Func:GetFloatVariable}
+   68:  MOV.S     F28, F0
+   6C:  LW        A1, 0 (S0)
+   70:  ADDIU     S0, S0, 4
+   74:  DADDU     A0, S1, R0
+   78:  JAL       {Func:GetFloatVariable}
+   7C:  MOV.S     F26, F0
+   80:  DADDU     A0, S1, R0
+   84:  LW        A1, 0 (S0)
+   88:  JAL       {Func:GetFloatVariable}
+   8C:  MOV.S     F22, F0
+   90:  DADDU     A0, S2, R0
+   94:  JAL       8011AD30
+   98:  MOV.S     F24, F0
+   9C:  DADDU     S1, V0, R0
+   A0:  LHU       V0, 0 (S1)
+   A4:  ANDI      V0, V0, 400
+   A8:  BNE       V0, R0, .o124
+   AC:  ADDIU     S0, S1, 58
+   B0:  MTC1      R0, F20
+   B4:  MFC1      A2, F22
+   B8:  MFC1      A1, F20
+   BC:  MFC1      A3, F20
+   C0:  JAL       80067900
+   C4:  DADDU     A0, S0, R0
+   C8:  MFC1      A1, F28
+   CC:  MFC1      A2, F26
+   D0:  MFC1      A3, F24
+   D4:  JAL       $Function_80241CCC_nok_11
+   D8:  ADDIU     A0, SP, 10
+   DC:  ADDIU     A0, SP, 10
+   E0:  DADDU     A1, S0, R0
+   E4:  JAL       80067600
+   E8:  DADDU     A2, S0, R0
+   EC:  ADDIU     A0, SP, 10
+   F0:  NEG.S     F22, F22
+   F4:  MFC1      A1, F20
+   F8:  MFC1      A2, F22
+   FC:  JAL       80067900
+  100:  DADDU     A3, A1, R0
+  104:  ADDIU     A0, SP, 10
+  108:  DADDU     A1, S0, R0
+  10C:  JAL       80067600
+  110:  DADDU     A2, A1, R0
+  114:  LHU       V0, 0 (S1)
+  118:  ORI       V0, V0, 1400
+  11C:  BEQ       R0, R0, .o19C
+  120:  SH        V0, 0 (S1)
+        .o124
+  124:  MTC1      R0, F20
+  128:  MFC1      A2, F22
+  12C:  MFC1      A1, F20
+  130:  MFC1      A3, F20
+  134:  JAL       80067900
+  138:  ADDIU     A0, SP, 10
+  13C:  ADDIU     A0, SP, 10
+  140:  ADDIU     S0, S1, 58
+  144:  DADDU     A1, S0, R0
+  148:  JAL       80067600
+  14C:  DADDU     A2, S0, R0
+  150:  MFC1      A1, F28
+  154:  MFC1      A2, F26
+  158:  MFC1      A3, F24
+  15C:  JAL       $Function_80241CCC_nok_11
+  160:  ADDIU     A0, SP, 10
+  164:  ADDIU     A0, SP, 10
+  168:  DADDU     A1, S0, R0
+  16C:  JAL       80067600
+  170:  DADDU     A2, S0, R0
+  174:  ADDIU     A0, SP, 10
+  178:  NEG.S     F22, F22
+  17C:  MFC1      A1, F20
+  180:  MFC1      A2, F22
+  184:  JAL       80067900
+  188:  DADDU     A3, A1, R0
+  18C:  ADDIU     A0, SP, 10
+  190:  DADDU     A1, S0, R0
+  194:  JAL       80067600
+  198:  DADDU     A2, A1, R0
+        .o19C
+  19C:  LW        RA, 5C (SP)
+  1A0:  LW        S2, 58 (SP)
+  1A4:  LW        S1, 54 (SP)
+  1A8:  LW        S0, 50 (SP)
+  1AC:  LDC1      F28, 80 (SP)
+  1B0:  LDC1      F26, 78 (SP)
+  1B4:  LDC1      F24, 70 (SP)
+  1B8:  LDC1      F22, 68 (SP)
+  1BC:  LDC1      F20, 60 (SP)
+  1C0:  ADDIU     V0, R0, 2
+  1C4:  JR        RA
+  1C8:  ADDIU     SP, SP, 88
+
+#new:Script $Script_80241FB0_nok_11
+    0:  Call     SetMusicTrack 	( 00000000 .Song:PleasantPath 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:Script $Script_80241FDC_nok_11
+    0:  Call     SetMusicTrack 	( 00000000 .Song:JrTroopaTheme 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:NpcSettings $NpcSettings_802429E8_nok_11
+00000000 00200018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80242A40_nok_11
+    0:  UseIntBuffer *Var[0] 
+    C:  Get4Int  *Var[1] *Var[2] *Var[3] *Var[4] 
+   24:  Call     GetPlayerPos 	( *Var[5] *Var[F] *Var[7] )
+   3C:  Thread
+   44:  	Set  *Flag[00]  00000000 
+   54:  	If  *Var[1]  !=  00000000 
+   64:  		Loop     00000005 
+   70:  			UseIntBuffer *Var[1] 
+   7C:  			Get1Int  *Var[2] 
+   88:  			Loop     *Var[2] 
+   94:  				Get1Int  *Var[3] 
+   A0:  				Call     $Function_80241D3C_nok_11 ( *Var[3] *Fixed[0.10058594] 00000001 *Var[F] 00000000 )
+   C0:  				If  *Flag[00]  ==  00000000 
+   D0:  					Set  *Flag[00]  00000001 
+   E0:  					Call     PlaySoundAtModel 	( *Var[3] 00000153 00000000 )
+   F8:  				EndIf
+  100:  			EndLoop
+  108:  			Wait     00000001 
+  114:  			UseIntBuffer *Var[1] 
+  120:  			Get1Int  *Var[2] 
+  12C:  			Loop     *Var[2] 
+  138:  				Get1Int  *Var[3] 
+  144:  				Call     $Function_80241D3C_nok_11 ( *Var[3] *Fixed[0.10058594] FFFFFFFF *Var[F] 00000000 )
+  164:  			EndLoop
+  16C:  			Wait     00000001 
+  178:  		EndLoop
+  180:  		UseIntBuffer *Var[1] 
+  18C:  		Get1Int  *Var[2] 
+  198:  		Loop     *Var[2] 
+  1A4:  			Get1Int  *Var[3] 
+  1B0:  			Call     TranslateModel ( *Var[3] 00000000 00000000 00000000 )
+  1CC:  		EndLoop
+  1D4:  		Wait     00000001 
+  1E0:  	EndIf
+  1E8:  EndThread
+  1F0:  Thread
+  1F8:  	If  *Var[2]  !=  00000000 
+  208:  		UseIntBuffer *Var[2] 
+  214:  		Get1Int  *Var[3] 
+  220:  		Loop     *Var[3] 
+  22C:  			Get1Int  *Var[4] 
+  238:  			Get3Int  *Var[5] *Var[6] *Var[7] 
+  24C:  			Get3Int  *Var[8] *Var[9] *Var[A] 
+  260:  			If  *Var[A]  ==  00000000 
+  270:  				Call     DropItemEntity ( *Var[4] *Var[5] *Var[6] *Var[7] *Var[8] *Var[9] )
+  294:  			Else
+  29C:  				Call     GetValueByRef 	( *Var[A] *Var[B] )
+  2B0:  				If  *Var[B]  ==  00000000 
+  2C0:  					Call     SetValueByRef 	( *Var[A] 00000001 )
+  2D4:  					Call     DropItemEntity ( *Var[4] *Var[5] *Var[6] *Var[7] *Var[8] *Var[9] )
+  2F8:  				EndIf
+  300:  			EndIf
+  308:  		EndLoop
+  310:  	EndIf
+  318:  EndThread
+  320:  Wait     0000000F 
+  32C:  If  *Var[4]  !=  00000000 
+  33C:  	ExecWait *Var[4] 
+  348:  EndIf
+  350:  Return
+  358:  End
+
+#new:Script $Script_802433A4_nok_11
+    0:  Loop     
+    C:  	Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+   28:  	Call     PlayEffect  	( {FX:Steam:SmallOutward} *Var[0] *Var[1] *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+   6C:  	Wait     00000003 
+   78:  EndLoop
+   80:  Return
+   88:  End
+
+#new:Script $Script_8024344C_nok_11
+    0:  Loop     
+    C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  	If  *Var[0]  <=  FFFFFF83 
+   34:  		BreakLoop
+   3C:  	EndIf
+   44:  	Wait     00000001 
+   50:  EndLoop
+   58:  Call     DisablePlayerInput 	( .True )
+   68:  ChildThread
+   70:  	Label    0000000A 
+   7C:  	Wait     00000003 
+   88:  	Call     PlayerFaceNpc 	( .Npc:Self 00000000 )
+   9C:  	Wait     00000001 
+   A8:  	Goto     0000000A 
+   B4:  EndChildThread
+   BC:  Exec     $Script_80241FDC_nok_11 
+   C8:  Call     SayMessage0 	( .Npc:Self 00210016 00210003 00000005 000C011E ) % Hold it right there, Mario! I've been waiting for  ...
+   E8:  Wait     0000000F 
+   F4:  Call     SetCamFlag4 	( .Default .False )
+  108:  Call     802CC3EC ( 00000000 *Fixed[90.0] FFFFFF42 00000000 FFFFFFD8 000000C8 *Fixed[15.0] *Fixed[-8.5] )
+  134:  Wait     0000000F 
+  140:  Set  *Var[0]  $???_8024343C_nok_11 
+  150:  Exec     $Script_80242A40_nok_11 
+  15C:  Wait     0000000F 
+  168:  Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  180:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+  194:  Call     NpcJump0    	( .Npc:Self FFFFFF1A 00000000 FFFFFF63 0000000F )
+  1B4:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  1C8:  Wait     0000000F 
+  1D4:  Call     SayMessage0 	( .Npc:Self 0021001A 0021001B 00000000 000C011F ) % I told you I'd be back! Now I'll get my revenge! H ...
+  1F4:  Call     802CC3EC ( 00000000 *Fixed[4.0] FFFFFF74 00000000 FFFFFFD8 00000190 *Fixed[15.0] *Fixed[-5.0] )
+  220:  Call     SetNpcAnimation 	( .Npc:Self 0021000A )
+  234:  Wait     0000000A 
+  240:  Thread
+  248:  	Wait     0000000A 
+  254:  	Call     SetNpcAnimation 	( .Npc:Self 00210021 )
+  268:  	Call     ShowMessage 	( 000C0120 000000A0 00000028 ) % Dwaaaahhhhhh! 
+  280:  EndThread
+  288:  Thread
+  290:  EndThread
+  298:  Thread
+  2A0:  	Wait     0000000A 
+  2AC:  	Loop     0000000A 
+  2B8:  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  2D4:  		Call     PlayEffect  	( {FX:Steam:Ring} *Var[0] *Var[1] *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  318:  		Wait     00000002 
+  324:  	EndLoop
+  32C:  EndThread
+  334:  Call     MoveNpcTo   	( .Npc:Self FFFFFF37 FFFFFFBD 0000000A )
+  350:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[2.0] )
+  364:  Call     NpcJump1    	( .Npc:Self FFFFFF41 00000000 FFFFFFE0 00000005 )
+  384:  Exec     $Script_802433A4_nok_11 *Var[A] 
+  394:  Call     PlaySoundAtNpc ( .Npc:Self 00000167 00000000 )
+  3AC:  Call     MoveNpcTo   	( .Npc:Self FFFFFF5B 00000032 0000000F )
+  3C8:  Kill     *Var[A] 
+  3D4:  Call     802D62B8 ( 00000167 )
+  3E4:  Wait     00000005 
+  3F0:  Call     SetNpcAnimation 	( .Npc:Self 00210023 )
+  404:  Wait     0000000F 
+  410:  Thread
+  418:  	Wait     0000000F 
+  424:  	Call     PlaySoundAtNpc ( .Npc:Self 000020AD 00000000 )
+  43C:  	Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  458:  	Sub  *Var[0]  00000005 
+  468:  	Call     PlayEffect  	( {FX:WaterSplash:Up} *Var[0] *Var[1] *Var[2] *Fixed[0.7001953] 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  4AC:  	Add  *Var[0]  0000000A 
+  4BC:  	Call     PlayEffect  	( {FX:WaterSplash:Up} *Var[0] *Var[1] *Var[2] *Fixed[0.7001953] 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  500:  	Wait     00000005 
+  50C:  	Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  528:  	Sub  *Var[0]  00000019 
+  538:  	Call     PlayEffect  	( {FX:WaterSplash:Up} *Var[0] *Var[1] *Var[2] *Fixed[0.7001953] 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  57C:  	Add  *Var[0]  0000000A 
+  58C:  	Call     PlayEffect  	( {FX:WaterSplash:Up} *Var[0] *Var[1] *Var[2] *Fixed[0.7001953] 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  5D0:  	Wait     00000005 
+  5DC:  	Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  5F8:  	Sub  *Var[0]  FFFFFFF1 
+  608:  	Call     PlayEffect  	( {FX:WaterSplash:Up} *Var[0] *Var[1] *Var[2] *Fixed[0.7001953] 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  64C:  	Add  *Var[0]  0000000A 
+  65C:  	Call     PlayEffect  	( {FX:WaterSplash:Up} *Var[0] *Var[1] *Var[2] *Fixed[0.7001953] 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  6A0:  EndThread
+  6A8:  Call     PlaySoundAtNpc ( .Npc:Self 00000301 00000000 )
+  6C0:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[0.5] )
+  6D4:  Call     NpcJump0    	( .Npc:Self FFFFFF5B FFFFFFA6 00000032 00000014 )
+  6F4:  Wait     0000001E 
+  700:  Call     PlaySoundAtNpc ( .Npc:Self 00000074 00000000 )
+  718:  Call     SetNpcAnimation 	( .Npc:Self 00210025 )
+  72C:  Call     SetNpcYaw   	( .Npc:Self 0000010E )
+  740:  Thread
+  748:  	Wait     00000055 
+  754:  	Call     SetNpcAnimation 	( .Npc:Self 00210026 )
+  768:  EndThread
+  770:  Call     SetNpcJumpscale 	( .Npc:Self 00000000 )
+  784:  Call     NpcJump0    	( .Npc:Self FFFFFF5B 00000000 00000032 0000005A )
+  7A4:  Wait     0000001E 
+  7B0:  Call     SetNpcAnimation 	( .Npc:Self 0021000A )
+  7C4:  Call     MoveNpcTo   	( .Npc:Self FFFFFF42 FFFFFFD3 0000000A )
+  7E0:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  7F4:  Call     SetNpcAnimation 	( .Npc:Self 0021001B )
+  808:  Call     802CC3EC ( 00000000 *Fixed[90.0] FFFFFF74 00000000 FFFFFFD8 000000FA *Fixed[15.0] *Fixed[-8.5] )
+  834:  Call     SayMessage0 	( .Npc:Self 0021001A 0021001B 00000000 000C0121 ) % Mario! I'm talking to you! I promise you, this fig ...
+  854:  Call     DisablePartnerAI 	( 00000000 )
+  864:  Call     GetCurrentPartner 	( *Var[0] )
+  874:  Switch  *Var[0] 
+  880:  	Case  ==  00000001 
+  88C:  		Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000005 000C0122 ) % Hey...you're Jr. Troopa! Are you following us? You ...
+  8AC:  	Case  ==  00000002 
+  8B8:  		Call     SayMessage0 	( .Npc:Partner 0002000D 00020003 00000005 000C0123 ) % Who is this crazed guy? What a nut... 
+  8D8:  	Case  ==  00000003 
+  8E4:  		Call     SayMessage0 	( .Npc:Partner 0003000E 00030003 00000005 000C0124 ) % Who's this kid...? Let me get this straight... He  ...
+  904:  EndSwitch
+  90C:  Call     EnablePartnerAI 	( )
+  918:  Call     SayMessage0 	( .Npc:Self 0021001A 0021001B 00000000 000C0125 ) % Shut up!!!!! You! Mario!! Of course you remember m ...
+  938:  Call     ShowChoice  	( 001E0013 ) % Yes No 
+  948:  Wait     0000000A 
+  954:  If  *Var[0]  ==  00000000 
+  964:  	Call     SayMessage2 	( .Npc:Self 0021001A 0021001B 00000000 000C0126 ) % That's right! Darn tootin'! I'm Jr.Troopa! This ti ...
+  984:  Else
+  98C:  	Call     SayMessage2 	( .Npc:Self 0021001A 0021001B 00000000 000C0127 ) % Whaaaat! Darn it! You don't remember me?! Listen,  ...
+  9AC:  EndIf
+  9B4:  Wait     0000000A 
+  9C0:  Call     StartBossBattle 	( .Song:JrTroopaBattle )
+  9D0:  Return
+  9D8:  End
+
+#new:Script $Script_80243E2C_nok_11
+    0:  Return
+    8:  End
+
+#new:Script $Script_80243E3C_nok_11
+    0:  Call     SayMessage0 	( .Npc:Self 00210014 00210014 00000005 000C012B ) % Aaaaaaaaaaaah!
+   20:  Return
+   28:  End
+
+#new:Script $Script_80243F6C_nok_11
+    0:  Call     80045640 ( )
+    C:  Call     SetNpcAnimation 	( .Npc:Self 00210014 )
+   20:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   3C:  Call     SetNpcPos   	( 00000006 *Var[0] *Var[1] *Var[2] )
+   58:  Call     802CDF8C ( FFFFFFFF 00000018 00000020 )
+   70:  Call     802CDF8C ( 00000006 00000018 00000020 )
+   88:  Set  *StoryProgress  FFFFFFB6 
+   98:  Thread
+   A0:  	Wait     00000004 
+   AC:  	Exec     $Script_80241FB0_nok_11 
+   B8:  EndThread
+   C0:  Call     BindNpcAI   	( .Npc:Self $Script_80243E2C_nok_11 )
+   D4:  Call     SetNpcFlagBits ( 00000006 00000002 .True )
+   EC:  Call     ResetCam    	( .Default *Fixed[90.0] )
+  100:  Call     DisablePlayerInput 	( .False )
+  110:  Return
+  118:  End
+
+#new:Script $Script_Init_80245300_nok_11
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_8024344C_nok_11 )
+   14:  Call     BindNpcDefeat 	( .Npc:Self $Script_80243F6C_nok_11 )
+   28:  Call     BindNpcInteract 	( .Npc:Self $Script_80243E3C_nok_11 )
+   3C:  Return
+   44:  End
+

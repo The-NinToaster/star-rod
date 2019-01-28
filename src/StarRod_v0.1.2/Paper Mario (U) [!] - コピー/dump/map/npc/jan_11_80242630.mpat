@@ -1,0 +1,152 @@
+% automatically dumped from map jan_11
+
+#new:Npc $jan_11_80242630
+00000000 $NpcSettings_80242050_jan_11 00000000 00000000 00000000 
+0040090D $Script_Init_80242574_jan_11 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00970001 00970002 00970003 00970003 00970001 00970001 00970001 00970001 
+00970001 00970001 00970001 00970001 00970001 00970001 00970001 00970001 
+00000000 00000000 00000000 001A00C3 % He's a green Yoshi kid. He's an excitable rascal,  ...
+
+#new:Function $Function_802407B0_jan_11
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  LAH       A2, 8015A552
+   14:  JAL       {Func:SetVariable}
+   18:  LW        A1, 0 (V0)
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:Function $Function_802407DC_jan_11
+    0:  LAB       V1, 8010EBB3
+    8:  ADDIU     V0, R0, 6
+    C:  BNEL      V1, V0, .o1C
+   10:  SW        R0, A8 (A0)
+   14:  ADDIU     V0, R0, 1
+   18:  SW        V0, A8 (A0)
+        .o1C
+   1C:  JR        RA
+   20:  ADDIU     V0, R0, 2
+
+#new:Script $Script_80240850_jan_11
+    0:  Call     SetMusicTrack 	( 00000000 .Song:JadeJungle 00000000 00000006 )
+   1C:  Call     802D60E8 ( 000000FA )
+   2C:  Return
+   34:  End
+
+#new:NpcSettings $NpcSettings_80242050_jan_11
+00000000 001C0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024207C_jan_11
+    0:  Set  *AreaFlag[002]  00000000 
+   10:  Loop     
+   1C:  	Call     PlaySoundAtNpc ( 00000000 000001F0 00000000 )
+   34:  	Wait     00000014 
+   40:  	If  *AreaFlag[002]  ==  00000001 
+   50:  		BreakLoop
+   58:  	EndIf
+   60:  EndLoop
+   68:  Return
+   70:  End
+
+#new:Script $Script_802420F4_jan_11
+    0:  Label    00000000 
+    C:  Wait     00000001 
+   18:  Call     $Function_802407B0_jan_11 ( *Var[0] )
+   28:  If  *Var[0]  !=  0000000A 
+   38:  	Goto     00000000 
+   44:  EndIf
+   4C:  Call     $Function_802407DC_jan_11 ( )
+   58:  If  *Var[9]  ==  00000000 
+   68:  	Goto     00000000 
+   74:  EndIf
+   7C:  Call     GetPlayerPos 	( *Var[1] *Var[2] *Var[3] )
+   94:  If  *Var[2]  <  00000055 
+   A4:  	Goto     00000000 
+   B0:  EndIf
+   B8:  Call     DisablePlayerInput 	( .True )
+   C8:  Call     GetNpcPos   	( .Npc:Self *Var[4] *Var[5] *Var[6] )
+   E4:  If  *Var[1]  <  *Var[4] 
+   F4:  	Set  *Var[1]  *Var[4] 
+  104:  	Add  *Var[1]  FFFFFFCE 
+  114:  Else
+  11C:  	Set  *Var[1]  *Var[4] 
+  12C:  	Add  *Var[1]  0000001E 
+  13C:  EndIf
+  144:  Call     SetPlayerSpeed ( *Fixed[1.0] )
+  154:  Call     MovePlayerTo 	( *Var[1] *Var[3] 00000000 )
+  16C:  Call     PlayerFaceNpc 	( .Npc:Self 00000000 )
+  180:  Sub  *Var[4]  *Var[1] 
+  190:  Div  *Var[4]  00000002 
+  1A0:  Add  *Var[1]  *Var[4] 
+  1B0:  Call     UseSettings 	( .Default *Fixed[4.0] *Var[4] 0000015E *Fixed[17.0] *Fixed[-7.0] )
+  1D4:  Set  *AreaFlag[002]  00000001 
+  1E4:  Wait     0000000F 
+  1F0:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  204:  Thread
+  20C:  	Wait     0000000A 
+  218:  	Call     SetPlayerAnimation 	( 00010002 )
+  228:  EndThread
+  230:  Call     SayMessage0 	( .Npc:Self 0097000B 0097000A 00000000 001000AE ) % There was this flower that spun around and I thoug ...
+  250:  Call     SayMessage1 	( .Npc:Self 00970004 00970001 00000000 )
+  26C:  Thread
+  274:  	Call     SetNpcFlagBits ( .Npc:Self 00000300 .True )
+  28C:  	Call     SetNpcAnimation 	( .Npc:Self 00970003 )
+  2A0:  	Call     SetNpcSpeed 	( .Npc:Self *Fixed[5.0] )
+  2B4:  	Call     MoveNpcTo   	( .Npc:Self FFFFFF9C 00000032 00000000 )
+  2D0:  	Call     SetNpcFlagBits ( .Npc:Self 00000200 .False )
+  2E8:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  304:  EndThread
+  30C:  Set  *Flag_JAN_13  00000001 
+  31C:  Set  *Var[0]  00000000 
+  32C:  Add  *Var[0]  *Flag_JAN_0F 
+  33C:  Add  *Var[0]  *Flag_JAN_10 
+  34C:  Add  *Var[0]  *Flag_JAN_11 
+  35C:  Add  *Var[0]  *Flag_JAN_12 
+  36C:  Add  *Var[0]  *Flag_JAN_13 
+  37C:  If  *Var[0]  ==  00000005 
+  38C:  	Call     SetMusicTrack 	( 00000000 .Song:YoshiKidsFound 00000000 00000008 )
+  3A8:  	Set  *StoryProgress  00000010 
+  3B8:  	Call     SetPlayerAnimation 	( .PlayerAnim:ThumbsUp )
+  3C8:  	Wait     00000078 
+  3D4:  	Exec     $Script_80240850_jan_11 
+  3E0:  	Call     SetPlayerAnimation 	( 00010002 )
+  3F0:  Else
+  3F8:  	Wait     00000023 
+  404:  EndIf
+  40C:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  420:  Call     DisablePlayerInput 	( .False )
+  430:  Call     RemoveNpc   	( .Npc:Self )
+  440:  Return
+  448:  End
+
+#new:Script $Script_80242544_jan_11
+    0:  Call     SayMessage0 	( .Npc:Self 00970006 00970006 00000000 001000AD ) % Waaaah! It's dark! I'm scared!
+   20:  Return
+   28:  End
+
+#new:Script $Script_Init_80242574_jan_11
+    0:  If  *StoryProgress  ==  0000000F 
+   10:  	Exec     $Script_8024207C_jan_11 
+   1C:  	If  *Flag_JAN_13  ==  00000000 
+   2C:  		Call     SetNpcAnimation 	( .Npc:Self 00970006 )
+   40:  		Call     SetNpcPos   	( .Npc:Self 00000084 00000055 0000000B )
+   5C:  		Call     BindNpcIdle 	( .Npc:Self $Script_802420F4_jan_11 )
+   70:  		Call     BindNpcInteract 	( .Npc:Self $Script_80242544_jan_11 )
+   84:  		Return
+   8C:  	EndIf
+   94:  EndIf
+   9C:  Call     RemoveNpc   	( .Npc:Self )
+   AC:  Return
+   B4:  End
+

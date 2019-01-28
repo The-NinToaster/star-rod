@@ -1,0 +1,1152 @@
+27-000
+[STYLE:RIGHT]You need {Var:01} coin{Var:02} for[BR]
+"{Var:00}". [BR]
+Want to buy it?[BR]
+{Func_04}[END]
+
+27-001
+[NEXT]
+You don't have enough coins![WAIT][END]
+
+27-002
+[NEXT]
+You can't carry any more items[BR]
+right now.[BR]
+[WAIT][NEXT]
+Please come back after selling,[BR]
+checking, or using some items.[WAIT][END]
+
+27-003
+[NEXT]
+Thank you very much.[WAIT][END]
+
+27-004
+[STYLE:RIGHT]Welcome to Shroom Grocery![BR]
+[WAIT][NEXT]
+How can I help you today?[BR]
+{Func_04}[END]
+
+27-005
+[NEXT]
+If there's anything you want to[BR]
+buy, stand in front of it and[BR]
+press {PushColor}{Color:10}[A]{PopColor}.[WAIT][END]
+
+27-006
+[NEXT]
+You don't appear to have any[BR]
+items.[WAIT][END]
+
+27-007
+[NEXT]
+Which item would you like to sell?[WAIT][END]
+
+27-008
+[STYLE:RIGHT][NEXT]
+I'll buy "{Var:00}" for[BR]
+{Var:01} coin{Var:02}. [BR]
+Do we have a deal?[BR]
+{Func_04}[END]
+
+27-009
+[STYLE:RIGHT]Oh, OK.[BR]
+[PAUSE:05]Is there anything else you'd like[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-00A
+[STYLE:RIGHT]Thank you very much.[BR]
+[PAUSE:05]Is there anything else you'd like[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-00B
+[STYLE:RIGHT]Thank you very much.[WAIT][END]
+
+27-00C
+[NEXT]
+You don't seem to have any[BR]
+items.[WAIT][END]
+
+27-00D
+[NEXT]
+I'm sorry, but we can't check[BR]
+any more items.[WAIT][END]
+
+27-00E
+[NEXT]
+We can check {Var:00} more item{Var:01}.[BR]
+What would you like to check?[BR]
+[WAIT][END]
+
+27-00F
+[STYLE:RIGHT]OK, we'll take good care of it.[WAIT][END]
+
+27-010
+[STYLE:RIGHT]OK, we'll take good care of it.[BR]
+[WAIT][NEXT]
+Is there anything else you'd like[BR]
+us to check?[BR]
+{Func_04}[END]
+
+27-011
+[NEXT]
+Oh?[BR]
+[PAUSE:05]I'm sorry--we aren't holding[BR]
+anything for you.[WAIT][END]
+
+27-012
+[NEXT]
+You can't carry any more items[BR]
+right now.[BR]
+[WAIT][NEXT]
+Please come back after selling [BR]
+or using some items.[WAIT][END]
+
+27-013
+[NEXT]
+Which item would you like to claim?[WAIT][END]
+
+27-014
+[STYLE:RIGHT]This is the item.[WAIT][END]
+
+27-015
+[STYLE:RIGHT]OK, this is the item.[BR]
+[WAIT][NEXT]
+Is there anything else you'd like[BR]
+to claim?[BR]
+{Func_04}[END]
+
+27-016
+[STYLE:RIGHT][NEXT]
+Please come again.[WAIT][END]
+
+27-017
+[STYLE:RIGHT]Uh-huh![BR]
+[PAUSE:0A]I knew it, Mario.[BR]
+[WAIT][NEXT]
+I knew you had an keen eye for[BR]
+Badges.[BR]
+That's a good one.[BR]
+[WAIT][NEXT]
+You need {Var:01} coins for [BR]
+"{Var:00}".[BR]
+[WAIT][NEXT]
+The BP you need in order to use[BR]
+this Badge is "{Var:02}".[BR]
+[WAIT][NEXT]
+Would you like to buy it?[BR]
+{Func_04}[END]
+
+27-018
+[NEXT]
+Sorry, Mario, but[BR]
+[PAUSE:0A]you don't have quite enough coins[BR]
+to buy that Badge.[WAIT][END]
+
+27-019
+[NEXT]
+Thanks![BR]
+[WAIT][NEXT]
+I change my stock of Badges[BR]
+now and then, so please check [BR]
+back occasionally.[WAIT][END]
+
+27-01A
+[STYLE:RIGHT][NEXT]
+I change my stock of Badges[BR]
+now and then, so please check [BR]
+back occasionally.[BR]
+[WAIT][NEXT]
+You never know when you'll find[BR]
+a real winner![WAIT][END]
+
+27-01B
+[STYLE:RIGHT]You need {Var:01} coin{Var:02} for[BR]
+"{Var:00}". [BR]
+Want to buy it?[BR]
+{Func_04}[END]
+
+27-01C
+[NEXT]
+You don't have enough coins![WAIT][END]
+
+27-01D
+[NEXT]
+You seem to have too many items.[BR]
+[WAIT][NEXT]
+Please drop by again after [BR]
+selling, checking, or using some[BR]
+items.[WAIT][END]
+
+27-01E
+[NEXT]
+Thank you so much.[WAIT][END]
+
+27-01F
+[STYLE:RIGHT]Welcome to Harry's Shop.[BR]
+[WAIT][NEXT]
+How can I help you today?[BR]
+{Func_04}[END]
+
+27-020
+[NEXT]
+If there's anything you want to[BR]
+buy, stand in front of it and[BR]
+press {PushColor}{Color:10}[A]{PopColor}.[WAIT][END]
+
+27-021
+[NEXT]
+You don't seem to have any[BR]
+items.[WAIT][END]
+
+27-022
+[NEXT]
+Which item would you like to sell[BR]
+today?[WAIT][END]
+
+27-023
+[STYLE:RIGHT][NEXT]
+I'll buy "{Var:00}" for[BR]
+{Var:01} coin{Var:02}.[BR]
+Is that OK with you?[BR]
+{Func_04}[END]
+
+27-024
+[STYLE:RIGHT]Oh, all right.[BR]
+[PAUSE:05]Is there anything else you'd like[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-025
+[STYLE:RIGHT]Thank you very much.[BR]
+[PAUSE:05]Is there anything else you'd like[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-026
+[STYLE:RIGHT]Thank you very much.[WAIT][END]
+
+27-027
+[NEXT]
+You don't seem to have any [BR]
+items.[WAIT][END]
+
+27-028
+[NEXT]
+I am sorry, but we can't check[BR]
+any more items.[WAIT][END]
+
+27-029
+[NEXT]
+We can check {Var:00} more item{Var:01}. [BR]
+What would you like to check?[WAIT][END]
+
+27-02A
+[STYLE:RIGHT]We'll store it with extra care.[WAIT][END]
+
+27-02B
+[STYLE:RIGHT]We'll store it with extra care.[BR]
+[WAIT][NEXT]
+Is there anything else you'd like[BR]
+us to check?[BR]
+{Func_04}[END]
+
+27-02C
+[NEXT]
+You do?[BR]
+[PAUSE:05]But we're not keeping anything [BR]
+for you.[WAIT][END]
+
+27-02D
+[NEXT]
+You can't carry any more items[BR]
+right now.[BR]
+[WAIT][NEXT]
+Please drop by again after[BR]
+selling or using some items.[WAIT][END]
+
+27-02E
+[NEXT]
+Which one would you like to claim?[WAIT][END]
+
+27-02F
+[STYLE:RIGHT]Here's the item.[WAIT][END]
+
+27-030
+[STYLE:RIGHT]Here's the item.[BR]
+[WAIT][NEXT]
+Is there anything else you'd like[BR]
+to claim?[BR]
+{Func_04}[END]
+
+27-031
+[STYLE:RIGHT][NEXT]
+Please drop by again.[WAIT][END]
+
+27-032
+[STYLE:RIGHT]"{Var:00}" costs {Var:01} coin{Var:02}.  [BR]
+Are you buying?[BR]
+{Func_04}[END]
+
+27-033
+[NEXT]
+Hmmm. Sorry.[BR]
+[PAUSE:05]You don't have enough coins.[BR]
+[PAUSE:0A]Come again after saving up a[BR]
+few more coins.[WAIT][END]
+
+27-034
+[NEXT]
+I think you have too many items[BR]
+with you.[BR]
+[WAIT][NEXT]
+You need to sell, check, or use[BR]
+some items.[WAIT][END]
+
+27-035
+[NEXT]
+Thank you!![WAIT][END]
+
+27-036
+[STYLE:RIGHT]Welcome![BR]
+[PAUSE:0A]This is the reliable and credible[BR]
+Koopa's Shop![BR]
+[WAIT][NEXT]
+Well, what do you want?[BR]
+{Func_04}[END]
+
+27-037
+[NEXT]
+If you came here to shop, stand[BR]
+in front of the item you want to[BR]
+buy and press {PushColor}{Color:10}[A]{PopColor}.[WAIT][END]
+
+27-038
+[NEXT]
+Hey, you don't have any items[BR]
+at all![WAIT][END]
+
+27-039
+[NEXT]
+So, which item do you want to[BR]
+sell me?[WAIT][END]
+
+27-03A
+[STYLE:RIGHT][NEXT]
+I'll buy "{Var:00}" for[BR]
+{Var:01} coin{Var:02}.  [BR]
+Do you want to sell it?[BR]
+{Func_04}[END]
+
+27-03B
+[STYLE:RIGHT]So...[BR]
+[PAUSE:05]are there any other items you [BR]
+want to sell?[BR]
+{Func_04}[END]
+
+27-03C
+[STYLE:RIGHT]Thank you!![BR]
+[PAUSE:05]Are there any more items you [BR]
+want to sell?[BR]
+{Func_04}[END]
+
+27-03D
+[STYLE:RIGHT]Thank you!![WAIT][END]
+
+27-03E
+[NEXT]
+Hey, you don't have any items [BR]
+at all![WAIT][END]
+
+27-03F
+[NEXT]
+Sorry, but I can't possibly store[BR]
+any more items.[WAIT][END]
+
+27-040
+[NEXT]
+I can check {Var:00} more item{Var:01}.[BR]
+What do you want to check?[WAIT][END]
+
+27-041
+[STYLE:RIGHT]OK, I'll hang on to it for you.[WAIT][END]
+
+27-042
+[STYLE:RIGHT]OK, I'll hang on to it for you.[BR]
+[WAIT][NEXT]
+Do you want me to store[BR]
+anything else?[BR]
+{Func_04}[END]
+
+27-043
+[NEXT]
+Yes?[BR]
+[PAUSE:05]You didn't store anything.[WAIT][END]
+
+27-044
+[NEXT]
+Hey, you couldn't possibly carry[BR]
+anything else.[BR]
+[WAIT][NEXT]
+Come back after selling or using[BR]
+some items.[WAIT][END]
+
+27-045
+[NEXT]
+What do you want to pick up?[WAIT][END]
+
+27-046
+[STYLE:RIGHT]Then here it is.[WAIT][END]
+
+27-047
+[STYLE:RIGHT]Then here it is.[BR]
+[WAIT][NEXT]
+Do you want to pick up anything[BR]
+else?[BR]
+{Func_04}[END]
+
+27-048
+[STYLE:RIGHT][NEXT]
+I hope to see you again.[WAIT][END]
+
+27-049
+[STYLE:RIGHT]"{Var:00}" will be {Var:01} coin{Var:02}, [BR]
+but are you sure you want it? [BR]
+{Func_04}[END]
+
+27-04A
+[NEXT]
+Hey, hey, hold up.[BR]
+[PAUSE:05]You need a few more coins to buy[BR]
+that one.[WAIT][END]
+
+27-04B
+[NEXT]
+You're already carrying a full[BR]
+load.[BR]
+[WAIT][NEXT]
+Come back after using, selling,[BR]
+or checking some items.[WAIT][END]
+
+27-04C
+[NEXT]
+All right![BR]
+[PAUSE:05]Thanks!![WAIT][END]
+
+27-04D
+[STYLE:RIGHT]Welcome, traveler![BR]
+[WAIT][NEXT]
+This is the renowned Little[BR]
+Mouser's Shop of Dry Dry[BR]
+Outpost.[BR]
+[WAIT][NEXT]
+What can we interest you in?[BR]
+{Func_04}[END]
+
+27-04E
+[NEXT]
+All right![BR]
+[PAUSE:0A]So you want to spend some loot.[BR]
+Stand in front of the item you[BR]
+want to buy, then press {PushColor}{Color:10}[A]{PopColor}.[BR]
+[WAIT][NEXT]
+I'm proud to offer quality items[BR]
+at low, low prices![BR]
+[PAUSE:0A]No other shop can compare with[BR]
+my prices![WAIT][END]
+
+27-04F
+[NEXT]
+What?[BR]
+[PAUSE:0A]You can't sell me items that you[BR]
+don't have![WAIT][END]
+
+27-050
+[NEXT]
+Which one do you want to sell?[WAIT][END]
+
+27-051
+[STYLE:RIGHT][NEXT]
+I'll buy "{Var:00}" for[BR]
+{Var:01} coin{Var:02}. [BR]
+Are you sure you want to sell it?[BR]
+{Func_04}[END]
+
+27-052
+[STYLE:RIGHT]Okay.[BR]
+[PAUSE:05]Is there any other item you want[BR]
+to sell me?[BR]
+{Func_04}[END]
+
+27-053
+[STYLE:RIGHT]Thanks![BR]
+[PAUSE:05]Is there any other item you want[BR]
+to sell me?[BR]
+{Func_04}[END]
+
+27-054
+[STYLE:RIGHT]Thanks![WAIT][END]
+
+27-055
+[NEXT]
+What?[BR]
+[PAUSE:0A]Hey, I can't check items that[BR]
+don't exist.[WAIT][END]
+
+27-056
+[NEXT]
+I can't check any more.[BR]
+[PAUSE:0A]Sorry. The storeroom's packed.[WAIT][END]
+
+27-057
+[NEXT]
+I can check {Var:00} more item{Var:01}.[BR]
+What do you want to check?[WAIT][END]
+
+27-058
+[STYLE:RIGHT]All right.[BR]
+[PAUSE:0A]I'll stash it for you.[WAIT][END]
+
+27-059
+[STYLE:RIGHT]All right.[BR]
+[PAUSE:0A]I'll stash it for you.[BR]
+[WAIT][NEXT]
+Do you want to leave anything [BR]
+else?[BR]
+{Func_04}[END]
+
+27-05A
+[NEXT]
+Hang on there![BR]
+[PAUSE:05]I'm not holding anything.[BR]
+[WAIT][NEXT]
+Don't try to claim things you[BR]
+haven't checked.[WAIT][END]
+
+27-05B
+[NEXT]
+You're already carrying a full[BR]
+load.[BR]
+[WAIT][NEXT]
+Come to me after selling or using[BR]
+some items.[WAIT][END]
+
+27-05C
+[NEXT]
+So, which one do you want back?[WAIT][END]
+
+27-05D
+[STYLE:RIGHT]Here you are.[WAIT][END]
+
+27-05E
+[STYLE:RIGHT]Here you are.[BR]
+[WAIT][NEXT]
+Do you want anything else back?[BR]
+{Func_04}[END]
+
+27-05F
+[STYLE:RIGHT][NEXT]
+I look forward to seeing you[BR]
+again.[WAIT][END]
+
+27-060
+[STYLE:RIGHT]You need {Var:01} coin{Var:02} for[BR]
+"{Var:00}", [BR]
+but are you sure?[BR]
+{Func_04}[END]
+
+27-061
+[NEXT]
+You don't have enough coins![WAIT][END]
+
+27-062
+[NEXT]
+You're carrying too much as it is.[BR]
+[WAIT][NEXT]
+Why don't you come back after [BR]
+selling, checking, or using some[BR]
+items?[WAIT][END]
+
+27-063
+[NEXT]
+Boo you very much.[WAIT][END]
+
+27-064
+[STYLE:RIGHT]Welcome to Boo's Shop.[BR]
+[WAIT][NEXT]
+How can I scare you today?[BR]
+{Func_04}[END]
+
+27-065
+[NEXT]
+If there's anything you want to[BR]
+buy, stand in front of it and[BR]
+press {PushColor}{Color:10}[A]{PopColor}.[WAIT][END]
+
+27-066
+[NEXT]
+You don't seem to have anything,[BR]
+so...BOO![WAIT][END]
+
+27-067
+[NEXT]
+Which one would you like to sell?[WAIT][END]
+
+27-068
+[STYLE:RIGHT][NEXT]
+I'll buy "{Var:00}" for[BR]
+{Var:01} coin{Var:02}. [BR]
+How does that sound?[BR]
+{Func_04}[END]
+
+27-069
+[STYLE:RIGHT]All right, all right.[BR]
+[PAUSE:05]Is there anything else you'd like[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-06A
+[STYLE:RIGHT]Boo you very much.[BR]
+[PAUSE:05]Is there anything else you'd like[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-06B
+[STYLE:RIGHT]Boo you very much.[WAIT][END]
+
+27-06C
+[NEXT]
+You don't seem to have any items[BR]
+so...BOO![WAIT][END]
+
+27-06D
+[NEXT]
+I'm sorry, but we can't possibly[BR]
+keep any more items.[WAIT][END]
+
+27-06E
+[NEXT]
+We can check {Var:00} more item{Var:01}.[BR]
+What would you like to check?[WAIT][END]
+
+27-06F
+[STYLE:RIGHT]OK, we will keep it safe.[WAIT][END]
+
+27-070
+[STYLE:RIGHT]OK, we will keep it safe.[BR]
+[WAIT][NEXT]
+Is there anything else you'd like[BR]
+us to check?[BR]
+{Func_04}[END]
+
+27-071
+[NEXT]
+Say what?[BR]
+[PAUSE:05]We aren't keeping anything for[BR]
+you, so...BOO![WAIT][END]
+
+27-072
+[NEXT]
+You're carrying too much as it is.[BR]
+[WAIT][NEXT]
+Come on back after selling or[BR]
+using some items.[WAIT][END]
+
+27-073
+[NEXT]
+Which one would you like to claim?[WAIT][END]
+
+27-074
+[STYLE:RIGHT]Here you go.[WAIT][END]
+
+27-075
+[STYLE:RIGHT]Here you go.[BR]
+[WAIT][NEXT]
+Is there anything else you'd like[BR]
+to claim?[BR]
+{Func_04}[END]
+
+27-076
+[STYLE:RIGHT][NEXT]
+Come back anytime.[WAIT][END]
+
+27-077
+[STYLE:RIGHT]You need {Var:01} coin{Var:02} for[BR]
+"{Var:00}". [BR]
+Sound OK to you?[BR]
+{Func_04}[END]
+
+27-078
+[NEXT]
+Aw, you need more coins![WAIT][END]
+
+27-079
+[NEXT]
+You can't carry any more stuff.[BR]
+[WAIT][NEXT]
+Please come again after selling,[BR]
+checking, or using some items.[WAIT][END]
+
+27-07A
+[NEXT]
+Thank you very much.[WAIT][END]
+
+27-07B
+[STYLE:RIGHT]Welcome to Yoshi's Cabana.[BR]
+[WAIT][NEXT]
+What's your pleasure?[BR]
+{Func_04}[END]
+
+27-07C
+[NEXT]
+If there's anything you want to[BR]
+buy, stand in front of it and[BR]
+press {PushColor}{Color:10}[A]{PopColor}.[WAIT][END]
+
+27-07D
+[NEXT]
+Uh...it doesn't look like you have[BR]
+any items.[WAIT][END]
+
+27-07E
+[NEXT]
+Which one would you like to sell?[WAIT][END]
+
+27-07F
+[STYLE:RIGHT][NEXT]
+I'll buy "{Var:00}" for[BR]
+{Var:01} coin{Var:02}. [BR]
+Sound OK to you?[BR]
+{Func_04}[END]
+
+27-080
+[STYLE:RIGHT]OK, fair enough.[BR]
+[PAUSE:05]Is there anything else you'd like[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-081
+[STYLE:RIGHT]Thank you very much.[BR]
+[PAUSE:05]Is there anything else you'd like[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-082
+[STYLE:RIGHT]Thank you very much.[WAIT][END]
+
+27-083
+[NEXT]
+Uh...it doesn't look like you have[BR]
+any items.[WAIT][END]
+
+27-084
+[NEXT]
+I am deeply sorry, but we can't[BR]
+keep any more items.[WAIT][END]
+
+27-085
+[NEXT]
+We can check {Var:00} more item{Var:01}.[BR]
+What would you like to check?[WAIT][END]
+
+27-086
+[STYLE:RIGHT]OK, we'll store it carefully.[WAIT][END]
+
+27-087
+[STYLE:RIGHT]OK, we'll store it carefully.[BR]
+[WAIT][NEXT]
+Is there anything else you'd like[BR]
+us to check?[BR]
+{Func_04}[END]
+
+27-088
+[NEXT]
+Oh? You must be mistaken.[BR]
+[PAUSE:05]We don't have anything of yours.[WAIT][END]
+
+27-089
+[NEXT]
+You can't carry any more stuff.[BR]
+[WAIT][NEXT]
+Please come again after selling [BR]
+or using some items.[WAIT][END]
+
+27-08A
+[NEXT]
+Which one would you like to claim?[WAIT][END]
+
+27-08B
+[STYLE:RIGHT]There you go![WAIT][END]
+
+27-08C
+[STYLE:RIGHT]There you go![BR]
+[WAIT][NEXT]
+Is there anything else you'd like[BR]
+to claim?[BR]
+{Func_04}[END]
+
+27-08D
+[STYLE:RIGHT][NEXT]
+Please come back often.[WAIT][END]
+
+27-08E
+[STYLE:RIGHT]You need {Var:01} coin{Var:02} for[BR]
+"{Var:00}".[BR]
+Is that cool with you?[BR]
+{Func_04}[END]
+
+27-08F
+[NEXT]
+Hey! You can't afford that![WAIT][END]
+
+27-090
+[NEXT]
+You're packed a little heavy.[BR]
+[WAIT][NEXT]
+Please come again after selling,[BR]
+checking, or using some items.[WAIT][END]
+
+27-091
+[NEXT]
+Many thanks.[WAIT][END]
+
+27-092
+[STYLE:RIGHT]Welcome to Shiver Shop.[BR]
+[WAIT][NEXT]
+How can I help you today?[BR]
+{Func_04}[END]
+
+27-093
+[NEXT]
+If there's anything you want to[BR]
+buy, stand in front of it and[BR]
+press {PushColor}{Color:10}[A]{PopColor}.[WAIT][END]
+
+27-094
+[NEXT]
+You need to own items in order[BR]
+to sell them.[WAIT][END]
+
+27-095
+[NEXT]
+Which one would you like to sell?[WAIT][END]
+
+27-096
+[STYLE:RIGHT][NEXT]
+I'll buy "{Var:00}" for[BR]
+{Var:01} coin{Var:02}.[BR]
+Is that cool with you?[BR]
+{Func_04}[END]
+
+27-097
+[STYLE:RIGHT]All right, chill out.[BR]
+[PAUSE:05]Is there anything else you want[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-098
+[STYLE:RIGHT]Thank you very much.[BR]
+[PAUSE:05]Is there anything else you want[BR]
+to sell?[BR]
+{Func_04}[END]
+
+27-099
+[STYLE:RIGHT]Thank you very much.[WAIT][END]
+
+27-09A
+[NEXT]
+You have to own some items in[BR]
+order to check them.[WAIT][END]
+
+27-09B
+[NEXT]
+I am sorry, but we have no more[BR]
+room for items.[WAIT][END]
+
+27-09C
+[NEXT]
+We can check {Var:00} more item{Var:01}.[BR]
+What would you like to check?[WAIT][END]
+
+27-09D
+[STYLE:RIGHT]OK, we'll put it in deep freeze.[WAIT][END]
+
+27-09E
+[STYLE:RIGHT]OK, we'll put it in deep freeze.[BR]
+[WAIT][NEXT]
+Is there anything else you would[BR]
+like us to check?[BR]
+{Func_04}[END]
+
+27-09F
+[NEXT]
+Excuse me?[BR]
+[PAUSE:05]But we aren't keeping anything [BR]
+for you![WAIT][END]
+
+27-0A0
+[NEXT]
+You're packed a little heavy.[BR]
+[WAIT][NEXT]
+Please come again after selling [BR]
+or using some items.[WAIT][END]
+
+27-0A1
+[NEXT]
+Which one would you like to claim?[WAIT][END]
+
+27-0A2
+[STYLE:RIGHT]Here it is![WAIT][END]
+
+27-0A3
+[STYLE:RIGHT]Here it is![BR]
+[WAIT][NEXT]
+Is there anything else you want[BR]
+to claim?[BR]
+{Func_04}[END]
+
+27-0A4
+[STYLE:RIGHT][NEXT]
+Come chill out anytime![WAIT][END]
+
+27-0A5
+[STYLE:RIGHT]{SpeechSound:02}You need {Var:01} coin{Var:02} for[BR]
+"{Var:00}". [BR]
+Is that agreeable?[BR]
+{Func_04}[END]
+
+27-0A6
+{SpeechSound:02}[NEXT]
+You lack the funds. I'm sorry.[WAIT][END]
+
+27-0A7
+{SpeechSound:02}[NEXT]
+You seem to have too many items.[BR]
+[WAIT][NEXT]
+Please return after selling,[BR]
+checking, or using some items.[WAIT][END]
+
+27-0A8
+{SpeechSound:02}[NEXT]
+Thank you kindly.[WAIT][END]
+
+27-0A9
+[STYLE:RIGHT]{SpeechSound:02}Welcome to Star Haven Shop.[BR]
+[WAIT][NEXT]
+What is your wish?[BR]
+{Func_04}[END]
+
+27-0AA
+{SpeechSound:02}[NEXT]
+If there's anything you want to[BR]
+buy, stand in front of it and[BR]
+press {PushColor}{Color:10}[A]{PopColor}.[WAIT][END]
+
+27-0AB
+{SpeechSound:02}[NEXT]
+It would appear that you have[BR]
+no items.[WAIT][END]
+
+27-0AC
+{SpeechSound:02}[NEXT]
+Which one would you like to sell?[WAIT][END]
+
+27-0AD
+[STYLE:RIGHT]{SpeechSound:02}[NEXT]
+I'll buy "{Var:00}" for[BR]
+{Var:01} coin{Var:02}.[BR]
+Is that agreeable?[BR]
+{Func_04}[END]
+
+27-0AE
+[STYLE:RIGHT]{SpeechSound:02}Oh. I understand.[BR]
+[PAUSE:05]Is there anything else you would[BR]
+like to sell?[BR]
+{Func_04}[END]
+
+27-0AF
+[STYLE:RIGHT]{SpeechSound:02}Thank you kindly.[BR]
+[PAUSE:05]Is there anything else you would[BR]
+like to sell?[BR]
+{Func_04}[END]
+
+27-0B0
+[STYLE:RIGHT]{SpeechSound:02}Thank you kindly.[WAIT][END]
+
+27-0B1
+{SpeechSound:02}[NEXT]
+It appears that you have no[BR]
+items.[WAIT][END]
+
+27-0B2
+{SpeechSound:02}[NEXT]
+I am sorry, but we have reached[BR]
+our storage capacity.[WAIT][END]
+
+27-0B3
+{SpeechSound:02}[NEXT]
+We can check {Var:00} more item{Var:01}, [BR]
+but would you like us to do so?[WAIT][END]
+
+27-0B4
+[STYLE:RIGHT]{SpeechSound:02}OK, we will take special care.[WAIT][END]
+
+27-0B5
+[STYLE:RIGHT]{SpeechSound:02}OK, we will take special care.[BR]
+[WAIT][NEXT]
+Is there anything else you would[BR]
+like us to check?[BR]
+{Func_04}[END]
+
+27-0B6
+{SpeechSound:02}[NEXT]
+No, there must be a mistake.[BR]
+[PAUSE:05]We aren't holding anything for[BR]
+you.[WAIT][END]
+
+27-0B7
+{SpeechSound:02}[NEXT]
+You seem to have too many items.[BR]
+[WAIT][NEXT]
+Please return after selling or[BR]
+using some items.[WAIT][END]
+
+27-0B8
+{SpeechSound:02}[NEXT]
+Which one would you like to claim?[WAIT][END]
+
+27-0B9
+[STYLE:RIGHT]{SpeechSound:02}Here you are. Enjoy![WAIT][END]
+
+27-0BA
+[STYLE:RIGHT]{SpeechSound:02}Here you are. Enjoy![BR]
+[WAIT][NEXT]
+Is there anything else you would[BR]
+like to claim?[BR]
+{Func_04}[END]
+
+27-0BB
+[STYLE:RIGHT]{SpeechSound:02}[NEXT]
+Please stop in again sometime.[WAIT][END]
+
+27-0BC
+[STYLE:RIGHT]"{Var:00}"?[BR]
+I'll give it to you if you give me[BR]
+{Var:01} coin{Var:02}.[BR]
+{Func_04}[END]
+
+27-0BD
+[NEXT]
+Hey, man, you don't have the[BR]
+cash![WAIT][END]
+
+27-0BE
+[NEXT]
+You're carrying too much, man.[BR]
+[WAIT][NEXT]
+Come on back after selling, [BR]
+checking, or using some items.[WAIT][END]
+
+27-0BF
+[NEXT]
+Heh-heh.[BR]
+[PAUSE:0A]Thanks, man.[WAIT][END]
+
+27-0C0
+[STYLE:RIGHT]Yep.[BR]
+[PAUSE:0A]This is the Storehouse of [BR]
+Bowser's Castle.[BR]
+[WAIT][NEXT]
+Why in the world are you here?[BR]
+{Func_04}[END]
+
+27-0C1
+[NEXT]
+Go on and press {PushColor}{Color:10}[A]{PopColor} in front of[BR]
+the item you want.[WAIT][END]
+
+27-0C2
+[NEXT]
+You can't sell nothing, pal![WAIT][END]
+
+27-0C3
+[NEXT]
+So, what do you want to sell,[BR]
+huh?[WAIT][END]
+
+27-0C4
+[STYLE:RIGHT][NEXT]
+I'll trade "{Var:00}" for [BR]
+{Var:01} coin{Var:02}.[BR]
+{Func_04}[END]
+
+27-0C5
+[STYLE:RIGHT]Fine. I don't care.[BR]
+[PAUSE:05]Anything else you want to sell?[BR]
+{Func_04}[END]
+
+27-0C6
+[STYLE:RIGHT]Heh-heh.[BR]
+[PAUSE:0A]Good deal, man.[BR]
+[WAIT][NEXT]
+[PAUSE:05]Anything else you want to sell?[BR]
+{Func_04}[END]
+
+27-0C7
+[STYLE:RIGHT]Heh-heh.[BR]
+[PAUSE:0A]Good deal, man.[WAIT][END]
+
+27-0C8
+[NEXT]
+Hey! You don't have anything![WAIT][END]
+
+27-0C9
+[NEXT]
+I ran out of storage space.[WAIT][END]
+
+27-0CA
+[NEXT]
+I can hold on to {Var:00} more item{Var:01}.[BR]
+What do you want me to hold?[WAIT][END]
+
+27-0CB
+[STYLE:RIGHT]All right, then. I'll keep it.[WAIT][END]
+
+27-0CC
+[STYLE:RIGHT]All right, then. I'll keep it.[BR]
+[WAIT][NEXT]
+Anything else to check?[BR]
+{Func_04}[END]
+
+27-0CD
+[NEXT]
+Don't try to fool me, pal![BR]
+[PAUSE:05]You know you don't have any[BR]
+items in storage![WAIT][END]
+
+27-0CE
+[NEXT]
+You're carrying too much, man.[BR]
+[WAIT][NEXT]
+Come back after selling or using[BR]
+some items.[WAIT][END]
+
+27-0CF
+[NEXT]
+Which one do you want?[WAIT][END]
+
+27-0D0
+[STYLE:RIGHT]Here you go, man.[WAIT][END]
+
+27-0D1
+[STYLE:RIGHT]Here you go, man.[BR]
+[WAIT][NEXT]
+You want anything else?[BR]
+{Func_04}[END]
+
+27-0D2
+[STYLE:RIGHT][NEXT]
+Hey! Don't tell King Bowser[BR]
+about any of this![WAIT][END]
+

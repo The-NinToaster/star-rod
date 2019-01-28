@@ -1,0 +1,32 @@
+Script: 1CA278 (001CA278)
+
+    0:  Exec     8029B818 *Var[E] 
+   10:  Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[1] )
+   28:  Call     GetSpriteEventFlags 	( FFFFFF81 *Var[0] *Var[A] )
+   40:  ExecWait 8029B494 
+   4C:  Call     SetActorPos 	( FFFFFF81 FFFFFF38 0000001E 00000000 )
+   68:  Call     SetGoalToHome 	( FFFFFF81 )
+   78:  Call     SetActorJumpscale 	( FFFFFF81 *Fixed[0.40039062] )
+   8C:  Call     SetActorSpeed 	( FFFFFF81 *Fixed[10.0] )
+   A0:  Call     AddToGoalPos 	( FFFFFF81 FFFFFFE2 00000000 00000000 )
+   BC:  Call     JumpToGoal  	( FFFFFF81 00000000 00000000 00000001 00000000 )
+   DC:  Exec     8029B8A8 
+   E8:  Call     AddToGoalPos 	( FFFFFF81 00000014 00000000 00000000 )
+  104:  Call     JumpToGoal  	( FFFFFF81 0000000A 00000000 00000001 00000000 )
+  124:  Exec     8029B8A8 
+  130:  Call     AddToGoalPos 	( FFFFFF81 0000000A 00000000 00000000 )
+  14C:  Call     JumpToGoal  	( FFFFFF81 00000006 00000000 00000001 00000000 )
+  16C:  Exec     8029B8A8 
+  178:  Wait     0000000F 
+  184:  Label    00000000 
+  190:  Call     GetActorRotation 	( FFFFFF81 *Var[0] *Var[1] *Var[2] )
+  1AC:  Mod  *Var[1]  00000168 
+  1BC:  If  *Var[1]  !=  00000000 
+  1CC:  	Wait     00000001 
+  1D8:  	Goto     00000000 
+  1E4:  EndIf
+  1EC:  Kill     *Var[E] 
+  1F8:  Call     SetActorAngle 	( FFFFFF81 00000000 )
+  20C:  Return
+  214:  End
+

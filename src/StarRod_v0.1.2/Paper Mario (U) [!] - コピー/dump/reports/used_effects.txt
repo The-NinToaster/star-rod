@@ -1,0 +1,175 @@
+   00003C80  14   25 Area KPA4
+   00003C81  3    trd_08
+   00013C80  112  2B Area OMO2_3
+   00013C81  16   2D Area OMO2_5
+   00013C82  9    01 Area KMR Part 2
+   00013C83  2    17 Area KZN2
+** 00060000  11   Item_HustleDrink
+** 00060001  93   Item_HustleDrink
+** 00060002  5    Item_SleepySheep
+** 00060003  32   Item_SleepySheep
+** 00060004  51   27 Area DIG
+** 00070000  38   22 Area KPA
+** 00070001  15   mgm_02
+** 00070002  215  Item_POWBlock
+   00070003  3    Item_InsecticideHerb
+   000A0000  2    flo_19
+   000A3C80  2    19 Area FLO2
+   000D00F0  2    mac_01
+   000D010A  2    mac_01
+   000D0124  2    mac_01
+   000D3C80  74   19 Area FLO2
+   000E3C80  1    Item_SnowmanDoll
+   000F3C80  2    1E Area SAM2
+** 00100002  14   27 Area DIG
+** 00100003  1    dgb_00
+** 00110000  140  25 Area KPA4
+** 00110001  33   07 UpAndAway
+   00110002  9    18 Area FLO
+   00110003  29   14 Area JAN
+   00110004  27   06 Sushi
+** 00120000  18   02 Area KMR Part 3
+** 00130000  34   26 Area KKJ
+   00130001  44   26 Area KKJ
+** 00140000  102  01 Area KMR Part 2
+** 00150000  10   trd_04
+** 00150001  6    kzn_20
+   00150002  11   sbk_02
+** 00160000  2    trd_04
+** 00170000  18   25 Area KPA4
+** 00180001  2    kmr_04
+** 00180002  1    jan_00
+** 00180003  12   nok_01
+** 00190000  22   24 Area KPA3
+** 00190002  4    11 Area OMO2
+** 001A0000  99   03 Parakarry
+** 001B0000  2    obk_04
+** 001D0000  89   Move_MegaQuake
+** 001D0001  236  01 Kooper
+** 001F0000  13   osr_03
+** 00200001  88   17 Area KZN2
+** 00200002  3    17 Area KZN2
+** 00200003  9    osr_02
+** 00220003  18   23 Area KPA2
+** 00220005  2    kkj_25
+** 00240000  34   trd_09
+** 00240001  7    hos_05
+** 00250000  12   27 Area DIG
+** 00250001  16   Move_MegaQuake
+** 00250002  12   27 Area DIG
+** 00250003  3    19 Area FLO2
+** 00260000  13   kmr_20
+** 00260001  4    18 Area FLO
+** 00260002  7    kmr_20
+** 00270000  117  2B Area OMO2_3
+** 00270002  2    dgb_18
+** 00280000  2    2C Area OMO2_4
+** 00280001  4    05 Area NOK
+** 002B0000  30   sam_11
+** 002B0002  6    09 Area IWA
+** 002F0000  4    11 Area OMO2
+** 00300000  4    pra_32
+** 00330000  1    obk_01
+** 00330001  62   Unused_UltraShroom
+** 00330002  9    kkj_25
+** 00330003  1    Item_RepelGel
+** 00330005  140  25 Area KPA4
+** 00330006  77   Item_StrangeCake
+** 00330007  128  25 Area KPA4
+** 00330008  25   05 Watt
+   00330009  3    osr_02
+** 0033000A  1    1E Area SAM2
+** 0033000B  2    1E Area SAM2
+** 0033000C  2    mac_01
+** 0033000E  1    kkj_25
+** 00340002  4    hos_10
+** 00350000  2    mac_01
+** 00350001  1    hos_05
+** 00350002  50   23 Area KPA2
+** 00350003  1    kkj_15
+** 00360001  1    hos_05
+** 00360002  1    hos_05
+** 00360004  1    kkj_13
+** 00370000  10   23 Area KPA2
+** 00370002  8    23 Area KPA2
+** 00380000  11   09 PeachBeam
+** 00380001  15   23 Area KPA2
+** 00390000  17   07 UpAndAway
+** 003A0000  3    07 UpAndAway
+** 003B0000  7    hos_05
+   003C0001  2    12 Area OMO3
+   003C0002  57   23 Area KPA2
+** 003E0000  8    25 Area KPA4
+** 00400000  30   27 Area DIG
+** 00400002  17   05 Smooch
+   00420000  23   trd_06
+   00420001  3    obk_06
+   00420002  2    sam_10
+** 00430000  33   23 Area KPA2
+** 00440003  1    end_00
+** 00440004  91   sam_11
+** 00440005  1    08 Bow
+** 00450000  8    sam_11
+** 00470000  63   25 Area KPA4
+** 00470001  2    0E Area ARN
+** 00490000  4    27 Area DIG
+** 004A0000  4    2D Area OMO2_5
+** 004A0002  2    05 Watt
+** 004B0000  2    10 Area OMO
+** 004B0001  2    10 Area OMO
+** 004B0002  2    10 Area OMO
+** 004D0000  2    0C Area ISK Part 2
+** 004F0000  2    dro_02
+   004F0001  2    12 Area OMO3
+** 00510000  6    mac_01
+** 00520000  1    mac_01
+** 00520001  1    hos_06
+** 00520003  2    mac_01
+** 00520004  44   09 PeachBeam
+** 00520005  4    mac_01
+** 00520006  4    mac_01
+   00520009  1    00 Goombario
+** 00530000  2    mac_01
+   00550005  6    jan_16
+   00563C8F  3    06 Sushi
+** 00570000  61   Item_StrangeCake
+** 00590000  2    06 Sushi
+** 005B0000  1    06 Sushi
+** 005E0000  71   Move_MegaQuake
+** 005F0002  12   nok_11
+** 00600000  1    Item_SnowmanDoll
+** 00610000  2    Item_FrightJar
+** 00620000  2    Item_StopWatch
+   00630000  2    17 Area KZN2
+   00630001  2    17 Area KZN2
+   00650002  8    kzn_23
+** 00660000  2    0E Area ARN
+** 00660001  2    0E Area ARN
+** 00680000  1    02 Bombette
+** 00680001  1    02 Bombette
+** 00690000  2    07 Lakilester
+** 006B0000  23   07 Lakilester
+** 006B0001  7    25 Area KPA4
+** 006B0002  20   23 Area KPA2
+** 006B0003  2    0E Area ARN
+** 006B0004  2    kkj_25
+** 006B0006  19   08 Bow
+** 006D0000  2    09 Area IWA
+** 006E0000  38   20 Area PRA2
+   006E0001  2    19 Area FLO2
+** 006F0000  7    20 Area PRA2
+** 00700000  20   17 Area KZN2
+** 00710000  4    0C Area ISK Part 2
+** 00720000  6    pra_32
+** 00720001  18   20 Area PRA2
+** 00720003  7    hos_05
+** 00730000  1    omo_03
+** 00740000  6    19 Area FLO2
+   00750000  2    hos_01
+   00750001  1    hos_02
+** 00770000  4    kmr_30
+** 00770001  2    kmr_30
+   00770002  1    kmr_30
+   00773C8A  1    kmr_30
+   007D0002  1    hos_05
+** 00820000  5    27 Area DIG

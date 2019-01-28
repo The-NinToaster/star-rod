@@ -1,0 +1,9 @@
+Script: DoDeath (001C97A0)
+
+    0:  ExecWait 8029AF08 
+    C:  Call     UseCamPreset 	( 00000002 )
+   1C:  ExecWait 80298BF0 
+   28:  Call     RemoveActor 	( FFFFFF81 )
+   38:  Return
+   40:  End
+

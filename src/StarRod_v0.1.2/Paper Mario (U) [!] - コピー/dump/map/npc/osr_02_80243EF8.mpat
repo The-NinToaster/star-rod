@@ -1,0 +1,89 @@
+% automatically dumped from map osr_02
+
+#new:Npc $osr_02_80243EF8
+00000000 $NpcSettings_80243BD0_osr_02 00000000 00000000 00000000 
+00400D0D $Script_Init_80243E7C_osr_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00390002 00390003 00390004 00390004 00390002 00390002 0039000C 0039000C 
+00390011 00390012 00390007 00390008 00390001 00390002 00390002 00390002 
+00000000 00000000 $ExtraAnimationList_80243BFC_osr_02 00000000 % no tattle string
+
+#new:Function $Function_80240120_osr_02
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  LAB       A2, 8010EFD4
+   14:  JAL       {Func:SetVariable}
+   18:  LW        A1, 0 (V0)
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80243BD0_osr_02
+00000000 00240022 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 000D0000 
+
+#new:ExtraAnimationList $ExtraAnimationList_80243BFC_osr_02
+00390000 00390002 00390003 00390004 00390005 00390008 00390007 00390013 
+00390014 FFFFFFFF 
+
+#new:Script $Script_80243C24_osr_02
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     802D0C20 ( )
+   1C:  Wait     0000000A 
+   28:  Call     SetNpcAnimation 	( .Npc:Self 00390008 )
+   3C:  Wait     0000000A 
+   48:  Call     SetNpcAnimation 	( .Npc:Self 00390002 )
+   5C:  Call     $Function_80240120_osr_02 ( *Var[0] )
+   6C:  Switch  *Var[0] 
+   78:  	Case  ==  00000000 
+   84:  		Set  *Var[1]  0014014A 
+   94:  	Case  ==  00000003 
+   A0:  		Set  *Var[1]  0014014B 
+   B0:  	Default
+   B8:  		Set  *Var[1]  0014014C 
+   C8:  EndSwitch
+   D0:  Call     SayMessage0 	( .Npc:Self 00390005 00390002 00000010 *Var[1] ) % variable string ID
+   F0:  Wait     0000000A 
+   FC:  Call     SetNpcAnimation 	( .Npc:Self 00390007 )
+  110:  Call     DisablePlayerInput 	( .False )
+  120:  Return
+  128:  End
+
+#new:Script $Script_80243D54_osr_02
+    0:  Call     SetOwnerVar 	( 00000000 00000000 )
+   14:  Call     GetNpcPos   	( .Npc:Self *Var[1] *Var[2] *Var[3] )
+   30:  Loop     
+   3C:  	Call     GetOwnerVar 	( 00000000 *Var[0] )
+   50:  	If  *Var[0]  ==  00000000 
+   60:  		Call     AwaitPlayerApproach 	( *Var[1] *Var[3] 00000055 )
+   78:  		Thread
+   80:  			Call     SayMessage0 	( .Npc:Self 00390007 00390007 00000005 00140149 ) % Zzzzz...
+   A0:  		EndThread
+   A8:  		Call     SetOwnerVar 	( 00000000 00000001 )
+   BC:  	Else
+   C4:  		Call     AwaitPlayerLeave 	( *Var[1] *Var[3] 0000005A )
+   DC:  		Call     802D0C20 ( )
+   E8:  		Call     SetOwnerVar 	( 00000000 00000000 )
+   FC:  	EndIf
+  104:  	Wait     00000001 
+  110:  EndLoop
+  118:  Return
+  120:  End
+
+#new:Script $Script_Init_80243E7C_osr_02
+    0:  Call     SetNpcAnimation 	( .Npc:Self 00390007 )
+   14:  Call     SetNpcPos   	( .Npc:Self FFFFFFD8 00000014 FFFFFF56 )
+   30:  Call     SetNpcYaw   	( .Npc:Self 000000C8 )
+   44:  Call     BindNpcIdle 	( .Npc:Self $Script_80243D54_osr_02 )
+   58:  Call     BindNpcInteract 	( .Npc:Self $Script_80243C24_osr_02 )
+   6C:  Return
+   74:  End
+

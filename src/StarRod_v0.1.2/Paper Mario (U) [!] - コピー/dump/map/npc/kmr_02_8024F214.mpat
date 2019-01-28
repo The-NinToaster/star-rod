@@ -1,0 +1,202 @@
+% automatically dumped from map kmr_02
+
+#new:Npc $kmr_02_8024F214
+00000004 $NpcSettings_80247CE4_kmr_02 00000000 00000000 00000000 
+00002809 $Script_Init_8024CC34_kmr_02 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000046 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 00000064 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00A10001 00A10002 00A10003 00A10003 00A10001 00A10001 00A10000 00A10000 
+00A10003 00A10003 00A10003 00A10003 00A10003 00A10003 00A10003 00A10003 
+00000000 00000000 00000000 001A0066 % She's my mom, Goomama. She sometimes gets on my ne ...
+
+#new:Function $Function_80242394_kmr_02
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 18 (SP)
+   10:  SW        S0, 10 (SP)
+   14:  LW        S0, C (S1)
+   18:  LW        A1, 0 (S0)
+   1C:  JAL       {Func:GetVariable}
+   20:  ADDIU     S0, S0, 4
+   24:  DADDU     A0, S1, R0
+   28:  LW        A1, 0 (S0)
+   2C:  JAL       {Func:GetVariable}
+   30:  DADDU     S0, V0, R0
+   34:  DADDU     A0, S0, R0
+   38:  SLL       V0, V0, 2
+   3C:  LTW       S0, V0 ($IntTable_802480AC_kmr_02)
+   44:  JAL       8003ECE8
+   48:  RESERVED
+   4C:  DADDU     A2, V0, R0
+   50:  DADDU     A1, R0, R0
+        .o54
+   54:  LW        A0, 0 (S0)
+   58:  SLL       V0, A1, 2
+   5C:  LW        V1, D0 (A2)
+   60:  ADDIU     A1, A1, 1
+   64:  ADDU      V0, V0, V1
+   68:  SW        A0, 0 (V0)
+   6C:  SLTI      V0, A1, E
+   70:  BNE       V0, R0, .o54
+   74:  ADDIU     S0, S0, 4
+   78:  LW        RA, 18 (SP)
+   7C:  LW        S1, 14 (SP)
+   80:  LW        S0, 10 (SP)
+   84:  ADDIU     V0, R0, 2
+   88:  JR        RA
+   8C:  ADDIU     SP, SP, 20
+
+#new:AISettings $AISettings_80247C94_kmr_02
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80247CC4_kmr_02
+    0:  Call     DoBasicAI   	( $AISettings_80247C94_kmr_02 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80247CE4_kmr_02
+00000000 00160018 00000000 00000000 $Script_NpcAI_80247CC4_kmr_02 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:IntTable $IntTable_802480AC_kmr_02
+$???_80247FCC_kmr_02 $???_80248004_kmr_02 $???_8024803C_kmr_02 $???_80248074_kmr_02 
+
+#new:AISettings $AISettings_802480BC_kmr_02
+    2.0 % move speed
+    15` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_802480EC_kmr_02
+    0:  Call     DoBasicAI   	( $AISettings_802480BC_kmr_02 )
+   10:  Return
+   18:  End
+
+#new:Script $Script_8024C778_kmr_02
+    0:  Call     800445D4 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000064 
+   28:  		ExecWait $Script_NpcAI_80247CC4_kmr_02 
+   34:  	CaseOR  ==  00000065 
+   40:  	CaseOR  ==  00000066 
+   4C:  	CaseOR  ==  00000003 
+   58:  	CaseOR  ==  00000067 
+   64:  		ExecWait $Script_NpcAI_80247CC4_kmr_02 
+   70:  	EndCaseGroup
+   78:  EndSwitch
+   80:  Return
+   88:  End
+
+#new:Script $Script_8024C808_kmr_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF85 
+   18:  		If  *Flag_KMR_04  ==  00000000 
+   28:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0077 ) % Oh, land sakes! Mario! So nice to meet you! My! I' ...
+   48:  			Set  *Flag_KMR_04  00000001 
+   58:  		Else
+   60:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0078 ) % You should know that my son, Goombario, is a big f ...
+   80:  		EndIf
+   88:  	Case  <  FFFFFF8B 
+   94:  		Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0079 ) % Goompa...? I thought he was fixing the veranda. I  ...
+   B4:  	Case  <  FFFFFF90 
+   C0:  		If  *Flag_KMR_05  ==  00000000 
+   D0:  			Call     DisablePartnerAI 	( 00000000 )
+   E0:  			Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000005 000B007A ) % Mom! I get to go with Mario! I promise when I come ...
+  100:  			Call     SetNpcAnimation 	( .Npc:Partner 009D0001 )
+  114:  			Wait     0000000A 
+  120:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B007B ) % Oh, my little baby! I can't believe you're going o ...
+  140:  			Wait     0000000A 
+  14C:  			Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000005 000B007C ) % I know, Mom, sheesh. I'll be good.
+  16C:  			Wait     0000000A 
+  178:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B007D ) % Goombario, you mind your mom! Wear a sweater when  ...
+  198:  			Wait     0000000A 
+  1A4:  			Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000005 000B007E ) % Urgh... Mom always nags me...
+  1C4:  			Wait     0000000A 
+  1D0:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B007F ) % Now hush! Mario, please take good care of my sweet ...
+  1F0:  			Wait     0000000A 
+  1FC:  			Set  *Flag_KMR_05  00000001 
+  20C:  			Call     EnablePartnerAI 	( )
+  218:  		Else
+  220:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0080 ) % Mario, please take good care of my sweet little Go ...
+  240:  		EndIf
+  248:  	Case  <  FFFFFFF1 
+  254:  		Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0081 ) % Oh, land sakes! Mario! Is my Goombario bothering y ...
+  274:  		Call     GetCurrentPartner 	( *Var[0] )
+  284:  		If  *Var[0]  ==  00000001 
+  294:  			Call     DisablePartnerAI 	( 00000000 )
+  2A4:  			Call     SayMessage3 	( .Npc:Partner 00010008 00010001 00000000 00000004 000B0082 ) % Ugh... Mom! C'mon, cut it out!
+  2C8:  			Call     EnablePartnerAI 	( )
+  2D4:  		EndIf
+  2DC:  	Case  <  00000059 
+  2E8:  		Call     GetCurrentPartner 	( *Var[0] )
+  2F8:  		If  *Var[0]  !=  00000001 
+  308:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0083 ) % I heard that Toad Town has finally calmed down a b ...
+  328:  		Else
+  330:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0084 ) % Goombario, c'mere. I'm sure you're working hard. L ...
+  350:  			Call     DisablePartnerAI 	( 00000000 )
+  360:  			Call     SayMessage3 	( .Npc:Partner 00010008 00010001 00000000 00000004 000B0085 ) % C'mon, Mom, quit it!
+  384:  			Call     EnablePartnerAI 	( )
+  390:  		EndIf
+  398:  	Case  >=  00000059 
+  3A4:  		Call     GetCurrentPartner 	( *Var[0] )
+  3B4:  		If  *Var[0]  !=  00000001 
+  3C4:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0086 ) % I do love to shop, but the problem with Toad Town  ...
+  3E4:  		Else
+  3EC:  			Call     SayMessage0 	( 00000004 00A10004 00A10001 00000000 000B0087 ) % Goombario, good luck, sweetie!
+  40C:  		EndIf
+  414:  EndSwitch
+  41C:  Return
+  424:  End
+
+#new:Script $Script_Init_8024CC34_kmr_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF82 
+   18:  		Call     BindNpcIdle 	( .Npc:Self $Script_8024C778_kmr_02 )
+   2C:  	Case  <  FFFFFF85 
+   38:  	Case  <  FFFFFF86 
+   44:  		Call     $Function_80242394_kmr_02 ( 00000004 00000001 )
+   58:  		Call     BindNpcIdle 	( .Npc:Self $Script_802480EC_kmr_02 )
+   6C:  	Case  <  FFFFFF8B 
+   78:  		Call     BindNpcIdle 	( .Npc:Self $Script_8024C778_kmr_02 )
+   8C:  	Case  <  FFFFFF8D 
+   98:  		Call     SetNpcPos   	( .Npc:Self 000000C8 00000000 00000064 )
+   B4:  		Wait     00000001 
+   C0:  		Call     SetNpcFlagBits ( .Npc:Self 00000004 .True )
+   D8:  		Call     BindNpcIdle 	( .Npc:Self $Script_8024C778_kmr_02 )
+   EC:  	Case  <  00000027 
+   F8:  		Call     BindNpcIdle 	( .Npc:Self $Script_8024C778_kmr_02 )
+  10C:  	Case  <  00000059 
+  118:  		Call     RemoveNpc   	( .Npc:Self )
+  128:  		Return
+  130:  	Default
+  138:  		Call     BindNpcIdle 	( .Npc:Self $Script_8024C778_kmr_02 )
+  14C:  EndSwitch
+  154:  Call     BindNpcInteract 	( .Npc:Self $Script_8024C808_kmr_02 )
+  168:  Return
+  170:  End
+

@@ -1,0 +1,71 @@
+% automatically dumped from map dro_01
+
+#new:Npc $dro_01_80249B34_1F0
+00000001 $NpcSettings_80245060_dro_01 00000000 00000000 00000000 
+00002D01 $Script_Init_802483A8_dro_01 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 0000001E 00000000 FFFF8001 00000000 000000EB 
+00000000 FFFFFF60 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00930301 00930302 00930303 00930303 00930301 00930301 00930300 00930300 
+00930301 00930301 00930301 00930301 00930301 00930301 00930301 00930301 
+00000000 00000000 00000000 001A0091 % That's a Dryite. The wind out here in the desert i ...
+
+#new:AISettings $AISettings_80245010_dro_01
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80245040_dro_01
+    0:  Call     DoBasicAI   	( $AISettings_80245010_dro_01 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80245060_dro_01
+00000000 001A0017 00000000 00000000 $Script_NpcAI_80245040_dro_01 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024821C_dro_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFCB 
+   18:  		If  *StoryProgress  >=  FFFFFFC0 
+   28:  			If  *AreaByte[1]  ==  00000002 
+   38:  				Set  *AreaByte[1]  00000000 
+   48:  			EndIf
+   50:  		EndIf
+   58:  		Switch  *AreaByte[1] 
+   64:  			Case  ==  00000000 
+   70:  				Call     SayMessage0 	( .Npc:Self 00930304 00930301 00000000 000D0063 ) % Master Mr. Moustafa is the main man, yeah! Master  ...
+   90:  				Add  *AreaByte[1]  00000001 
+   A0:  			Case  ==  00000001 
+   AC:  				Call     SayMessage0 	( .Npc:Self 00930304 00930301 00000000 000D0064 ) % Master Mr. Moustafa is the main man, yeah! Master  ...
+   CC:  				Add  *AreaByte[1]  00000001 
+   DC:  			Case  ==  00000002 
+   E8:  				Call     SayMessage0 	( .Npc:Self 00930304 00930301 00000000 000D0065 ) % Master Mr. Moustafa is the main man, yeah! Master  ...
+  108:  				Set  *AreaByte[1]  00000000 
+  118:  		EndSwitch
+  120:  	Case  <  00000027 
+  12C:  		Call     SayMessage0 	( .Npc:Self 00930304 00930301 00000000 000D0066 ) % Dry Dry Desert is a desert, very dry Winds of chan ...
+  14C:  	Default
+  154:  		Call     SayMessage0 	( .Npc:Self 00930304 00930301 00000000 000D0067 ) % I'm out of new songs. I can't sing a song some com ...
+  174:  EndSwitch
+  17C:  Return
+  184:  End
+
+#new:Script $Script_Init_802483A8_dro_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024821C_dro_01 )
+   14:  Return
+   1C:  End
+

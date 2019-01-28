@@ -1,0 +1,69 @@
+% automatically dumped from map nok_03
+
+#new:Npc $nok_03_80241F88
+00000004 $NpcSettings_80241478_nok_03 00000000 00000000 00000000 
+00400B09 $Script_Init_80241A9C_nok_03 00000000 00000000 00000000 
+{NoItems}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:40:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:1}
+0000021C 00000000 00000000 00000000 00000000 FFFF8001 00000000 0000021C 
+00000000 00000000 00000000 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+002B0002 002B0002 002B0003 002B0003 002B0001 002B0001 002B0008 002B0008 
+002B0003 002B0003 002B0003 002B0003 002B0003 002B0003 002B0003 002B0003 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80241478_nok_03
+00000000 00140016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_802414D0_nok_03
+    0:  Thread
+    8:  	Label    00000000 
+   14:  	Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+   30:  	Add  *Var[2]  00000002 
+   40:  	Call     SetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+   5C:  	Wait     00000001 
+   68:  	Goto     00000000 
+   74:  EndThread
+   7C:  Label    00000001 
+   88:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   A0:  Call     GetNpcPos   	( 00000004 *Var[3] *Var[4] *Var[5] )
+   BC:  Set  *Var[6]  *Var[3] 
+   CC:  Sub  *Var[6]  *Var[0] 
+   DC:  If  *Var[6]  <  00000064 
+   EC:  	Add  *Var[3]  00000064 
+   FC:  	Call     PlaySoundAtNpc ( 00000004 B0000017 00000000 )
+  114:  	Call     NpcJump0    	( 00000004 *Var[3] *Var[4] *Var[5] 0000000A )
+  134:  	Set  *StoryProgress  FFFFFFA2 
+  144:  EndIf
+  14C:  If  *Var[3]  >  000004B0 
+  15C:  	Call     SetNpcPos   	( 00000004 00000000 FFFFFC18 00000000 )
+  178:  	Call     SetNpcPos   	( 00000005 00000000 FFFFFC18 00000000 )
+  194:  	Call     EnableNpcShadow 	( 00000004 .False )
+  1A8:  	Call     EnableNpcShadow 	( 00000005 .False )
+  1BC:  	Return
+  1C4:  EndIf
+  1CC:  Wait     00000001 
+  1D8:  Goto     00000001 
+  1E4:  Return
+  1EC:  End
+
+#new:Script $Script_Init_80241A9C_nok_03
+    0:  If  *StoryProgress  >=  FFFFFFA2 
+   10:  	Call     SetNpcFlagBits ( 00000004 00000200 .False )
+   28:  	Call     SetNpcFlagBits ( 00000005 00000200 .False )
+   40:  	Call     SetNpcPos   	( 00000004 00000000 FFFFFC18 00000000 )
+   5C:  	Call     SetNpcPos   	( 00000005 00000000 FFFFFC18 00000000 )
+   78:  	Call     EnableNpcShadow 	( 00000004 .False )
+   8C:  	Call     EnableNpcShadow 	( 00000005 .False )
+   A0:  	Return
+   A8:  EndIf
+   B0:  Call     BindNpcIdle 	( .Npc:Self $Script_802414D0_nok_03 )
+   C4:  Return
+   CC:  End
+

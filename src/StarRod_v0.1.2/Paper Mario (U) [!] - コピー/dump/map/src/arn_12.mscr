@@ -1,0 +1,232 @@
+% Script File: arn_12.mscr
+% Decoded from: 0 to C80 (arn_12)
+
+#new:EntryList $EntryList
+{Vec4f:Entry0} % -231.0    0.0    5.0   90.0
+{Vec4f:Entry1} %  231.0    0.0    5.0  270.0
+
+#new:Header $Header
+00000000 00000000 00000000 00000000 
+$Script_Main $EntryList 00000002 00000000 
+00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 001900D6 
+
+#new:Script $Script_80240060
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFEA 
+   18:  		Call     SetMusicTrack 	( 00000000 .Song:TubbaEscape 00000000 00000008 )
+   34:  	Case  <  FFFFFFF0 
+   40:  		Call     SetMusicTrack 	( 00000000 .Song:TubbaBlubbaTheme 00000000 00000008 )
+   5C:  	Default
+   64:  		Call     SetMusicTrack 	( 00000000 .Song:GustyGulch 00000000 00000008 )
+   80:  EndSwitch
+   88:  Return
+   90:  End
+
+PADDING: 802400F8 to 80240100 (000000F8 to 00000100)
+00000000 00000000 
+
+#new:Script $Script_80240100
+    0:  SetGroup 0000001B 
+    C:  Call     DisablePlayerInput 	( .True )
+   1C:  Set  *Var[0]  00000000 
+   2C:  Set  *Var[1]  00000002 
+   3C:  Set  *Var[2]  00000000 
+   4C:  Set  *Var[3]  FFFFFFFF 
+   5C:  Exec     ExitSingleDoor 
+   68:  Wait     00000011 
+   74:  Call     GotoMap     	( $ASCII_80240C70 00000001 )
+   88:  Wait     00000064 
+   94:  Return
+   9C:  End
+
+#new:Script $Script_802401A4
+    0:  SetGroup 0000001B 
+    C:  Call     DisablePlayerInput 	( .True )
+   1C:  Set  *Var[0]  00000001 
+   2C:  Set  *Var[1]  00000007 
+   3C:  Set  *Var[2]  00000002 
+   4C:  Set  *Var[3]  00000001 
+   5C:  Exec     ExitSingleDoor 
+   68:  Wait     00000011 
+   74:  Call     GotoMap     	( $ASCII_80240C78 00000000 )
+   88:  Wait     00000064 
+   94:  Return
+   9C:  End
+
+#new:Script $Script_80240248
+    0:  Bind     $Script_80240100 .Trigger:WallPressA {Collider:ttw} 00000001 00000000 
+   1C:  Bind     $Script_802401A4 .Trigger:WallPressA {Collider:tte} 00000001 00000000 
+   38:  Return
+   40:  End
+
+#new:Script $Script_80240290
+    0:  Call     GetEntryID  	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Set  *Var[2]  00000000 
+   38:  		Set  *Var[3]  FFFFFFFF 
+   48:  		ExecWait EnterSingleDoor 
+   54:  		Exec     $Script_80240248 
+   60:  	Case  ==  00000001 
+   6C:  		Set  *Var[2]  00000002 
+   7C:  		Set  *Var[3]  00000001 
+   8C:  		ExecWait EnterSingleDoor 
+   98:  		Exec     $Script_80240248 
+   A4:  EndSwitch
+   AC:  Return
+   B4:  End
+
+#new:Script_Main $Script_Main
+    0:  Set  *WorldMapLocation  00000023 
+   10:  Call     SetSpriteShading 	( 00080003 )
+   20:  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+   40:  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+   5C:  Call     SetCamFlag4 	( .Default .False )
+   70:  Call     SetCamFlag2 	( .Default .True )
+   84:  Call     MakeNpcs    	( 00000000 $NpcGroupList_80240BBC )
+   98:  ExecWait $Script_80240C28 
+   A4:  Exec     $Script_80240290 
+   B0:  Exec     $Script_80240060 
+   BC:  Return
+   C4:  End
+
+PADDING: 80240418 to 80240420 (00000418 to 00000420)
+00000000 00000000 
+
+#new:Script $Script_80240420
+    0:  Return
+    8:  End
+
+#new:Script $Script_80240430
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_80240440
+00000000 00180018 $Script_80240420 00000000 00000000 00000000 00000000 $Script_80240430 
+00000000 00000000 000D0000 
+
+#new:AISettings $AISettings_8024046C
+    1.8 % move speed
+    40` % move time
+    15` % wait time
+  150.0 % alert radius
+    0.0
+    2`
+    3.3 % chase speed
+    70`
+    1`
+  180.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_8024049C
+    0:  Call     DoBasicAI   	( $AISettings_8024046C )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_802404BC
+00000000 00140017 00000000 00000000 $Script_NpcAI_8024049C 80077F70 00000000 8007809C 
+00000000 00000000 000C0000 
+
+#new:Script $Script_802404E8
+    0:  Call     SetNpcAnimation 	( .Npc:Self 006C0013 )
+   14:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[3.0] )
+   28:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   44:  Sub  *Var[0]  0000001E 
+   54:  Call     PlaySoundAtNpc ( .Npc:Self 000020C8 00000000 )
+   6C:  Call     NpcJump0    	( .Npc:Self *Var[0] 00000000 *Var[2] 00000008 )
+   8C:  Call     SetNpcAnimation 	( .Npc:Self 006C0014 )
+   A0:  Wait     00000001 
+   AC:  Call     SetNpcAnimation 	( .Npc:Self 006C0013 )
+   C0:  Sub  *Var[0]  00000050 
+   D0:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[2.5] )
+   E4:  Call     PlaySoundAtNpc ( .Npc:Self 000020C8 00000000 )
+   FC:  Call     NpcJump0    	( .Npc:Self *Var[0] 00000000 *Var[2] 0000000C )
+  11C:  Call     SetNpcAnimation 	( .Npc:Self 006C0014 )
+  130:  Wait     00000001 
+  13C:  Call     SetNpcAnimation 	( .Npc:Self 006C0013 )
+  150:  Sub  *Var[0]  00000050 
+  160:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[2.5] )
+  174:  Call     PlaySoundAtNpc ( .Npc:Self 000020C8 00000000 )
+  18C:  Call     NpcJump0    	( .Npc:Self *Var[0] 00000000 *Var[2] 0000000C )
+  1AC:  Call     EnableNpcShadow 	( .Npc:Self .False )
+  1C0:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  1DC:  Set  *StoryProgress  FFFFFFEC 
+  1EC:  Return
+  1F4:  End
+
+#new:Script $Script_802406E4
+    0:  Set  *Flag_ARN_10  00000001 
+   10:  Call     DoNpcDefeat 	( )
+   1C:  Return
+   24:  End
+
+#new:Script $Script_Init_80240710
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_802404E8 )
+   14:  If  *StoryProgress  !=  FFFFFFEB 
+   24:  	Call     RemoveNpc   	( .Npc:Self )
+   34:  EndIf
+   3C:  Return
+   44:  End
+
+#new:Script $Script_Init_8024075C
+    0:  If  *StoryProgress  <  FFFFFFF4 
+   10:  	If  *Flag_ARN_10  ==  00000001 
+   20:  		Call     RemoveNpc   	( .Npc:Self )
+   30:  		Return
+   38:  	EndIf
+   40:  	Call     BindNpcDefeat 	( .Npc:Self $Script_802406E4 )
+   54:  EndIf
+   5C:  Call     BindNpcDefeat 	( .Npc:Self $Script_802406E4 )
+   70:  Return
+   78:  End
+
+#new:NpcGroup $NpcGroup_802407DC
+00000000 $NpcSettings_80240440 {Vec3f:NPC_802407DC} % 80 50 0
+00000D05 $Script_Init_80240710 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+{Movement:NPC_802407DC}
+006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 
+006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcGroup $NpcGroup_802409CC
+00000001 $NpcSettings_802404BC {Vec3f:NPC_802409CC} % 0 0 0
+00000C00 $Script_Init_8024075C 00000000 00000000 0000010E 
+{Items:20:DriedShroom:A}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:2}
+{Movement:NPC_802409CC}
+00260201 00260202 00260203 00260203 00260201 00260201 00260205 00260205 
+00260203 00260203 00260203 00260203 00260203 00260203 00260203 00260203 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:NpcGroupList $NpcGroupList_80240BBC
+00000001 $NpcGroup_802407DC 00000000 
+00000001 $NpcGroup_802409CC 0E010005 
+00000000 00000000 00000000 
+
+#new:Script $Script_80240BE0
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     ShowMessage 	( 001D0183 000000A0 00000028 ) %  Really! No entry allowed! 
+   28:  Call     DisablePlayerInput 	( .False )
+   38:  Return
+   40:  End
+
+#new:Script $Script_80240C28
+    0:  Call     MakeEntity  	( .Entity:Signpost {Vec4d:Entity80240C28} 80000000 )
+   24:  Call     AssignScript 	( $Script_80240BE0 )
+   34:  Return
+   3C:  End
+
+PADDING: 80240C6C to 80240C70 (00000C6C to 00000C70)
+00000000 
+
+#new:ASCII $ASCII_80240C70
+arn_10
+
+#new:ASCII $ASCII_80240C78
+arn_13
+

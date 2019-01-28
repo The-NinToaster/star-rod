@@ -1,0 +1,55 @@
+% automatically dumped from map mac_00
+
+#new:Npc $mac_00_80251124_1170
+00000010 $NpcSettings_8024EC90_mac_00 00000000 00000000 00000000 
+00012D09 $Script_Init_80251100_mac_00 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830301 00830302 00830303 00830303 00830301 00830301 00830306 00830306 
+00830303 00830303 00830303 00830303 00830303 00830303 00830303 00830303 
+00000000 00000000 00000000 001A0020 % This Toad has tried his skills at the Dojo. That t ...
+
+#new:NpcSettings $NpcSettings_8024EC90_mac_00
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80250D10_mac_00
+    0:  Call     FindKeyItem 	( .Item:FirstDegreeCard *Var[1] )
+   14:  Call     FindKeyItem 	( .Item:SecondDegreeCard *Var[2] )
+   28:  Call     FindKeyItem 	( .Item:ThirdDegreeCard *Var[3] )
+   3C:  Call     FindKeyItem 	( .Item:FourthDegreeCard *Var[4] )
+   50:  Call     FindKeyItem 	( .Item:Diploma *Var[5] )
+   64:  If  *Var[1]  !=  FFFFFFFF 
+   74:  	Call     SayMessage0 	( .Npc:Self 00830304 00830301 00000000 00020114 ) % Hey, that's... a First-Degree Card! I have one, to ...
+   94:  	Return
+   9C:  EndIf
+   A4:  If  *Var[2]  !=  FFFFFFFF 
+   B4:  	Call     SayMessage0 	( .Npc:Self 00830304 00830301 00000000 00020115 ) % Hey, that's... a Second-Degree Card? Whoa! Cool! Y ...
+   D4:  	Return
+   DC:  EndIf
+   E4:  If  *Var[3]  !=  FFFFFFFF 
+   F4:  	Call     SayMessage0 	( .Npc:Self 00830304 00830301 00000000 00020116 ) % Hey, that's... a Third-Degree Card? Whoa! Wow! Who ...
+  114:  	Return
+  11C:  EndIf
+  124:  If  *Var[4]  !=  FFFFFFFF 
+  134:  	Call     SayMessage0 	( .Npc:Self 00830304 00830301 00000000 00020117 ) % Hey, that's... a Fourth-Degree Card! Whoa! Amazing ...
+  154:  	Return
+  15C:  EndIf
+  164:  If  *Var[5]  !=  FFFFFFFF 
+  174:  	Call     SayMessage0 	( .Npc:Self 00830304 00830301 00000000 00020118 ) % Whoa! Can it be? That's... a Diploma??? Whooooopee ...
+  194:  	Return
+  19C:  EndIf
+  1A4:  Call     SayMessage0 	( .Npc:Self 00830304 00830301 00000000 00020113 ) % Oh?...Ha ha ha! You don't have it? The Degree, Mar ...
+  1C4:  Return
+  1CC:  End
+
+#new:Script $Script_Init_80251100_mac_00
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80250D10_mac_00 )
+   14:  Return
+   1C:  End
+

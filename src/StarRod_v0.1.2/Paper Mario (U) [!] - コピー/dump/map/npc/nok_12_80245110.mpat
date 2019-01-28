@@ -1,0 +1,87 @@
+% automatically dumped from map nok_12
+
+#new:Npc $nok_12_80245110
+00000003 $NpcSettings_80244450_nok_12 00000000 00000000 00000000 
+00000C00 $Script_Init_80244748_nok_12 00000000 00000000 0000010E 
+{Items:5:Mushroom:A}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:1}
+0000004C 00000000 00000030 00000032 00000000 FFFF8001 00000000 0000004C 
+00000000 00000030 00000096 00000050 00000001 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00270001 00270002 00270003 00270003 00270001 00270001 00270005 00270005 
+00270003 00270003 00270003 00270003 00270003 00270003 00270003 00270003 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:AISettings $AISettings_80244400_nok_12
+    1.5 % move speed
+    30` % move time
+    30` % wait time
+  130.0 % alert radius
+    0.0
+    1`
+    2.5 % chase speed
+    180`
+    3`
+  150.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80244430_nok_12
+    0:  Call     DoBasicAI   	( $AISettings_80244400_nok_12 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80244450_nok_12
+00000000 00170017 00000000 00000000 $Script_NpcAI_80244430_nok_12 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_802444F8_nok_12
+    0:  Label    00000000 
+    C:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   20:  If  *Var[0]  ==  00000000 
+   30:  	Wait     00000001 
+   3C:  	Goto     00000000 
+   48:  EndIf
+   50:  Call     SetNpcAnimation 	( .Npc:Self 0027000A )
+   64:  Thread
+   6C:  	Call     PlaySoundAtNpc ( .Npc:Self 000003E1 00000000 )
+   84:  	Call     MakeLerp    	( FFFFFFA6 00000000 0000000A 00000000 )
+   A0:  	Label    00000001 
+   AC:  	Call     UpdateLerp  	( )
+   B8:  	Call     SetNpcRotation ( .Npc:Self *Var[0] 00000000 00000000 )
+   D4:  	Wait     00000001 
+   E0:  	If  *Var[1]  ==  00000001 
+   F0:  		Goto     00000001 
+   FC:  	EndIf
+  104:  	Call     GetNpcPos   	( .Npc:Self *Var[A] *Var[B] *Var[C] )
+  120:  	Call     MakeLerp    	( 00000000 00000168 0000000F 00000000 )
+  13C:  	Label    00000002 
+  148:  	Call     UpdateLerp  	( )
+  154:  	Call     SetNpcRotation ( .Npc:Self 00000000 *Var[0] 00000000 )
+  170:  	Wait     00000001 
+  17C:  	If  *Var[1]  ==  00000001 
+  18C:  		Goto     00000002 
+  198:  	EndIf
+  1A0:  	Call     SetNpcRotation ( .Npc:Self 00000000 00000000 00000000 )
+  1BC:  EndThread
+  1C4:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[0.7001953] )
+  1D8:  Call     NpcJump0    	( .Npc:Self FFFFFFBF 00000000 FFFFFF88 00000019 )
+  1F8:  Call     SetNpcAnimation 	( .Npc:Self 00270006 )
+  20C:  Wait     00000014 
+  218:  Call     SetNpcAnimation 	( .Npc:Self 00270001 )
+  22C:  Call     BindNpcAI   	( .Npc:Self $Script_NpcAI_80244430_nok_12 )
+  240:  Return
+  248:  End
+
+#new:Script $Script_Init_80244748_nok_12
+    0:  Call     SetNpcPos   	( .Npc:Self FFFFFF5B 00000056 FFFFFF8A )
+   1C:  Call     SetNpcRotation ( .Npc:Self FFFFFFAB 00000000 00000000 )
+   38:  Call     BindNpcIdle 	( .Npc:Self $Script_802444F8_nok_12 )
+   4C:  Return
+   54:  End
+

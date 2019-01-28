@@ -1,0 +1,394 @@
+% automatically dumped from map flo_21
+
+#new:Npc $flo_21_80243804
+00000000 $NpcSettings_802417EC_flo_21 00000000 00000000 00000000 
+00040D01 $Script_Init_802435E4_flo_21 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 
+007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 
+00000000 00000000 $ExtraAnimationList_802437E0_flo_21 00000000 % no tattle string
+
+#new:Script $Script_80240E3C_flo_21
+    0:  Switch  *StoryProgress 
+    C:  	Case  ==  00000037 
+   18:  		Set  *Var[0]  00000000 
+   28:  		If  *MapVar[A]  ==  00000000 
+   38:  			Return
+   40:  		EndIf
+   48:  		Set  *StoryProgress  00000038 
+   58:  	Case  ==  00000038 
+   64:  		Set  *Var[0]  00000001 
+   74:  	Default
+   7C:  		Return
+   84:  EndSwitch
+   8C:  If  *Var[0]  ==  00000000 
+   9C:  	Call     DisablePlayerInput 	( .True )
+   AC:  	Call     UseSettingsFrom 	( .Default 0000028A 000000CD 00000000 )
+   C8:  	Call     SetCamSpeed 	( .Default *Fixed[0.60058594] )
+   DC:  	Call     SetPanTarget 	( .Default 0000028A 00000096 00000000 )
+   F8:  	Call     GetCamDistance ( .Default *Var[1] )
+  10C:  	Sub  *Var[1]  00000064 
+  11C:  	Call     SetCamDistance ( .Default *Var[1] )
+  130:  	If  *Fixed[-5.5]  !=  00002710 
+  140:  		Call     GetCamAngles 	( .Default *Var[2] *Var[3] )
+  158:  		Call     SetCamAngles 	( .Default *Var[2] *Fixed[-5.5] )
+  170:  	EndIf
+  178:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  190:  	Call     $Function_8024004C_flo_21 ( 00000005 000000B4 0000028A 000000AA 00000000 0000028A 000000CD 00000000 00000096 00000078 )
+  1C4:  	Thread
+  1CC:  		Call     $Function_802401AC_flo_21 ( )
+  1D8:  	EndThread
+  1E0:  	Thread
+  1E8:  		Wait     00000001 
+  1F4:  		Call     PlaySound   	( 80000067 )
+  204:  		Call     $Function_80240000_flo_21 ( )
+  210:  		Call     802D62B8 ( 80000067 )
+  220:  		Call     PlaySoundAt 	( 000000B2 00000000 0000028A 000000CD 00000000 )
+  240:  	EndThread
+  248:  	Thread
+  250:  		Wait     0000002D 
+  25C:  		Call     SetPlayerAnimation 	( 0001002A )
+  26C:  	EndThread
+  274:  	Thread
+  27C:  		Wait     000000B4 
+  288:  		Wait     00000073 
+  294:  		Call     PlaySoundAt 	( 00000137 00000000 0000028A 000000CD 00000000 )
+  2B4:  	EndThread
+  2BC:  	Call     $Function_802405BC_flo_21 ( 00000001 )
+  2CC:  	Thread
+  2D4:  		Wait     00000050 
+  2E0:  		Call     SetPlayerAnimation 	( 00010002 )
+  2F0:  	EndThread
+  2F8:  	Add  *Var[1]  00000064 
+  308:  	Call     SetCamDistance ( .Default *Var[1] )
+  31C:  	Call     SetPanTarget 	( .Default 0000028A 00000078 00000000 )
+  338:  	Call     $Function_802405BC_flo_21 ( 00000002 )
+  348:  	Call     GetPlayerPos 	( *Var[2] *Var[3] *Var[4] )
+  360:  	Call     UseSettingsFrom 	( .Default *Var[2] *Var[3] *Var[4] )
+  37C:  	Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  390:  	Call     SetPanTarget 	( .Default *Var[2] *Var[3] *Var[4] )
+  3AC:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  3C0:  	Call     PanToTarget 	( .Default 00000000 00000000 )
+  3D8:  	Call     DisablePlayerInput 	( .False )
+  3E8:  Else
+  3F0:  	Call     $Function_802405FC_flo_21 ( 00000005 0000028A 00000096 00000000 00000078 )
+  410:  	Thread
+  418:  		Call     $Function_80240708_flo_21 ( )
+  424:  	EndThread
+  42C:  	Wait     00000001 
+  438:  EndIf
+  440:  Call     $Function_802405BC_flo_21 ( 00000003 )
+  450:  Call     PlaySoundAtPlayer 	( 00000138 00000000 )
+  464:  Call     DisablePlayerInput 	( .True )
+  474:  Set  *StoryProgress  00000039 
+  484:  Call     GotoMapSpecial ( $ASCII_80245B24_flo_21 00000005 0000000E )
+  49C:  Wait     00000064 
+  4A8:  Return
+  4B0:  End
+
+#new:NpcSettings $NpcSettings_802417EC_flo_21
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:IntTable $IntTable_8024249C_flo_21
+0000027B 000000A5 000001C2 00000078 00000280 000000AA 00000208 0000010E 
+0000028A 000000AF 0000028A 00000113 00000294 000000AA 000002DA 00000113 
+00000299 000000A5 00000352 00000078 00000276 00000096 000001C2 0000009B 
+0000027D 00000096 00000258 00000113 0000028A 00000096 00000352 0000009B 
+00000297 00000096 000002EE 0000010E 0000029E 00000096 00000352 000000C3 
+0000027B 00000087 000001C2 000000C3 00000280 00000082 000001C2 000000EB 
+0000028A 0000007D 000001C2 0000010E 00000294 00000082 00000352 0000010E 
+00000299 00000087 00000352 000000EB 
+
+#new:IntTable $IntTable_8024258C_flo_21
+0000000A 0000000E 00000007 0000000E 00000005 00000006 00000005 0000000C 
+00000006 0000000C 00000005 00000005 00000005 0000000A 00000005 0000000A 
+00000005 00000004 
+
+#new:IntTable $IntTable_802425D4_flo_21
+00000008 0000000A 0000000A 00000008 
+
+#new:IntTable $IntTable_802425E4_flo_21
+0000000A 00000005 00000007 00000005 0000000E 00000006 0000000E 00000005 
+00000006 00000005 0000000C 00000005 0000000C 00000005 00000005 00000005 
+0000000A 00000004 
+
+#new:IntTable $IntTable_8024262C_flo_21
+0000000A 00000006 00000006 0000000A 
+
+#new:Script $Script_8024263C_flo_21
+    0:  SetF  *Var[0]  0000000A 
+   10:  SetF  *Var[1]  00000001 
+   20:  ChildThread
+   28:  	Loop     00000008 
+   34:  		Call     SetNpcFlagBits ( 00000000 00000002 .False )
+   4C:  		Call     SetNpcFlagBits ( 00000001 00000002 .False )
+   64:  		Call     SetNpcFlagBits ( 00000002 00000002 .False )
+   7C:  		Wait     *Var[0] 
+   88:  		Call     SetNpcFlagBits ( 00000000 00000002 .True )
+   A0:  		Call     SetNpcFlagBits ( 00000001 00000002 .True )
+   B8:  		Call     SetNpcFlagBits ( 00000002 00000002 .True )
+   D0:  		Wait     *Var[1] 
+   DC:  		SubF  *Var[0]  00000000 
+   EC:  		AddF  *Var[1]  00000000 
+   FC:  	EndLoop
+  104:  	Loop     
+  110:  		Call     SetNpcFlagBits ( 00000000 00000002 .False )
+  128:  		Call     SetNpcFlagBits ( 00000001 00000002 .False )
+  140:  		Call     SetNpcFlagBits ( 00000002 00000002 .False )
+  158:  		Wait     *Var[0] 
+  164:  		Call     SetNpcFlagBits ( 00000000 00000002 .True )
+  17C:  		Call     SetNpcFlagBits ( 00000001 00000002 .True )
+  194:  		Call     SetNpcFlagBits ( 00000002 00000002 .True )
+  1AC:  		Wait     *Var[1] 
+  1B8:  	EndLoop
+  1C0:  EndChildThread
+  1C8:  ChildThread
+  1D0:  	Loop     
+  1DC:  		Call     MakeLerp    	( 00000000 000000FF 0000000A 00000004 )
+  1F8:  		Loop     
+  204:  			Call     UpdateLerp  	( )
+  210:  			Call     802CFD30 ( 00000000 00000009 *Var[0] *Var[0] *Var[0] 00000000 )
+  234:  			Call     802CFD30 ( 00000001 00000009 *Var[0] *Var[0] *Var[0] 00000000 )
+  258:  			Call     802CFD30 ( 00000002 00000009 *Var[0] *Var[0] *Var[0] 00000000 )
+  27C:  			Wait     00000001 
+  288:  			If  *Var[1]  ==  00000000 
+  298:  				BreakLoop
+  2A0:  			EndIf
+  2A8:  		EndLoop
+  2B0:  	EndLoop
+  2B8:  EndChildThread
+  2C0:  Wait     00000064 
+  2CC:  Return
+  2D4:  End
+
+#new:Script $Script_80242918_flo_21
+    0:  SetF  *MapVar[B]  *Fixed[1.0] 
+   10:  SetF  *MapVar[C]  *Fixed[1.0] 
+   20:  ChildThread
+   28:  	UseIntBuffer $IntTable_8024258C_flo_21 
+   34:  	Loop     00000006 
+   40:  		Call     PlaySoundAtNpc ( 00000000 000020B6 00000000 )
+   58:  		Get3Int  *Var[6] *Var[7] *Var[8] 
+   6C:  		Call     MakeLerp    	( *Var[6] *Var[7] *Var[8] 0000000B )
+   88:  		Loop     
+   94:  			Call     UpdateLerp  	( )
+   A0:  			DivF  *Var[0]  0000000A 
+   B0:  			SetF  *MapVar[B]  *Var[0] 
+   C0:  			Wait     00000001 
+   CC:  			If  *Var[1]  ==  00000000 
+   DC:  				BreakLoop
+   E4:  			EndIf
+   EC:  		EndLoop
+   F4:  		Wait     00000001 
+  100:  	EndLoop
+  108:  	Loop     
+  114:  		UseIntBuffer $IntTable_802425D4_flo_21 
+  120:  		Loop     00000002 
+  12C:  			Call     PlaySoundAtNpc ( 00000000 000020B6 00000000 )
+  144:  			Get2Int  *Var[6] *Var[7] 
+  154:  			Call     MakeLerp    	( *Var[6] *Var[7] 00000004 0000000B )
+  170:  			Loop     
+  17C:  				Call     UpdateLerp  	( )
+  188:  				DivF  *Var[0]  0000000A 
+  198:  				SetF  *MapVar[B]  *Var[0] 
+  1A8:  				Wait     00000001 
+  1B4:  				If  *Var[1]  ==  00000000 
+  1C4:  					BreakLoop
+  1CC:  				EndIf
+  1D4:  			EndLoop
+  1DC:  		EndLoop
+  1E4:  	EndLoop
+  1EC:  EndChildThread
+  1F4:  ChildThread
+  1FC:  	UseIntBuffer $IntTable_802425E4_flo_21 
+  208:  	Loop     00000006 
+  214:  		Get3Int  *Var[6] *Var[7] *Var[8] 
+  228:  		Call     MakeLerp    	( *Var[6] *Var[7] *Var[8] 0000000B )
+  244:  		Loop     
+  250:  			Call     UpdateLerp  	( )
+  25C:  			DivF  *Var[0]  0000000A 
+  26C:  			SetF  *MapVar[C]  *Var[0] 
+  27C:  			Wait     00000001 
+  288:  			If  *Var[1]  ==  00000000 
+  298:  				BreakLoop
+  2A0:  			EndIf
+  2A8:  		EndLoop
+  2B0:  		Wait     00000001 
+  2BC:  	EndLoop
+  2C4:  	Loop     
+  2D0:  		UseIntBuffer $IntTable_8024262C_flo_21 
+  2DC:  		Loop     00000002 
+  2E8:  			Get2Int  *Var[6] *Var[7] 
+  2F8:  			Call     MakeLerp    	( *Var[6] *Var[7] 00000004 0000000B )
+  314:  			Loop     
+  320:  				Call     UpdateLerp  	( )
+  32C:  				DivF  *Var[0]  0000000A 
+  33C:  				SetF  *MapVar[C]  *Var[0] 
+  34C:  				Wait     00000001 
+  358:  				If  *Var[1]  ==  00000000 
+  368:  					BreakLoop
+  370:  				EndIf
+  378:  			EndLoop
+  380:  		EndLoop
+  388:  	EndLoop
+  390:  EndChildThread
+  398:  Loop     00000064 
+  3A4:  	Call     SetNpcScale 	( 00000000 *MapVar[B] *MapVar[C] 00000001 )
+  3C0:  	Call     SetNpcScale 	( 00000001 *MapVar[B] *MapVar[C] 00000001 )
+  3DC:  	Call     SetNpcScale 	( 00000002 *MapVar[B] *MapVar[C] 00000001 )
+  3F8:  	Wait     00000001 
+  404:  EndLoop
+  40C:  Return
+  414:  End
+
+#new:Script $Script_80242D34_flo_21
+    0:  ChildThread
+    8:  	Set  *Var[1]  00000000 
+   18:  	Loop     
+   24:  		Set  *Var[0]  00000003 
+   34:  		Loop     0000000F 
+   40:  			Call     SetNpcRotation ( *Var[0] 00000000 *Var[1] 00000000 )
+   5C:  			Add  *Var[0]  00000001 
+   6C:  		EndLoop
+   74:  		Add  *Var[1]  0000003C 
+   84:  		If  *Var[1]  >  00000168 
+   94:  			Add  *Var[1]  FFFFFE98 
+   A4:  		EndIf
+   AC:  		Wait     00000001 
+   B8:  	EndLoop
+   C0:  EndChildThread
+   C8:  UseIntBuffer $IntTable_8024249C_flo_21 
+   D4:  Set  *Var[8]  00000003 
+   E4:  Loop     0000000E 
+   F0:  	Get4Int  *Var[1] *Var[2] *Var[3] *Var[4] 
+  108:  	Thread
+  110:  		Call     RandInt     	( 00000005 *Var[5] )
+  124:  		Wait     *Var[5] 
+  130:  		Call     SetNpcPos   	( *Var[8] *Var[1] *Var[2] FFFFFFE2 )
+  14C:  		Call     RandInt     	( 00000002 *Var[5] )
+  160:  		Add  *Var[5]  00000008 
+  170:  		Call     PlaySoundAtNpc ( *Var[8] 000003D5 00000000 )
+  188:  		Call     NpcJump0    	( *Var[8] *Var[3] *Var[4] FFFFFFF1 *Var[5] )
+  1A8:  		Call     SetNpcPos   	( *Var[8] 00000000 FFFFFC18 00000000 )
+  1C4:  	EndThread
+  1CC:  	Add  *Var[8]  00000001 
+  1DC:  EndLoop
+  1E4:  Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+  200:  Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+  21C:  Call     SetNpcPos   	( 00000002 00000000 FFFFFC18 00000000 )
+  238:  Get4Int  *Var[1] *Var[2] *Var[3] *Var[4] 
+  250:  Wait     00000005 
+  25C:  Call     SetNpcPos   	( *Var[8] *Var[1] *Var[2] FFFFFFE2 )
+  278:  Call     PlaySoundAtNpc ( *Var[8] 000003D6 00000000 )
+  290:  Call     NpcJump0    	( *Var[8] *Var[3] *Var[4] FFFFFFF1 0000000A )
+  2B0:  Call     SetNpcPos   	( *Var[8] 00000000 FFFFFC18 00000000 )
+  2CC:  Return
+  2D4:  End
+
+#new:Script $Script_80243010_flo_21
+    0:  Call     SetNpcAnimation 	( 00000001 007C0004 )
+   14:  Call     SetNpcAnimation 	( 00000000 007C0005 )
+   28:  Call     SetNpcAnimation 	( 00000002 007C0006 )
+   3C:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+   58:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   74:  Add  *Var[0]  FFFFFFF1 
+   84:  Add  *Var[2]  00000028 
+   94:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   B0:  Call     SetCamDistance ( .Default *Fixed[350.0] )
+   C4:  Call     SetCamAngles 	( .Default *Fixed[17.0] *Fixed[-5.5] )
+   DC:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+   F0:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  108:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  11C:  Call     SayMessage0 	( 00000000 007C0030 007C0005 00000100 FFFFFFE2 0000001E 001100CE ) % No!! I cannot lose!!
+  144:  Call     FadeOutMusic 	( 00000000 000005DC )
+  158:  Set  *MapVar[D]  00000002 
+  168:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  184:  Thread
+  18C:  	Set  *Var[3]  *Var[0] 
+  19C:  	Set  *Var[4]  *Var[0] 
+  1AC:  	Add  *Var[3]  FFFFFFDD 
+  1BC:  	Add  *Var[4]  00000023 
+  1CC:  	Loop     00000003 
+  1D8:  		Call     PlayEffect  	( {FX:Explosion1} *Var[0] *Var[1] *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  21C:  		Wait     0000000C 
+  228:  		Call     PlayEffect  	( {FX:Explosion1} *Var[3] *Var[1] *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  26C:  		Add  *Var[3]  00000007 
+  27C:  		Wait     00000008 
+  288:  		Call     PlayEffect  	( {FX:Explosion1} *Var[4] *Var[1] *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  2CC:  		Add  *Var[4]  FFFFFFF9 
+  2DC:  		Wait     0000000E 
+  2E8:  	EndLoop
+  2F0:  	Call     PlayEffect  	( {FX:Explosion3} *Var[0] *Var[1] *Var[2] 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  334:  	Call     ShakeCam    	( .Default 00000000 0000001E *Fixed[1.5] )
+  350:  EndThread
+  358:  Thread
+  360:  	Wait     0000001E 
+  36C:  	Loop     0000000A 
+  378:  		Call     PlayEffect  	( {FX:ShimmerWave} *Var[0] *Var[1] *Var[2] 00000028 00000041 0000000C 0000000F 00000000 00000000 00000000 00000000 00000000 )
+  3BC:  		Wait     00000007 
+  3C8:  	EndLoop
+  3D0:  EndThread
+  3D8:  Exec     $Script_8024263C_flo_21 
+  3E4:  ExecWait $Script_80242918_flo_21 
+  3F0:  ExecWait $Script_80242D34_flo_21 
+  3FC:  Wait     0000000A 
+  408:  Return
+  410:  End
+
+#new:Script $Script_80243428_flo_21
+    0:  Label    00000000 
+    C:  Call     SetOwnerVar 	( 00000000 00000000 )
+   20:  Loop     
+   2C:  	Call     GetOwnerVar 	( 00000000 *Var[0] )
+   40:  	If  *Var[0]  !=  00000000 
+   50:  		BreakLoop
+   58:  	EndIf
+   60:  	Wait     00000001 
+   6C:  EndLoop
+   74:  Set  *MapVar[D]  00000001 
+   84:  Call     StartBossBattle 	( .Song:HuffNPuffBattle )
+   94:  Goto     00000000 
+   A0:  Return
+   A8:  End
+
+#new:Script $Script_802434D8_flo_21
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     80044180 ( 00000001 00000001 )
+   3C:  		Call     SetNpcYaw   	( .Npc:Partner 0000005A )
+   50:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[3] )
+   68:  		Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+   84:  		Add  *Var[3]  FFFFFFEC 
+   94:  		Call     SetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[3] )
+   B0:  		ExecWait $Script_80243010_flo_21 
+   BC:  		Wait     00000032 
+   C8:  		Set  *MapVar[A]  00000001 
+   D8:  		Exec     $Script_80240E3C_flo_21 
+   E4:  EndSwitch
+   EC:  Return
+   F4:  End
+
+#new:Script $Script_Init_802435E4_flo_21
+    0:  If  *StoryProgress  <  00000038 
+   10:  	Call     SetNpcFlagBits2 	( .Npc:Self 00400000 00000001 )
+   28:  	Call     BindNpcIdle 	( .Npc:Self $Script_80243428_flo_21 )
+   3C:  	Call     BindNpcDefeat 	( .Npc:Self $Script_802434D8_flo_21 )
+   50:  	Call     SetNpcAnimation 	( .Npc:Self 007C0002 )
+   64:  Else
+   6C:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   88:  EndIf
+   90:  Return
+   98:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_802437E0_flo_21
+007C0000 007C0001 007C0002 007C0004 007C0005 007C0031 007C0019 007C002D 
+FFFFFFFF 
+

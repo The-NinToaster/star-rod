@@ -1,0 +1,199 @@
+% automatically dumped from map sam_11
+
+#new:Npc $sam_11_80248DF0_3E0
+00000002 $NpcSettings_80244E9C_sam_11 00000000 00000000 00000000 
+00400D09 $Script_Init_80248AC4_sam_11 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00D10001 00D10002 00D10001 00D10001 00D10001 00D10001 00D10001 00D10001 
+00D10001 00D10001 00D10001 00D10001 00D10001 00D10001 00D10001 00D10001 
+00000000 00000000 00000000 001A00F5 % This penguin made a secret room in his house to hi ...
+
+#new:NpcSettings $NpcSettings_80244E9C_sam_11
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80247878_sam_11
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  00000041 
+   18:  		Wait     0000001E 
+   24:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200CE ) % Me? I'm Herringway. The novelist. Haven't you hear ...
+   44:  		Wait     0000000A 
+   50:  		Call     SetPlayerAnimation 	( 00010002 )
+   60:  		Wait     00000005 
+   6C:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   84:  		Call     GetNpcPos   	( .Npc:Self *Var[3] *Var[4] *Var[5] )
+   A0:  		AddF  *Var[0]  *Var[3] 
+   B0:  		AddF  *Var[1]  *Var[4] 
+   C0:  		AddF  *Var[2]  *Var[5] 
+   D0:  		DivF  *Var[0]  *Fixed[2.0] 
+   E0:  		DivF  *Var[1]  *Fixed[2.0] 
+   F0:  		DivF  *Var[2]  *Fixed[2.0] 
+  100:  		Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  11C:  		Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  138:  		Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-9.0] )
+  150:  		Call     SetCamDistance ( .Default *Fixed[250.0] )
+  164:  		Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  178:  		Call     SetCamPosA  	( .Default *Fixed[-224.0] *Fixed[-132.0] )
+  190:  		Call     SetCamPosB  	( .Default *Fixed[-127.0] *Fixed[-314.0] )
+  1A8:  		Call     PanToTarget 	( .Default 00000000 00000001 )
+  1C0:  		Call     SetPlayerPos 	( FFFFFF77 00000096 FFFFFEAC )
+  1D8:  		Call     PlayerFaceNpc 	( .Npc:Self 00000000 )
+  1EC:  		Call     SetNpcPos   	( .Npc:Partner FFFFFF56 00000096 FFFFFEA2 )
+  208:  		Call     NpcFaceNpc  	( .Npc:Partner .Npc:Self 00000000 )
+  220:  		Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  234:  		Wait     0000000A 
+  240:  		Call     SetPlayerAnimation 	( 00080007 )
+  250:  		Wait     00000014 
+  25C:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200CF ) % Whaaat!? Mayor Penguin was murdered? And I'm the c ...
+  27C:  		Wait     00000005 
+  288:  		Call     SetPlayerAnimation 	( .PlayerAnim:Thinking )
+  298:  		Wait     0000001E 
+  2A4:  		Call     SetPlayerAnimation 	( 00010002 )
+  2B4:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200D0 ) % You're very suspicious, huh? Well, I suppose I wou ...
+  2D4:  		Wait     00000014 
+  2E0:  		Thread
+  2E8:  			Call     SetPlayerAnimation 	( 00010002 )
+  2F8:  			Loop     0000001E 
+  304:  				Call     PlayerFaceNpc 	( 00000002 00000000 )
+  318:  				Wait     00000001 
+  324:  			EndLoop
+  32C:  		EndThread
+  334:  		Call     PanToTarget 	( .Default 00000000 00000000 )
+  34C:  		Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+  364:  		Call     SetNpcSpeed 	( .Npc:Self *Fixed[3.0] )
+  378:  		Call     SetNpcAnimation 	( .Npc:Self 00D10002 )
+  38C:  		Call     MoveNpcTo   	( .Npc:Self FFFFFF15 FFFFFE9D 00000000 )
+  3A8:  		Call     SetNpcAnimation 	( .Npc:Self 00D10001 )
+  3BC:  		Call     SetNpcFlagBits ( .Npc:Self 00000100 .False )
+  3D4:  		Wait     00000014 
+  3E0:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200D1 ) % Engage stairs!
+  400:  		Wait     0000000F 
+  40C:  		Call     ShakeCam    	( .Default 00000000 00000014 *Fixed[0.5] )
+  428:  		ExecWait $Script_8024E090_sam_11 
+  434:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200D2 ) % All right then, come on. Let's go to the Mayor's h ...
+  454:  		Call     SetNpcFlagBits ( .Npc:Self 00000200 .True )
+  46C:  		Call     SetNpcAnimation 	( .Npc:Self 00D10002 )
+  480:  		Call     MoveNpcTo   	( .Npc:Self FFFFFF29 FFFFFF0B 00000000 )
+  49C:  		Thread
+  4A4:  			Call     MoveNpcTo   	( .Npc:Self FFFFFF29 FFFFFF48 00000000 )
+  4C0:  			Call     SetNpcAnimation 	( .Npc:Self 00D10001 )
+  4D4:  			Call     SetNpcPos   	( .Npc:Self FFFFFF27 00000000 FFFFFFDA )
+  4F0:  		EndThread
+  4F8:  		Call     802CFD30 ( FFFFFFFF 00000007 00000000 00000000 00000000 00000000 )
+  51C:  		Set  *StoryProgress  00000041 
+  52C:  	Case  <  00000043 
+  538:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200D3 ) % There's no time to lose. To the Mayor's house!
+  558:  	Case  <  00000044 
+  564:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200D5 ) % That's just like the Mayor, hitting his head on th ...
+  584:  	Case  <  00000059 
+  590:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200D6 ) % My secret room's exposed now. The penguins of the  ...
+  5B0:  	Case  >=  00000059 
+  5BC:  		Call     SayMessage0 	( .Npc:Self 00D10004 00D10001 00000000 001200D7 ) % You saved the last Star Spirit! Everybody's talkin ...
+  5DC:  EndSwitch
+  5E4:  Return
+  5EC:  End
+
+#new:Script $Script_80247E6C_sam_11
+    0:  Return
+    8:  End
+
+#new:Script $Script_Init_80248AC4_sam_11
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80247878_sam_11 )
+   14:  Call     BindNpcIdle 	( .Npc:Self $Script_80247E6C_sam_11 )
+   28:  Switch  *StoryProgress 
+   34:  	Case  <  00000041 
+   40:  		Call     SetNpcPos   	( .Npc:Self FFFFFF92 00000096 FFFFFEBD )
+   5C:  	Case  <  00000043 
+   68:  		Call     SetNpcFlagBits ( .Npc:Self 00000004 .True )
+   80:  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   9C:  	Case  >=  00000043 
+   A8:  		Call     SetNpcPos   	( .Npc:Self FFFFFF92 00000096 FFFFFEBD )
+   C4:  EndSwitch
+   CC:  Return
+   D4:  End
+
+#new:Script $Script_8024E090_sam_11
+    0:  Call     EnableModel 	( {Model:ana} .False )
+   14:  Call     ModifyColliderFlags 	( 00000000 {Collider:ana} 7FFFFE00 )
+   2C:  Call     TranslateModel ( {Model:o733} 00000000 00000000 00000000 )
+   48:  Call     ModifyColliderFlags 	( 00000001 {Collider:o525} 7FFFFE00 )
+   60:  Thread
+   68:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+   80:  	Wait     0000000B 
+   8C:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+   A4:  	Wait     00000001 
+   B0:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+   C8:  	Wait     0000000B 
+   D4:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+   EC:  	Wait     00000001 
+   F8:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+  110:  	Wait     0000000B 
+  11C:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+  134:  	Wait     00000001 
+  140:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+  158:  	Wait     0000000B 
+  164:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+  17C:  	Wait     00000001 
+  188:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+  1A0:  	Wait     0000000B 
+  1AC:  	Call     PlaySoundAtCollider 	( {Collider:o525} 000001E9 00000000 )
+  1C4:  	Wait     00000001 
+  1D0:  EndThread
+  1D8:  Thread
+  1E0:  	Call     MakeLerp    	( 00000019 00000000 0000000C 00000000 )
+  1FC:  	Label    00000000 
+  208:  	Call     UpdateLerp  	( )
+  214:  	Call     TranslateModel ( {Model:o769} 00000000 *Var[0] 00000000 )
+  230:  	Wait     00000001 
+  23C:  	If  *Var[1]  ==  00000001 
+  24C:  		Goto     00000000 
+  258:  	EndIf
+  260:  EndThread
+  268:  Thread
+  270:  	Call     MakeLerp    	( 00000032 00000000 00000018 00000000 )
+  28C:  	Label    00000001 
+  298:  	Call     UpdateLerp  	( )
+  2A4:  	Call     TranslateModel ( {Model:o729} 00000000 *Var[0] 00000000 )
+  2C0:  	Wait     00000001 
+  2CC:  	If  *Var[1]  ==  00000001 
+  2DC:  		Goto     00000001 
+  2E8:  	EndIf
+  2F0:  EndThread
+  2F8:  Thread
+  300:  	Call     MakeLerp    	( 0000004B 00000000 00000024 00000000 )
+  31C:  	Label    00000002 
+  328:  	Call     UpdateLerp  	( )
+  334:  	Call     TranslateModel ( {Model:o730} 00000000 *Var[0] 00000000 )
+  350:  	Wait     00000001 
+  35C:  	If  *Var[1]  ==  00000001 
+  36C:  		Goto     00000002 
+  378:  	EndIf
+  380:  EndThread
+  388:  Thread
+  390:  	Call     MakeLerp    	( 00000064 00000000 00000030 00000000 )
+  3AC:  	Label    00000003 
+  3B8:  	Call     UpdateLerp  	( )
+  3C4:  	Call     TranslateModel ( {Model:o731} 00000000 *Var[0] 00000000 )
+  3E0:  	Wait     00000001 
+  3EC:  	If  *Var[1]  ==  00000001 
+  3FC:  		Goto     00000003 
+  408:  	EndIf
+  410:  EndThread
+  418:  Wait     00000001 
+  424:  Call     MakeLerp    	( 0000007D 00000000 0000003C 00000000 )
+  440:  Label    00000004 
+  44C:  Call     UpdateLerp  	( )
+  458:  Call     TranslateModel ( {Model:o732} 00000000 *Var[0] 00000000 )
+  474:  Wait     00000001 
+  480:  If  *Var[1]  ==  00000001 
+  490:  	Goto     00000004 
+  49C:  EndIf
+  4A4:  Return
+  4AC:  End
+

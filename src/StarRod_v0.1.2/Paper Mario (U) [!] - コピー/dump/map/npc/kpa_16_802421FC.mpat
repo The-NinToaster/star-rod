@@ -1,0 +1,346 @@
+% automatically dumped from map kpa_16
+
+#new:Npc $kpa_16_802421FC
+00000000 $NpcSettings_80241150_kpa_16 00000000 00000000 00000000 
+00C42D05 $Script_Init_80242140_kpa_16 00000000 00000000 0000010E 
+{Items:5:SuperShroom:A}
+{HP:20:70:5:50} {HP:30:60:5:50} {HP:50:50:5:40} {HP:80:40:5:40} {HP:100:30:5:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:3}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00580001 00580004 00580006 00580006 00580001 00580001 00580010 00580010 
+0058000C 0058000B 0058000D 00580001 00580001 00580001 00580001 00580001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240310_kpa_16
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  JAL       {Func:GetVariable}
+   10:  LW        A1, 0 (V0)
+   14:  MTC1      V0, F0
+   18:  NOP
+   1C:  CVT.S.W   F0, F0
+   20:  MFC1      A1, F0
+   24:  JAL       80137D88
+   28:  DADDU     A0, R0, R0
+   2C:  LW        RA, 10 (SP)
+   30:  ADDIU     V0, R0, 2
+   34:  JR        RA
+   38:  ADDIU     SP, SP, 18
+
+#new:Function $Function_8024034C_kpa_16
+    0:  ADDIU     SP, SP, FFE8
+    4:  DADDU     A0, R0, R0
+    8:  SW        RA, 10 (SP)
+    C:  JAL       80055618
+   10:  ADDIU     A1, R0, 1
+   14:  LW        RA, 10 (SP)
+   18:  ADDIU     V0, R0, 2
+   1C:  JR        RA
+   20:  ADDIU     SP, SP, 18
+
+#new:Function $Function_80240370_kpa_16
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  LAH       A2, 8015A552
+   14:  JAL       {Func:SetVariable}
+   18:  LW        A1, 0 (V0)
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:Script $Script_802405D0_kpa_16
+    0:  Thread
+    8:  	Set  *Var[0]  00000002 
+   18:  	Set  *Var[1]  00000000 
+   28:  	Set  *Var[2]  00000190 
+   38:  	Set  *Var[3]  00000000 
+   48:  	Set  *Var[4]  00000320 
+   58:  	Set  *Var[5]  00000000 
+   68:  	Set  *Var[6]  00000001 
+   78:  	Set  *Var[7]  00000000 
+   88:  	Set  *Var[8]  00000001 
+   98:  	Set  *Var[9]  00000000 
+   A8:  	Set  *Var[A]  00000000 
+   B8:  	Set  *Var[B]  00000000 
+   C8:  	Set  *Var[C]  00000000 
+   D8:  	Exec     $Script_80240480_kpa_16 
+   E4:  EndThread
+   EC:  Call     SetTexPanner 	( {Model:o1157} 00000002 )
+  100:  Call     SetTexPanner 	( {Model:o1158} 00000002 )
+  114:  Call     SetTexPanner 	( {Model:o1159} 00000002 )
+  128:  Call     SetTexPanner 	( {Model:o1160} 00000002 )
+  13C:  Call     SetTexPanner 	( {Model:o1162} 00000002 )
+  150:  Call     SetTexPanner 	( {Model:o1163} 00000002 )
+  164:  Return
+  16C:  End
+
+#new:NpcSettings $NpcSettings_80241150_kpa_16
+00000000 00280018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00190000 
+
+#new:Script $Script_8024117C_kpa_16
+    0:  Label    00000000 
+    C:  If  *AreaFlag[007]  ==  00000000 
+   1C:  	Wait     00000001 
+   28:  	Goto     00000000 
+   34:  EndIf
+   3C:  Call     DisablePlayerInput 	( .True )
+   4C:  Loop     
+   58:  	Wait     00000001 
+   64:  	Call     802D1DD0 ( *Var[0] )
+   74:  	If  *Var[0]  ==  00000000 
+   84:  		BreakLoop
+   8C:  	EndIf
+   94:  EndLoop
+   9C:  Wait     00000001 
+   A8:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   C0:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   DC:  Call     SetCamDistance ( .Default *Fixed[350.0] )
+   F0:  Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  104:  Call     SetPanTarget 	( .Default 0000014A 000000E6 FFFFFF6A )
+  120:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  138:  Wait     00000001 
+  144:  Call     SetPanTarget 	( .Default 0000014A 000000AA FFFFFF6A )
+  160:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  174:  Thread
+  17C:  	Call     $Function_8024034C_kpa_16 ( )
+  188:  	SetF  *Var[2]  00000001 
+  198:  	Call     MakeLerp    	( 00000000 FFFFFFEC 00000064 00000000 )
+  1B4:  	Loop     
+  1C0:  		Call     UpdateLerp  	( )
+  1CC:  		AddF  *Var[2]  *Fixed[-0.009765625] 
+  1DC:  		Call     TranslateModel ( {Model:o1283} 00000000 *Var[0] 00000000 )
+  1F8:  		Call     TranslateModel ( {Model:o1282} 00000000 *Var[0] 00000000 )
+  214:  		Call     ScaleModel  	( {Model:o1282} *Var[2] 00000001 00000001 )
+  230:  		Wait     00000001 
+  23C:  		If  *Var[1]  ==  00000000 
+  24C:  			BreakLoop
+  254:  		EndIf
+  25C:  	EndLoop
+  264:  EndThread
+  26C:  Wait     00000032 
+  278:  Call     MakeLerp    	( 00000000 000000FF 00000032 00000000 )
+  294:  Loop     
+  2A0:  	Call     UpdateLerp  	( )
+  2AC:  	Call     $Function_80240310_kpa_16 ( *Var[0] )
+  2BC:  	Wait     00000001 
+  2C8:  	If  *Var[1]  ==  00000000 
+  2D8:  		BreakLoop
+  2E0:  	EndIf
+  2E8:  EndLoop
+  2F0:  Call     ModifyColliderFlags 	( 00000003 {Collider:o782} 00000000 )
+  308:  Call     ModifyColliderFlags 	( 00000003 {Collider:o929} 00000000 )
+  320:  Call     ModifyColliderFlags 	( 00000003 {Collider:o930} 00000000 )
+  338:  Call     ModifyColliderFlags 	( 00000003 {Collider:o776} 00000000 )
+  350:  Call     ModifyColliderFlags 	( 00000003 {Collider:o952} 00000000 )
+  368:  Call     ModifyColliderFlags 	( 00000003 {Collider:o954} 00000000 )
+  380:  Call     ModifyColliderFlags 	( 00000003 {Collider:deiliw} 00000000 )
+  398:  Call     ModifyColliderFlags 	( 00000000 {Collider:o952} 7FFFFE00 )
+  3B0:  Exec     $Script_802405D0_kpa_16 
+  3BC:  Call     EnableGroup 	( {Model:before} .False )
+  3D0:  Call     EnableGroup 	( {Model:after} .True )
+  3E4:  Call     ModifyColliderFlags 	( 00000000 {Collider:o782} 7FFFFE00 )
+  3FC:  Call     ModifyColliderFlags 	( 00000001 {Collider:o954} 7FFFFE00 )
+  414:  Set  *Flag_KPA_0B  00000001 
+  424:  Call     ResetCam    	( .Default *Fixed[90.0] )
+  438:  Call     MakeLerp    	( 000000FF 00000000 00000032 00000000 )
+  454:  Loop     
+  460:  	Call     UpdateLerp  	( )
+  46C:  	Call     $Function_80240310_kpa_16 ( *Var[0] )
+  47C:  	Wait     00000001 
+  488:  	If  *Var[1]  ==  00000000 
+  498:  		BreakLoop
+  4A0:  	EndIf
+  4A8:  EndLoop
+  4B0:  Wait     0000003C 
+  4BC:  Call     DisablePartnerAI 	( 00000000 )
+  4CC:  Call     GetCurrentPartner 	( *Var[0] )
+  4DC:  Switch  *Var[0] 
+  4E8:  	Case  ==  00000001 
+  4F4:  		Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 0013001B ) % Hey, what do you know? It looks like the lava cool ...
+  514:  	Case  ==  00000002 
+  520:  		Call     SayMessage0 	( .Npc:Partner 0002000D 00020003 00000000 0013001C ) % Hey! That lava hardened when it cooled off! Now we ...
+  540:  	Case  ==  00000003 
+  54C:  		Call     SayMessage0 	( .Npc:Partner 0003000E 00030003 00000000 0013001D ) % Ohh... How totally weird! The lava cooled off and  ...
+  56C:  	Case  ==  00000004 
+  578:  		Call     SayMessage0 	( .Npc:Partner 00040006 00040001 00000000 0013001E ) % The lava seems to have cooled and hardened... Mayb ...
+  598:  	Case  ==  00000009 
+  5A4:  		Call     SayMessage0 	( .Npc:Partner 00050004 00050001 00000000 0013001F ) % Phew... Finally, that hot lava cooled off. Now you ...
+  5C4:  	Case  ==  00000006 
+  5D0:  		Call     SayMessage0 	( .Npc:Partner 00060004 00060001 00000000 00130020 ) % The lava, um, got all hard. We can walk on it now, ...
+  5F0:  	Case  ==  00000007 
+  5FC:  		Call     SayMessage0 	( .Npc:Partner 00070004 00070001 00000000 00130021 ) % What!? What is it!? The lava cooled down and turne ...
+  61C:  	Case  ==  00000008 
+  628:  		Call     SayMessage0 	( .Npc:Partner 00080009 00080001 00000000 00130022 ) % Awww...rad! The lava totally cooled off and harden ...
+  648:  EndSwitch
+  650:  Call     EnablePartnerAI 	( )
+  65C:  Call     DisablePlayerInput 	( .False )
+  66C:  Return
+  674:  End
+
+#new:Script $Script_802417F8_kpa_16
+    0:  ChildThread
+    8:  	Wait     0000000F 
+   14:  	Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+   28:  	Call     MoveNpcTo   	( 00000000 0000028A FFFFFF6F 00000000 )
+   44:  EndChildThread
+   4C:  ChildThread
+   54:  	Wait     0000000A 
+   60:  	Call     SetNpcSpeed 	( 00000002 *Fixed[3.5] )
+   74:  	Call     MoveNpcTo   	( 00000002 0000028A FFFFFF5B 00000000 )
+   90:  EndChildThread
+   98:  Wait     00000005 
+   A4:  Call     SetNpcSpeed 	( 00000001 *Fixed[4.0] )
+   B8:  Call     MoveNpcTo   	( 00000001 0000028A FFFFFF88 00000000 )
+   D4:  Return
+   DC:  End
+
+#new:Script $Script_802418DC_kpa_16
+    0:  Label    00000000 
+    C:  Wait     00000001 
+   18:  Call     $Function_80240370_kpa_16 ( *Var[0] )
+   28:  If  *Var[0]  !=  00000027 
+   38:  	Goto     00000000 
+   44:  EndIf
+   4C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   64:  If  *Var[1]  <  000000E6 
+   74:  	Goto     00000000 
+   80:  EndIf
+   88:  If  *Var[0]  >  000002C6 
+   98:  	Goto     00000000 
+   A4:  EndIf
+   AC:  Call     DisablePlayerInput 	( .True )
+   BC:  Call     PlaySoundAtNpc ( 00000000 00000262 00000000 )
+   D4:  Call     PlaySoundAtNpc ( 00000001 00000262 00000000 )
+   EC:  Call     PlaySoundAtNpc ( 00000002 00000262 00000000 )
+  104:  Call     ShowEmote   	( 00000000 .Emote:Exclamation 00000000 0000000F 00000001 00000000 00000000 00000000 00000000 )
+  134:  Call     ShowEmote   	( 00000001 .Emote:Exclamation 00000000 0000000F 00000001 00000000 00000000 00000000 00000000 )
+  164:  Call     ShowEmote   	( 00000002 .Emote:Exclamation 00000000 0000000F 00000001 00000000 00000000 00000000 00000000 )
+  194:  Wait     0000000F 
+  1A0:  Call     InterpNpcYaw 	( 00000000 0000005A 00000000 )
+  1B8:  Call     InterpNpcYaw 	( 00000001 0000005A 00000000 )
+  1D0:  Call     InterpNpcYaw 	( 00000002 0000005A 00000000 )
+  1E8:  Call     InterpNpcYaw 	( 00000003 0000005A 00000000 )
+  200:  Call     SetNpcAnimation 	( 00000000 00580006 )
+  214:  Call     SetNpcAnimation 	( 00000001 00580006 )
+  228:  Call     SetNpcAnimation 	( 00000002 00580006 )
+  23C:  Wait     0000000A 
+  248:  Call     UseSettingsFrom 	( .Default 0000022B 000000E6 FFFFFF6A )
+  264:  Call     SetPanTarget 	( .Default 0000022B 000000E6 FFFFFF6A )
+  280:  Call     SetCamDistance ( .Default *Fixed[300.0] )
+  294:  Call     SetCamAngles 	( .Default *Fixed[10.0] *Fixed[-10.0] )
+  2AC:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  2C0:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  2D8:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  2EC:  Thread
+  2F4:  	Call     SetPlayerSpeed ( *Fixed[3.0] )
+  304:  	Call     MovePlayerTo 	( 000002A8 FFFFFF6F 00000000 )
+  31C:  	Call     InterpPlayerYaw 	( 0000010E 00000000 )
+  330:  EndThread
+  338:  Call     SetOwnerVar 	( 00000000 00000000 )
+  34C:  Thread
+  354:  	Wait     0000001E 
+  360:  	Call     SetNpcAnimation 	( 00000001 00580006 )
+  374:  	Call     SetNpcSpeed 	( 00000001 *Fixed[4.0] )
+  388:  	Label    0000000A 
+  394:  	Call     MoveNpcTo   	( 00000001 00000226 FFFFFF5B 00000000 )
+  3B0:  	Wait     00000005 
+  3BC:  	Call     MoveNpcTo   	( 00000001 000001FE FFFFFF5B 00000000 )
+  3D8:  	Wait     00000005 
+  3E4:  	Call     GetOwnerVar 	( 00000000 *Var[0] )
+  3F8:  	If  *Var[0]  ==  00000000 
+  408:  		Goto     0000000A 
+  414:  	EndIf
+  41C:  	Call     MoveNpcTo   	( 00000001 00000217 FFFFFF5B 00000000 )
+  438:  	Call     SetOwnerVar 	( 00000000 00000002 )
+  44C:  EndThread
+  454:  Call     InterpNpcYaw 	( 00000000 0000010E 00000000 )
+  46C:  Call     SayMessage0 	( 00000000 00580006 00580006 00000001 00130017 ) % Uh-oh! Ma... Mario...is right...there! Now what we ...
+  48C:  Thread
+  494:  	Wait     00000005 
+  4A0:  	Call     SetNpcJumpscale 	( 00000002 *Fixed[1.0] )
+  4B4:  	Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  4D0:  	Call     NpcJump0    	( 00000002 *Var[0] *Var[1] *Var[2] 00000014 )
+  4F0:  EndThread
+  4F8:  Call     SayMessage0 	( 00000002 00580006 00580006 00000000 00130018 ) % No!!!!!! He'll wipe the floor with us!
+  518:  Call     SetOwnerVar 	( 00000000 00000001 )
+  52C:  Label    0000000F 
+  538:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+  54C:  If  *Var[0]  ==  00000001 
+  55C:  	Wait     00000001 
+  568:  	Goto     0000000F 
+  574:  EndIf
+  57C:  Call     InterpNpcYaw 	( 00000001 0000010E 00000000 )
+  594:  Call     InterpNpcYaw 	( 00000002 0000010E 00000000 )
+  5AC:  Call     SetNpcAnimation 	( 00000000 00580001 )
+  5C0:  Call     SetNpcAnimation 	( 00000001 00580001 )
+  5D4:  Call     SetNpcAnimation 	( 00000002 00580001 )
+  5E8:  Call     SayMessage0 	( 00000003 00560002 00560001 00000000 00130019 ) % Stop your bellyaching!! Who says we should be afra ...
+  608:  Thread
+  610:  	Wait     0000000F 
+  61C:  	Call     InterpNpcYaw 	( 00000002 0000005A 00000000 )
+  634:  	Wait     0000000A 
+  640:  	Call     InterpNpcYaw 	( 00000000 0000005A 00000000 )
+  658:  EndThread
+  660:  Call     SayMessage0 	( 00000001 00580008 00580001 00000000 0013001A ) % Waahh!! We have no choice! Gotta be brave... Gotta ...
+  680:  Call     ResetCam    	( .Default *Fixed[90.0] )
+  694:  Call     SetNpcAnimation 	( 00000000 00580006 )
+  6A8:  Call     SetNpcAnimation 	( 00000001 00580006 )
+  6BC:  Call     SetNpcAnimation 	( 00000002 00580006 )
+  6D0:  Exec     $Script_802417F8_kpa_16 
+  6DC:  Call     DisablePlayerInput 	( .False )
+  6EC:  Thread
+  6F4:  	Loop     
+  700:  		Wait     00000001 
+  70C:  		If  *Flag_KPA_0C  ==  00000001 
+  71C:  			BreakLoop
+  724:  		EndIf
+  72C:  	EndLoop
+  734:  	Wait     0000001E 
+  740:  	Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+  75C:  	Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+  778:  	Call     SetNpcPos   	( 00000002 00000000 FFFFFC18 00000000 )
+  794:  	Call     SetNpcPos   	( 00000003 00000000 FFFFFC18 00000000 )
+  7B0:  EndThread
+  7B8:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  7C8:  Return
+  7D0:  End
+
+#new:Script $Script_802420B4_kpa_16
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Set  *Flag_KPA_0C  00000001 
+   38:  		Call     ModifyColliderFlags 	( 00000000 {Collider:o958} 7FFFFE00 )
+   50:  		Call     DoNpcDefeat 	( )
+   5C:  	Case  ==  00000001 
+   68:  	Case  ==  00000002 
+   74:  EndSwitch
+   7C:  Return
+   84:  End
+
+#new:Script $Script_Init_80242140_kpa_16
+    0:  If  *Flag_KPA_0B  ==  00000000 
+   10:  	Exec     $Script_8024117C_kpa_16 
+   1C:  EndIf
+   24:  If  *Flag_KPA_0C  ==  00000000 
+   34:  	Call     BindNpcIdle 	( .Npc:Self $Script_802418DC_kpa_16 )
+   48:  	Call     BindNpcDefeat 	( .Npc:Self $Script_802420B4_kpa_16 )
+   5C:  Else
+   64:  	Call     RemoveNpc   	( 00000003 )
+   74:  	Call     RemoveNpc   	( 00000001 )
+   84:  	Call     RemoveNpc   	( 00000002 )
+   94:  	Call     RemoveNpc   	( .Npc:Self )
+   A4:  EndIf
+   AC:  Return
+   B4:  End
+

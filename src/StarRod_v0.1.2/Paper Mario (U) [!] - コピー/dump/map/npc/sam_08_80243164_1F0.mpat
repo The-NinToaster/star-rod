@@ -1,0 +1,160 @@
+% automatically dumped from map sam_08
+
+#new:Npc $sam_08_80243164_1F0
+00000004 $NpcSettings_80242200_sam_08 00000000 00000000 00000000 
+03F44D0D $Script_Init_802430D4_sam_08 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00020003 00020004 00020004 00020004 00020004 00020004 00020000 00020000 
+00020000 00020000 00020000 00020000 00020000 00020000 00020000 00020000 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80241610_sam_08
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  LW        S0, C (S1)
+   1C:  LW        A1, 0 (S0)
+   20:  JAL       {Func:GetVariable}
+   24:  ADDIU     S0, S0, 4
+   28:  LW        A1, 0 (S0)
+   2C:  ADDIU     S0, S0, 4
+   30:  DADDU     A0, S1, R0
+   34:  JAL       {Func:GetVariable}
+   38:  DADDU     S2, V0, R0
+   3C:  DADDU     A0, S1, R0
+   40:  LW        A1, 0 (S0)
+   44:  JAL       {Func:GetVariable}
+   48:  DADDU     S0, V0, R0
+   4C:  MTC1      S2, F12
+   50:  NOP
+   54:  CVT.S.W   F12, F12
+   58:  MTC1      V0, F0
+   5C:  NOP
+   60:  CVT.S.W   F0, F0
+   64:  MFC1      A2, F0
+   68:  MTC1      S0, F14
+   6C:  NOP
+   70:  JAL       8006F8F0
+   74:  CVT.S.W   F14, F14
+   78:  LW        RA, 1C (SP)
+   7C:  LW        S2, 18 (SP)
+   80:  LW        S1, 14 (SP)
+   84:  LW        S0, 10 (SP)
+   88:  ADDIU     V0, R0, 2
+   8C:  JR        RA
+   90:  ADDIU     SP, SP, 20
+
+#new:NpcSettings $NpcSettings_80242200_sam_08
+00000000 00230018 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_80242590_sam_08
+    0:  Call     80044600 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000004 
+   28:  		ExecWait $Script_80245EB0_sam_08 
+   34:  EndSwitch
+   3C:  Return
+   44:  End
+
+#new:Script $Script_8024306C_sam_08
+    0:  Loop     
+    C:  	Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+   28:  	Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   44:  	Wait     00000001 
+   50:  EndLoop
+   58:  Return
+   60:  End
+
+#new:Script $Script_Init_802430D4_sam_08
+    0:  Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+   18:  Call     SetNpcFlagBits2 	( .Npc:Self 00000001 00000000 )
+   30:  Call     BindNpcIdle 	( .Npc:Self $Script_8024306C_sam_08 )
+   44:  Call     BindNpcHit  	( .Npc:Self $Script_80242590_sam_08 )
+   58:  If  *StoryProgress  >=  0000004B 
+   68:  	Call     RemoveNpc   	( .Npc:Self )
+   78:  EndIf
+   80:  Return
+   88:  End
+
+#new:Script $Script_80245EB0_sam_08
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   28:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   44:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   60:  Call     SetCamDistance ( .Default *Fixed[250.0] )
+   74:  Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-8.0] )
+   8C:  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+   A0:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   B8:  Call     SetNpcAnimation 	( 00000001 0002000C )
+   CC:  Wait     00000014 
+   D8:  Call     PlaySoundAtNpc ( 00000001 000020B8 00000000 )
+   F0:  Loop     0000000A 
+   FC:  	Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  118:  	Add  *Var[2]  00000003 
+  128:  	Call     $Function_80241610_sam_08 ( *Var[0] *Var[1] *Var[2] )
+  140:  	Wait     00000005 
+  14C:  EndLoop
+  154:  Call     PlaySoundAtNpc ( 00000001 000002CD 00000000 )
+  16C:  Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+  188:  Call     EnableNpcShadow 	( 00000001 .False )
+  19C:  Call     SetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  1B8:  Call     MakeLerp    	( 00000000 00000B40 00000028 00000004 )
+  1D4:  Label    00000001 
+  1E0:  Call     UpdateLerp  	( )
+  1EC:  Call     SetNpcRotation ( 00000002 00000000 *Var[0] 00000000 )
+  208:  Wait     00000001 
+  214:  If  *Var[1]  ==  00000001 
+  224:  	Goto     00000001 
+  230:  EndIf
+  238:  Call     GetAngleToPlayer 	( 00000002 *Var[0] )
+  24C:  Call     InterpNpcYaw 	( 00000002 *Var[0] 00000000 )
+  264:  Thread
+  26C:  	Set  *MapFlag[00]  00000000 
+  27C:  	Call     GetAngleToNPC 	( 00000000 *Var[0] )
+  290:  	Call     GetPlayerPos 	( *Var[1] *Var[2] *Var[3] )
+  2A8:  	Call     AddVectorPolar ( *Var[1] *Var[3] *Fixed[40.0] *Var[0] )
+  2C4:  	Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+  2D8:  	Call     SetNpcAnimation 	( 00000000 00020005 )
+  2EC:  	Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  304:  	Call     MoveNpcTo   	( 00000000 *Var[1] *Var[3] 00000000 )
+  320:  	Call     SetNpcAnimation 	( 00000000 00020003 )
+  334:  	Set  *MapFlag[00]  00000001 
+  344:  EndThread
+  34C:  Call     PlayerFaceNpc 	( 00000002 00000000 )
+  360:  Call     SayMessage0 	( 00000002 004E0005 004E0002 00000000 00120130 ) % Yeeeow! What made you think that I was the one lyi ...
+  380:  Label    00000000 
+  38C:  If  *MapFlag[00]  ==  00000000 
+  39C:  	Wait     00000001 
+  3A8:  	Goto     00000000 
+  3B4:  EndIf
+  3BC:  Call     SayMessage0 	( 00000000 0002000D 00020003 00000005 00120131 ) % Don't be such a crybaby! You lost! What were you t ...
+  3DC:  Wait     0000000A 
+  3E8:  Call     SayMessage0 	( 00000002 004E0005 004E0002 00000000 00120132 ) % What? Shut up! I'll trick YOU...
+  408:  Call     SetNpcAnimation 	( 00000002 004E0006 )
+  41C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  434:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  450:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  46C:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  484:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  4A0:  Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+  4BC:  Call     EnableNpcShadow 	( 00000000 .False )
+  4D0:  Call     SetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  4EC:  Call     GetNpcYaw   	( 00000000 *Var[0] )
+  500:  Call     SetNpcYaw   	( .Npc:Partner *Var[0] )
+  514:  Call     SetNpcFlagBits ( .Npc:Partner 00000006 .False )
+  52C:  Call     EnableNpcShadow 	( .Npc:Partner .True )
+  540:  Call     EnablePartnerAI 	( )
+  54C:  Call     SetNpcVar   	( 00000002 00000000 00000001 )
+  564:  Return
+  56C:  End
+

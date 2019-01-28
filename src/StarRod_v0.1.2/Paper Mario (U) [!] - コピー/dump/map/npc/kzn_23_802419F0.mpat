@@ -1,0 +1,401 @@
+% automatically dumped from map kzn_23
+
+#new:Npc $kzn_23_802419F0
+00000001 $NpcSettings_80240D4C_kzn_23 00000000 00000000 00000000 
+19100004 $Script_Init_802417AC_kzn_23 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00160001 00160001 00160001 00160001 00160001 00160001 00160001 00160001 
+00160000 00160001 00160001 00160001 00160001 00160001 00160001 00160001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240310_kzn_23
+    0:  ADDIU     SP, SP, FFC8
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S2, 18 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  SDC1      F24, 30 (SP)
+   1C:  SDC1      F22, 28 (SP)
+   20:  SDC1      F20, 20 (SP)
+   24:  LW        S0, C (S1)
+   28:  LW        A1, 0 (S0)
+   2C:  JAL       {Func:GetVariable}
+   30:  ADDIU     S0, S0, 4
+   34:  LW        A1, 0 (S0)
+   38:  ADDIU     S0, S0, 4
+   3C:  DADDU     A0, S1, R0
+   40:  JAL       {Func:GetVariable}
+   44:  DADDU     S2, V0, R0
+   48:  LW        A1, 0 (S0)
+   4C:  ADDIU     S0, S0, 4
+   50:  MTC1      V0, F24
+   54:  NOP
+   58:  CVT.S.W   F24, F24
+   5C:  JAL       {Func:GetVariable}
+   60:  DADDU     A0, S1, R0
+   64:  LW        A1, 0 (S0)
+   68:  MTC1      V0, F22
+   6C:  NOP
+   70:  CVT.S.W   F22, F22
+   74:  JAL       {Func:GetVariable}
+   78:  DADDU     A0, S1, R0
+   7C:  MTC1      V0, F20
+   80:  NOP
+   84:  CVT.S.W   F20, F20
+   88:  JAL       801105E8
+   8C:  DADDU     A0, S2, R0
+   90:  DADDU     V1, V0, R0
+   94:  SWC1      F24, 48 (V1)
+   98:  SWC1      F22, 4C (V1)
+   9C:  SWC1      F20, 50 (V1)
+   A0:  LW        RA, 1C (SP)
+   A4:  LW        S2, 18 (SP)
+   A8:  LW        S1, 14 (SP)
+   AC:  LW        S0, 10 (SP)
+   B0:  LDC1      F24, 30 (SP)
+   B4:  LDC1      F22, 28 (SP)
+   B8:  LDC1      F20, 20 (SP)
+   BC:  ADDIU     V0, R0, 2
+   C0:  JR        RA
+   C4:  ADDIU     SP, SP, 38
+
+#new:Function $Function_802403D8_kzn_23
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S2, 18 (SP)
+    8:  DADDU     S2, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S1, 14 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  LW        S0, C (S2)
+   1C:  LW        A1, 0 (S0)
+   20:  JAL       {Func:GetVariable}
+   24:  ADDIU     S0, S0, 4
+   28:  JAL       801105E8
+   2C:  DADDU     A0, V0, R0
+   30:  LW        A1, 0 (S0)
+   34:  ADDIU     S0, S0, 4
+   38:  DADDU     S1, V0, R0
+   3C:  LWC1      F0, 48 (S1)
+   40:  TRUNC.W.S F2, F0
+   44:  MFC1      A2, F2
+   48:  JAL       {Func:SetVariable}
+   4C:  DADDU     A0, S2, R0
+   50:  LW        A1, 0 (S0)
+   54:  ADDIU     S0, S0, 4
+   58:  LWC1      F0, 4C (S1)
+   5C:  TRUNC.W.S F2, F0
+   60:  MFC1      A2, F2
+   64:  JAL       {Func:SetVariable}
+   68:  DADDU     A0, S2, R0
+   6C:  LWC1      F0, 50 (S1)
+   70:  LW        A1, 0 (S0)
+   74:  TRUNC.W.S F2, F0
+   78:  MFC1      A2, F2
+   7C:  JAL       {Func:SetVariable}
+   80:  DADDU     A0, S2, R0
+   84:  LW        RA, 1C (SP)
+   88:  LW        S2, 18 (SP)
+   8C:  LW        S1, 14 (SP)
+   90:  LW        S0, 10 (SP)
+   94:  ADDIU     V0, R0, 2
+   98:  JR        RA
+   9C:  ADDIU     SP, SP, 20
+
+#new:Function $Function_80240478_kzn_23
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 18 (SP)
+   10:  SW        S0, 10 (SP)
+   14:  SDC1      F22, 28 (SP)
+   18:  SDC1      F20, 20 (SP)
+   1C:  LW        S0, C (S1)
+   20:  LW        A1, 0 (S0)
+   24:  JAL       {Func:GetFloatVariable}
+   28:  ADDIU     S0, S0, 4
+   2C:  LW        A1, 0 (S0)
+   30:  ADDIU     S0, S0, 4
+   34:  DADDU     A0, S1, R0
+   38:  JAL       {Func:GetFloatVariable}
+   3C:  MOV.S     F22, F0
+   40:  DADDU     A0, S1, R0
+   44:  LW        A1, 0 (S0)
+   48:  JAL       {Func:GetFloatVariable}
+   4C:  MOV.S     F20, F0
+   50:  LW        V1, BC (S1)
+   54:  LW        V0, C (V1)
+   58:  SWC1      F22, 38 (V0)
+   5C:  LW        V0, C (V1)
+   60:  SWC1      F20, 3C (V0)
+   64:  LW        V0, C (V1)
+   68:  SWC1      F0, 40 (V0)
+   6C:  LW        RA, 18 (SP)
+   70:  LW        S1, 14 (SP)
+   74:  LW        S0, 10 (SP)
+   78:  LDC1      F22, 28 (SP)
+   7C:  LDC1      F20, 20 (SP)
+   80:  ADDIU     V0, R0, 2
+   84:  JR        RA
+   88:  ADDIU     SP, SP, 30
+
+#new:Function $Function_80240504_kzn_23
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 2 (V1)
+    C:  ANDI      V0, V0, FFFE
+   10:  SH        V0, 2 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:Function $Function_80240520_kzn_23
+    0:  ADDIU     SP, SP, FFE0
+    4:  SW        S2, 18 (SP)
+    8:  DADDU     S2, A0, R0
+    C:  SW        RA, 1C (SP)
+   10:  SW        S1, 14 (SP)
+   14:  SW        S0, 10 (SP)
+   18:  LW        A0, AC (S2)
+   1C:  JAL       801105E8
+   20:  DADDU     S0, A1, R0
+   24:  BEQ       S0, R0, .o38
+   28:  DADDU     S1, V0, R0
+   2C:  ADDIU     V0, R0, 3C
+   30:  SW        R0, 70 (S2)
+   34:  SW        V0, 74 (S2)
+        .o38
+   38:  LWC1      F0, 74 (S2)
+   3C:  CVT.S.W   F0, F0
+   40:  LIF       F2, 60.0
+   48:  LIO       AT, 40490FD8
+   50:  MTC1      AT, F12
+   54:  DIV.S     F0, F0, F2
+   58:  SWC1      F0, 54 (S1)
+   5C:  LWC1      F0, 74 (S2)
+   60:  CVT.S.W   F0, F0
+   64:  DIV.S     F0, F0, F2
+   68:  MUL.S     F12, F0, F12
+   6C:  NOP
+   70:  SWC1      F0, 58 (S1)
+   74:  LWC1      F0, 74 (S2)
+   78:  CVT.S.W   F0, F0
+   7C:  DIV.S     F0, F0, F2
+   80:  JAL       {Func:CosRad}
+   84:  SWC1      F0, 5C (S1)
+   88:  LIF       F2, 1.0
+   90:  NOP
+   94:  SUB.S     F2, F2, F0
+   98:  LAD       F0, $ConstDouble_80241C10_kzn_23
+   A0:  CVT.D.S   F2, F2
+   A4:  MUL.D     F2, F2, F0
+   A8:  NOP
+   AC:  LIF       F1, 1.75
+   B4:  MTC1      R0, F0
+   B8:  NOP
+   BC:  MUL.D     F2, F2, F0
+   C0:  NOP
+   C4:  CVT.S.D   F2, F2
+   C8:  SWC1      F2, 64 (S1)
+   CC:  LW        V1, 74 (S2)
+   D0:  ADDIU     V1, V1, FFFF
+   D4:  NOR       V0, R0, V1
+   D8:  SLTIU     V0, V0, 1
+   DC:  SW        V1, 74 (S2)
+   E0:  LW        RA, 1C (SP)
+   E4:  LW        S2, 18 (SP)
+   E8:  LW        S1, 14 (SP)
+   EC:  LW        S0, 10 (SP)
+   F0:  SLL       V0, V0, 1
+   F4:  JR        RA
+   F8:  ADDIU     SP, SP, 20
+
+#new:NpcSettings $NpcSettings_80240D4C_kzn_23
+00000000 001A0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80240E98_kzn_23
+    0:  Label    00000000 
+    C:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+   20:  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+   3C:  Add  *Var[1]  0000003C 
+   4C:  Call     802CAF2C ( 00000000 *Var[0] *Var[1] *Var[2] )
+   68:  If  *Var[1]  <  00000AB4 
+   78:  	Wait     00000001 
+   84:  	Goto     00000000 
+   90:  EndIf
+   98:  Return
+   A0:  End
+
+#new:VectorList $VectorList_80240F40_kzn_23
+% {Path3f:Path_80240F40}
+50.000000 2650.000000 -20.000000
+150.000000 2850.000000 -45.000000
+235.000000 2950.000000 -60.000000
+335.000000 3000.000000 -75.000000
+
+#new:VectorList $VectorList_80240F70_kzn_23
+% {Path3f:Path_80240F70}
+-20.000000 2650.000000 -20.000000
+-120.000000 2850.000000 -40.000000
+-220.000000 3000.000000 -40.000000
+
+#new:VectorList $VectorList_80240F94_kzn_23
+% {Path3f:Path_80240F94}
+10.000000 2650.000000 -20.000000
+20.000000 2800.000000 -60.000000
+30.000000 2880.000000 -100.000000
+40.000000 2920.000000 -150.000000
+50.000000 2940.000000 -220.000000
+
+#new:VectorList $VectorList_80240FD0_kzn_23
+% {Path3f:Path_80240FD0}
+-35.000000 2650.000000 -20.000000
+-65.000000 2780.000000 -30.000000
+-95.000000 2850.000000 -40.000000
+-125.000000 2880.000000 -50.000000
+-155.000000 2900.000000 -60.000000
+-185.000000 2915.000000 -70.000000
+
+#new:IntTable $IntTable_80241018_kzn_23
+00000082 FFFFFF6A 00000082 FFFFFF6A 
+
+#new:Script $Script_80241028_kzn_23
+    0:  Add  *Var[0]  00000001 
+   10:  UseIntBuffer $IntTable_80241018_kzn_23 
+   1C:  Loop     *Var[0] 
+   28:  	Get1Int  *Var[1] 
+   34:  EndLoop
+   3C:  If  *AreaFlag[011]  ==  00000000 
+   4C:  	Call     PlaySoundAt 	( 000001AD 00000000 *Var[1] 00000AF0 00000000 )
+   6C:  	Set  *AreaFlag[011]  00000001 
+   7C:  Else
+   84:  	Call     PlaySoundAt 	( 000001AE 00000000 *Var[1] 00000AF0 00000000 )
+   A4:  	Set  *AreaFlag[011]  00000000 
+   B4:  EndIf
+   BC:  Return
+   C4:  End
+
+#new:Script $Script_802410F4_kzn_23
+    0:  Loop     
+    C:  	Thread
+   14:  		Call     RandInt     	( 00000003 *Var[0] )
+   28:  		Exec     $Script_80241028_kzn_23 
+   34:  		Switch  *Var[0] 
+   40:  			Case  ==  00000000 
+   4C:  				Call     PlayEffect  	( 00000065 00000002 00000032 00000A5A FFFFFFEC 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+   90:  				Set  *Var[E]  *Var[F] 
+   A0:  				Call     LoadPath    	( 0000000F $VectorList_80240F40_kzn_23 00000004 00000004 )
+   BC:  			Case  ==  00000001 
+   C8:  				Call     PlayEffect  	( 00000065 00000002 FFFFFFEC 00000A5A FFFFFFEC 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  10C:  				Set  *Var[E]  *Var[F] 
+  11C:  				Call     LoadPath    	( 0000000A $VectorList_80240F70_kzn_23 00000003 00000004 )
+  138:  			Case  ==  00000002 
+  144:  				Call     PlayEffect  	( 00000065 00000002 0000000A 00000A5A FFFFFFEC 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  188:  				Set  *Var[E]  *Var[F] 
+  198:  				Call     LoadPath    	( 0000000F $VectorList_80240F94_kzn_23 00000005 00000004 )
+  1B4:  			Case  ==  00000003 
+  1C0:  				Call     PlayEffect  	( 00000065 00000002 FFFFFFCE 00000A5A FFFFFFEC 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  204:  				Set  *Var[E]  *Var[F] 
+  214:  				Call     LoadPath    	( 00000014 $VectorList_80240FD0_kzn_23 00000006 00000004 )
+  230:  		EndSwitch
+  238:  		Call     RandInt     	( 00000001 *Var[4] )
+  24C:  		If  *Var[4]  ==  00000000 
+  25C:  			Set  *Var[4]  FFFFFFFF 
+  26C:  		EndIf
+  274:  		Loop     
+  280:  			Call     GetNextPathPos ( )
+  28C:  			Mul  *Var[1]  *Var[4] 
+  29C:  			Call     $Function_80240478_kzn_23 ( *Var[1] *Var[2] *Var[3] )
+  2B4:  			Wait     00000001 
+  2C0:  			If  *Var[0]  ==  00000000 
+  2D0:  				BreakLoop
+  2D8:  			EndIf
+  2E0:  		EndLoop
+  2E8:  		Call     802D7B10 ( *Var[E] )
+  2F8:  	EndThread
+  300:  	Wait     00000008 
+  30C:  EndLoop
+  314:  Return
+  31C:  End
+
+#new:Script $Script_80241418_kzn_23
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     DisablePlayerPhysics 	( .True )
+   20:  Call     802D10D8 ( 0000000A )
+   30:  Call     DisablePartnerAI 	( 00000000 )
+   40:  Call     SetNpcFlagBits ( .Npc:Partner 00000200 .False )
+   58:  Call     $Function_80240504_kzn_23 ( )
+   64:  Exec     $Script_80240E98_kzn_23 
+   70:  Call     SetOwnerVar 	( 00000000 00000000 )
+   84:  Thread
+   8C:  	Wait     00000001 
+   98:  	Call     SetPlayerAnimation 	( 00080000 )
+   A8:  EndThread
+   B0:  Thread
+   B8:  	Call     MakeLerp    	( 00000000 00000C12 000000A0 00000000 )
+   D4:  	Loop     
+   E0:  		Call     UpdateLerp  	( )
+   EC:  		Sub  *Var[0]  00000064 
+   FC:  		Call     SetNpcPos   	( .Npc:Self 00000000 *Var[0] 00000000 )
+  118:  		Call     SetNpcPos   	( 00000000 0000000A *Var[0] FFFFFFFB )
+  134:  		Call     SetPlayerPos 	( FFFFFFF6 *Var[0] 00000005 )
+  14C:  		Add  *Var[0]  00000014 
+  15C:  		Call     SetNpcPos   	( .Npc:Partner FFFFFFF6 *Var[0] 00000000 )
+  178:  		If  *Var[0]  >  00000B18 
+  188:  			Call     SetOwnerVar 	( 00000000 00000001 )
+  19C:  		EndIf
+  1A4:  		Wait     00000001 
+  1B0:  		If  *Var[1]  ==  00000000 
+  1C0:  			BreakLoop
+  1C8:  		EndIf
+  1D0:  	EndLoop
+  1D8:  EndThread
+  1E0:  Label    00000000 
+  1EC:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+  200:  If  *Var[0]  ==  00000000 
+  210:  	Wait     00000001 
+  21C:  	Goto     00000000 
+  228:  EndIf
+  230:  Exec     $Script_802410F4_kzn_23 
+  23C:  Wait     00000023 
+  248:  Call     MakeEntity  	( .Entity:Chest {Vec4d:Entity80241660} 80000000 )
+  26C:  Set  *Var[A]  *Var[0] 
+  27C:  Thread
+  284:  	Call     $Function_80240520_kzn_23 ( )
+  290:  EndThread
+  298:  Set  *Var[9]  *Var[A] 
+  2A8:  Call     $Function_802403D8_kzn_23 ( *Var[9] *Var[2] *Var[3] *Var[4] )
+  2C4:  Call     MakeLerp    	( *Var[3] 00000BB8 0000000A 00000001 )
+  2E0:  Loop     
+  2EC:  	Call     UpdateLerp  	( )
+  2F8:  	Call     $Function_80240310_kzn_23 ( *Var[9] *Var[2] *Var[0] *Var[4] )
+  314:  	Add  *Var[2]  FFFFFFFF 
+  324:  	Wait     00000001 
+  330:  	If  *Var[1]  ==  00000000 
+  340:  		BreakLoop
+  348:  	EndIf
+  350:  EndLoop
+  358:  Wait     0000002D 
+  364:  Call     GotoMap     	( $ASCII_80241C18_kzn_23 00000001 )
+  378:  Wait     00000064 
+  384:  Return
+  38C:  End
+
+#new:Script $Script_Init_802417AC_kzn_23
+    0:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFF9C 00000000 )
+   1C:  Call     SetNpcAnimation 	( .Npc:Self 00160008 )
+   30:  Call     BindNpcIdle 	( .Npc:Self $Script_80241418_kzn_23 )
+   44:  Return
+   4C:  End
+
+#new:ConstDouble $ConstDouble_80241C10_kzn_23
+990.000000d
+
+#new:ASCII $ASCII_80241C18_kzn_23
+jan_04
+

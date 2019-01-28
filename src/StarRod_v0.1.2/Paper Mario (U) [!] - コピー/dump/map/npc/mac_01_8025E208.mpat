@@ -1,0 +1,137 @@
+% automatically dumped from map mac_01
+
+#new:Npc $mac_01_8025E208
+0000001C $NpcSettings_80248B70_mac_01 00000000 00000000 00000000 
+00400D09 $Script_Init_8025CB28_mac_01 00000000 00000000 00000112 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00200001 00200005 00200008 00200008 00200001 00200001 00200001 00200001 
+00200001 00200001 00200001 00200001 00200001 00200001 00200001 00200001 
+00000000 00000000 $ExtraAnimationList_8025E1F8_mac_01 00000000 % no tattle string
+
+#new:Script $Script_80246770_mac_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  ==  FFFFFF80 
+   18:  		Call     SetMusicTrack 	( 00000000 .Song:PeachsCastleParty 00000001 00000008 )
+   34:  	Case  ==  00000060 
+   40:  		Call     SetMusicTrack 	( 00000000 .Song:PeachsCastleParty 00000000 00000008 )
+   5C:  	Case  FFFFFFF3  to  00000005 
+   6C:  		Call     SetMusicTrack 	( 00000000 .Song:ShyGuyInvasion 00000000 00000008 )
+   88:  	Default
+   90:  		Exec     $Script_802488A8_mac_01 
+   9C:  EndSwitch
+   A4:  Return
+   AC:  End
+
+#new:NpcSettings $NpcSettings_80248B70_mac_01
+00000000 00140014 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:VectorList $VectorList_8025C5B0_mac_01
+% {Path3f:Path_8025C5B0}
+-80.000000 106.000000 0.000000
+-50.000000 30.000000 0.000000
+0.000000 0.000000 0.000000
+
+#new:VectorList $VectorList_8025C5D4_mac_01
+% {Path3f:Path_8025C5D4}
+0.000000 0.000000 0.000000
+-50.000000 30.000000 0.000000
+-70.000000 106.000000 0.000000
+
+#new:Script $Script_8025C5F8_mac_01
+    0:  Loop     
+    C:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  	If  *Var[0]  <  00000230 
+   34:  		BreakLoop
+   3C:  	EndIf
+   44:  	Wait     00000001 
+   50:  EndLoop
+   58:  Call     SetMusicTrack 	( 00000000 .Song:TwinkTheme 00000000 00000008 )
+   74:  Call     DisablePlayerInput 	( .True )
+   84:  Call     SetPlayerSpeed ( *Fixed[3.0] )
+   94:  Call     MovePlayerTo 	( 000001F4 FFFFFFEC 00000000 )
+   AC:  Call     802D24F4 ( )
+   B8:  Call     InterpPlayerYaw 	( 0000010E 00000000 )
+   CC:  Call     ShowMessage 	( 000300DB 000000A0 00000028 ) % Mario!!
+   E4:  Loop     00000002 
+   F0:  	Call     InterpPlayerYaw 	( 0000005A 00000007 )
+  104:  	Wait     0000000A 
+  110:  	Call     InterpPlayerYaw 	( 0000010E 00000007 )
+  124:  	Wait     0000000A 
+  130:  EndLoop
+  138:  Wait     0000001E 
+  144:  Call     GetPlayerPos 	( *Var[4] *Var[5] *Var[6] )
+  15C:  SubF  *Var[4]  *Fixed[50.0] 
+  16C:  AddF  *Var[5]  *Fixed[40.0] 
+  17C:  Call     InterpNpcYaw 	( 0000001C 0000005A 00000000 )
+  194:  Call     LoadPath    	( 00000023 $VectorList_8025C5B0_mac_01 00000003 0000000A )
+  1B0:  Loop     
+  1BC:  	Call     GetNextPathPos ( )
+  1C8:  	AddF  *Var[1]  *Var[4] 
+  1D8:  	AddF  *Var[2]  *Var[5] 
+  1E8:  	Call     SetNpcPos   	( 0000001C *Var[1] *Var[2] *Var[3] )
+  204:  	Wait     00000001 
+  210:  	If  *Var[0]  ==  00000000 
+  220:  		BreakLoop
+  228:  	EndIf
+  230:  EndLoop
+  238:  Call     SetPlayerAnimation 	( 0001002A )
+  248:  Call     UseSettings 	( .Default *Fixed[3.0] FFFFFFF6 FFFFFED4 0000000F FFFFFFF7 )
+  26C:  Call     SayMessage0 	( 0000001C 00200009 00200001 00000000 000300DC ) % Mario! Mario! It's me, Twink. Remember me?
+  28C:  Wait     00000005 
+  298:  Call     SetPlayerAnimation 	( 00080007 )
+  2A8:  Wait     0000001E 
+  2B4:  Call     SetPlayerAnimation 	( 0001002A )
+  2C4:  Wait     0000000F 
+  2D0:  Call     SetNpcJumpscale 	( 0000001C *Fixed[1.0] )
+  2E4:  Call     GetNpcPos   	( 0000001C *Var[0] *Var[1] *Var[2] )
+  300:  Call     NpcJump0    	( 0000001C *Var[0] *Var[1] *Var[2] 0000000A )
+  320:  Call     SayMessage0 	( 0000001C 00200009 00200001 00000000 000300DD ) % I heard you saved the honorable Star Spirit who wa ...
+  340:  Wait     00000005 
+  34C:  Call     SetPlayerAnimation 	( 0001002D )
+  35C:  Wait     0000001E 
+  368:  Call     SetPlayerAnimation 	( 0001002A )
+  378:  Call     UseSettings 	( .Default *Fixed[3.0] FFFFFFD8 FFFFFF38 0000000F FFFFFFF1 )
+  39C:  Call     SayMessage0 	( 0000001C 00200009 00200001 00000000 000300DE ) % But enough celebration for now. I come bearing imp ...
+  3BC:  Wait     00000005 
+  3C8:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  3E0:  Call     InterpNpcYaw 	( 0000001C 0000010E 00000000 )
+  3F8:  Call     GetNpcPos   	( 0000001C *Var[4] *Var[5] *Var[6] )
+  414:  Call     LoadPath    	( 00000023 $VectorList_8025C5D4_mac_01 00000003 00000001 )
+  430:  Loop     
+  43C:  	Call     GetNextPathPos ( )
+  448:  	Add  *Var[1]  *Var[4] 
+  458:  	Add  *Var[2]  *Var[5] 
+  468:  	Add  *Var[3]  *Var[6] 
+  478:  	Call     SetNpcPos   	( 0000001C *Var[1] *Var[2] *Var[3] )
+  494:  	Wait     00000001 
+  4A0:  	If  *Var[0]  ==  00000000 
+  4B0:  		BreakLoop
+  4B8:  	EndIf
+  4C0:  EndLoop
+  4C8:  Call     SetNpcPos   	( 0000001C 00000000 FFFFFC18 00000000 )
+  4E4:  Exec     $Script_80246770_mac_01 
+  4F0:  Set  *StoryProgress  FFFFFFB7 
+  500:  Call     SetPlayerAnimation 	( 00010002 )
+  510:  Call     DisablePlayerInput 	( .False )
+  520:  Return
+  528:  End
+
+#new:Script $Script_Init_8025CB28_mac_01
+    0:  If  *StoryProgress  ==  FFFFFFB6 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_8025C5F8_mac_01 )
+   24:  Else
+   2C:  	Call     RemoveNpc   	( .Npc:Self )
+   3C:  EndIf
+   44:  Return
+   4C:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8025E1F8_mac_01
+00200001 00200005 00200009 FFFFFFFF 
+

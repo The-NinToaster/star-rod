@@ -1,0 +1,584 @@
+00-000
+a[END]
+
+00-001
+{Func_29:9F}Today...[END]
+
+00-002
+{Func_29:9F}I'm going to tell the story of[BR]
+"Star Spirits and Good Wishes."[END]
+
+00-003
+{Func_29:9F}Far, far away, beyond the sky,[END]
+
+00-004
+{Func_29:9F}way above the clouds,[END]
+
+00-005
+{Func_29:9F}it's been said that there's[BR]
+a haven where the Stars live.[END]
+
+00-006
+{Func_29:9F}In the sanctuary of Star Haven[END]
+
+00-007
+{Func_29:9F}there rests a fabled treasure[BR]
+called the Star Rod,[END]
+
+00-008
+{Func_29:9F}which has the power to grant[BR]
+all wishes.[END]
+
+00-009
+{Func_29:9F}Using this wondrous Star Rod,[BR]
+the seven revered Star Spirits[END]
+
+00-00A
+{Func_29:9F}watched over our peaceful world[END]
+
+00-00B
+{Func_29:9F}carefully...very carefully.[END]
+
+00-00C
+{Func_29:9F}And then...[END]
+
+00-00D
+{Func_29:9F}Oh dear... What the...?[END]
+
+00-00E
+{Func_29:9F}Who stuck that weird thing[BR]
+into this story?[END]
+
+00-00F
+{Func_29:9F}Ha ha ha! Yeah! I did![END]
+
+00-010
+{Func_29:9F}{StartFX:Wavy}Gwa ha ha ha ha ha ha ha!![BR]
+{EndFX:Wavy}[END]
+
+00-011
+{Func_29:9F}So I can, at long last, beat my[BR]
+archenemy, Mario,[END]
+
+00-012
+{Func_29:9F}I'll take this Star Rod![END]
+
+00-013
+{Func_29:9F}Do it, Kammy Koopa!![END]
+
+00-014
+{Func_29:9F}[END]
+
+00-015
+{Func_29:9F}No, you mustn't do that!![END]
+
+00-016
+{Func_29:9F}Yeah! Now let's try using it![END]
+
+00-017
+{Func_29:9F}Stop it! Cut it out, Bowser!![END]
+
+00-018
+{Func_29:9F}You're changing the story!![END]
+
+00-019
+{Func_29:9F}Bwa ha ha ha ha... We did it![END]
+
+00-01A
+{Func_29:9F}That was a piece o' cake!![BR]
+Gwaa ha ha![END]
+
+00-01B
+{Func_29:9F}Now Star Kids may rise to the[BR]
+Haven to deliver people's wishes...[END]
+
+00-01C
+{Func_29:9F}...but those wishes will not come[BR]
+true.[BR]
+[END]
+
+00-01D
+{Func_29:9F}Whatever can they do...?[END]
+
+00-01E
+[STYLE:RIGHT]Mail call![WAIT][END]
+
+00-01F
+[STYLE:RIGHT]Hey, Mario![BR]
+[PAUSE:0A]We got a letter from Princess[BR]
+Peach![WAIT][END]
+
+00-020
+[STYLE:RIGHT]I'll read it to you, OK?[WAIT][END]
+
+00-021
+[STYLE:RIGHT]All right, let's see...[WAIT][END]
+
+00-022
+{Image7:00:00:55:61:01:FF:0F}{Func_04}[END]
+
+00-023
+[STYLE:NARRATE][PAUSE:04]{InputOn}I'm throwing a party at my[BR]
+castle today![BR]
+[PAUSE:0A]Mario and Luigi, I would be[BR]
+honored if you both could attend.[BR]
+[WAIT][BR]
+[NEXT]
+{Down:05}Many guests from distant towns [BR]
+{Down:05}are hoping to meet you.[BR]
+[WAIT][BR]
+{Up:0A}[NEXT]
+There will be tasty sweets and[BR]
+all kinds of entertainment![BR]
+I hope to see you here soon![BR]
+[PAUSE:0F]{Indent:6E}Sincerely, Peach[BR]
+[WAIT]{Func_04}[END]
+
+00-024
+[STYLE:RIGHT]What a magnificent castle![BR]
+I never get used to this place.[BR]
+[PAUSE:0A]It looks like lots of guests are[BR]
+already here.[WAIT][END]
+
+00-025
+[STYLE:RIGHT]Say, Mario, why don't you go see[BR]
+Princess Peach?[BR]
+[PAUSE:0A]I'll go later. I'm thinking I'll[BR]
+mingle for now.[BR]
+[WAIT][NEXT]
+If you press {PushColor}{Color:10}[A]{PopColor} in front of the[BR]
+door up there, you can open it.[WAIT][END]
+
+00-026
+[STYLE:RIGHT]Mario! Where are you going?[BR]
+[WAIT][NEXT]
+The princess is expecting us![BR]
+You'd better at least say hello![WAIT][END]
+
+00-027
+[STYLE:RIGHT]Ah! Salutations, Mario! [BR]
+[PAUSE:0A]Do you know Frost T. here?[BR]
+[WAIT][NEXT]
+He's come all the way from the[BR]
+Shiver region, which lies far to[BR]
+the north of here.[WAIT][END]
+
+00-028
+[STYLE:RIGHT]Princess Peach is such a [BR]
+generous and wonderful lady,[BR]
+just as I was told. [BR]
+[PAUSE:0A]It was worth coming to visit.[BR]
+[WAIT][NEXT]
+Mario, please come visit us in[BR]
+the Shiver region someday![WAIT][END]
+
+00-029
+[STYLE:RIGHT]Mario, you're looking well![BR]
+[PAUSE:0F]Please enjoy the party, OK?[WAIT][END]
+
+00-02A
+[STYLE:RIGHT]Wow! I've never seen so many[BR]
+guests from different parts of[BR]
+the world in one place![BR]
+[WAIT][NEXT]
+I'll bet you could hear some[BR]
+stories about places you've[BR]
+never been to, huh?[WAIT][END]
+
+00-02B
+[STYLE:RIGHT]Hey...urp...Mario![BR]
+[PAUSE:0A]I hope you brought an appetite![BR]
+There's so much good food here![BR]
+[WAIT][NEXT]
+I already ate way too much...[BR]
+I'm taking a little breather.[BR]
+[WAIT][NEXT]
+Well, [PAUSE:05]that's enough of a rest![BR]
+I'm hungry again! Let's eat![BR]
+To the buffet table!!! [WAIT][END]
+
+00-02C
+[STYLE:RIGHT]I think Princess Peach has been[BR]
+looking forward to seeing you[BR]
+since this morning, Mario.[BR]
+[WAIT][NEXT]
+She's been restless...[BR]
+[PAUSE:0A]hee hee hee... [PAUSE:05]How cute...[WAIT][END]
+
+00-02D
+[STYLE:RIGHT]Oh! Welcome, Mario![BR]
+[PAUSE:0A]The last party was lovely,[BR]
+wasn't it?[BR]
+[WAIT][NEXT]
+Oh! By the way,[BR]
+[PAUSE:0A]Princess Peach has been waiting[BR]
+for you.[WAIT][END]
+
+00-02E
+[STYLE:RIGHT]Welcome to Peach's Castle![WAIT][END]
+
+00-02F
+[STYLE:RIGHT]Princess Peach went into her[BR]
+private chambers just now.[BR]
+[WAIT][NEXT]
+She must be a bit tired.[WAIT][END]
+
+00-030
+[STYLE:RIGHT]Wow...[BR]
+[PAUSE:0A]This castle is absolutely[BR]
+breathtaking, don't you think?[BR]
+[WAIT][NEXT]
+I wish I could stay here at[BR]
+Peach's Castle forever![WAIT][END]
+
+00-031
+[STYLE:RIGHT]Oh, hello there, Mario![BR]
+[PAUSE:0A]I'm Tayce T.[BR]
+[PAUSE:0A]I really love to cook![HEART][BR]
+[WAIT][NEXT]
+You may not know this, but I[BR]
+cooked all the food for this big[BR]
+party. I made all of my most[BR]
+delicious dishes![HEART][BR]
+[WAIT][NEXT]
+But... Oh dear...[BR]
+[PAUSE:0A]I got so into my cooking that I[BR]
+used up all of my ingredients![BR]
+[WAIT][NEXT]
+Now I have to go shopping![WAIT][END]
+
+00-032
+[STYLE:RIGHT]I've been practicing cooking.[BR]
+[WAIT][NEXT]
+I hope that someday I get good[BR]
+enough to cook food as delicious[BR]
+as Tayce T.'s.[BR]
+[WAIT][NEXT]
+Do you know how to cook, Mario?[BR]
+You really ought to learn![BR]
+[PAUSE:0A]Personally, I think cooking is[BR]
+exceptionally fun![WAIT][END]
+
+00-033
+[STYLE:RIGHT]Greetings, Mario![BR]
+[PAUSE:0A]I am the Minister of Princess[BR]
+Peach's Castle.[BR]
+[WAIT][NEXT]
+It's good to see you here. When[BR]
+you're around, I feel like our[BR]
+kingdom is secure.[BR]
+[PAUSE:0A]Yep, our future looks bright![WAIT][END]
+
+00-034
+[STYLE:RIGHT]I come from a desert town called[BR]
+Dry Dry Outpost. [BR]
+[WAIT][NEXT]
+This castle is really lovely, isn't[BR]
+it? Truly gorgeous. So cool and[BR]
+comfortable...[BR]
+[WAIT][NEXT]
+I even got a chance to talk to[BR]
+the beautiful Princess Peach.[BR]
+[WAIT][NEXT]
+What an honor! When I return to[BR]
+Dry Dry Outpost, I'm going to[BR]
+tell everyone about it.[WAIT][END]
+
+00-035
+[STYLE:RIGHT]I'm a Nomadimouse, and I come[BR]
+from Dry Dry Desert.[BR]
+[WAIT][NEXT]
+Everyone I've met in this town[BR]
+seems incredibly nice.[BR]
+[PAUSE:0A]I think I'll make this place my[BR]
+home away from home.[WAIT][END]
+
+00-036
+[STYLE:RIGHT]I'm here on behalf of lovely[BR]
+Shiver City. I'm the Mayor there,[BR]
+you know![BR]
+[WAIT][NEXT]
+My goodness, look at the time![BR]
+[PAUSE:0A]I have to go shopping for[BR]
+souvenirs with Frost T.![WAIT][END]
+
+00-037
+[STYLE:RIGHT]I come from Koopa Village, which[BR]
+is just down the road from here.[BR]
+[WAIT][NEXT]
+Ohhh... I just had the honor of[BR]
+talking with Princess Peach![BR]
+[PAUSE:0A]What a wonderful lady she is![HEART][WAIT][END]
+
+00-038
+[STYLE:RIGHT]Well... [PAUSE:05]Today, we have guests[BR]
+[PAUSE:0A]from Dry Dry Outpost, the[BR]
+Shiver region, Koopa Village...[BR]
+[WAIT][NEXT]
+There're so many folks here,[BR]
+I can't keep track of them all.[BR]
+[WAIT][NEXT]
+And where might you be from?[BR]
+[PAUSE:14]Oh... [PAUSE:0A]You're Mario!?[BR]
+[PAUSE:0A]I... [PAUSE:05]I'm sorry! Excuse me![WAIT][END]
+
+00-039
+[STYLE:RIGHT]Does Princess Peach have a[BR]
+special man in her life?[BR]
+[WAIT][NEXT]
+She's such a lovely lady...[BR]
+Whoever she loves must be very[BR]
+special indeed...[WAIT][END]
+
+00-03A
+[STYLE:RIGHT]Do you know of a place called[BR]
+Shooting Star Summit?[BR]
+[PAUSE:0A]It's near this castle. It's such[BR]
+a romantic place...[BR]
+[WAIT][NEXT]
+It's definitely the best place[BR]
+for a date. Trust me. [BR]
+[PAUSE:0A]Maybe you ought to, you know,[BR]
+ask the princess to go there...[WAIT][END]
+
+00-03B
+[STYLE:RIGHT]Hello, Mario.[BR]
+[PAUSE:0A]I am always on the cutting edge[BR]
+of fashion, and I must say...[BR]
+[WAIT][NEXT]
+...your outfit is just fabulous. [BR]
+[PAUSE:0A]It really suits you![HEART][WAIT][END]
+
+00-03C
+[STYLE:RIGHT]I... [PAUSE:05]I'm just a trainee, sir.[BR]
+[WAIT][NEXT]
+So many guests... My heart's[BR]
+been beating like a bass drum[BR]
+ever since this morning...[BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}Thump [PAUSE:03]thump [PAUSE:03]thump [PAUSE:03]thump{EndFX:Shrinking}[PAUSE:03]...[WAIT][END]
+
+00-03D
+[STYLE:RIGHT]This is Princess Peach's room,[BR]
+[PAUSE:14]but I'm afraid she isn't in here [BR]
+at the moment.[WAIT][END]
+
+00-03E
+[STYLE:RIGHT]Huh?[BR]
+[PAUSE:14]Oh no! Absolutely not![BR]
+[WAIT][NEXT]
+I don't think it's very polite to[BR]
+go into her room without asking[BR]
+her first, Mario! [WAIT][END]
+
+00-03F
+[STYLE:RIGHT]I said NO, and that means NO.[BR]
+[PAUSE:0A]You are simply not allowed to go[BR]
+in there![WAIT][END]
+
+00-040
+[STYLE:RIGHT]Boy, you're persistent![BR]
+[PAUSE:0F]I guess I have no choice...[BR]
+[WAIT][NEXT]
+Hurry up in there, though--[BR]
+and don't touch anything![WAIT][END]
+
+00-041
+[STYLE:RIGHT]I envy you, Mario...[WAIT][END]
+
+00-042
+[STYLE:RIGHT]How was it?[BR]
+[PAUSE:0A]To tell you the truth, I've never[BR]
+seen the inside of her room...[WAIT][END]
+
+00-043
+[STYLE:INSPECT]What a big fireplace![BR]
+[PAUSE:0A]And what a cozy fire![WAIT][END]
+
+00-044
+[STYLE:INSPECT]Her dresses are beautiful, but[BR]
+they all look the same![BR]
+[PAUSE:0A]This must be her favorite style[BR]
+of dress.[WAIT][END]
+
+00-045
+[STYLE:INSPECT]These are cosmetics.[BR]
+[PAUSE:0A]Mario looks fine without them.[WAIT][END]
+
+00-046
+[STYLE:INSPECT]A framed photo of Mario![WAIT][END]
+
+00-047
+[STYLE:INSPECT]Quite a fluffy bed.[BR]
+[PAUSE:0A]It looks like this bed was[BR]
+designed for sweet dreams.[WAIT][END]
+
+00-048
+[STYLE:INSPECT]A vase full of lovely flowers.[BR]
+[PAUSE:0A]They smell heavenly.[WAIT][END]
+
+00-049
+[STYLE:RIGHT]It's nice and quiet here with[BR]
+no guests around.[BR]
+[PAUSE:0A]Ahh...so pleasant.[WAIT][END]
+
+00-04A
+[STYLE:RIGHT]Princess Peach went into her[BR]
+private chambers just now.[WAIT][END]
+
+00-04B
+[STYLE:RIGHT]Oh, Mario![BR]
+[PAUSE:0A]You came to the party to see[BR]
+me! You're so sweet![BR]
+[PAUSE:14]Thank you![HEART][WAIT][END]
+
+00-04C
+[STYLE:RIGHT]I was just resting a bit. It[BR]
+gets tiring, greeting all those[BR]
+guests out there![BR]
+[WAIT][NEXT]
+Nobody will bother us here.[BR]
+[PAUSE:0A]Shall we relax and chat, just the[BR]
+two of us? [WAIT][END]
+
+00-04D
+[STYLE:RIGHT]It was a lovely day today, so I'm[BR]
+sure it's comfortable out on the[BR]
+balcony right now.[BR]
+[PAUSE:0A]Would you accompany me, Mario?[WAIT][END]
+
+00-04E
+[STYLE:RIGHT]Oh! Are you all right, Mario?[BR]
+[PAUSE:0A]What in the world was that?[WAIT][END]
+
+00-04F
+[STYLE:RIGHT]Oh my! Look, Mario![BR]
+[PAUSE:0A]It's still daytime, isn't it?[BR]
+[PAUSE:0A]... But I can see stars outside![WAIT][END]
+
+00-050
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}Gwaa ha ha ha ha ha![BR]
+{EndFX:Shrinking}[PAUSE:05]Long time no see, Princess[BR]
+Peach![WAIT][END]
+
+00-051
+[STYLE:RIGHT]... Bowser![BR]
+[PAUSE:0A]But this can't be![BR]
+It was you who made the ground[BR]
+shake just now, wasn't it![BR]
+[WAIT][NEXT]
+Whatever did you do?[WAIT][END]
+
+00-052
+[STYLE:RIGHT]{SpeechSound:01}{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:20:20}Gwa ha ha ha![BR]
+{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}[WAIT][BR]
+{Scroll:03}{Up:0C}Yeah, that was me! I've lifted[BR]
+your castle up into the sky![BR]
+It's sitting on my castle now![BR]
+[PAUSE:0A]Weren't expecting that, huh?[BR]
+[WAIT][NEXT]
+Ha! This castle's under my[BR]
+control now, my dear![BR]
+[PAUSE:0A]Now you will obey ME![WAIT][END]
+
+00-053
+[STYLE:RIGHT]{SpeechSound:01}Huh!? What?[BR]
+[PAUSE:0A]It's...Mario!! What a shock![BR]
+[WAIT][NEXT]
+Ha! Not really! I expected you[BR]
+to turn up, right on cue.[BR]
+[PAUSE:0A]You're just as annoying as ever.[BR]
+[WAIT][NEXT]
+Unfortunately for you, there's[BR]
+nothing you can do this time.[WAIT][END]
+
+00-054
+[STYLE:RIGHT]Haven't you learned your lesson[BR]
+by now, Bowser?[BR]
+[WAIT][NEXT]
+You can never defeat Mario![BR]
+[PAUSE:0A]Why don't you give up already?[WAIT][END]
+
+00-055
+[STYLE:RIGHT]{SpeechSound:01}True, true, I have had my[BR]
+problems in the past...[BR]
+But this time is different![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}This time I'm gonna win![WAIT][END]
+
+00-056
+[STYLE:RIGHT]{SpeechSound:01}OK, tough guy![BR]
+[PAUSE:0A]Let's go![WAIT][END]
+
+00-057
+[STYLE:RIGHT]Mario, [PAUSE:05]you can do it![WAIT][END]
+
+00-058
+[STYLE:RIGHT]{SpeechSound:01}Good old Mario...always fighting.[BR]
+[PAUSE:0A]You're a thorn in my side.[BR]
+[WAIT][NEXT]
+But today, your pathetic little[BR]
+attacks won't beat me![WAIT][END]
+
+00-059
+[STYLE:RIGHT]{SpeechSound:01}Take a look at this![BR]
+[PAUSE:05]Look what I stole from Star[BR]
+Haven! It's the {Color:20}Star Rod{Color:0A}![BR]
+[WAIT][NEXT]
+This fine piece of work has the[BR]
+power to grant any wish in the[BR]
+whole wide world![BR]
+[WAIT][NEXT]
+And when I use the Star Rod to[BR]
+increase my strength, even you[BR]
+can't beat me, Mario![WAIT][END]
+
+00-05A
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}Gwa ha ha ha ha ha![BR]
+{EndFX:Shrinking}How do you like that, Mario?![WAIT][END]
+
+00-05B
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}Gwa ha ha ha ha ha![BR]
+{EndFX:Shrinking}[PAUSE:05]Is that all you've got? How sad![BR]
+You'd best take some vitamins,[BR]
+'cause that didn't hurt at all![WAIT][END]
+
+00-05C
+[STYLE:RIGHT]{SpeechSound:01}Yup, just as I expected. Mario's[BR]
+no match for the new me.[BR]
+[WAIT][NEXT]
+It's not even worth my time to[BR]
+toy with you anymore, Mario.[BR]
+[PAUSE:0A]It's time to end this![BR]
+[WAIT][NEXT]
+Here we go, Mario![BR]
+{StartFX:Shrinking}Good night![WAIT][END]
+
+00-05D
+[STYLE:RIGHT]{StartFX:Shrinking}Oh no! Mario! Get up![WAIT][END]
+
+00-05E
+[STYLE:RIGHT]{SpeechSound:01}Yes! Oh, yeah! I did it![BR]
+[WAIT][NEXT]
+I finally did it! I beat my old[BR]
+rival Mario! Yessss![WAIT][END]
+
+00-05F
+[STYLE:RIGHT]Congratulations on your victory,[BR]
+Your Viciousness![BR]
+[PAUSE:05]That's why you're the King![WAIT][END]
+
+00-060
+[STYLE:RIGHT]{SpeechSound:01}As long as I have this Star Rod,[BR]
+everything I wish will come true![BR]
+[PAUSE:0A]No one can stop me now![WAIT][END]
+
+00-061
+[STYLE:RIGHT]{SpeechSound:01}Well, well, well...[BR]
+[PAUSE:0A]I guess I might as well get rid[BR]
+of Mario. He's no good to anyone[BR]
+now, that's for sure.[WAIT][END]
+
+00-062
+[STYLE:RIGHT]{StartFX:Shrinking}Oh, no! Mario------!![WAIT][END]
+

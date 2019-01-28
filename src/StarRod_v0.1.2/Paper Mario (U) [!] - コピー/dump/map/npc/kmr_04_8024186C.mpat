@@ -1,0 +1,159 @@
+% automatically dumped from map kmr_04
+
+#new:Npc $kmr_04_8024186C
+00000001 $NpcSettings_802415E8_kmr_04 00000000 00000000 00000000 
+00200100 00000000 00000000 00000000 00000000 
+{NoDrops}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80240000_kmr_04
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  JAL       8003AAEC
+    C:  ADDIU     A0, R0, FFFC
+   10:  LW        V0, 0 (V0)
+   14:  LW        RA, 10 (SP)
+   18:  ANDI      V0, V0, 1000
+   1C:  SLTU      V0, R0, V0
+   20:  SLL       V0, V0, 1
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:Script $Script_8024088C_kmr_04
+    0:  Call     SetNpcFlagBits ( .Npc:Self 00000200 .False )
+   18:  Call     SetNpcFlagBits ( .Npc:Self 00000048 .True )
+   30:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   4C:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   60:  Return
+   68:  End
+
+#new:Script $Script_802408FC_kmr_04
+    0:  Return
+    8:  End
+
+#new:Script $Script_NpcAI_8024090C_kmr_04
+    0:  Label    00000001 
+    C:  Switch  *StoryProgress 
+   18:  	Case  ==  FFFFFF87 
+   24:  		Loop     
+   30:  			Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   48:  			Wait     00000001 
+   54:  			If  *Var[0]  <=  00000172 
+   64:  				BreakLoop
+   6C:  			EndIf
+   74:  		EndLoop
+   7C:  		Call     DisablePlayerInput 	( .True )
+   8C:  		Call     802CF56C ( 00000000 )
+   9C:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   B4:  		Add  *Var[0]  0000001E 
+   C4:  		Call     SetNpcSpeed 	( .Npc:Partner *Fixed[2.0] )
+   D8:  		Call     MoveNpcTo   	( *Var[0] *Var[1] *Var[2] 00000000 )
+   F4:  		Wait     00000005 
+  100:  		Call     DisablePartnerAI 	( 00000000 )
+  110:  		Call     SayMessage0 	( .Npc:Partner 009D0008 009D0001 00000000 000B00A9 ) % The Hammer has got to be somewhere close by.  It l ...
+  130:  		Call     SetNpcAnimation 	( .Npc:Partner 009D0001 )
+  144:  		Call     EnablePartnerAI 	( )
+  150:  		Wait     0000000A 
+  15C:  		Call     DisablePlayerInput 	( .False )
+  16C:  		Set  *StoryProgress  FFFFFF88 
+  17C:  	Case  ==  FFFFFF89 
+  188:  		If  *AreaByte[0]  ==  00000000 
+  198:  			Label    0000000A 
+  1A4:  			Wait     00000001 
+  1B0:  			Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  1C8:  			If  *Var[0]  <  00000168 
+  1D8:  				Goto     0000000A 
+  1E4:  			EndIf
+  1EC:  			If  *Var[0]  >  00000190 
+  1FC:  				Goto     0000000A 
+  208:  			EndIf
+  210:  			If  *Var[2]  <  FFFFFFDC 
+  220:  				Goto     0000000A 
+  22C:  			EndIf
+  234:  			If  *Var[2]  >  00000055 
+  244:  				Goto     0000000A 
+  250:  			EndIf
+  258:  			Call     DisablePlayerInput 	( .True )
+  268:  			Call     $Function_80240000_kmr_04 ( )
+  274:  			Call     DisablePartnerAI 	( 00000000 )
+  284:  			Call     SetNpcFlagBits ( .Npc:Partner 00000040 .True )
+  29C:  			Call     SetNpcAnimation 	( .Npc:Partner 009D0002 )
+  2B0:  			Call     SetNpcSpeed 	( .Npc:Partner *Fixed[3.0] )
+  2C4:  			Call     MoveNpcTo   	( .Npc:Partner 000001A4 00000006 00000000 )
+  2E0:  			Thread
+  2E8:  				Wait     00000003 
+  2F4:  				Call     PlayerFaceNpc 	( .Npc:Partner 00000003 )
+  308:  			EndThread
+  310:  			Call     SayMessage0 	( .Npc:Partner 009D0008 009D0001 00000000 000B00AC ) % Hmmm... Well! We found the Hammer, so I guess we s ...
+  330:  			Call     SetNpcAnimation 	( .Npc:Partner 009D0001 )
+  344:  			Wait     0000000A 
+  350:  			Thread
+  358:  				Call     SetPlayerSpeed ( *Fixed[3.0] )
+  368:  				Call     MovePlayerTo 	( 0000018B 00000000 00000000 )
+  380:  				Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  394:  			EndThread
+  39C:  			Call     SetNpcFlagBits ( .Npc:Partner 00000008 .True )
+  3B4:  			Call     SetNpcSpeed 	( .Npc:Partner *Fixed[6.0] )
+  3C8:  			Call     SetNpcAnimation 	( .Npc:Partner 009D0003 )
+  3DC:  			Call     MoveNpcTo   	( .Npc:Partner 00000246 00000006 00000000 )
+  3F8:  			Call     SetNpcAnimation 	( .Npc:Partner 009D0001 )
+  40C:  			Call     SetNpcFlagBits ( .Npc:Partner 00000008 .False )
+  424:  			Call     PlaySoundAtNpc ( .Npc:Partner 00000061 00000000 )
+  43C:  			Call     SayMessage0 	( .Npc:Partner 009D0008 009D0001 00000000 000B00AD ) % Youch!!
+  45C:  			Wait     0000000A 
+  468:  			Thread
+  470:  				Set  *Var[0]  00000000 
+  480:  				Call     802CDE68 ( FFFFFFFC 0000000A )
+  494:  				Loop     0000003C 
+  4A0:  					Add  *Var[0]  00000035 
+  4B0:  					Call     SetNpcRotation ( .Npc:Partner 00000000 00000000 *Var[0] )
+  4CC:  					Call     PlayerFaceNpc 	( .Npc:Partner 00000000 )
+  4E0:  					Wait     00000001 
+  4EC:  				EndLoop
+  4F4:  				Call     802CDE68 ( FFFFFFFC 00000000 )
+  508:  				Call     SetNpcRotation ( .Npc:Partner 00000000 00000000 00000000 )
+  524:  			EndThread
+  52C:  			Thread
+  534:  				Call     ShakeCam    	( .Default 00000000 0000000F *Fixed[1.0] )
+  550:  			EndThread
+  558:  			Call     PlayEffect  	( {FX:Stars:Fountain2} 000001EF 0000000F 00000009 000001CC 0000000F 00000009 00000006 00000000 00000000 00000000 00000000 00000000 )
+  59C:  			Call     SetNpcAnimation 	( .Npc:Partner 009D0007 )
+  5B0:  			Call     MoveNpcTo   	( .Npc:Partner 000000FA 00000006 0000003C )
+  5CC:  			Call     SetNpcAnimation 	( .Npc:Partner 009D0007 )
+  5E0:  			Call     SetNpcRotation ( .Npc:Partner 00000000 00000000 00000000 )
+  5FC:  			Thread
+  604:  				Loop     00000014 
+  610:  					Call     SetNpcPos   	( .Npc:Partner 000000FA 00000000 00000006 )
+  62C:  					Wait     00000003 
+  638:  					Call     SetNpcPos   	( .Npc:Partner 000000FA 00000000 00000000 )
+  654:  					Wait     00000003 
+  660:  				EndLoop
+  668:  			EndThread
+  670:  			Set  *AreaByte[0]  00000001 
+  680:  		EndIf
+  688:  EndSwitch
+  690:  Wait     00000001 
+  69C:  Goto     00000001 
+  6A8:  Return
+  6B0:  End
+
+#new:Script $Script_80240FC4_kmr_04
+    0:  Return
+    8:  End
+
+#new:Script $Script_80240FD4_kmr_04
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_802415E8_kmr_04
+009D0001 00180018 $Script_8024088C_kmr_04 $Script_80240FC4_kmr_04 $Script_NpcAI_8024090C_kmr_04 00000000 $Script_802408FC_kmr_04 $Script_80240FD4_kmr_04 
+00000105 00000000 00000000 
+

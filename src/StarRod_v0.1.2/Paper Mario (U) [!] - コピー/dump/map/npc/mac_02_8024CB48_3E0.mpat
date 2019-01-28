@@ -1,0 +1,85 @@
+% automatically dumped from map mac_02
+
+#new:Npc $mac_02_8024CB48_3E0
+00000002 $NpcSettings_80246124_mac_02 00000000 00000000 00000000 
+00000801 $Script_Init_8024CA88_mac_02 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00990002 0099000E 0099000E 00990002 00990002 00990002 00990002 00990002 
+00990002 00990002 00990002 00990002 00990002 00990002 00990002 00990002 
+00000000 00000000 $ExtraAnimationList_8024CB2C_mac_02 001A003C % Oh! A Bub-ulb. Talking flowers seem weird... Didn' ...
+
+#new:Script $Script_80246114_mac_02
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_80246124_mac_02
+00000000 002A001A $Script_80246114_mac_02 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80246154_mac_02
+    0:  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+   18:  Return
+   20:  Return
+   28:  End
+
+#new:Script $Script_8024C800_mac_02
+    0:  If  *Flag_MAC_99  ==  00000000 
+   10:  	Call     SayMessage0 	( .Npc:Self 00990007 00990007 00000000 00040085 ) % P... Pppppppppppppppppppp...
+   30:  	Call     PlaySoundAtNpc ( .Npc:Self 00000321 00000000 )
+   48:  	Call     PlaySoundAtNpc ( .Npc:Self 00000323 00000000 )
+   60:  	Call     SetNpcAnimation 	( .Npc:Self 00990005 )
+   74:  	Wait     0000002D 
+   80:  	Call     SetNpcAnimation 	( .Npc:Self 00990002 )
+   94:  	Call     802CDF8C ( FFFFFFFF 0000002D 0000001A )
+   AC:  	Call     SayMessage0 	( .Npc:Self 00990003 00990002 00000000 00040086 ) % PUFFFFF! Well, hello there. My name is Bub-ulb. I  ...
+   CC:  	Set  *Var[0]  0000002B 
+   DC:  	Set  *Var[1]  00000001 
+   EC:  	ExecWait $Script_80246154_mac_02 
+   F8:  	Call     AddKeyItem  	( .Item:MagicalSeed1 )
+  108:  	Call     SayMessage0 	( .Npc:Self 00990003 00990002 00000000 00040087 ) % That is a flower seed. If it's well cared for, a b ...
+  128:  	Set  *Flag_MAC_99  00000001 
+  138:  	Call     80045A58 ( 00000002 001A003C )
+  14C:  Else
+  154:  	Switch  *StoryProgress 
+  160:  		Case  <  FFFFFFB5 
+  16C:  		Case  <  FFFFFFCA 
+  178:  			Set  *Var[0]  00040088 
+  188:  		Case  <  FFFFFFF1 
+  194:  			Set  *Var[0]  00040089 
+  1A4:  		Case  <  00000007 
+  1B0:  			Set  *Var[0]  0004008A 
+  1C0:  		Case  <  00000027 
+  1CC:  			Set  *Var[0]  0004008B 
+  1DC:  		Case  <  00000039 
+  1E8:  			Set  *Var[0]  0004008C 
+  1F8:  		Case  <  00000059 
+  204:  			Set  *Var[0]  0004008D 
+  214:  		Case  <  00000060 
+  220:  			Set  *Var[0]  0004008E 
+  230:  		Default
+  238:  			Set  *Var[0]  0004008E 
+  248:  	EndSwitch
+  250:  	Call     SayMessage0 	( 00000002 00990003 00990002 00000000 *Var[0] ) % variable string ID
+  270:  EndIf
+  278:  Return
+  280:  End
+
+#new:Script $Script_Init_8024CA88_mac_02
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024C800_mac_02 )
+   14:  If  *Flag_MAC_99  ==  00000000 
+   24:  	Call     802CDF8C ( FFFFFFFF 00000019 00000019 )
+   3C:  	Call     SetNpcAnimation 	( .Npc:Self 00990007 )
+   50:  	Call     80045A58 ( 00000002 001A003B )
+   64:  EndIf
+   6C:  Return
+   74:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8024CB2C_mac_02
+00990000 00990001 00990002 00990003 00990005 00990007 FFFFFFFF 
+

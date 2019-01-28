@@ -1,0 +1,96 @@
+2B-000
+Headbonk[END]
+
+2B-001
+Tattle[END]
+
+2B-002
+Charge[END]
+
+2B-003
+Multibonk[END]
+
+2B-004
+Shell Toss[END]
+
+2B-005
+Power Shell[END]
+
+2B-006
+Dizzy Shell[END]
+
+2B-007
+Fire Shell[END]
+
+2B-008
+Body Slam[END]
+
+2B-009
+Bomb[END]
+
+2B-00A
+Power Bomb[END]
+
+2B-00B
+Mega Bomb[END]
+
+2B-00C
+Sky Dive[END]
+
+2B-00D
+Shell Shot[END]
+
+2B-00E
+Air Lift[END]
+
+2B-00F
+Air Raid[END]
+
+2B-010
+Smack[END]
+
+2B-011
+Outta Sight[END]
+
+2B-012
+Spook[END]
+
+2B-013
+Fan Smack[END]
+
+2B-014
+Electro Dash[END]
+
+2B-015
+Power Shock[END]
+
+2B-016
+Turbo Charge[END]
+
+2B-017
+Mega Shock[END]
+
+2B-018
+Belly Flop[END]
+
+2B-019
+Squirt[END]
+
+2B-01A
+Water Block[END]
+
+2B-01B
+Tidal Wave[END]
+
+2B-01C
+Spiny Flip[END]
+
+2B-01D
+Spiny Surge[END]
+
+2B-01E
+Cloud Nine[END]
+
+2B-01F
+Hurricane[END]
+

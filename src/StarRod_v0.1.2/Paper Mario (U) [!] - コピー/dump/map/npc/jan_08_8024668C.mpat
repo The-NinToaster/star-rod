@@ -1,0 +1,125 @@
+% automatically dumped from map jan_08
+
+#new:Npc $jan_08_8024668C
+00000007 $NpcSettings_802445A0_jan_08 00000000 00000000 00000000 
+00400D0D $Script_Init_80245694_jan_08 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00970401 00970402 00970403 00970403 00970401 00970401 00970401 00970401 
+00970401 00970401 00970401 00970401 00970401 00970401 00970401 00970401 
+00000000 00000000 00000000 001A00C7 % Yoshi kids are so cheerful. This red Yoshi kid, th ...
+
+#new:Script $Script_802424A0_jan_08
+    0:  Call     SetMusicTrack 	( 00000000 .Song:JadeJungle 00000000 00000008 )
+   1C:  Call     802D60E8 ( 000000FA )
+   2C:  Return
+   34:  End
+
+#new:NpcSettings $NpcSettings_802445A0_jan_08
+00000000 001C0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802451B8_jan_08
+    0:  Set  *AreaFlag[002]  00000000 
+   10:  Loop     
+   1C:  	Call     PlaySoundAtNpc ( 00000007 000001F0 00000000 )
+   34:  	Wait     00000014 
+   40:  	If  *AreaFlag[002]  ==  00000001 
+   50:  		BreakLoop
+   58:  	EndIf
+   60:  EndLoop
+   68:  Return
+   70:  End
+
+#new:Script $Script_80245230_jan_08
+    0:  Call     SetOwnerVar 	( 00000000 00000000 )
+   14:  Label    00000000 
+   20:  Call     GetPlayerPos 	( *Var[1] *Var[2] *Var[3] )
+   38:  If  *Var[1]  <=  FFFFFFA6 
+   48:  	If  *Var[3]  >  00000118 
+   58:  		Call     GetEntryID  	( *Var[0] )
+   68:  		If  *Var[0]  ==  00000000 
+   78:  			Wait     00000012 
+   84:  		EndIf
+   8C:  		Call     DisablePlayerInput 	( .True )
+   9C:  		Call     ShowMessage 	( 001000AF 000000A0 00000028 ) % Buh-buh-boooo huh-hoooo!
+   B4:  		Exec     $Script_802451B8_jan_08 
+   C0:  		Call     DisablePlayerInput 	( .False )
+   D0:  		Set  *Var[0]  00000001 
+   E0:  	EndIf
+   E8:  EndIf
+   F0:  If  *Var[0]  !=  00000001 
+  100:  	Wait     00000001 
+  10C:  	Goto     00000000 
+  118:  EndIf
+  120:  Label    0000000A 
+  12C:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+  140:  If  *Var[0]  ==  00000000 
+  150:  	Wait     00000001 
+  15C:  	Goto     0000000A 
+  168:  EndIf
+  170:  Call     DisablePlayerInput 	( .True )
+  180:  Call     UseSettings 	( .Default *Fixed[4.0] FFFFFFE9 0000015E *Fixed[17.0] *Fixed[-7.0] )
+  1A4:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  1B8:  Call     GetCurrentPartner 	( *Var[0] )
+  1C8:  Set  *AreaFlag[002]  00000001 
+  1D8:  Wait     0000000F 
+  1E4:  If  *Var[0]  ==  00000007 
+  1F4:  	Call     SayMessage0 	( .Npc:Self 0097040B 0097040A 00000000 001000B0 ) % Aiigh! That was so scary! We were playing hide-and ...
+  214:  Else
+  21C:  	Call     SayMessage0 	( .Npc:Self 0097040B 0097040A 00000000 001000B1 ) % Aiigh! That was so scary! We were playing hide-and ...
+  23C:  EndIf
+  244:  Call     SayMessage1 	( .Npc:Self 00970404 00970401 00000000 )
+  260:  Thread
+  268:  	Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+  280:  	Call     SetNpcAnimation 	( .Npc:Self 00970403 )
+  294:  	Call     SetNpcSpeed 	( .Npc:Self *Fixed[5.0] )
+  2A8:  	Call     MoveNpcTo   	( .Npc:Self FFFFFE5E FFFFFFC4 00000000 )
+  2C4:  	Call     MoveNpcTo   	( .Npc:Self FFFFFED4 00000050 00000000 )
+  2E0:  	Call     MoveNpcTo   	( .Npc:Self FFFFFEC0 00000073 00000000 )
+  2FC:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  318:  EndThread
+  320:  Set  *Flag_JAN_11  00000001 
+  330:  Set  *Var[0]  00000000 
+  340:  Add  *Var[0]  *Flag_JAN_0F 
+  350:  Add  *Var[0]  *Flag_JAN_10 
+  360:  Add  *Var[0]  *Flag_JAN_11 
+  370:  Add  *Var[0]  *Flag_JAN_12 
+  380:  Add  *Var[0]  *Flag_JAN_13 
+  390:  If  *Var[0]  ==  00000005 
+  3A0:  	Call     SetMusicTrack 	( 00000000 .Song:YoshiKidsFound 00000000 00000008 )
+  3BC:  	Set  *StoryProgress  00000010 
+  3CC:  	Call     SetPlayerAnimation 	( .PlayerAnim:ThumbsUp )
+  3DC:  	Wait     00000078 
+  3E8:  	Exec     $Script_802424A0_jan_08 
+  3F4:  	Call     SetPlayerAnimation 	( 00010002 )
+  404:  Else
+  40C:  	Wait     00000028 
+  418:  EndIf
+  420:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  434:  Call     DisablePlayerInput 	( .False )
+  444:  Call     RemoveNpc   	( .Npc:Self )
+  454:  Return
+  45C:  End
+
+#new:Script $Script_Init_80245694_jan_08
+    0:  If  *StoryProgress  ==  0000000F 
+   10:  	If  *Flag_JAN_11  ==  00000000 
+   20:  		Call     SetNpcFlagBits ( .Npc:Self 00000102 .True )
+   38:  		Call     EnableNpcShadow 	( .Npc:Self .False )
+   4C:  		Call     SetNpcAnimation 	( .Npc:Self 00970406 )
+   60:  		Call     SetNpcYaw   	( .Npc:Self 0000005A )
+   74:  		Call     SetNpcPos   	( .Npc:Self FFFFFE79 00000000 FFFFFF5C )
+   90:  		Call     BindNpcIdle 	( .Npc:Self $Script_80245230_jan_08 )
+   A4:  		Return
+   AC:  	EndIf
+   B4:  EndIf
+   BC:  Call     RemoveNpc   	( .Npc:Self )
+   CC:  Return
+   D4:  End
+

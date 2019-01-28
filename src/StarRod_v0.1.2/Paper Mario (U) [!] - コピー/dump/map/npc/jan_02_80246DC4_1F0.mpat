@@ -1,0 +1,67 @@
+% automatically dumped from map jan_02
+
+#new:Npc $jan_02_80246DC4_1F0
+00000001 $NpcSettings_80242FA0_jan_02 00000000 00000000 00000000 
+00402D09 $Script_Init_80246464_jan_02 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00C30001 00C30001 00C30001 00C30001 00C30001 00C30001 00C30001 00C30001 
+00C30001 00C30001 00C30001 00C30001 00C30001 00C30001 00C30001 00C30001 
+00000000 00000000 $ExtraAnimationList_80246DB0_jan_02 001A00BD % He's a Yoshi who is an old friend of the Village L ...
+
+#new:NpcSettings $NpcSettings_80242FA0_jan_02
+00000000 00300020 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80246264_jan_02
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000000E 
+   18:  		If  *AreaFlag[005]  ==  00000000 
+   28:  			Call     SayMessage0 	( .Npc:Self 00C3000A 00C30009 00000000 00100034 ) % The Village Leader is my friend. I mean, hello! Ho ...
+   48:  			Call     SayMessage1 	( .Npc:Self 00C3000A 00C30009 00000000 )
+   64:  			Set  *AreaFlag[005]  00000001 
+   74:  		Else
+   7C:  			Call     SayMessage0 	( .Npc:Self 00C3000A 00C30009 00000000 00100035 ) % The Village Leader used to get into all sorts of m ...
+   9C:  		EndIf
+   A4:  	Case  <  00000010 
+   B0:  		If  *Flag_JAN_09  ==  00000000 
+   C0:  			Call     SayMessage0 	( .Npc:Self 00C3000C 00C3000B 00000000 00100036 ) % Aah! No! Oh, no! The village...there's...big troub ...
+   E0:  		Else
+   E8:  			Call     SayMessage0 	( .Npc:Self 00C3000C 00C3000B 00000000 00100037 ) % Oh, Mario! Please! Find those poor children! The Y ...
+  108:  		EndIf
+  110:  	Case  <  00000011 
+  11C:  		Call     SayMessage0 	( .Npc:Self 00C3000A 00C30009 00000000 00100038 ) % I don't know how to thank you for saving the child ...
+  13C:  	Case  <  00000019 
+  148:  		Call     SayMessage0 	( .Npc:Self 00C3000A 00C30009 00000000 00100039 ) % Hello, Mario. We owe you a deep debt for saving ou ...
+  168:  	Case  <  00000027 
+  174:  		Call     SayMessage0 	( .Npc:Self 00C3000A 00C30009 00000000 0010003A ) % You went into Mt. Lavalava? How brave you are, Mar ...
+  194:  	Case  <  0000002A 
+  1A0:  		Call     SayMessage0 	( .Npc:Self 00C3000A 00C30009 00000000 0010003B ) % It's really rare for Mt. Lavalava to erupt. It rea ...
+  1C0:  	Default
+  1C8:  		Call     SayMessage0 	( .Npc:Self 00C3000A 00C30009 00000000 0010003C ) % Hi, Mario! What an unexpected pleasure! How's your ...
+  1E8:  EndSwitch
+  1F0:  Return
+  1F8:  End
+
+#new:Script $Script_Init_80246464_jan_02
+    0:  Call     SetNpcAnimation 	( .Npc:Self 00C30009 )
+   14:  Call     802CDF8C ( FFFFFFFF 00000028 00000020 )
+   2C:  Switch  *StoryProgress 
+   38:  	Case  <  0000000E 
+   44:  	Case  <  00000010 
+   50:  		Call     SetNpcAnimation 	( .Npc:Self 00C3000B )
+   64:  	EndIf
+   6C:  EndSwitch
+   74:  Call     BindNpcIdle 	( .Npc:Self 00000000 )
+   88:  Call     BindNpcInteract 	( .Npc:Self $Script_80246264_jan_02 )
+   9C:  Return
+   A4:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_80246DB0_jan_02
+00C3000A 00C3000C 00C30009 00C3000B FFFFFFFF 
+

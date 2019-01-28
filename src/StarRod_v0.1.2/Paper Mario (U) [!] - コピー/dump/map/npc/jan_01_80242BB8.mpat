@@ -1,0 +1,142 @@
+% automatically dumped from map jan_01
+
+#new:Npc $jan_01_80242BB8
+00000001 $NpcSettings_80241A18_jan_01 00000000 00000000 00000000 
+00E40500 $Script_Init_80242938_jan_01 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+002B0302 002B0302 002B0303 002B0303 002B0301 002B0301 002B0308 002B0308 
+002B0303 002B0303 002B0303 002B0303 002B0303 002B0303 002B0303 002B0303 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80241154_jan_01
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ORI       V0, V0, 1000
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:NpcSettings $NpcSettings_80241A18_jan_01
+00000000 00140016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_802422D8_jan_01
+    0:  ChildThread
+    8:  	Call     GetNpcPos   	( 00000000 *Var[3] *Var[1] *Var[2] )
+   24:  	Set  *Var[4]  *Var[3] 
+   34:  	Add  *Var[3]  FFFFFF38 
+   44:  	Add  *Var[4]  000000C8 
+   54:  	Loop     
+   60:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   78:  		Switch  *Var[0] 
+   84:  			Case  *Var[3]  to  *Var[4] 
+   94:  				Call     SetOwnerFlagBits 	( 01000000 .False )
+   A8:  				Call     SetOwnerFlagBits 	( 10000000 .False )
+   BC:  			Default
+   C4:  				Call     SetOwnerFlagBits 	( 01000000 .True )
+   D8:  				Call     SetOwnerFlagBits 	( 10000000 .True )
+   EC:  		EndSwitch
+   F4:  		Wait     00000001 
+  100:  	EndLoop
+  108:  EndChildThread
+  110:  Set  *AreaFlag[009]  00000000 
+  120:  Call     GetNpcPos   	( 00000000 *Var[7] *Var[8] *Var[9] )
+  13C:  Add  *Var[8]  00000014 
+  14C:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  168:  Add  *Var[2]  00000005 
+  178:  Call     SetNpcJumpscale 	( .Npc:Self *Fixed[4.0] )
+  18C:  Set  *Var[4]  00000028 
+  19C:  Set  *Var[5]  0000005A 
+  1AC:  Set  *Var[6]  0000002D 
+  1BC:  Loop     
+  1C8:  	Mul  *Var[4]  FFFFFFFF 
+  1D8:  	Mul  *Var[5]  FFFFFFFF 
+  1E8:  	Mul  *Var[6]  FFFFFFFF 
+  1F8:  	Add  *Var[0]  *Var[4] 
+  208:  	Call     NpcJump0    	( .Npc:Self *Var[0] 00000012 *Var[2] 0000000F )
+  228:  	Call     PlaySoundAtNpc ( 00000000 000000E1 00000000 )
+  240:  	If  *AreaFlag[009]  !=  00000001 
+  250:  		ChildThread
+  258:  			Call     InterpNpcYaw 	( 00000000 *Var[5] 00000002 )
+  270:  			Call     PlayEffect  	( {FX:Stars:Fan} *Var[7] *Var[8] *Var[9] 00000000 FFFFFFFF 00000000 00000003 00000000 00000000 00000000 00000000 00000000 )
+  2B4:  		EndChildThread
+  2BC:  	EndIf
+  2C4:  	Add  *Var[0]  *Var[4] 
+  2D4:  	Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+  2E8:  	Call     NpcJump0    	( .Npc:Self *Var[0] FFFFFFF4 *Var[2] 0000000F )
+  308:  	Label    00000001 
+  314:  	Wait     00000001 
+  320:  	If  *AreaFlag[009]  ==  00000001 
+  330:  		Goto     00000001 
+  33C:  	EndIf
+  344:  EndLoop
+  34C:  Return
+  354:  End
+
+#new:Script $Script_80242634_jan_01
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     DisablePlayerInput 	( .True )
+   38:  		Call     SetNpcAnimation 	( 00000000 00B60001 )
+   4C:  		Call     802D2B0C ( *Var[0] )
+   5C:  		If  *Var[0]  !=  00000000 
+   6C:  			Call     802D2B6C ( )
+   78:  		EndIf
+   80:  		Call     SetNpcFlagBits ( .Npc:Partner 00000100 .True )
+   98:  		Thread
+   A0:  			Wait     0000001E 
+   AC:  			Call     GetNpcPos   	( 00000000 *Var[3] *Var[1] *Var[2] )
+   C8:  			Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   E0:  			Set  *Var[4]  *Var[0] 
+   F0:  			If  *Var[3]  <  *Var[0] 
+  100:  				Call     InterpPlayerYaw 	( 0000010E 00000000 )
+  114:  				Add  *Var[4]  FFFFFFE2 
+  124:  			Else
+  12C:  				Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  140:  				Add  *Var[4]  0000001E 
+  150:  			EndIf
+  158:  			Add  *Var[0]  *Var[4] 
+  168:  			Div  *Var[0]  00000002 
+  178:  			Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  194:  			Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  1B0:  			Call     SetCamDistance ( .Default 0000012C )
+  1C4:  			Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  1D8:  			Call     $Function_80241154_jan_01 ( )
+  1E4:  			Call     PanToTarget 	( .Default 00000000 00000001 )
+  1FC:  			Call     SetNpcFlagBits ( 00000000 00000140 .True )
+  214:  			Call     SetNpcAnimation 	( 00000000 00B60006 )
+  228:  			Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+  23C:  			If  *Var[2]  <  FFFFFFD3 
+  24C:  				Set  *Var[2]  FFFFFFD3 
+  25C:  			EndIf
+  264:  			Call     MoveNpcTo   	( 00000000 *Var[4] *Var[2] 00000000 )
+  280:  			Call     SetNpcAnimation 	( 00000000 00B60001 )
+  294:  			Call     NpcFacePlayer 	( 00000000 00000000 )
+  2A8:  			Call     SetNpcVar   	( 00000000 00000000 00000001 )
+  2C0:  		EndThread
+  2C8:  		Call     DoNpcDefeat 	( )
+  2D4:  	Case  ==  00000001 
+  2E0:  	Case  ==  00000002 
+  2EC:  EndSwitch
+  2F4:  Return
+  2FC:  End
+
+#new:Script $Script_Init_80242938_jan_01
+    0:  If  *StoryProgress  <  0000000C 
+   10:  	Call     SetOwnerVar 	( 00000000 00000000 )
+   24:  	Call     SetNpcAnimation 	( .Npc:Self 002B0304 )
+   38:  	Call     BindNpcIdle 	( .Npc:Self $Script_802422D8_jan_01 )
+   4C:  	Call     BindNpcDefeat 	( .Npc:Self $Script_80242634_jan_01 )
+   60:  Else
+   68:  	Call     RemoveNpc   	( .Npc:Self )
+   78:  EndIf
+   80:  Return
+   88:  End
+

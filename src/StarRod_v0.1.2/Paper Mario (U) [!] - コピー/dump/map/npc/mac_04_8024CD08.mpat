@@ -1,0 +1,109 @@
+% automatically dumped from map mac_04
+
+#new:Npc $mac_04_8024CD08
+00000010 $NpcSettings_80243FBC_mac_04 00000000 00000000 00000000 
+00002D09 $Script_Init_8024808C_mac_04 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00200001 00200005 00200008 00200008 00200001 00200001 00200001 00200001 
+00200001 00200001 00200001 00200001 00200001 00200001 00200001 00200001 
+00000000 00000000 $ExtraAnimationList_8024CCF8_mac_04 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80243FBC_mac_04
+00000000 00140014 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:VectorList $VectorList_80247BD4_mac_04
+% {Path3f:Path_80247BD4}
+-70.000000 106.000000 0.000000
+-50.000000 30.000000 0.000000
+0.000000 0.000000 0.000000
+
+#new:VectorList $VectorList_80247BF8_mac_04
+% {Path3f:Path_80247BF8}
+0.000000 0.000000 0.000000
+-50.000000 30.000000 0.000000
+-70.000000 106.000000 0.000000
+
+#new:Script $Script_80247C1C_mac_04
+    0:  Call     802D2508 ( )
+    C:  Call     DisablePlayerInput 	( .True )
+   1C:  Call     802D5FF8 ( 00000070 00000000 )
+   30:  Call     ShowMessage 	( 0004008F 000000A0 00000028 ) % Mario!
+   48:  Call     GetPlayerPos 	( *Var[4] *Var[5] *Var[6] )
+   60:  SubF  *Var[4]  *Fixed[50.0] 
+   70:  AddF  *Var[5]  *Fixed[40.0] 
+   80:  Call     InterpNpcYaw 	( 00000010 0000005A 00000000 )
+   98:  Call     LoadPath    	( 00000023 $VectorList_80247BD4_mac_04 00000003 0000000A )
+   B4:  Loop     
+   C0:  	Call     GetNextPathPos ( )
+   CC:  	AddF  *Var[1]  *Var[4] 
+   DC:  	AddF  *Var[2]  *Var[5] 
+   EC:  	Call     SetNpcPos   	( 00000010 *Var[1] *Var[2] *Var[3] )
+  108:  	Wait     00000001 
+  114:  	If  *Var[0]  ==  00000000 
+  124:  		BreakLoop
+  12C:  	EndIf
+  134:  EndLoop
+  13C:  Call     SetPlayerAnimation 	( 0001002A )
+  14C:  Call     UseSettings 	( .Default *Fixed[3.0] FFFFFFF6 FFFFFED4 0000000F FFFFFFF7 )
+  170:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 00040090 ) % Mario! Mario! Good to see you!
+  190:  Wait     00000005 
+  19C:  Call     SetPlayerAnimation 	( 00080007 )
+  1AC:  Wait     0000001E 
+  1B8:  Call     SetPlayerAnimation 	( 0001002A )
+  1C8:  Wait     0000000F 
+  1D4:  Call     SetNpcJumpscale 	( 00000010 *Fixed[1.0] )
+  1E8:  Call     GetNpcPos   	( 00000010 *Var[0] *Var[1] *Var[2] )
+  204:  Call     NpcJump0    	( 00000010 *Var[0] *Var[1] *Var[2] 0000000A )
+  224:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 00040091 ) % We found out that you defeated Tubba Blubba! I kne ...
+  244:  Call     SetPlayerAnimation 	( 0001002D )
+  254:  Wait     0000001E 
+  260:  Call     SetPlayerAnimation 	( 0001002A )
+  270:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 00040092 ) % Oh, yes... I've got new information about the hono ...
+  290:  Wait     00000005 
+  29C:  Call     SetPlayerAnimation 	( .PlayerAnim:Thinking )
+  2AC:  Wait     0000001E 
+  2B8:  Call     SetPlayerAnimation 	( 0001002A )
+  2C8:  Call     UseSettings 	( .Default *Fixed[3.0] FFFFFFD8 FFFFFF38 0000000F FFFFFFF1 )
+  2EC:  Call     SayMessage0 	( 00000010 00200009 00200001 00000000 00040093 ) % ...Oh, time is short! I have to go back to the pri ...
+  30C:  Wait     00000005 
+  318:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  330:  Call     InterpNpcYaw 	( 00000010 0000010E 00000000 )
+  348:  Call     GetNpcPos   	( 00000010 *Var[4] *Var[5] *Var[6] )
+  364:  Call     LoadPath    	( 00000023 $VectorList_80247BF8_mac_04 00000003 00000001 )
+  380:  Loop     
+  38C:  	Call     GetNextPathPos ( )
+  398:  	Add  *Var[1]  *Var[4] 
+  3A8:  	Add  *Var[2]  *Var[5] 
+  3B8:  	Add  *Var[3]  *Var[6] 
+  3C8:  	Call     SetNpcPos   	( 00000010 *Var[1] *Var[2] *Var[3] )
+  3E4:  	Wait     00000001 
+  3F0:  	If  *Var[0]  ==  00000000 
+  400:  		BreakLoop
+  408:  	EndIf
+  410:  EndLoop
+  418:  Call     SetNpcPos   	( 00000010 00000000 FFFFFC18 00000000 )
+  434:  Call     802D5FD8 ( )
+  440:  Set  *StoryProgress  FFFFFFF5 
+  450:  Call     DisablePlayerInput 	( .False )
+  460:  Return
+  468:  End
+
+#new:Script $Script_Init_8024808C_mac_04
+    0:  If  *StoryProgress  ==  FFFFFFF4 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_80247C1C_mac_04 )
+   24:  Else
+   2C:  	Call     RemoveNpc   	( .Npc:Self )
+   3C:  EndIf
+   44:  Return
+   4C:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8024CCF8_mac_04
+00200001 00200005 00200009 FFFFFFFF 
+

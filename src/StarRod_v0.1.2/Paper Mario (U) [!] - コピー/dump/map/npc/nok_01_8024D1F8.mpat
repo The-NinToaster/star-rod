@@ -1,0 +1,203 @@
+% automatically dumped from map nok_01
+
+#new:Npc $nok_01_8024D1F8
+00000000 $NpcSettings_802436CC_nok_01 00000000 00000000 00000000 
+00402909 $Script_Init_8024BE90_nok_01 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000064 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 000001F4 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008F0002 008F0005 008F0006 008F0006 008F0002 008F0002 008F0000 008F0000 
+008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 
+00000000 00000000 00000000 001A006C % A Koopa Troopa from scenic Koopa Village. He's lik ...
+
+#new:AISettings $AISettings_8024367C_nok_01
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_802436AC_nok_01
+    0:  Call     DoBasicAI   	( $AISettings_8024367C_nok_01 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_802436CC_nok_01
+00000000 00230018 00000000 00000000 $Script_NpcAI_802436AC_nok_01 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024A814_nok_01
+    0:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+   1C:  Add  *Var[0]  00000001 
+   2C:  Add  *Var[2]  00000001 
+   3C:  Add  *Var[1]  000000C8 
+   4C:  Call     SetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+   68:  Add  *Var[1]  FFFFFF38 
+   78:  Call     NpcJump0    	( 00000001 *Var[0] *Var[1] *Var[2] 00000014 )
+   98:  Call     PlayEffect  	( {FX:Stars:Fan} *Var[0] *Var[1] *Var[2] 00000000 FFFFFFFF 00000000 00000003 00000000 00000000 00000000 00000000 00000000 )
+   DC:  Thread
+   E4:  	Call     PanToTarget 	( .Default 00000000 00000000 )
+   FC:  	Call     SetCamSpeed 	( .Default 00000004 )
+  110:  	Wait     0000003C 
+  11C:  	Call     SetCamSpeed 	( .Default 00000001 )
+  130:  EndThread
+  138:  Thread
+  140:  	Call     SetPlayerAnimation 	( 0008000A )
+  150:  	Wait     0000001E 
+  15C:  	Call     SetPlayerAnimation 	( 00010002 )
+  16C:  EndThread
+  174:  Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  18C:  Call     802CF208 ( 00000000 00900001 )
+  1A0:  Call     SetNpcAnimation 	( 00000000 0090000C )
+  1B4:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  1D0:  Add  *Var[0]  FFFFFFEC 
+  1E0:  Add  *Var[2]  FFFFFFF6 
+  1F0:  Call     NpcJump0    	( 00000000 *Var[0] *Var[1] *Var[2] 0000000F )
+  210:  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  22C:  Add  *Var[0]  00000001 
+  23C:  Add  *Var[2]  00000001 
+  24C:  Call     SetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  268:  Add  *Var[0]  FFFFFFFF 
+  278:  Add  *Var[2]  FFFFFFFF 
+  288:  Wait     0000000A 
+  294:  Add  *Var[0]  00000032 
+  2A4:  Add  *Var[2]  FFFFFFEC 
+  2B4:  Thread
+  2BC:  	Add  *Var[0]  00000001 
+  2CC:  	Add  *Var[2]  00000001 
+  2DC:  	Call     NpcJump0    	( 00000002 *Var[0] 00000000 *Var[2] 00000014 )
+  2FC:  EndThread
+  304:  Wait     00000001 
+  310:  Call     SetNpcAnimation 	( 00000001 002B0001 )
+  324:  Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  33C:  Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 00000014 )
+  35C:  Call     SetNpcAnimation 	( 00000000 00900001 )
+  370:  Call     SetNpcAnimation 	( 00000001 002B000C )
+  384:  Thread
+  38C:  	Add  *Var[0]  00000001 
+  39C:  	Add  *Var[2]  00000001 
+  3AC:  	Call     NpcJump0    	( 00000002 *Var[0] 00000000 *Var[2] 00000014 )
+  3CC:  EndThread
+  3D4:  Wait     00000001 
+  3E0:  Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  3F8:  Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 00000014 )
+  418:  Call     NpcFaceNpc  	( 00000000 00000001 00000000 )
+  430:  Call     SetNpcAnimation 	( 00000000 00900002 )
+  444:  Thread
+  44C:  	Add  *Var[0]  00000001 
+  45C:  	Add  *Var[2]  00000001 
+  46C:  	Call     NpcJump0    	( 00000002 *Var[0] 00000000 *Var[2] 00000014 )
+  48C:  EndThread
+  494:  Wait     00000001 
+  4A0:  Call     PlaySoundAtNpc ( 00000001 00000331 00000000 )
+  4B8:  Call     NpcJump0    	( 00000001 *Var[0] 00000000 *Var[2] 00000014 )
+  4D8:  Call     SetNpcAnimation 	( 00000001 002B0001 )
+  4EC:  Return
+  4F4:  End
+
+#new:Script $Script_8024AD10_nok_01
+    0:  If  *Flag_NOK_00  ==  00000001 
+   10:  	Call     SayMessage0 	( 00000000 008F0007 008F0002 00000000 000C0003 ) % ...Say again? You're looking for a Koopa with a bl ...
+   30:  EndIf
+   38:  If  *StoryProgress  >=  FFFFFF9F 
+   48:  	Return
+   50:  EndIf
+   58:  Call     SayMessage0 	( 00000000 008F0007 008F0002 00000000 000C0000 ) % Can it be...? Are you Mario? Welcome to Koopa Vill ...
+   78:  Call     InterpPlayerYaw 	( 000000E3 00000005 )
+   8C:  Call     SetPlayerAnimation 	( .PlayerAnim:Thinking )
+   9C:  Call     SayMessage1 	( 00000000 008F0007 008F0002 00000000 )
+   B8:  Call     InterpPlayerYaw 	( 0000002F 00000005 )
+   CC:  Call     SetPlayerAnimation 	( 00010002 )
+   DC:  Call     SayMessage1 	( 00000000 008F0007 008F0002 00000000 )
+   F8:  Call     SetPlayerAnimation 	( .PlayerAnim:NodYes )
+  108:  Wait     0000000F 
+  114:  Call     SayMessage1 	( 00000000 008F0007 008F0002 00000000 )
+  130:  ExecWait $Script_8024A814_nok_01 
+  13C:  Call     SayMessage3 	( 00000000 00900009 00900002 00000000 00000001 000C0001 ) % Oh, no! Stupid Fuzzy! Get back here with my shell!
+  160:  Set  *StoryProgress  FFFFFF9F 
+  170:  Return
+  178:  End
+
+#new:Script $Script_8024AE90_nok_01
+    0:  If  *Flag_NOK_00  ==  00000001 
+   10:  	Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+   2C:  	Return
+   34:  EndIf
+   3C:  If  *StoryProgress  <  FFFFFF9F 
+   4C:  	Call     DisablePlayerInput 	( .True )
+   5C:  	Call     SetPlayerPos 	( FFFFFE7E 00000000 0000018F )
+   74:  	Call     MovePlayerTo 	( FFFFFECC 00000146 0000001E )
+   8C:  	Call     DisablePlayerPhysics 	( .True )
+   9C:  	Call     NpcFacePlayer 	( 00000000 00000005 )
+   B0:  	Wait     00000005 
+   BC:  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+   D8:  	Sub  *Var[0]  00000005 
+   E8:  	Add  *Var[1]  00000023 
+   F8:  	Call     PlaySoundAtNpc ( 00000000 00000262 00000000 )
+  110:  	Call     ShowEmote   	( 00000000 .Emote:Exclamation 00000000 00000014 00000002 *Var[0] *Var[1] *Var[2] 00000000 )
+  140:  	Wait     00000014 
+  14C:  	Call     SetNpcAnimation 	( 00000000 008F0006 )
+  160:  	Call     GetPlayerPos 	( *Var[A] *Var[B] *Var[C] )
+  178:  	Call     UseSettingsFrom 	( .Default *Var[A] *Var[B] *Var[C] )
+  194:  	Call     SetPanTarget 	( .Default *Var[A] *Var[B] *Var[C] )
+  1B0:  	Call     GetCamDistance ( .Default *Var[A] )
+  1C4:  	MulF  *Var[A]  *Fixed[0.7001953] 
+  1D4:  	Call     SetCamDistance ( .Default *Var[A] )
+  1E8:  	Call     SetCamSpeed 	( .Default 00000004 )
+  1FC:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  214:  	Call     MoveNpcTo   	( 00000000 FFFFFEE8 0000012D 0000001E )
+  230:  	Call     SetNpcAnimation 	( 00000000 008F0002 )
+  244:  	Wait     00000007 
+  250:  	ExecWait $Script_8024AD10_nok_01 
+  25C:  	Call     DisablePlayerPhysics 	( .False )
+  26C:  	Call     DisablePlayerInput 	( .False )
+  27C:  Else
+  284:  	Wait     00000005 
+  290:  	Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  2AC:  	Sub  *Var[0]  00000028 
+  2BC:  	Call     SetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  2D8:  EndIf
+  2E0:  Call     BindNpcInteract 	( 00000000 00000000 )
+  2F4:  Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  30C:  Set  *Var[0]  00000000 
+  31C:  Label    00000000 
+  328:  If  *Flag_NOK_00  ==  00000001 
+  338:  	Call     BindNpcInteract 	( 00000000 $Script_8024AD10_nok_01 )
+  34C:  	Call     SetNpcFlagBits ( 00000000 00000100 .False )
+  364:  	Return
+  36C:  EndIf
+  374:  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  390:  Call     NpcFaceNpc  	( 00000000 00000001 00000000 )
+  3A8:  Call     SetNpcAnimation 	( 00000000 00900006 )
+  3BC:  Call     MoveNpcTo   	( 00000000 *Var[0] *Var[2] 00000011 )
+  3D8:  Call     SetNpcAnimation 	( 00000000 00900002 )
+  3EC:  Label    00000001 
+  3F8:  Wait     00000001 
+  404:  Goto     00000000 
+  410:  Return
+  418:  End
+
+#new:Script $Script_Init_8024BE90_nok_01
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_8024AE90_nok_01 )
+   14:  Call     BindNpcInteract 	( .Npc:Self $Script_8024AD10_nok_01 )
+   28:  If  *Flag_NOK_00  ==  00000001 
+   38:  	Call     SetNpcFlagBits2 	( .Npc:Self 00400000 00000000 )
+   50:  	Return
+   58:  EndIf
+   60:  If  *StoryProgress  >=  FFFFFF9F 
+   70:  	Call     802CF208 ( FFFFFFFF 00900001 )
+   84:  EndIf
+   8C:  Return
+   94:  End
+

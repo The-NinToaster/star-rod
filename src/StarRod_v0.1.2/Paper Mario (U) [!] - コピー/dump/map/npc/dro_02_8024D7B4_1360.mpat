@@ -1,0 +1,67 @@
+% automatically dumped from map dro_02
+
+#new:Npc $dro_02_8024D7B4_1360
+00000009 $NpcSettings_80247558_dro_02 00000000 00000000 00000000 
+00002D01 $Script_Init_8024D3E8_dro_02 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00940101 00940104 00940104 00940101 00940101 00940101 00940101 00940101 
+00940101 00940101 00940101 00940101 00940101 00940101 00940101 00940101 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80247558_dro_02
+00000000 00160019 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024D154_dro_02
+    0:  Call     InterpNpcYaw 	( 00000002 0000010E 00000000 )
+   18:  Label    0000000A 
+   24:  Call     SetNpcAnimation 	( .Npc:Self 00940107 )
+   38:  Call     SetNpcAnimation 	( 00000002 00BC0001 )
+   4C:  Loop     00000032 
+   58:  	Call     IsPlayerWithin ( 000000C8 00000032 00000064 *Var[0] )
+   74:  	If  *Var[0]  ==  00000001 
+   84:  		Goto     00000014 
+   90:  	EndIf
+   98:  	Wait     00000001 
+   A4:  EndLoop
+   AC:  Call     SetNpcAnimation 	( .Npc:Self 00940101 )
+   C0:  Call     SetNpcAnimation 	( 00000002 00BC0007 )
+   D4:  Loop     00000032 
+   E0:  	Call     IsPlayerWithin ( 000000C8 00000032 00000064 *Var[0] )
+   FC:  	If  *Var[0]  ==  00000001 
+  10C:  		Goto     00000014 
+  118:  	EndIf
+  120:  	Wait     00000001 
+  12C:  EndLoop
+  134:  Goto     0000000A 
+  140:  Label    00000014 
+  14C:  Call     SetNpcAnimation 	( 00000002 00BC0001 )
+  160:  Call     SetNpcAnimation 	( .Npc:Self 00940104 )
+  174:  Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+  18C:  Call     SetNpcAnimation 	( .Npc:Self 00940104 )
+  1A0:  Call     MoveNpcTo   	( .Npc:Self 00000096 00000012 00000014 )
+  1BC:  Call     EnableNpcBlur 	( .Npc:Self .True )
+  1D0:  Call     PlaySoundAtNpc ( .Npc:Self 00000174 00000000 )
+  1E8:  Call     MoveNpcTo   	( .Npc:Self FFFFFFAD 0000000B 00000014 )
+  204:  Call     MoveNpcTo   	( .Npc:Self FFFFFF11 00000005 00000014 )
+  220:  Call     MoveNpcTo   	( .Npc:Self FFFFFE8D 00000005 00000014 )
+  23C:  Call     MoveNpcTo   	( .Npc:Self FFFFFE19 00000005 00000014 )
+  258:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  274:  Set  *StoryProgress  FFFFFFBE 
+  284:  Return
+  28C:  End
+
+#new:Script $Script_Init_8024D3E8_dro_02
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_8024D154_dro_02 )
+   14:  If  *StoryProgress  >=  FFFFFFBE 
+   24:  	Call     RemoveNpc   	( .Npc:Self )
+   34:  EndIf
+   3C:  Return
+   44:  End
+

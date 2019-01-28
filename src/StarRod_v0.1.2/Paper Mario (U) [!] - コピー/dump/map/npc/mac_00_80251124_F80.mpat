@@ -1,0 +1,75 @@
+% automatically dumped from map mac_00
+
+#new:Npc $mac_00_80251124_F80
+0000000F $NpcSettings_8024EC90_mac_00 00000000 00000000 00000000 
+00012D09 $Script_Init_802510A8_mac_00 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830201 00830202 00830203 00830203 00830201 00830201 00830206 00830206 
+00830203 00830203 00830203 00830203 00830203 00830203 00830203 00830203 
+00000000 00000000 00000000 001A001B % He doesn't seem to have any  particular reason to  ...
+
+#new:NpcSettings $NpcSettings_8024EC90_mac_00
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802509A4_mac_00
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF96 
+   18:  		Set  *Var[0]  00020103 
+   28:  	Case  <  FFFFFF9C 
+   34:  		Set  *Var[0]  00020104 
+   44:  	Case  <  FFFFFFB5 
+   50:  		Set  *Var[0]  00020105 
+   60:  	Case  <  FFFFFFCB 
+   6C:  		If  *Flag_MAC_9A  ==  00000000 
+   7C:  			Set  *Var[0]  00020106 
+   8C:  		Else
+   94:  			Set  *Var[0]  00020107 
+   A4:  		EndIf
+   AC:  	Case  <  FFFFFFF1 
+   B8:  		Set  *Var[0]  00020108 
+   C8:  	Case  <  00000007 
+   D4:  		If  *Flag_MAC_71  ==  00000000 
+   E4:  			Set  *Var[0]  00020109 
+   F4:  		Else
+   FC:  			If  *Flag_MAC_72  ==  00000000 
+  10C:  				Set  *Var[0]  0002010A 
+  11C:  			Else
+  124:  				Set  *Var[0]  0002010B 
+  134:  			EndIf
+  13C:  		EndIf
+  144:  	Case  <  0000000A 
+  150:  		Set  *Var[0]  0002010C 
+  160:  	Case  <  00000027 
+  16C:  		Set  *Var[0]  0002010D 
+  17C:  	Case  <  0000002B 
+  188:  		Set  *Var[0]  0002010E 
+  198:  	Case  <  00000039 
+  1A4:  		Set  *Var[0]  0002010F 
+  1B4:  	Case  <  0000003D 
+  1C0:  		Set  *Var[0]  00020110 
+  1D0:  	Case  <  00000059 
+  1DC:  		Set  *Var[0]  00020111 
+  1EC:  	Case  <  00000060 
+  1F8:  		Set  *Var[0]  00020112 
+  208:  	Case  >=  00000060 
+  214:  		Set  *Var[0]  00010035 
+  224:  EndSwitch
+  22C:  Call     SayMessage0 	( .Npc:Self 00830204 00830201 00000000 *Var[0] ) % variable string ID
+  24C:  Return
+  254:  End
+
+#new:Script $Script_Init_802510A8_mac_00
+    0:  If  *StoryProgress  >=  00000060 
+   10:  	Call     SetNpcPos   	( 0000000F 0000015E 00000014 FFFFFF9C )
+   2C:  EndIf
+   34:  Call     BindNpcInteract 	( .Npc:Self $Script_802509A4_mac_00 )
+   48:  Return
+   50:  End
+

@@ -1,0 +1,77 @@
+% automatically dumped from map jan_22
+
+#new:Npc $jan_22_802488DC
+00000005 $NpcSettings_802424B4_jan_22 00000000 00000000 00000000 
+00400705 $Script_Init_802432F0_jan_22 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 
+00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 00C40002 
+00000000 00000000 00000000 001A00D0 % He's Raphael the Raven, the guardian of this jungl ...
+
+#new:Function $Function_80240FA8_jan_22
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ORI       V0, V0, 1000
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:Script $Script_80242488_jan_22
+    0:  Call     SetNpcScale 	( .Npc:Self *Fixed[1.5] *Fixed[1.5] *Fixed[1.5] )
+   1C:  Return
+   24:  End
+
+#new:NpcSettings $NpcSettings_802424B4_jan_22
+00000000 00620050 $Script_80242488_jan_22 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80243118_jan_22
+    0:  Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+   1C:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   38:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   54:  Call     SetCamAngles 	( .Default *Fixed[15.0] *Fixed[-8.5] )
+   6C:  Call     SetCamSpeed 	( .Default *Fixed[1.5] )
+   80:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   98:  Call     $Function_80240FA8_jan_22 ( )
+   A4:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+   B8:  Wait     0000000A 
+   C4:  Call     SetNpcFlagBits ( 00000005 00000100 .True )
+   DC:  Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+   F0:  Call     SayMessage0 	( .Npc:Self 00C40009 00C40002 00000000 001000C7 ) % Aye aye, all right. Is everyone ready?
+  110:  Wait     0000000A 
+  11C:  Call     SayMessage0 	( .Npc:Self 00C40009 00C40002 00000000 001000C8 ) % Now, Ravens! Get to work!!
+  13C:  Call     SetNpcVar   	( 00000006 00000000 0000000A )
+  154:  Call     BindNpcInteract 	( .Npc:Self 00000000 )
+  168:  Return
+  170:  End
+
+#new:Script $Script_80243290_jan_22
+    0:  Label    00000000 
+    C:  If  *StoryProgress  <  00000017 
+   1C:  	Wait     00000001 
+   28:  	Goto     00000000 
+   34:  EndIf
+   3C:  Call     BindNpcInteract 	( .Npc:Self $Script_80243118_jan_22 )
+   50:  Return
+   58:  End
+
+#new:Script $Script_Init_802432F0_jan_22
+    0:  Switch  *StoryProgress 
+    C:  	Case  ==  00000016 
+   18:  		Call     BindNpcIdle 	( .Npc:Self $Script_80243290_jan_22 )
+   2C:  	Case  ==  00000017 
+   38:  		Call     SetNpcPos   	( .Npc:Self 0000007D 00000000 FFFFFFD8 )
+   54:  		Call     SetNpcFlagBits ( .Npc:Self 00000100 .False )
+   6C:  		Call     BindNpcInteract 	( .Npc:Self $Script_80243118_jan_22 )
+   80:  	Default
+   88:  		Call     RemoveNpc   	( .Npc:Self )
+   98:  EndSwitch
+   A0:  Return
+   A8:  End
+

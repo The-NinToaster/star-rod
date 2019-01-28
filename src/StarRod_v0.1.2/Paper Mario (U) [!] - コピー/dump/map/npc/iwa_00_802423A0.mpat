@@ -1,0 +1,102 @@
+% automatically dumped from map iwa_00
+
+#new:Npc $iwa_00_802423A0
+00000004 $NpcSettings_80240FCC_iwa_00 00000000 00000000 00000000 
+00400D05 $Script_Init_8024228C_iwa_00 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00920001 00920001 00920001 00920001 00920001 00920001 00920001 00920001 
+00920001 00920001 00920001 00920001 00920001 00920001 00920001 00920001 
+00000000 00000000 00000000 001A0089 % He's a Whacka. When you hit Whackas, they get Bump ...
+
+#new:NpcSettings $NpcSettings_80240FCC_iwa_00
+00000000 001E001A 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024181C_iwa_00
+    0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   18:  Call     GetNpcPos   	( .Npc:Self *Var[3] *Var[4] *Var[5] )
+   34:  If  *Var[0]  <  *Var[3] 
+   44:  	Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+   5C:  Else
+   64:  	Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+   7C:  EndIf
+   84:  Switch  *WhackaHitCount 
+   90:  	Case  ==  00000000 
+   9C:  		If  *Flag_IWA_24  ==  00000000 
+   AC:  			Call     SayMessage0 	( .Npc:Self 00920005 00920001 00000000 000D0027 ) % Whaaack-hoo! I'm Whacka!! Just another picture-per ...
+   CC:  		Else
+   D4:  			Call     SayMessage0 	( .Npc:Self 00920005 00920001 00000000 000D0028 ) % Whaaack-hoo! I'm Whacka!! Just another picture-per ...
+   F4:  		EndIf
+   FC:  	Case  <=  00000002 
+  108:  		Call     SayMessage0 	( .Npc:Self 00920005 00920001 00000000 000D0028 ) % Whaaack-hoo! I'm Whacka!! Just another picture-per ...
+  128:  	Case  <=  00000004 
+  134:  		Call     SayMessage0 	( .Npc:Self 00920005 00920001 00000000 000D0029 ) % Whaaack-hoo! I'm Whacka!! Another lovely day! Hoo! ...
+  154:  	Case  <=  00000006 
+  160:  		Call     SayMessage0 	( .Npc:Self 00920005 00920001 00000000 000D002A ) % Whack-huh-ooo? I'm Whacka... Aren't I? I feel like ...
+  180:  	Default
+  188:  		Call     SayMessage0 	( .Npc:Self 00920005 00920001 00000000 000D002B ) % Whack-hoo, yack-a-doo... Whick wick wack... Aah-ho ...
+  1A8:  EndSwitch
+  1B0:  Set  *Flag_IWA_24  00000001 
+  1C0:  Return
+  1C8:  End
+
+#new:Script $Script_802419EC_iwa_00
+    0:  Call     SetNpcAnimation 	( .Npc:Self 00920001 )
+   14:  Call     GetNpcPos   	( .Npc:Self *Var[A] *Var[B] *Var[C] )
+   30:  Call     SetNpcPos   	( 00000004 00000000 FFFFFC18 00000000 )
+   4C:  Call     SetNpcPos   	( 00000005 00000000 FFFFFC18 00000000 )
+   68:  Label    00000000 
+   74:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   8C:  If  *Var[1]  >=  00000014 
+   9C:  	Wait     00000001 
+   A8:  	Goto     00000000 
+   B4:  EndIf
+   BC:  If  *Var[0]  <  00000258 
+   CC:  	Wait     00000001 
+   D8:  	Goto     00000000 
+   E4:  EndIf
+   EC:  If  *Var[0]  >  00000352 
+   FC:  	Wait     00000001 
+  108:  	Goto     00000000 
+  114:  EndIf
+  11C:  Call     SetNpcPos   	( 00000004 *Var[A] *Var[B] *Var[C] )
+  138:  Call     PlaySoundAtNpc ( .Npc:Self 00000321 00000000 )
+  150:  Call     SetNpcAnimation 	( .Npc:Self 00920002 )
+  164:  Wait     0000000F 
+  170:  Call     SetNpcPos   	( 00000005 *Var[A] *Var[B] *Var[C] )
+  18C:  Wait     00000005 
+  198:  Call     SetNpcAnimation 	( .Npc:Self 00920001 )
+  1AC:  Wait     0000001E 
+  1B8:  Label    0000000A 
+  1C4:  Wait     00000001 
+  1D0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  1E8:  If  *Var[0]  <=  00000384 
+  1F8:  	Goto     0000000A 
+  204:  EndIf
+  20C:  Call     SetNpcAnimation 	( .Npc:Self 00920003 )
+  220:  Call     SetNpcPos   	( 00000005 00000000 FFFFFC18 00000000 )
+  23C:  Wait     0000000F 
+  248:  Call     SetNpcPos   	( 00000004 00000000 FFFFFC18 00000000 )
+  264:  Goto     00000000 
+  270:  Return
+  278:  End
+
+#new:Script $Script_Init_8024228C_iwa_00
+    0:  Call     SetNpcVar   	( 00000004 00000008 00000000 )
+   18:  If  *WhackaHitCount  <  00000008 
+   28:  	Call     BindNpcInteract 	( .Npc:Self $Script_8024181C_iwa_00 )
+   3C:  	Call     BindNpcIdle 	( .Npc:Self $Script_802419EC_iwa_00 )
+   50:  	Call     EnableNpcShadow 	( .Npc:Self .False )
+   64:  	Call     SetNpcFlagBits ( .Npc:Self 00200000 .True )
+   7C:  Else
+   84:  	Call     RemoveNpc   	( .Npc:Self )
+   94:  EndIf
+   9C:  Return
+   A4:  End
+

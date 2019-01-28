@@ -1,0 +1,54 @@
+Script: PlayerHappyPhase (001B7644)
+
+    0:  Call     UseIdleAnimation 	( 00000000 00000000 )
+   14:  Call     8024E6B4 ( 00000002 )
+   24:  Call     SetAnimation 	( 00000000 00000000 00010032 )
+   3C:  Call     GetActorPos 	( 00000000 *Var[0] *Var[1] *Var[2] )
+   58:  Call     802619E8 ( *Var[0] *Var[1] *Var[2] )
+   70:  Add  *Var[0]  00000000 
+   80:  Add  *Var[1]  00000023 
+   90:  Set  *Var[3]  *Var[A] 
+   A0:  Add  *Var[3]  *Var[B] 
+   B0:  If  *Var[3]  >  00000000 
+   C0:  	Call     80261BA8 ( *Var[0] *Var[1] *Var[2] *Var[3] )
+   DC:  EndIf
+   E4:  Call     GetActorPos 	( 00000000 *Var[0] *Var[1] *Var[2] )
+  100:  Add  *Var[0]  00000014 
+  110:  Add  *Var[1]  00000019 
+  120:  If  *Var[C]  >  00000000 
+  130:  	Call     80261C68 ( *Var[0] *Var[1] *Var[2] *Var[C] )
+  14C:  EndIf
+  154:  Set  *Var[3]  *Var[A] 
+  164:  Add  *Var[3]  *Var[B] 
+  174:  Call     GetActorPos 	( 00000000 *Var[0] *Var[1] *Var[2] )
+  190:  Add  *Var[1]  00000019 
+  1A0:  Call     802D7520 ( *Var[0] *Var[1] *Var[2] *Var[3] )
+  1BC:  Wait     0000000A 
+  1C8:  Set  *Var[0]  *Var[A] 
+  1D8:  If  *Var[0]  >  00000000 
+  1E8:  	Loop     *Var[0] 
+  1F4:  		Call     IncrementPlayerHP 	( )
+  200:  		Wait     00000001 
+  20C:  	EndLoop
+  214:  EndIf
+  21C:  Set  *Var[0]  *Var[B] 
+  22C:  If  *Var[0]  >  00000000 
+  23C:  	Loop     *Var[0] 
+  248:  		Call     IncrementPlayerHP 	( )
+  254:  		Wait     00000001 
+  260:  	EndLoop
+  268:  EndIf
+  270:  Set  *Var[0]  *Var[C] 
+  280:  If  *Var[0]  >  00000000 
+  290:  	Loop     *Var[0] 
+  29C:  		Call     IncrementPlayerFP 	( )
+  2A8:  		Wait     00000001 
+  2B4:  	EndLoop
+  2BC:  EndIf
+  2C4:  Wait     0000001E 
+  2D0:  Call     SetAnimation 	( FFFFFF81 00000000 00010002 )
+  2E8:  Call     80261B40 ( )
+  2F4:  Call     UseIdleAnimation 	( 00000000 00000001 )
+  308:  Return
+  310:  End
+

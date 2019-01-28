@@ -1,0 +1,50 @@
+% automatically dumped from map mac_04
+
+#new:Npc $mac_04_8024D6B8
+00000012 $NpcSettings_80243F0C_mac_04 00000000 00000000 00000000 
+00002D09 $Script_Init_8024B190_mac_04 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00A10001 00A10002 00A10003 00A10003 00A10001 00A10001 00A10000 00A10000 
+00A10003 00A10003 00A10003 00A10003 00A10003 00A10003 00A10003 00A10003 
+00000000 00000000 00000000 001A0066 % She's my mom, Goomama. She sometimes gets on my ne ...
+
+#new:NpcSettings $NpcSettings_80243F0C_mac_04
+00000000 00160018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024AE78_mac_04
+    0:  Call     GetCurrentPartner 	( *Var[0] )
+   10:  If  *Var[0]  ==  00000001 
+   20:  	Call     DisablePartnerAI 	( 00000001 )
+   30:  	If  *Flag_MAC_A2  ==  00000000 
+   40:  		Call     SayMessage0 	( .Npc:Self 00A10004 00A10001 00000000 000600B6 ) % Goombario, you're looking just fine, aren't you? Y ...
+   60:  		Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000600B7 ) % Hey! No way I'm a burden! I help out all the time!
+   80:  		Call     SayMessage0 	( .Npc:Self 00A10004 00A10001 00000000 000600B8 ) % Well, well! Our dear little Goombario is helping o ...
+   A0:  		Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000600B9 ) % Come on, stop it, Mom! You're embarrassing me. I'm ...
+   C0:  		Call     SayMessage0 	( .Npc:Self 00A10004 00A10001 00000000 000600BA ) % Oh, don't be silly, punkin! I'm not saying anythin ...
+   E0:  		Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000600BB ) % Aw, Mommmmm... You always treat me like a kid.
+  100:  		Call     SayMessage0 	( 00000013 009E000B 009E0001 00000000 000600BC ) % Nyeah, nyeah! Goombario's getting scolded!
+  120:  		Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000600BD ) % Shut up, Goombaria!
+  140:  		Call     SayMessage0 	( 00000013 009E000B 009E0001 00000000 000600BE ) % Waaah! Mom! Goombario's being mean!
+  160:  		Set  *Flag_MAC_A2  00000001 
+  170:  	Else
+  178:  		Call     SayMessage0 	( .Npc:Self 00A10004 00A10001 00000000 000600BF ) % Goombario. Good luck and take care of yourself. Do ...
+  198:  	EndIf
+  1A0:  	Call     EnablePartnerAI 	( )
+  1AC:  Else
+  1B4:  	Call     SayMessage0 	( .Npc:Self 00A10004 00A10001 00000000 000600B5 ) % Well, well. If it isn't Mario! How wonderful to se ...
+  1D4:  EndIf
+  1DC:  Return
+  1E4:  End
+
+#new:Script $Script_Init_8024B190_mac_04
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024AE78_mac_04 )
+   14:  Return
+   1C:  End
+

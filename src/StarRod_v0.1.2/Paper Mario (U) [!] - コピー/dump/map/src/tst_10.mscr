@@ -1,0 +1,111 @@
+% Script File: tst_10.mscr
+% Decoded from: 0 to 510 (tst_10)
+
+#new:EntryList $EntryList
+{Vec4f:Entry0} %    0.0    0.0 -480.0  180.0
+{Vec4f:Entry1} % -480.0    0.0    0.0   90.0
+{Vec4f:Entry2} %    0.0    0.0  480.0    0.0
+{Vec4f:Entry3} %  480.0    0.0    0.0  270.0
+
+#new:Header $Header
+00000000 00000000 00000000 00000000 
+$Script_Main $EntryList 00000004 00000000 
+00000000 00000000 00000000 00000000 
+00000000 00000000 80200000 00000000 
+
+#new:Script $Script_80240080
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     UseExitHeading ( 0000003C 00000000 )
+   24:  Exec     ExitWalk 
+   30:  Call     GotoMap     	( $ASCII_80240500 00000002 )
+   44:  Wait     00000064 
+   50:  Return
+   58:  End
+
+#new:Script $Script_802400E0
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     UseExitHeading ( 0000003C 00000001 )
+   24:  Exec     ExitWalk 
+   30:  Call     GotoMap     	( $ASCII_80240500 00000003 )
+   44:  Wait     00000064 
+   50:  Return
+   58:  End
+
+#new:Script $Script_80240140
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     UseExitHeading ( 0000003C 00000002 )
+   24:  Exec     ExitWalk 
+   30:  Call     GotoMap     	( $ASCII_80240500 00000000 )
+   44:  Wait     00000064 
+   50:  Return
+   58:  End
+
+#new:Script $Script_802401A0
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     UseExitHeading ( 0000003C 00000003 )
+   24:  Exec     ExitWalk 
+   30:  Call     GotoMap     	( $ASCII_80240500 00000001 )
+   44:  Wait     00000064 
+   50:  Return
+   58:  End
+
+#new:Script $Script_80240200
+    0:  Call     802CA254 ( 00000010 00000000 )
+   14:  Call     802CA254 ( 0000000F 00000000 )
+   28:  Call     802CA254 ( 00000011 00000000 )
+   3C:  Call     802CA254 ( 0000000E 00000000 )
+   50:  Set  *AreaFlag[000]  00000000 
+   60:  Return
+   68:  End
+
+#new:Script $Script_80240270
+    0:  Bind     $Script_80240080 .Trigger:FloorTouch {Collider:deilin} 00000001 00000000 
+   1C:  Bind     $Script_802400E0 .Trigger:FloorTouch {Collider:deiliw} 00000001 00000000 
+   38:  Bind     $Script_80240140 .Trigger:FloorTouch {Collider:deilis} 00000001 00000000 
+   54:  Bind     $Script_802401A0 .Trigger:FloorTouch {Collider:deilie} 00000001 00000000 
+   70:  Return
+   78:  End
+
+#new:Script_Main $Script_Main
+    0:  Set  *WorldMapLocation  00000017 
+   10:  Call     SetSpriteShading 	( FFFFFFFF )
+   20:  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+   40:  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+   5C:  Call     SetCamFlag2 	( .Default .True )
+   70:  ExecWait $Script_80240498 
+   7C:  If  *AreaFlag[000]  ==  00000001 
+   8C:  	Call     802CA254 ( 00000010 00000000 )
+   A0:  	Call     802CA254 ( 0000000F 00000000 )
+   B4:  	Call     802CA254 ( 00000011 00000000 )
+   C8:  	Call     802CA254 ( 0000000E 00000000 )
+   DC:  	Set  *AreaFlag[000]  00000000 
+   EC:  Else
+   F4:  	Set  *AreaFlag[000]  00000001 
+  104:  	Bind     $Script_80240200 .Trigger:FloorTouch {Collider:change} 00000001 00000000 
+  120:  EndIf
+  128:  Set  *Var[0]  $Script_80240270 
+  138:  Exec     EnterWalk 
+  144:  Wait     00000001 
+  150:  Return
+  158:  End
+
+#new:Unknown $???_80240450
+FFFFFFBF 00000000 000000D9 FFFFFEFA 00000000 FFFFFFC0 00000039 00000000 
+FFFFFEE2 00000147 00000000 00000008 80000001 $???_80240450 $???_80240450 $???_80240450 
+$???_80240450 FFFFFFFF 
+
+#new:Script $Script_80240498
+    0:  Call     MakeEntity  	( .Entity:HealingBlock {Vec4d:Entity80240498} 80000000 )
+   24:  Call     MakeEntity  	( .Entity:HiddenPanel {Vec4d:Entity802404BC} {Model:o137} 80000000 )
+   4C:  Return
+   54:  End
+
+PADDING: 802404F4 to 80240500 (000004F4 to 00000500)
+00000000 00000000 00000000 
+
+#new:ASCII $ASCII_80240500
+tst_10
+
+PADDING: 80240508 to 80240510 (00000508 to 00000510)
+00000000 00000000 
+

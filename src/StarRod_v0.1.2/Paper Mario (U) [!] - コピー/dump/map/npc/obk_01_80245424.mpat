@@ -1,0 +1,59 @@
+% automatically dumped from map obk_01
+
+#new:Npc $obk_01_80245424
+00000003 $NpcSettings_80244050_obk_01 00000000 00000000 00000000 
+00000901 $Script_Init_80244DA4_obk_01 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 0000001E 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 0000001E 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00950001 00950002 00950003 00950003 00950001 00950001 00950000 00950000 
+00950003 00950003 00950003 00950003 00950003 00950003 00950003 00950003 
+00000000 00000000 00000000 001A00A6 % That's a Boo who works at Boo's Mansion. He seems  ...
+
+#new:AISettings $AISettings_80244000_obk_01
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80244030_obk_01
+    0:  Call     DoBasicAI   	( $AISettings_80244000_obk_01 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80244050_obk_01
+00000000 00180018 00000000 00000000 $Script_NpcAI_80244030_obk_01 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80244B80_obk_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFF0 
+   18:  		Call     SayMessage0 	( .Npc:Self 00950004 00950001 00000000 000E0061 ) % This mansion has been passed down through the year ...
+   38:  	Case  <  00000027 
+   44:  		Call     SayMessage0 	( .Npc:Self 00950004 00950001 00000000 000E0062 ) % You beat Tubba Blubba! I had nightmares about him. ...
+   64:  	Case  >=  00000027 
+   70:  		Call     SayMessage0 	( .Npc:Self 00950004 00950001 00000000 000E0063 ) % Mario, please take care of Lady Bow! She brings th ...
+   90:  EndSwitch
+   98:  Return
+   A0:  End
+
+#new:Script $Script_Init_80244DA4_obk_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80244B80_obk_01 )
+   14:  If  *StoryProgress  <  FFFFFFDC 
+   24:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   40:  EndIf
+   48:  Return
+   50:  End
+

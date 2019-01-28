@@ -1,0 +1,102 @@
+% automatically dumped from map nok_01
+
+#new:Npc $nok_01_8024E748_5D0
+0000000C $NpcSettings_8024382C_nok_01 00000000 00000000 00000000 
+00002909 $Script_Init_8024D164_nok_01 00000000 00000000 00000052 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00910101 00910102 00910103 00910103 00910101 00910101 00910100 00910100 
+00910100 00910100 00910100 00910100 00910100 00910100 00910100 00910100 
+00000000 00000000 00000000 001A0070 % He's a Bob-omb. He used to work inside Koopa Bros. ...
+
+#new:Function $Function_802426A4_nok_01
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S1, 14 (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 18 (SP)
+   10:  SW        S0, 10 (SP)
+   14:  SDC1      F22, 28 (SP)
+   18:  SDC1      F20, 20 (SP)
+   1C:  LW        S0, C (S1)
+   20:  LW        A1, 0 (S0)
+   24:  JAL       {Func:GetVariable}
+   28:  ADDIU     S0, S0, 4
+   2C:  LW        A1, 0 (S0)
+   30:  ADDIU     S0, S0, 4
+   34:  MTC1      V0, F22
+   38:  NOP
+   3C:  CVT.S.W   F22, F22
+   40:  JAL       {Func:GetVariable}
+   44:  DADDU     A0, S1, R0
+   48:  LW        A1, 0 (S0)
+   4C:  MTC1      V0, F20
+   50:  NOP
+   54:  CVT.S.W   F20, F20
+   58:  JAL       {Func:GetVariable}
+   5C:  DADDU     A0, S1, R0
+   60:  LIF       F0, 15.0
+   68:  MTC1      V0, F2
+   6C:  NOP
+   70:  CVT.S.W   F2, F2
+   74:  ADD.S     F20, F20, F0
+   78:  MFC1      A1, F22
+   7C:  MFC1      A3, F2
+   80:  MFC1      A2, F20
+   84:  JAL       800701F0
+   88:  DADDU     A0, R0, R0
+   8C:  DADDU     A0, R0, R0
+   90:  DADDU     A1, A0, R0
+   94:  JAL       802CB56C
+   98:  ADDIU     A2, R0, 14
+   9C:  LW        RA, 18 (SP)
+   A0:  LW        S1, 14 (SP)
+   A4:  LW        S0, 10 (SP)
+   A8:  LDC1      F22, 28 (SP)
+   AC:  LDC1      F20, 20 (SP)
+   B0:  ADDIU     V0, R0, 2
+   B4:  JR        RA
+   B8:  ADDIU     SP, SP, 30
+
+#new:NpcSettings $NpcSettings_8024382C_nok_01
+00000000 00170014 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_8024C694_nok_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFB5 
+   18:  		If  *AreaFlag[00B]  ==  00000000 
+   28:  			Set  *AreaFlag[00B]  00000001 
+   38:  			Set  *Var[0]  000C003F 
+   48:  		Else
+   50:  			Set  *AreaFlag[00B]  00000000 
+   60:  			Set  *Var[0]  000C0040 
+   70:  		EndIf
+   78:  		Call     SayMessage0 	( .Npc:Self 00910104 00910101 00000000 *Var[0] ) % variable string ID
+   98:  	Case  <  00000007 
+   A4:  		Call     SayMessage0 	( .Npc:Self 00910104 00910101 00000000 000C0041 ) % I decided to stay here with my friends for a while ...
+   C4:  	Case  <  00000059 
+   D0:  		Call     SayMessage0 	( .Npc:Self 00910104 00910101 00000000 000C0042 ) % Bombette will be victorious! You can bet your bomb ...
+   F0:  	Case  >=  00000059 
+   FC:  		Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  110:  		Call     SayMessage0 	( .Npc:Self 00910104 00910101 00000000 000C0043 ) % I'm a Bob-omb. I love to bomb-bomb!
+  130:  		Call     SetNpcAnimation 	( .Npc:Self 00910103 )
+  144:  		Wait     0000000A 
+  150:  		Call     SetNpcAnimation 	( .Npc:Self 00910101 )
+  164:  		Wait     00000003 
+  170:  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  18C:  		Call     PlaySoundAtNpc ( .Npc:Self 00002016 00000000 )
+  1A4:  		Call     $Function_802426A4_nok_01 ( *Var[0] *Var[1] *Var[2] )
+  1BC:  EndSwitch
+  1C4:  Return
+  1CC:  End
+
+#new:Script $Script_Init_8024D164_nok_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024C694_nok_01 )
+   14:  Return
+   1C:  End
+

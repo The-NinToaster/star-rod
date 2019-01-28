@@ -1,0 +1,126 @@
+% automatically dumped from map flo_11
+
+#new:Npc $flo_11_80242CF4
+00000000 $NpcSettings_80241AC0_flo_11 00000000 00000000 00000000 
+00040D01 $Script_Init_80242B58_flo_11 00000000 00000000 0000010E 
+{Items:25:SuperShroom:2:MapleSyrup:2:ThunderRage:2:StopWatch:2}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:3:40} {FP:30:40:3:40} {FP:50:40:3:40} {FP:80:40:3:40} {FP:100:30:3:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:2}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00490001 00490002 00490003 00490003 00490001 00490001 00490004 00490004 
+00490003 00490001 00490001 00490001 00490001 00490001 00490001 00490001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_80241AC0_flo_11
+00000000 00200018 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00140000 
+
+#new:VectorList $VectorList_80241C54_flo_11
+% {Path3f:Path_80241C54}
+400.000000 30.000000 -40.000000
+300.000000 80.000000 -40.000000
+150.000000 200.000000 -40.000000
+100.000000 350.000000 -40.000000
+
+#new:VectorList $VectorList_80241C84_flo_11
+% {Path3f:Path_80241C84}
+400.000000 30.000000 40.000000
+300.000000 80.000000 40.000000
+150.000000 200.000000 40.000000
+100.000000 350.000000 40.000000
+
+#new:Script $Script_802420C8_flo_11
+    0:  Thread
+    8:  	Call     LoadPath    	( 00000028 $VectorList_80241C54_flo_11 00000004 00000000 )
+   24:  	Loop     
+   30:  		Call     GetNextPathPos ( )
+   3C:  		Call     SetNpcPos   	( 00000000 *Var[1] *Var[2] *Var[3] )
+   58:  		Wait     00000001 
+   64:  		If  *Var[0]  ==  00000000 
+   74:  			BreakLoop
+   7C:  		EndIf
+   84:  	EndLoop
+   8C:  	Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+   A8:  EndThread
+   B0:  Call     LoadPath    	( 00000028 $VectorList_80241C84_flo_11 00000004 00000000 )
+   CC:  Loop     
+   D8:  	Call     GetNextPathPos ( )
+   E4:  	Call     SetNpcPos   	( 00000001 *Var[1] *Var[2] *Var[3] )
+  100:  	Wait     00000001 
+  10C:  	If  *Var[0]  ==  00000000 
+  11C:  		BreakLoop
+  124:  	EndIf
+  12C:  EndLoop
+  134:  Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+  150:  Wait     00000028 
+  15C:  Kill     *MapVar[B] 
+  168:  Return
+  170:  End
+
+#new:Script $Script_80242810_flo_11
+    0:  Loop     
+    C:  	Call     GetOwnerVar 	( 00000000 *Var[0] )
+   20:  	If  *Var[0]  !=  00000000 
+   30:  		BreakLoop
+   38:  	EndIf
+   40:  	Wait     00000001 
+   4C:  EndLoop
+   54:  Thread
+   5C:  	Call     UseSettings 	( .Default *Fixed[4.0] 00000000 000003E8 *Fixed[14.0] *Fixed[-11.0] )
+   80:  EndThread
+   88:  Call     StartBossBattle 	( .Song:SpecialBattle )
+   98:  Return
+   A0:  End
+
+#new:Script $Script_802428B8_flo_11
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     SetNpcPos   	( 00000000 00000190 00000014 FFFFFFD8 )
+   44:  		Call     SetNpcPos   	( 00000001 00000190 00000014 00000028 )
+   60:  		Call     InterpNpcYaw 	( 00000000 0000010E 00000000 )
+   78:  		Call     InterpNpcYaw 	( 00000001 0000010E 00000000 )
+   90:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   A8:  		Add  *Var[2]  FFFFFFC4 
+   B8:  		Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   D4:  		Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   F0:  		Call     SetCamDistance ( .Default 00000384 )
+  104:  		Call     SetCamAngles 	( .Default *Fixed[24.0] *Fixed[-4.0] )
+  11C:  		Call     SetCamPosA  	( .Default *Fixed[-95.0] *Fixed[0.0] )
+  134:  		Call     SetCamPosB  	( .Default *Fixed[0.0] *Fixed[-50.0] )
+  14C:  		Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  160:  		Call     PanToTarget 	( .Default 00000000 00000001 )
+  178:  		Call     WaitForCam  	( .Default *Fixed[1.0] )
+  18C:  		ExecWait $Script_802420C8_flo_11 
+  198:  		Call     ResetCam    	( .Default *Fixed[4.0] )
+  1AC:  		Set  *Flag_FLO_0F  00000001 
+  1BC:  		Set  *MapVar[0]  00000001 
+  1CC:  		Call     DisablePlayerInput 	( .False )
+  1DC:  	Case  ==  00000001 
+  1E8:  	Case  ==  00000002 
+  1F4:  EndSwitch
+  1FC:  Return
+  204:  End
+
+#new:Script $Script_Init_80242B58_flo_11
+    0:  Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+   1C:  If  *Flag_FLO_0F  ==  00000000 
+   2C:  	If  *StoryProgress  >=  0000002D 
+   3C:  		If  *Flag_FLO_0D  ==  00000001 
+   4C:  			Set  *MapVar[0]  00000000 
+   5C:  			Call     BindNpcIdle 	( .Npc:Self $Script_80242810_flo_11 )
+   70:  			Call     BindNpcDefeat 	( .Npc:Self $Script_802428B8_flo_11 )
+   84:  			Call     SetNpcPos   	( 00000000 0000015E 00000078 FFFFFF24 )
+   A0:  			Call     InterpNpcYaw 	( 00000000 0000010E 00000001 )
+   B8:  		EndIf
+   C0:  	EndIf
+   C8:  EndIf
+   D0:  Return
+   D8:  End
+

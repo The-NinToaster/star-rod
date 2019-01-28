@@ -1,0 +1,96 @@
+% automatically dumped from map mac_00
+
+#new:Npc $mac_00_80251124
+00000007 $NpcSettings_8024EC90_mac_00 00000000 00000000 00000000 
+00112D09 $Script_Init_80250EE4_mac_00 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830001 00830002 00830003 00830003 00830001 00830001 00830006 00830006 
+00830003 00830003 00830003 00830003 00830003 00830003 00830003 00830003 
+00000000 00000000 00000000 001A0013 % This Toad is always standing in front of the gate. ...
+
+#new:NpcSettings $NpcSettings_8024EC90_mac_00
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024F944_mac_00
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF96 
+   18:  		Set  *Var[0]  0002007F 
+   28:  	Case  <  FFFFFF9C 
+   34:  		Set  *Var[0]  00020080 
+   44:  	Case  <  FFFFFFB5 
+   50:  		Set  *Var[0]  00020081 
+   60:  	Case  <  FFFFFFCB 
+   6C:  		If  *Flag_MAC_9A  ==  00000000 
+   7C:  			Set  *Var[0]  00020082 
+   8C:  		Else
+   94:  			Set  *Var[0]  00020083 
+   A4:  		EndIf
+   AC:  	Case  <  FFFFFFF1 
+   B8:  		Set  *Var[0]  00020084 
+   C8:  	Case  <  00000007 
+   D4:  		If  *Flag_MAC_71  ==  00000000 
+   E4:  			Set  *Var[0]  00020085 
+   F4:  		Else
+   FC:  			If  *Flag_MAC_72  ==  00000000 
+  10C:  				Set  *Var[0]  00020086 
+  11C:  			Else
+  124:  				Set  *Var[0]  00020087 
+  134:  			EndIf
+  13C:  		EndIf
+  144:  	Case  <  0000000A 
+  150:  		Set  *Var[0]  00020088 
+  160:  	Case  <  00000027 
+  16C:  		Set  *Var[0]  00020089 
+  17C:  	Case  <  0000002B 
+  188:  		Set  *Var[0]  0002008A 
+  198:  	Case  <  00000039 
+  1A4:  		Set  *Var[0]  0002008B 
+  1B4:  	Case  <  0000003D 
+  1C0:  		Set  *Var[0]  0002008C 
+  1D0:  	Case  <  00000059 
+  1DC:  		Set  *Var[0]  0002008D 
+  1EC:  	Case  <  00000060 
+  1F8:  		Set  *Var[0]  0002008E 
+  208:  	Case  >=  00000060 
+  214:  		Set  *Var[0]  0001002C 
+  224:  EndSwitch
+  22C:  Call     SayMessage0 	( .Npc:Self 00830004 00830001 00000000 *Var[0] ) % variable string ID
+  24C:  Return
+  254:  End
+
+#new:Script $Script_8024FBA0_mac_00
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     NpcFacePlayer 	( 00000007 00000000 )
+   24:  Wait     00000005 
+   30:  Call     SayMessage0 	( 00000007 00830004 00830001 00000000 0001002D ) % Mario, where are you going? I'm sure that Princess ...
+   50:  Wait     0000000A 
+   5C:  Call     SetPlayerSpeed ( *Fixed[4.0] )
+   6C:  Call     MovePlayerTo 	( FFFFFF24 FFFFFF06 00000000 )
+   84:  Call     DisablePlayerInput 	( .False )
+   94:  Return
+   9C:  End
+
+#new:Script $Script_8024FC44_mac_00
+    0:  Bind     $Script_8024FBA0_mac_00 .Trigger:FloorTouch {Collider:o484} 00000001 00000000 
+   1C:  Return
+   24:  End
+
+#new:Script $Script_Init_80250EE4_mac_00
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024F944_mac_00 )
+   14:  If  *StoryProgress  <  00000060 
+   24:  	Return
+   2C:  EndIf
+   34:  Call     GetEntryID  	( *Var[0] )
+   44:  If  *Var[0]  !=  00000007 
+   54:  	Exec     $Script_8024FC44_mac_00 
+   60:  EndIf
+   68:  Return
+   70:  End
+

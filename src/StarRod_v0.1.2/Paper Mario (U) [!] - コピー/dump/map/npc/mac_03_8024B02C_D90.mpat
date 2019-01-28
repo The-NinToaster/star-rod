@@ -1,0 +1,96 @@
+% automatically dumped from map mac_03
+
+#new:Npc $mac_03_8024B02C_D90
+0000000A $NpcSettings_80246594_mac_03 00000000 00000000 00000000 
+00402D09 $Script_Init_8024A7D0_mac_03 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830001 00830002 00830003 00830003 00830001 00830001 00830006 00830006 
+00830003 00830003 00830003 00830003 00830003 00830003 00830003 00830003 
+00000000 00000000 00000000 001A0043 % This Toad loves Li'l-Oinks. I always see him near  ...
+
+#new:Function $Function_80241B84_mac_03
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        S0, 10 (SP)
+    8:  DADDU     S0, A0, R0
+    C:  LUI       A1, F5DE
+   10:  SW        RA, 14 (SP)
+   14:  JAL       {Func:GetVariable}
+   18:  ORI       A1, A1, 19D
+   1C:  BNEL      V0, R0, .o2C
+   20:  LUI       A1, F5DE
+   24:  BEQ       R0, R0, .o3C
+   28:  ADDIU     V0, R0, FFFF
+        .o2C
+   2C:  ORI       A1, A1, 19D
+   30:  DADDU     A0, S0, R0
+   34:  JAL       {Func:GetVariable}
+   38:  ADDU      A1, V0, A1
+        .o3C
+   3C:  SW        V0, 84 (S0)
+   40:  LW        RA, 14 (SP)
+   44:  LW        S0, 10 (SP)
+   48:  ADDIU     V0, R0, 2
+   4C:  JR        RA
+   50:  ADDIU     SP, SP, 18
+
+#new:NpcSettings $NpcSettings_80246594_mac_03
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024A554_mac_03
+    0:  If  *LilOinkCount  ==  00000000 
+   10:  	Call     SayMessage0 	( .Npc:Self 00830004 00830001 00000000 00050053 ) % I love Li'l-Oinks! Love 'em! You... You want to le ...
+   30:  	Call     ShowChoice  	( 001E000D ) % Yes No 
+   40:  	If  *Var[0]  ==  00000000 
+   50:  		Set  *Var[0]  00050056 
+   60:  	Else
+   68:  		Set  *Var[0]  00050055 
+   78:  	EndIf
+   80:  	Call     SayMessage2 	( .Npc:Self 00830004 00830001 00000000 *Var[0] ) % variable string ID
+   A0:  	Wait     0000000A 
+   AC:  	Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+   C4:  	Set  *MapFlag[08]  00000001 
+   D4:  	Return
+   DC:  EndIf
+   E4:  If  *MapFlag[07]  ==  00000000 
+   F4:  	Set  *Var[0]  00050054 
+  104:  Else
+  10C:  	Call     $Function_80241B84_mac_03 ( )
+  118:  	Switch  *Var[0] 
+  124:  		Case  ==  00000009 
+  130:  			Set  *Var[0]  00050058 
+  140:  		Case  ==  00000008 
+  14C:  			Set  *Var[0]  00050057 
+  15C:  		Case  ==  00000000 
+  168:  			Set  *Var[0]  00050059 
+  178:  		Case  ==  00000001 
+  184:  			Set  *Var[0]  0005005A 
+  194:  		Case  ==  00000002 
+  1A0:  			Set  *Var[0]  0005005B 
+  1B0:  		Case  ==  00000003 
+  1BC:  			Set  *Var[0]  0005005C 
+  1CC:  		Case  ==  00000004 
+  1D8:  			Set  *Var[0]  0005005D 
+  1E8:  		Case  ==  00000005 
+  1F4:  			Set  *Var[0]  0005005E 
+  204:  		Case  ==  00000006 
+  210:  			Set  *Var[0]  0005005F 
+  220:  		Case  ==  00000007 
+  22C:  			Set  *Var[0]  00050060 
+  23C:  	EndSwitch
+  244:  EndIf
+  24C:  Call     SayMessage0 	( .Npc:Self 00830004 00830001 00000010 *Var[0] ) % variable string ID
+  26C:  Return
+  274:  End
+
+#new:Script $Script_Init_8024A7D0_mac_03
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024A554_mac_03 )
+   14:  Return
+   1C:  End
+

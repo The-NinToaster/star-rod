@@ -1,0 +1,56 @@
+% automatically dumped from map nok_01
+
+#new:Npc $nok_01_8024F2E8_3E0
+00000007 $NpcSettings_8024377C_nok_01 00000000 00000000 00000000 
+00402909 $Script_Init_8024C1D4_nok_01 00000000 00000000 00000106 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008F0002 008F0005 008F0006 008F0006 008F0002 008F0002 008F0000 008F0000 
+008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 
+00000000 00000000 00000000 001A006F % This Koopa Troopa obviously loves the radio. He's  ...
+
+#new:NpcSettings $NpcSettings_8024377C_nok_01
+00000000 00230018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_80249C70_nok_01
+    0:  If  *StoryProgress  <  FFFFFFA4 
+   10:  	If  *AreaFlag[009]  ==  00000000 
+   20:  		Call     SayMessage0 	( 00000007 008F0008 008F0003 00000005 000C0021 ) % Supposedly, these Bob-ombs recently ran away from  ...
+   40:  		Set  *AreaFlag[009]  00000001 
+   50:  	Else
+   58:  		Call     SayMessage0 	( 00000007 008F0008 008F0003 00000005 000C0022 ) % Huh? Me? I don't leave my house because I couldn't ...
+   78:  		Set  *AreaFlag[009]  00000000 
+   88:  	EndIf
+   90:  	Return
+   98:  EndIf
+   A0:  If  *StoryProgress  <  FFFFFFB5 
+   B0:  	Call     SayMessage0 	( 00000007 008F0008 008F0003 00000005 000C0023 ) % Hey! We can go outside again because the Fuzzies a ...
+   D0:  	Return
+   D8:  EndIf
+   E0:  Switch  *AreaByte[0] 
+   EC:  	Case  ==  00000000 
+   F8:  		Call     SayMessage0 	( 00000007 008F0008 008F0003 00000005 000C0024 ) % Aw, I love this song! Doesn't it remind you of a t ...
+  118:  	Case  ==  00000001 
+  124:  		Call     SayMessage0 	( 00000007 008F0008 008F0003 00000005 000C0025 ) % Aw, I love this song! Golden oldies remind me of t ...
+  144:  	Case  ==  00000002 
+  150:  		Call     SayMessage0 	( 00000007 008F0008 008F0003 00000005 000C0026 ) % Oh, this song always brings tears to my eyes... So ...
+  170:  	Case  ==  00000003 
+  17C:  		Call     SayMessage0 	( 00000007 008F0008 008F0003 00000005 000C0027 ) % Hey, hey! Hands off the dial! That's my jam, right ...
+  19C:  EndSwitch
+  1A4:  Return
+  1AC:  End
+
+#new:Script $Script_Init_8024C1D4_nok_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80249C70_nok_01 )
+   14:  Call     SetNpcPos   	( 00000007 0000014D 00000011 FFFFFF5E )
+   30:  Call     InterpNpcYaw 	( 00000007 000000B4 00000000 )
+   48:  Call     SetNpcAnimation 	( 00000007 008F0003 )
+   5C:  Return
+   64:  End
+

@@ -1,0 +1,81 @@
+% automatically dumped from map mac_04
+
+#new:Npc $mac_04_8024B1D8_1170
+00000008 $NpcSettings_80243E88_mac_04 00000000 00000000 00000000 
+00002D09 $Script_Init_8024A7F4_mac_04 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00840001 00840002 00840003 00840003 00840001 00840001 00840006 00840006 
+00840003 00840003 00840003 00840003 00840003 00840003 00840003 00840003 
+00000000 00000000 00000000 001A004A % She's always taking a walk around here. She's eleg ...
+
+#new:NpcSettings $NpcSettings_80243E88_mac_04
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024A54C_mac_04
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFCB 
+   18:  		If  *Flag_MAC_9A  ==  00000000 
+   28:  			Set  *Var[0]  00060061 
+   38:  		Else
+   40:  			Set  *Var[0]  00060062 
+   50:  		EndIf
+   58:  	Case  <  FFFFFFF1 
+   64:  		Set  *Var[0]  00060063 
+   74:  	Case  <  FFFFFFF7 
+   80:  		Set  *Var[0]  00060064 
+   90:  	Case  <  FFFFFFF8 
+   9C:  		Set  *Var[0]  00060065 
+   AC:  	Case  <  FFFFFFF9 
+   B8:  		Set  *Var[0]  00060066 
+   C8:  	Case  <  FFFFFFFC 
+   D4:  		Set  *Var[0]  00060067 
+   E4:  	Case  <  FFFFFFFD 
+   F0:  		Set  *Var[0]  00060068 
+  100:  	Case  <  00000000 
+  10C:  		Call     FindKeyItem 	( .Item:MysteryNote *Var[0] )
+  120:  		If  *Var[0]  ==  FFFFFFFF 
+  130:  			If  *Flag_MAC_72  ==  00000000 
+  140:  				Set  *Var[0]  00060069 
+  150:  			Else
+  158:  				Set  *Var[0]  0006006B 
+  168:  			EndIf
+  170:  		Else
+  178:  			Set  *Var[0]  0006006A 
+  188:  		EndIf
+  190:  	Case  <  00000007 
+  19C:  		Set  *Var[0]  0006006C 
+  1AC:  	Case  <  0000000A 
+  1B8:  		Set  *Var[0]  0006006D 
+  1C8:  	Case  <  00000027 
+  1D4:  		Set  *Var[0]  0006006E 
+  1E4:  	Case  <  0000002B 
+  1F0:  		Set  *Var[0]  0006006F 
+  200:  	Case  <  00000039 
+  20C:  		Set  *Var[0]  00060070 
+  21C:  	Case  <  0000003D 
+  228:  		Set  *Var[0]  00060071 
+  238:  	Case  <  00000059 
+  244:  		Set  *Var[0]  00060072 
+  254:  	Case  <  00000060 
+  260:  		Set  *Var[0]  00060073 
+  270:  EndSwitch
+  278:  Call     SayMessage0 	( .Npc:Self 00840004 00840001 00000000 *Var[0] ) % variable string ID
+  298:  Return
+  2A0:  End
+
+#new:Script $Script_Init_8024A7F4_mac_04
+    0:  Switch  *StoryProgress 
+    C:  	Case  FFFFFFF1  to  00000007 
+   1C:  		Call     SetNpcPos   	( .Npc:Self FFFFFED4 00000000 00000145 )
+   38:  EndSwitch
+   40:  Call     BindNpcInteract 	( .Npc:Self $Script_8024A54C_mac_04 )
+   54:  Return
+   5C:  End
+

@@ -1,0 +1,100 @@
+% automatically dumped from map kkj_01
+
+#new:Npc $kkj_01_80242484_BA0
+00000006 $NpcSettings_802417C0_kkj_01 00000000 00000000 00000000 
+00000D09 $Script_Init_80242328_kkj_01 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00870301 00870301 00870301 00870301 00870301 00870301 00870301 00870301 
+00870301 00870301 00870301 00870301 00870301 00870301 00870301 00870301 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_80241138_kkj_01
+    0:  SetGroup 0000001B 
+    C:  Call     DisablePlayerInput 	( .True )
+   1C:  Call     UseDoorSounds 	( 00000000 )
+   2C:  Set  *Var[0]  00000004 
+   3C:  Set  *Var[1]  0000000A 
+   4C:  Set  *Var[2]  00000013 
+   5C:  Set  *Var[3]  00000001 
+   6C:  Exec     ExitSingleDoor 
+   78:  Wait     00000011 
+   84:  Call     GotoMap     	( $ASCII_80243A00_kkj_01 00000000 )
+   98:  Wait     00000064 
+   A4:  Return
+   AC:  End
+
+#new:NpcSettings $NpcSettings_802417C0_kkj_01
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241BF4_kkj_01
+    0:  If  *AreaFlag[002]  ==  00000001 
+   10:  	Return
+   18:  EndIf
+   20:  Call     GetEntryID  	( *Var[0] )
+   30:  If  *Var[0]  !=  00000004 
+   40:  	Return
+   48:  EndIf
+   50:  Call     802D2508 ( )
+   5C:  Call     DisablePlayerInput 	( .True )
+   6C:  Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 00000042 ) % How was it? To tell you the truth, I've never seen ...
+   8C:  Set  *AreaFlag[002]  00000001 
+   9C:  Call     DisablePlayerInput 	( .False )
+   AC:  Return
+   B4:  End
+
+#new:Script $Script_80241DD0_kkj_01
+    0:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   14:  Switch  *Var[0] 
+   20:  	Case  ==  00000000 
+   2C:  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 0000003D ) % This is Princess Peach's room, but I'm afraid she  ...
+   4C:  	Case  ==  00000001 
+   58:  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 0000003E ) % Huh? Oh no! Absolutely not! I don't think it's ver ...
+   78:  	CaseOR  ==  00000002 
+   84:  	CaseOR  ==  00000003 
+   90:  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 0000003F ) % I said NO, and that means NO. You are simply not a ...
+   B0:  	EndCaseGroup
+   B8:  	Case  ==  00000004 
+   C4:  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 00000040 ) % Boy, you're persistent! I guess I have no choice.. ...
+   E4:  		Wait     0000000A 
+   F0:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  108:  		Call     SetNpcAnimation 	( 00000006 00870302 )
+  11C:  		If  *Var[0]  >  00000000 
+  12C:  			Set  *Var[3]  FFFFFFCE 
+  13C:  		Else
+  144:  			Set  *Var[3]  00000032 
+  154:  		EndIf
+  15C:  		Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+  174:  		Call     SetNpcSpeed 	( .Npc:Self *Fixed[2.0] )
+  188:  		Call     MoveNpcTo   	( .Npc:Self *Var[3] FFFFFF0B 00000000 )
+  1A4:  		Call     SetNpcFlagBits ( .Npc:Self 00000100 .False )
+  1BC:  		Call     SetNpcAnimation 	( 00000006 00870301 )
+  1D0:  		Call     InterpNpcYaw 	( .Npc:Self 000000B4 00000005 )
+  1E8:  		Set  *AreaFlag[001]  00000001 
+  1F8:  		Bind     $Script_80241138_kkj_01 .Trigger:WallPressA {Collider:ttn2} 00000001 00000000 
+  214:  	Default
+  21C:  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 00000041 ) % I envy you, Mario...
+  23C:  EndSwitch
+  244:  Add  *Var[0]  00000001 
+  254:  Call     SetOwnerVar 	( 00000000 *Var[0] )
+  268:  Return
+  270:  End
+
+#new:Script $Script_Init_80242328_kkj_01
+    0:  If  *AreaFlag[001]  ==  00000001 
+   10:  	Call     SetNpcPos   	( .Npc:Self FFFFFFCE 00000000 FFFFFF0B )
+   2C:  	Call     SetOwnerVar 	( 00000000 00000005 )
+   40:  Else
+   48:  	Call     SetNpcPos   	( .Npc:Self 00000000 00000000 FFFFFEFC )
+   64:  EndIf
+   6C:  Call     BindNpcIdle 	( .Npc:Self $Script_80241BF4_kkj_01 )
+   80:  Call     BindNpcInteract 	( .Npc:Self $Script_80241DD0_kkj_01 )
+   94:  Return
+   9C:  End
+

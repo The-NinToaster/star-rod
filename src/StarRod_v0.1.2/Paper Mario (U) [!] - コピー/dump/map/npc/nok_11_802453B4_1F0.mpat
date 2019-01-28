@@ -1,0 +1,50 @@
+% automatically dumped from map nok_11
+
+#new:Npc $nok_11_802453B4_1F0
+00000006 $NpcSettings_802429E8_nok_11 00000000 00000000 00000000 
+21F40F0C $Script_Init_8024534C_nok_11 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00210003 00210007 00210007 00210007 00210003 00210003 00210003 00210003 
+00210003 00210003 00210003 00210003 00210003 00210003 00210003 00210003 
+00000000 00000000 00000000 001A0006 % That's Jr. Troopa. He used to boot us out of the f ...
+
+#new:NpcSettings $NpcSettings_802429E8_nok_11
+00000000 00200018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80243E6C_nok_11
+    0:  Loop     
+    C:  	Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+   28:  	Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   44:  	Wait     00000001 
+   50:  EndLoop
+   58:  Return
+   60:  End
+
+#new:Script $Script_80243ED4_nok_11
+    0:  Call     80044600 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	CaseOR  ==  00000002 
+   28:  	CaseOR  ==  00000004 
+   34:  	CaseOR  ==  00000006 
+   40:  		Call     DisablePlayerInput 	( .True )
+   50:  		Call     SayMessage0 	( .Npc:Self 00210014 00210014 00000005 000C012B ) % Aaaaaaaaaaaah!
+   70:  		Call     DisablePlayerInput 	( .False )
+   80:  EndSwitch
+   88:  Return
+   90:  End
+
+#new:Script $Script_Init_8024534C_nok_11
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_80243E6C_nok_11 )
+   14:  Call     BindNpcHit  	( .Npc:Self $Script_80243ED4_nok_11 )
+   28:  Call     SetNpcFlagBits ( .Npc:Self 00000010 .False )
+   40:  Call     SetNpcFlagBits ( .Npc:Self 00000002 .True )
+   58:  Return
+   60:  End
+

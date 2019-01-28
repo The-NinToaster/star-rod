@@ -1,0 +1,98 @@
+% automatically dumped from map kmr_05
+
+#new:Npc $kmr_05_8024242C
+00000003 $NpcSettings_80241C60_kmr_05 00000000 00000000 00000000 
+00000400 $Script_Init_802423F4_kmr_05 00000000 00000000 0000010E 
+{Items:5:Mushroom:A}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:1}
+FFFFFFAE 00000000 00000078 00000028 00000014 FFFF8001 00000001 FFFFFFCC 
+00000000 0000007D 000000A5 00000096 00000001 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00270001 00270002 00270003 00270003 00270001 00270001 00270005 00270005 
+00270003 00270003 00270003 00270003 00270003 00270003 00270003 00270003 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:AISettings $AISettings_80241C10_kmr_05
+    1.5 % move speed
+    30` % move time
+    30` % wait time
+  130.0 % alert radius
+    0.0
+    1`
+    2.5 % chase speed
+    180`
+    3`
+  150.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80241C40_kmr_05
+    0:  Call     DoBasicAI   	( $AISettings_80241C10_kmr_05 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_80241C60_kmr_05
+00000000 00170017 00000000 00000000 $Script_NpcAI_80241C40_kmr_05 80077F70 00000000 8007809C 
+00000000 00000000 00060000 
+
+#new:Script $Script_80241D2C_kmr_05
+    0:  Label    00000000 
+    C:  Call     TranslateModel ( {Model:usokinoko} FFFFFFFF 00000000 00000000 )
+   28:  Wait     00000001 
+   34:  Call     TranslateModel ( {Model:usokinoko} 00000001 00000000 00000000 )
+   50:  Wait     00000014 
+   5C:  Call     TranslateModel ( {Model:usokinoko} 00000001 00000000 00000000 )
+   78:  Wait     00000001 
+   84:  Call     TranslateModel ( {Model:usokinoko} FFFFFFFF 00000000 00000000 )
+   A0:  Wait     00000008 
+   AC:  Call     TranslateModel ( {Model:usokinoko} FFFFFFFF 00000000 00000000 )
+   C8:  Wait     00000001 
+   D4:  Call     TranslateModel ( {Model:usokinoko} 00000001 00000000 00000000 )
+   F0:  Wait     0000001E 
+   FC:  Goto     00000000 
+  108:  Return
+  110:  End
+
+#new:Script $Script_80241E44_kmr_05
+    0:  Call     800445D4 ( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000064 
+   28:  		Label    0000000A 
+   34:  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   4C:  		Wait     00000001 
+   58:  		If  *Var[1]  <  00000064 
+   68:  			Goto     0000000A 
+   74:  		EndIf
+   7C:  		If  *Var[0]  <  00000230 
+   8C:  			Goto     0000000A 
+   98:  		EndIf
+   A0:  		If  *Var[0]  >  000002BC 
+   B0:  			Goto     0000000A 
+   BC:  		EndIf
+   C4:  		Call     SetNpcAux   	( .Npc:Self 00000000 )
+   D8:  		Call     ShowEmote   	( .Npc:Self .Emote:Exclamation FFFFFFE2 0000000C 00000001 00000000 00000000 00000000 00000000 )
+  108:  		Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+  11C:  		Call     SetNpcSpeed 	( .Npc:Self *Fixed[5.0] )
+  130:  		Call     NpcJump0    	( .Npc:Self 000002AD 00000064 FFFFFFDD 00000000 )
+  150:  		Call     SetOwnerFlagBits 	( 40000000 .True )
+  164:  		Call     BindNpcAI   	( .Npc:Self $Script_NpcAI_80241C40_kmr_05 )
+  178:  	CaseOR  ==  00000066 
+  184:  	CaseOR  ==  00000003 
+  190:  	CaseOR  ==  00000067 
+  19C:  		Call     BindNpcAI   	( .Npc:Self $Script_NpcAI_80241C40_kmr_05 )
+  1B0:  	EndCaseGroup
+  1B8:  EndSwitch
+  1C0:  Return
+  1C8:  End
+
+#new:Script $Script_Init_802423F4_kmr_05
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_80241E44_kmr_05 )
+   14:  Call     BindNpcAux  	( .Npc:Self $Script_80241D2C_kmr_05 )
+   28:  Return
+   30:  End
+

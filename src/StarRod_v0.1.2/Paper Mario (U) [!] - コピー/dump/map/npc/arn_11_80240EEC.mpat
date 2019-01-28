@@ -1,0 +1,163 @@
+% automatically dumped from map arn_11
+
+#new:Npc $arn_11_80240EEC
+00000000 $NpcSettings_802406A0_arn_11 00000000 00000000 00000000 
+00040B05 $Script_Init_80240E70_arn_11 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 
+006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 006C0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_80240680_arn_11
+    0:  Return
+    8:  End
+
+#new:Script $Script_80240690_arn_11
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_802406A0_arn_11
+00000000 00180018 $Script_80240680_arn_11 00000000 00000000 00000000 00000000 $Script_80240690_arn_11 
+00000000 00000000 000D0000 
+
+#new:Script $Script_802406CC_arn_11
+    0:  Loop     
+    C:  	Call     GetOwnerVar 	( 00000000 *Var[0] )
+   20:  	If  *Var[0]  !=  00000000 
+   30:  		BreakLoop
+   38:  	EndIf
+   40:  	Wait     00000001 
+   4C:  EndLoop
+   54:  Thread
+   5C:  	Call     SetCamType  	( .Default 00000006 00000001 )
+   74:  	Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+   88:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   A0:  	Add  *Var[0]  00000032 
+   B0:  	Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   CC:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   E8:  	Call     SetCamDistance ( .Default 00000BB8 )
+   FC:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  114:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  128:  EndThread
+  130:  Call     StartBossBattle 	( .Song:TubbaBlubbaBattle )
+  140:  Return
+  148:  End
+
+#new:Script $Script_8024081C_arn_11
+    0:  Wait     0000000F 
+    C:  Call     PlaySoundAtCollider 	( {Collider:ttw} 000001C1 00000000 )
+   24:  Call     MakeLerp    	( 00000000 00000050 0000000A 00000000 )
+   40:  Loop     
+   4C:  	Call     UpdateLerp  	( )
+   58:  	Call     RotateModel 	( {Model:o37} *Var[0] 00000000 FFFFFFFF 00000000 )
+   78:  	Wait     00000001 
+   84:  	If  *Var[1]  ==  00000000 
+   94:  		BreakLoop
+   9C:  	EndIf
+   A4:  EndLoop
+   AC:  Return
+   B4:  End
+
+#new:Script $Script_802408D8_arn_11
+    0:  Call     MakeLerp    	( 00000050 00000000 0000000A 00000000 )
+   1C:  Loop     
+   28:  	Call     UpdateLerp  	( )
+   34:  	Call     RotateModel 	( {Model:o37} *Var[0] 00000000 FFFFFFFF 00000000 )
+   54:  	Wait     00000001 
+   60:  	If  *Var[1]  ==  00000000 
+   70:  		BreakLoop
+   78:  	EndIf
+   80:  EndLoop
+   88:  Call     PlaySoundAtCollider 	( {Collider:ttw} 000001C2 00000000 )
+   A0:  Return
+   A8:  End
+
+#new:IntTable $IntTable_80240988_arn_11
+00000064 0000001E 00000046 00000019 0000001E 00000050 FFFFD8F0 00000000 
+00000000 FFFFFFBA 0000000A 00000014 FFFFFF4C 00000000 00000000 FFFFFED4 
+00000000 00000000 FFFFD8F0 00000000 00000000 
+
+#new:Script $Script_802409DC_arn_11
+    0:  Thread
+    8:  	Call     SetCamType  	( .Default 00000006 00000001 )
+   20:  	Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+   34:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   4C:  	Add  *Var[0]  00000032 
+   5C:  	Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   78:  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   94:  	Call     SetCamDistance ( .Default 000001C2 )
+   A8:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+   C0:  EndThread
+   C8:  Wait     0000000A 
+   D4:  Call     PlayerFaceNpc 	( 00000000 00000001 )
+   E8:  Loop     00000002 
+   F4:  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  110:  	Call     SetNpcJumpscale 	( 00000000 *Fixed[2.5] )
+  124:  	Call     PlaySoundAtNpc ( .Npc:Self 000020C8 00000000 )
+  13C:  	Call     NpcJump0    	( 00000000 *Var[0] *Var[1] *Var[2] 0000000C )
+  15C:  	Wait     00000001 
+  168:  EndLoop
+  170:  Thread
+  178:  	Wait     0000000A 
+  184:  	Call     SetCamType  	( .Default 00000004 00000001 )
+  19C:  	Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  1B0:  	Call     SetCamAngles 	( .Default *Fixed[17.0] *Fixed[-7.0] )
+  1C8:  	Call     SetCamDistance ( .Default 000001C2 )
+  1DC:  	Call     SetCamPosA  	( .Default FFFFFFC8 00000046 )
+  1F4:  	Call     SetCamPosB  	( .Default FFFFFFA6 00000028 )
+  20C:  	Call     SetCamPosC  	( .Default 00000000 00000000 )
+  224:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  23C:  EndThread
+  244:  Call     PlayerFaceNpc 	( 00000000 00000001 )
+  258:  UseIntBuffer $IntTable_80240988_arn_11 
+  264:  Loop     
+  270:  	Get3Int  *Var[0] *Var[1] *Var[2] 
+  284:  	If  *Var[0]  ==  FFFFD8F0 
+  294:  		BreakLoop
+  29C:  	EndIf
+  2A4:  	Call     PlaySoundAtNpc ( .Npc:Self 000020C8 00000000 )
+  2BC:  	Call     NpcJump0    	( 00000000 *Var[0] *Var[1] *Var[2] 0000000C )
+  2DC:  	Wait     00000001 
+  2E8:  EndLoop
+  2F0:  Exec     $Script_8024081C_arn_11 
+  2FC:  Loop     
+  308:  	Get3Int  *Var[0] *Var[1] *Var[2] 
+  31C:  	If  *Var[0]  ==  FFFFD8F0 
+  32C:  		BreakLoop
+  334:  	EndIf
+  33C:  	Call     PlaySoundAtNpc ( .Npc:Self 000020C8 00000000 )
+  354:  	Call     NpcJump0    	( 00000000 *Var[0] *Var[1] *Var[2] 0000000C )
+  374:  	Wait     00000001 
+  380:  EndLoop
+  388:  Exec     $Script_802408D8_arn_11 
+  394:  Wait     0000001E 
+  3A0:  Call     SetCamType  	( .Default 00000006 00000001 )
+  3B8:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  3CC:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  3E4:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  400:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  41C:  Call     SetCamDistance ( .Default 000001C2 )
+  430:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  448:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  45C:  Call     PanToTarget 	( .Default 00000000 00000000 )
+  474:  Set  *StoryProgress  FFFFFFEA 
+  484:  Return
+  48C:  End
+
+#new:Script $Script_Init_80240E70_arn_11
+    0:  If  *StoryProgress  >=  FFFFFFEA 
+   10:  	Call     RemoveNpc   	( .Npc:Self )
+   20:  Else
+   28:  	Call     SetOwnerVar 	( 00000000 00000000 )
+   3C:  	Call     BindNpcIdle 	( .Npc:Self $Script_802406CC_arn_11 )
+   50:  	Call     BindNpcDefeat 	( .Npc:Self $Script_802409DC_arn_11 )
+   64:  EndIf
+   6C:  Return
+   74:  End
+

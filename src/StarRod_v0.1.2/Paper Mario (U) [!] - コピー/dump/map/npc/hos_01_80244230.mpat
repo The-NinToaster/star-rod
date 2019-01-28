@@ -1,0 +1,510 @@
+% automatically dumped from map hos_01
+
+#new:Npc $hos_01_80244230
+00000000 $NpcSettings_80242580_hos_01 00000000 00000000 00000000 
+00000D09 $Script_Init_80244058_hos_01 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00120001 00120001 00120001 00120001 00120001 00120001 00120001 00120001 
+00120000 00120001 00120001 00120001 00120001 00120001 00120001 00120001 
+00000000 00000000 00000000 001A000A % He's an old Star Spirit. His name is Eldstar. He r ...
+
+#new:Function $Function_80240CB0_hos_01
+    0:  ADDIU     SP, SP, FFE8
+    4:  SW        RA, 10 (SP)
+    8:  LW        V0, C (A0)
+    C:  JAL       {Func:GetVariable}
+   10:  LW        A1, 0 (V0)
+   14:  JAL       800EB168
+   18:  DADDU     A0, V0, R0
+   1C:  LW        RA, 10 (SP)
+   20:  ADDIU     V0, R0, 2
+   24:  JR        RA
+   28:  ADDIU     SP, SP, 18
+
+#new:Function $Function_80240CDC_hos_01
+    0:  ADDIU     SP, SP, FFD0
+    4:  SW        S1, 1C (SP)
+    8:  DADDU     S1, A0, R0
+    C:  SW        RA, 2C (SP)
+   10:  SW        S4, 28 (SP)
+   14:  SW        S3, 24 (SP)
+   18:  SW        S2, 20 (SP)
+   1C:  SW        S0, 18 (SP)
+   20:  LW        S0, C (S1)
+   24:  LW        A1, 0 (S0)
+   28:  JAL       {Func:GetVariable}
+   2C:  ADDIU     S0, S0, 4
+   30:  LW        A1, 0 (S0)
+   34:  ADDIU     S0, S0, 4
+   38:  DADDU     A0, S1, R0
+   3C:  JAL       {Func:GetVariable}
+   40:  DADDU     S4, V0, R0
+   44:  LW        A1, 0 (S0)
+   48:  ADDIU     S0, S0, 4
+   4C:  DADDU     A0, S1, R0
+   50:  JAL       {Func:GetVariable}
+   54:  DADDU     S3, V0, R0
+   58:  LW        A1, 0 (S0)
+   5C:  ADDIU     S0, S0, 4
+   60:  DADDU     A0, S1, R0
+   64:  JAL       {Func:GetVariable}
+   68:  DADDU     S2, V0, R0
+   6C:  DADDU     A0, S1, R0
+   70:  LW        A1, 0 (S0)
+   74:  JAL       {Func:GetVariable}
+   78:  DADDU     S0, V0, R0
+   7C:  DADDU     A0, S4, R0
+   80:  MTC1      S3, F2
+   84:  NOP
+   88:  CVT.S.W   F2, F2
+   8C:  MFC1      A1, F2
+   90:  MTC1      S2, F2
+   94:  NOP
+   98:  CVT.S.W   F2, F2
+   9C:  MFC1      A2, F2
+   A0:  MTC1      S0, F2
+   A4:  NOP
+   A8:  CVT.S.W   F2, F2
+   AC:  MFC1      A3, F2
+   B0:  MTC1      V0, F0
+   B4:  NOP
+   B8:  CVT.S.W   F0, F0
+   BC:  JAL       8006FEF0
+   C0:  SWC1      F0, 10 (SP)
+   C4:  LW        RA, 2C (SP)
+   C8:  LW        S4, 28 (SP)
+   CC:  LW        S3, 24 (SP)
+   D0:  LW        S2, 20 (SP)
+   D4:  LW        S1, 1C (SP)
+   D8:  LW        S0, 18 (SP)
+   DC:  ADDIU     V0, R0, 2
+   E0:  JR        RA
+   E4:  ADDIU     SP, SP, 30
+
+#new:NpcSettings $NpcSettings_80242580_hos_01
+00000000 001A0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80242604_hos_01
+    0:  Set  *Var[A]  00000000 
+   10:  Label    00000000 
+   1C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   34:  If  *Var[1]  >=  000000F5 
+   44:  	Call     IsPlayerWithin ( FFFFFFE2 FFFFFF5B 000000B4 *Var[3] )
+   60:  	If  *Var[3]  ==  00000001 
+   70:  		Goto     0000000A 
+   7C:  	EndIf
+   84:  EndIf
+   8C:  Wait     00000001 
+   98:  Goto     00000000 
+   A4:  Label    0000000A 
+   B0:  Set  *Var[A]  00000001 
+   C0:  Call     FadeOutMusic 	( 00000000 000007D0 )
+   D4:  Wait     0000003C 
+   E0:  Label    00000014 
+   EC:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  104:  If  *Var[1]  <  000000F5 
+  114:  	Call     IsPlayerWithin ( FFFFFFE2 FFFFFF5B 000000B4 *Var[3] )
+  130:  	If  *Var[3]  ==  00000000 
+  140:  		Goto     0000001E 
+  14C:  	EndIf
+  154:  EndIf
+  15C:  Wait     00000001 
+  168:  Goto     00000014 
+  174:  Label    0000001E 
+  180:  Call     SetMusicTrack 	( 00000000 .Song:ShootingStarSummit 00000000 00000008 )
+  19C:  Wait     0000001E 
+  1A8:  Goto     00000000 
+  1B4:  Return
+  1BC:  End
+
+#new:Script $Script_802427C8_hos_01
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  Call     DisablePartnerAI 	( 00000000 )
+   20:  Call     UseSettingsFrom 	( .Default FFFFFFDD 000000FA FFFFFF6F )
+   3C:  Call     SetPanTarget 	( .Default FFFFFFDD 000000FA FFFFFF6F )
+   58:  Call     SetCamDistance ( .Default 000001C2 )
+   6C:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-5.5] )
+   84:  Call     SetCamSpeed 	( .Default *Fixed[0.5] )
+   98:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   B0:  Call     802D2C14 ( 00000002 )
+   C0:  Call     SetNpcFlagBits ( .Npc:Partner 00000100 .True )
+   D8:  Thread
+   E0:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   F8:  	Add  *Var[2]  0000001E 
+  108:  	Call     SetNpcJumpscale 	( .Npc:Partner 00000000 )
+  11C:  	Call     NpcJump0    	( .Npc:Partner *Var[0] *Var[1] *Var[2] 0000000F )
+  13C:  	Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+  150:  EndThread
+  158:  Call     SetMusicTrack 	( 00000000 .Song:StarSpiritTheme 00000001 00000008 )
+  174:  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A0000 ) % Welcome Mario... We've been waiting for you.
+  194:  Wait     0000000A 
+  1A0:  Wait     00000001 
+  1AC:  Call     PlayerFaceNpc 	( 00000000 00000001 )
+  1C0:  Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  1D8:  Call     SetNpcJumpscale 	( 00000000 00000000 )
+  1EC:  Call     NpcJump0    	( 00000000 00000015 00000104 FFFFFEEB 0000001E )
+  20C:  Call     EnableModel 	( {Model:1} .True )
+  220:  Call     PlaySound   	( 00000064 )
+  230:  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  24C:  Add  *Var[1]  0000000F 
+  25C:  Call     $Function_80240CDC_hos_01 ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  27C:  Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  298:  Add  *Var[1]  0000000F 
+  2A8:  Call     $Function_80240CDC_hos_01 ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  2C8:  Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+  2E4:  Add  *Var[1]  0000000F 
+  2F4:  Call     $Function_80240CDC_hos_01 ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  314:  Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  330:  Add  *Var[1]  0000000F 
+  340:  Call     $Function_80240CDC_hos_01 ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  360:  Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+  37C:  Add  *Var[1]  0000000F 
+  38C:  Call     $Function_80240CDC_hos_01 ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  3AC:  Call     GetNpcPos   	( 00000006 *Var[0] *Var[1] *Var[2] )
+  3C8:  Add  *Var[1]  0000000F 
+  3D8:  Call     $Function_80240CDC_hos_01 ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  3F8:  Call     EnableModel 	( {Model:2} .True )
+  40C:  Call     EnableModel 	( {Model:3} .True )
+  420:  Call     EnableModel 	( {Model:4} .True )
+  434:  Call     EnableModel 	( {Model:5} .True )
+  448:  Call     EnableModel 	( {Model:6} .True )
+  45C:  Call     EnableModel 	( {Model:7} .True )
+  470:  SetF  *MapVar[1]  *Fixed[-80.0] 
+  480:  Loop     00000014 
+  48C:  	AddF  *MapVar[1]  *Fixed[6.0] 
+  49C:  	Wait     00000001 
+  4A8:  EndLoop
+  4B0:  Call     EnableNpcShadow 	( 00000001 .True )
+  4C4:  Call     EnableNpcShadow 	( 00000002 .True )
+  4D8:  Call     EnableNpcShadow 	( 00000003 .True )
+  4EC:  Call     EnableNpcShadow 	( 00000004 .True )
+  500:  Call     EnableNpcShadow 	( 00000005 .True )
+  514:  Call     EnableNpcShadow 	( 00000006 .True )
+  528:  Wait     0000000A 
+  534:  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A0001 ) % We're the 7 Star Spirits. Our job is to grant the  ...
+  554:  Call     SetCamDistance ( .Default 0000010E )
+  568:  Call     SetCamSpeed 	( .Default *Fixed[2.8007812] )
+  57C:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  598:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  5B4:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-6.5] )
+  5CC:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  5E4:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  5F8:  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A0002 ) % The other day, Bowser and his followers invaded ou ...
+  618:  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  634:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  650:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-6.899414] )
+  668:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  67C:  Call     SayMessage0 	( 00000001 00130002 00120001 00000000 000A0003 ) % The Star Rod... ...is powerful beyond belief. It c ...
+  69C:  Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  6B8:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  6D4:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-7.2998047] )
+  6EC:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  700:  Call     SayMessage0 	( 00000002 00140002 00130001 00000000 000A0004 ) % Bowser...that fiend... When he found out that we w ...
+  720:  Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+  73C:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  758:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-7.6992188] )
+  770:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  784:  Call     SayMessage0 	( 00000003 00150002 00150001 00000000 000A0005 ) % It is the responsibility of the 7 Star Spirits to  ...
+  7A4:  Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  7C0:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  7DC:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-7.6992188] )
+  7F4:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  808:  Call     SayMessage0 	( 00000004 00160002 00160001 00000000 000A0006 ) % Sadly... ...right now you are not strong enough to ...
+  828:  Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+  844:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  860:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-7.2998047] )
+  878:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  88C:  Call     SayMessage0 	( 00000005 00170003 00170001 00000000 000A0007 ) % Once we 7 Star Spirits are reunited in Star Haven, ...
+  8AC:  Call     GetNpcPos   	( 00000006 *Var[0] *Var[1] *Var[2] )
+  8C8:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  8E4:  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-6.899414] )
+  8FC:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  910:  Call     SayMessage0 	( 00000006 00180002 00180001 00000000 000A0008 ) % Mario...we are... 
+  930:  Set  *AreaByte[6]  000000C8 
+  940:  Wait     0000001E 
+  94C:  Set  *AreaByte[6]  00000000 
+  95C:  Wait     00000014 
+  968:  Call     SayMessage0 	( 00000006 00180002 00180001 00000000 000A0009 ) % Alas... We've nearly exhausted our power to talk t ...
+  988:  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  9A4:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  9C0:  Call     SetCamDistance ( .Default FFFFFED4 )
+  9D4:  Call     SetCamAngles 	( .Default *Fixed[16.0] *Fixed[-6.0] )
+  9EC:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  A00:  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A000A ) % In order to take the Star Rod back from Bowser...  ...
+  A20:  Set  *AreaByte[0]  000000C8 
+  A30:  Set  *AreaByte[1]  000000C8 
+  A40:  Set  *AreaByte[2]  000000C8 
+  A50:  Set  *AreaByte[3]  000000C8 
+  A60:  Set  *AreaByte[4]  000000C8 
+  A70:  Set  *AreaByte[5]  000000C8 
+  A80:  Set  *AreaByte[6]  000000C8 
+  A90:  Wait     0000001E 
+  A9C:  Set  *AreaByte[0]  00000000 
+  AAC:  Set  *AreaByte[1]  00000000 
+  ABC:  Set  *AreaByte[2]  00000000 
+  ACC:  Set  *AreaByte[3]  00000000 
+  ADC:  Set  *AreaByte[4]  00000000 
+  AEC:  Set  *AreaByte[5]  00000000 
+  AFC:  Set  *AreaByte[6]  00000000 
+  B0C:  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A000B ) % Please, Mario... you are our last hope... and we w ...
+  B2C:  Call     EnableNpcShadow 	( 00000000 .False )
+  B40:  Call     EnableNpcShadow 	( 00000001 .False )
+  B54:  Call     EnableNpcShadow 	( 00000002 .False )
+  B68:  Call     EnableNpcShadow 	( 00000003 .False )
+  B7C:  Call     EnableNpcShadow 	( 00000004 .False )
+  B90:  Call     EnableNpcShadow 	( 00000005 .False )
+  BA4:  Call     EnableNpcShadow 	( 00000006 .False )
+  BB8:  Call     FullyRestoreHPandFP 	( )
+  BC4:  Set  *AreaByte[0]  00000064 
+  BD4:  Set  *AreaByte[1]  00000064 
+  BE4:  Set  *AreaByte[2]  00000064 
+  BF4:  Set  *AreaByte[3]  00000064 
+  C04:  Set  *AreaByte[4]  00000064 
+  C14:  Set  *AreaByte[5]  00000064 
+  C24:  Set  *AreaByte[6]  00000064 
+  C34:  SetF  *MapVar[0]  *Fixed[40.0] 
+  C44:  SetF  *MapVar[1]  *Fixed[40.0] 
+  C54:  Loop     00000014 
+  C60:  	AddF  *MapVar[0]  *Fixed[-6.0] 
+  C70:  	AddF  *MapVar[1]  *Fixed[-6.0] 
+  C80:  	Wait     00000001 
+  C8C:  EndLoop
+  C94:  Set  *MapFlag[00]  00000001 
+  CA4:  Set  *AreaByte[0]  00000000 
+  CB4:  Set  *AreaByte[1]  00000000 
+  CC4:  Set  *AreaByte[2]  00000000 
+  CD4:  Set  *AreaByte[3]  00000000 
+  CE4:  Set  *AreaByte[4]  00000000 
+  CF4:  Set  *AreaByte[5]  00000000 
+  D04:  Set  *AreaByte[6]  00000000 
+  D14:  Call     EnableModel 	( {Model:1} .False )
+  D28:  Call     EnableModel 	( {Model:2} .False )
+  D3C:  Call     EnableModel 	( {Model:3} .False )
+  D50:  Call     EnableModel 	( {Model:4} .False )
+  D64:  Call     EnableModel 	( {Model:5} .False )
+  D78:  Call     EnableModel 	( {Model:6} .False )
+  D8C:  Call     EnableModel 	( {Model:7} .False )
+  DA0:  Call     DisablePartnerAI 	( 00000000 )
+  DB0:  Wait     0000000A 
+  DBC:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  DD4:  Add  *Var[0]  00000014 
+  DE4:  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  E00:  Call     SetCamDistance ( .Default 0000012C )
+  E14:  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  E28:  Call     $Function_80240CB0_hos_01 ( 00000001 )
+  E38:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  E50:  Add  *Var[0]  0000001E 
+  E60:  Add  *Var[2]  0000001E 
+  E70:  Call     SetNpcSpeed 	( .Npc:Partner *Fixed[2.0] )
+  E84:  Call     MoveNpcTo   	( .Npc:Partner *Var[0] *Var[2] 00000000 )
+  EA0:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  EB4:  Wait     0000000A 
+  EC0:  Call     PlayerFaceNpc 	( .Npc:Partner 00000000 )
+  ED4:  Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000A000C ) % Mario... It looks like things are a lot more serio ...
+  EF4:  Call     EnablePartnerAI 	( )
+  F00:  Thread
+  F08:  	Set  *StoryProgress  FFFFFF96 
+  F18:  	Call     ResetCam    	( .Default *Fixed[1.5] )
+  F2C:  EndThread
+  F34:  Call     FadeOutMusic 	( 00000000 00000BB8 )
+  F48:  Wait     0000000A 
+  F54:  Call     DisablePlayerInput 	( .False )
+  F64:  Return
+  F6C:  End
+
+#new:Script $Script_8024373C_hos_01
+    0:  Exec     $Script_802427C8_hos_01 
+    C:  Return
+   14:  End
+
+#new:Script $Script_80243758_hos_01
+    0:  Set  *AreaByte[0]  00000000 
+   10:  Set  *AreaByte[1]  00000000 
+   20:  Set  *AreaByte[2]  00000000 
+   30:  Set  *AreaByte[3]  00000000 
+   40:  Set  *AreaByte[4]  00000000 
+   50:  Set  *AreaByte[5]  00000000 
+   60:  Set  *AreaByte[6]  00000000 
+   70:  Thread
+   78:  	Loop     
+   84:  		If  *AreaByte[0]  ==  00000000 
+   94:  			Call     RandInt     	( 0000002D *Var[1] )
+   A8:  			Add  *Var[1]  00000069 
+   B8:  			Set  *AreaByte[0]  000000C8 
+   C8:  			Wait     0000000A 
+   D4:  			Set  *AreaByte[0]  00000000 
+   E4:  			Wait     *Var[1] 
+   F0:  		Else
+   F8:  			Wait     00000001 
+  104:  		EndIf
+  10C:  	EndLoop
+  114:  EndThread
+  11C:  Thread
+  124:  	Loop     
+  130:  		If  *AreaByte[1]  ==  00000000 
+  140:  			Call     RandInt     	( 0000002D *Var[1] )
+  154:  			Add  *Var[1]  00000069 
+  164:  			Set  *AreaByte[1]  000000C8 
+  174:  			Wait     0000000A 
+  180:  			Set  *AreaByte[1]  00000000 
+  190:  			Wait     *Var[1] 
+  19C:  		Else
+  1A4:  			Wait     00000001 
+  1B0:  		EndIf
+  1B8:  	EndLoop
+  1C0:  EndThread
+  1C8:  Thread
+  1D0:  	Loop     
+  1DC:  		If  *AreaByte[2]  ==  00000000 
+  1EC:  			Call     RandInt     	( 0000002D *Var[1] )
+  200:  			Add  *Var[1]  00000069 
+  210:  			Set  *AreaByte[2]  000000C8 
+  220:  			Wait     0000000A 
+  22C:  			Set  *AreaByte[2]  00000000 
+  23C:  			Wait     *Var[1] 
+  248:  		Else
+  250:  			Wait     00000001 
+  25C:  		EndIf
+  264:  	EndLoop
+  26C:  EndThread
+  274:  Thread
+  27C:  	Loop     
+  288:  		If  *AreaByte[3]  ==  00000000 
+  298:  			Call     RandInt     	( 0000002D *Var[1] )
+  2AC:  			Add  *Var[1]  00000069 
+  2BC:  			Set  *AreaByte[3]  000000C8 
+  2CC:  			Wait     0000000A 
+  2D8:  			Set  *AreaByte[3]  00000000 
+  2E8:  			Wait     *Var[1] 
+  2F4:  		Else
+  2FC:  			Wait     00000001 
+  308:  		EndIf
+  310:  	EndLoop
+  318:  EndThread
+  320:  Thread
+  328:  	Loop     
+  334:  		If  *AreaByte[4]  ==  00000000 
+  344:  			Call     RandInt     	( 0000002D *Var[1] )
+  358:  			Add  *Var[1]  00000069 
+  368:  			Set  *AreaByte[4]  000000C8 
+  378:  			Wait     0000000A 
+  384:  			Set  *AreaByte[4]  00000000 
+  394:  			Wait     *Var[1] 
+  3A0:  		Else
+  3A8:  			Wait     00000001 
+  3B4:  		EndIf
+  3BC:  	EndLoop
+  3C4:  EndThread
+  3CC:  Thread
+  3D4:  	Loop     
+  3E0:  		If  *AreaByte[5]  ==  00000000 
+  3F0:  			Call     RandInt     	( 0000002D *Var[1] )
+  404:  			Add  *Var[1]  00000069 
+  414:  			Set  *AreaByte[5]  000000C8 
+  424:  			Wait     0000000A 
+  430:  			Set  *AreaByte[5]  00000000 
+  440:  			Wait     *Var[1] 
+  44C:  		Else
+  454:  			Wait     00000001 
+  460:  		EndIf
+  468:  	EndLoop
+  470:  EndThread
+  478:  Thread
+  480:  	Loop     
+  48C:  		If  *AreaByte[6]  ==  00000000 
+  49C:  			Call     RandInt     	( 0000002D *Var[1] )
+  4B0:  			Add  *Var[1]  00000069 
+  4C0:  			Set  *AreaByte[6]  000000C8 
+  4D0:  			Wait     0000000A 
+  4DC:  			Set  *AreaByte[6]  00000000 
+  4EC:  			Wait     *Var[1] 
+  4F8:  		Else
+  500:  			Wait     00000001 
+  50C:  		EndIf
+  514:  	EndLoop
+  51C:  EndThread
+  524:  Loop     
+  530:  	SetF  *Var[0]  00000000 
+  540:  	SetF  *Var[1]  00000000 
+  550:  	Loop     00000014 
+  55C:  		AddF  *Var[0]  *Fixed[4.0] 
+  56C:  		AddF  *Var[1]  *Fixed[4.0] 
+  57C:  		SetF  *Var[2]  *Var[0] 
+  58C:  		AddF  *Var[2]  *MapVar[0] 
+  59C:  		SetF  *Var[3]  *Var[1] 
+  5AC:  		AddF  *Var[3]  *MapVar[1] 
+  5BC:  		If  *Var[2]  <  00000000 
+  5CC:  			SetF  *Var[2]  *Fixed[0.0] 
+  5DC:  		EndIf
+  5E4:  		If  *Var[3]  <  00000000 
+  5F4:  			SetF  *Var[3]  *Fixed[0.0] 
+  604:  		EndIf
+  60C:  		Call     802CFD30 ( 00000000 0000000D 00000000 *AreaByte[0] 00000001 *Var[2] )
+  630:  		Call     802CFD30 ( 00000001 0000000D 00000000 *AreaByte[1] 00000001 *Var[3] )
+  654:  		Call     802CFD30 ( 00000002 0000000D 00000000 *AreaByte[2] 00000001 *Var[3] )
+  678:  		Call     802CFD30 ( 00000003 0000000D 00000000 *AreaByte[3] 00000001 *Var[3] )
+  69C:  		Call     802CFD30 ( 00000004 0000000D 00000000 *AreaByte[4] 00000001 *Var[3] )
+  6C0:  		Call     802CFD30 ( 00000005 0000000D 00000000 *AreaByte[5] 00000001 *Var[3] )
+  6E4:  		Call     802CFD30 ( 00000006 0000000D 00000000 *AreaByte[6] 00000001 *Var[3] )
+  708:  		Wait     00000001 
+  714:  	EndLoop
+  71C:  	Loop     00000014 
+  728:  		AddF  *Var[0]  *Fixed[-4.0] 
+  738:  		AddF  *Var[1]  *Fixed[-4.0] 
+  748:  		SetF  *Var[2]  *Var[0] 
+  758:  		AddF  *Var[2]  *MapVar[0] 
+  768:  		SetF  *Var[3]  *Var[1] 
+  778:  		AddF  *Var[3]  *MapVar[1] 
+  788:  		If  *Var[2]  <  00000000 
+  798:  			SetF  *Var[2]  *Fixed[0.0] 
+  7A8:  		EndIf
+  7B0:  		If  *Var[3]  <  00000000 
+  7C0:  			SetF  *Var[3]  *Fixed[0.0] 
+  7D0:  		EndIf
+  7D8:  		Call     802CFD30 ( 00000000 0000000D 00000000 *AreaByte[0] 00000001 *Var[2] )
+  7FC:  		Call     802CFD30 ( 00000001 0000000D 00000000 *AreaByte[1] 00000001 *Var[3] )
+  820:  		Call     802CFD30 ( 00000002 0000000D 00000000 *AreaByte[2] 00000001 *Var[3] )
+  844:  		Call     802CFD30 ( 00000003 0000000D 00000000 *AreaByte[3] 00000001 *Var[3] )
+  868:  		Call     802CFD30 ( 00000004 0000000D 00000000 *AreaByte[4] 00000001 *Var[3] )
+  88C:  		Call     802CFD30 ( 00000005 0000000D 00000000 *AreaByte[5] 00000001 *Var[3] )
+  8B0:  		Call     802CFD30 ( 00000006 0000000D 00000000 *AreaByte[6] 00000001 *Var[3] )
+  8D4:  		Wait     00000001 
+  8E0:  	EndLoop
+  8E8:  EndLoop
+  8F0:  Return
+  8F8:  End
+
+#new:Script $Script_Init_80244058_hos_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024373C_hos_01 )
+   14:  Call     BindNpcAux  	( .Npc:Self $Script_80243758_hos_01 )
+   28:  If  *StoryProgress  <  FFFFFF96 
+   38:  	Exec     $Script_80242604_hos_01 
+   44:  EndIf
+   4C:  If  *StoryProgress  >=  FFFFFF96 
+   5C:  	Call     SetNpcPos   	( 00000000 00000000 FFFFFC18 00000000 )
+   78:  	Call     SetNpcPos   	( 00000001 00000000 FFFFFC18 00000000 )
+   94:  	Call     SetNpcPos   	( 00000002 00000000 FFFFFC18 00000000 )
+   B0:  	Call     SetNpcPos   	( 00000003 00000000 FFFFFC18 00000000 )
+   CC:  	Call     SetNpcPos   	( 00000004 00000000 FFFFFC18 00000000 )
+   E8:  	Call     SetNpcPos   	( 00000005 00000000 FFFFFC18 00000000 )
+  104:  	Call     SetNpcPos   	( 00000006 00000000 FFFFFC18 00000000 )
+  120:  	Return
+  128:  EndIf
+  130:  Call     EnableNpcShadow 	( 00000001 .False )
+  144:  Call     EnableNpcShadow 	( 00000002 .False )
+  158:  Call     EnableNpcShadow 	( 00000003 .False )
+  16C:  Call     EnableNpcShadow 	( 00000004 .False )
+  180:  Call     EnableNpcShadow 	( 00000005 .False )
+  194:  Call     EnableNpcShadow 	( 00000006 .False )
+  1A8:  Set  *MapVar[0]  00000028 
+  1B8:  Set  *MapVar[1]  FFFFFFB0 
+  1C8:  Return
+  1D0:  End
+

@@ -1,0 +1,72 @@
+% automatically dumped from map nok_01
+
+#new:Npc $nok_01_8024E748_3E0
+00000005 $NpcSettings_802436CC_nok_01 00000000 00000000 00000000 
+00002909 $Script_Init_8024D100_nok_01 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 0000002D 00000000 FFFF8001 00000000 00000028 
+00000000 FFFFFFE9 000001F4 00000000 00000000 00000001 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008F0002 008F0005 008F0006 008F0006 008F0002 008F0002 008F0000 008F0000 
+008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 008F0000 
+00000000 00000000 00000000 001A006E % Koopa Troopas sunbathe in their shells when it's s ...
+
+#new:AISettings $AISettings_8024367C_nok_01
+    1.5 % move speed
+    60` % move time
+    30` % wait time
+    0.0 % alert radius
+    0.0
+    -1`
+    0.0 % chase speed
+    0`
+    0`
+    0.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_802436AC_nok_01
+    0:  Call     DoBasicAI   	( $AISettings_8024367C_nok_01 )
+   10:  Return
+   18:  End
+
+#new:NpcSettings $NpcSettings_802436CC_nok_01
+00000000 00230018 00000000 00000000 $Script_NpcAI_802436AC_nok_01 00000000 00000000 00000000 
+00000000 00000000 00630010 
+
+#new:Script $Script_8024C544_nok_01
+    0:  Return
+    8:  End
+
+#new:Script $Script_8024C554_nok_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFB5 
+   18:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C001C ) % The Koopa Bros. of the fortress used to live in th ...
+   38:  	Case  <  FFFFFFCB 
+   44:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C001D ) % I remember Kooper used to always talk about travel ...
+   64:  	Case  <  00000027 
+   70:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C001E ) % I finally bought a new shell. What do you think? D ...
+   90:  	Case  <  00000059 
+   9C:  		If  *Flag_NOK_2C  ==  00000000 
+   AC:  			Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C001F ) % Kent C. Koopa used to live in this village. But he ...
+   CC:  		Else
+   D4:  			Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0020 ) % ... Oh, did you say something?
+   F4:  		EndIf
+   FC:  	Case  >=  00000059 
+  108:  		Call     SayMessage0 	( .Npc:Self 008F0007 008F0002 00000000 000C0020 ) % ... Oh, did you say something?
+  128:  EndSwitch
+  130:  Return
+  138:  End
+
+#new:Script $Script_Init_8024D100_nok_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024C554_nok_01 )
+   14:  If  *StoryProgress  >=  00000059 
+   24:  	Call     BindNpcIdle 	( .Npc:Self $Script_8024C544_nok_01 )
+   38:  	Call     SetNpcAnimation 	( .Npc:Self 008F0000 )
+   4C:  EndIf
+   54:  Return
+   5C:  End
+

@@ -1,0 +1,80 @@
+% automatically dumped from map iwa_00
+
+#new:Npc $iwa_00_8024105C
+00000000 $NpcSettings_80240B28_iwa_00 00000000 00000000 00000000 
+00000400 00000000 00000000 00000000 00000000 
+{Items:10:HoneySyrup:A}
+{HP:20:70:2:50} {HP:30:60:2:50} {HP:50:50:2:40} {HP:80:40:2:40} {HP:100:30:2:30} {HP:None} {HP:None} {HP:None} 
+{FP:20:50:2:40} {FP:30:40:2:40} {FP:50:40:2:40} {FP:80:40:2:40} {FP:100:30:2:40} {FP:None} {FP:None} {FP:None} 
+{CoinBonus:0:1}
+00000000 00000000 00000000 00000032 00000000 FFFF8001 00000000 00000000 
+00000000 00000000 00000078 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+002F0019 002F0002 002F0003 002F0003 002F0019 002F0019 002F0009 002F0009 
+002F0019 002F0019 002F0019 002F0019 002F0019 002F0019 002F0019 002F0019 
+00000001 00000000 00000000 00000000 % no tattle string
+
+#new:Script $Script_80240790_iwa_00
+    0:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   14:  Call     SetNpcFlagBits ( .Npc:Self 00000004 .True )
+   2C:  Call     SetNpcFlagBits ( .Npc:Self 00000200 .True )
+   44:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   60:  Sub  *Var[1]  0000001E 
+   70:  Call     SetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   8C:  Return
+   94:  End
+
+#new:AISettings $AISettings_802408AC_iwa_00
+    1.8 % move speed
+    30` % move time
+    30` % wait time
+   90.0 % alert radius
+   70.0
+    2`
+    3.0 % chase speed
+    90`
+    25`
+  120.0 % chase radius
+   70.0
+    1`
+
+#new:Script $Script_NpcAI_802408DC_iwa_00
+    0:  Call     800445D4 ( *Var[0] )
+   10:  If  *Var[0]  ==  00000064 
+   20:  	Call     SetOwnerFlagBits 	( 00000020 .True )
+   34:  	Label    0000000A 
+   40:  	Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   5C:  	Call     IsPlayerWithin ( *Var[0] *Var[2] 00000050 *Var[3] )
+   78:  	If  *Var[3]  !=  00000001 
+   88:  		Wait     00000001 
+   94:  		Goto     0000000A 
+   A0:  	EndIf
+   A8:  	Call     GetOwnerNpcID 	( *Var[0] )
+   B8:  	Add  *Var[0]  00000001 
+   C8:  	Call     GetNpcPos   	( *Var[0] *Var[1] *Var[2] *Var[3] )
+   E4:  	Add  *Var[2]  0000001E 
+   F4:  	Call     SetNpcPos   	( *Var[0] *Var[1] *Var[2] *Var[3] )
+  110:  	Wait     00000001 
+  11C:  	Call     SetNpcFlagBits ( .Npc:Self 00000004 .False )
+  134:  	Call     EnableNpcShadow 	( .Npc:Self .True )
+  148:  	Call     SetNpcAnimation 	( .Npc:Self 002F000E )
+  15C:  	Call     GetNpcPos   	( .Npc:Self *Var[4] *Var[5] *Var[6] )
+  178:  	Add  *Var[5]  0000001E 
+  188:  	Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+  19C:  	Call     PlaySoundAtNpc ( .Npc:Self 00000323 00000000 )
+  1B4:  	Call     NpcJump0    	( .Npc:Self *Var[4] *Var[5] *Var[6] 00000014 )
+  1D4:  	Call     SetNpcPos   	( *Var[0] 00000000 FFFFFC18 00000000 )
+  1F0:  	Call     SetOwnerFlagBits 	( 00000020 .False )
+  204:  	Call     NpcFacePlayer 	( .Npc:Self 00000000 )
+  218:  	Call     SetOwnerFlagBits 	( 40000000 .True )
+  22C:  	Call     DoBasicAI   	( $AISettings_802408AC_iwa_00 )
+  23C:  	Return
+  244:  	End
+
+#new:NpcSettings $NpcSettings_80240B28_iwa_00
+00000000 00180016 $Script_80240790_iwa_00 00000000 $Script_NpcAI_802408DC_iwa_00 80077F70 00000000 8007809C 
+00000000 00000000 00080001 
+

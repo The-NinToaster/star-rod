@@ -1,0 +1,51 @@
+% automatically dumped from map flo_00
+
+#new:Npc $flo_00_80245BF4
+00000007 $NpcSettings_80242840_flo_00 00000000 00000000 00000000 
+00000D01 $Script_Init_80244DD0_flo_00 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00CC0001 00CC0001 00CC0001 00CC0001 00CC0001 00CC0001 00CC0001 00CC0001 
+00CC0001 00CC0001 00CC0001 00CC0001 00CC0001 00CC0001 00CC0001 00CC0001 
+00000000 00000000 00000000 001A00E2 % This is Lakilester's girlfriend,  Lakilulu. When t ...
+
+#new:NpcSettings $NpcSettings_80242840_flo_00
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80244C98_flo_00
+    0:  If  *StoryProgress  <=  00000035 
+   10:  	Call     SayMessage0 	( 00000007 00CC0004 00CC0001 00000000 00110032 ) % How're you doing, Lakilester? Are you becoming a b ...
+   30:  Else
+   38:  	Call     GetCurrentPartner 	( *Var[0] )
+   48:  	If  *Var[0]  ==  00000008 
+   58:  		Call     SayMessage0 	( 00000007 00CC0004 00CC0001 00000000 00110032 ) % How're you doing, Lakilester? Are you becoming a b ...
+   78:  		Wait     0000000A 
+   84:  		Call     DisablePartnerAI 	( 00000000 )
+   94:  		Call     SayMessage0 	( .Npc:Partner 0008000B 00080003 00000005 00110033 ) % Darn it, I told you not to call me Lakilester! Gah ...
+   B4:  		Call     SetNpcAnimation 	( .Npc:Partner 00080001 )
+   C8:  		Call     SayMessage1 	( .Npc:Partner 00080009 00080001 00000005 )
+   E4:  		Call     EnablePartnerAI 	( )
+   F0:  	Else
+   F8:  		Call     SayMessage0 	( 00000007 00CC0004 00CC0001 00000000 00110034 ) % Please take care of Lakilester. He acts like he's  ...
+  118:  	EndIf
+  120:  EndIf
+  128:  Return
+  130:  End
+
+#new:Script $Script_Init_80244DD0_flo_00
+    0:  If  *StoryProgress  >=  0000003A 
+   10:  	Call     BindNpcInteract 	( .Npc:Self $Script_80244C98_flo_00 )
+   24:  	Call     802CDF8C ( FFFFFFFF 00000024 0000001C )
+   3C:  	Call     SetNpcPos   	( .Npc:Self FFFFFF38 0000000F FFFFFED4 )
+   58:  Else
+   60:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   7C:  EndIf
+   84:  Return
+   8C:  End
+

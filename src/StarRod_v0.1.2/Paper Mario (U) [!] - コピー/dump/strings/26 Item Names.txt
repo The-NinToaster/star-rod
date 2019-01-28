@@ -1,0 +1,807 @@
+26-000
+Fire Flower[END]
+
+26-001
+Snowman Doll[END]
+
+26-002
+Thunder Rage[END]
+
+26-003
+Thunder Bolt[END]
+
+26-004
+Shooting Star[END]
+
+26-005
+Dusty Hammer[END]
+
+26-006
+Pebble[END]
+
+26-007
+Stone Cap[END]
+
+26-008
+Volt Shroom[END]
+
+26-009
+Mushroom[END]
+
+26-00A
+Super Shroom[END]
+
+26-00B
+Ultra Shroom[END]
+
+26-00C
+Life Shroom[END]
+
+26-00D
+Dried Shroom[END]
+
+26-00E
+Tasty Tonic[END]
+
+26-00F
+Super Soda[END]
+
+26-010
+Blue Berry[END]
+
+26-011
+Red Berry[END]
+
+26-012
+Yellow Berry[END]
+
+26-013
+Bubble Berry[END]
+
+26-014
+Lime[END]
+
+26-015
+Lemon[END]
+
+26-016
+Honey Syrup[END]
+
+26-017
+Maple Syrup[END]
+
+26-018
+Jammin' Jelly[END]
+
+26-019
+Whacka's Bump[END]
+
+26-01A
+Apple[END]
+
+26-01B
+Goomnut[END]
+
+26-01C
+Koopa Leaf[END]
+
+26-01D
+Dried Pasta[END]
+
+26-01E
+Dried Fruit[END]
+
+26-01F
+Strange Leaf[END]
+
+26-020
+Cake Mix[END]
+
+26-021
+Egg[END]
+
+26-022
+Coconut[END]
+
+26-023
+Melon[END]
+
+26-024
+Stinky Herb[END]
+
+26-025
+Iced Potato[END]
+
+26-026
+Sleepy Sheep[END]
+
+26-027
+POW Block[END]
+
+26-028
+Stop Watch[END]
+
+26-029
+Dizzy Dial[END]
+
+26-02A
+Fright Jar[END]
+
+26-02B
+Mystery?[END]
+
+26-02C
+Repel Gel[END]
+
+26-02D
+Spicy Soup[END]
+
+26-02E
+Apple Pie[END]
+
+26-02F
+Honey Shroom[END]
+
+26-030
+Maple Shroom[END]
+
+26-031
+Jelly Shroom[END]
+
+26-032
+Honey Super[END]
+
+26-033
+Maple Super[END]
+
+26-034
+Jelly Super[END]
+
+26-035
+Honey Ultra[END]
+
+26-036
+Maple Ultra[END]
+
+26-037
+Jelly Ultra[END]
+
+26-038
+Koopasta[END]
+
+26-039
+Fried Shroom[END]
+
+26-03A
+Hot Shroom[END]
+
+26-03B
+Shroom Steak[END]
+
+26-03C
+Shroom Cake[END]
+
+26-03D
+Sweet Shroom[END]
+
+26-03E
+Bland Meal[END]
+
+26-03F
+Yummy Meal[END]
+
+26-040
+Deluxe Feast[END]
+
+26-041
+Special Shake[END]
+
+26-042
+Healthy Juice[END]
+
+26-043
+Big Cookie[END]
+
+26-044
+Cake[END]
+
+26-045
+Mistake[END]
+
+26-046
+Koopa Tea[END]
+
+26-047
+Spaghetti[END]
+
+26-048
+Egg Missile[END]
+
+26-049
+Fried Egg[END]
+
+26-04A
+Honey Candy[END]
+
+26-04B
+Electro Pop[END]
+
+26-04C
+Fire Pop[END]
+
+26-04D
+Lime Candy[END]
+
+26-04E
+Coco Pop[END]
+
+26-04F
+Lemon Candy[END]
+
+26-050
+Jelly Pop[END]
+
+26-051
+Strange Cake[END]
+
+26-052
+Kooky Cookie[END]
+
+26-053
+Frozen Fries[END]
+
+26-054
+Potato Salad[END]
+
+26-055
+Nutty Cake[END]
+
+26-056
+Boiled Egg[END]
+
+26-057
+Yoshi Cookie[END]
+
+26-058
+Power Jump[END]
+
+26-059
+Mega Jump[END]
+
+26-05A
+Jump Charge[END]
+
+26-05B
+S. Jump Chg.[END]
+
+26-05C
+Sleep Stomp[END]
+
+26-05D
+Dizzy Stomp[END]
+
+26-05E
+Multibounce[END]
+
+26-05F
+Shrink Stomp[END]
+
+26-060
+D-Down Jump[END]
+
+26-061
+Power Bounce[END]
+
+26-062
+Power Smash[END]
+
+26-063
+Mega Smash[END]
+
+26-064
+Smash Charge[END]
+
+26-065
+S. Smash Chg.[END]
+
+26-066
+Hammer Throw[END]
+
+26-067
+Shrink Smash[END]
+
+26-068
+Spin Smash[END]
+
+26-069
+D-Down Pound[END]
+
+26-06A
+Quake Hammer[END]
+
+26-06B
+Power Quake[END]
+
+26-06C
+Mega Quake[END]
+
+26-06D
+Double Dip[END]
+
+26-06E
+Triple Dip[END]
+
+26-06F
+Group Focus[END]
+
+26-070
+Quick Change[END]
+
+26-071
+HP Plus[END]
+
+26-072
+FP Plus[END]
+
+26-073
+Power Plus[END]
+
+26-074
+Defend Plus[END]
+
+26-075
+Damage Dodge[END]
+
+26-076
+P-Up, D-Down[END]
+
+26-077
+P-Down, D-Up[END]
+
+26-078
+HP Drain[END]
+
+26-079
+Happy Heart[END]
+
+26-07A
+Happy Flower[END]
+
+26-07B
+Flower Saver[END]
+
+26-07C
+Heart Finder[END]
+
+26-07D
+Flower Finder[END]
+
+26-07E
+Deep Focus[END]
+
+26-07F
+Spike Shield[END]
+
+26-080
+Dodge Master[END]
+
+26-081
+Pretty Lucky[END]
+
+26-082
+Lucky Day[END]
+
+26-083
+Close Call[END]
+
+26-084
+Power Rush[END]
+
+26-085
+Last Stand[END]
+
+26-086
+Mega Rush[END]
+
+26-087
+First Attack[END]
+
+26-088
+Bump Attack[END]
+
+26-089
+Spin Attack[END]
+
+26-08A
+Dizzy Attack[END]
+
+26-08B
+Speedy Spin[END]
+
+26-08C
+Feeling Fine[END]
+
+26-08D
+Attack FX A[END]
+
+26-08E
+Attack FX D[END]
+
+26-08F
+Attack FX B[END]
+
+26-090
+Attack FX E[END]
+
+26-091
+Attack FX C[END]
+
+26-092
+Attack FX F[END]
+
+26-093
+All or Nothing[END]
+
+26-094
+Slow Go[END]
+
+26-095
+Ice Power[END]
+
+26-096
+Pay-Off[END]
+
+26-097
+Fire Shield[END]
+
+26-098
+Chill Out[END]
+
+26-099
+Zap Tap[END]
+
+26-09A
+Money Money[END]
+
+26-09B
+Right On![END]
+
+26-09C
+Runaway Pay[END]
+
+26-09D
+Refund[END]
+
+26-09E
+I Spy[END]
+
+26-09F
+Peekaboo[END]
+
+26-0A0
+Jump[END]
+
+26-0A1
+Spin Jump[END]
+
+26-0A2
+Tornado Jump[END]
+
+26-0A3
+Hammer[END]
+
+26-0A4
+Super Hammer[END]
+
+26-0A5
+Ultra Hammer[END]
+
+26-0A6
+Lucky Star[END]
+
+26-0A7
+Fortress Key[END]
+
+26-0A8
+Ruins Key[END]
+
+26-0A9
+Castle Key[END]
+
+26-0AA
+Palace Key[END]
+
+26-0AB
+Castle Key[END]
+
+26-0AC
+Castle Key[END]
+
+26-0AD
+Odd Key[END]
+
+26-0AE
+Dolly[END]
+
+26-0AF
+Kooper's Shell[END]
+
+26-0B0
+Pulse Stone[END]
+
+26-0B1
+Artifact[END]
+
+26-0B2
+Golden Jar[END]
+
+26-0B3
+Lunar Stone[END]
+
+26-0B4
+Pyramid Stone[END]
+
+26-0B5
+Diamond Stone[END]
+
+26-0B6
+Record[END]
+
+26-0B7
+Weight[END]
+
+26-0B8
+Boo's Portrait[END]
+
+26-0B9
+Mystical Key[END]
+
+26-0BA
+Storeroom Key[END]
+
+26-0BB
+Toy Train[END]
+
+26-0BC
+Frying Pan[END]
+
+26-0BD
+Dictionary[END]
+
+26-0BE
+Mystery Note[END]
+
+26-0BF
+Mailbag[END]
+
+26-0C0
+Magical Seed[END]
+
+26-0C1
+Magical Seed[END]
+
+26-0C2
+Magical Seed[END]
+
+26-0C3
+Magical Seed[END]
+
+26-0C4
+Crystal Berry[END]
+
+26-0C5
+Water Stone[END]
+
+26-0C6
+Magical Bean[END]
+
+26-0C7
+Fertile Soil[END]
+
+26-0C8
+Miracle Water[END]
+
+26-0C9
+Crystal Ball[END]
+
+26-0CA
+Calculator[END]
+
+26-0CB
+Cookbook[END]
+
+26-0CC
+Jade Raven[END]
+
+26-0CD
+Volcano Vase[END]
+
+26-0CE
+Warehouse Key[END]
+
+26-0CF
+Bucket[END]
+
+26-0D0
+Scarf[END]
+
+26-0D1
+Star Stone[END]
+
+26-0D2
+Red Key[END]
+
+26-0D3
+Blue Key[END]
+
+26-0D4
+Sneaky Parasol[END]
+
+26-0D5
+Prison Key[END]
+
+26-0D6
+Lyrics[END]
+
+26-0D7
+Melody[END]
+
+26-0D8
+Sugar[END]
+
+26-0D9
+Salt[END]
+
+26-0DA
+Egg[END]
+
+26-0DB
+Cream[END]
+
+26-0DC
+Strawberry[END]
+
+26-0DD
+Butter[END]
+
+26-0DE
+Cleanser[END]
+
+26-0DF
+Water[END]
+
+26-0E0
+Flour[END]
+
+26-0E1
+Milk[END]
+
+26-0E2
+First-Degree Card[END]
+
+26-0E3
+Second-Degree Card[END]
+
+26-0E4
+Third-Degree Card[END]
+
+26-0E5
+Fourth-Degree Card[END]
+
+26-0E6
+Diploma[END]
+
+26-0E7
+Ultra Stone[END]
+
+26-0E8
+Silver Credit[END]
+
+26-0E9
+Gold Credit[END]
+
+26-0EA
+Letter[END]
+
+26-0EB
+Letter[END]
+
+26-0EC
+Letter[END]
+
+26-0ED
+Letter[END]
+
+26-0EE
+Letter[END]
+
+26-0EF
+Letter[END]
+
+26-0F0
+Letter[END]
+
+26-0F1
+Letter[END]
+
+26-0F2
+Letter[END]
+
+26-0F3
+Letter[END]
+
+26-0F4
+Letter[END]
+
+26-0F5
+Letter[END]
+
+26-0F6
+Letter[END]
+
+26-0F7
+Letter[END]
+
+26-0F8
+Letter[END]
+
+26-0F9
+Letter[END]
+
+26-0FA
+Letter[END]
+
+26-0FB
+Letter[END]
+
+26-0FC
+Letter[END]
+
+26-0FD
+Letter[END]
+
+26-0FE
+Letter[END]
+
+26-0FF
+Letter[END]
+
+26-100
+Letter[END]
+
+26-101
+Letter[END]
+
+26-102
+Letter[END]
+
+26-103
+Koopa Legends[END]
+
+26-104
+Tape[END]
+
+26-105
+Autograph[END]
+
+26-106
+Empty Wallet[END]
+
+26-107
+Autograph[END]
+
+26-108
+Old Photo[END]
+
+26-109
+Glasses[END]
+
+26-10A
+Package[END]
+
+26-10B
+Red Jar[END]
+
+26-10C
+Star Piece[END]
+

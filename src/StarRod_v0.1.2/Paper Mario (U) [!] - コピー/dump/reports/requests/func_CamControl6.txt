@@ -1,0 +1,680 @@
+Function at 800309CC (0000BDCC)
+
+    0:  LWC1      F2, 18 (S0)
+    4:  LWC1      F0, C (S0)
+    8:  SUB.S     F22, F2, F0
+    C:  LWC1      F2, 20 (S0)
+   10:  LWC1      F0, 14 (S0)
+   14:  SUB.S     F2, F2, F0
+   18:  MTC1      R0, F12
+   1C:  NEG.S     F22, F22
+   20:  MFC1      A3, F22
+   24:  MFC1      A2, F2
+   28:  JAL       80029C80
+   2C:  MOV.S     F14, F12
+   30:  SWC1      F0, 0 (S1)
+   34:  LWC1      F0, 4 (S0)
+   38:  MTC1      R0, F28
+   3C:  NOP
+   40:  C.LT.S    F0, F28
+   44:  NOP
+   48:  BC1TL     .o50
+   4C:  NEG.S     F0, F0
+   50:  SWC1      F0, 4 (S1)
+   54:  LWC1      F0, 8 (S0)
+   58:  SWC1      F0, 8 (S1)
+   5C:  LWC1      F0, 24 (S0)
+   60:  SWC1      F0, C (S1)
+   64:  LWC1      F14, C (S0)
+   68:  LWC1      F28, 18 (S0)
+   6C:  SUB.S     F8, F28, F14
+   70:  MUL.S     F20, F8, F8
+   74:  NOP
+   78:  SUB.S     F2, F24, F14
+   7C:  MUL.S     F2, F2, F8
+   80:  NOP
+   84:  SWC1      F28, 14 (SP)
+   88:  LWC1      F12, 14 (S0)
+   8C:  LWC1      F28, 20 (S0)
+   90:  SUB.S     F6, F28, F12
+   94:  MUL.S     F18, F6, F6
+   98:  NOP
+   9C:  SUB.S     F0, F26, F12
+   A0:  MUL.S     F0, F0, F6
+   A4:  NOP
+   A8:  ADD.S     F4, F20, F18
+   AC:  ADD.S     F2, F2, F0
+   B0:  DIV.S     F4, F2, F4
+   B4:  MUL.S     F0, F4, F8
+   B8:  NOP
+   BC:  MUL.S     F4, F4, F6
+   C0:  NOP
+   C4:  ADD.S     F16, F0, F14
+   C8:  MOV.S     F22, F14
+   CC:  MOV.S     F14, F8
+   D0:  SUB.S     F8, F16, F22
+   D4:  MUL.S     F0, F14, F8
+   D8:  NOP
+   DC:  ADD.S     F10, F4, F12
+   E0:  MOV.S     F4, F12
+   E4:  MOV.S     F12, F6
+   E8:  SUB.S     F6, F10, F4
+   EC:  MUL.S     F2, F12, F6
+   F0:  NOP
+   F4:  SUB.S     F20, F24, F16
+   F8:  SWC1      F28, 18 (SP)
+   FC:  ADD.S     F0, F0, F2
+  100:  MTC1      R0, F28
+  104:  NOP
+  108:  C.LT.S    F0, F28
+  10C:  NOP
+  110:  BC1F      .o124
+  114:  SUB.S     F18, F26, F10
+  118:  MOV.S     F16, F22
+  11C:  J         80030B30
+  120:  MOV.S     F10, F4
+  124:  MUL.S     F2, F8, F8
+  128:  NOP
+  12C:  MUL.S     F6, F6, F6
+  130:  NOP
+  134:  MUL.S     F0, F14, F14
+  138:  NOP
+  13C:  MUL.S     F4, F12, F12
+  140:  NOP
+  144:  ADD.S     F2, F2, F6
+  148:  ADD.S     F0, F0, F4
+  14C:  C.LT.S    F0, F2
+  150:  NOP
+  154:  BC1F      .o164
+  158:  NOP
+  15C:  LWC1      F16, 14 (SP)
+  160:  LWC1      F10, 18 (SP)
+  164:  LW        V0, 28 (S0)
+  168:  BNEL      V0, R0, .o17C
+  16C:  SWC1      F16, 10 (S1)
+  170:  ADD.S     F16, F16, F20
+  174:  ADD.S     F10, F10, F18
+  178:  SWC1      F16, 10 (S1)
+  17C:  SWC1      F30, 14 (S1)
+  180:  SWC1      F10, 18 (S1)
+  184:  BEQ       S7, R0, .o9F4
+  188:  NOP
+  18C:  LWC1      F0, 0 (S6)
+  190:  LIF       F4, 1.0
+  198:  NOP
+  19C:  C.EQ.S    F0, F4
+  1A0:  NOP
+  1A4:  BC1T      .o8D0
+  1A8:  NOP
+  1AC:  LW        A0, 0 (S4)
+  1B0:  ADDIU     V0, A0, 2
+  1B4:  SLTIU     V0, V0, 3
+  1B8:  BNE       V0, R0, .o8D0
+  1BC:  NOP
+  1C0:  LW        V1, 0 (A0)
+  1C4:  LW        V0, 0 (S0)
+  1C8:  BNE       V1, V0, .o8D0
+  1CC:  NOP
+  1D0:  LWC1      F2, 4 (A0)
+  1D4:  LWC1      F0, 4 (S0)
+  1D8:  C.EQ.S    F2, F0
+  1DC:  NOP
+  1E0:  BC1F      .o8D0
+  1E4:  NOP
+  1E8:  LWC1      F2, 8 (A0)
+  1EC:  LWC1      F0, 8 (S0)
+  1F0:  C.EQ.S    F2, F0
+  1F4:  NOP
+  1F8:  BC1F      .o8D0
+  1FC:  NOP
+  200:  LWC1      F2, 24 (A0)
+  204:  LWC1      F0, 24 (S0)
+  208:  C.EQ.S    F2, F0
+  20C:  NOP
+  210:  BC1F      .o8D0
+  214:  NOP
+  218:  LW        V1, 28 (A0)
+  21C:  LW        V0, 28 (S0)
+  220:  BNEL      V1, V0, .o8D0
+  224:  SWC1      F4, 0 (S6)
+  228:  J         8003129C
+  22C:  NOP
+  230:  LWC1      F4, 4 (S0)
+  234:  MTC1      R0, F0
+  238:  NOP
+  23C:  C.LT.S    F4, F0
+  240:  NOP
+  244:  BC1F      .o268
+  248:  NOP
+  24C:  LWC1      F0, C (S0)
+  250:  SUB.S     F22, F24, F0
+  254:  LWC1      F2, 14 (S0)
+  258:  NEG.S     F0, F4
+  25C:  SWC1      F0, 4 (S1)
+  260:  J         80030C48
+  264:  SUB.S     F20, F26, F2
+  268:  LWC1      F0, C (S0)
+  26C:  SUB.S     F22, F0, F24
+  270:  LWC1      F0, 14 (S0)
+  274:  SWC1      F4, 4 (S1)
+  278:  SUB.S     F20, F0, F26
+  27C:  MFC1      A2, F22
+  280:  MTC1      R0, F12
+  284:  MFC1      A3, F20
+  288:  JAL       80029C80
+  28C:  MOV.S     F14, F12
+  290:  SWC1      F0, 0 (S1)
+  294:  LWC1      F0, 8 (S0)
+  298:  SWC1      F0, 8 (S1)
+  29C:  LWC1      F0, 24 (S0)
+  2A0:  SWC1      F0, C (S1)
+  2A4:  LW        V0, 28 (S0)
+  2A8:  BEQL      V0, R0, .o3A4
+  2AC:  SWC1      F24, 10 (S1)
+  2B0:  LWC1      F0, C (S0)
+  2B4:  SUB.S     F22, F24, F0
+  2B8:  MUL.S     F2, F22, F22
+  2BC:  NOP
+  2C0:  LWC1      F0, 14 (S0)
+  2C4:  SUB.S     F20, F26, F0
+  2C8:  MUL.S     F0, F20, F20
+  2CC:  NOP
+  2D0:  ADD.S     F24, F2, F0
+  2D4:  MTC1      R0, F28
+  2D8:  NOP
+  2DC:  C.EQ.S    F24, F28
+  2E0:  NOP
+  2E4:  BC1T      .o3AC
+  2E8:  NOP
+  2EC:  SQRT.S    F6, F24
+  2F0:  C.EQ.S    F6, F6
+  2F4:  NOP
+  2F8:  BC1T      .o30C
+  2FC:  NOP
+  300:  JAL       80061EF0
+  304:  MOV.S     F12, F24
+  308:  MOV.S     F6, F0
+  30C:  LWC1      F4, 18 (S0)
+  310:  LWC1      F0, C (S0)
+  314:  SUB.S     F4, F4, F0
+  318:  MUL.S     F4, F4, F4
+  31C:  NOP
+  320:  LWC1      F2, 14 (S0)
+  324:  LWC1      F0, 20 (S0)
+  328:  SUB.S     F0, F0, F2
+  32C:  MUL.S     F0, F0, F0
+  330:  NOP
+  334:  LIF       F2, 1.0
+  33C:  ADD.S     F12, F4, F0
+  340:  DIV.S     F24, F2, F6
+  344:  SQRT.S    F2, F12
+  348:  C.EQ.S    F2, F2
+  34C:  NOP
+  350:  BC1T      .o364
+  354:  NOP
+  358:  JAL       80061EF0
+  35C:  NOP
+  360:  MOV.S     F2, F0
+  364:  MUL.S     F0, F22, F2
+  368:  NOP
+  36C:  MUL.S     F4, F20, F2
+  370:  NOP
+  374:  MUL.S     F0, F0, F24
+  378:  NOP
+  37C:  LWC1      F2, C (S0)
+  380:  ADD.S     F2, F2, F0
+  384:  MUL.S     F4, F4, F24
+  388:  NOP
+  38C:  SWC1      F30, 14 (S1)
+  390:  SWC1      F2, 10 (S1)
+  394:  LWC1      F0, 14 (S0)
+  398:  ADD.S     F0, F0, F4
+  39C:  J         80030D78
+  3A0:  SWC1      F0, 18 (S1)
+  3A4:  SWC1      F30, 14 (S1)
+  3A8:  SWC1      F26, 18 (S1)
+  3AC:  BEQ       S7, R0, .o9F4
+  3B0:  NOP
+  3B4:  LWC1      F0, 0 (S6)
+  3B8:  LIF       F4, 1.0
+  3C0:  NOP
+  3C4:  C.EQ.S    F0, F4
+  3C8:  NOP
+  3CC:  BC1T      .o8D0
+  3D0:  NOP
+  3D4:  LW        A0, 0 (S4)
+  3D8:  ADDIU     V0, A0, 2
+  3DC:  SLTIU     V0, V0, 3
+  3E0:  BNE       V0, R0, .o8D0
+  3E4:  NOP
+  3E8:  LW        V1, 0 (A0)
+  3EC:  LW        V0, 0 (S0)
+  3F0:  BNE       V1, V0, .o8D0
+  3F4:  NOP
+  3F8:  LWC1      F2, 4 (A0)
+  3FC:  LWC1      F0, 4 (S0)
+  400:  C.EQ.S    F2, F0
+  404:  NOP
+  408:  BC1F      .o8D0
+  40C:  NOP
+  410:  LWC1      F2, 8 (A0)
+  414:  LWC1      F0, 8 (S0)
+  418:  C.EQ.S    F2, F0
+  41C:  NOP
+  420:  BC1F      .o8D0
+  424:  NOP
+  428:  LWC1      F2, 24 (A0)
+  42C:  LWC1      F0, 24 (S0)
+  430:  C.EQ.S    F2, F0
+  434:  NOP
+  438:  BC1F      .o8D0
+  43C:  NOP
+  440:  LW        V1, 28 (A0)
+  444:  LW        V0, 28 (S0)
+  448:  BEQ       V1, V0, .o8D0
+  44C:  NOP
+  450:  LWC1      F2, C (A0)
+  454:  LWC1      F0, C (S0)
+  458:  C.EQ.S    F2, F0
+  45C:  NOP
+  460:  BC1F      .o8D0
+  464:  NOP
+  468:  LWC1      F2, 14 (A0)
+  46C:  LWC1      F0, 14 (S0)
+  470:  C.EQ.S    F2, F0
+  474:  NOP
+  478:  BC1TL     .o8D0
+  47C:  SWC1      F4, 0 (S6)
+  480:  J         8003129C
+  484:  NOP
+  488:  LW        V0, 28 (S0)
+  48C:  BNE       V0, R0, .o604
+  490:  NOP
+  494:  LWC1      F18, C (S0)
+  498:  LWC1      F16, 18 (S0)
+  49C:  LWC1      F10, 14 (S0)
+  4A0:  LWC1      F12, 20 (S0)
+  4A4:  LWC1      F4, 10 (S0)
+  4A8:  LWC1      F14, 1C (S0)
+  4AC:  C.EQ.S    F18, F16
+  4B0:  NOP
+  4B4:  BC1F      .o4D4
+  4B8:  SUB.S     F8, F16, F4
+  4BC:  C.EQ.S    F10, F12
+  4C0:  NOP
+  4C4:  BC1F      .o4D4
+  4C8:  NOP
+  4CC:  MOV.S     F18, F4
+  4D0:  MOV.S     F10, F14
+  4D4:  MTC1      R0, F0
+  4D8:  NOP
+  4DC:  C.EQ.S    F8, F0
+  4E0:  NOP
+  4E4:  BC1FL     .o544
+  4E8:  SUB.S     F6, F10, F12
+  4EC:  SUB.S     F6, F16, F18
+  4F0:  MUL.S     F4, F8, F6
+  4F4:  NOP
+  4F8:  SUB.S     F2, F12, F26
+  4FC:  MUL.S     F2, F2, F8
+  500:  NOP
+  504:  SUB.S     F10, F10, F12
+  508:  SUB.S     F8, F12, F14
+  50C:  SUB.S     F0, F24, F16
+  510:  DIV.S     F2, F2, F8
+  514:  ADD.S     F0, F0, F2
+  518:  MUL.S     F2, F10, F0
+  51C:  NOP
+  520:  MUL.S     F6, F6, F0
+  524:  NOP
+  528:  DIV.S     F4, F4, F8
+  52C:  SUB.S     F4, F4, F10
+  530:  DIV.S     F2, F2, F4
+  534:  ADD.S     F8, F2, F24
+  538:  DIV.S     F6, F6, F4
+  53C:  J         80030F60
+  540:  ADD.S     F0, F6, F26
+  544:  SUB.S     F2, F12, F14
+  548:  MUL.S     F4, F6, F2
+  54C:  NOP
+  550:  SUB.S     F0, F16, F24
+  554:  MUL.S     F0, F0, F2
+  558:  NOP
+  55C:  SUB.S     F2, F26, F12
+  560:  DIV.S     F0, F0, F8
+  564:  ADD.S     F2, F2, F0
+  568:  MUL.S     F6, F6, F2
+  56C:  NOP
+  570:  SUB.S     F0, F16, F18
+  574:  MUL.S     F2, F0, F2
+  578:  NOP
+  57C:  DIV.S     F4, F4, F8
+  580:  SUB.S     F4, F4, F0
+  584:  DIV.S     F6, F6, F4
+  588:  ADD.S     F8, F6, F24
+  58C:  DIV.S     F2, F2, F4
+  590:  ADD.S     F0, F2, F26
+  594:  SWC1      F8, 10 (S1)
+  598:  SWC1      F30, 14 (S1)
+  59C:  BEQ       S5, R0, .o698
+  5A0:  SWC1      F0, 18 (S1)
+  5A4:  LWC1      F2, 18 (S0)
+  5A8:  LWC1      F0, C (S0)
+  5AC:  SUB.S     F2, F2, F0
+  5B0:  LWC1      F0, 14 (S0)
+  5B4:  MFC1      A2, F2
+  5B8:  LWC1      F2, 20 (S0)
+  5BC:  MTC1      R0, F20
+  5C0:  SUB.S     F2, F2, F0
+  5C4:  MOV.S     F12, F20
+  5C8:  MFC1      A3, F2
+  5CC:  JAL       80029C80
+  5D0:  MOV.S     F14, F20
+  5D4:  SWC1      F0, 0 (S1)
+  5D8:  LWC1      F0, 4 (S0)
+  5DC:  C.LT.S    F0, F20
+  5E0:  NOP
+  5E4:  BC1TL     .o5EC
+  5E8:  NEG.S     F0, F0
+  5EC:  SWC1      F0, 4 (S1)
+  5F0:  LWC1      F0, 8 (S0)
+  5F4:  SWC1      F0, 8 (S1)
+  5F8:  LWC1      F0, 24 (S0)
+  5FC:  J         80031064
+  600:  SWC1      F0, C (S1)
+  604:  BEQ       S5, R0, .o67C
+  608:  NOP
+  60C:  LWC1      F2, 18 (S0)
+  610:  LWC1      F0, C (S0)
+  614:  SUB.S     F2, F2, F0
+  618:  LWC1      F0, 14 (S0)
+  61C:  MFC1      A2, F2
+  620:  LWC1      F2, 20 (S0)
+  624:  MTC1      R0, F20
+  628:  SUB.S     F2, F2, F0
+  62C:  MOV.S     F12, F20
+  630:  MFC1      A3, F2
+  634:  JAL       80029C80
+  638:  MOV.S     F14, F20
+  63C:  SWC1      F0, 0 (S1)
+  640:  LWC1      F0, 4 (S0)
+  644:  C.LT.S    F0, F20
+  648:  NOP
+  64C:  BC1TL     .o654
+  650:  NEG.S     F0, F0
+  654:  SWC1      F0, 4 (S1)
+  658:  LWC1      F0, 8 (S0)
+  65C:  SWC1      F0, 8 (S1)
+  660:  LWC1      F0, 24 (S0)
+  664:  SWC1      F0, C (S1)
+  668:  LWC1      F0, 18 (S0)
+  66C:  SWC1      F0, 10 (S1)
+  670:  LWC1      F0, 20 (S0)
+  674:  J         80031060
+  678:  SWC1      F0, 18 (S1)
+  67C:  BEQL      S7, R0, .o698
+  680:  SWC1      F30, 14 (S1)
+  684:  LWC1      F0, 10 (S2)
+  688:  SWC1      F0, 10 (S1)
+  68C:  LWC1      F0, 18 (S2)
+  690:  SWC1      F0, 18 (S1)
+  694:  SWC1      F30, 14 (S1)
+  698:  J         80031298
+  69C:  ADDIU     V0, R0, FFFF
+  6A0:  LW        V0, 28 (S0)
+  6A4:  BNE       V0, R0, .o790
+  6A8:  NOP
+  6AC:  LWC1      F12, 10 (S0)
+  6B0:  LWC1      F6, 18 (S0)
+  6B4:  SUB.S     F6, F6, F12
+  6B8:  MUL.S     F4, F6, F6
+  6BC:  NOP
+  6C0:  LWC1      F10, 1C (S0)
+  6C4:  LWC1      F8, 20 (S0)
+  6C8:  SUB.S     F8, F8, F10
+  6CC:  MUL.S     F14, F8, F8
+  6D0:  NOP
+  6D4:  SUB.S     F2, F24, F12
+  6D8:  MUL.S     F2, F2, F6
+  6DC:  NOP
+  6E0:  SUB.S     F0, F26, F10
+  6E4:  MUL.S     F0, F0, F8
+  6E8:  NOP
+  6EC:  ADD.S     F4, F4, F14
+  6F0:  ADD.S     F2, F2, F0
+  6F4:  DIV.S     F4, F2, F4
+  6F8:  MUL.S     F6, F4, F6
+  6FC:  NOP
+  700:  MUL.S     F4, F4, F8
+  704:  NOP
+  708:  ADD.S     F2, F6, F12
+  70C:  MTC1      R0, F0
+  710:  ADD.S     F4, F4, F10
+  714:  SWC1      F30, 14 (S1)
+  718:  SWC1      F2, 10 (S1)
+  71C:  SWC1      F4, 18 (S1)
+  720:  LWC1      F8, 4 (S0)
+  724:  C.LT.S    F8, F0
+  728:  NOP
+  72C:  BC1F      .o750
+  730:  NOP
+  734:  LWC1      F0, C (S0)
+  738:  SUB.S     F22, F2, F0
+  73C:  LWC1      F2, 14 (S0)
+  740:  NEG.S     F0, F8
+  744:  SWC1      F0, 4 (S1)
+  748:  J         80031130
+  74C:  SUB.S     F20, F4, F2
+  750:  LWC1      F0, C (S0)
+  754:  SUB.S     F22, F0, F2
+  758:  LWC1      F0, 14 (S0)
+  75C:  SWC1      F8, 4 (S1)
+  760:  SUB.S     F20, F0, F4
+  764:  MFC1      A2, F22
+  768:  MTC1      R0, F12
+  76C:  MFC1      A3, F20
+  770:  JAL       80029C80
+  774:  MOV.S     F14, F12
+  778:  SWC1      F0, 0 (S1)
+  77C:  LWC1      F0, 8 (S0)
+  780:  SWC1      F0, 8 (S1)
+  784:  LWC1      F0, 24 (S0)
+  788:  J         80031208
+  78C:  SWC1      F0, C (S1)
+  790:  BEQ       S5, R0, .o820
+  794:  NOP
+  798:  LWC1      F6, 4 (S0)
+  79C:  MTC1      R0, F0
+  7A0:  NOP
+  7A4:  C.LT.S    F6, F0
+  7A8:  NOP
+  7AC:  BC1F      .o7D8
+  7B0:  NOP
+  7B4:  LWC1      F2, 18 (S0)
+  7B8:  LWC1      F0, C (S0)
+  7BC:  SUB.S     F22, F2, F0
+  7C0:  LWC1      F4, 20 (S0)
+  7C4:  LWC1      F2, 14 (S0)
+  7C8:  NEG.S     F0, F6
+  7CC:  SWC1      F0, 4 (S1)
+  7D0:  J         800311C0
+  7D4:  SUB.S     F20, F4, F2
+  7D8:  LWC1      F2, C (S0)
+  7DC:  LWC1      F0, 18 (S0)
+  7E0:  SUB.S     F22, F2, F0
+  7E4:  LWC1      F2, 14 (S0)
+  7E8:  LWC1      F0, 20 (S0)
+  7EC:  SWC1      F6, 4 (S1)
+  7F0:  SUB.S     F20, F2, F0
+  7F4:  MFC1      A2, F22
+  7F8:  MTC1      R0, F12
+  7FC:  MFC1      A3, F20
+  800:  JAL       80029C80
+  804:  MOV.S     F14, F12
+  808:  SWC1      F0, 0 (S1)
+  80C:  LWC1      F0, 8 (S0)
+  810:  SWC1      F0, 8 (S1)
+  814:  LWC1      F0, 24 (S0)
+  818:  J         800311F4
+  81C:  SWC1      F0, C (S1)
+  820:  BEQL      S7, R0, .o83C
+  824:  SWC1      F30, 14 (S1)
+  828:  LWC1      F0, 18 (S0)
+  82C:  SWC1      F0, 10 (S1)
+  830:  LWC1      F0, 20 (S0)
+  834:  SWC1      F0, 18 (S1)
+  838:  SWC1      F30, 14 (S1)
+  83C:  J         80031298
+  840:  ADDIU     V0, R0, FFFF
+  844:  SWC1      F24, 10 (S1)
+  848:  SWC1      F30, 14 (S1)
+  84C:  J         8003129C
+  850:  SWC1      F26, 18 (S1)
+  854:  LWC1      F2, 18 (S0)
+  858:  LWC1      F0, C (S0)
+  85C:  SUB.S     F2, F2, F0
+  860:  LWC1      F0, 14 (S0)
+  864:  MFC1      A2, F2
+  868:  LWC1      F2, 20 (S0)
+  86C:  MTC1      R0, F20
+  870:  SUB.S     F2, F2, F0
+  874:  MOV.S     F12, F20
+  878:  MFC1      A3, F2
+  87C:  JAL       80029C80
+  880:  MOV.S     F14, F20
+  884:  SWC1      F0, 0 (S1)
+  888:  LWC1      F0, 4 (S0)
+  88C:  C.LT.S    F0, F20
+  890:  NOP
+  894:  BC1TL     .o89C
+  898:  NEG.S     F0, F0
+  89C:  SWC1      F0, 4 (S1)
+  8A0:  LWC1      F0, 8 (S0)
+  8A4:  SWC1      F0, 8 (S1)
+  8A8:  LWC1      F0, 24 (S0)
+  8AC:  SWC1      F0, C (S1)
+  8B0:  LWC1      F0, 18 (S0)
+  8B4:  SWC1      F0, 10 (S1)
+  8B8:  LWC1      F0, 1C (S0)
+  8BC:  SWC1      F0, 14 (S1)
+  8C0:  LWC1      F0, 20 (S0)
+  8C4:  ADDIU     V0, R0, FFFE
+  8C8:  SWC1      F0, 18 (S1)
+  8CC:  SW        V0, 0 (S4)
+  8D0:  BEQ       S7, R0, .o9F4
+  8D4:  ADDIU     V0, R0, 5
+  8D8:  LW        V1, 0 (S0)
+  8DC:  BEQ       V1, V0, .o8FC
+  8E0:  NOP
+  8E4:  LWC1      F2, 0 (S2)
+  8E8:  LWC1      F0, 0 (S3)
+  8EC:  C.EQ.S    F2, F0
+  8F0:  NOP
+  8F4:  BC1T      .o9F4
+  8F8:  NOP
+  8FC:  LWC1      F0, 0 (S2)
+  900:  LWC1      F2, 0 (S3)
+  904:  SUB.S     F0, F0, F2
+  908:  LIF       F2, 3.0
+  910:  ABS.S     F0, F0
+  914:  C.LT.S    F0, F2
+  918:  NOP
+  91C:  BC1F      .o9F4
+  920:  NOP
+  924:  LWC1      F0, 4 (S2)
+  928:  LWC1      F2, 4 (S3)
+  92C:  SUB.S     F0, F0, F2
+  930:  LIF       F4, 10.0
+  938:  ABS.S     F0, F0
+  93C:  C.LT.S    F0, F4
+  940:  NOP
+  944:  BC1F      .o9F4
+  948:  NOP
+  94C:  LWC1      F0, 8 (S2)
+  950:  LWC1      F2, 8 (S3)
+  954:  SUB.S     F0, F0, F2
+  958:  LIF       F6, 1.0
+  960:  ABS.S     F0, F0
+  964:  C.LT.S    F0, F6
+  968:  NOP
+  96C:  BC1F      .o9F4
+  970:  NOP
+  974:  LWC1      F0, C (S2)
+  978:  LWC1      F2, C (S3)
+  97C:  SUB.S     F0, F0, F2
+  980:  ABS.S     F0, F0
+  984:  C.LT.S    F0, F6
+  988:  NOP
+  98C:  BC1F      .o9F4
+  990:  NOP
+  994:  LWC1      F0, 10 (S2)
+  998:  LWC1      F2, 10 (S3)
+  99C:  SUB.S     F0, F0, F2
+  9A0:  ABS.S     F0, F0
+  9A4:  C.LT.S    F0, F4
+  9A8:  NOP
+  9AC:  BC1F      .o9F4
+  9B0:  NOP
+  9B4:  LWC1      F0, 14 (S2)
+  9B8:  LWC1      F2, 14 (S3)
+  9BC:  SUB.S     F0, F0, F2
+  9C0:  ABS.S     F0, F0
+  9C4:  C.LT.S    F0, F4
+  9C8:  NOP
+  9CC:  BC1F      .o9F4
+  9D0:  NOP
+  9D4:  LWC1      F0, 18 (S2)
+  9D8:  LWC1      F2, 18 (S3)
+  9DC:  SUB.S     F0, F0, F2
+  9E0:  ABS.S     F0, F0
+  9E4:  C.LT.S    F0, F4
+  9E8:  NOP
+  9EC:  BC1TL     .o9F4
+  9F0:  SWC1      F6, 0 (S6)
+  9F4:  LW        V1, 0 (S4)
+  9F8:  ADDIU     V0, R0, FFFF
+  9FC:  BNE       V1, V0, .oA84
+  A00:  NOP
+  A04:  BEQ       S7, R0, .oA48
+  A08:  NOP
+  A0C:  LWC1      F6, 10 (S2)
+  A10:  LWC1      F0, 10 (S3)
+  A14:  LWC1      F4, 14 (S2)
+  A18:  SUB.S     F6, F6, F0
+  A1C:  LWC1      F0, 14 (S3)
+  A20:  LWC1      F2, 18 (S2)
+  A24:  SUB.S     F4, F4, F0
+  A28:  LWC1      F0, 18 (S3)
+  A2C:  SUB.S     F2, F2, F0
+  A30:  SAF       F6, 800A08E4
+  A38:  SAF       F4, 800A08E8
+  A40:  SAF       F2, 800A08EC
+  A48:  LWC1      F0, 10 (S3)
+  A4C:  LAF       F2, 800A08E4
+  A54:  ADD.S     F0, F0, F2
+  A58:  LAF       F2, 800A08E8
+  A60:  SWC1      F0, 10 (S2)
+  A64:  LWC1      F0, 14 (S3)
+  A68:  ADD.S     F0, F0, F2
+  A6C:  LAF       F2, 800A08EC
+  A74:  SWC1      F0, 14 (S2)
+  A78:  LWC1      F0, 18 (S3)
+  A7C:  ADD.S     F0, F0, F2
+  A80:  SWC1      F0, 18 (S2)
+  A84:  LW        RA, 48 (SP)
+  A88:  LW        S7, 44 (SP)
+  A8C:  LW        S6, 40 (SP)
+  A90:  LW        S5, 3C (SP)
+  A94:  LW        S4, 38 (SP)
+  A98:  LW        S3, 34 (SP)
+  A9C:  LW        S2, 30 (SP)
+  AA0:  LW        S1, 2C (SP)
+  AA4:  LW        S0, 28 (SP)
+  AA8:  LDC1      F30, 78 (SP)
+  AAC:  LDC1      F28, 70 (SP)
+  AB0:  LDC1      F26, 68 (SP)
+  AB4:  LDC1      F24, 60 (SP)
+  AB8:  LDC1      F22, 58 (SP)
+  ABC:  LDC1      F20, 50 (SP)
+  AC0:  JR        RA
+  AC4:  ADDIU     SP, SP, 80

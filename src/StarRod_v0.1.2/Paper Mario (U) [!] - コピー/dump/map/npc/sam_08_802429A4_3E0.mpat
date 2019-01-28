@@ -1,0 +1,73 @@
+% automatically dumped from map sam_08
+
+#new:Npc $sam_08_802429A4_3E0
+00000002 $NpcSettings_8024222C_sam_08 00000000 00000000 00000000 
+00C40D09 $Script_Init_80242944_sam_08 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+004E0002 004E0003 004E0004 004E0004 004E0002 004E0002 004E000A 004E000A 
+004E0002 004E0002 004E0002 004E0002 004E0002 004E0002 004E0002 004E0002 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_8024222C_sam_08
+00000000 001E002D 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_802425DC_sam_08
+    0:  Label    00000000 
+    C:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   20:  Wait     00000001 
+   2C:  If  *Var[0]  ==  00000000 
+   3C:  	Goto     00000000 
+   48:  EndIf
+   50:  Call     StartBossBattle 	( .Song:SpecialBattle )
+   60:  Return
+   68:  End
+
+#new:Script $Script_8024264C_sam_08
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Call     SetNpcFlagBits ( 00000002 00000100 .True )
+   40:  		Call     SetNpcSpeed 	( 00000002 *Fixed[3.0] )
+   54:  		Call     SetNpcJumpscale 	( 00000002 *Fixed[1.5] )
+   68:  		Call     SetNpcAnimation 	( 00000002 004E0004 )
+   7C:  		Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+   98:  		Add  *Var[0]  00000032 
+   A8:  		Call     PlaySoundAtNpc ( 00000002 000002CA 00000000 )
+   C0:  		Call     NpcJump0    	( 00000002 *Var[0] *Var[1] *Var[2] 0000000D )
+   E0:  		Call     InterpPlayerYaw 	( 0000005A 00000000 )
+   F4:  		Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000000 )
+  10C:  		Add  *Var[0]  00000032 
+  11C:  		Call     PlaySoundAtNpc ( 00000002 000002CA 00000000 )
+  134:  		Call     NpcJump0    	( 00000002 *Var[0] *Var[1] *Var[2] 0000000D )
+  154:  		Add  *Var[0]  00000032 
+  164:  		Call     PlaySoundAtNpc ( 00000002 000002CA 00000000 )
+  17C:  		Call     NpcJump0    	( 00000002 *Var[0] *Var[1] *Var[2] 0000000D )
+  19C:  		Set  *StoryProgress  0000004B 
+  1AC:  		Call     SetPlayerFlagBits 	( 000000C0 .False )
+  1C0:  		Call     ModifyColliderFlags 	( 00000000 {Collider:o47} 7FFFFE00 )
+  1D8:  		Call     DisablePlayerInput 	( .False )
+  1E8:  		Add  *Var[0]  00000032 
+  1F8:  		Call     PlaySoundAtNpc ( 00000002 000002CA 00000000 )
+  210:  		Call     NpcJump0    	( 00000002 *Var[0] *Var[1] *Var[2] 00000014 )
+  230:  	Case  ==  00000001 
+  23C:  	Case  ==  00000002 
+  248:  EndSwitch
+  250:  Return
+  258:  End
+
+#new:Script $Script_Init_80242944_sam_08
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_802425DC_sam_08 )
+   14:  Call     BindNpcDefeat 	( .Npc:Self $Script_8024264C_sam_08 )
+   28:  If  *StoryProgress  >=  0000004B 
+   38:  	Call     RemoveNpc   	( .Npc:Self )
+   48:  EndIf
+   50:  Return
+   58:  End
+

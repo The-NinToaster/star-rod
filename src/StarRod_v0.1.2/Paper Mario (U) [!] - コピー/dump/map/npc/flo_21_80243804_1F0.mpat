@@ -1,0 +1,76 @@
+% automatically dumped from map flo_21
+
+#new:Npc $flo_21_80243804_1F0
+00000001 $NpcSettings_802417EC_flo_21 00000000 00000000 00000000 
+00040F01 $Script_Init_80243684_flo_21 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 
+007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 007C0001 
+00000000 00000000 $ExtraAnimationList_802437E0_flo_21 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_802417EC_flo_21
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80242290_flo_21
+    0:  SetF  *Var[0]  *Fixed[0.9501953] 
+   10:  SetF  *Var[1]  *Fixed[1.1005859] 
+   20:  Label    00000000 
+   2C:  Switch  *MapVar[D] 
+   38:  	Case  ==  00000000 
+   44:  		Set  *Var[3]  0000000A 
+   54:  		Set  *Var[2]  00000002 
+   64:  	Case  ==  00000001 
+   70:  		Set  *Var[3]  00000005 
+   80:  		Set  *Var[2]  00000001 
+   90:  	Default
+   98:  		Return
+   A0:  EndSwitch
+   A8:  Set  *Var[4]  *Var[3] 
+   B8:  Loop     *Var[4] 
+   C4:  	Call     SetNpcScale 	( 00000000 *Var[0] *Var[1] 00000001 )
+   E0:  	Call     SetNpcScale 	( 00000001 *Var[0] *Var[1] 00000001 )
+   FC:  	Call     SetNpcScale 	( 00000002 *Var[0] *Var[1] 00000001 )
+  118:  	AddF  *Var[0]  *Fixed[0.015625] 
+  128:  	SubF  *Var[1]  *Fixed[0.0107421875] 
+  138:  	Wait     *Var[2] 
+  144:  EndLoop
+  14C:  Set  *Var[4]  *Var[3] 
+  15C:  Loop     *Var[4] 
+  168:  	Call     SetNpcScale 	( 00000000 *Var[0] *Var[1] 00000001 )
+  184:  	Call     SetNpcScale 	( 00000001 *Var[0] *Var[1] 00000001 )
+  1A0:  	Call     SetNpcScale 	( 00000002 *Var[0] *Var[1] 00000001 )
+  1BC:  	SubF  *Var[0]  *Fixed[0.015625] 
+  1CC:  	AddF  *Var[1]  *Fixed[0.0107421875] 
+  1DC:  	Wait     *Var[2] 
+  1E8:  EndLoop
+  1F0:  Goto     00000000 
+  1FC:  Return
+  204:  End
+
+#new:Script $Script_802435D4_flo_21
+    0:  Return
+    8:  End
+
+#new:Script $Script_Init_80243684_flo_21
+    0:  If  *StoryProgress  <  00000038 
+   10:  	Call     SetNpcFlagBits2 	( .Npc:Self 00400000 00000001 )
+   28:  	Call     BindNpcDefeat 	( .Npc:Self $Script_802435D4_flo_21 )
+   3C:  	Call     SetNpcAnimation 	( .Npc:Self 007C0001 )
+   50:  	Exec     $Script_80242290_flo_21 
+   5C:  Else
+   64:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   80:  EndIf
+   88:  Return
+   90:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_802437E0_flo_21
+007C0000 007C0001 007C0002 007C0004 007C0005 007C0031 007C0019 007C002D 
+FFFFFFFF 
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SpriteSheet a="1" b="1">
+    <PaletteList>
+        <Palette id="00" src="Palette_00.png"/>
+    </PaletteList>
+    <RasterList>
+        <Raster id="00" palette="00" src="Raster_00.png"/>
+    </RasterList>
+    <AnimationList>
+        <Animation>
+            <Component x="-1" y="-31" z="0">
+                <Command val="1000"/>
+                <Command val="0002"/>
+                <Command val="2000"/>
+            </Component>
+        </Animation>
+    </AnimationList>
+</SpriteSheet>

@@ -1,0 +1,269 @@
+% automatically dumped from map nok_11
+
+#new:Npc $nok_11_8024589C
+00000007 $NpcSettings_80242A14_nok_11 00000000 00000000 00000000 
+00B44D04 $Script_Init_80245794_nok_11 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00470001 00470001 00470001 00470001 00470001 00470001 00470001 00470001 
+00470001 00470001 00470001 00470001 00470001 00470001 00470001 00470001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_80241F08_nok_11
+    0:  LAH       V0, 8010F29C
+    8:  SLTI      V0, V0, 64
+    C:  BNE       V0, R0, .o1C
+   10:  ADDIU     V0, R0, 1
+   14:  BEQ       R0, R0, .o20
+   18:  SW        R0, 84 (A0)
+        .o1C
+   1C:  SW        V0, 84 (A0)
+        .o20
+   20:  JR        RA
+   24:  ADDIU     V0, R0, 2
+
+#new:Function $Function_80241F30_nok_11
+    0:  LIA       V1, 8010F290
+    8:  LHU       V0, C (V1)
+    C:  ADDIU     V0, V0, FF9C
+   10:  SH        V0, C (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:Script $Script_80241FB0_nok_11
+    0:  Call     SetMusicTrack 	( 00000000 .Song:PleasantPath 00000000 00000008 )
+   1C:  Return
+   24:  End
+
+#new:NpcSettings $NpcSettings_80242A14_nok_11
+00000000 00440050 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024408C_nok_11
+    0:  Call     SayMessage0 	( .Npc:Self 00470002 00470001 00000000 000C0134 ) % Here, go ahead. See you again sometime!
+   20:  Return
+   28:  End
+
+#new:Script $Script_802440BC_nok_11
+    0:  Label    00000001 
+    C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  If  *AreaByte[2]  ==  00000000 
+   34:  	If  *Var[0]  >=  FFFFFEFC 
+   44:  		Goto     0000000A 
+   50:  	Else
+   58:  		Goto     00000002 
+   64:  	EndIf
+   6C:  Else
+   74:  	If  *Var[0]  <=  FFFFFFC9 
+   84:  		Goto     0000000A 
+   90:  	Else
+   98:  		Goto     00000002 
+   A4:  	EndIf
+   AC:  EndIf
+   B4:  Label    00000002 
+   C0:  Wait     00000001 
+   CC:  Goto     00000001 
+   D8:  Label    0000000A 
+   E4:  Call     DisablePlayerInput 	( .True )
+   F4:  Call     802D2B6C ( )
+  100:  Call     SetMusicTrack 	( 00000000 .Song:MinibossBattle 00000000 00000008 )
+  11C:  Call     SayMessage0 	( 00000008 00470002 00470001 00000000 000C012C ) % Hey, you in the hat! Wait!
+  13C:  If  *AreaByte[2]  ==  00000000 
+  14C:  	Set  *Var[0]  00000014 
+  15C:  Else
+  164:  	Set  *Var[0]  FFFFFFEC 
+  174:  EndIf
+  17C:  Call     UseSettings 	( .Default *Fixed[5.0] *Var[0] *Fixed[275.0] *Fixed[17.5] *Fixed[-12.0] )
+  1A0:  Call     SayMessage0 	( 00000008 00470002 00470001 00000000 000C012D ) % It's fine weather, isn't it? My name is Kent C. Ko ...
+  1C0:  Label    0000000F 
+  1CC:  Call     ShowCoinCounter 	( .True )
+  1DC:  Call     ShowChoice  	( 001E0045 ) % Pay Don't pay Fight 
+  1EC:  If  *Var[0]  ==  00000000 
+  1FC:  	Goto     0000001E 
+  208:  EndIf
+  210:  If  *Var[0]  ==  00000001 
+  220:  	Goto     00000032 
+  22C:  EndIf
+  234:  If  *AreaByte[2]  ==  00000000 
+  244:  	Set  *Var[0]  00000014 
+  254:  Else
+  25C:  	Set  *Var[0]  FFFFFFEC 
+  26C:  EndIf
+  274:  Call     ShowCoinCounter 	( .False )
+  284:  Call     SayMessage2 	( 00000008 00470002 00470001 00000000 000C012E ) % You want to fight? You're nuts! Look at me! I'll c ...
+  2A4:  Call     ShowCoinCounter 	( .True )
+  2B4:  Call     ShowChoice  	( 001E0045 ) % Pay Don't pay Fight 
+  2C4:  If  *Var[0]  ==  00000000 
+  2D4:  	Goto     0000001E 
+  2E0:  EndIf
+  2E8:  If  *Var[0]  ==  00000001 
+  2F8:  	Goto     00000032 
+  304:  EndIf
+  30C:  Call     ShowCoinCounter 	( .False )
+  31C:  Label    00000014 
+  328:  Call     SayMessage2 	( 00000008 00470002 00470001 00000000 000C0135 ) % Well, I have no choice... I warned you, though. Th ...
+  348:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  358:  If  *AreaByte[2]  ==  00000000 
+  368:  	Set  *Var[0]  00000014 
+  378:  Else
+  380:  	Set  *Var[0]  FFFFFFEC 
+  390:  EndIf
+  398:  Call     SayMessage0 	( 00000008 00470002 00470001 00000000 000C0136 ) % Wow. You must be really strong. I mean, beating a  ...
+  3B8:  Call     SetNpcAnimation 	( 00000008 00470005 )
+  3CC:  If  *AreaByte[2]  ==  00000000 
+  3DC:  	Set  *Var[0]  0000005A 
+  3EC:  Else
+  3F4:  	Set  *Var[0]  0000010E 
+  404:  EndIf
+  40C:  Call     InterpNpcYaw 	( 00000008 *Var[0] 00000000 )
+  424:  Wait     0000001E 
+  430:  If  *AreaByte[2]  ==  00000000 
+  440:  	Set  *Var[0]  0000007D 
+  450:  Else
+  458:  	Set  *Var[0]  FFFFFE52 
+  468:  EndIf
+  470:  Call     MoveNpcTo   	( 00000008 *Var[0] FFFFFFDB 00000028 )
+  48C:  Call     SetNpcPos   	( 00000008 00000000 FFFFFC18 00000000 )
+  4A8:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  4C4:  Call     ResetCam    	( .Default *Fixed[5.0] )
+  4D8:  Goto     00000064 
+  4E4:  Label    0000001E 
+  4F0:  Call     $Function_80241F08_nok_11 ( )
+  4FC:  If  *Var[0]  ==  00000001 
+  50C:  	Goto     00000028 
+  518:  EndIf
+  520:  Call     802D0A98 ( )
+  52C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  544:  If  *AreaByte[2]  ==  00000000 
+  554:  	Set  *Var[0]  FFFFFF29 
+  564:  Else
+  56C:  	Set  *Var[0]  FFFFFF9C 
+  57C:  EndIf
+  584:  Call     SetNpcAnimation 	( 00000008 00470003 )
+  598:  Call     MoveNpcTo   	( 00000008 *Var[0] *Var[2] 00000014 )
+  5B4:  Call     SetNpcAnimation 	( 00000008 00470001 )
+  5C8:  Call     $Function_80241F30_nok_11 ( )
+  5D4:  Call     ShowCoinCounter 	( .False )
+  5E4:  Call     SayMessage0 	( 00000008 00470002 00470001 00000000 000C0133 ) % Good doing business with you! Oh, the jingle of co ...
+  604:  Wait     00000014 
+  610:  Call     SetNpcAnimation 	( 00000008 00470003 )
+  624:  Call     MoveNpcTo   	( 00000008 FFFFFF59 FFFFFF9C 00000014 )
+  640:  Call     SetNpcFlagBits ( 00000008 00000100 .False )
+  658:  Call     BindNpcInteract 	( 00000008 $Script_8024408C_nok_11 )
+  66C:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  688:  Call     SetNpcAnimation 	( 00000008 00470001 )
+  69C:  If  *AreaByte[2]  ==  00000000 
+  6AC:  	Set  *Var[0]  0000010E 
+  6BC:  Else
+  6C4:  	Set  *Var[0]  0000005A 
+  6D4:  EndIf
+  6DC:  Call     InterpNpcYaw 	( 00000008 *Var[0] 00000000 )
+  6F4:  Wait     0000000A 
+  700:  Call     SayMessage0 	( 00000008 00470002 00470001 00000000 000C0134 ) % Here, go ahead. See you again sometime!
+  720:  Call     ResetCam    	( .Default *Fixed[5.0] )
+  734:  Goto     00000064 
+  740:  Label    00000028 
+  74C:  Call     ShowCoinCounter 	( .False )
+  75C:  Call     SayMessage2 	( 00000008 00470002 00470001 00000000 000C012F ) % Oh, you don't have any coins? Then you can't go th ...
+  77C:  Call     ResetCam    	( .Default *Fixed[5.0] )
+  790:  Exec     $Script_80241FB0_nok_11 
+  79C:  Wait     0000001E 
+  7A8:  Call     DisablePlayerInput 	( .False )
+  7B8:  Label    00000029 
+  7C4:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  7DC:  If  *AreaByte[2]  ==  00000000 
+  7EC:  	If  *Var[0]  >=  FFFFFF01 
+  7FC:  		Set  *Var[3]  FFFFFF00 
+  80C:  		Goto     0000002B 
+  818:  	Else
+  820:  		Goto     0000002A 
+  82C:  	EndIf
+  834:  Else
+  83C:  	If  *Var[0]  <=  FFFFFFC4 
+  84C:  		Set  *Var[3]  FFFFFFC5 
+  85C:  		Goto     0000002B 
+  868:  	Else
+  870:  		Goto     0000002A 
+  87C:  	EndIf
+  884:  EndIf
+  88C:  Label    0000002A 
+  898:  Wait     00000001 
+  8A4:  Goto     00000029 
+  8B0:  Label    0000002B 
+  8BC:  Call     DisablePlayerInput 	( .True )
+  8CC:  Call     802D2B6C ( )
+  8D8:  Call     SetPlayerPos 	( *Var[3] *Var[1] *Var[2] )
+  8F0:  Call     SayMessage0 	( 00000008 00470002 00470001 00000000 000C0130 ) % Bring some coins next time.
+  910:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  928:  Call     SetPlayerPos 	( *Var[3] *Var[1] *Var[2] )
+  940:  Call     DisablePlayerInput 	( .False )
+  950:  Goto     00000029 
+  95C:  Label    00000032 
+  968:  Call     ShowCoinCounter 	( .False )
+  978:  Call     SayMessage2 	( 00000008 00470002 00470001 00000000 000C0131 ) % Then you can't go through here. Tough luck. Take o ...
+  998:  Call     ResetCam    	( .Default *Fixed[5.0] )
+  9AC:  Exec     $Script_80241FB0_nok_11 
+  9B8:  Wait     0000001E 
+  9C4:  Call     DisablePlayerInput 	( .False )
+  9D4:  Label    00000033 
+  9E0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  9F8:  If  *AreaByte[2]  ==  00000000 
+  A08:  	If  *Var[0]  >=  FFFFFF01 
+  A18:  		Set  *Var[3]  FFFFFF00 
+  A28:  		Goto     00000035 
+  A34:  	Else
+  A3C:  		Goto     00000034 
+  A48:  	EndIf
+  A50:  Else
+  A58:  	If  *Var[0]  <=  FFFFFFC4 
+  A68:  		Set  *Var[3]  FFFFFFC5 
+  A78:  		Goto     00000035 
+  A84:  	Else
+  A8C:  		Goto     00000034 
+  A98:  	EndIf
+  AA0:  EndIf
+  AA8:  Label    00000034 
+  AB4:  Wait     00000001 
+  AC0:  Goto     00000033 
+  ACC:  Label    00000035 
+  AD8:  Call     DisablePlayerInput 	( .True )
+  AE8:  Call     802D2B6C ( )
+  AF4:  Call     SetMusicTrack 	( 00000000 .Song:MinibossBattle 00000000 00000008 )
+  B10:  Call     SetPlayerPos 	( *Var[3] *Var[1] *Var[2] )
+  B28:  Call     SayMessage0 	( 00000008 00470002 00470001 00000000 000C0132 ) % Oh, you changed your mind, and now you'll pay the  ...
+  B48:  If  *AreaByte[2]  ==  00000000 
+  B58:  	Set  *Var[0]  00000014 
+  B68:  Else
+  B70:  	Set  *Var[0]  FFFFFFEC 
+  B80:  EndIf
+  B88:  Call     UseSettings 	( .Default *Fixed[5.0] *Var[0] *Fixed[275.0] *Fixed[17.5] *Fixed[-12.0] )
+  BAC:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  BC4:  Call     SetPlayerPos 	( *Var[3] *Var[1] *Var[2] )
+  BDC:  Goto     0000000F 
+  BE8:  Label    00000064 
+  BF4:  Exec     $Script_80241FB0_nok_11 
+  C00:  Wait     0000001E 
+  C0C:  Call     DisablePlayerInput 	( .False )
+  C1C:  Return
+  C24:  End
+
+#new:Script $Script_80244CE8_nok_11
+    0:  Set  *Flag_NOK_2C  00000001 
+   10:  Call     80045640 ( )
+   1C:  Return
+   24:  End
+
+#new:Script $Script_Init_80245794_nok_11
+    0:  Call     BindNpcIdle 	( .Npc:Self $Script_802440BC_nok_11 )
+   14:  Call     BindNpcDefeat 	( .Npc:Self $Script_80244CE8_nok_11 )
+   28:  Call     EnableNpcShadow 	( .Npc:Self .False )
+   3C:  Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+   54:  Call     GetEntryID  	( *AreaByte[2] )
+   64:  Return
+   6C:  End
+

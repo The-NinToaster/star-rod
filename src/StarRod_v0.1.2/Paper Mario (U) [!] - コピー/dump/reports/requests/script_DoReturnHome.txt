@@ -1,0 +1,15 @@
+Script: DoReturnHome (001CA798)
+
+    0:  Call     GetActorPos 	( FFFFFF81 *Var[A] *Var[B] *Var[C] )
+   1C:  Call     SetGoalToHome 	( FFFFFF81 )
+   2C:  Call     GetGoalPos  	( FFFFFF81 *Var[D] *Var[E] *Var[F] )
+   48:  Call     GetDist2D   	( *Var[9] *Var[A] *Var[C] *Var[D] *Var[F] )
+   68:  If  *Var[9]  >=  *Fixed[8.0] 
+   78:  	Call     SetAnimation 	( FFFFFF81 *Var[0] *Var[1] )
+   90:  	Call     SetActorSpeed 	( FFFFFF81 *Fixed[8.0] )
+   A4:  	Call     RunToGoal   	( FFFFFF81 00000000 00000000 )
+   BC:  EndIf
+   C4:  Call     SetActorAngle 	( FFFFFF81 00000000 )
+   D8:  Return
+   E0:  End
+

@@ -1,0 +1,113 @@
+% automatically dumped from map omo_09
+
+#new:Npc $omo_09_80248380
+00000005 $NpcSettings_80247B14_omo_09 00000000 00000000 00000000 
+00440F00 $Script_Init_80248058_omo_09 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00310004 00310008 00310008 00310008 00310004 00310004 0031000C 0031000C 
+00310008 00310008 00310008 00310008 00310008 00310008 00310008 00310008 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:Function $Function_802435B8_omo_09
+    0:  LW        V1, 148 (A0)
+    4:  ADDIU     V0, R0, 3
+    8:  SB        V0, B5 (V1)
+    C:  JR        RA
+   10:  ADDIU     V0, R0, 2
+
+#new:Function $Function_802435CC_omo_09
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ORI       V0, V0, 1000
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:Function $Function_802435E8_omo_09
+    0:  LIA       V1, 800B1D80
+    8:  LHU       V0, 0 (V1)
+    C:  ANDI      V0, V0, EFFF
+   10:  SH        V0, 0 (V1)
+   14:  JR        RA
+   18:  ADDIU     V0, R0, 2
+
+#new:AISettings $AISettings_80247AB8_omo_09
+    1.8 % move speed
+    50` % move time
+    10` % wait time
+  250.0 % alert radius
+    0.0
+    2`
+    3.5 % chase speed
+    45`
+    6`
+  300.0 % chase radius
+    0.0
+    1`
+
+#new:Script $Script_NpcAI_80247AE8_omo_09
+    0:  Call     $Function_802435B8_omo_09 ( )
+    C:  Call     DoBasicAI   	( $AISettings_80247AB8_omo_09 )
+   1C:  Return
+   24:  End
+
+#new:NpcSettings $NpcSettings_80247B14_omo_09
+00000000 0048000F 00000000 00000000 $Script_NpcAI_80247AE8_omo_09 80077F70 00000000 8007809C 
+00000000 00000000 00090000 
+
+#new:Script $Script_80247E48_omo_09
+    0:  Label    00000000 
+    C:  Wait     00000001 
+   18:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   30:  If  *Var[0]  <  0000073A 
+   40:  	Goto     00000000 
+   4C:  EndIf
+   54:  If  *Var[1]  <  00000096 
+   64:  	Goto     00000000 
+   70:  EndIf
+   78:  Call     DisablePlayerInput 	( .True )
+   88:  Call     $Function_802435CC_omo_09 ( )
+   94:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   B0:  Call     802CC3EC ( 00000000 *Fixed[5.0] *Var[0] *Var[1] *Var[2] 0000012C *Fixed[13.0] *Fixed[-9.5] )
+   DC:  If  *Peach_Item_3  ==  00000000 
+   EC:  	Call     SayMessage0 	( 00000005 00310004 00310004 00000000 000F003E ) % !!!!!!!!
+  10C:  Else
+  114:  	Call     SayMessage0 	( 00000006 00580008 00580001 00000000 000F003F ) % Yes!! I thought you'd come! Now I get to defeat yo ...
+  134:  EndIf
+  13C:  Thread
+  144:  	Call     $Function_802435E8_omo_09 ( )
+  150:  	Call     ResetCam    	( .Default *Fixed[4.0] )
+  164:  EndThread
+  16C:  Call     DisablePlayerInput 	( .False )
+  17C:  Call     StartBossBattle 	( .Song:SpecialBattle )
+  18C:  Return
+  194:  End
+
+#new:Script $Script_80247FE4_omo_09
+    0:  Call     GetBattleOutcome 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  00000000 
+   28:  		Set  *Flag_OMO_06  00000001 
+   38:  		Call     DoNpcDefeat 	( )
+   44:  	Case  ==  00000001 
+   50:  	Case  ==  00000002 
+   5C:  EndSwitch
+   64:  Return
+   6C:  End
+
+#new:Script $Script_Init_80248058_omo_09
+    0:  If  *Peach_Item_3  ==  00000000 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_80247E48_omo_09 )
+   24:  	Call     BindNpcDefeat 	( .Npc:Self $Script_80247FE4_omo_09 )
+   38:  Else
+   40:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+   5C:  EndIf
+   64:  Return
+   6C:  End
+

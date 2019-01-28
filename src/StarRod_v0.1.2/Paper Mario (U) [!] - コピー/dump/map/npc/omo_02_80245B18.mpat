@@ -1,0 +1,91 @@
+% automatically dumped from map omo_02
+
+#new:Npc $omo_02_80245B18
+00000000 $NpcSettings_802448EC_omo_02 00000000 00000000 00000000 
+00000A01 $Script_Init_80245144_omo_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+003B0001 003B0002 003B0003 003B0003 003B0001 003B0001 003B000C 003B000C 
+003B0015 003B0012 003B0011 003B0010 003B0005 003B0001 003B0001 003B0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_802448EC_omo_02
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:Script $Script_80244D64_omo_02
+    0:  Label    00000000 
+    C:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   24:  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   40:  Call     SetPanTarget 	( .Default *Var[0] 00000000 *Var[2] )
+   5C:  Call     GetCamPosB  	( .Default *Var[0] *Var[1] )
+   74:  Call     SetCamPosB  	( .Default *Fixed[-600.0] *Var[1] )
+   8C:  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+   A0:  Call     PanToTarget 	( .Default 00000000 00000001 )
+   B8:  Wait     00000001 
+   C4:  Goto     00000000 
+   D0:  Return
+   D8:  End
+
+#new:Script $Script_80244E44_omo_02
+    0:  Loop     
+    C:  	Call     PlaySoundAtNpc ( 00000000 B0000021 00000000 )
+   24:  	Wait     00000008 
+   30:  EndLoop
+   38:  Return
+   40:  End
+
+#new:Script $Script_80244E8C_omo_02
+    0:  If  *Flag_OMO_0E  ==  00000000 
+   10:  	Call     DisablePlayerInput 	( .True )
+   20:  	Wait     0000001E 
+   2C:  	Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+   40:  	Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   5C:  	Call     NpcJump0    	( .Npc:Self *Var[0] *Var[1] *Var[2] 0000000F )
+   7C:  	Call     UseSettingsFrom 	( .Default FFFFFDC6 00000000 00000000 )
+   98:  	Call     SetPanTarget 	( .Default FFFFFDC6 00000000 00000000 )
+   B4:  	Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+   C8:  	Call     PanToTarget 	( .Default 00000000 00000001 )
+   E0:  	Exec     $Script_80244E44_omo_02 *Var[A] 
+   F0:  	Call     SetNpcAnimation 	( .Npc:Self 003B0003 )
+  104:  	Call     SetNpcSpeed 	( .Npc:Self *Fixed[6.0] )
+  118:  	Call     MoveNpcTo   	( .Npc:Self FFFFFDC1 00000000 00000000 )
+  134:  	Kill     *Var[A] 
+  140:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  158:  	Call     NpcJump0    	( .Npc:Self FFFFFE34 00000000 FFFFFFEC 00000028 )
+  178:  	Call     PanToTarget 	( .Default 00000000 00000000 )
+  190:  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  1A4:  	Exec     $Script_80244D64_omo_02 *MapVar[A] 
+  1B4:  	Set  *Flag_OMO_0E  00000001 
+  1C4:  	Call     DisablePlayerInput 	( .False )
+  1D4:  Else
+  1DC:  	Exec     $Script_80244D64_omo_02 *MapVar[A] 
+  1EC:  	Call     SetNpcPos   	( .Npc:Self FFFFFDC1 00000000 FFFFFFEC )
+  208:  	Label    0000000A 
+  214:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  22C:  	If  *Var[0]  <  FFFFFD08 
+  23C:  		Wait     00000001 
+  248:  		Goto     0000000A 
+  254:  	EndIf
+  25C:  	Wait     00000014 
+  268:  	Call     PlaySoundAtNpc ( .Npc:Self 0000032C 00000000 )
+  280:  	Call     NpcJump0    	( .Npc:Self FFFFFE34 00000000 FFFFFFEC 00000028 )
+  2A0:  EndIf
+  2A8:  Return
+  2B0:  End
+
+#new:Script $Script_Init_80245144_omo_02
+    0:  If  *Flag_OMO_0F  ==  00000000 
+   10:  	Call     SetNpcPos   	( .Npc:Self FFFFFCE0 00000000 00000000 )
+   2C:  	Call     BindNpcIdle 	( .Npc:Self $Script_80244E8C_omo_02 )
+   40:  Else
+   48:  	Call     RemoveNpc   	( .Npc:Self )
+   58:  EndIf
+   60:  Return
+   68:  End
+

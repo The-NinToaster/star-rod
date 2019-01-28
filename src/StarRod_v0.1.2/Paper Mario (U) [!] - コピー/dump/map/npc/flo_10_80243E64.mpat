@@ -1,0 +1,153 @@
+% automatically dumped from map flo_10
+
+#new:Npc $flo_10_80243E64
+00000000 $NpcSettings_80243220_flo_10 00000000 00000000 00000000 
+00000D01 $Script_Init_80243D78_flo_10 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00C90001 00C90001 00C90001 00C90001 00C90001 00C90001 00C90001 00C90001 
+00C90001 00C90001 00C90001 00C90001 00C90001 00C90001 00C90001 00C90001 
+00000000 00000000 00000000 001A00DF % That's Lily. She says she's guarding this spring.  ...
+
+#new:Script $Script_802415C4_flo_10
+    0:  Call     802D5FF8 ( 00000089 00000002 )
+   14:  Return
+   1C:  End
+
+#new:Script $Script_802415E8_flo_10
+    0:  Call     FadeOutMusic 	( 00000000 000000FA )
+   14:  Wait     0000000A 
+   20:  Call     802D5FD8 ( )
+   2C:  Return
+   34:  End
+
+#new:NpcSettings $NpcSettings_80243220_flo_10
+00000000 002D0041 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80243628_flo_10
+    0:  Wait     0000000A 
+    C:  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   28:  Call     GetPlayerPos 	( *Var[3] *Var[4] *Var[5] )
+   40:  If  *Var[5]  <  *Var[2] 
+   50:  	Set  *Var[6]  0000001E 
+   60:  Else
+   68:  	Set  *Var[6]  00000014 
+   78:  EndIf
+   80:  Set  *Var[1]  *Var[0] 
+   90:  Set  *Var[4]  *Var[0] 
+   A0:  Sub  *Var[1]  *Var[6] 
+   B0:  Add  *Var[4]  *Var[6] 
+   C0:  Switch  *Var[3] 
+   CC:  	Case  *Var[1]  to  *Var[4] 
+   DC:  		Thread
+   E4:  			If  *Var[3]  <  *Var[0] 
+   F4:  				Sub  *Var[0]  00000028 
+  104:  			Else
+  10C:  				Add  *Var[0]  00000028 
+  11C:  			EndIf
+  124:  			Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+  13C:  			Call     MovePlayerTo 	( *Var[0] *Var[5] 0000000F )
+  154:  			Call     PlayerFaceNpc 	( 00000000 00000001 )
+  168:  			Call     SetNpcFlagBits ( .Npc:Self 00000100 .False )
+  180:  		EndThread
+  188:  EndSwitch
+  190:  Return
+  198:  End
+
+#new:Script $Script_802437C8_flo_10
+    0:  ExecWait $Script_802415C4_flo_10 
+    C:  Switch  *StoryProgress 
+   18:  	Case  <  0000002D 
+   24:  		Exec     $Script_80243628_flo_10 
+   30:  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+   4C:  		Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+   68:  		Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+   84:  		Call     SetCamDistance ( .Default 00000145 )
+   98:  		Call     SetCamAngles 	( .Default *Fixed[23.0] *Fixed[-9.0] )
+   B0:  		Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+   C4:  		Call     PanToTarget 	( .Default 00000000 00000001 )
+   DC:  		Call     WaitForCam  	( .Default *Fixed[1.0] )
+   F0:  		Wait     0000000A 
+   FC:  		Call     SayMessage0 	( .Npc:Self 00C90004 00C90008 00000005 00110078 ) % Oh, no!!! The spring.... The spring went dry! Why! ...
+  11C:  		Call     SayMessage1 	( .Npc:Self 00C90009 00C90005 00000005 )
+  138:  	Case  <  00000030 
+  144:  		If  *Flag_FLO_0D  ==  00000000 
+  154:  			Exec     $Script_80243628_flo_10 
+  160:  			Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  17C:  			Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  198:  			Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  1B4:  			Call     SetCamDistance ( .Default 00000145 )
+  1C8:  			Call     SetCamAngles 	( .Default *Fixed[23.0] *Fixed[-9.0] )
+  1E0:  			Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  1F4:  			Call     PanToTarget 	( .Default 00000000 00000001 )
+  20C:  			Call     WaitForCam  	( .Default *Fixed[1.0] )
+  220:  			Wait     0000000A 
+  22C:  			Call     SayMessage0 	( .Npc:Self 00C90004 00C90008 00000005 00110079 ) % Gaaah!! Oh, how horrible! The spring went dry! Wha ...
+  24C:  			Call     NpcFacePlayer 	( .Npc:Self 00000001 )
+  260:  			Call     SetNpcAnimation 	( .Npc:Self 00C90001 )
+  274:  			Call     PlaySoundAtNpc ( .Npc:Self 00000262 00000000 )
+  28C:  			Call     ShowEmote   	( .Npc:Self .Emote:Exclamation 00000000 0000000F 00000001 00000000 00000000 00000000 00000000 )
+  2BC:  			Wait     0000000F 
+  2C8:  			Call     SayMessage0 	( .Npc:Self 00C90001 00C90001 00000000 0011007A ) % ............................................... Oh ...
+  2E8:  			Call     SayMessage1 	( .Npc:Self 00C90005 00C90001 00000000 )
+  304:  			Call     GetPlayerTargetYaw 	( *Var[0] )
+  314:  			Call     InterpNpcYaw 	( .Npc:Self *Var[0] 00000001 )
+  32C:  			Wait     00000014 
+  338:  			Call     SayMessage0 	( .Npc:Self 00C90002 00C90001 00000005 0011007B ) % A prince... Well, he actually looks more like a pl ...
+  358:  			Call     NpcFacePlayer 	( .Npc:Self 00000001 )
+  36C:  			Wait     00000014 
+  378:  			Call     SayMessage0 	( .Npc:Self 00C90002 00C90001 00000000 0011007C ) % Hello, my name is Lily. I'm a beautiful, fragile f ...
+  398:  			Call     ShowChoice  	( 001E0011 ) % Yes No 
+  3A8:  			Wait     0000000A 
+  3B4:  			Switch  *Var[0] 
+  3C0:  				Case  ==  00000000 
+  3CC:  					Call     SayMessage2 	( .Npc:Self 00C90003 00C90007 00000000 0011007D ) % Oh, you're a dream come true! Thank you so much! T ...
+  3EC:  				Case  ==  00000001 
+  3F8:  					Call     SayMessage2 	( .Npc:Self 00C90004 00C90008 00000000 0011007E ) % Oh, how awful... You weren't my prince... Well...I ...
+  418:  			EndSwitch
+  420:  			Wait     0000000A 
+  42C:  			Set  *Flag_FLO_0D  00000001 
+  43C:  			Call     SetNpcFlagBits2 	( .Npc:Self 00400000 00000000 )
+  454:  		Else
+  45C:  			Call     SayMessage0 	( .Npc:Self 00C90004 00C90008 00000005 0011007F ) % Oh... I feel terrible. My condition will only get  ...
+  47C:  		EndIf
+  484:  	Case  <  00000031 
+  490:  		Call     SayMessage0 	( .Npc:Self 00C90002 00C90001 00000000 00110080 ) % Oh, it's the Water Stone!  Quickly! Put it in that ...
+  4B0:  		Set  *Flag_FLO_0E  00000001 
+  4C0:  	Case  <  00000035 
+  4CC:  		Call     SayMessage0 	( .Npc:Self 00C90004 00C90008 00000000 00110085 ) % The water in the spring is back to normal. Aaaaah! ...
+  4EC:  		Call     SayMessage1 	( .Npc:Self 00C90002 00C90001 00000000 )
+  508:  		Call     SayMessage1 	( .Npc:Self 00C90004 00C90008 00000000 )
+  524:  	Case  <  0000003C 
+  530:  		Call     SayMessage0 	( .Npc:Self 00C90003 00C90007 00000000 00110086 ) % The sun is shining. And I am floating. Oh..., I'm. ...
+  550:  	Default
+  558:  		Call     SayMessage0 	( .Npc:Self 00C90002 00C90001 00000000 00110087 ) % Some sort of pink gem seems to be floating on the  ...
+  578:  EndSwitch
+  580:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  594:  ExecWait $Script_802415E8_flo_10 
+  5A0:  Return
+  5A8:  End
+
+#new:Script $Script_Init_80243D78_flo_10
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_802437C8_flo_10 )
+   14:  Switch  *StoryProgress 
+   20:  	Case  <  00000030 
+   2C:  		If  *Flag_FLO_0D  ==  00000000 
+   3C:  			Call     SetNpcAnimation 	( .Npc:Self 00C90008 )
+   50:  			Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000001 )
+   68:  			Call     SetNpcFlagBits2 	( .Npc:Self 00400000 00000001 )
+   80:  		EndIf
+   88:  	Case  ==  00000030 
+   94:  		Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000001 )
+   AC:  	Case  >=  00000031 
+   B8:  		Call     SetNpcPos   	( .Npc:Self FFFFFFBD FFFFFFEC FFFFFF97 )
+   D4:  EndSwitch
+   DC:  Return
+   E4:  End
+

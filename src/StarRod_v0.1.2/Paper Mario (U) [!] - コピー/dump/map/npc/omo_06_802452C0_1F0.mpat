@@ -1,0 +1,51 @@
+% automatically dumped from map omo_06
+
+#new:Npc $omo_06_802452C0_1F0
+00000001 $NpcSettings_80245090_omo_06 00000000 00000000 00000000 
+00400D05 $Script_Init_8024529C_omo_06 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008C0101 008C0101 008C0101 008C0101 008C0101 008C0101 008C0101 008C0101 
+008C0101 008C0101 008C0101 008C0101 008C0101 008C0101 008C0101 008C0101 
+00000000 00000000 00000000 001A00B8 % He's an employee of the Toy Box station. The emplo ...
+
+#new:Script $Script_80245080_omo_06
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_80245090_omo_06
+00000000 00200018 $Script_80245080_omo_06 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024511C_omo_06
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFFC 
+   18:  		Call     SayMessage0 	( .Npc:Self 008C0104 008C0101 00000000 000F0023 ) % Some Shy Guy just ran off to the right with a Fryi ...
+   38:  	Case  <  FFFFFFFD 
+   44:  		Call     SayMessage0 	( .Npc:Self 008C0104 008C0101 00000000 000F0024 ) % Have you seen the Gourmet Guy? He's a huge Shy Guy ...
+   64:  	Case  <  FFFFFFFE 
+   70:  		Call     SayMessage0 	( .Npc:Self 008C0104 008C0101 00000000 000F0025 ) % We have to move some lever in order to repair the  ...
+   90:  	Case  <  FFFFFFFF 
+   9C:  		Call     SayMessage0 	( .Npc:Self 008C0104 008C0101 00000000 000F0026 ) % We have to move some lever in order to repair the  ...
+   BC:  	Case  <  00000000 
+   C8:  		Call     SayMessage0 	( .Npc:Self 008C0104 008C0101 00000000 000F0027 ) % The tracks are all fixed, so we can now go to Gree ...
+   E8:  	Case  <  00000002 
+   F4:  		Call     SayMessage0 	( .Npc:Self 008C0104 008C0101 00000000 000F0028 ) % Have you seen the Big Lantern Ghost? He always hid ...
+  114:  	Case  <  00000004 
+  120:  		Call     SayMessage0 	( .Npc:Self 008C0104 008C0101 00000000 000F0029 ) % I heard that the Big Lantern Ghost took off. Do yo ...
+  140:  	Default
+  148:  		Call     SayMessage0 	( .Npc:Self 008C0104 008C0101 00000000 000F002A ) % You know, Shy Guys made this Toy Train that we use ...
+  168:  EndSwitch
+  170:  Return
+  178:  End
+
+#new:Script $Script_Init_8024529C_omo_06
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024511C_omo_06 )
+   14:  Return
+   1C:  End
+

@@ -1,0 +1,67 @@
+% automatically dumped from map jan_03
+
+#new:Npc $jan_03_8024DD84_3E0
+0000000C $NpcSettings_8024C5BC_jan_03 00000000 00000000 00000000 
+00402D09 $Script_Init_8024BDF4_jan_03 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00980001 00980001 00980001 00980001 00980001 00980001 00980001 00980001 
+00980001 00980001 00980001 00980001 00980001 00980001 00980001 00980001 
+00000000 00000000 00000000 001A00CB % He's a Raven. He looks good in black. Can we take  ...
+
+#new:Script $Script_8024BC10_jan_03
+    0:  Call     GetOwnerNpcID 	( *Var[0] )
+   10:  Switch  *Var[0] 
+   1C:  	Case  ==  0000000A 
+   28:  		If  *StoryProgress  <  00000015 
+   38:  			Call     SayMessage0 	( .Npc:Self 00980005 00980001 00000000 0010008C ) % Caw.
+   58:  		Else
+   60:  			Call     SayMessage0 	( .Npc:Self 00980005 00980001 00000000 0010008D ) % Caaaw!
+   80:  		EndIf
+   88:  	Case  ==  0000000C 
+   94:  		If  *StoryProgress  <  00000015 
+   A4:  			Call     SayMessage0 	( .Npc:Self 00980005 00980001 00000000 0010008E ) % Caw? Are you the Mario that Master Raphael the Rav ...
+   C4:  		Else
+   CC:  			Call     SayMessage0 	( .Npc:Self 00980005 00980001 00000000 0010008F ) % Caw?
+   EC:  		EndIf
+   F4:  	Case  ==  0000000D 
+  100:  		If  *StoryProgress  <  00000015 
+  110:  			Call     SayMessage0 	( .Npc:Self 00980005 00980001 00000000 00100090 ) % Oracle of the Stars... Mario comes to this island. ...
+  130:  		Else
+  138:  			Call     SayMessage0 	( .Npc:Self 00980005 00980001 00000000 00100091 ) % Caw. Cawcaaaw!
+  158:  		EndIf
+  160:  	Case  ==  0000000E 
+  16C:  		If  *StoryProgress  <  00000015 
+  17C:  			Call     SayMessage0 	( .Npc:Self 00980005 00980001 00000000 00100092 ) % Cawcawcaaaw?
+  19C:  		Else
+  1A4:  			Call     SayMessage0 	( .Npc:Self 00980005 00980001 00000000 00100093 ) % Cawcawcaw.
+  1C4:  		EndIf
+  1CC:  EndSwitch
+  1D4:  Return
+  1DC:  End
+
+#new:Script $Script_Init_8024BDF4_jan_03
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024BC10_jan_03 )
+   14:  Switch  *StoryProgress 
+   20:  	Case  <  00000015 
+   2C:  	Case  00000018  to  00000025 
+   3C:  		Call     GetOwnerNpcID 	( *Var[0] )
+   4C:  		If  *Var[0]  ==  0000000E 
+   5C:  			Call     RemoveNpc   	( .Npc:Self )
+   6C:  		EndIf
+   74:  	Case  >=  00000026 
+   80:  	Default
+   88:  		Call     RemoveNpc   	( .Npc:Self )
+   98:  EndSwitch
+   A0:  Return
+   A8:  End
+
+#new:NpcSettings $NpcSettings_8024C5BC_jan_03
+00000000 001A0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+

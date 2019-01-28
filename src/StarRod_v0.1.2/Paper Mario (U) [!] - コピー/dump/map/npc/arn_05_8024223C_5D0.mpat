@@ -1,0 +1,50 @@
+% automatically dumped from map arn_05
+
+#new:Npc $arn_05_8024223C_5D0
+00000003 $NpcSettings_80241758_arn_05 00000000 00000000 00000000 
+00000D01 $Script_Init_8024212C_arn_05 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00950101 00950102 00950103 00950103 00950101 00950101 00950100 00950100 
+0095010A 00950103 00950103 00950103 00950103 00950103 00950103 00950103 
+00000000 00000000 00000000 001A00B1 % That's a Boo who lives here in Gusty Gulch. You kn ...
+
+#new:NpcSettings $NpcSettings_80241758_arn_05
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80241D88_arn_05
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFFE6 
+   18:  	Case  <  FFFFFFF0 
+   24:  	Case  <  FFFFFFF2 
+   30:  	Case  <  00000027 
+   3C:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E00B1 ) % Since Tubba Blubba left, this hill seems so quiet. ...
+   5C:  	Case  >=  00000027 
+   68:  		Call     SayMessage0 	( .Npc:Self 00950104 00950101 00000000 000E00B2 ) % I'm a ghost named Herbert. Isn't that a great name ...
+   88:  EndSwitch
+   90:  Return
+   98:  End
+
+#new:Script $Script_Init_8024212C_arn_05
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80241D88_arn_05 )
+   14:  Switch  *StoryProgress 
+   20:  	Case  <  FFFFFFDF 
+   2C:  		Call     RemoveNpc   	( .Npc:Self )
+   3C:  	Case  <  FFFFFFE6 
+   48:  		Call     RemoveNpc   	( .Npc:Self )
+   58:  	Case  <  FFFFFFF0 
+   64:  		Call     RemoveNpc   	( .Npc:Self )
+   74:  	Case  <  FFFFFFF2 
+   80:  		Call     RemoveNpc   	( .Npc:Self )
+   90:  	Case  <  00000027 
+   9C:  	Case  >=  00000027 
+   A8:  EndSwitch
+   B0:  Return
+   B8:  End
+

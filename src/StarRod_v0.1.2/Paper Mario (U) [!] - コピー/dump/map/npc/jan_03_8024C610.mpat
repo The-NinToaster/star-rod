@@ -1,0 +1,76 @@
+% automatically dumped from map jan_03
+
+#new:Npc $jan_03_8024C610
+00000002 $NpcSettings_80244B88_jan_03 00000000 00000000 00000000 
+00002D09 $Script_Init_8024AC2C_jan_03 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00C20003 00C20003 00C20003 00C20003 00C20003 00C20003 00C20003 00C20003 
+00C20003 00C20003 00C20003 00C20003 00C20003 00C20003 00C20003 00C20003 
+00000000 00000000 $ExtraAnimationList_8024C5E8_jan_03 001A00BC % He's the Village Leader. He's very dignified. Does ...
+
+#new:NpcSettings $NpcSettings_80244B88_jan_03
+00000000 00300020 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024A648_jan_03
+    0:  Set  *Var[0]  00000000 
+   10:  Add  *Var[0]  *Flag_JAN_0F 
+   20:  Add  *Var[0]  *Flag_JAN_10 
+   30:  Add  *Var[0]  *Flag_JAN_11 
+   40:  Add  *Var[0]  *Flag_JAN_12 
+   50:  Add  *Var[0]  *Flag_JAN_13 
+   60:  Return
+   68:  End
+
+#new:Script $Script_8024AAA0_jan_03
+    0:  ExecWait $Script_8024A648_jan_03 
+    C:  Switch  *Var[0] 
+   18:  	Case  <  00000001 
+   24:  		If  *Flag_JAN_09  ==  00000000 
+   34:  			Call     SayMessage0 	( .Npc:Self 00C2000A 00C20004 00000000 00100099 ) % Oh, such ill fortune! The children are missing! Th ...
+   54:  			Set  *Flag_JAN_09  00000001 
+   64:  		Else
+   6C:  			Call     SayMessage0 	( .Npc:Self 00C2000A 00C20004 00000000 0010009A ) % Mario, I can't tell you how dangerous the jungle i ...
+   8C:  		EndIf
+   94:  	Case  <  00000003 
+   A0:  		Call     SayMessage0 	( .Npc:Self 00C2000A 00C20004 00000000 0010009B ) % You've found them! Oh, happiness! Oh, joy! But...t ...
+   C0:  	Case  <  00000004 
+   CC:  		Call     SayMessage0 	( .Npc:Self 00C2000A 00C20004 00000000 0010009C ) % Three of the boys are back! Terrrrific!! I'm so gl ...
+   EC:  	Case  <  00000005 
+   F8:  		Call     SayMessage0 	( .Npc:Self 00C2000A 00C20004 00000000 0010009D ) % Mario! Just one more remains! Please find him righ ...
+  118:  EndSwitch
+  120:  Return
+  128:  End
+
+#new:Script $Script_8024ABD0_jan_03
+    0:  Loop     
+    C:  	Call     MoveNpcTo   	( .Npc:Self FFFFFED4 FFFFFFBA 00000032 )
+   28:  	Call     MoveNpcTo   	( .Npc:Self FFFFFEA2 FFFFFFBA 00000032 )
+   44:  EndLoop
+   4C:  Return
+   54:  End
+
+#new:Script $Script_Init_8024AC2C_jan_03
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  0000000E 
+   18:  		Call     RemoveNpc   	( .Npc:Self )
+   28:  	Case  <  00000010 
+   34:  		Call     SetNpcAnimation 	( .Npc:Self 00C20007 )
+   48:  		Call     BindNpcIdle 	( .Npc:Self $Script_8024ABD0_jan_03 )
+   5C:  		Call     BindNpcInteract 	( .Npc:Self $Script_8024AAA0_jan_03 )
+   70:  	Default
+   78:  		Call     RemoveNpc   	( .Npc:Self )
+   88:  EndSwitch
+   90:  Return
+   98:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8024C5E8_jan_03
+00C20003 00C20004 00C20006 00C20007 00C20008 00C20009 00C2000A 00C2000C 
+00C2000D FFFFFFFF 
+

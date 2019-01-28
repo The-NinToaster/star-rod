@@ -1,0 +1,160 @@
+% automatically dumped from map mac_02
+
+#new:Npc $mac_02_8024DCB8
+00000009 $NpcSettings_802460E8_mac_02 00000000 00000000 00000000 
+00000D09 $Script_Init_8024B544_mac_02 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00BF0001 00BF0002 00BF0003 00BF0003 00BF0001 00BF0001 00BF0000 00BF0000 
+00BF0005 00BF0006 00BF0007 00BF0008 00BF0005 00BF0006 00BF0007 00BF0008 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_802460E8_mac_02
+00000000 00180018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024ACA4_mac_02
+    0:  If  *Var[0]  ==  *Fixed[0.0] 
+   10:  	Call     PlaySoundAtNpc ( 00000009 000000C1 00000000 )
+   28:  	SetF  *Var[1]  *Fixed[24.0] 
+   38:  Else
+   40:  	Call     PlaySoundAtNpc ( 00000009 000000C3 00000000 )
+   58:  	SetF  *Var[1]  *Fixed[-24.0] 
+   68:  EndIf
+   70:  Loop     0000000A 
+   7C:  	AddF  *Var[0]  *Var[1] 
+   8C:  	Call     802CFD30 ( 00000009 00000007 *Var[0] 00000000 00000000 00000000 )
+   B0:  	Wait     00000001 
+   BC:  EndLoop
+   C4:  Return
+   CC:  End
+
+#new:Script $Script_8024AD78_mac_02
+    0:  Loop     
+    C:  	Wait     00000001 
+   18:  	Set  *Var[0]  00000000 
+   28:  	Call     GetPlayerPos 	( *Var[1] *Var[2] *Var[3] )
+   40:  	Switch  *Var[3] 
+   4C:  		Case  FFFFFFCC  to  0000002F 
+   5C:  			Add  *Var[0]  00000001 
+   6C:  	EndSwitch
+   74:  	If  *Var[1]  >  0000008C 
+   84:  		Add  *Var[0]  00000001 
+   94:  	EndIf
+   9C:  	If  *Var[0]  ==  00000002 
+   AC:  		BreakLoop
+   B4:  	EndIf
+   BC:  EndLoop
+   C4:  Call     SetMusicTrack 	( 00000000 .Song:BoosMansion 00000000 00000008 )
+   E0:  Call     DisablePlayerInput 	( .True )
+   F0:  Call     ShowMessage 	( 00040022 00000190 00000064 ) % Aaaaaaaagh!!
+  108:  Thread
+  110:  	Call     SetNpcPos   	( .Npc:Self 000001AE 0000003C FFFFFFD8 )
+  12C:  	Call     SetNpcAnimation 	( 00000009 00BF0002 )
+  140:  	Call     SetNpcSpeed 	( .Npc:Self *Fixed[3.0] )
+  154:  	Call     PlaySoundAtNpc ( .Npc:Self 00000293 00000000 )
+  16C:  	Call     MoveNpcTo   	( .Npc:Self 00000244 FFFFFFD8 00000000 )
+  188:  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  1A4:  EndThread
+  1AC:  Call     UseSettingsFrom 	( .Default 000001AE 00000001 00000023 )
+  1C8:  Call     SetPanTarget 	( .Default 000001AE 00000001 00000023 )
+  1E4:  Call     SetCamDistance ( .Default *Fixed[275.0] )
+  1F8:  Call     SetCamAngles 	( .Default *Fixed[18.5] *Fixed[-10.5] )
+  210:  Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  224:  Call     PanToTarget 	( .Default 00000000 00000001 )
+  23C:  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  250:  Call     SetPlayerSpeed ( *Fixed[4.0] )
+  260:  Call     MovePlayerTo 	( 000001AE FFFFFFD8 00000000 )
+  278:  Call     InterpPlayerYaw 	( 0000013B 00000000 )
+  28C:  Call     DisablePartnerAI 	( 00000000 )
+  29C:  Call     MoveNpcTo   	( .Npc:Partner 000001C7 FFFFFFD8 00000014 )
+  2B8:  Call     InterpNpcYaw 	( .Npc:Partner 0000013B 00000000 )
+  2D0:  Call     EnablePartnerAI 	( )
+  2DC:  Call     SayMessage0 	( 00000001 00AB0006 00AB0006 00000000 00040023 ) % Brrrrrrrr... Juh...Just now, a ghost passed right  ...
+  2FC:  Call     ShowChoice  	( 001E0036 ) % Saw Didn't see 
+  30C:  If  *Var[0]  ==  00000000 
+  31C:  	Set  *Var[1]  00040024 
+  32C:  Else
+  334:  	Set  *Var[1]  00040025 
+  344:  EndIf
+  34C:  Call     SayMessage2 	( 00000001 00AB0006 00AB0006 00000000 *Var[1] ) % variable string ID
+  36C:  Wait     00000014 
+  378:  SetF  *Var[0]  *Fixed[0.0] 
+  388:  Call     SetNpcAnimation 	( 00000009 00BF0009 )
+  39C:  Call     802CFD30 ( FFFFFFFF 00000007 00000000 00000000 00000000 00000000 )
+  3C0:  Call     SetNpcYaw   	( .Npc:Self 0000010E )
+  3D4:  Call     SetNpcPos   	( .Npc:Self 000001F4 00000032 0000001E )
+  3F0:  ExecWait $Script_8024ACA4_mac_02 
+  3FC:  Wait     0000000A 
+  408:  Call     SayMessage0 	( 00000001 00AB0006 00AB0006 00000005 00040026 ) % Over there----!!!!! 
+  428:  ExecWait $Script_8024ACA4_mac_02 
+  434:  Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  448:  Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000000 )
+  460:  Wait     00000019 
+  46C:  Call     PlaySoundAtPlayer 	( 00000263 00000000 )
+  480:  Call     ShowEmote   	( 00000000 .Emote:Question 00000000 0000001E 00000000 00000000 00000000 00000000 00000000 )
+  4B0:  Wait     0000001E 
+  4BC:  Call     SetNpcScale 	( 00000009 *Fixed[2.0] *Fixed[2.0] *Fixed[2.0] )
+  4D8:  Call     SetNpcYaw   	( .Npc:Self 0000005A )
+  4EC:  Call     SetNpcPos   	( .Npc:Self 00000168 00000014 0000001E )
+  508:  ExecWait $Script_8024ACA4_mac_02 
+  514:  Call     SayMessage0 	( 00000001 00AB0006 00AB0006 00000005 00040027 ) % No, no, the other way---!!! 
+  534:  ExecWait $Script_8024ACA4_mac_02 
+  540:  Call     InterpPlayerYaw 	( 0000010E 00000000 )
+  554:  Call     InterpNpcYaw 	( .Npc:Partner 0000010E 00000000 )
+  56C:  Wait     00000019 
+  578:  Call     PlaySoundAtPlayer 	( 00000263 00000000 )
+  58C:  Call     ShowEmote   	( 00000000 .Emote:Question 00000000 0000001E 00000000 00000000 00000000 00000000 00000000 )
+  5BC:  Wait     0000001E 
+  5C8:  Call     SetNpcAnimation 	( 00000009 00BF0002 )
+  5DC:  Call     SetNpcScale 	( 00000009 *Fixed[1.0] *Fixed[1.0] *Fixed[1.0] )
+  5F8:  Call     SetNpcPos   	( .Npc:Self 000001E0 00000046 0000000A )
+  614:  ExecWait $Script_8024ACA4_mac_02 
+  620:  Call     PlaySoundAtNpc ( .Npc:Self 00000293 00000000 )
+  638:  Call     NpcJumpX    	( .Npc:Self 00000226 00000028 0000000A 00000028 0000000A 00000000 )
+  660:  Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  67C:  Call     SayMessage0 	( 00000001 00AB0006 00AB0006 00000005 00040028 ) % It went into the forest!!! 
+  69C:  Wait     0000000A 
+  6A8:  Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  6BC:  Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000000 )
+  6D4:  Wait     00000019 
+  6E0:  Call     PlaySoundAtPlayer 	( 00000263 00000000 )
+  6F4:  Call     ShowEmote   	( 00000000 .Emote:Question 00000000 0000001E 00000000 00000000 00000000 00000000 00000000 )
+  724:  Wait     00000028 
+  730:  Call     InterpPlayerYaw 	( 0000010E 00000000 )
+  744:  Call     InterpNpcYaw 	( .Npc:Partner 0000010E 00000000 )
+  75C:  Call     SayMessage0 	( 00000001 00AB0006 00AB0006 00000000 00040029 ) % Ma... Mario, this madness has to end. Will you go  ...
+  77C:  Exec     $Script_8024E150_mac_02 
+  788:  Set  *StoryProgress  FFFFFFCD 
+  798:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  7AC:  Call     DisablePlayerInput 	( .False )
+  7BC:  Return
+  7C4:  End
+
+#new:Script $Script_Init_8024B544_mac_02
+    0:  If  *StoryProgress  ==  FFFFFFCB 
+   10:  	Call     EnableNpcShadow 	( .Npc:Self .False )
+   24:  	Call     BindNpcIdle 	( .Npc:Self $Script_8024AD78_mac_02 )
+   38:  Else
+   40:  	Call     RemoveNpc   	( .Npc:Self )
+   50:  EndIf
+   58:  Return
+   60:  End
+
+#new:Script $Script_8024E150_mac_02
+    0:  Call     SetMusicTrack 	( 00000000 .Song:ToadTown 00000000 00000008 )
+   1C:  Call     802D5EE0 ( 00000000 )
+   2C:  Thread
+   34:  	Call     $Function_802433F0_mac_02 ( $???_8024E120_mac_02 )
+   44:  EndThread
+   4C:  Thread
+   54:  	Call     $Function_802433F0_mac_02 ( $???_8024E138_mac_02 )
+   64:  EndThread
+   6C:  Return
+   74:  End
+

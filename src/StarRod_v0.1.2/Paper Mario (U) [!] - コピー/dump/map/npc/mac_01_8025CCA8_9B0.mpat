@@ -1,0 +1,75 @@
+% automatically dumped from map mac_01
+
+#new:Npc $mac_01_8025CCA8_9B0
+0000000F $NpcSettings_80248AC0_mac_01 00000000 00000000 00000000 
+00002D09 $Script_Init_8025B73C_mac_01 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00830101 00830102 00830103 00830103 00830101 00830101 00830106 00830106 
+00830103 00830103 00830103 00830103 00830103 00830103 00830103 00830103 
+00000000 00000000 $ExtraAnimationList_8025CC80_mac_01 001A0030 % He's a Toad who often thinks about going south. Ma ...
+
+#new:NpcSettings $NpcSettings_80248AC0_mac_01
+00000000 001E0018 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8025B4E0_mac_01
+    0:  Switch  *StoryProgress 
+    C:  	Case  <  FFFFFF96 
+   18:  		Set  *Var[0]  000300CB 
+   28:  	Case  <  FFFFFF9C 
+   34:  		Set  *Var[0]  000300CC 
+   44:  	Case  <  FFFFFFB5 
+   50:  		Set  *Var[0]  000300CD 
+   60:  	Case  <  FFFFFFCB 
+   6C:  		If  *Flag_MAC_9A  ==  00000000 
+   7C:  			Set  *Var[0]  000300CE 
+   8C:  		Else
+   94:  			Set  *Var[0]  000300CF 
+   A4:  		EndIf
+   AC:  	Case  <  FFFFFFF1 
+   B8:  		Set  *Var[0]  000300D0 
+   C8:  	Case  <  00000007 
+   D4:  		If  *Flag_MAC_71  ==  00000000 
+   E4:  			Set  *Var[0]  000300D1 
+   F4:  		Else
+   FC:  			If  *Flag_MAC_72  ==  00000000 
+  10C:  				Set  *Var[0]  000300D2 
+  11C:  			Else
+  124:  				Set  *Var[0]  000300D3 
+  134:  			EndIf
+  13C:  		EndIf
+  144:  	Case  <  0000000A 
+  150:  		Set  *Var[0]  000300D4 
+  160:  	Case  <  00000027 
+  16C:  		Set  *Var[0]  000300D5 
+  17C:  	Case  <  0000002B 
+  188:  		Set  *Var[0]  000300D6 
+  198:  	Case  <  00000039 
+  1A4:  		Set  *Var[0]  000300D7 
+  1B4:  	Case  <  0000003D 
+  1C0:  		Set  *Var[0]  000300D8 
+  1D0:  	Case  <  00000059 
+  1DC:  		Set  *Var[0]  000300D9 
+  1EC:  	Case  <  00000060 
+  1F8:  		Set  *Var[0]  000300DA 
+  208:  	Case  >=  00000060 
+  214:  		Set  *Var[0]  0001004D 
+  224:  EndSwitch
+  22C:  Call     SayMessage0 	( 0000000F 00830104 00830101 00000000 *Var[0] ) % variable string ID
+  24C:  Return
+  254:  End
+
+#new:Script $Script_Init_8025B73C_mac_01
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8025B4E0_mac_01 )
+   14:  Return
+   1C:  End
+
+#new:ExtraAnimationList $ExtraAnimationList_8025CC80_mac_01
+00830000 00830001 00830002 00830003 00830004 FFFFFFFF 
+

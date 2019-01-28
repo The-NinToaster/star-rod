@@ -1,0 +1,310 @@
+80044180  13    
+800441F0  20    
+80044238  1     
+80044298  413   MakeNpcs
+80044340  380   RemoveNpc
+80044478  7     
+8004457C  152   GetBattleOutcome
+800445D4  12    
+80044600  77    
+8004462C  85    DoNpcDefeat
+80044840  14    StartBattle
+80044860  1     StartBattleWith
+8004489C  54    StartBossBattle
+80044A38  4     
+80044A78  137   BindNpcAI
+80044BAC  364   BindNpcIdle
+80044C2C  1     RestartNpcAI
+80044CF0  58    EnableNpcAI
+80044DA4  15    SetNpcAux
+80044EB8  29    BindNpcAux
+800450A4  506   BindNpcInteract
+80045140  63    BindNpcHit
+800451DC  113   BindNpcDefeat
+8004525C  1175  SetOwnerVar
+800452C0  177   GetOwnerVar
+80045320  186   SetNpcVar
+800453BC  64    GetNpcVar
+8004550C  4     SetOwnerFlags
+80045524  125   SetOwnerFlagBits
+80045580  25    
+80045614  54    GetOwnerNpcID
+80045640  17    
+80045688  117   SetNpcFlagBits2
+80045734  20    
+800457C4  6     
+800457F8  10    
+8004580C  1     
+80045838  10    
+800458CC  4     
+80045900  75    
+80045A58  10    
+8004A47C  124   DoBasicAI
+800E96F8  35    ShowCoinCounter
+80111D38  665   MakeEntity
+80111E9C  6     
+80111F2C  10    
+80111FB0  187   AssignScript
+80111FF8  22    AssignAreaFlag
+8011206C  175   AssignBlockFlag
+801120B8  34    AssignFlag
+80112114  36    AssignPanelFlag
+80112170  5     AssignCrateFlag
+80281860  10    MakeShop
+80281BD8  10    MakeShopOwner
+80281CAC  60    MakeDoorAdvanced
+802832E0  7     CreatePushBlockGrid
+8028347C  71    SetPushBlock
+802835C0  7     GetPushBlock
+802836B8  1     GetGridIndexFromPos
+802837AC  2     BindPushBlockFallEffect
+802C6824  3     
+802C8B60  1756  TranslateModel
+802C8C64  1412  RotateModel
+802C8D88  380   ScaleModel
+802C8F28  84    CloneModel
+802C8F80  102   GetModelCenter
+802C9000  386   SetTexPanner
+802C90FC  90    
+802C91A4  35    
+802C9208  455   EnableTexPanning
+802C9288  1487  EnableModel
+802C9308  289   
+802C9364  258   
+802C9428  9     
+802C94A0  41    
+802C9518  68    
+802C971C  21    
+802C97B4  442   TranslateGroup
+802C98D8  482   RotateGroup
+802C9A1C  27    ScaleGroup
+802C9B98  377   EnableGroup
+802C9C70  22    
+802C9DCC  1522  ModifyColliderFlags
+802C9ED8  24    ResetFromLava
+802CA0AC  2     
+802CA114  264   ParentColliderToModel
+802CA188  418   UpdateColliderTransform
+802CA254  284   
+802CA400  1172  GotoMap
+802CA420  189   GotoMapSpecial
+802CA460  487   GetEntryID
+802CA490  9     GetMapID
+802CA4C0  66    GetLoadType
+802CA4F4  21    SetRenderMode
+802CA558  263   PlaySoundAtModel
+802CA614  358   PlaySoundAtCollider
+802CA6C0  423   SetCamFlag2
+802CA828  439   SetCamPerspective
+802CA988  7     
+802CAB18  2     SetCamViewport
+802CABE8  8     
+802CAD98  423   SetCamBGColor
+802CAF2C  67    
+802CB008  9     
+802CB2A8  263   ShakeCam
+802CB680  331   SetCamFlag4
+802CB79C  1111  PanToTarget
+802CB860  705   UseSettingsFrom
+802CB9F8  14    LoadSettings
+802CBAB4  90    SetCamType
+802CBB48  476   SetCamAngles
+802CBBE4  652   SetCamDistance
+802CBC58  158   SetCamPosA
+802CBCF4  147   SetCamPosB
+802CBD90  54    SetCamPosC
+802CBE2C  947   SetPanTarget
+802CBEF0  992   SetCamSpeed
+802CBF64  17    GetCamType
+802CBFF4  28    GetCamAngles
+802CC084  47    GetCamDistance
+802CC0F4  1     GetCamPosA
+802CC184  1     GetCamPosB
+802CC2A4  81    GetCamPosition
+802CC354  559   WaitForCam
+802CC3EC  35    
+802CC660  81    UseSettings
+802CC8C8  182   ResetCam
+802CCCB0  5     
+802CCCEC  14    
+802CCE6C  33    PlayModelAnimation
+802CCFE4  18    
+802CD348  6     
+802CD3C0  3     
+802CD418  8     
+802CD7D8  62    
+802CD8F8  62    
+802CDC1C  133   
+802CDC58  12    
+802CDCB0  2122  SetNpcPos
+802CDDB0  236   SetNpcRotation
+802CDE68  33    
+802CDED4  78    SetNpcScale
+802CDF8C  37    
+802CE01C  423   SetNpcSpeed
+802CE088  568   SetNpcJumpscale
+802CE0F4  3374  SetNpcAnimation
+802CE160  13    GetNpcAnimation
+802CE22C  1068  MoveNpcTo
+802CE6C4  760   NpcJump0
+802CE6E0  140   NpcJump1
+802CE6FC  91    NpcJumpX
+802CEA10  81    GetNpcYaw
+802CEA84  226   SetNpcYaw
+802CEB04  908   InterpNpcYaw
+802CECC8  225   NpcFacePlayer
+802CEE80  127   NpcFaceNpc
+802CF060  1301  SetNpcFlagBits
+802CF0F4  1422  GetNpcPos
+802CF208  43    
+802CF268  488   EnableNpcShadow
+802CF2EC  42    EnableNpcBlur
+802CF370  12    
+802CF4E8  516   DisablePartnerAI
+802CF52C  483   EnablePartnerAI
+802CF56C  58    
+802CF5B8  8     BringPartnerOut
+802CF988  8     PutPartnerAway
+802CFC74  333   GetCurrentPartner
+802CFCA0  5     
+802CFCE8  14    
+802CFD30  217   
+802CFE2C  13    
+802CFE80  21    
+802CFEEC  1     
+802CFFC0  20    
+802D0118  5     
+802D01AC  706   PlaySoundAtNpc
+802D0244  4     
+802D02B0  2860  SayMessage0
+802D02CC  103   SayMessage1
+802D02E8  312   SayMessage2
+802D0304  163   SayMessage3
+802D0894  374   ShowMessage
+802D095C  27    
+802D0A98  63    
+802D0AFC  18    
+802D0B6C  188   ShowChoice
+802D0BF8  17    
+802D0C20  2     
+802D0CEC  52    SetMessageString
+802D0D44  39    SetMessageValue
+802D0DA0  266   HidePlayerShadow
+802D0DE4  646   DisablePlayerPhysics
+802D0E28  2278  DisablePlayerInput
+802D0EF0  1430  SetPlayerPos
+802D1024  125   SetPlayerSpeed
+802D1054  141   SetPlayerJumpscale
+802D1084  1459  SetPlayerAnimation
+802D10D8  204   
+802D1134  333   MovePlayerTo
+802D1270  38    
+802D18E8  89    PlayerJump
+802D1904  40    
+802D1920  3     
+802D193C  496   InterpPlayerYaw
+802D1B04  222   PlayerFaceNpc
+802D1D28  4     GetPlayerTargetYaw
+802D1D60  145   SetPlayerFlagBits
+802D1DD0  86    
+802D1DFC  1512  GetPlayerPos
+802D1E94  1     GetPlayerAnimation
+802D1EC0  16    FullyRestoreHPandFP
+802D1EE0  15    FullyRestoreSP
+802D1EFC  1     EnablePartner
+802D1F38  1     DisablePartner
+802D216C  665   UseExitHeading
+802D244C  5     
+802D2484  1     
+802D249C  48    
+802D24F4  2     
+802D2508  20    
+802D2520  257   
+802D286C  160   
+802D2884  28    
+802D2AA8  51    DisablePulseStone
+802D2B0C  141   
+802D2B50  1     
+802D2B6C  132   
+802D2B88  2     Disable8bitMario
+802D2C14  52    
+802D2CD8  118   PlaySoundAtPlayer
+802D3398  2     
+802D45B0  1119  MakeLerp
+802D462C  1125  UpdateLerp
+802D46B0  402   RandInt
+802D4708  63    GetAngleBetweenNPCs
+802D47B4  10    GetAngleToNPC
+802D4830  25    GetAngleToPlayer
+802D48AC  30    AwaitPlayerApproach
+802D4964  32    IsPlayerWithin
+802D4A5C  24    AwaitPlayerLeave
+802D4B14  123   AddVectorPolar
+802D4D14  1     
+802D4D88  1     
+802D5430  132   LoadPath
+802D5524  123   GetNextPathPos
+802D5770  30    GetDist2D
+802D5830  219   
+802D585C  86    
+802D58E0  153   SetValueByRef
+802D593C  153   GetValueByRef
+802D5998  6     
+802D5CE0  137   FadeOutMusic
+802D5D4C  815   SetMusicTrack
+802D5DF4  25    FadeInMusic
+802D5EE0  6     
+802D5F28  1     
+802D5FA4  51    
+802D5FD8  19    
+802D5FF8  19    
+802D60E8  50    
+802D611C  59    
+802D6150  905   PlaySound
+802D617C  13    
+802D61DC  312   PlaySoundAt
+802D62B8  118   
+802D62E4  11    
+802D6314  266   UseDoorSounds
+802D6340  7     
+802D636C  21    PlaySoundAtF
+802D6420  123   
+802D663C  31    
+802D6858  128   RemoveKeyItemAt
+802D688C  29    RemoveItemAt
+802D68C8  97    AddKeyItem
+802D6954  228   
+802D699C  2     HasKeyItem
+802D6A14  88    FindKeyItem
+802D6A98  43    AddItem
+802D6B18  2     FindItem
+802D6B9C  7     RemoveItem
+802D6CC0  431   MakeItemEntity
+802D6DC0  311   DropItemEntity
+802D6EC0  5     
+802D6FCC  170   RemoveItemEntity
+802D6FF8  36    AddBadge
+802D7050  2     RemoveBadge
+802D70D0  79    SetItemPos
+802D7194  2     
+802D721C  6     
+802D7278  7     AddCoin
+802D72F0  67    AddStarPiece
+802D73A4  157   ShowGotItem
+802D78A0  119   ShowEmote
+802D7AE4  7     RemoveEffect
+802D7B10  27    
+802D7B44  2     
+802D7CF8  11    
+802D7E08  29    
+802D8028  3     
+802D8248  3     
+802D829C  922   PlayEffect
+802D9700  414   SetSpriteShading
+802D9A3C  3     EnableSpriteShading
+802D9A90  28    GetDemoState
+802D9B34  50    DemoSetButtons
+802D9C10  311   DemoUseJoystick
+
+Identified 196 of 307 functions (63.84%)
+Identified 65567 of 70433 function calls (93.09%)

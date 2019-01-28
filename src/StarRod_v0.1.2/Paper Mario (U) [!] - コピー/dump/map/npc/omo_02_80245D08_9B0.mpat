@@ -1,0 +1,135 @@
+% automatically dumped from map omo_02
+
+#new:Npc $omo_02_80245D08_9B0
+00000006 $NpcSettings_802448EC_omo_02 00000000 00000000 00000000 
+00000801 $Script_Init_80245A54_omo_02 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+003B0001 003B0002 003B0003 003B0003 003B0001 003B0001 003B000C 003B000C 
+003B0015 003B0012 003B0011 003B0010 003B0005 003B0001 003B0001 003B0001 
+00000000 00000000 00000000 00000000 % no tattle string
+
+#new:NpcSettings $NpcSettings_802448EC_omo_02
+00000000 00170016 00000000 00000000 00000000 80077F70 00000000 8007809C 
+00000000 00000000 000E0001 
+
+#new:IntTable $IntTable_80245460_omo_02
+$???_802451B4_omo_02 $???_80245258_omo_02 $???_802452EC_omo_02 $???_802453FC_omo_02 $???_802451B4_omo_02 $???_80245258_omo_02 $???_802451B4_omo_02 $???_802453FC_omo_02 
+$???_802451B4_omo_02 $???_80245258_omo_02 
+
+#new:Script $Script_80245488_omo_02
+    0:  Call     GetNpcPos   	( .Npc:Self *Var[A] *Var[B] *Var[C] )
+   1C:  Label    00000000 
+   28:  Call     GetOwnerVar 	( 00000000 *Var[0] )
+   3C:  Switch  *Var[0] 
+   48:  	Case  ==  00000000 
+   54:  		Call     RandInt     	( 00000002 *Var[0] )
+   68:  		Add  *Var[0]  00000001 
+   78:  		Call     SetOwnerVar 	( 00000000 *Var[0] )
+   8C:  	Case  ==  00000001 
+   98:  		Loop     00000003 
+   A4:  			Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+   BC:  			Wait     00000002 
+   C8:  			Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+   E0:  			Wait     00000002 
+   EC:  			Call     RandInt     	( 00000001 *Var[0] )
+  100:  			If  *Var[0]  ==  00000001 
+  110:  				Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+  128:  				Wait     00000002 
+  134:  			EndIf
+  13C:  			Call     RandInt     	( 0000000A *Var[0] )
+  150:  			Add  *Var[0]  00000005 
+  160:  			Wait     *Var[0] 
+  16C:  		EndLoop
+  174:  		Call     GetOwnerVar 	( 00000000 *Var[0] )
+  188:  		If  *Var[0]  ==  00000001 
+  198:  			Call     SetOwnerVar 	( 00000000 0000000A )
+  1AC:  		EndIf
+  1B4:  	Case  ==  00000002 
+  1C0:  		Call     RandInt     	( 00000001 *Var[0] )
+  1D4:  		If  *Var[0]  ==  00000001 
+  1E4:  			Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+  1F8:  			Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  214:  			If  *Var[1]  ==  00000000 
+  224:  				Call     NpcJump0    	( .Npc:Self *Var[0] *Var[1] *Var[2] 0000000F )
+  244:  			EndIf
+  24C:  		EndIf
+  254:  		Call     GetOwnerVar 	( 00000000 *Var[0] )
+  268:  		If  *Var[0]  ==  00000002 
+  278:  			Call     SetOwnerVar 	( 00000000 0000000A )
+  28C:  		EndIf
+  294:  	Case  ==  0000000A 
+  2A0:  		Call     RandInt     	( 0000001E *Var[0] )
+  2B4:  		Add  *Var[0]  0000000A 
+  2C4:  		Wait     *Var[0] 
+  2D0:  		Call     RandInt     	( 00000001 *Var[0] )
+  2E4:  		Add  *Var[0]  00000001 
+  2F4:  		Call     GetOwnerVar 	( 00000000 *Var[1] )
+  308:  		If  *Var[1]  ==  0000000A 
+  318:  			Call     SetOwnerVar 	( 00000000 *Var[0] )
+  32C:  		EndIf
+  334:  	Case  ==  0000000B 
+  340:  		Call     InterpNpcYaw 	( .Npc:Self 0000010E 00000000 )
+  358:  		Wait     00000002 
+  364:  		Call     InterpNpcYaw 	( .Npc:Self 0000005A 00000000 )
+  37C:  		Wait     00000002 
+  388:  	Case  ==  00000014 
+  394:  		Call     SetOwnerFlagBits 	( 00000100 .True )
+  3A8:  		Call     GetOwnerNpcID 	( *Var[0] )
+  3B8:  		UseIntBuffer $IntTable_80245460_omo_02 
+  3C4:  		Loop     *Var[0] 
+  3D0:  			Get1Int  *Var[1] 
+  3DC:  		EndLoop
+  3E4:  		UseIntBuffer *Var[1] 
+  3F0:  		Label    0000000A 
+  3FC:  		Get1Int  *Var[2] 
+  408:  		Switch  *Var[2] 
+  414:  			Case  ==  00000000 
+  420:  				Get2Int  *Var[3] *Var[4] 
+  430:  				Call     SetNpcAnimation 	( .Npc:Self 003B0004 )
+  444:  				Call     SetNpcSpeed 	( .Npc:Self *Fixed[10.0] )
+  458:  				Call     MoveNpcTo   	( .Npc:Self *Var[3] *Var[4] 00000000 )
+  474:  			Case  ==  00000001 
+  480:  				Get3Int  *Var[3] *Var[4] *Var[5] 
+  494:  				Call     SetNpcJumpscale 	( .Npc:Self *Fixed[1.0] )
+  4A8:  				Call     NpcJump0    	( .Npc:Self *Var[3] *Var[4] *Var[5] 0000000A )
+  4C8:  		EndSwitch
+  4D0:  		If  *Var[2]  !=  FFFFFFFF 
+  4E0:  			Goto     0000000A 
+  4EC:  		EndIf
+  4F4:  		Call     SetOwnerVar 	( 00000000 00000015 )
+  508:  	Case  ==  00000015 
+  514:  		Call     RemoveNpc   	( .Npc:Self )
+  524:  EndSwitch
+  52C:  Wait     00000001 
+  538:  Goto     00000000 
+  544:  Return
+  54C:  End
+
+#new:IntTable $IntTable_802459DC_omo_02
+FFFFFE32 00000000 FFFFFFB0 FFFFFE41 00000000 FFFFFFD8 FFFFFE50 00000000 
+00000000 FFFFFE4B 00000000 00000050 FFFFFE6E 00000000 00000050 FFFFFE4A 
+00000000 FFFFFFB0 FFFFFE59 00000000 FFFFFFD8 FFFFFE68 00000000 00000000 
+FFFFFE26 00000000 FFFFFFC5 FFFFFE86 00000000 00000050 
+
+#new:Script $Script_Init_80245A54_omo_02
+    0:  If  *Flag_OMO_0F  ==  00000000 
+   10:  	Call     BindNpcIdle 	( .Npc:Self $Script_80245488_omo_02 )
+   24:  	Call     GetOwnerNpcID 	( *Var[0] )
+   34:  	Sub  *Var[0]  00000000 
+   44:  	UseIntBuffer $IntTable_802459DC_omo_02 
+   50:  	Loop     *Var[0] 
+   5C:  		Get3Int  *Var[1] *Var[2] *Var[3] 
+   70:  	EndLoop
+   78:  	Call     SetNpcPos   	( .Npc:Self *Var[1] *Var[2] *Var[3] )
+   94:  Else
+   9C:  	Call     RemoveNpc   	( .Npc:Self )
+   AC:  EndIf
+   B4:  Return
+   BC:  End
+

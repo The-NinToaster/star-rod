@@ -1,0 +1,7 @@
+Script: ExitSingleDoor (007E6C2C)
+
+    0:  Call     80283D00 ( )
+    C:  ExecWait 80285EEC 
+   18:  Return
+   20:  End
+

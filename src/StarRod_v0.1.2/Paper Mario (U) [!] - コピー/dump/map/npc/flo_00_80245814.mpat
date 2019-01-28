@@ -1,0 +1,95 @@
+% automatically dumped from map flo_00
+
+#new:Npc $flo_00_80245814
+00000005 $NpcSettings_802428E8_flo_00 00000000 00000000 00000000 
+00402D01 $Script_Init_8024414C_flo_00 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00C50001 00C50001 00C50001 00C50001 00C50001 00C50001 00C50001 00C50001 
+00C50001 00C50001 00C50001 00C50001 00C50001 00C50001 00C50001 00C50001 
+00000000 00000000 00000000 001A00D9 % It's a Tolielip. He definitely knows a lot about F ...
+
+#new:NpcSettings $NpcSettings_802428E8_flo_00
+00000000 00380028 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_80243C4C_flo_00
+    0:  If  *Flag_FLO_0B  ==  00000000 
+   10:  	Call     UseSettings 	( .Default *Fixed[4.0] FFFFFFE2 0000012C *Fixed[20.0] *Fixed[-9.5] )
+   34:  	Set  *Flag_FLO_0B  00000001 
+   44:  EndIf
+   4C:  Switch  *StoryProgress 
+   58:  	Case  <  0000002D 
+   64:  		Switch  *AreaByte[0] 
+   70:  			Case  ==  00000000 
+   7C:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110035 ) % Hey, guy! Where you going? Oh, Petunia...? Yeah, P ...
+   9C:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+   B8:  				Set  *AreaByte[0]  00000001 
+   C8:  			Case  ==  00000001 
+   D4:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110038 ) % Hey, Super Star! Lemme fill you in on something! Y ...
+   F4:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  110:  				Set  *AreaByte[0]  00000002 
+  120:  			Case  ==  00000002 
+  12C:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110039 ) % Hey, you! Everybody's hero! You want to know the i ...
+  14C:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  168:  				Set  *AreaByte[0]  00000000 
+  178:  		EndSwitch
+  180:  	Case  <  0000002F 
+  18C:  		Switch  *AreaByte[0] 
+  198:  			Case  ==  00000000 
+  1A4:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110036 ) % Hey, Mr. Big Shot! You looking for something? The  ...
+  1C4:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  1E0:  				Set  *AreaByte[0]  00000001 
+  1F0:  			Case  ==  00000001 
+  1FC:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110038 ) % Hey, Super Star! Lemme fill you in on something! Y ...
+  21C:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  238:  				Set  *AreaByte[0]  00000002 
+  248:  			Case  ==  00000002 
+  254:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110039 ) % Hey, you! Everybody's hero! You want to know the i ...
+  274:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  290:  				Set  *AreaByte[0]  00000000 
+  2A0:  		EndSwitch
+  2A8:  	Case  <  00000035 
+  2B4:  		Switch  *AreaByte[0] 
+  2C0:  			Case  ==  00000000 
+  2CC:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110037 ) % Hey, Mr. High and Mighty! Great weather, isn't it? ...
+  2EC:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  308:  				Set  *AreaByte[0]  00000001 
+  318:  			Case  ==  00000001 
+  324:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110038 ) % Hey, Super Star! Lemme fill you in on something! Y ...
+  344:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  360:  				Set  *AreaByte[0]  00000002 
+  370:  			Case  ==  00000002 
+  37C:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110039 ) % Hey, you! Everybody's hero! You want to know the i ...
+  39C:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  3B8:  				Set  *AreaByte[0]  00000000 
+  3C8:  		EndSwitch
+  3D0:  	Case  <  00000039 
+  3DC:  		Switch  *AreaByte[0] 
+  3E8:  			Case  ==  00000000 
+  3F4:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110039 ) % Hey, you! Everybody's hero! You want to know the i ...
+  414:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  430:  				Set  *AreaByte[0]  00000001 
+  440:  			Case  ==  00000001 
+  44C:  				Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 00110038 ) % Hey, Super Star! Lemme fill you in on something! Y ...
+  46C:  				Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  488:  		EndSwitch
+  490:  	Default
+  498:  		Call     SayMessage0 	( .Npc:Self 00C50002 00C50001 00000000 0011003A ) % Hey, guy! By the way, do you even know what my nam ...
+  4B8:  		Call     SayMessage1 	( .Npc:Self 00C50003 00C50003 00000000 )
+  4D4:  EndSwitch
+  4DC:  Call     ResetCam    	( .Default *Fixed[4.0] )
+  4F0:  Return
+  4F8:  End
+
+#new:Script $Script_Init_8024414C_flo_00
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_80243C4C_flo_00 )
+   14:  Call     802CDF8C ( FFFFFFFF 00000041 00000032 )
+   2C:  Return
+   34:  End
+

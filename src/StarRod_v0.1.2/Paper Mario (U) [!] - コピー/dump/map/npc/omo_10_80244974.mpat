@@ -1,0 +1,214 @@
+% automatically dumped from map omo_10
+
+#new:Npc $omo_10_80244974
+00000000 $NpcSettings_80244820_omo_10 00000000 00000000 00000000 
+00400D05 $Script_Init_80244888_omo_10 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 
+008C0001 008C0003 008C0001 008C0001 008C0001 008C0001 008C0001 008C0001 
+008C0001 008C0001 008C0001 008C0001 008C0001 008C0001 008C0001 008C0001 
+00000000 00000000 00000000 001A00B8 % He's an employee of the Toy Box station. The emplo ...
+
+#new:Script $Script_802423A4_omo_10
+    0:  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   18:  Call     MakeLerp    	( *Var[1] 00000000 00000028 00000000 )
+   34:  Loop     
+   40:  	Call     UpdateLerp  	( )
+   4C:  	Call     GetPlayerPos 	( *Var[2] *Var[3] *Var[4] )
+   64:  	Call     802CAF2C ( 00000000 *Var[2] *Var[0] *Var[4] )
+   80:  	Wait     00000001 
+   8C:  	If  *Var[1]  ==  00000000 
+   9C:  		BreakLoop
+   A4:  	EndIf
+   AC:  EndLoop
+   B4:  Loop     
+   C0:  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+   D8:  	Call     802CAF2C ( 00000000 *Var[0] 00000000 *Var[2] )
+   F4:  	Wait     00000001 
+  100:  EndLoop
+  108:  Return
+  110:  End
+
+#new:Script $Script_802424BC_omo_10
+    0:  Call     SetNpcFlagBits ( 00000000 00000140 .True )
+   18:  Call     SetNpcFlagBits ( .Npc:Partner 00000140 .True )
+   30:  Thread
+   38:  	UseIntBuffer *Var[0] 
+   44:  	Get3Int  *Var[1] *Var[2] *Var[3] 
+   58:  	Call     AddVectorPolar ( *Var[1] *Var[2] *Fixed[15.0] *Var[3] )
+   74:  	Call     SetPlayerAnimation 	( .PlayerAnim:Walking )
+   84:  	Call     SetPlayerSpeed ( *Fixed[4.0] )
+   94:  	Call     MovePlayerTo 	( *Var[1] *Var[2] 00000000 )
+   AC:  	Call     SetPlayerSpeed ( *Fixed[0.7001953] )
+   BC:  	Call     MovePlayerTo 	( *Var[1] *Var[2] 00000000 )
+   D4:  	Call     SetPlayerPos 	( *Var[1] 00000032 *Var[2] )
+   EC:  	Call     SetPlayerAnimation 	( 00010002 )
+   FC:  	Call     InterpPlayerYaw 	( *Var[3] 00000000 )
+  110:  EndThread
+  118:  Wait     00000005 
+  124:  UseIntBuffer *Var[0] 
+  130:  Get3Int  *Var[1] *Var[2] *Var[3] 
+  144:  SetF  *Var[A]  *Var[3] 
+  154:  AddF  *Var[3]  *Fixed[180.0] 
+  164:  Call     AddVectorPolar ( *Var[1] *Var[2] *Fixed[15.0] *Var[3] )
+  180:  Call     SetNpcJumpscale 	( .Npc:Partner *Fixed[0.7001953] )
+  194:  Call     NpcJump0    	( .Npc:Partner *Var[1] 00000032 *Var[2] 0000000A )
+  1B4:  Call     SetNpcSpeed 	( .Npc:Partner *Fixed[0.5] )
+  1C8:  Call     MoveNpcTo   	( .Npc:Partner *Var[1] *Var[2] 00000000 )
+  1E4:  Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+  1F8:  Call     InterpNpcYaw 	( .Npc:Partner *Var[A] 00000000 )
+  210:  Wait     00000005 
+  21C:  UseIntBuffer *Var[0] 
+  228:  Get3Int  *Var[1] *Var[2] *Var[3] 
+  23C:  SetF  *Var[A]  *Var[3] 
+  24C:  If  *Var[3]  <  000000B4 
+  25C:  	AddF  *Var[3]  *Fixed[90.0] 
+  26C:  Else
+  274:  	SubF  *Var[3]  *Fixed[90.0] 
+  284:  EndIf
+  28C:  SetF  *Var[4]  *Var[1] 
+  29C:  SetF  *Var[5]  *Var[2] 
+  2AC:  SetF  *Var[6]  *Var[3] 
+  2BC:  Call     AddVectorPolar ( *Var[1] *Var[2] *Fixed[100.0] *Var[3] )
+  2D8:  Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+  2EC:  Call     SetNpcAnimation 	( 00000000 008C0003 )
+  300:  Call     MoveNpcTo   	( 00000000 *Var[1] *Var[2] 00000000 )
+  31C:  Call     SetNpcAnimation 	( 00000000 008C0001 )
+  330:  Call     AddVectorPolar ( *Var[4] *Var[5] *Fixed[20.0] *Var[6] )
+  34C:  Call     SetNpcJumpscale 	( 00000000 *Fixed[0.7001953] )
+  360:  Call     NpcJump0    	( 00000000 *Var[4] 00000032 *Var[5] 0000000A )
+  380:  Call     InterpNpcYaw 	( 00000000 *Var[A] 00000000 )
+  398:  Call     SayMessage0 	( 00000000 008C0004 008C0001 00000005 000F0009 ) % We're leaving! All aboard!
+  3B8:  Call     PlaySound   	( 00000083 )
+  3C8:  Call     SetMusicTrack 	( 00000000 .Song:ToyboxTrain 00000000 00000008 )
+  3E4:  Wait     0000000A 
+  3F0:  Return
+  3F8:  End
+
+#new:Script $Script_80243AF8_omo_10
+    0:  Call     FadeOutMusic 	( 00000000 00000BB8 )
+   14:  Call     DisablePlayerInput 	( .True )
+   24:  Call     DisablePartnerAI 	( 00000000 )
+   34:  Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+   48:  Wait     0000000A 
+   54:  Call     DisablePlayerPhysics 	( .True )
+   64:  Exec     $Script_802423A4_omo_10 
+   70:  Set  *AreaByte[5]  00000003 
+   80:  Set  *Var[0]  $???_80243AC8_omo_10 
+   90:  ExecWait $Script_802424BC_omo_10 
+   9C:  Call     ModifyColliderFlags 	( 00000000 {Collider:o961} 7FFFFE00 )
+   B4:  Set  *MapVar[0]  00000000 
+   C4:  Set  *MapVar[1]  $???_80243AC8_omo_10 
+   D4:  Set  *MapVar[2]  00000001 
+   E4:  Set  *MapFlag[00]  00000001 
+   F4:  Label    0000000A 
+  100:  If  *MapVar[B]  <  0000015E 
+  110:  	Wait     00000001 
+  11C:  	Goto     0000000A 
+  128:  EndIf
+  130:  Call     GotoMap     	( $ASCII_80244E70_omo_10 00000000 )
+  144:  Set  *ToyTrain_Destination  00000003 
+  154:  Wait     00000064 
+  160:  Return
+  168:  End
+
+#new:Script $Script_80243CA0_omo_10
+    0:  Call     FadeOutMusic 	( 00000000 00000BB8 )
+   14:  Call     DisablePlayerInput 	( .True )
+   24:  Call     DisablePartnerAI 	( 00000000 )
+   34:  Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+   48:  Wait     0000000A 
+   54:  Call     DisablePlayerPhysics 	( .True )
+   64:  Exec     $Script_802423A4_omo_10 
+   70:  Set  *AreaByte[5]  00000003 
+   80:  Set  *Var[0]  $???_80243C68_omo_10 
+   90:  ExecWait $Script_802424BC_omo_10 
+   9C:  Call     ModifyColliderFlags 	( 00000000 {Collider:o961} 7FFFFE00 )
+   B4:  Set  *MapVar[0]  00000000 
+   C4:  Set  *MapVar[1]  $???_80243C68_omo_10 
+   D4:  Set  *MapVar[2]  00000001 
+   E4:  Set  *MapFlag[00]  00000001 
+   F4:  Label    0000000A 
+  100:  If  *MapVar[B]  >  FFFFFEA2 
+  110:  	Wait     00000001 
+  11C:  	Goto     0000000A 
+  128:  EndIf
+  130:  Call     GotoMap     	( $ASCII_80244E70_omo_10 00000001 )
+  144:  Set  *ToyTrain_Destination  00000002 
+  154:  Wait     00000064 
+  160:  Return
+  168:  End
+
+#new:IntTable $IntTable_80244488_omo_10
+00000002 00000001 00000000 
+
+#new:IntTable $IntTable_80244494_omo_10
+00000000 00000001 00000002 
+
+#new:Script $Script_802444A0_omo_10
+    0:  If  *MapFlag[01]  ==  00000000 
+   10:  	Call     SayMessage0 	( 00000000 008C0004 008C0001 00000000 000F0006 ) % Which way are you heading? Press one of those swit ...
+   30:  Else
+   38:  	If  *AreaFlag[002]  ==  00000000 
+   48:  		Call     SayMessage0 	( 00000000 008C0004 008C0001 00000000 000F0007 ) % Where would you like to go? 
+   68:  		Call     ShowChoice  	( 001E0043 ) % Green Station Pink Station Blue Station Don't get  ...
+   78:  		If  *Var[0]  !=  00000003 
+   88:  			Call     802D0A98 ( )
+   94:  			UseIntBuffer $IntTable_80244488_omo_10 
+   A0:  			Add  *Var[0]  00000001 
+   B0:  			Loop     *Var[0] 
+   BC:  				Get1Int  *Var[1] 
+   C8:  			EndLoop
+   D0:  			Set  *AreaByte[6]  *Var[1] 
+   E0:  			ExecWait $Script_80243CA0_omo_10 
+   EC:  		Else
+   F4:  			Call     SayMessage2 	( 00000000 008C0004 008C0001 00000000 000F0008 ) % Please ride with us again, OK?
+  114:  		EndIf
+  11C:  	Else
+  124:  		Call     SayMessage0 	( 00000000 008C0004 008C0001 00000000 000F0007 ) % Where would you like to go? 
+  144:  		Call     ShowChoice  	( 001E0042 ) % Blue Station Pink Station Green Station Don't get  ...
+  154:  		If  *Var[0]  !=  00000003 
+  164:  			Call     802D0A98 ( )
+  170:  			UseIntBuffer $IntTable_80244494_omo_10 
+  17C:  			Add  *Var[0]  00000001 
+  18C:  			Loop     *Var[0] 
+  198:  				Get1Int  *Var[1] 
+  1A4:  			EndLoop
+  1AC:  			Set  *AreaByte[6]  *Var[1] 
+  1BC:  			ExecWait $Script_80243AF8_omo_10 
+  1C8:  		Else
+  1D0:  			Call     SayMessage2 	( 00000000 008C0004 008C0001 00000000 000F0008 ) % Please ride with us again, OK?
+  1F0:  		EndIf
+  1F8:  	EndIf
+  200:  EndIf
+  208:  Return
+  210:  End
+
+#new:Script $Script_80244810_omo_10
+    0:  Return
+    8:  End
+
+#new:NpcSettings $NpcSettings_80244820_omo_10
+00000000 00200018 $Script_80244810_omo_10 00000000 00000000 00000000 00000000 00000000 
+00000000 00000000 00630000 
+
+#new:Script $Script_8024484C_omo_10
+    0:  Call     DisablePlayerInput 	( .True )
+   10:  ExecWait $Script_802444A0_omo_10 
+   1C:  Call     DisablePlayerInput 	( .False )
+   2C:  Return
+   34:  End
+
+#new:Script $Script_Init_80244888_omo_10
+    0:  Call     BindNpcInteract 	( .Npc:Self $Script_8024484C_omo_10 )
+   14:  Return
+   1C:  End
+
+#new:ASCII $ASCII_80244E70_omo_10
+omo_16
+
