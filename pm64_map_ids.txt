@@ -1,0 +1,32 @@
+kmr - Mario's House
+osr - Outside Peach's Castle
+kkj - Peach's Castle
+kmr - Goomba Village
+mac - Toad Town
+tik - Toad Town Sewers
+mgm - Playroom
+nok - Koopa Village
+nok - Pleasant Path
+trd - Koopa Bros. Fortress
+iwa - Mt. Rugged
+sbk - Dry Dry Desert
+dro - Dry Dry Outpost
+isk - Dry Dry Ruins
+mim - Forever Forest
+obk - Boo's Mansion
+arn - Gusty Gulch
+dgb - Tubba Blubba's Castle
+omo - Shy Guy's Toybox
+kgr - Whale Belly
+jan - Lavalava Island
+kzn - Mt. Lavalava
+flo - Flower Fields, Cloudy Climb
+sam - Shiver City, Starborn Valley, Shiver Mountain, Snow Road
+pra - Crystal Palace
+hos - Shooting Star Summit, Star Way, Star Haven
+kpa - Bowser's Castle
+tst - Test Maps
+machi - Debug Room
+xxx_bt - Battle Maps
+end - Credits Map
+gv - Game Over Map

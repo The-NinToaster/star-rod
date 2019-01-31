@@ -1,0 +1,144 @@
+kmr - Mario's House
+
+osr - Outside Peach's Castle
+
+kkj - Peach's Castle
+kkj_10.map  - TODO: place on map
+kkj_13.map
+kkj_17.map
+kkj_20.map
+kkj_21.map
+kkj_22.map
+kkj_23.map
+kkj_24.map
+kkj_25.map
+kkj_26.map
+kkj_27.map
+kkj_28.map
+kkj_29.map
+kkj_bt01.map
+kkj_bt02.map
+
+kmr - Goomba Village
+kmr_21.map - TODO: place on map
+kmr_22.map
+kmr_23.map
+kmr_24.map
+kmr_bt03.map
+kmr_bt04.map
+kmr_bt05.map
+kmr_bt06.map
+
+* TODO: there's a Toad Town Sewers room here*
+mac - Toad Town
+mac_bt01.map
+mac_bt02.map
+
+* TODO: do something about Toad Town Sewers room in Toad Town*
+tik - Toad Town Sewers
+tik_05.map - TODO: place in Toad Town
+tik_19.map - TODO: where does it go?
+tik_24.map - TODO: where does it go?
+tik_bt01.map
+tik_bt02.map
+tik_bt03.map
+tik_bt04.map
+tik_bt05.map
+
+mgm - Playroom
+
+nok - Koopa Village
+nok_bt01.map - TODO: place on map
+nok_bt02.map
+nok_bt03.map
+nok_bt04.map
+
+nok - Pleasant Path
+
+trd - Koopa Bros. Fortress
+trd_bt00.map - TODO: place on map
+trd_bt01.map
+trd_bt02.map
+trd_bt03.map
+trd_bt04.map
+trd_bt05.map
+
+iwa - Mt. Rugged
+
+sbk - Dry Dry Desert
+
+dro - Dry Dry Outpost
+
+isk - Dry Dry Ruins - TODO: workaround broken map link
+
+mim - Forever Forest
+
+obk - Boo's Mansion
+
+arn - Gusty Gulch
+
+dgb - Tubba Blubba's Castle
+
+omo - Shy Guy's Toybox
+omo_16.map  - TODO: place on map
+omo_bt01.map
+omo_bt02.map
+omo_bt03.map
+omo_bt04.map
+omo_bt05.map
+omo_bt06.map
+omo_bt07.map
+
+kgr - Whale Belly
+
+jan - Lavalava Island
+
+kzn - Mt. Lavalava
+
+flo - Flower Fields, Cloudy Climb
+
+sam - Shiver City, Starborn Valley, Shiver Mountain, Snow Road
+
+pra - Crystal Palace
+pra_04.map - TODO: place on map
+pra_05.map
+pra_06.map
+pra_10.map
+pra_12.map
+pra_13.map
+pra_14.map
+pra_27.map
+pra_28.map
+pra_29.map
+pra_34.map
+pra_35.map
+pra_36.map
+pra_37.map
+pra_38.map
+pra_39.map
+pra_bt01.map
+pra_bt02.map
+pra_bt03.map
+pra_bt04.map
+
+hos - Shooting Star Summit, Star Way, Star Haven
+hos_03.map
+hos_04.map
+hos_05.map
+hos_06.map
+hos_10.map
+hos_20.map
+hos_bt01.map
+hos_bt02.map
+
+kpa - Bowser's Castle
+
+tst - Test Maps
+
+machi - Debug Room
+
+xxx_bt - Battle Maps
+
+end - Credits Map
+
+gv - Game Over Map
