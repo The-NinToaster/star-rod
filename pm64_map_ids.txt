@@ -16,6 +16,7 @@ mim - Forever Forest
 obk - Boo's Mansion
 arn - Gusty Gulch
 dgb - Tubba Blubba's Castle
+arn - Windy Mill
 omo - Shy Guy's Toybox
 kgr - Whale Belly
 jan - Lavalava Island

@@ -29,10 +29,11 @@ kmr_bt04.map
 kmr_bt05.map
 kmr_bt06.map
 
-* TODO: there's a Toad Town Sewers room here*
+* Toad Town Sewers and Forever Forest room here *
 mac - Toad Town
 mac_bt01.map
 mac_bt02.map
+mim_10.map - Forever Forest
 
 * TODO: do something about Toad Town Sewers room in Toad Town*
 tik - Toad Town Sewers
@@ -77,7 +78,35 @@ obk - Boo's Mansion
 
 arn - Gusty Gulch
 
+* Windy Mill room here *
 dgb - Tubba Blubba's Castle
+arn_10.map
+dgb_00.map
+dgb_01.map
+dgb_02.map
+dgb_03.map
+dgb_04.map
+dgb_05.map
+dgb_06.map
+dgb_07.map
+dgb_08.map
+dgb_09.map
+dgb_10.map
+dgb_11.map
+dgb_12.map
+dgb_13.map
+dgb_14.map
+dgb_15.map
+dgb_16.map
+dgb_17.map
+dgb_18.map
+dgb_bt01.map
+dgb_bt02.map
+dgb_bt03.map
+dgb_bt04.map
+dgb_bt05.map
+
+arn - Windy Mill
 
 omo - Shy Guy's Toybox
 omo_16.map  - TODO: place on map
