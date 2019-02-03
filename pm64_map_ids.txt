@@ -19,10 +19,10 @@ dgb - Tubba Blubba's Castle
 arn - Windy Mill
 omo - Shy Guy's Toybox
 kgr - Whale Belly
-jan - Lavalava Island
+jan - Yoshi's Village, jade-jungle, Lavalava Island
 kzn - Mt. Lavalava
 flo - Flower Fields, Cloudy Climb
-sam - Shiver City, Starborn Valley, Shiver Mountain, Snow Road
+sam - Shiver City, Shiver Snowfield, Starborn Valley, Shiver Mountain
 pra - Crystal Palace
 hos - Shooting Star Summit, Star Way, Star Haven
 kpa - Bowser's Castle

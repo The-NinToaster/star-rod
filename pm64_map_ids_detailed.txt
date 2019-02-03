@@ -119,14 +119,24 @@ omo_bt06.map
 omo_bt07.map
 
 kgr - Whale Belly
+kgr_bt01.map
 
-jan - Lavalava Island
+jan - Yoshi's Village, Jade Jungle, Lavalava Island
+jan_bt03.map
+jan_bt04.map
+jan_bt00.map
+jan_bt01.map
+jan_bt02.map
 
 kzn - Mt. Lavalava
 
-flo - Flower Fields, Cloudy Climb
+flo - Flower Fields
+flo - Cloudy Climb
 
-sam - Shiver City, Starborn Valley, Shiver Mountain, Snow Road
+sam - Shiver City
+sam - Shiver Snowfield
+sam - Starborn Valley
+sam - Shiver Mountain
 
 pra - Crystal Palace
 pra_04.map - TODO: place on map
@@ -151,12 +161,6 @@ pra_bt03.map
 pra_bt04.map
 
 hos - Shooting Star Summit, Star Way, Star Haven
-hos_03.map
-hos_04.map
-hos_05.map
-hos_06.map
-hos_10.map
-hos_20.map
 hos_bt01.map
 hos_bt02.map
 

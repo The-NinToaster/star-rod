@@ -1,6 +1,6 @@
 # Star Rod
 
-Clover created the original tool. I'm attempting to reverse engineer this Paper Mario 64 modding tool. This tool is perfect for asm hacking, map editing, and exploring all of the games assets.
+Clover created the original tool. I'm attempting to reverse engineer is. It's used asm hacking, map editing, and dumping games assets.
 
 # Refs
 - [Used to decompile Clover's source jar](http://www.javadecompilers.com/)
