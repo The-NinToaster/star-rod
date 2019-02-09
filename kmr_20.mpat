@@ -1,0 +1,4 @@
+@ $Script_8024FD70
+  Call GotoMap ( "mac_00" 00000000 )
+  Return
+  End
