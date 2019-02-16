@@ -13,7 +13,8 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.",
-				"match": "\\b(Add|Bind|BindLock|Call|End|Exec|ExecWait|SetPriority|SetTimescale|SetGroup|Unbind|Kill|Jump|SuspendAll|ResumeAll|SuspendOthers|ResumeOthers|Suspend|Set|Sub|Resume DoesScriptExist|Wait|WaitSeconds|Jump|Return)\\b"
+				"match": "\\b(Add|Bind|BindLock|Call|DoesScriptExist|End|Exec|ExecWait|Jump|Jump|Kill|Resume|ResumeAll|ResumeOther|Return|Set|SetGroup|SetPriority|SetTimescale|Sub|Suspend|SuspendAll|SuspendOthers|Unbind|Wait|WaitSeconds|
+				)\\b"
 			}]
 		},
 		"strings": {
