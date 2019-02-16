@@ -1,0 +1,25 @@
+{
+    "name": "star-rod-script",
+    "displayName": "Star Rod Script",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "",
+            "aliases": ["", ""],
+            "extensions": [".bpat, .bscr, .mpat, .mscr"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "",
+            "scopeName": "",
+            "path": "./syntaxes/.tmLanguage.json"
+        }]
+    }
+}
