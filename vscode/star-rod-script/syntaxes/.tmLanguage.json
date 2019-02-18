@@ -1,32 +1,13 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
+	"scopeName": "source.strod",
+	"patterns": [{ "include": "#expression" }],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.",
-				"match": "\\b(Add|Bind|BindLock|Call|DoesScriptExist|End|Exec|ExecWait|Jump|Jump|Kill|Resume|ResumeAll|ResumeOther|Return|Set|SetGroup|SetPriority|SetTimescale|Sub|Suspend|SuspendAll|SuspendOthers|Unbind|Wait|WaitSeconds)\\b"
-			}]
+		"expression": {
+			"patterns": [{ "include": "#control" }]
 		},
-		"strings": {
-			"name": "string.quoted.double.",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.",
-					"match": "\\\\."
-				}
-			]
+		"control": {
+			"name": "keyword.control",
+			"match": "Add|Bind|BindLock|Call|DoesScriptExist|End|Exec|ExecWait|Jump|Jump|Kill|Resume|ResumeAll|ResumeOther|Return|Set|SetGroup|SetPriority|SetTimescale|Sub|Suspend|SuspendAll|SuspendOthers|Unbind|Wait|WaitSeconds"
 		}
-	},
-	"scopeName": ""
+	}
 }
