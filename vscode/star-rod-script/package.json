@@ -1,5 +1,6 @@
 {
     "name": "star-rod-script",
+    "publisher": "sonicspiral",
     "displayName": "Star Rod Script",
     "description": "syntax hihghlighting for PM64 ROM patching tool",
     "version": "0.0.1",
