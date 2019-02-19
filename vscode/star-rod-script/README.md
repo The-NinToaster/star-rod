@@ -4,7 +4,7 @@
 
 ## Features
 
-Star Rod Script syntax highlighting. This repo contributes a definition of a new language enriching the knowledge VS Code has about Star Rod.
+Star Rod Script syntax highlighting. This repo contributes a definition of a new language enriching the knowledge VS Code has about Star Rod. Port of the [Sublime version](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#converting-an-existing-textmate-grammar) using this [doc](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#converting-an-existing-textmate-grammar).
 
 ## Requirements
 

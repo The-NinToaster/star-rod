@@ -10,19 +10,21 @@
     "categories": [
         "Programming Languages"
     ],
-    "contributes": {
-        "languages": [{
+	"contributes": {
+		"languages": [{
             "id": "star-rod-script",
-            "aliases": ["Star Rod Script", "strod"],
-            "extensions": [".bpat, .bscr, .mpat, .mscr"],
+            "extensions": [".bpat",".bscr", ".mpat",".mscr"],
+            "aliases": ["Star Rod Script", "mscr"],
             "configuration": "./language-configuration.json"
         }],
-        "grammars": [{
-            "language": "strod",
-            "scopeName": "source.strod",
-            "path": "./syntaxes/.tmLanguage.json"
-        }]
-    },
+		"grammars": [
+			{
+				"language": "star-rod-script",
+				"scopeName": "source.mscr",
+				"path": "./syntaxes/mscr.tmLanguage.json"
+			}
+		]
+	},
     "repository": {
 		"type": "git",
 		"url": "https://github.com/gregdegruy/star-rod.git"
