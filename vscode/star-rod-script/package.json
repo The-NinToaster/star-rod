@@ -3,7 +3,7 @@
     "publisher": "sonicspiral",
     "displayName": "Star Rod Script",
     "description": "Syntax colors for Paper Mario 64 ROM patching tool",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.31.0"
     },
