@@ -1,0 +1,74 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Star Rod Script
+scopeName: source.mscr
+fileTypes: [".bpat, .bscr, .mpat, .mscr"]
+
+patterns:
+- name: comment.block.mscr
+  begin: \/\%
+  end: \%\/
+
+- name: comment.line.percentage.mscr
+  match: \%[^\n]*
+- name: keyword.control.mscr
+  match: \b(If|Else|EndIf|Thread|EndThread|ChildThread|EndChildThread|Loop|EndLoop|Switch|SwitchConst|Case|CaseOR|CaseAND|EndCaseGroup|EndSwitch|PADDING|to)\b
+
+- name: storage.type.mscr
+  match: \#[A-Za-z:_]+
+
+- name: entity.name.function.mscr
+  match: \$[A-Za-z_0-9]+
+
+- name: support.constant.language.mscr
+  match: \.[A-Za-z_0-9]+:[A-Za-z_0-9]+
+
+- name: support.constant.language.mscr
+  match: \.[A-Za-z_0-9]+
+
+- name: constant.langauge.boolean.mscr
+  match: \.(True|False)
+
+- name: constant.numeric.float.mscr
+  match: \b(?:\d*\.)?\d+\b
+
+- name: string.quoted.double.mscr
+  begin: '"'
+  end: '"'
+
+- name: variable.parameter.function.mscr
+  match: \*[A-Za-z0-9]+
+
+- name: constant.numeric.mscr
+  match: \b[A-F0-9]+\b
+
+- name: storage.type.mscr
+  match: \b(Add|Bind|BindLock|Call|DoesScriptExist|End|Exec|ExecWait|Jump|Jump|Kill|Resume|ResumeAll|ResumeOther|Return|Set|SetGroup|SetPriority|SetTimescale|Sub|Suspend|SuspendAll|SuspendOthers|Unbind|Wait|WaitSeconds)\b
+
+- name: keyword.operator.mscr
+  match: (@|==|>|>=|<=|<|\.|\(|\))
+
+- name: meta.expression.complex.mscr
+  begin: (\{)
+  beginCaptures:
+    '1': { name: variable.parameter.function.mscr }
+  end: (\})
+  endCaptures:
+    '1': { name: variable.parameter.function.mscr }
+  patterns:
+  - include: $self
+  - name: variable.parameter.function.mscr
+    match: "[A-Za-z0-9]+"
+
+- name: meta.string.style.mscr
+  begin: (\[)
+  beginCaptures:
+    '1': { name: string.interpolated.mscr }
+  end: (\])
+  endCaptures:
+    '1': { name: string.interpolated.mscr }
+  patterns:
+  - include: $self
+  - name: string.interpolated.mscr
+    match: "[A-Za-z0-9]+"
+...

@@ -1,32 +1,45 @@
 {
-    "name": "star-rod-script",
-    "publisher": "sonicspiral",
-    "displayName": "Star Rod Script",
-    "description": "Syntax colors for Paper Mario 64 ROM patching tool",
-    "version": "0.0.3",
-    "engines": {
-        "vscode": "^1.31.0"
-    },
-    "categories": [
-        "Programming Languages"
+ "name": "star-rod-script",
+ "publisher": "sonicspiral",
+ "displayName": "Star Rod Script",
+ "description": "Syntax colors for Paper Mario 64 ROM patching tool",
+ "version": "1.0.0",
+ "engines": {
+  "vscode": "^1.31.0"
+ },
+ "categories": [
+  "Programming Languages"
+ ],
+ "contributes": {
+  "languages": [
+   {
+    "id": "star-rod-script",
+    "extensions": [
+     ".bpat",
+     ".bscr",
+     ".mpat",
+     ".mscr"
     ],
-	"contributes": {
-		"languages": [{
-            "id": "star-rod-script",
-            "extensions": [".bpat",".bscr", ".mpat",".mscr"],
-            "aliases": ["Star Rod Script", "mscr"],
-            "configuration": "./language-configuration.json"
-        }],
-		"grammars": [
-			{
-				"language": "star-rod-script",
-				"scopeName": "source.mscr",
-				"path": "./syntaxes/mscr.tmLanguage.json"
-			}
-		]
-	},
-    "repository": {
-		"type": "git",
-		"url": "https://github.com/gregdegruy/star-rod.git"
-	}
+    "aliases": [
+     "Star Rod Script",
+     "mscr"
+    ],
+    "configuration": "./language-configuration.json"
+   }
+  ],
+  "grammars": [
+   {
+    "language": "star-rod-script",
+    "scopeName": "source.mscr",
+    "path": "./syntaxes/mscr.tmLanguage.json"
+   }
+  ]
+ },
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/gregdegruy/star-rod.git"
+ },
+ "devDependencies": {
+  "js-yaml": "^3.12.1"
+ }
 }

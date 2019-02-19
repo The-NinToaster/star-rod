@@ -1,0 +1,21 @@
+{
+	"scopeName": "source.mscr",
+	"fileTypes": [".bpat, .bscr, .mpat, .mscr"],
+	"patterns": [{ "include": "#expression" }],
+	"repository": {
+		"expression": {
+			"patterns": [
+				{ "include": "#control" },
+				{ "include": "#operator" }
+			]
+		},
+		"control": {
+			"match": "Add|Bind|BindLock|Call|DoesScriptExist|End|Exec|ExecWait|Jump|Jump|Kill|Resume|ResumeAll|ResumeOther|Return|Set|SetGroup|SetPriority|SetTimescale|Sub|Suspend|SuspendAll|SuspendOthers|Unbind|Wait|WaitSeconds",
+			"name": "keyword.control.mscr"
+		},
+		"operator": {
+			"match": "(@|==|&gt;|&gt;=|&lt;=|&lt;|\\.|\\(|\\))",
+			"name": "keyword.operator.mscr"
+		}
+	}
+}
