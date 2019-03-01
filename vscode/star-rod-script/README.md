@@ -6,7 +6,7 @@ This repo contributes a definition of a new language enriching the knowledge VS 
 
 ## Features
 * Star Rod Script syntax highlighting.
-* Port of the [Sublime version](https://github.com/nanaian/sublime-star-rod using this [doc](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#converting-an-existing-textmate-grammar).
+* Port of the [Sublime version](https://github.com/nanaian/sublime-star-rod) using this [doc](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide#converting-an-existing-textmate-grammar).
 
 ## Requirements
 * [VS Code](https://code.visualstudio.com/Download)

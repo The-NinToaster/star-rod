@@ -11,8 +11,9 @@ patterns:
 
 - name: comment.line.percentage.mscr
   match: \%[^\n]*
+
 - name: keyword.control.mscr
-  match: \b(If|Else|EndIf|Thread|EndThread|ChildThread|EndChildThread|Loop|EndLoop|Switch|SwitchConst|Case|CaseOR|CaseAND|EndCaseGroup|EndSwitch|PADDING|to)\b
+  match: \b(Case|CaseAND|CaseOR|ChildThread|Else|EndCaseGroup|EndChildThread|EndIf|EndLoop|EndSwitch|EndThread|If|Loop|PADDING|Switch|SwitchConst|Thread|to)\b
 
 - name: storage.type.mscr
   match: \#[A-Za-z:_]+

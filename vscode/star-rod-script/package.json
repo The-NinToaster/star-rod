@@ -2,15 +2,33 @@
  "name": "star-rod-script",
  "publisher": "sonicspiral",
  "displayName": "Star Rod Script",
- "description": "Syntax colors for Paper Mario 64 ROM patching tool",
- "version": "1.0.0",
- "engines": {
-  "vscode": "^1.31.0"
+ "description": "Syntax highlighting for Paper Mario 64 ROM patching tool",
+ "version": "1.0.1",
+ "repository": {
+  "type": "git",
+  "url": "https://github.com/gregdegruy/star-rod.git"
  },
  "categories": [
   "Programming Languages"
  ],
+ "activationEvents": [
+    "onCommand:extension.mamar",
+    "onLanguage:star-rod-script"
+ ],
+ "engines": {
+  "vscode": "^1.31.0"
+ },
+ "main": "./client/extension.js",
  "contributes": {
+  "capabilities": {
+    "hoverProvider": "true"
+  },
+  "commands": [
+    {
+     "command": "extension.mamar",
+     "title": "Mamar"
+    }
+  ],
   "languages": [
    {
     "id": "star-rod-script",
@@ -35,11 +53,8 @@
    }
   ]
  },
- "repository": {
-  "type": "git",
-  "url": "https://github.com/gregdegruy/star-rod.git"
- },
  "devDependencies": {
-  "js-yaml": "^3.12.1"
+  "js-yaml": "^3.12.1",
+  "vscode": "^1.1.29"
  }
 }
