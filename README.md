@@ -1,3 +1,8 @@
+This is the last remaining fork of gredguy's Star Rod decomp. 
+
+
+
+
 # Star Rod
 
 Clover created the original tool. I'm attempting to reverse engineer is. It's used asm hacking, map editing, and dumping games assets.
